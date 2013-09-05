@@ -26,6 +26,11 @@
   %p
     %div.inst-step
       %strong 3
+    Select whether the entry is a Human Service or not.
+
+  %p
+    %div.inst-step
+      %strong 4
     When finished, click on
     %strong "Save changes"
 
@@ -51,32 +56,43 @@
             %li
               = keyword
 
-  - services.each do |service|
-    %div.inst-box
-      %header
-        %strong
-          1. Keywords:
-        Add one or more new keywords
+- services.each do |service|
+  %div.inst-box
+    %header
+      %strong
+        1. Keywords:
+      Add one or more new keywords
 
-      .form-group
-        = text_field_tag "keyword1", nil, :placeholder => 'keyword'
-        = text_field_tag "keyword2", nil, :placeholder => 'keyword'
-        = text_field_tag "keyword3", nil, :placeholder => 'keyword'
-        = text_field_tag "keyword4", nil, :placeholder => 'keyword'
+    .form-group
+      = text_field_tag "keyword1", nil, :placeholder => 'keyword'
+      = text_field_tag "keyword2", nil, :placeholder => 'keyword'
+      = text_field_tag "keyword3", nil, :placeholder => 'keyword'
+      = text_field_tag "keyword4", nil, :placeholder => 'keyword'
 
-    %div#categories.inst-box
-      %header
-        %strong
-          2. Categories:
-        Select at least one applicable category
+  %div#categories.inst-box
+    %header
+      %strong
+        2. Categories:
+      Select at least one applicable category
 
-      %ul
-        = @cat_html
+    %ul
+      = @cat_html
 
-    %div.inst-box
-      %header
-        %strong
-          3. Apply edits to the database
-      = hidden_field_tag :id, service.id
-      = hidden_field_tag :page, params[:page]
-      = submit_tag "Save changes", :class => "btn btn-primary"
+  %div#kinds.inst-box
+    %header
+      %strong
+        3. Kind:
+      Is this entry a Human Service?
+
+    %p
+      = select_tag(:kind, options_for_select([['--CHOOSE--', ''], ['YES', 'hs'], ['NO', 'other']]))
+      - # below line is the same as above with the value set. This throws an error if kind is not in the db
+      - # select_tag(:kind, options_for_select([['--CHOOSE--', ''], ['YES', 'hs'], ['NO', 'other']],service.kind))
+
+  %div.inst-box
+    %header
+      %strong
+        4. Apply edits to the database
+    = hidden_field_tag :id, service.id
+    = hidden_field_tag :page, params[:page]
+    = submit_tag "Save changes", :class => "btn btn-primary"
