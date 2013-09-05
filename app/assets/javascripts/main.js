@@ -11,7 +11,7 @@ var main = (function () {
 		for (var l=0; l < lnks.length; l++)
 		{
 			curr = lnks[l];
-			curr.addEventListener("click", _linkClickedHandler, false);
+			$(curr).click(_linkClickedHandler)
 		}
 	}
 
