@@ -22,6 +22,8 @@
   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
   box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  font-size: 16px;
+  line-height: 1.428;
 }
 
 #categories
@@ -30,4 +32,15 @@
 	>ul ul {list-style-type: none; margin-left:15px;}
 	li {vertical-align:middle;}
 	input {height:20px;width:20px;margin-right:5px;}
+}
+
+#instructions
+{
+	font-size:16px;
+	padding:20px;
+	border:1px solid #ccc;
+	background:#fff;
+	h1{
+		font-size:18px;
+	}
 }

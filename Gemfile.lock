@@ -111,6 +111,7 @@ GEM
     moped (1.5.1)
     multi_json (1.7.9)
     multipart-post (1.2.0)
+    newrelic_rpm (3.6.6.147)
     origin (1.1.0)
     polyglot (0.3.3)
     quiet_assets (1.0.2)
@@ -130,6 +131,11 @@ GEM
       activesupport (= 3.2.13)
       bundler (~> 1.0)
       railties (= 3.2.13)
+    rails_12factor (0.0.2)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.1)
+    rails_stdout_logging (0.0.2)
     railties (3.2.13)
       actionpack (= 3.2.13)
       activesupport (= 3.2.13)
@@ -204,9 +210,11 @@ DEPENDENCIES
   jquery-rails
   mongoid
   mongoid-rspec
+  newrelic_rpm
   ohanakapa!
   quiet_assets
   rails (= 3.2.13)
+  rails_12factor
   rspec-rails
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
