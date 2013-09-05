@@ -47,9 +47,10 @@
       %p#existing-keywords
         %strong= "Existing Keywords:"
         %ul
-          - service.keywords.each do |keyword|
-            %li
-              = keyword
+          - if service.key?(:keywords)
+            - service.keywords.each do |keyword|
+              %li
+                = keyword
 
   - services.each do |service|
     %div.inst-box
