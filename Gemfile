@@ -12,6 +12,7 @@ gem 'figaro'
 gem 'haml-rails'
 gem 'mongoid'
 gem 'unicorn'
+gem 'rails_12factor' # Heroku recommended
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
@@ -29,3 +30,4 @@ end
 
 gem "ohanakapa", :git => "git://github.com/codeforamerica/ohanakapa-ruby.git", :branch => "add-nearby-endpoint", :ref => "eb69c0afe3"
 gem 'faraday-http-cache'
+gem 'newrelic_rpm'
