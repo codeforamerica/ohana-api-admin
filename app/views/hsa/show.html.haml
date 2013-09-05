@@ -1,0 +1,27 @@
+- loc_name = @location.name
+- org_name = @location.organization.name
+- services = @location.services
+= form_tag "edit_services", :name => "edit_form" do
+  %ul
+  %h2= loc_name == org_name ? loc_name : "#{org_name} / #{loc_name}"
+  %p
+  %strong= "Description:"
+  = @location.description
+  - services.each do |service|
+    %p
+    %strong= "Keywords:"
+    %p
+    = service.keywords
+    %p
+    .form-group
+    = label_tag :name, "Enter a new keyword"
+    = text_field_tag "keyword1"
+    = text_field_tag "keyword2"
+    = text_field_tag "keyword3"
+    = text_field_tag "keyword4"
+    %p
+    - @categories.each do |cat|
+      = cat.name
+      = check_box_tag "category_id", cat.id
+    = hidden_field_tag :id, service.id
+    = submit_tag "Update location", :class => "btn btn-primary"

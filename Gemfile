@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
-gem 'rails', '3.2.8'
+ruby '2.0.0'
+gem 'rails', '3.2.13'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -26,3 +26,6 @@ group :test do
   gem 'email_spec'
   gem 'mongoid-rspec'
 end
+
+gem "ohanakapa", :git => "git://github.com/codeforamerica/ohanakapa-ruby.git", :branch => "add-nearby-endpoint", :ref => "eb69c0afe3"
+gem 'faraday-http-cache'

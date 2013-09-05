@@ -1,0 +1,6 @@
+- @locations.each do |location|
+  - loc_name = location.name
+  - org_name = location.organization.name
+  - services = location.services
+  %ul
+  = link_to location.name, "/#{location.id}?page=#{params[:page]}"
