@@ -1,39 +1,82 @@
-%h1 Instructions
-%p
-  If there are any keywords, short phrases,
-  or abbreviations (like CPS!) that aren't already captured in the current
-  keywords list or the categories checkboxes, please add them in one of the boxes
-  under the Keywords section. Please don't feel obligated to fill them out. It's fine
-  to leave them blank.
-  There are also checkboxes for each category based on the Open Eligibility terms
-  we showed you on Tuesday. Please check at least one that accurately describes the services provided by the organization, then click on
-  "Update location". Thank you!
+%section#instructions
+  %h1 Instructions
+  %p
+    %div.inst-step
+      %strong 1
+    If there are any keywords, short phrases,
+    or abbreviations (like CPS!) that aren't already captured in the current
+    keywords list or the categories checkboxes, please add them in one of the boxes
+    under the
+    %strong Keywords
+    section.
+    %em Please don't feel obligated to fill the keywords out if they aren't applicable to an entry.
+    It's fine to leave them blank.
+  %p
+    %div.inst-step
+      %strong 2
+    There are also checkboxes for each
+    %strong
+      category
+    based on the Open Eligibility terms
+    we showed you on Tuesday. Please check at least one that accurately describes the services provided by the organization.
+    %em
+      Please provide the nearest match.
+    Better terms can be captured in the keywords.
+
+  %p
+    %div.inst-step
+      %strong 3
+    When finished, click on
+    %strong "Save changes"
+
+  %p
+    Thank you!
 
 - loc_name = @location.name
 - org_name = @location.organization.name
 - services = @location.services
 = form_tag "edit_services", :name => "edit_form" do
-  %ul
-  %h2= loc_name == org_name ? loc_name : "#{org_name} / #{loc_name}"
-  %p
-  %strong= "Description:"
-  = @location.description
-  - services.each do |service|
+  %div.content-box
+    %h1 existing data
+    %h2= loc_name == org_name ? loc_name : "#{org_name} / #{loc_name}"
     %p
-    %strong= "Keywords:"
-    %p
-    = service.keywords
-    %p
+      %strong= "Description:"
+      = @location.description
+
+    - services.each do |service|
+      %p#existing-keywords
+        %strong= "Existing Keywords:"
+        %ul
+          - service.keywords.each do |keyword|
+            %li
+              = keyword
+
+- services.each do |service|
+  %div.inst-box
+    %header
+      %strong
+        1. Keywords:
+      Add one or more new keywords
+
     .form-group
-    = label_tag :name, "Enter a new keyword"
-    = text_field_tag "keyword1"
-    = text_field_tag "keyword2"
-    = text_field_tag "keyword3"
-    = text_field_tag "keyword4"
-    %p
-    - @categories.each do |cat|
-      = cat.name
-      = check_box_tag "category_#{cat.id}", cat.id
+      = text_field_tag "keyword1", nil, :placeholder => 'keyword'
+      = text_field_tag "keyword2", nil, :placeholder => 'keyword'
+      = text_field_tag "keyword3", nil, :placeholder => 'keyword'
+      = text_field_tag "keyword4", nil, :placeholder => 'keyword'
+
+  %div#categories.inst-box
+    %header
+      %strong
+        2. Categories:
+      Select at least one applicable category
+
+    %ul
+      = @cat_html
+
+  %div.inst-box
+    %header
+      %strong
+        3. Apply edits to the database
     = hidden_field_tag :id, service.id
     = hidden_field_tag :page, params[:page]
-    = submit_tag "Update location", :class => "btn btn-primary"
+    = submit_tag "Save changes", :class => "btn btn-primary"
