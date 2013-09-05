@@ -33,7 +33,7 @@
     %p
     - @categories.each do |cat|
       = cat.name
-      = check_box_tag "category_ids[]", cat.id
+      = check_box_tag "category_#{cat.id}", cat.id
     = hidden_field_tag :id, service.id
     = hidden_field_tag :page, params[:page]
     = submit_tag "Update location", :class => "btn btn-primary"
