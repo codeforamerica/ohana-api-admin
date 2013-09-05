@@ -14,14 +14,16 @@
     = service.keywords
     %p
     .form-group
-    = label_tag :name, "Enter a new keyword"
-    = text_field_tag "keyword1"
-    = text_field_tag "keyword2"
-    = text_field_tag "keyword3"
-    = text_field_tag "keyword4"
-    %p
-    - @categories.each do |cat|
-      = cat.name
-      = check_box_tag "category_id", cat.id
+    = label_tag :name, "Add one or more new keywords:"
+    = text_field_tag "keyword1", nil, :placeholder => 'keyword'
+    = text_field_tag "keyword2", nil, :placeholder => 'keyword'
+    = text_field_tag "keyword3", nil, :placeholder => 'keyword'
+    = text_field_tag "keyword4", nil, :placeholder => 'keyword'
+
+    %section#categories
+
+      %ul
+        = @cat_html
+
     = hidden_field_tag :id, service.id
     = submit_tag "Update location", :class => "btn btn-primary"
