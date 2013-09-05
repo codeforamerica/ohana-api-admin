@@ -1,3 +1,14 @@
+%h1 Instructions
+%p
+  If there are any keywords, short phrases,
+  or abbreviations (like CPS!) that aren't already captured in the current
+  keywords list or the categories checkboxes, please add them in one of the boxes
+  under the Keywords section. Please don't feel obligated to fill them out. It's fine
+  to leave them blank.
+  There are also checkboxes for each category based on the Open Eligibility terms
+  we showed you on Tuesday. Please check at least one that accurately describes the services provided by the organization, then click on
+  "Update location". Thank you!
+
 - loc_name = @location.name
 - org_name = @location.organization.name
 - services = @location.services
@@ -24,4 +35,5 @@
       = cat.name
       = check_box_tag "category_ids[]", cat.id
     = hidden_field_tag :id, service.id
+    = hidden_field_tag :page, params[:page]
     = submit_tag "Update location", :class => "btn btn-primary"
