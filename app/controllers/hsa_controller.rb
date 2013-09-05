@@ -61,7 +61,7 @@ class HsaController < ApplicationController
     opt = ''
     data.each do |item|
       _add_id(item)
-      opt += "<li class='depth0'><label><input id=\"category_#{item['id']}\" name=\"#{item['id']}\" type='checkbox' value=\"#{item['id']}\">#{item['title']}</label>"
+      opt += "<li class='depth0'><label><input id=\"category_ids[]\" name=\"category_ids[]\" type='checkbox' value=\"#{item['id']}\">#{item['title']}</label>"
       if item['second_level']
         opt += "<ul>"
         opt += _traverse2(item['second_level'],item['title'])
@@ -76,7 +76,7 @@ class HsaController < ApplicationController
     opt = ''
     data.each do |item|
       _add_id(item)
-      opt += "<li class='hide depth1'><label><input id=\"category_#{item['id']}\" name=\"#{item['id']}\" type='checkbox' value=\"#{item['id']}\">#{item['title']}</label>"
+      opt += "<li class='hide depth1'><label><input id=\"category_ids[]\" name=\"category_ids[]\" type='checkbox' value=\"#{item['id']}\">#{item['title']}</label>"
       if item['third_level']
         opt += "<ul>".html_safe
         opt += _traverse3(item['third_level'],toptitle,item['title'])
@@ -91,7 +91,7 @@ class HsaController < ApplicationController
     opt = ''
     data.each do |item|
       _add_id(item)
-      opt += "<li class='hide depth2'><label><input id=\"category_#{item['id']}\" name=\"#{item['id']}\" type='checkbox' value=\"#{item['id']}\">#{item['title']}</label></li>"
+      opt += "<li class='hide depth2'><label><input id=\"category_ids[]\" name=\"category_ids[]\" type='checkbox' value=\"#{item['id']}\">#{item['title']}</label></li>"
     end
     opt
   end
