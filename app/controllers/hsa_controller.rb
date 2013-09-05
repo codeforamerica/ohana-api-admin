@@ -1,5 +1,3 @@
-require 'json'
-
 class HsaController < ApplicationController
 
   def index
