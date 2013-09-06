@@ -77,7 +77,7 @@
         Select at least one applicable category
 
       %ul
-        = @cat_html
+        = render "categories"
 
     %div#kinds.inst-box
       %header
@@ -95,7 +95,7 @@
       %header
         %strong
           4. Apply edits to the database
-    = hidden_field_tag :service_id, service.id
-    = hidden_field_tag :location_id, @location.id
-    = hidden_field_tag :page, params[:page]
-    = submit_tag "Save changes", :class => "btn btn-primary"
+      = hidden_field_tag :service_id, service.id
+      = hidden_field_tag :location_id, @location.id
+      = hidden_field_tag :page, params[:page]
+      = submit_tag "Save changes", :class => "btn btn-primary"
