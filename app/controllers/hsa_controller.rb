@@ -82,7 +82,7 @@ class HsaController < ApplicationController
   def _add_id(item)
     @categories_raw.each do |cat|
       if (cat.oe_id.to_s == item['id'].to_s)
-        item['id'] = cat.id
+        item['id'] = cat._id
       end
     end
   end
