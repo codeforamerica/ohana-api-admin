@@ -13,4 +13,4 @@
 %p
   - @locations.each do |location|
     %ul
-      = link_to location.name, "/#{location.id}?page=#{params[:page]}"
+      = link_to location.name, "/#{location.id}?page=#{params[:page] ? params[:page] : 1}"
