@@ -3,7 +3,8 @@ require 'json'
 class HsaController < ApplicationController
 
   def index
-    @locations = Ohanakapa.locations(:page => params[:page], :per_page => 40)
+    @locations = Ohanakapa.search("search",
+      :exclude => "market_other", :page => params[:page], :per_page => 40)
   end
 
   def show
