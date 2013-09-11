@@ -87,7 +87,7 @@
 
       %p
         - if @location.key?(:kind)
-          = select_tag(:kind, options_for_select([['YES', 'human_services'], ['NO', 'other']], @location.kind))
+          = select_tag(:kind, options_for_select([['YES', 'human_services'], ['NO', 'other']], @location.kind.downcase.underscore))
         - else
           = select_tag(:kind, options_for_select([['--CHOOSE--', ''], ['YES', 'human_services'], ['NO', 'other']]))
 
