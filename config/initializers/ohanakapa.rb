@@ -4,7 +4,7 @@ stack = Faraday::Builder.new do |builder|
   builder.adapter Faraday.default_adapter
 end
 Ohanakapa.configure do |config|
-  config.api_token = ENV["OHANA_STAGING_API_TOKEN"]
+  config.api_token = ENV["OHANA_API_TOKEN"]
   config.middleware = stack
 end
 

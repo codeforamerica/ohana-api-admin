@@ -28,6 +28,6 @@ group :test do
   gem 'mongoid-rspec'
 end
 
-gem "ohanakapa", :git => "git://github.com/codeforamerica/ohanakapa-ruby.git", :branch => "add-nearby-endpoint", :ref => "eb69c0afe3"
+gem "ohanakapa", "~> 1.0"
 gem 'faraday-http-cache'
 gem 'newrelic_rpm'

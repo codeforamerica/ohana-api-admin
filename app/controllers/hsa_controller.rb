@@ -29,9 +29,9 @@ class HsaController < ApplicationController
     service_id = params[:service_id]
     location_id = params[:location_id]
 
-    Ohanakapa.post("services/#{service_id}/keywords", :query => { :keywords => keywords }) unless keywords.empty?
-    Ohanakapa.put("services/#{service_id}/categories", :query => { :category_ids => cat_ids }) if cat_ids
-    Ohanakapa.put("locations/#{location_id}", :query => { :kind => kind }) if kind
+    Ohanakapa.add_keywords_to_a_service(service_id, keywords) unless keywords.empty?
+    Ohanakapa.replace_all_categories(service_id, cat_ids) if cat_ids
+    Ohanakapa.update_location(location_id, :kind => kind) if kind
 
     redirect_to "#{root_url}?page=#{params[:page]}"
   end
