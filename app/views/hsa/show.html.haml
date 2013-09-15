@@ -86,7 +86,7 @@
         Is this entry a Human Service?
 
       %p
-        = select_tag(:kind, options_for_select([['--CHOOSE--', ''], ['Entertainment', 'entertainment'], ["Farmers' Market", 'farmers_market'], ['Human Service', 'human_services'], ['Other', 'other']], @location.key?(:kind) ? @location.kind.downcase.underscore : ""))
+        = select_tag(:kind, options_for_select([['--CHOOSE--', ''], ['Entertainment', 'entertainment'], ["Farmers' Market", 'farmers_market'], ['Human Services', 'human_services'], ['Other', 'other']], @location.key?(:kind) ? @location.kind.parameterize.underscore : ""))
 
     %div.inst-box
       %header
