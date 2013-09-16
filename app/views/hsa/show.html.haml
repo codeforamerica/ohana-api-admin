@@ -56,6 +56,13 @@
             - service.keywords.each do |keyword|
               %li
                 = keyword
+      %p#existing-keywords
+        %strong= "Existing Categories:"
+        %ul
+          - if service.key?(:categories)
+            - service.categories.each do |cat|
+              %li
+                = cat.name
 
   - services.each do |service|
     %div.inst-box
