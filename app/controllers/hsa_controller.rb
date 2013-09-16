@@ -8,6 +8,10 @@ class HsaController < ApplicationController
 
   def show
     @location = Ohanakapa.location(params[:id])
+    unless @location.key?(:emails) && @location.emails.include?(current_user.email)
+      redirect_to root_url,
+        :alert => "Sorry, you don't have access to that page."
+    end
 
     # expires_in 3.minutes, :public => true
 
