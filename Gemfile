@@ -31,3 +31,6 @@ end
 gem "ohanakapa", "~> 1.0"
 gem 'faraday-http-cache'
 gem 'newrelic_rpm'
+
+gem "devise" # for authentication
+gem "cancan" # for authorization

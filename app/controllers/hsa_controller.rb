@@ -1,6 +1,5 @@
-require 'json'
-
 class HsaController < ApplicationController
+  before_filter :authenticate_user!
 
   def index
     @locations = Ohanakapa.search("search",
