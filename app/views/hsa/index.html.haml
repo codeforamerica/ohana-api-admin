@@ -1,14 +1,13 @@
 %h1 Instructions
 %p
   Thank you for helping us categorize these organizations!
-  Each page includes a link to 40 organizations. The idea is that each person
+  Each page includes a link to 30 organizations. The idea is that each person
   will take a different page. To go to a different page, add '?page=' and the
   page number to the end of the browser's website address (the URL). For example, here is
   = link_to "page 2.", "#{root_url}?page=2"
 %p
   To start, click on one of the links, which will take you to the details page
-  for the organization, where you will find further instructions. If an organization
-  is not human-services related, feel free to skip it. Thank you!
+  for the organization, where you will find further instructions. Thank you!
 %br
 %p
   - @locations.each do |location|

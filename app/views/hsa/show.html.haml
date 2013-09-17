@@ -3,9 +3,13 @@
   %p
     %div.inst-step
       %strong 1
+    Select whether the entry is a Human Service or not. If it is not, skip the other sections and click "Save changes" at the bottom of the page.
+  %p
+    %div.inst-step
+      %strong 2
     If there are any keywords, short phrases,
-    or abbreviations (like CPS!) that aren't already captured in the current
-    keywords list or the categories checkboxes, please add them in one of the boxes
+    or abbreviations that aren't already captured in the existing
+    keywords or categories lists, please add them in one of the boxes
     under the
     %strong Keywords
     section.
@@ -13,20 +17,14 @@
     It's fine to leave them blank.
   %p
     %div.inst-step
-      %strong 2
+      %strong 3
     There are also checkboxes for each
     %strong
       category
-    based on the Open Eligibility terms
-    we showed you on Tuesday. Please check at least one that accurately describes the services provided by the organization.
+    based on the Open Eligibility taxonomy. For human services only, please check at least one that accurately describes the services provided by the organization.
     %em
       Please provide the nearest match.
     Better terms can be captured in the keywords.
-
-  %p
-    %div.inst-step
-      %strong 3
-    Select whether the entry is a Human Service or not.
 
   %p
     %div.inst-step
@@ -65,10 +63,19 @@
                 = cat.name
 
   - services.each do |service|
+    %div#kinds.inst-box
+      %header
+        %strong
+          1. Kind:
+        Is this entry a Human Service?
+
+      %p
+        = select_tag(:kind, options_for_select([['--CHOOSE--', ''], ['Arts', 'arts'], ['Entertainment', 'entertainment'], ["Farmers' Markets", 'farmers_market'], ['Government', 'gov'], ['Human Services', 'human_services'], ['Libraries', 'libraries'], ['Museums', 'museums'], ['Other', 'other'], ['Parks', 'parks'], ['Sports', 'sports']], @location.key?(:kind) ? @location.kind.parameterize.underscore : ""))
+
     %div.inst-box
       %header
         %strong
-          1. Keywords:
+          2. Keywords:
         Add one or more new keywords
 
       .form-group
@@ -80,20 +87,11 @@
     %div#categories.inst-box
       %header
         %strong
-          2. Categories:
+          3. Categories:
         Select at least one applicable category
 
       %ul
         = render "categories"
-
-    %div#kinds.inst-box
-      %header
-        %strong
-          3. Kind:
-        Is this entry a Human Service?
-
-      %p
-        = select_tag(:kind, options_for_select([['--CHOOSE--', ''], ['Entertainment', 'entertainment'], ["Farmers' Market", 'farmers_market'], ['Human Services', 'human_services'], ['Other', 'other']], @location.key?(:kind) ? @location.kind.parameterize.underscore : ""))
 
     %div.inst-box
       %header
