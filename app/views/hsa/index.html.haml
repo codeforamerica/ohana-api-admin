@@ -11,5 +11,7 @@
 %br
 %p
   - @locations.each do |location|
-    %ul
-      = link_to location.name, "/#{location.id}?page=#{params[:page] ? params[:page] : 1}"
+    - location.services.each do |service|
+      - if service.updated_at < (Time.now - 2.hours) || location.updated_at < (Time.now - 2.hours)
+        %ul
+          = link_to location.name, "/#{location.id}?page=#{params[:page] ? params[:page] : 1}"
