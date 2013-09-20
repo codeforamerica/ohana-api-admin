@@ -62,6 +62,32 @@ var main = (function () {
 					else
 					{
 						$(curr).addClass('hide');
+						$('input',$(curr)).prop('checked', false);
+						var lnks3 = $('li.depth3',$(curr));
+						var curr3;
+						for (var l3=0; l3 < lnks3.length; l3++)
+						{
+							curr3 = lnks3[l3];
+							$(curr3).addClass('hide');
+							$('input',$(curr3)).prop('checked', false);
+						}
+					}
+				}
+			}
+			else if (item.hasClass('depth2'))
+			{
+				var lnks = $('li.depth3',item);
+				var curr;
+				for (var l=0; l < lnks.length; l++)
+				{
+					curr = lnks[l];
+					if (checkbox.checked)
+					{
+						$(curr).removeClass('hide');
+					}
+					else
+					{
+						$(curr).addClass('hide');
 					}
 				}
 			}

@@ -42,7 +42,22 @@ task :cats2html => :environment do
     opt = ''
     data.each do |item|
       _add_id(item)
-      opt += "<li class='hide depth2'><label><input id=\"category_#{item['id']}\" name=\"category_ids[]\" type='checkbox' value=\"#{item['id']}\">#{item['title']}</label></li>"
+      opt += "<li class='hide depth2'><label><input id=\"category_#{item['id']}\" name=\"category_ids[]\" type='checkbox' value=\"#{item['id']}\">#{item['title']}</label>"
+      if item['fourth_level']
+        opt += "<ul>".html_safe
+        opt += _traverse4(item['fourth_level'],toptitle,item['title'])
+        opt += "</ul>".html_safe
+      end
+      opt += "</li>"
+    end
+    opt
+  end
+
+  def _traverse4(data,toptitle,thirdtitle)
+    opt = ''
+    data.each do |item|
+      _add_id(item)
+      opt += "<li class='hide depth3'><label><input id=\"category_#{item['id']}\" name=\"category_ids[]\" type='checkbox' value=\"#{item['id']}\">#{item['title']}</label></li>"
     end
     opt
   end
