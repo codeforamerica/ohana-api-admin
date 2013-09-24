@@ -72,6 +72,20 @@
       %p
         = select_tag(:kind, options_for_select([['--CHOOSE--', ''], ['Arts', 'arts'], ['Entertainment', 'entertainment'], ["Farmers' Markets", 'farmers_markets'], ['Government', 'government'], ['Human Services', 'human_services'], ['Libraries', 'libraries'], ['Museums', 'museums'], ['Other', 'other'], ['Parks', 'parks'], ['Sports', 'sports']], @location.key?(:kind) ? @location.kind.parameterize.underscore : ""))
 
+      %p
+        - days.each do |day|
+          = "#{day} Open"
+          = select_tag("#{day}_first_open", options_for_select(create_hours(), @location.key?(:schedule) ? "@location.schedule.#{day.downcase}[0].open" : "09:00"))
+          = "#{day} Close"
+          = select_tag("#{day}_first_close", options_for_select(create_hours(), @location.key?(:schedule) ? "@location.schedule.#{day.downcase}[0].close" : "12:00"))
+          %br
+          = "#{day} Open"
+          = select_tag("#{day}_sec_open", options_for_select(create_hours(), @location.key?(:schedule) ? "@location.schedule.#{day.downcase}[1].open" : "13:00"))
+          = "#{day} Close"
+          = select_tag("#{day}_sec_close", options_for_select(create_hours(), @location.key?(:schedule) ? "@location.schedule.#{day.downcase}[1].close" : "17:00"))
+          %br
+          %br
+
     %div.inst-box
       %header
         %strong
