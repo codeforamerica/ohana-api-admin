@@ -70,7 +70,7 @@
         Is this entry a Human Service?
 
       %p
-        = select_tag(:kind, options_for_select([['--CHOOSE--', ''], ['Arts', 'arts'], ['Entertainment', 'entertainment'], ["Farmers' Markets", 'farmers_markets'], ['Government', 'government'], ['Human Services', 'human_services'], ['Libraries', 'libraries'], ['Museums', 'museums'], ['Other', 'other'], ['Parks', 'parks'], ['Sports', 'sports']], @location.key?(:kind) ? @location.kind.parameterize.underscore : ""))
+        = select_tag(:kind, options_for_select([['--CHOOSE--', ''], ['Arts', 'arts'], ['Clinics', 'clinics'], ['Education', 'education'], ['Entertainment', 'entertainment'], ["Farmers' Markets", 'farmers_markets'], ['Government', 'government'], ['Human Services', 'human_services'], ['Libraries', 'libraries'], ['Museums', 'museums'], ['Other', 'other'], ['Parks', 'parks'], ['Sports', 'sports']], @location.key?(:kind) ? @location.kind.parameterize.underscore : ""))
 
     %div.inst-box
       %header
