@@ -4,7 +4,7 @@ class HsaController < ApplicationController
 
   def index
     @locations = Ohanakapa.search("search",
-      :exclude => "market_other", :page => params[:page])
+      :include => "no_kind", :page => params[:page])
   end
 
   def show
