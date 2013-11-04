@@ -1,0 +1,11 @@
+%div.inst-box
+  %header
+    %strong
+      Email (for general info)
+    If the email belongs to a contact, please move it to the existing contact, or create a new contact.
+  %p
+    - if @location.key?(:emails)
+      - @location.emails.each_with_index do |email, i|
+        = text_field_tag "emails[]", email, :class => "span3", maxlength: 25, id: "email_#{i}"
+    - else
+      = text_field_tag "emails[]", "", :class => "span3", maxlength: 25, id: "new_email"

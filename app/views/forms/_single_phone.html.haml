@@ -1,0 +1,16 @@
+%fieldset#phones
+  = "Number:"
+  = text_field_tag "number[]", "", maxlength: 12, class: "span2"
+  %br
+  = "Vanity Number:"
+  = text_field_tag "vanity_number[]", "", maxlength: 12, class: "span2"
+  %br
+  = "Extension:"
+  = text_field_tag "extension[]", "", maxlength: 8, class: "span2"
+  %br
+  = "Department:"
+  = text_field_tag "department[]", "", maxlength: 50, class: "span2"
+  %br
+  = hidden_field_tag "hours[]", ""
+  = link_to "Delete this number permanently", '#', class: "btn btn-danger remove_phone"
+  = link_to "undo", '#', class: "undo", :style => "display: none;"

@@ -1,0 +1,12 @@
+%div.inst-box
+  %header
+    %strong
+      Keywords
+  - if service.key?(:keywords)
+    - service.keywords.each_with_index do |keyword, i|
+      %fieldset#keywords
+        = text_field_tag "keywords[]", keyword, class: "span4", id: "keyword_#{i}"
+  - fields = render "forms/add_keyword"
+  %p
+    = link_to_function "Add a new keyword", ("add_fields(1, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"
+

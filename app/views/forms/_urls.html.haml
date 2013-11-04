@@ -1,0 +1,13 @@
+%div.inst-box
+  %header
+    %strong
+      Websites (must include "http://" or "https://")
+  - if @location.key?(:urls)
+    - @location.urls.each_with_index do |url, i|
+      %fieldset#urls
+        = text_field_tag "urls[]", url, class: "span9", id: "url_#{i}"
+        %br
+        = link_to "Delete this website permanently", '#', class: "btn btn-danger"
+  - fields = render "forms/add_url"
+  %p
+    = link_to_function "Add a new website", ("add_fields(1, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"

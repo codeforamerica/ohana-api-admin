@@ -1,0 +1,17 @@
+%div.inst-box
+  %header
+    %strong
+      Street Address
+  %p
+    = "Street"
+    = text_field_tag "street", @location.key?(:address) ? @location.address.street : "", maxlength: 50, class: "span4"
+    %br
+    = "City"
+    = text_field_tag "city", @location.key?(:address) ? @location.address.city : "", maxlength: 25
+    %br
+    = "State (2-letter abbreviation)"
+    = text_field_tag "state", @location.key?(:address) ? @location.address.state : "CA", maxlength: 2
+    %br
+    = "ZIP Code"
+    = text_field_tag "zip", @location.key?(:address) ? @location.address.zip : "", maxlength: 10, class: "span2"
+    %br

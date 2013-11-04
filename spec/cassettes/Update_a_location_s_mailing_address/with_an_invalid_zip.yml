@@ -1,0 +1,219 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://ohanapi.herokuapp.com/api/locations/admin-test-location?api_token=<API_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - <API_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 04 Nov 2013 08:16:27 GMT
+      Etag:
+      - '"b9e5939f7b3802b4de40f6dea8364d02"'
+      Status:
+      - 200 OK
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4869'
+      X-Request-Id:
+      - 6b42ed55059e7529212bdeed8b8934bc
+      X-Runtime:
+      - '0.024941'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '1239'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":"52733b05fafbf0a01a000001","accessibility":["Elevator","Disabled
+        Restroom"],"address":{"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":"527757ce37f9bab943000005","name":"Moncef","title":"Director"}],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","faxes":[{"number":"7035551212","department":"CalFresh"}],"kind":"Test","name":"Admin
+        Test Location","phones":[{"number":"7035551212","vanity_number":"703555-ABCD","extension":"x1223","department":"CalFresh"}],"short_desc":"This
+        is a short description","slugs":["job-training-and-placement-program-1","admin-test-location"],"transportation":"SAMTRANS
+        stops within 1/2 mile.","updated_at":"2013-11-04T00:16:14-08:00","urls":["http://codeforamerica.org"],"url":"http://ohanapi.herokuapp.com/api/locations/52733b05fafbf0a01a000001","services":[{"id":"52733ce076ac6ae977000002","name":"huzzah","updated_at":"2013-10-31T22:50:38-07:00"}],"organization":{"id":"527334e4456acab967000002","name":"Admin
+        Test Org","slugs":["jobtrain-1","admin-test-org"],"url":"http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002","locations_url":"http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002/locations"}}'
+    http_version: 
+  recorded_at: Mon, 04 Nov 2013 08:16:31 GMT
+- request:
+    method: delete
+    uri: http://ohanapi.herokuapp.com/api/services/52733ce076ac6ae977000002/keywords?api_token=<API_TOKEN>
+    body:
+      encoding: UTF-8
+      string: '{}'
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - <API_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 04 Nov 2013 08:16:28 GMT
+      Etag:
+      - '"97279b1fa94255bbbb4ee85fabc552f2"'
+      Status:
+      - 200 OK
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4868'
+      X-Request-Id:
+      - bd53acd18bf781d0ff80acba762068a6
+      X-Runtime:
+      - '0.257442'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '377'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_id":"52733ce076ac6ae977000002","audience":null,"category_ids":[],"created_at":"2013-10-31T22:32:16-07:00","description":null,"eligibility":null,"fees":null,"funding_sources":null,"how_to_apply":null,"keywords":[],"location_id":"52733b05fafbf0a01a000001","name":"huzzah","service_areas":null,"short_desc":null,"updated_at":"2013-10-31T22:50:38-07:00","urls":null,"wait":null}'
+    http_version: 
+  recorded_at: Mon, 04 Nov 2013 08:16:32 GMT
+- request:
+    method: put
+    uri: http://ohanapi.herokuapp.com/api/locations/52733b05fafbf0a01a000001?accessibility%5B0%5D=elevator&accessibility%5B1%5D=restroom&address%5Bcity%5D=fairfax&address%5Bstate%5D=va&address%5Bstreet%5D=bozo&address%5Bzip%5D=12345&api_token=<API_TOKEN>&contacts%5Bname%5D=Moncef&contacts%5Btitle%5D=Director&description=%0AThis%20is%20a%20description&emails%5B0%5D=&faxes%5Bdepartment%5D=CalFresh&faxes%5Bnumber%5D=7035551212&kind=test&mail_address%5Battention%5D=&mail_address%5Bcity%5D=utopia&mail_address%5Bstate%5D=CA&mail_address%5Bstreet%5D=123&mail_address%5Bzip%5D=1234&name=Admin%20Test%20Location&phones%5Bdepartment%5D=CalFresh&phones%5Bextension%5D=x1223&phones%5Bnumber%5D=7035551212&phones%5Bvanity_number%5D=703555-ABCD&short_desc=%0AThis%20is%20a%20short%20description&transportation=%0ASAMTRANS%20stops%20within%201/2%20mile.&urls%5B0%5D=http://codeforamerica.org
+    body:
+      encoding: UTF-8
+      string: '{}'
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - <API_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 04 Nov 2013 08:16:29 GMT
+      Status:
+      - 400 Bad Request
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4867'
+      X-Request-Id:
+      - 532ef6f5b051d57ae08b68b97167b166
+      X-Runtime:
+      - '0.028059'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '224'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"message":"\nProblem:\n  Validation of Location failed.\nSummary:\n  The
+        following errors were found: Zip 1234 is not a valid ZIP code\nResolution:\n  Try
+        persisting the document with valid data or remove the validations."}'
+    http_version: 
+  recorded_at: Mon, 04 Nov 2013 08:16:33 GMT
+- request:
+    method: get
+    uri: http://ohanapi.herokuapp.com/api/locations/admin-test-location?api_token=<API_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - <API_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 04 Nov 2013 08:16:29 GMT
+      Etag:
+      - '"b9e5939f7b3802b4de40f6dea8364d02"'
+      Status:
+      - 200 OK
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4866'
+      X-Request-Id:
+      - 2925cd7a50140a57dc3d1ef8607d852b
+      X-Runtime:
+      - '0.027455'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '1239'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":"52733b05fafbf0a01a000001","accessibility":["Elevator","Disabled
+        Restroom"],"address":{"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":"527757ce37f9bab943000005","name":"Moncef","title":"Director"}],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","faxes":[{"number":"7035551212","department":"CalFresh"}],"kind":"Test","name":"Admin
+        Test Location","phones":[{"number":"7035551212","vanity_number":"703555-ABCD","extension":"x1223","department":"CalFresh"}],"short_desc":"This
+        is a short description","slugs":["job-training-and-placement-program-1","admin-test-location"],"transportation":"SAMTRANS
+        stops within 1/2 mile.","updated_at":"2013-11-04T00:16:14-08:00","urls":["http://codeforamerica.org"],"url":"http://ohanapi.herokuapp.com/api/locations/52733b05fafbf0a01a000001","services":[{"id":"52733ce076ac6ae977000002","name":"huzzah","updated_at":"2013-10-31T22:50:38-07:00"}],"organization":{"id":"527334e4456acab967000002","name":"Admin
+        Test Org","slugs":["jobtrain-1","admin-test-org"],"url":"http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002","locations_url":"http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002/locations"}}'
+    http_version: 
+  recorded_at: Mon, 04 Nov 2013 08:16:33 GMT
+recorded_with: VCR 2.6.0

@@ -1,0 +1,32 @@
+%div.inst-box
+  %header
+    %strong
+      Contacts
+  - if @location.key?(:contacts)
+    - @location.contacts.each do |contact|
+      %fieldset#contact
+        = "Name*:"
+        = text_field_tag "names[]", contact.key?(:name) ? contact.name : "", maxlength: 20, class: "span2", id: "names_#{contact.id}"
+        %br
+        = "Title*:"
+        = text_field_tag "titles[]", contact.key?(:title) ? contact.title : "", maxlength: 20, class: "span2", id: "titles_#{contact.id}"
+        %br
+        = "Email:"
+        = text_field_tag "contact_emails[]", contact.key?(:email) ? contact.email : "", maxlength: 50, class: "span3", id: "emails_#{contact.id}"
+        %br
+        = "Phone:"
+        = text_field_tag "contact_phones[]", contact.key?(:phone) ? contact.phone : "", maxlength: 12, class: "span2", id: "phones_#{contact.id}"
+        %br
+        = "Phone Extension:"
+        = text_field_tag "contact_phone_extensions[]", contact.key?(:extension) ? contact.extension : "", maxlength: 12, class: "span2", id: "extension_#{contact.id}"
+        %br
+        = "Fax:"
+        = text_field_tag "contact_faxes[]", contact.key?(:fax) ? contact.fax : "", maxlength: 50, class: "span2", id: "fax_#{contact.id}"
+        %br
+        = link_to "Delete this contact permanently", '#', class: "btn btn-danger"
+        = link_to "undo", '#', class: "undo", :style => "display: none;"
+
+
+  - fields = render "forms/single_contact"
+  %p
+    = link_to_function "Add a new contact", ("add_fields(6, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"

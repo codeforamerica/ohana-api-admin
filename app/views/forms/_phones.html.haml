@@ -1,0 +1,26 @@
+%div.inst-box
+  %header
+    %strong
+      Phone Numbers (10 digits only please, in this format: 650-802-7922)
+  - if @location.key?(:phones)
+    - @location.phones.each do |phone|
+      %fieldset#phones
+        = "Number*:"
+        = text_field_tag "number[]", phone.key?(:number) ? phone.number : "", maxlength: 12, class: "span2"
+        %br
+        = "Vanity Number:"
+        = text_field_tag "vanity_number[]", phone.key?(:vanity_number) ? phone.vanity_number : "", maxlength: 12, class: "span2"
+        %br
+        = "Extension:"
+        = text_field_tag "extension[]", phone.key?(:extension) ? phone.extension : "", maxlength: 8, class: "span2"
+        %br
+        = "Department:"
+        = text_field_tag "department[]", phone.key?(:department) ? phone.department : "", maxlength: 50, class: "span4"
+        %br
+        = link_to "Delete this number permanently", '#', class: "btn btn-danger remove_phone"
+        = link_to "undo", '#', class: "undo", :style => "display: none;"
+        = hidden_field_tag "hours[]", phone.key?(:hours) ? phone.hours : ""
+
+  - fields = render "forms/single_phone"
+  %p
+    = link_to_function "Add a new number", ("add_fields(5, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary add_phone"
