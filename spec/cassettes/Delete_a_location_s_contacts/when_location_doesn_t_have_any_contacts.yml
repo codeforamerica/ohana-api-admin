@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://ohanapi.herokuapp.com/api/locations/location-with-no-phone?api_token=<API_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - <API_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 04 Nov 2013 08:17:38 GMT
+      Etag:
+      - '"30b1738acb7e1a1961cba385299cf8d8"'
+      Status:
+      - 200 OK
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4797'
+      X-Request-Id:
+      - b27466d1d932f0c86cbe495e353b995f
+      X-Runtime:
+      - '0.121851'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '778'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":"5273400476ac6ae977000003","coordinates":[-73.9395687,42.8142432],"description":"no
+        phone","kind":"Test","mail_address":{"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slugs":["location-with-no-phone"],"updated_at":"2013-11-04T00:15:15-08:00","url":"http://ohanapi.herokuapp.com/api/locations/5273400476ac6ae977000003","services":[{"id":"52734015fafbf0a01a000003","name":"no
+        service","updated_at":"2013-10-31T22:54:52-07:00"}],"organization":{"id":"52733d5676ac6a5df7000001","name":"Testing
+        org","slugs":["testing-org"],"url":"http://ohanapi.herokuapp.com/api/organizations/52733d5676ac6a5df7000001","locations_url":"http://ohanapi.herokuapp.com/api/organizations/52733d5676ac6a5df7000001/locations"}}'
+    http_version: 
+  recorded_at: Mon, 04 Nov 2013 08:17:42 GMT
+recorded_with: VCR 2.6.0

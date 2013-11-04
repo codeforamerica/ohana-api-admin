@@ -1,0 +1,6 @@
+%div.inst-box
+  %header
+    %strong
+      Description*
+  %p
+    = text_area_tag "description", @location.key?(:description) ? @location.description : "", :class => "span9", rows: 10

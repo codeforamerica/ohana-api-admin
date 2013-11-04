@@ -1,0 +1,15 @@
+%div.inst-box
+  %header
+    %strong
+      Fax Numbers
+    If the fax belongs to a contact, please move it to the existing contact, or create a new contact.
+    If the fax number contains a department in parentheses, move the department to the department field.
+  - if @location.key?(:faxes)
+    - @location.faxes.each do |fax|
+      - if fax.is_a?(String)
+        = render "forms/single_fax_array", :fax => fax
+      - elsif fax.is_a?(Sawyer::Resource)
+        = render "forms/single_fax_hash", :fax => fax
+  - fields = render "forms/single_fax"
+  %p
+    = link_to_function "Add a new fax number", ("add_fields(2, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary add_fax"

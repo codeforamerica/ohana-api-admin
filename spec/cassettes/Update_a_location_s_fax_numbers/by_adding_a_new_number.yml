@@ -1,0 +1,270 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://ohanapi.herokuapp.com/api/locations/location-with-no-phone?api_token=<API_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - <API_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 04 Nov 2013 08:18:57 GMT
+      Etag:
+      - '"edd8d9b30336b89a0ae35568b9a184df"'
+      Status:
+      - 200 OK
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4720'
+      X-Request-Id:
+      - 751a00cb9b290b630ceabb11ec2d6b46
+      X-Runtime:
+      - '0.029629'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '778'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":"5273400476ac6ae977000003","coordinates":[-73.9395687,42.8142432],"description":"no
+        phone","kind":"Test","mail_address":{"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slugs":["location-with-no-phone"],"updated_at":"2013-11-04T00:18:44-08:00","url":"http://ohanapi.herokuapp.com/api/locations/5273400476ac6ae977000003","services":[{"id":"52734015fafbf0a01a000003","name":"no
+        service","updated_at":"2013-10-31T22:54:52-07:00"}],"organization":{"id":"52733d5676ac6a5df7000001","name":"Testing
+        org","slugs":["testing-org"],"url":"http://ohanapi.herokuapp.com/api/organizations/52733d5676ac6a5df7000001","locations_url":"http://ohanapi.herokuapp.com/api/organizations/52733d5676ac6a5df7000001/locations"}}'
+    http_version: 
+  recorded_at: Mon, 04 Nov 2013 08:19:01 GMT
+- request:
+    method: delete
+    uri: http://ohanapi.herokuapp.com/api/services/52734015fafbf0a01a000003/keywords?api_token=<API_TOKEN>
+    body:
+      encoding: UTF-8
+      string: '{}'
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - <API_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 04 Nov 2013 08:18:59 GMT
+      Etag:
+      - '"7809c6ad0327fa474c4300cb04b67728"'
+      Status:
+      - 200 OK
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4719'
+      X-Request-Id:
+      - f806091d5795e54b3ba86793fa7b4b2e
+      X-Runtime:
+      - '0.242360'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '381'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_id":"52734015fafbf0a01a000003","audience":null,"category_ids":[],"created_at":"2013-10-31T22:45:57-07:00","description":null,"eligibility":null,"fees":null,"funding_sources":null,"how_to_apply":null,"keywords":[],"location_id":"5273400476ac6ae977000003","name":"no
+        service","service_areas":null,"short_desc":null,"updated_at":"2013-10-31T22:54:52-07:00","urls":null,"wait":null}'
+    http_version: 
+  recorded_at: Mon, 04 Nov 2013 08:19:03 GMT
+- request:
+    method: delete
+    uri: http://ohanapi.herokuapp.com/api/locations/5273400476ac6ae977000003/contacts?api_token=<API_TOKEN>
+    body:
+      encoding: UTF-8
+      string: '{}'
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - <API_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 04 Nov 2013 08:18:59 GMT
+      Etag:
+      - '"4113aa5f4148a7f81fcc03ede7d9f388"'
+      Status:
+      - 200 OK
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4718'
+      X-Request-Id:
+      - c4fc7e89fa49c8743f5bff52354fc7df
+      X-Runtime:
+      - '0.222803'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '645'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_id":"5273400476ac6ae977000003","_slugs":["location-with-no-phone"],"accessibility":[],"ask_for":null,"coordinates":[-73.9395687,42.8142432],"created_at":"2013-10-31T22:45:40-07:00","description":"no
+        phone","emails":[],"faxes":null,"hours":null,"kind":"test","languages":null,"mail_address":{"_id":"5276de5f1f76728452000001","attention":"","city":"fairfax","state":"VA","street":"puma","zip":"22031"},"market_match":null,"name":"Location
+        with no phone","organization_id":"52733d5676ac6a5df7000001","payments":null,"phones":null,"products":null,"short_desc":"no
+        phone","transportation":null,"updated_at":"2013-11-04T00:18:44-08:00","urls":null}'
+    http_version: 
+  recorded_at: Mon, 04 Nov 2013 08:19:03 GMT
+- request:
+    method: put
+    uri: http://ohanapi.herokuapp.com/api/locations/5273400476ac6ae977000003?accessibility&address&api_token=<API_TOKEN>&contacts&description=no%20phone&emails%5B0%5D=&faxes%5Bdepartment%5D=CalFresh&faxes%5Bnumber%5D=703&kind=test&mail_address%5Battention%5D=&mail_address%5Bcity%5D=fairfax&mail_address%5Bstate%5D=VA&mail_address%5Bstreet%5D=puma&mail_address%5Bzip%5D=22031&name=Location%20with%20no%20phone&phones&short_desc=no%20phone&transportation=&urls
+    body:
+      encoding: UTF-8
+      string: '{}'
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - <API_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 04 Nov 2013 08:19:00 GMT
+      Status:
+      - 400 Bad Request
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4717'
+      X-Request-Id:
+      - 2bfb448b774cc25b272d6b36bacbb3be
+      X-Runtime:
+      - '0.018278'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '230'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"message":"\nProblem:\n  Validation of Location failed.\nSummary:\n  The
+        following errors were found: Faxes 703 is not a valid US fax number\nResolution:\n  Try
+        persisting the document with valid data or remove the validations."}'
+    http_version: 
+  recorded_at: Mon, 04 Nov 2013 08:19:03 GMT
+- request:
+    method: get
+    uri: http://ohanapi.herokuapp.com/api/locations/location-with-no-phone?api_token=<API_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - <API_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 04 Nov 2013 08:19:00 GMT
+      Etag:
+      - '"edd8d9b30336b89a0ae35568b9a184df"'
+      Status:
+      - 200 OK
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4716'
+      X-Request-Id:
+      - 68d9969235de1356568f8bc0c745e75e
+      X-Runtime:
+      - '0.026515'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '778'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":"5273400476ac6ae977000003","coordinates":[-73.9395687,42.8142432],"description":"no
+        phone","kind":"Test","mail_address":{"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slugs":["location-with-no-phone"],"updated_at":"2013-11-04T00:18:44-08:00","url":"http://ohanapi.herokuapp.com/api/locations/5273400476ac6ae977000003","services":[{"id":"52734015fafbf0a01a000003","name":"no
+        service","updated_at":"2013-10-31T22:54:52-07:00"}],"organization":{"id":"52733d5676ac6a5df7000001","name":"Testing
+        org","slugs":["testing-org"],"url":"http://ohanapi.herokuapp.com/api/organizations/52733d5676ac6a5df7000001","locations_url":"http://ohanapi.herokuapp.com/api/organizations/52733d5676ac6a5df7000001/locations"}}'
+    http_version: 
+  recorded_at: Mon, 04 Nov 2013 08:19:04 GMT
+recorded_with: VCR 2.6.0

@@ -1,59 +1,11 @@
-%section#instructions
-  %h1 Instructions
-  %p
-    %div.inst-step
-      %strong 1
-    Select whether the entry is a Human Service or not. If it is not, skip the other sections and click "Save changes" at the bottom of the page.
-  %p
-    %div.inst-step
-      %strong 2
-    If there are any keywords, short phrases,
-    or abbreviations that aren't already captured in the existing
-    keywords or categories lists, please add them in one of the boxes
-    under the
-    %strong Keywords
-    section.
-    %em Please don't feel obligated to fill the keywords out if they aren't applicable to an entry.
-    It's fine to leave them blank.
-  %p
-    %div.inst-step
-      %strong 3
-    There are also checkboxes for each
-    %strong
-      category
-    based on the Open Eligibility taxonomy. For human services only, please check at least one that accurately describes the services provided by the organization.
-    %em
-      Please provide the nearest match.
-    Better terms can be captured in the keywords.
-
-  %p
-    %div.inst-step
-      %strong 4
-    When finished, click on
-    %strong "Save changes"
-
-  %p
-    Thank you!
-
 - loc_name = @location.name
 - org_name = @location.organization.name
 - services = @location.services
-= form_tag "edit_services", :name => "edit_form" do
+= form_tag "edit_services", :name => "edit_form", :id => "edit_form" do
   %div.content-box
-    %h1 existing data
     %h2= loc_name == org_name ? loc_name : "#{org_name} / #{loc_name}"
-    %p
-      %strong= "Description:"
-      = @location.description
 
     - services.each do |service|
-      %p#existing-keywords
-        %strong= "Existing Keywords:"
-        %ul
-          - if service.key?(:keywords)
-            - service.keywords.each do |keyword|
-              %li
-                = keyword
       %p#existing-keywords
         %strong= "Existing Categories:"
         %ul
@@ -62,46 +14,34 @@
               %li
                 = cat.name
 
+  = render "forms/org_name"
+  = render "forms/location_name"
+  = render "forms/description"
+  = render "forms/short_desc"
+  = render "forms/transportation"
+
+  = render "forms/phones"
+  = render "forms/fax"
+  = render "forms/contacts"
+  = render "forms/email"
+
+  = render "forms/accessibility"
+
+  = render "forms/address"
+  = render "forms/mail_address"
+
+  = render "forms/urls"
+
   - services.each do |service|
-    %div#kinds.inst-box
-      %header
-        %strong
-          1. Kind:
-        Is this entry a Human Service?
 
-      %p
-        = select_tag(:kind, options_for_select([['--CHOOSE--', ''], ['Arts', 'arts'], ['Entertainment', 'entertainment'], ["Farmers' Markets", 'farmers_markets'], ['Government', 'government'], ['Human Services', 'human_services'], ['Libraries', 'libraries'], ['Museums', 'museums'], ['Other', 'other'], ['Parks', 'parks'], ['Sports', 'sports']], @location.key?(:kind) ? @location.kind.parameterize.underscore : ""))
+    = render "forms/kind"
 
-      %p
-        - days.each do |day|
-          = "#{day} Open"
-          = select_tag("#{day}_first_open", options_for_select(create_hours(), @location.key?(:schedule) ? "@location.schedule.#{day.downcase}[0].open" : "09:00"))
-          = "#{day} Close"
-          = select_tag("#{day}_first_close", options_for_select(create_hours(), @location.key?(:schedule) ? "@location.schedule.#{day.downcase}[0].close" : "12:00"))
-          %br
-          = "#{day} Open"
-          = select_tag("#{day}_sec_open", options_for_select(create_hours(), @location.key?(:schedule) ? "@location.schedule.#{day.downcase}[1].open" : "13:00"))
-          = "#{day} Close"
-          = select_tag("#{day}_sec_close", options_for_select(create_hours(), @location.key?(:schedule) ? "@location.schedule.#{day.downcase}[1].close" : "17:00"))
-          %br
-          %br
-
-    %div.inst-box
-      %header
-        %strong
-          2. Keywords:
-        Add one or more new keywords
-
-      .form-group
-        = text_field_tag "keyword1", nil, :placeholder => 'keyword'
-        = text_field_tag "keyword2", nil, :placeholder => 'keyword'
-        = text_field_tag "keyword3", nil, :placeholder => 'keyword'
-        = text_field_tag "keyword4", nil, :placeholder => 'keyword'
+    = render "forms/keywords", :service => service
 
     %div#categories.inst-box
       %header
         %strong
-          3. Categories:
+          Categories:
         Select at least one applicable category
 
       %ul
@@ -113,5 +53,6 @@
           4. Apply edits to the database
       = hidden_field_tag :service_id, service.id
       = hidden_field_tag :location_id, @location.id
+      = hidden_field_tag :org_id, @location.organization.id
       = hidden_field_tag :page, params[:page]
       = submit_tag "Save changes", :class => "btn btn-primary"

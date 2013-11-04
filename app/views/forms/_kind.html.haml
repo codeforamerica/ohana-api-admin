@@ -1,0 +1,8 @@
+%div#kinds.inst-box
+  %header
+    %strong
+      Kind
+    (Select the type of location)
+
+  %p
+    = select_tag(:kind, options_for_select([['--CHOOSE--', ''], ['Arts', 'arts'], ['Entertainment', 'entertainment'], ["Farmers' Markets", 'farmers_markets'], ['Government', 'government'], ['Human Services', 'human_services'], ['Libraries', 'libraries'], ['Museums', 'museums'], ['Other', 'other'], ['Parks', 'parks'], ['Sports', 'sports'], ['Test', 'test']], @location.key?(:kind) ? @location.kind.parameterize.underscore : ""))

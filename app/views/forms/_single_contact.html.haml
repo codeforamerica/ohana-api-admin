@@ -1,0 +1,21 @@
+%fieldset#new_contact
+  = "Name*:"
+  = text_field_tag "names[]", "", maxlength: 20, class: "span2"
+  %br
+  = "Title*:"
+  = text_field_tag "titles[]", "", maxlength: 20, class: "span2"
+  %br
+  = "Email:"
+  = text_field_tag "contact_emails[]", "", maxlength: 50, class: "span2"
+  %br
+  = "Phone:"
+  = text_field_tag "contact_phones[]", "", maxlength: 12, class: "span2"
+  %br
+  = "Extension:"
+  = text_field_tag "contact_phone_extensions[]", "", maxlength: 12, class: "span2"
+  %br
+  = "Fax:"
+  = text_field_tag "contact_faxes[]", "", maxlength: 12, class: "span2"
+  %br
+  = link_to "Delete this contact permanently", '#', class: "btn btn-danger"
+  = link_to "undo", '#', class: "undo", :style => "display: none;"

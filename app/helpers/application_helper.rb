@@ -12,5 +12,4 @@ module ApplicationHelper
   def days
     %w[Monday Tuesday Wednesday Thursday Friday Saturday Sunday]
   end
-
 end

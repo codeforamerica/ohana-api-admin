@@ -5,7 +5,6 @@ stack = Faraday::Builder.new do |builder|
 end
 Ohanakapa.configure do |config|
   config.api_token = ENV["OHANA_API_TOKEN"]
-  config.api_endpoint = "http://localhost:8080/api"
   config.middleware = stack
 end
 
