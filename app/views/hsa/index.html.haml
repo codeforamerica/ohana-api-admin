@@ -12,4 +12,5 @@
 %p
   - @locations.each do |location|
     %ul
-      = link_to location.name, "/#{location.id}?page=#{params[:page] ? params[:page] : 1}"
+      - if location.key?(:emails) && location.emails.include?(current_user.email)
+        = link_to location.name, "/#{location.id}?page=#{params[:page] ? params[:page] : 1}"

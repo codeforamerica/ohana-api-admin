@@ -1,4 +1,5 @@
 class HsaController < ApplicationController
+  before_filter :authenticate_user!
 
   #before_filter :days
 
@@ -11,6 +12,10 @@ class HsaController < ApplicationController
     id = params[:id].split("/")[-1]
     begin
       @location = Ohanakapa.location(id)
+      unless @location.key?(:emails) && @location.emails.include?(current_user.email)
+      redirect_to root_url,
+        :alert => "Sorry, you don't have access to that page."
+      end
     rescue Ohanakapa::NotFound
       redirect_to "#{root_url}",
         alert: "Location not found! Please try another one." and return

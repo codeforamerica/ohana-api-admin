@@ -13,8 +13,23 @@ Hsa::Application.configure do
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
-  # Don't care if the mailer can't send
+  # ActionMailer Config
+  # Setup for development - same as production
+  config.action_mailer.default_url_options = { :host => "localhost:8080" }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  # Disable delivery errors, bad email addresses will be ignored
   config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default :charset => "utf-8"
+
+  config.action_mailer.smtp_settings = {
+    :port =>           '587',
+    :address =>        'smtp.mandrillapp.com',
+    :user_name =>      ENV['MANDRILL_USERNAME'],
+    :password =>       ENV['MANDRILL_APIKEY'],
+    :domain =>         'heroku.com',
+    :authentication => :plain
+  }
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
