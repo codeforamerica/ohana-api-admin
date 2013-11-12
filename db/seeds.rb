@@ -7,3 +7,24 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 # Environment variables (ENV['...']) can be set in the file config/application.yml.
 # See http://railsapps.github.io/rails-environment-variables.html
+
+puts '===> Setting up first test user...'
+user = User.create! :name => 'Samaritan House',
+                    :email => 'ohana@samaritanhouse.com',
+                    :password => 'ohanatest',
+                    :password_confirmation => 'ohanatest'
+user.confirm!
+
+puts '===> Setting up second test user...'
+user2 = User.create! :name => 'Peninsula Family Service',
+                     :email => 'ohana@peninsulafamilyservice.org',
+                     :password => 'ohanatest',
+                     :password_confirmation => 'ohanatest'
+user2.confirm!
+
+puts '===> Setting up admin user...'
+user3 = User.create! :name => 'Master Admin',
+                     :email => 'masteradmin@ohanapi.org',
+                     :password => 'ohanatest',
+                     :password_confirmation => 'ohanatest'
+user3.confirm!
