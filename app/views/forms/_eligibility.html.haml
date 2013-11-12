@@ -1,0 +1,6 @@
+%div.inst-box
+  %header
+    %strong
+      Eligibility
+  %p
+    = text_area_tag "eligibility", service.key?(:eligibility) ? service.eligibility : "", :class => "span5"

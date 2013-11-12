@@ -45,11 +45,11 @@ module Features
       click_button "Save changes"
     end
 
-    def add_url
-      click_link "Add a new website"
-      fill_in "urls[]", with: "http://monfresh.com"
-      click_button "Save changes"
-    end
+    # def add_url
+    #   click_link "Add a new website"
+    #   fill_in "urls[]", with: "http://monfresh.com"
+    #   click_button "Save changes"
+    # end
 
     def add_two_urls
       click_link "Add a new website"
@@ -60,13 +60,36 @@ module Features
       click_button "Save changes"
     end
 
-    def delete_url
-      click_link "Delete this website permanently"
-      click_button "Save changes"
-    end
+    # def delete_url
+    #   click_link "Delete this website permanently"
+    #   click_button "Save changes"
+    # end
 
     def delete_two_urls
       delete_links = all("a", :text => "Delete this website permanently")
+      delete_links.each do |a|
+        click_link a[:text], match: :first
+      end
+      click_button "Save changes"
+    end
+
+    def add_service_area
+      click_link "Add a new service area"
+      fill_in "service_areas[]", with: "Belmont"
+      click_button "Save changes"
+    end
+
+    def add_two_service_areas
+      click_link "Add a new service area"
+      fill_in "service_areas[]", with: "Belmont"
+      click_link "Add a new service area"
+      service_areas = page.all(:xpath, "//input[@type='text' and @name='service_areas[]']")
+      fill_in service_areas[-1][:id], with: "East Palo Alto"
+      click_button "Save changes"
+    end
+
+    def delete_two_service_areas
+      delete_links = all("a", :text => "Delete this service area permanently")
       delete_links.each do |a|
         click_link a[:text], match: :first
       end

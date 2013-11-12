@@ -1,6 +1,9 @@
 require "spec_helper"
 
 feature "Update a location's short description" do
+  background do
+    login_admin
+  end
 
   scenario "with empty short description", :vcr do
     visit_test_location

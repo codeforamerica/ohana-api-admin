@@ -1,6 +1,9 @@
 require "spec_helper"
 
 feature "Update a location's transportation options" do
+  background do
+    login_admin
+  end
 
   scenario "with empty transportation options", :vcr do
     visit_test_location

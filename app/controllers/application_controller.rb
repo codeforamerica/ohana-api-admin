@@ -100,6 +100,27 @@ class ApplicationController < ActionController::Base
     faxes
   end
 
+  def service_areas
+    service_areas = params[:service_areas]
+    if service_areas.present? && !service_areas.all?(&:empty?)
+      params[:service_areas]
+    end
+  end
+
+  def funding_sources
+    fs = params[:funding_sources]
+    if fs.present? && !fs.all?(&:empty?)
+      params[:funding_sources]
+    end
+  end
+
+  def keywords
+    k = params[:keywords]
+    if k.present? && !k.all?(&:empty?)
+      params[:keywords]
+    end
+  end
+
   def schedule
     # schedule = []
     # days.each_with_index do |day, i|

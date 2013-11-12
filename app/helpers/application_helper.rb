@@ -12,4 +12,16 @@ module ApplicationHelper
   def days
     %w[Monday Tuesday Wednesday Thursday Friday Saturday Sunday]
   end
+
+  # Handles formatting of the page title by appending site name to end
+  # of a particular page's title.
+  # @param page_title [String] the page title from a particular view.
+  def title(page_title)
+    default = "SMC-Connect Admin"
+    if page_title.present?
+      content_for :title, "#{page_title.to_s} | #{default}"
+    else
+      content_for :title, default
+    end
+  end
 end

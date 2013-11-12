@@ -1,6 +1,9 @@
 require "spec_helper"
 
 feature "Update a location's street address" do
+  background do
+    login_admin
+  end
 
   scenario "when location doesn't have a street address", :vcr do
     visit_location_with_no_phone

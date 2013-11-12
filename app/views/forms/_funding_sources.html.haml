@@ -1,0 +1,14 @@
+%div.inst-box
+  %header
+    %strong
+      Funding Sources
+  - if service.key?(:funding_sources)
+    - service.funding_sources.each_with_index do |funding_source, i|
+      %fieldset#funding_sources
+        = text_field_tag "funding_sources[]", funding_source, class: "span4", id: "funding_source_#{i}"
+        %br
+        = link_to "Delete this funding source permanently", '#', class: "btn btn-danger"
+  - fields = render "forms/add_funding_source"
+  %p
+    = link_to_function "Add a new funding source", ("add_fields(1, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"
+

@@ -4,17 +4,22 @@ class HsaController < ApplicationController
   #before_filter :days
 
   def index
-    @locations = Ohanakapa.search("search",
-      :include => "no_cats", :kind => "human services", :page => params[:page])
+    if admin?
+      page = params[:page].present? ? params[:page] : 1
+      @locations = Ohanakapa.locations(page: page)
+    else
+      domain = current_user.email.split("@").last
+      @locations = Ohanakapa.search("search", :email => domain)
+    end
   end
 
   def show
     id = params[:id].split("/")[-1]
     begin
       @location = Ohanakapa.location(id)
-      unless @location.key?(:emails) && @location.emails.include?(current_user.email)
-      redirect_to root_url,
-        :alert => "Sorry, you don't have access to that page."
+      unless location_domain_matches_user_domain?(@location) || admin?
+        redirect_to root_url,
+          :alert => "Sorry, you don't have access to that page."
       end
     rescue Ohanakapa::NotFound
       redirect_to "#{root_url}",
@@ -58,15 +63,6 @@ class HsaController < ApplicationController
     kind = params[:kind] unless params[:kind].blank?
     emails = params[:emails]
     urls = params[:urls]
-
-    # keywords
-    keywords = params[:keywords]
-    if keywords.blank?
-      Ohanakapa.delete("services/#{service_id}/keywords")
-    else
-      keywords = params[:keywords].delete_if { |k| k.blank? }
-      Ohanakapa.put("services/#{service_id}/keywords", :query => { :keywords => keywords })
-    end
 
     # contacts
     names = params[:names]
@@ -185,6 +181,31 @@ class HsaController < ApplicationController
 
     end
 
+    begin
+      Ohanakapa.put("services/#{service_id}/", :query =>
+        {
+          :audience        => params[:audience],
+          :description     => params[:description],
+          :eligibility     => params[:eligibility],
+          :fees            => params[:fees],
+          :funding_sources => funding_sources,
+          :how_to_apply    => params[:how_to_apply],
+          :keywords        => keywords,
+          :name            => params[:service_name],
+          :service_areas   => service_areas,
+          :wait            => params[:wait]
+        }
+      )
+    rescue Ohanakapa::BadRequest => e
+      # Wrong format for service area
+      if e.to_s.include?("improperly formatted")
+        redirect_to request.referer,
+          alert: "At least one service area is improperly formatted,
+        or is not an accepted city or county name. Please make sure all
+        words are capitalized." and return
+      end
+    end
+
     Ohanakapa.replace_all_categories(service_id, cat_ids) if cat_ids
     #Ohanakapa.put("locations/#{location_id}/schedule", :query => { :schedule => schedule }) if schedule
 
@@ -198,6 +219,26 @@ class HsaController < ApplicationController
     end
 
     redirect_to "#{root_url}", notice: "Changes for #{location_name} successfully saved!" and return
+  end
+
+  private
+
+  def admin?
+    current_user.role == "admin"
+  end
+
+  def location_domain_matches_user_domain?(location)
+    domain = current_user.email.split("@").last
+
+    if location.key?(:emails)
+      emails = location.emails.select { |email| email.include?(domain) }
+    end
+
+    if location.key?(:urls)
+      urls = location.urls.select { |url| url.include?(domain) }
+    end
+
+    emails.present? || urls.present?
   end
 
 end

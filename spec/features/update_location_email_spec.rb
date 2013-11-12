@@ -1,6 +1,9 @@
 require "spec_helper"
 
 feature "Update a location's email" do
+  background do
+    login_admin
+  end
 
   scenario "with empty email", :vcr do
     visit_test_location

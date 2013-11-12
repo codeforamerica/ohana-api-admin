@@ -1,0 +1,16 @@
+%div.inst-box
+  %header
+    %strong
+      Service Areas
+    (Service Areas can either be city names or county names.
+    Each word must be capitalized.)
+  - if service.key?(:service_areas)
+    - service.service_areas.each_with_index do |service_area, i|
+      %fieldset#service_areas
+        = text_field_tag "service_areas[]", service_area, class: "span4", id: "service_area_#{i}"
+        %br
+        = link_to "Delete this service area permanently", '#', class: "btn btn-danger"
+  - fields = render "forms/add_service_area"
+  %p
+    = link_to_function "Add a new service area", ("add_fields(1, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"
+

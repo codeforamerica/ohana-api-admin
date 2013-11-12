@@ -15,6 +15,8 @@ class User
   attr_accessible :name, :email, :password, :password_confirmation,
                   :remember_me
 
+  field :role, :type => String, :default => ""
+
   ## Database authenticatable
   field :email,              :type => String, :default => ""
   field :encrypted_password, :type => String, :default => ""

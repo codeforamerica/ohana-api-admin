@@ -1,0 +1,6 @@
+%div.inst-box
+  %header
+    %strong
+      How to apply
+  %p
+    = text_area_tag "how_to_apply", service.key?(:how_to_apply) ? service.how_to_apply : "", :class => "span5"

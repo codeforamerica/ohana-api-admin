@@ -1,6 +1,9 @@
 require "spec_helper"
 
 feature "Update a location's websites" do
+  background do
+    login_admin
+  end
 
   scenario "when location doesn't have any websites", :vcr do
     visit_location_with_no_phone

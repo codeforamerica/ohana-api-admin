@@ -1,6 +1,9 @@
 require "spec_helper"
 
 feature "Update a location's accessibility options" do
+  background do
+    login_admin
+  end
 
   scenario "when location doesn't have any options", :vcr do
     visit_location_with_no_phone

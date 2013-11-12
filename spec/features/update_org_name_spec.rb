@@ -1,6 +1,9 @@
 require "spec_helper"
 
 feature "Update an organization's name" do
+  background do
+    login_admin
+  end
 
   scenario "with empty organization name", :vcr do
     visit_test_location

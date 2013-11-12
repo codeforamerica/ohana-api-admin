@@ -1,16 +1,13 @@
-%h1 Instructions
+%h1 SMC Connect Admin Site
 %p
-  Thank you for helping us categorize these organizations!
-  Each page includes a link to 30 organizations. The idea is that each person
-  will take a different page. To go to a different page, add '?page=' and the
-  page number to the end of the browser's website address (the URL). For example, here is
-  = link_to "page 2.", "#{root_url}?page=2"
+  Below you should see a list of locations that you are allowed to administer based on your email address.
+  If there are any locations missing, please let us know.
 %p
-  To start, click on one of the links, which will take you to the details page
-  for the organization, where you will find further instructions. Thank you!
+  To start updating, click on one of the links, which will take you to the details page
+  for the location.
 %br
 %p
   - @locations.each do |location|
     %ul
-      - if location.key?(:emails) && location.emails.include?(current_user.email)
-        = link_to location.name, "/#{location.id}?page=#{params[:page] ? params[:page] : 1}"
+      = link_to location.name, location.id
+

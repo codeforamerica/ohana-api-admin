@@ -1,0 +1,6 @@
+%div.inst-box
+  %header
+    %strong
+      Wait Time
+  %p
+    = text_area_tag "wait", service.key?(:wait) ? service.wait : "", :class => "span5"

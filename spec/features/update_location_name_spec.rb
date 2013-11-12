@@ -1,6 +1,9 @@
 require "spec_helper"
 
 feature "Update a location's name" do
+  background do
+    login_admin
+  end
 
   scenario "with empty location name", :vcr do
     visit_test_location

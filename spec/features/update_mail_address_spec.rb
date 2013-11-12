@@ -1,6 +1,9 @@
 require "spec_helper"
 
 feature "Update a location's mailing address" do
+  background do
+    login_admin
+  end
 
   scenario "when location doesn't have a mailing address", :vcr do
     visit_test_location

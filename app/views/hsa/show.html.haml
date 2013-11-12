@@ -1,18 +1,21 @@
 - loc_name = @location.name
 - org_name = @location.organization.name
-- services = @location.services
+- services = @location.services if @location.key?(:services)
+
+- loc_name == org_name ? title("#{loc_name}") : title("#{org_name} - #{loc_name}")
+
 = form_tag "edit_services", :name => "edit_form", :id => "edit_form" do
   %div.content-box
     %h2= loc_name == org_name ? loc_name : "#{org_name} / #{loc_name}"
-
-    - services.each do |service|
-      %p#existing-keywords
-        %strong= "Existing Categories:"
-        %ul
-          - if service.key?(:categories)
-            - service.categories.each do |cat|
-              %li
-                = cat.name
+    - if services.present?
+      - services.each do |service|
+        %p#existing-keywords
+          %strong= "Existing Categories:"
+          %ul
+            - if service.key?(:categories)
+              - service.categories.each do |cat|
+                %li
+                  = cat.name
 
   = render "forms/org_name"
   = render "forms/location_name"
@@ -34,25 +37,33 @@
 
   = render "forms/kind"
 
-  - services.each do |service|
-
-    = render "forms/keywords", :service => service
-
-    %div#categories.inst-box
-      %header
-        %strong
-          Categories:
-        Select at least one applicable category
-
-      %ul
-        = render "categories"
-
-    %div.inst-box
-      %header
-        %strong
-          4. Apply edits to the database
+  - if services.present?
+    - services.each do |service|
       = hidden_field_tag :service_id, service.id
-      = hidden_field_tag :location_id, @location.id
-      = hidden_field_tag :org_id, @location.organization.id
-      = hidden_field_tag :page, params[:page]
-      = submit_tag "Save changes", :class => "btn btn-primary"
+      = render "forms/audience", :service => service
+      = render "forms/eligibility", :service => service
+      = render "forms/fees", :service => service
+      = render "forms/how_to_apply", :service => service
+      = render "forms/wait", :service => service
+      = render "forms/service_areas", :service => service
+      = render "forms/funding_sources", :service => service
+      = render "forms/keywords", :service => service
+
+      %div#categories.inst-box
+        %header
+          %strong
+            Categories:
+          Select at least one applicable category
+
+        %ul
+          = render "categories"
+
+  %div.inst-box
+    %header
+      %strong
+        4. Apply edits to the database
+
+    = hidden_field_tag :location_id, @location.id
+    = hidden_field_tag :org_id, @location.organization.id
+    = hidden_field_tag :page, params[:page]
+    = submit_tag "Save changes", :class => "btn btn-primary"

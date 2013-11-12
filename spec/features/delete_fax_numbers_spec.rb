@@ -1,6 +1,9 @@
 require "spec_helper"
 
 feature "Delete a location's fax numbers" do
+  background do
+    login_admin
+  end
 
   scenario "when location doesn't have any fax numbers", :vcr do
     visit_location_with_no_phone
