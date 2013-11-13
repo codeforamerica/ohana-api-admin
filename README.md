@@ -90,6 +90,8 @@ For faster tests (and many other rails commands, like rake):
 
 To see the actual tests, browse through the [spec](https://github.com/codeforamerica/ohana-api-admin/tree/master/spec) directory.
 
+The tests will take around 3 to 5 minutes to run. Note that a browser window will open during the integration tests as some of them use the Selenium web driver.
+
 ## Contributing
 
 In the spirit of open source software, **everyone** is encouraged to help improve this project.

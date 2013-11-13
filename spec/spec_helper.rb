@@ -45,7 +45,7 @@ require 'vcr'
 VCR.configure do |c|
   c.configure_rspec_metadata!
   c.allow_http_connections_when_no_cassette = true
-  #c.ignore_hosts '127.0.0.1', 'localhost'
+  c.ignore_hosts '127.0.0.1'
   #c.default_cassette_options = { :record => ENV['TRAVIS'] ? :none : :once, :allow_playback_repeats => true }
   c.cassette_library_dir  = "spec/cassettes"
   c.hook_into :webmock
