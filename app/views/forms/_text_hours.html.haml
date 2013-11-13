@@ -1,6 +1,6 @@
 %div.inst-box
   %header
     %strong
-      Existing text-based Hours (Please use the dropdowns below to input the hours)
+      Hours of operation*
   %p
-    = @location.key?(:hours) ? @location.hours : ""
+    = text_field_tag "text_hours", @location.key?(:hours) ? @location.hours : "", :class => "span11"

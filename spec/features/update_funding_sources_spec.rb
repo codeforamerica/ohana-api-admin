@@ -17,7 +17,7 @@ feature "Update a service's funding sources" do
     delete_two_funding_sources
   end
 
-  xscenario "with empty service area", { :js => true, :vcr => true } do
+  xscenario "with empty funding source", { :js => true, :vcr => true } do
     visit_test_location
     fill_in "funding_sources[]", with: ""
     click_button "Save changes"
@@ -26,16 +26,16 @@ feature "Update a service's funding sources" do
     add_funding_source
   end
 
-  xscenario "with invalid service area", :vcr do
+  xscenario "with invalid funding source", :vcr do
     visit_test_location
     fill_in "funding_sources[]", with: "Belmont, CA"
     click_button "Save changes"
-    expect(page).to have_content "At least one service area is improperly
+    expect(page).to have_content "At least one funding source is improperly
       formatted, or is not an accepted city or county name. Please make sure
       all words are capitalized."
   end
 
-  xscenario "with valid service area", :vcr do
+  xscenario "with valid funding source", :vcr do
     visit_test_location
     fill_in "funding_sources[]", with: "San Mateo County"
     click_button "Save changes"

@@ -72,19 +72,20 @@ class HsaController < ApplicationController
 
     begin
       Ohanakapa.update_location(location_id,
-        :accessibility => accessibility,
-        :address => address,
-        :contacts => contacts,
-        :description => params[:description],
-        :emails => emails,
-        :faxes => faxes,
-        :kind => kind,
-        :mail_address => mail_address,
-        :name => location_name,
-        :phones => phones,
-        :short_desc => params[:short_desc],
+        :accessibility  => accessibility,
+        :address        => address,
+        :contacts       => contacts,
+        :description    => params[:description],
+        :emails         => emails,
+        :faxes          => faxes,
+        :hours          => params[:text_hours],
+        :kind           => kind,
+        :mail_address   => mail_address,
+        :name           => location_name,
+        :phones         => phones,
+        :short_desc     => params[:short_desc],
         :transportation => params[:transportation],
-        :urls => urls
+        :urls           => urls
       )
     rescue Ohanakapa::BadRequest => e
       # Invalid Phone
