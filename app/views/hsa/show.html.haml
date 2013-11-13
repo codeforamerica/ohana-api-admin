@@ -7,15 +7,6 @@
 = form_tag "edit_services", :name => "edit_form", :id => "edit_form" do
   %div.content-box
     %h2= loc_name == org_name ? loc_name : "#{org_name} / #{loc_name}"
-    - if services.present?
-      - services.each do |service|
-        %p#existing-keywords
-          %strong= "Existing Categories:"
-          %ul
-            - if service.key?(:categories)
-              - service.categories.each do |cat|
-                %li
-                  = cat.name
 
   = render "forms/org_name"
   = render "forms/location_name"
@@ -50,11 +41,19 @@
       = render "forms/service_areas", :service => service
       = render "forms/keywords", :service => service
 
+      %div.content-box
+        %p#existing-keywords
+          %strong= "Existing Categories:"
+          %ul
+            - if service.key?(:categories)
+              - service.categories.each do |cat|
+                %li
+                  = cat.name
       %div#categories.inst-box
         %header
           %strong
             Categories:
-          Select at least one applicable category
+          Please note that by making any changes to the categories, you will be replacing the existing categories, not adding to them. We are working on fixing that.
 
         %ul
           = render "categories"
