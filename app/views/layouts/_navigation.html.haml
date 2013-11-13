@@ -1,8 +1,20 @@
 = link_to "SMC Connect Admin", root_path, :class => 'brand'
-- if user_signed_in?
-  %p.navbar-text
-    Logged in as #{current_user.name}
-    = link_to 'Logout', destroy_user_session_path, :method => :delete
-- else
-  %p.navbar-text
-    = link_to 'Login', new_user_session_path
+%ul.nav
+  - if user_signed_in?
+    %li
+      = link_to "Logged in as #{current_user.name}", ""
+    %li
+      = link_to 'Sign out', destroy_user_session_path, :method=>'delete'
+  - else
+    %li
+      = link_to 'Sign in', new_user_session_path
+  - if user_signed_in?
+    %li
+      = link_to 'Edit account', edit_user_registration_path
+  - else
+    %li
+      = link_to 'Sign up', new_user_registration_path
+  - if user_signed_in?
+    %li
+      = link_to 'Your locations', locations_path
+

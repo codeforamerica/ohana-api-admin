@@ -1,10 +1,13 @@
-%h1 SMC Connect Admin Site
 %p
-  Below you should see a list of locations that you are allowed to administer based on your email address.
-  If there are any locations missing, please let us know.
+  Welcome back, #{current_user.name}!
+%p
+Below you should see a list of locations that you are allowed to administer based on your email address.
+If there are any locations missing, please #{mail_to "sanmateoco@codeforamerica.org", "let us know"}.
 %p
   To start updating, click on one of the links, which will take you to the details page
   for the location.
+- if current_user.role == "admin"
+  %p As an admin, you have access to all locations in the database. Please make updates responsibly.
 %br
 %p
   - @locations.each do |location|

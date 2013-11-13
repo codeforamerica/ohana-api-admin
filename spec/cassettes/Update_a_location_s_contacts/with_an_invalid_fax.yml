@@ -25,92 +25,47 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 04 Nov 2013 08:14:51 GMT
+      - Wed, 13 Nov 2013 06:34:38 GMT
       Etag:
-      - '"c628afe7c5c27a0ce372af5a4df2c8f5"'
+      - '"cf51c4a04de9c0dc1187cf82f03bd896"'
+      Server:
+      - nginx/1.4.3 + Phusion Passenger 4.0.23
       Status:
       - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.23
       X-Rack-Cache:
       - miss
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4946'
+      - '4745'
       X-Request-Id:
-      - 6c7e6832c728325a0beabeffbe9cc9e9
+      - 15901c3820e834317a616e6e12348cb8
       X-Runtime:
-      - '0.086487'
+      - '0.025921'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
-      - '1239'
+      - '1391'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"id":"52733b05fafbf0a01a000001","accessibility":["Elevator","Disabled
-        Restroom"],"address":{"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":"52775772ed6a9f1099000002","name":"Moncef","title":"Director"}],"coordinates":[-73.9395687,42.8142432],"description":"This
-        is a description","faxes":[{"number":"7035551212","department":"CalFresh"}],"kind":"Test","name":"Admin
+        Restroom"],"address":{"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":"52831d77514539c76a000010","name":"Moncef","title":"Director"}],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","emails":["eml@example.org"],"faxes":[{"number":"2025551212","department":"CalFresh"}],"kind":"Test","name":"Admin
         Test Location","phones":[{"number":"7035551212","vanity_number":"703555-ABCD","extension":"x1223","department":"CalFresh"}],"short_desc":"This
         is a short description","slugs":["job-training-and-placement-program-1","admin-test-location"],"transportation":"SAMTRANS
-        stops within 1/2 mile.","updated_at":"2013-11-04T00:14:42-08:00","urls":["http://codeforamerica.org"],"url":"http://ohanapi.herokuapp.com/api/locations/52733b05fafbf0a01a000001","services":[{"id":"52733ce076ac6ae977000002","name":"huzzah","updated_at":"2013-10-31T22:50:38-07:00"}],"organization":{"id":"527334e4456acab967000002","name":"Admin
+        stops within 1/2 mile.","updated_at":"2013-11-12T22:34:31-08:00","urls":["http://codeforamerica.org"],"url":"http://ohanapi.herokuapp.com/api/locations/52733b05fafbf0a01a000001","services":[{"id":"52733ce076ac6ae977000002","description":"This
+        is a description","funding_sources":["Federal Government"],"keywords":["testric"],"service_areas":["San
+        Mateo County"],"updated_at":"2013-11-12T22:34:04-08:00"}],"organization":{"id":"527334e4456acab967000002","name":"Admin
         Test Org","slugs":["jobtrain-1","admin-test-org"],"url":"http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002","locations_url":"http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002/locations"}}'
     http_version: 
-  recorded_at: Mon, 04 Nov 2013 08:14:55 GMT
-- request:
-    method: delete
-    uri: http://ohanapi.herokuapp.com/api/services/52733ce076ac6ae977000002/keywords?api_token=<API_TOKEN>
-    body:
-      encoding: UTF-8
-      string: '{}'
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.0.0
-      X-Api-Token:
-      - <API_TOKEN>
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json
-      Date:
-      - Mon, 04 Nov 2013 08:14:52 GMT
-      Etag:
-      - '"97279b1fa94255bbbb4ee85fabc552f2"'
-      Status:
-      - 200 OK
-      X-Rack-Cache:
-      - invalidate, pass
-      X-Ratelimit-Limit:
-      - '5000'
-      X-Ratelimit-Remaining:
-      - '4945'
-      X-Request-Id:
-      - 4ea97f3e32bb123ff0fd9c37617316a2
-      X-Runtime:
-      - '0.157821'
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Content-Length:
-      - '377'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"_id":"52733ce076ac6ae977000002","audience":null,"category_ids":[],"created_at":"2013-10-31T22:32:16-07:00","description":null,"eligibility":null,"fees":null,"funding_sources":null,"how_to_apply":null,"keywords":[],"location_id":"52733b05fafbf0a01a000001","name":"huzzah","service_areas":null,"short_desc":null,"updated_at":"2013-10-31T22:50:38-07:00","urls":null,"wait":null}'
-    http_version: 
-  recorded_at: Mon, 04 Nov 2013 08:14:56 GMT
+  recorded_at: Wed, 13 Nov 2013 06:34:38 GMT
 - request:
     method: put
-    uri: http://ohanapi.herokuapp.com/api/locations/52733b05fafbf0a01a000001?accessibility%5B0%5D=elevator&accessibility%5B1%5D=restroom&address%5Bcity%5D=fairfax&address%5Bstate%5D=va&address%5Bstreet%5D=bozo&address%5Bzip%5D=12345&api_token=<API_TOKEN>&contacts%5Bfax%5D=202&contacts%5Bname%5D=Moncef&contacts%5Btitle%5D=Director&description=%0AThis%20is%20a%20description&emails%5B0%5D=&faxes%5Bdepartment%5D=CalFresh&faxes%5Bnumber%5D=7035551212&kind=test&mail_address&name=Admin%20Test%20Location&phones%5Bdepartment%5D=CalFresh&phones%5Bextension%5D=x1223&phones%5Bnumber%5D=7035551212&phones%5Bvanity_number%5D=703555-ABCD&short_desc=%0AThis%20is%20a%20short%20description&transportation=%0ASAMTRANS%20stops%20within%201/2%20mile.&urls%5B0%5D=http://codeforamerica.org
+    uri: http://ohanapi.herokuapp.com/api/locations/52733b05fafbf0a01a000001?accessibility%5B0%5D=elevator&accessibility%5B1%5D=restroom&address%5Bcity%5D=fairfax&address%5Bstate%5D=va&address%5Bstreet%5D=bozo&address%5Bzip%5D=12345&api_token=<API_TOKEN>&contacts%5Bfax%5D=202&contacts%5Bname%5D=Moncef&contacts%5Btitle%5D=Director&description=%0AThis%20is%20a%20description&emails%5B0%5D=eml@example.org&faxes%5Bdepartment%5D=CalFresh&faxes%5Bnumber%5D=2025551212&kind=test&mail_address&name=Admin%20Test%20Location&phones%5Bdepartment%5D=CalFresh&phones%5Bextension%5D=x1223&phones%5Bnumber%5D=7035551212&phones%5Bvanity_number%5D=703555-ABCD&short_desc=%0AThis%20is%20a%20short%20description&transportation=%0ASAMTRANS%20stops%20within%201/2%20mile.&urls%5B0%5D=http://codeforamerica.org
     body:
       encoding: UTF-8
       string: '{}'
@@ -133,19 +88,23 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 04 Nov 2013 08:14:52 GMT
+      - Wed, 13 Nov 2013 06:34:39 GMT
+      Server:
+      - nginx/1.4.3 + Phusion Passenger 4.0.23
       Status:
       - 400 Bad Request
+      X-Powered-By:
+      - Phusion Passenger 4.0.23
       X-Rack-Cache:
       - invalidate, pass
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4944'
+      - '4744'
       X-Request-Id:
-      - 8c0064eb60b11d02d495d01e8998feba
+      - ad9541ae0914c64b8437bfc3a8bf584c
       X-Runtime:
-      - '0.112562'
+      - '0.027727'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
@@ -158,7 +117,7 @@ http_interactions:
         following errors were found: Fax 202 is not a valid US fax number\nResolution:\n  Try
         persisting the document with valid data or remove the validations."}'
     http_version: 
-  recorded_at: Mon, 04 Nov 2013 08:14:56 GMT
+  recorded_at: Wed, 13 Nov 2013 06:34:39 GMT
 - request:
     method: get
     uri: http://ohanapi.herokuapp.com/api/locations/admin-test-location?api_token=<API_TOKEN>
@@ -184,36 +143,42 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 04 Nov 2013 08:14:52 GMT
+      - Wed, 13 Nov 2013 06:34:39 GMT
       Etag:
-      - '"c628afe7c5c27a0ce372af5a4df2c8f5"'
+      - '"cf51c4a04de9c0dc1187cf82f03bd896"'
+      Server:
+      - nginx/1.4.3 + Phusion Passenger 4.0.23
       Status:
       - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.23
       X-Rack-Cache:
       - miss
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4943'
+      - '4743'
       X-Request-Id:
-      - 403ffc6d05e7a4b426448289b91adf03
+      - 0582a98edee3d15fb6d44f80ca773993
       X-Runtime:
-      - '0.026485'
+      - '0.026752'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
-      - '1239'
+      - '1391'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"id":"52733b05fafbf0a01a000001","accessibility":["Elevator","Disabled
-        Restroom"],"address":{"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":"52775772ed6a9f1099000002","name":"Moncef","title":"Director"}],"coordinates":[-73.9395687,42.8142432],"description":"This
-        is a description","faxes":[{"number":"7035551212","department":"CalFresh"}],"kind":"Test","name":"Admin
+        Restroom"],"address":{"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":"52831d77514539c76a000010","name":"Moncef","title":"Director"}],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","emails":["eml@example.org"],"faxes":[{"number":"2025551212","department":"CalFresh"}],"kind":"Test","name":"Admin
         Test Location","phones":[{"number":"7035551212","vanity_number":"703555-ABCD","extension":"x1223","department":"CalFresh"}],"short_desc":"This
         is a short description","slugs":["job-training-and-placement-program-1","admin-test-location"],"transportation":"SAMTRANS
-        stops within 1/2 mile.","updated_at":"2013-11-04T00:14:42-08:00","urls":["http://codeforamerica.org"],"url":"http://ohanapi.herokuapp.com/api/locations/52733b05fafbf0a01a000001","services":[{"id":"52733ce076ac6ae977000002","name":"huzzah","updated_at":"2013-10-31T22:50:38-07:00"}],"organization":{"id":"527334e4456acab967000002","name":"Admin
+        stops within 1/2 mile.","updated_at":"2013-11-12T22:34:31-08:00","urls":["http://codeforamerica.org"],"url":"http://ohanapi.herokuapp.com/api/locations/52733b05fafbf0a01a000001","services":[{"id":"52733ce076ac6ae977000002","description":"This
+        is a description","funding_sources":["Federal Government"],"keywords":["testric"],"service_areas":["San
+        Mateo County"],"updated_at":"2013-11-12T22:34:04-08:00"}],"organization":{"id":"527334e4456acab967000002","name":"Admin
         Test Org","slugs":["jobtrain-1","admin-test-org"],"url":"http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002","locations_url":"http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002/locations"}}'
     http_version: 
-  recorded_at: Mon, 04 Nov 2013 08:14:56 GMT
+  recorded_at: Wed, 13 Nov 2013 06:34:39 GMT
 recorded_with: VCR 2.6.0

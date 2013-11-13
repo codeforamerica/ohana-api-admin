@@ -218,7 +218,7 @@ class HsaController < ApplicationController
       end
     end
 
-    redirect_to "#{root_url}", notice: "Changes for #{location_name} successfully saved!" and return
+    redirect_to locations_path, notice: "Changes for #{location_name} successfully saved!" and return
   end
 
   private

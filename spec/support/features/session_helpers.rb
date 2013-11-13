@@ -1,6 +1,15 @@
 module Features
   module SessionHelpers
 
+    def sign_in(email, password)
+      visit '/users/sign_in'
+      within("#new_user") do
+        fill_in 'Email', :with => email
+        fill_in 'Password', :with => password
+      end
+      click_button 'Sign in'
+    end
+
     def visit_test_location
       visit("/admin-test-location")
     end

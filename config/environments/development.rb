@@ -15,7 +15,7 @@ Hsa::Application.configure do
 
   # ActionMailer Config
   # Setup for development - same as production
-  config.action_mailer.default_url_options = { :host => "localhost:8080" }
+  config.action_mailer.default_url_options = { :host => "localhost:3000" }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   # Disable delivery errors, bad email addresses will be ignored

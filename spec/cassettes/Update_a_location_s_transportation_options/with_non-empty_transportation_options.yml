@@ -25,91 +25,45 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 04 Nov 2013 08:15:33 GMT
+      - Wed, 13 Nov 2013 06:33:13 GMT
       Etag:
-      - '"aa975ac5ea1a6401873dbe260932f912"'
+      - '"0737e2e3a26c169df2eb0500a9ffb956"'
+      Server:
+      - nginx/1.4.3 + Phusion Passenger 4.0.23
       Status:
       - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.23
       X-Rack-Cache:
       - miss
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4908'
+      - '4813'
       X-Request-Id:
-      - 329edcca9f6e896dc4fd30d05ac8c4ba
+      - 6deb9c26c916cccfd8954d187044d762
       X-Runtime:
-      - '0.025861'
+      - '0.030210'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
-      - '1188'
+      - '1399'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":"52733b05fafbf0a01a000001","accessibility":["Elevator","Disabled
-        Restroom"],"address":{"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":"5277579fed6a9fd767000003","name":"Moncef","title":"Director"}],"coordinates":[-73.9395687,42.8142432],"description":"This
-        is a description","faxes":[{"number":"7035551212","department":"CalFresh"}],"kind":"Test","name":"Admin
+      string: '{"id":"52733b05fafbf0a01a000001","accessibility":["Disabled Restroom"],"address":{"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":"52831d23514539c76a000009","name":"Moncef","title":"Director","phone":"703-555-1212","email":"email@email.org","fax":"703-555-1234"}],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","emails":["eml@example.org"],"faxes":[{"number":"2025551212","department":"CalFresh"}],"kind":"Test","name":"Admin
         Test Location","phones":[{"number":"7035551212","vanity_number":"703555-ABCD","extension":"x1223","department":"CalFresh"}],"short_desc":"This
-        is a short description","slugs":["job-training-and-placement-program-1","admin-test-location"],"updated_at":"2013-11-04T00:15:27-08:00","urls":["http://codeforamerica.org"],"url":"http://ohanapi.herokuapp.com/api/locations/52733b05fafbf0a01a000001","services":[{"id":"52733ce076ac6ae977000002","name":"huzzah","updated_at":"2013-10-31T22:50:38-07:00"}],"organization":{"id":"527334e4456acab967000002","name":"Admin
+        is a short description","slugs":["job-training-and-placement-program-1","admin-test-location"],"updated_at":"2013-11-12T22:33:07-08:00","urls":["http://codeforamerica.org"],"url":"http://ohanapi.herokuapp.com/api/locations/52733b05fafbf0a01a000001","services":[{"id":"52733ce076ac6ae977000002","description":"This
+        is a description","funding_sources":["Federal Government"],"keywords":["testric"],"service_areas":["San
+        Mateo County"],"updated_at":"2013-11-12T22:33:00-08:00"}],"organization":{"id":"527334e4456acab967000002","name":"Admin
         Test Org","slugs":["jobtrain-1","admin-test-org"],"url":"http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002","locations_url":"http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002/locations"}}'
     http_version: 
-  recorded_at: Mon, 04 Nov 2013 08:15:37 GMT
-- request:
-    method: delete
-    uri: http://ohanapi.herokuapp.com/api/services/52733ce076ac6ae977000002/keywords?api_token=<API_TOKEN>
-    body:
-      encoding: UTF-8
-      string: '{}'
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.0.0
-      X-Api-Token:
-      - <API_TOKEN>
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json
-      Date:
-      - Mon, 04 Nov 2013 08:15:34 GMT
-      Etag:
-      - '"97279b1fa94255bbbb4ee85fabc552f2"'
-      Status:
-      - 200 OK
-      X-Rack-Cache:
-      - invalidate, pass
-      X-Ratelimit-Limit:
-      - '5000'
-      X-Ratelimit-Remaining:
-      - '4907'
-      X-Request-Id:
-      - b226a515d4a40813af79f5168fd745d9
-      X-Runtime:
-      - '0.223889'
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Content-Length:
-      - '377'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"_id":"52733ce076ac6ae977000002","audience":null,"category_ids":[],"created_at":"2013-10-31T22:32:16-07:00","description":null,"eligibility":null,"fees":null,"funding_sources":null,"how_to_apply":null,"keywords":[],"location_id":"52733b05fafbf0a01a000001","name":"huzzah","service_areas":null,"short_desc":null,"updated_at":"2013-10-31T22:50:38-07:00","urls":null,"wait":null}'
-    http_version: 
-  recorded_at: Mon, 04 Nov 2013 08:15:38 GMT
+  recorded_at: Wed, 13 Nov 2013 06:33:13 GMT
 - request:
     method: put
-    uri: http://ohanapi.herokuapp.com/api/locations/52733b05fafbf0a01a000001?accessibility%5B0%5D=elevator&accessibility%5B1%5D=restroom&address%5Bcity%5D=fairfax&address%5Bstate%5D=va&address%5Bstreet%5D=bozo&address%5Bzip%5D=12345&api_token=<API_TOKEN>&contacts%5Bname%5D=Moncef&contacts%5Btitle%5D=Director&description=%0AThis%20is%20a%20description&emails%5B0%5D=&faxes%5Bdepartment%5D=CalFresh&faxes%5Bnumber%5D=7035551212&kind=test&mail_address&name=Admin%20Test%20Location&phones%5Bdepartment%5D=CalFresh&phones%5Bextension%5D=x1223&phones%5Bnumber%5D=7035551212&phones%5Bvanity_number%5D=703555-ABCD&short_desc=%0AThis%20is%20a%20short%20description&transportation=SAMTRANS%20stops%20within%201/2%20mile.&urls%5B0%5D=http://codeforamerica.org
+    uri: http://ohanapi.herokuapp.com/api/locations/52733b05fafbf0a01a000001?accessibility%5B0%5D=restroom&address%5Bcity%5D=fairfax&address%5Bstate%5D=va&address%5Bstreet%5D=bozo&address%5Bzip%5D=12345&api_token=<API_TOKEN>&contacts%5Bemail%5D=email@email.org&contacts%5Bfax%5D=703-555-1234&contacts%5Bname%5D=Moncef&contacts%5Bphone%5D=703-555-1212&contacts%5Btitle%5D=Director&description=%0AThis%20is%20a%20description&emails%5B0%5D=eml@example.org&faxes%5Bdepartment%5D=CalFresh&faxes%5Bnumber%5D=2025551212&kind=test&mail_address&name=Admin%20Test%20Location&phones%5Bdepartment%5D=CalFresh&phones%5Bextension%5D=x1223&phones%5Bnumber%5D=7035551212&phones%5Bvanity_number%5D=703555-ABCD&short_desc=%0AThis%20is%20a%20short%20description&transportation=SAMTRANS%20stops%20within%201/2%20mile.&urls%5B0%5D=http://codeforamerica.org
     body:
       encoding: UTF-8
       string: '{}'
@@ -132,38 +86,101 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 04 Nov 2013 08:15:35 GMT
+      - Wed, 13 Nov 2013 06:33:14 GMT
       Etag:
-      - '"6d6e62e29b60a53a9a980d987972a741"'
+      - '"4a148b1783e7f891baf4cadcdff7953d"'
+      Server:
+      - nginx/1.4.3 + Phusion Passenger 4.0.23
       Status:
       - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.23
       X-Rack-Cache:
       - invalidate, pass
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4906'
+      - '4812'
       X-Request-Id:
-      - 92c3af8b34fa41de18f6bcbcd36ba13d
+      - 387d93238a1c8b74b21cc1729ac04ff3
       X-Runtime:
-      - '0.411097'
+      - '0.116821'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
-      - '1239'
+      - '1450'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":"52733b05fafbf0a01a000001","accessibility":["Elevator","Disabled
-        Restroom"],"address":{"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":"527757a737f9bab943000002","name":"Moncef","title":"Director"}],"coordinates":[-73.9395687,42.8142432],"description":"This
-        is a description","faxes":[{"number":"7035551212","department":"CalFresh"}],"kind":"Test","name":"Admin
+      string: '{"id":"52733b05fafbf0a01a000001","accessibility":["Disabled Restroom"],"address":{"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":"52831d2a514539c76a00000a","name":"Moncef","title":"Director","phone":"703-555-1212","email":"email@email.org","fax":"703-555-1234"}],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","emails":["eml@example.org"],"faxes":[{"number":"2025551212","department":"CalFresh"}],"kind":"Test","name":"Admin
         Test Location","phones":[{"number":"7035551212","vanity_number":"703555-ABCD","extension":"x1223","department":"CalFresh"}],"short_desc":"This
         is a short description","slugs":["job-training-and-placement-program-1","admin-test-location"],"transportation":"SAMTRANS
-        stops within 1/2 mile.","updated_at":"2013-11-04T00:15:35-08:00","urls":["http://codeforamerica.org"],"url":"http://ohanapi.herokuapp.com/api/locations/52733b05fafbf0a01a000001","services":[{"id":"52733ce076ac6ae977000002","name":"huzzah","updated_at":"2013-10-31T22:50:38-07:00"}],"organization":{"id":"527334e4456acab967000002","name":"Admin
+        stops within 1/2 mile.","updated_at":"2013-11-12T22:33:14-08:00","urls":["http://codeforamerica.org"],"url":"http://ohanapi.herokuapp.com/api/locations/52733b05fafbf0a01a000001","services":[{"id":"52733ce076ac6ae977000002","description":"This
+        is a description","funding_sources":["Federal Government"],"keywords":["testric"],"service_areas":["San
+        Mateo County"],"updated_at":"2013-11-12T22:33:00-08:00"}],"organization":{"id":"527334e4456acab967000002","name":"Admin
         Test Org","slugs":["jobtrain-1","admin-test-org"],"url":"http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002","locations_url":"http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002/locations"}}'
     http_version: 
-  recorded_at: Mon, 04 Nov 2013 08:15:39 GMT
+  recorded_at: Wed, 13 Nov 2013 06:33:14 GMT
+- request:
+    method: put
+    uri: http://ohanapi.herokuapp.com/api/services/52733ce076ac6ae977000002/?api_token=<API_TOKEN>&audience=&description=%0AThis%20is%20a%20description&eligibility=&fees=&funding_sources%5B0%5D=Federal%20Government&how_to_apply=&keywords%5B0%5D=testric&name&service_areas%5B0%5D=San%20Mateo%20County&wait=
+    body:
+      encoding: UTF-8
+      string: '{}'
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - <API_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 13 Nov 2013 06:33:15 GMT
+      Etag:
+      - '"b5367e3b420bb1831a84989796ef5a3a"'
+      Server:
+      - nginx/1.4.3 + Phusion Passenger 4.0.23
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.23
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4811'
+      X-Request-Id:
+      - 6b64ebfd1cb7f555232689a7019d934c
+      X-Runtime:
+      - '0.101123'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '435'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"_id":"52733ce076ac6ae977000002","audience":null,"category_ids":[],"created_at":"2013-10-31T22:32:16-07:00","description":"This
+        is a description","eligibility":null,"fees":null,"funding_sources":["Federal
+        Government"],"how_to_apply":null,"keywords":["testric"],"location_id":"52733b05fafbf0a01a000001","name":null,"service_areas":["San
+        Mateo County"],"short_desc":null,"updated_at":"2013-11-12T22:33:00-08:00","urls":null,"wait":null}'
+    http_version: 
+  recorded_at: Wed, 13 Nov 2013 06:33:15 GMT
 - request:
     method: put
     uri: http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002/?api_token=<API_TOKEN>&name=Admin%20Test%20Org
@@ -189,21 +206,25 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 04 Nov 2013 08:15:36 GMT
+      - Wed, 13 Nov 2013 06:33:16 GMT
       Etag:
       - '"bf19a2cdd23b9fb46826fa95d334a8ff"'
+      Server:
+      - nginx/1.4.3 + Phusion Passenger 4.0.23
       Status:
       - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.23
       X-Rack-Cache:
       - invalidate, pass
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4905'
+      - '4810'
       X-Request-Id:
-      - aec11802d550eda0529548ea2ca40575
+      - 0890c48a62f91bb684c753f4ba95fbd2
       X-Runtime:
-      - '0.100702'
+      - '0.057264'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
@@ -214,10 +235,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"id":"527334e4456acab967000002","name":"Admin Test Org","slugs":["jobtrain-1","admin-test-org"],"url":"http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002","locations_url":"http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002/locations"}'
     http_version: 
-  recorded_at: Mon, 04 Nov 2013 08:15:40 GMT
+  recorded_at: Wed, 13 Nov 2013 06:33:16 GMT
 - request:
     method: get
-    uri: http://ohanapi.herokuapp.com/api/search?api_token=<API_TOKEN>&exclude=market_other&page
+    uri: http://ohanapi.herokuapp.com/api/locations?api_token=<API_TOKEN>&page=1
     body:
       encoding: US-ASCII
       string: ''
@@ -240,46 +261,231 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 04 Nov 2013 08:15:37 GMT
+      - Wed, 13 Nov 2013 06:33:16 GMT
       Etag:
-      - '"e9064894c3c007391e472563187ea9de"'
+      - '"9a4947dbfe12c28a0c307674d7c049c0"'
       Link:
-      - <http://ohanapi.herokuapp.com/api/search?api_token=<API_TOKEN>&exclude=market_other&page=25>;
-        rel="last", <http://ohanapi.herokuapp.com/api/search?api_token=<API_TOKEN>&exclude=market_other&page=2>;
+      - <http://ohanapi.herokuapp.com/api/locations?api_token=<API_TOKEN>&page=57>;
+        rel="last", <http://ohanapi.herokuapp.com/api/locations?api_token=<API_TOKEN>&page=2>;
         rel="next"
+      Server:
+      - nginx/1.4.3 + Phusion Passenger 4.0.23
       Status:
       - 200 OK
       X-Current-Page:
       - '1'
       X-Next-Page:
       - '2'
+      X-Powered-By:
+      - Phusion Passenger 4.0.23
       X-Rack-Cache:
       - miss
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4904'
+      - '4809'
       X-Request-Id:
-      - bd7358051d344a5db2cb0df16ada3e18
+      - 6c7649b24c5619f6489e46a939222a51
       X-Runtime:
-      - '0.617513'
+      - '0.174100'
       X-Total-Count:
-      - '724'
+      - '1710'
       X-Total-Pages:
-      - '25'
+      - '57'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
-      - '110175'
+      - '63145'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '[{"_id":"52733b05fafbf0a01a000001","_slugs":["job-training-and-placement-program-1","admin-test-location"],"accessibility":["Elevator","Disabled
-        Restroom"],"address":{"city":"vienna","state":"VA","street":"123","zip":"22031"},"contacts":[{"_id":"52747b1c0995ef3802000004","email":"email@email.org","fax":"703-555-1234","name":"Moncef","phone":"703-555-1212","title":"Director"}],"coordinates":[-77.24356399999999,38.875059],"created_at":"2013-10-31T22:24:21-07:00","description":"This
-        is a description","name":"Admin Test Location","phones":[{"number":"7035551212","vanity_number":"703555-ABCD","extension":"x1223","department":"CalFresh"}],"short_desc":"This
-        is a short description","transportation":"SAMTRANS stops within 1/2 mile.","updated_at":"2013-11-01T21:10:04-07:00","url":"http://ohanapi.herokuapp.com/api/locations/52733b05fafbf0a01a000001","services":[{"_id":"52733ce076ac6ae977000002","name":"huzzah","updated_at":"2013-10-31T22:50:38-07:00"}],"organization":{"_id":"527334e4456acab967000002","_slugs":["jobtrain-1","admin-test-org"],"created_at":"2013-10-31T21:58:12-07:00","name":"Admin
-        Test Org","updated_at":"2013-10-31T23:05:59-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002","locations_url":"http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002/locations"},"slugs":["job-training-and-placement-program-1","admin-test-location"],"id":"52733b05fafbf0a01a000001","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1383283461000],"highlight":null,"_explanation":null},{"_id":"521d33a01974fcdb2b0026a2","_slugs":["san-mateo"],"accessibility":["Wheelchair"],"address":{"city":"San
+      string: '[{"_id":"5277f9c4ed6a9f3403000005","_slugs":["redwood-city-office-1"],"accessibility":["Disabled
+        Parking","Ramp","Disabled Restroom","TTY","Wheelchair","Wheelchair-accessible
+        van"],"address":{"city":"Redwood City","state":"CA","street":"2500 Middlefield
+        Rd.","zip":"94063"},"coordinates":[-122.2141324,37.4773738],"created_at":"2013-11-04T11:47:16-08:00","description":"Provides
+        social services eligibility determination and assistance for Health Coverage,
+        CalFresh, CalWORKs and General Assistance and Children and Family Services.","hours":"Monday-Friday,
+        8:00am-5:00pm; 24 hours a day, call 1-800-223-8383 for case status; 24 hours
+        a day, call (650) 802-7922 to report child abuse","kind":"Human Services","mail_address":{"attention":"","city":"Redwood
+        City","state":"CA","street":"2500 Middlefield Rd.","zip":"94063"},"name":"Redwood
+        City Office","phones":[{"number":"800-223-8383","department":"Economic Self-Sufficiency"},{"number":"650-802-7922","department":"Children
+        and Family Services"}],"short_desc":"Provides social services eligibility
+        determination and assistance for Health Coverage, CalFresh, CalWORKs and General
+        Assistance and Children and Family Services.","transportation":"SamTrans stops
+        in front on the building, and CalTrain is located within one mile of the office
+        location.","updated_at":"2013-11-07T12:47:26-08:00","urls":["http://www.smchsa.org"],"url":"http://ohanapi.herokuapp.com/api/locations/5277f9c4ed6a9f3403000005","services":[{"_id":"5277fbb737f9ba0a4700000b","audience":"San
+        Mateo County residents seeking social service assistance.","description":"Provides
+        social services eligibility determination and assistance for Health Coverage,
+        CalFresh, CalWORKs and General Assistance and Children and Family Services.","eligibility":"Determined
+        based on eligibility regulations and unique family or individual household
+        composition and resource levels.","fees":"None.","keywords":["Health Insurance","Food","Cash
+        Aid","Welfare","Obamacare","Medical Assistance","Social Services"],"name":"Social
+        Services","updated_at":"2013-11-04T12:07:59-08:00","wait":"Based on method
+        of application and daily customer volume. Our goal is to serve all residents
+        with the best and fastest service to meet their needs.","categories":[{"_id":"52280f5e1edd37edff000011","depth":0,"lft":33,"name":"Food","oe_id":"102","parent_id":null,"rgt":52},{"_id":"52280f6b1edd37edff000087","depth":0,"lft":269,"name":"Money","oe_id":"107","parent_id":null,"rgt":390},{"_id":"52280f6e1edd37edff0000b0","depth":1,"lft":350,"name":"Government
+        Benefits","oe_id":"107-03","parent_id":"52280f6b1edd37edff000087","rgt":361},{"_id":"52280f6f1edd37edff0000b2","depth":2,"lft":353,"name":"Food
+        Benefits","oe_id":"107-03-02","parent_id":"52280f6e1edd37edff0000b0","rgt":354},{"_id":"52280f6f1edd37edff0000b4","depth":2,"lft":357,"name":"Understand
+        Government Programs","oe_id":"107-03-04","parent_id":"52280f6e1edd37edff0000b0","rgt":358},{"_id":"52280f711edd37edff0000c4","depth":0,"lft":391,"name":"Care","oe_id":"108","parent_id":null,"rgt":488},{"_id":"52280f731edd37edff0000dc","depth":1,"lft":438,"name":"Navigating
+        the System","oe_id":"108-05","parent_id":"52280f711edd37edff0000c4","rgt":449},{"_id":"52280f731edd37edff0000dd","depth":2,"lft":439,"name":"Help
+        Fill out Forms","oe_id":"108-05-01","parent_id":"52280f731edd37edff0000dc","rgt":440},{"_id":"52280f791edd37edff000124","depth":0,"lft":583,"name":"Work","oe_id":"110","parent_id":null,"rgt":620},{"_id":"52280f791edd37edff000125","depth":1,"lft":584,"name":"Help
+        Find Work","oe_id":"110-01","parent_id":"52280f791edd37edff000124","rgt":589}]}],"organization":{"_id":"521d33741974fcdb2b002289","_slugs":["san-mateo-county-human-services-agency"],"created_at":"2013-08-27T16:17:08-07:00","name":"San
+        Mateo County Human Services Agency","updated_at":"2013-10-01T12:16:59-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33741974fcdb2b002289","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33741974fcdb2b002289/locations"},"slugs":["redwood-city-office-1"],"id":"5277f9c4ed6a9f3403000005","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1383594436000],"highlight":null,"_explanation":null},{"_id":"522dee274becffff2700003b","_slugs":["south-san-francisco-farmers-market"],"address":{"city":"South
+        San Francisco","state":"CA","street":"748 Tennis Dr","zip":"94080"},"coordinates":[-122.4253156,37.6552314],"created_at":"2013-09-09T08:49:59-07:00","hours":"May
+        - October Saturday 10:00 AM to 2:00 PM","kind":"Farmers'' Markets","market_match":true,"name":"South
+        San Francisco Farmers Market","payments":["WIC","SFMNP","SNAP"],"products":["Baked
+        Goods","Flowers","Herbs","Vegetables","Jams","Nuts","Prepared Food"],"updated_at":"2013-10-01T12:19:01-07:00","urls":["http://pcfma.com/market_home.php?market_id=37"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee274becffff2700003b","organization":{"_id":"522dee274becffff2700003a","_slugs":["south-san-francisco-farmers-market"],"created_at":"2013-09-09T08:49:59-07:00","name":"South
+        San Francisco Farmers Market","updated_at":"2013-10-01T12:19:01-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee274becffff2700003a","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee274becffff2700003a/locations"},"slugs":["south-san-francisco-farmers-market"],"id":"522dee274becffff2700003b","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741799000],"highlight":null,"_explanation":null},{"_id":"522dee264becffff2700002f","_slugs":["pjcc-farmers-market-at-foster-city"],"address":{"city":"Foster
+        City","state":"CA","street":"800 Foster City Blvd.","zip":"94404"},"coordinates":[-122.2636018,37.5582093],"created_at":"2013-09-09T08:49:58-07:00","hours":"May
+        - October Wednesday 9:00 AM to 1:00 PM","kind":"Farmers'' Markets","name":"PJCC
+        Farmers'' Market at Foster City","payments":["WIC","WICcash","SFMNP","SNAP"],"products":["Vegetables","Plants"],"updated_at":"2013-10-01T12:18:59-07:00","urls":["http://www.urbantable.org"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee264becffff2700002f","organization":{"_id":"522dee264becffff2700002e","_slugs":["pjcc-farmers-market-at-foster-city"],"created_at":"2013-09-09T08:49:58-07:00","name":"PJCC
+        Farmers'' Market at Foster City","updated_at":"2013-10-01T12:18:59-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee264becffff2700002e","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee264becffff2700002e/locations"},"slugs":["pjcc-farmers-market-at-foster-city"],"id":"522dee264becffff2700002f","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741798000],"highlight":null,"_explanation":null},{"_id":"522dee264becffff27000038","_slugs":["saratoga-farmers-market"],"address":{"city":"Saratoga","state":"CA","street":"West
+        Valley College, 14000 Fruitvale Avenue","zip":"95070"},"coordinates":[-122.0111089,37.2654921],"created_at":"2013-09-09T08:49:58-07:00","hours":"January
+        - December Saturday 9:00 AM to 1:00 PM","kind":"Farmers'' Markets","name":"Saratoga
+        Farmers'' Market","payments":["WIC","SFMNP"],"products":["Baked Goods","Cheese","Flowers","Eggs","Seafood","Herbs","Vegetables","Honey","Jams","Nursery","Nuts","Plants","Poultry","Prepared
+        Food","Soap"],"updated_at":"2013-10-01T12:19:01-07:00","urls":["http://cafarmersmkts.com/markets/category/saratoga"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee264becffff27000038","organization":{"_id":"522dee264becffff27000037","_slugs":["saratoga-farmers-market"],"created_at":"2013-09-09T08:49:58-07:00","name":"Saratoga
+        Farmers'' Market","updated_at":"2013-10-01T12:19:01-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee264becffff27000037","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee264becffff27000037/locations"},"slugs":["saratoga-farmers-market"],"id":"522dee264becffff27000038","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741798000],"highlight":null,"_explanation":null},{"_id":"522dee264becffff27000032","_slugs":["redwood-city-kiwanis-farmers-market-1"],"address":{"city":"Redwood
+        City","state":"CA","street":"850 Winslow Street","zip":"94063"},"coordinates":[-122.2300105,37.4854442],"created_at":"2013-09-09T08:49:58-07:00","hours":"April
+        - November Saturday 8:00 AM to 12:00 PM","kind":"Farmers'' Markets","name":"Redwood
+        City Kiwanis Farmers Market","payments":["WICcash"],"products":["Baked Goods","Crafts","Flowers","Eggs","Seafood","Vegetables","Honey","Nuts"],"updated_at":"2013-10-01T12:19:00-07:00","urls":["http://www.rwcfm.org"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee264becffff27000032","organization":{"_id":"522dee264becffff27000031","_slugs":["redwood-city-kiwanis-farmers-market-1"],"created_at":"2013-09-09T08:49:58-07:00","name":"Redwood
+        City Kiwanis Farmers Market","updated_at":"2013-10-01T12:19:00-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee264becffff27000031","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee264becffff27000031/locations"},"slugs":["redwood-city-kiwanis-farmers-market-1"],"id":"522dee264becffff27000032","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741798000],"highlight":null,"_explanation":null},{"_id":"522dee264becffff27000035","_slugs":["san-mateo-farmers-market"],"address":{"city":"San
+        Mateo","state":"CA","street":"1700 West Hillsdale Boulevard","zip":"94401"},"coordinates":[-122.335123,37.5350511],"created_at":"2013-09-09T08:49:58-07:00","hours":"January
+        - December Saturday 9:00 AM to 1:00 PM","kind":"Farmers'' Markets","market_match":true,"name":"San
+        Mateo Farmers'' Market","payments":["Credit","WIC","SFMNP","SNAP"],"products":["Baked
+        Goods","Cheese","Crafts","Flowers","Eggs","Seafood","Herbs","Vegetables","Honey","Jams","Meat","Nursery","Nuts","Plants","Poultry","Prepared
+        Food","Soap","Wine"],"updated_at":"2013-10-01T12:19:00-07:00","urls":["http://www.pcfma.com/sanmateo"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee264becffff27000035","organization":{"_id":"522dee264becffff27000034","_slugs":["san-mateo-farmers-market"],"created_at":"2013-09-09T08:49:58-07:00","name":"San
+        Mateo Farmers'' Market","updated_at":"2013-10-01T12:19:00-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee264becffff27000034","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee264becffff27000034/locations"},"slugs":["san-mateo-farmers-market"],"id":"522dee264becffff27000035","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741798000],"highlight":null,"_explanation":null},{"_id":"522dee254becffff27000026","_slugs":["menlo-park-farmers-market"],"address":{"city":"Menlo
+        Park","state":"CA","street":"Chestnut & Menlo Avenues","zip":"94025"},"coordinates":[-122.1834629,37.45091499999999],"created_at":"2013-09-09T08:49:57-07:00","hours":"January
+        - December Sunday 9:00 AM to 1:00 PM, (Open on all holidays that fall on Sundays,
+        except Christmas)","kind":"Farmers'' Markets","name":"Menlo Park Farmers''
+        Market","payments":["Credit"],"products":["Baked Goods","Flowers","Eggs","Seafood","Herbs","Vegetables","Honey","Jams","Meat","Nursery","Nuts","Plants","Poultry","Soap"],"updated_at":"2013-10-01T12:13:32-07:00","urls":["http://localharvest.org"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee254becffff27000026","organization":{"_id":"522dee254becffff27000025","_slugs":["menlo-park-farmers-market"],"created_at":"2013-09-09T08:49:57-07:00","name":"Menlo
+        Park Farmers'' Market","updated_at":"2013-10-01T12:13:32-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee254becffff27000025","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee254becffff27000025/locations"},"slugs":["menlo-park-farmers-market"],"id":"522dee254becffff27000026","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741797000],"highlight":null,"_explanation":null},{"_id":"522dee254becffff27000023","_slugs":["los-altos-farmers-market"],"address":{"city":"Los
+        Altos","state":"CA","street":"State Street and Second Street","zip":"94022"},"coordinates":[-122.1173552,37.3791761],"created_at":"2013-09-09T08:49:57-07:00","hours":"May
+        - September Thursday 4:00 PM to 8:00 PM","kind":"Farmers'' Markets","name":"Los
+        Altos Farmers Market","payments":["WIC","SFMNP","SNAP"],"products":["Baked
+        Goods","Flowers","Eggs","Herbs","Vegetables","Jams","Meat","Nuts","Prepared
+        Food","Soap"],"updated_at":"2013-10-01T12:18:57-07:00","urls":["http://cafarmersmkts.com/markets/category/los-altos-farmers-market"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee254becffff27000023","organization":{"_id":"522dee254becffff27000022","_slugs":["los-altos-farmers-market"],"created_at":"2013-09-09T08:49:57-07:00","name":"Los
+        Altos Farmers Market","updated_at":"2013-10-01T12:18:57-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee254becffff27000022","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee254becffff27000022/locations"},"slugs":["los-altos-farmers-market"],"id":"522dee254becffff27000023","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741797000],"highlight":null,"_explanation":null},{"_id":"522dee244becffff27000020","_slugs":["kaiser-permanente-south-san-francisco-farmers-market"],"address":{"city":"South
+        San Francisco","state":"CA","street":"1200 El Camino Real","zip":"94080"},"coordinates":[-122.4393303,37.6591467],"created_at":"2013-09-09T08:49:57-07:00","hours":"May
+        7 - October 15 Tuesday 10:00 AM to 2:00 PM","kind":"Farmers'' Markets","market_match":true,"name":"Kaiser
+        Permanente South San Francisco Farmers'' Market","payments":["WIC","SFMNP","SNAP"],"products":["Baked
+        Goods","Flowers","Vegetables","Prepared Food"],"updated_at":"2013-10-01T12:18:57-07:00","urls":["http://www.pcfma.com/market_home.php?market_id=26"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee244becffff27000020","organization":{"_id":"522dee244becffff2700001f","_slugs":["kaiser-permanente-south-san-francisco-farmers-market"],"created_at":"2013-09-09T08:49:56-07:00","name":"Kaiser
+        Permanente South San Francisco Farmers'' Market","updated_at":"2013-10-01T12:18:57-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee244becffff2700001f","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee244becffff2700001f/locations"},"slugs":["kaiser-permanente-south-san-francisco-farmers-market"],"id":"522dee244becffff27000020","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741797000],"highlight":null,"_explanation":null},{"_id":"522dee254becffff27000029","_slugs":["millbrae-farmers-market"],"address":{"city":"Millbrae","state":"CA","street":"200
+        Broadway","zip":"94030"},"coordinates":[-122.3905851,37.5999172],"created_at":"2013-09-09T08:49:57-07:00","hours":"January
+        - December Saturday 8:00 am to 1:00 pm","kind":"Farmers'' Markets","name":"Millbrae
+        Farmers Market","payments":["WIC","SFMNP"],"products":["Baked Goods","Flowers","Seafood","Herbs","Vegetables","Honey","Nuts","Plants"],"updated_at":"2013-10-01T12:18:58-07:00","urls":["http://www.millbrae.com"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee254becffff27000029","organization":{"_id":"522dee254becffff27000028","_slugs":["millbrae-farmers-market"],"created_at":"2013-09-09T08:49:57-07:00","name":"Millbrae
+        Farmers Market","updated_at":"2013-10-01T12:18:58-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee254becffff27000028","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee254becffff27000028/locations"},"slugs":["millbrae-farmers-market"],"id":"522dee254becffff27000029","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741797000],"highlight":null,"_explanation":null},{"_id":"522dee254becffff2700002c","_slugs":["pescadero-grown"],"address":{"city":"La
+        Honda","state":"CA","street":"8875 La Honda Road","zip":"94020"},"coordinates":[-122.2743951,37.3180168],"created_at":"2013-09-09T08:49:57-07:00","hours":"May
+        - November Tuesday 3:00 PM to 7:00 PM","kind":"Farmers'' Markets","name":"Pescadero
+        Grown","payments":["Credit","WIC","SFMNP","SNAP"],"products":["Cheese","Flowers","Eggs","Seafood","Herbs","Vegetables","Jams","Meat","Nursery","Plants","Poultry"],"updated_at":"2013-10-01T12:18:59-07:00","urls":["http://Www.pescaderogrown.org"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee254becffff2700002c","organization":{"_id":"522dee254becffff2700002b","_slugs":["pescadero-grown"],"created_at":"2013-09-09T08:49:57-07:00","name":"Pescadero
+        Grown","updated_at":"2013-10-01T12:18:59-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee254becffff2700002b","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee254becffff2700002b/locations"},"slugs":["pescadero-grown"],"id":"522dee254becffff2700002c","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741797000],"highlight":null,"_explanation":null},{"_id":"522dee244becffff2700001a","_slugs":["hot-harvest-nights-san-carlos-farmers-market"],"address":{"city":"San
+        Carlos","state":"CA","street":"700 Block, Laurel Street","zip":"94070"},"coordinates":[-122.259756,37.5048839],"created_at":"2013-09-09T08:49:56-07:00","hours":"May
+        2 - September 12 Thursday 4:00 PM to 8:00 PM","kind":"Farmers'' Markets","name":"Hot
+        Harvest Nights San Carlos Farmers'' Market","products":["Baked Goods","Flowers","Seafood","Vegetables","Prepared
+        Food"],"updated_at":"2013-10-01T12:13:32-07:00","urls":["https://www.sancarloschamber.org/textpages/farmers_market.aspx"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee244becffff2700001a","organization":{"_id":"522dee244becffff27000019","_slugs":["hot-harvest-nights-san-carlos-farmers-market"],"created_at":"2013-09-09T08:49:56-07:00","name":"Hot
+        Harvest Nights San Carlos Farmers'' Market","updated_at":"2013-10-01T12:13:32-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee244becffff27000019","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee244becffff27000019/locations"},"slugs":["hot-harvest-nights-san-carlos-farmers-market"],"id":"522dee244becffff2700001a","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741796000],"highlight":null,"_explanation":null},{"_id":"522dee244becffff27000017","_slugs":["east-palo-alto-community-farmers-market"],"address":{"city":"East
+        Palo Alto","state":"CA","street":"1798-A Bay Road","zip":"94303"},"coordinates":[-122.1304591,37.4546566],"created_at":"2013-09-09T08:49:56-07:00","hours":"January
+        - December Wednesday 12:00 PM to 3:00 PM","kind":"Farmers'' Markets","name":"East
+        Palo Alto Community Farmers Market","payments":["Credit","WIC","SNAP"],"products":["Flowers","Vegetables"],"updated_at":"2013-10-01T12:18:56-07:00","urls":["http://www.collectiveroots.org"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee244becffff27000017","organization":{"_id":"522dee244becffff27000016","_slugs":["east-palo-alto-community-farmers-market"],"created_at":"2013-09-09T08:49:56-07:00","name":"East
+        Palo Alto Community Farmers Market","updated_at":"2013-10-01T12:18:56-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee244becffff27000016","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee244becffff27000016/locations"},"slugs":["east-palo-alto-community-farmers-market"],"id":"522dee244becffff27000017","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741796000],"highlight":null,"_explanation":null},{"_id":"522dee244becffff27000014","_slugs":["daly-city-farmers-market-at-serramonte-center"],"address":{"city":"Daly
+        City","state":"CA","street":"133 Serramonte Center","zip":"94015"},"coordinates":[-122.471026,37.6704999],"created_at":"2013-09-09T08:49:56-07:00","hours":"January
+        - December Thursday 9:00 AM to 1:00 PM, Saturday 9:00 AM to 1:00 PM","kind":"Farmers''
+        Markets","name":"Daly City Farmers'' Market at Serramonte Center","payments":["WIC","SFMNP"],"products":["Baked
+        Goods","Flowers","Eggs","Seafood","Herbs","Vegetables","Nursery","Nuts","Prepared
+        Food","Soap"],"updated_at":"2013-10-01T12:18:55-07:00","urls":["http://cafarmersmkts.com/markets/category/daly-city"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee244becffff27000014","organization":{"_id":"522dee244becffff27000013","_slugs":["daly-city-farmers-market-at-serramonte-center"],"created_at":"2013-09-09T08:49:56-07:00","name":"Daly
+        City Farmers'' Market at Serramonte Center","updated_at":"2013-10-01T12:18:55-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee244becffff27000013","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee244becffff27000013/locations"},"slugs":["daly-city-farmers-market-at-serramonte-center"],"id":"522dee244becffff27000014","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741796000],"highlight":null,"_explanation":null},{"_id":"522dee244becffff2700001d","_slugs":["kaiser-permanente-redwood-city-farmers-market"],"address":{"city":"Redwood
+        City","state":"CA","street":"1150 Veterans Blvd.","zip":"94063"},"coordinates":[-122.2232169,37.4889742],"created_at":"2013-09-09T08:49:56-07:00","hours":"May
+        1 - September 25 Wednesday 10:00 AM to 2:00 PM","kind":"Farmers'' Markets","name":"Kaiser
+        Permanente Redwood City Farmers'' Market","payments":["WIC","SFMNP","SNAP"],"products":["Vegetables"],"updated_at":"2013-10-01T12:18:56-07:00","urls":["http://www.pcfma.com/market_home.php?market_id=39"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee244becffff2700001d","organization":{"_id":"522dee244becffff2700001c","_slugs":["kaiser-permanente-redwood-city-farmers-market"],"created_at":"2013-09-09T08:49:56-07:00","name":"Kaiser
+        Permanente Redwood City Farmers'' Market","updated_at":"2013-10-01T12:18:56-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee244becffff2700001c","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee244becffff2700001c/locations"},"slugs":["kaiser-permanente-redwood-city-farmers-market"],"id":"522dee244becffff2700001d","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741796000],"highlight":null,"_explanation":null},{"_id":"522dee234becffff27000008","_slugs":["burlingame-fresh-market-farmers-market"],"address":{"city":"Burlingame","state":"CA","street":"Howard
+        Ave. & Park","zip":"94010"},"coordinates":[-122.3456787,37.5772448],"created_at":"2013-09-09T08:49:55-07:00","hours":"April
+        - December Sunday 9:00 AM to 1:30 PM, May - mid-September Thursday 4:00 PM
+        to 8:00 PM","kind":"Farmers'' Markets","name":"Burlingame Fresh Market Farmers
+        Market","updated_at":"2013-10-01T12:13:20-07:00","urls":["http://www.burlingamechamber.org"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee234becffff27000008","organization":{"_id":"522dee234becffff27000007","_slugs":["burlingame-fresh-market-farmers-market"],"created_at":"2013-09-09T08:49:55-07:00","name":"Burlingame
+        Fresh Market Farmers Market","updated_at":"2013-10-01T12:13:20-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee234becffff27000007","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee234becffff27000007/locations"},"slugs":["burlingame-fresh-market-farmers-market"],"id":"522dee234becffff27000008","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741795000],"highlight":null,"_explanation":null},{"_id":"522dee224becffff27000005","_slugs":["belmont-farmers-market"],"address":{"city":"Belmont","state":"CA","street":"1201
+        El Camino Real","zip":"94002"},"coordinates":[-122.2743709,37.519226],"created_at":"2013-09-09T08:49:55-07:00","hours":"January
+        - December Sunday 9:00 AM to 1:00 PM","kind":"Farmers'' Markets","market_match":true,"name":"Belmont
+        Farmers'' Market","payments":["WIC","SFMNP","SNAP"],"products":["Baked Goods","Cheese","Flowers","Eggs","Seafood","Herbs","Vegetables","Honey","Meat","Nursery","Nuts","Poultry","Prepared
+        Food"],"updated_at":"2013-10-01T12:18:53-07:00","urls":["http://www.pcfma.com/market_home.php?market_id=2"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee224becffff27000005","organization":{"_id":"522dee224becffff27000004","_slugs":["belmont-farmers-market"],"created_at":"2013-09-09T08:49:54-07:00","name":"Belmont
+        Farmers'' Market","updated_at":"2013-10-01T12:18:53-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee224becffff27000004","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee224becffff27000004/locations"},"slugs":["belmont-farmers-market"],"id":"522dee224becffff27000005","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741795000],"highlight":null,"_explanation":null},{"_id":"522dee234becffff2700000b","_slugs":["coastside-farmers-market-in-half-moon-bay"],"address":{"city":"Half
+        Moon Bay","state":"CA","street":"225 Cabrillo Hwy S","zip":"94019"},"coordinates":[-122.43267,37.464756],"created_at":"2013-09-09T08:49:55-07:00","hours":"May
+        - December Saturday 9:00 AM to 1:00 PM","kind":"Farmers'' Markets","name":"Coastside
+        Farmers'' Market in Half Moon Bay","payments":["Credit","WICcash","SFMNP","SNAP"],"products":["Baked
+        Goods","Cheese","Crafts","Flowers","Eggs","Seafood","Herbs","Vegetables","Honey","Jams","Meat","Nursery","Nuts","Plants","Poultry","Prepared
+        Food","Soap"],"updated_at":"2013-10-01T12:18:54-07:00","urls":["http://www.coastsidefarmersmarket.org"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee234becffff2700000b","organization":{"_id":"522dee234becffff2700000a","_slugs":["coastside-farmers-market-in-half-moon-bay"],"created_at":"2013-09-09T08:49:55-07:00","name":"Coastside
+        Farmers'' Market in Half Moon Bay","updated_at":"2013-10-01T12:18:54-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee234becffff2700000a","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee234becffff2700000a/locations"},"slugs":["coastside-farmers-market-in-half-moon-bay"],"id":"522dee234becffff2700000b","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741795000],"highlight":null,"_explanation":null},{"_id":"522dee234becffff2700000e","_slugs":["coastside-farmers-market-of-pacifca"],"address":{"city":"Pacifica","state":"CA","street":"400
+        Old County Road","zip":"94044"},"coordinates":[-122.4945456,37.6100031],"created_at":"2013-09-09T08:49:55-07:00","hours":"May
+        - December Wednesday 2:30 PM to 6:30 PM, (CLOSES @ 6:00 in November & December)","kind":"Farmers''
+        Markets","name":"Coastside Farmers'' Market of Pacifca","payments":["Credit","WICcash","SFMNP","SNAP"],"products":["Baked
+        Goods","Cheese","Flowers","Eggs","Seafood","Herbs","Vegetables","Honey","Jams","Meat","Nursery","Nuts","Poultry","Prepared
+        Food","Soap"],"updated_at":"2013-10-01T12:18:54-07:00","urls":["http://www.coastsidefarmersmarket.org/"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee234becffff2700000e","organization":{"_id":"522dee234becffff2700000d","_slugs":["coastside-farmers-market-of-pacifca"],"created_at":"2013-09-09T08:49:55-07:00","name":"Coastside
+        Farmers'' Market of Pacifca","updated_at":"2013-10-01T12:18:54-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee234becffff2700000d","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee234becffff2700000d/locations"},"slugs":["coastside-farmers-market-of-pacifca"],"id":"522dee234becffff2700000e","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741795000],"highlight":null,"_explanation":null},{"_id":"522dee234becffff27000011","_slugs":["college-of-san-mateo-certified-farmers-market"],"address":{"city":"San
+        Mateo","state":"CA","street":"1700 W. Hillsdale Blvd.","zip":"94402"},"coordinates":[-122.335123,37.5350511],"created_at":"2013-09-09T08:49:55-07:00","hours":"January
+        - December Saturday 9:00 am to 1:00 pm","kind":"Farmers'' Markets","market_match":true,"name":"College
+        of San Mateo Certified Farmers'' Market","payments":["WIC","SFMNP","SNAP"],"products":["Baked
+        Goods","Cheese","Flowers","Seafood","Herbs","Vegetables","Honey","Jams","Meat","Nuts","Plants","Prepared
+        Food","Soap"],"updated_at":"2013-10-01T12:18:55-07:00","urls":["http://pcfma.com/market_home.php?market_id=15"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee234becffff27000011","organization":{"_id":"522dee234becffff27000010","_slugs":["college-of-san-mateo-certified-farmers-market"],"created_at":"2013-09-09T08:49:55-07:00","name":"College
+        of San Mateo Certified Farmers'' Market","updated_at":"2013-10-01T12:18:55-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee234becffff27000010","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee234becffff27000010/locations"},"slugs":["college-of-san-mateo-certified-farmers-market"],"id":"522dee234becffff27000011","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741795000],"highlight":null,"_explanation":null},{"_id":"522dee224becffff27000002","_slugs":["25th-avenue-farmers-market"],"address":{"city":"San
+        Mateo","state":"CA","street":"194 W 25th Avenue","zip":"94403"},"coordinates":[-122.309978,37.543641],"created_at":"2013-09-09T08:49:54-07:00","hours":"May
+        - October Tuesday 4:00 PM to 7:30 PM","kind":"Farmers'' Markets","market_match":true,"name":"25th
+        Avenue Farmers'' Market","payments":["WIC","SFMNP","SNAP"],"products":["Baked
+        Goods","Flowers","Seafood","Vegetables","Honey","Meat","Nursery","Nuts","Plants","Prepared
+        Food"],"updated_at":"2013-10-01T12:18:53-07:00","urls":["http://www.pcfma.com/market_home.php?market_id=40"],"url":"http://ohanapi.herokuapp.com/api/locations/522dee224becffff27000002","organization":{"_id":"522dee224becffff27000001","_slugs":["25th-avenue-farmers-market"],"created_at":"2013-09-09T08:49:54-07:00","name":"25th
+        Avenue Farmers'' Market","updated_at":"2013-10-01T12:18:53-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/522dee224becffff27000001","locations_url":"http://ohanapi.herokuapp.com/api/organizations/522dee224becffff27000001/locations"},"slugs":["25th-avenue-farmers-market"],"id":"522dee224becffff27000002","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1378741794000],"highlight":null,"_explanation":null},{"_id":"521d339f1974fcdb2b00269e","_slugs":["pacifica"],"accessibility":["Wheelchair"],"address":{"city":"Pacifica","state":"CA","street":"435
+        Edgemar Avenue","zip":"94044"},"ask_for":["Intake Coordinator"],"contacts":[{"_id":"521d33a01974fcdb2b00269f","name":"Melissa
+        Riccio","title":"Clinical Director"}],"coordinates":[-122.489409,37.6491073],"created_at":"2013-08-27T16:17:52-07:00","description":"Offers
+        counseling services to children, families and couples. Serves as a juvenile
+        diversion program for youth referred from the Probation Department, police
+        departments, sheriff''s office or other community agencies. Counselors are
+        on-site at all of the Laguna Salada schools and Terra Nova, Oceana and Jefferson
+        high schools to provide individual and group counseling, crisis intervention
+        and consultation. Children''s groups are held several times a year.","faxes":[{"number":"650
+        355-2850"}],"hours":"Monday-Wednesday, 4 pm-8 pm","kind":"Other","mail_address":{"attention":"Pacifica
+        Youth Service Bureau","city":"Pacifica","state":"CA","street":"435 Edgemar
+        Avenue","zip":"94044-6879"},"name":"Pacifica","phones":[{"number":"650 355-3900","hours":"(Monday-Wednesday,
+        4 pm-8 pm)"}],"short_desc":"Offers a number of counseling programs for youth
+        age 3-18, including youth with questions about their sexuality. Also offers
+        counseling for adults.","transportation":"SAMTRANS stops within 1 block.","updated_at":"2013-11-07T12:44:56-08:00","urls":["http://www.youthservicebureaus.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d339f1974fcdb2b00269e","services":[{"_id":"521d33a01974fcdb2b0026ab","audience":"Children,
+        adolescents, families and individuals","eligibility":"None","fees":"Vary according
+        to income. Cash, checks and Medi-Cal accepted.","funding_sources":["County","Donations","Fees","Grants","School
+        district"],"how_to_apply":"Apply by phone.","keywords":["CHILD PROTECTION
+        AND CARE SERVICES","Crisis/Abuse Intervention/Hot","INDIVIDUAL AND FAMILY
+        DEVELOPMENT SERVICES","Growth and Adjustment","LEGAL AND CRIMINAL JUSTICE
+        SERVICES","Diversion","Juvenile Delinquency Prevent","MENTAL HEALTH SERVICES","Individual/Group
+        Counseling","Diversion Programs","Y Facilities","Youth"],"service_areas":["San
+        Mateo County","Daly City","El Granada","Half Moon Bay","Miramar","Montara","Moss
+        Beach","Pacifica","San Bruno"],"updated_at":"2013-09-18T17:03:36-07:00","wait":"Varies.","categories":[{"_id":"52280f661edd37edff00004e","depth":0,"lft":155,"name":"Health","oe_id":"106","parent_id":null,"rgt":268},{"_id":"52280f681edd37edff00005c","depth":1,"lft":182,"name":"Health
+        Education","oe_id":"106-04","parent_id":"52280f661edd37edff00004e","rgt":199},{"_id":"52280f681edd37edff000064","depth":2,"lft":197,"name":"Understand
+        Mental Health","oe_id":"106-04-08","parent_id":"52280f681edd37edff00005c","rgt":198},{"_id":"52280f7a1edd37edff000137","depth":0,"lft":621,"name":"Legal","oe_id":"111","parent_id":null,"rgt":654},{"_id":"52280f7a1edd37edff000138","depth":1,"lft":622,"name":"Advocacy
+        & Legal Aid","oe_id":"111-01","parent_id":"52280f7a1edd37edff000137","rgt":645}]}],"organization":{"_id":"521d339f1974fcdb2b002699","_slugs":["youth-service-bureaus-of-the-ymca"],"created_at":"2013-08-27T16:17:51-07:00","name":"Youth
+        Service Bureaus of the YMCA","updated_at":"2013-10-01T12:18:51-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d339f1974fcdb2b002699","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d339f1974fcdb2b002699/locations"},"slugs":["pacifica"],"id":"521d339f1974fcdb2b00269e","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645472000],"highlight":null,"_explanation":null},{"_id":"521d33a01974fcdb2b0026a6","_slugs":["south-san-francisco-dot-juvenile-sexual-responsibility-program"],"accessibility":["Wheelchair"],"address":{"city":"South
+        San Francisco","state":"CA","street":"1486 Huntington Avenue, Suite 100","zip":"94080-5932"},"ask_for":["Erika
+        Jennings"],"contacts":[{"_id":"521d33a01974fcdb2b0026a7","name":"Erika Jennings","title":"Director
+        of Clinical Services"}],"coordinates":[-122.4221521,37.6444129],"created_at":"2013-08-27T16:17:52-07:00","description":"A
+        program directed to San Mateo County boys age 12-17 with a documented or suspected
+        history of perpetrating sexual abuse and a parent or guardian willing to participate
+        in the treatment program. Following a clinical evaluation and interviews with
+        all parties, a treatment recommendation is made. Treatment consists of case
+        management, weekly group therapy, parent groups, family therapy and referral
+        to other resources as necessary.","emails":["ejennings@ymcasf.org"],"faxes":[{"number":"650
+        877-8643"}],"kind":"Other","languages":["Spanish"],"mail_address":{"attention":"Juvenile
+        Sexual Response Prog","city":"South San Francisco","state":"CA","street":"1486
+        Huntington Avenue, Suite 100","zip":"94080-5932"},"name":"South San Francisco.,
+        Juvenile Sexual Responsibility Program","phones":[{"number":"650 877-8642","hours":"(Monday-Thursday,
+        4-8)"}],"short_desc":"Treatment program for boys age 14-17 with a documented
+        or suspected history of perpetrating sexual abuse.","transportation":"SAMTRANS
+        stops within 1 block. BART within 1/2 mile.","updated_at":"2013-11-07T12:47:12-08:00","url":"http://ohanapi.herokuapp.com/api/locations/521d33a01974fcdb2b0026a6","services":[{"_id":"521d33a01974fcdb2b0026ad","audience":"Boys
+        age 12-17 with a suspected or documented history of low to moderate risk sex
+        offenses","eligibility":"Resident of area served, age 12-17","fees":"Vary
+        according to income. Medi-Cal accepted.","funding_sources":["County"],"how_to_apply":"Referral
+        from the police, Probation Department, Children and Family Services, or County
+        Mental Health Department.","keywords":["INDIVIDUAL AND FAMILY DEVELOPMENT
+        SERVICES","Growth and Adjustment","LEGAL AND CRIMINAL JUSTICE SERVICES","Juvenile
+        Delinquency Prevent","MENTAL HEALTH SERVICES","Individual/Group Counseling","Y
+        Facilities","Youth"],"service_areas":["San Mateo County"],"updated_at":"2013-11-11T00:45:38-08:00","wait":"Varies.","categories":[{"_id":"52280f751edd37edff0000f5","depth":0,"lft":489,"name":"Education","oe_id":"109","parent_id":null,"rgt":582},{"_id":"52280f781edd37edff000117","depth":1,"lft":556,"name":"Skills
+        & Training","oe_id":"109-06","parent_id":"52280f751edd37edff0000f5","rgt":571},{"_id":"52280f791edd37edff00011e","depth":2,"lft":569,"name":"Specialized
+        Training","oe_id":"109-06-07","parent_id":"52280f781edd37edff000117","rgt":570}]}],"organization":{"_id":"521d339f1974fcdb2b002699","_slugs":["youth-service-bureaus-of-the-ymca"],"created_at":"2013-08-27T16:17:51-07:00","name":"Youth
+        Service Bureaus of the YMCA","updated_at":"2013-10-01T12:18:51-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d339f1974fcdb2b002699","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d339f1974fcdb2b002699/locations"},"slugs":["south-san-francisco-dot-juvenile-sexual-responsibility-program"],"id":"521d33a01974fcdb2b0026a6","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645472000],"highlight":null,"_explanation":null},{"_id":"521d33a01974fcdb2b0026a2","_slugs":["san-mateo"],"accessibility":["Wheelchair"],"address":{"city":"San
         Mateo","state":"CA","street":"1670 South Amphlett Blvd, Suite 115","zip":"94402"},"ask_for":["Intake
         coordinator"],"contacts":[{"_id":"521d33a01974fcdb2b0026a3","name":"Erika
         Jennings, MFT","title":"Clinical Director"}],"coordinates":[-122.3022248,37.5591732],"created_at":"2013-08-27T16:17:52-07:00","description":"The
@@ -294,13 +500,13 @@ http_interactions:
         couseling services are offered at 19 schools throughout San Mateo County.
         Programs include Violence Prevention, School Safety Advocates, Girls United,
         case management and individual and group counseling. Formerly known as Project
-        FOCYS.","emails":["ejennings@ymcasf.org"],"faxes":["650 349-1103"],"hours":"Monday-Wednesday,
+        FOCYS.","emails":["ejennings@ymcasf.org"],"faxes":[{"number":"650 349-1103"}],"hours":"Monday-Wednesday,
         4 pm-8 pm","kind":"Human Services","languages":["Spanish"],"mail_address":{"attention":"of
         San Mateo","city":"San Mateo","state":"CA","street":"1670 South Amphlett Blvd,
         Suite 115","zip":"94402"},"name":"San Mateo","phones":[{"number":"650 349-7969","hours":"(Monday-Wednesday,
         11 am-8 pm; Thursday, 12-6 pm)"}],"short_desc":"Counseling program offering
         services to families of children who are having behavior problems in the community.
-        Also individual and couples counseling.","updated_at":"2013-10-01T12:18:52-07:00","urls":["http://youthservicebureaus.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33a01974fcdb2b0026a2","services":[{"_id":"521d33a01974fcdb2b0026ac","audience":"Youth
+        Also individual and couples counseling.","updated_at":"2013-11-07T12:44:56-08:00","urls":["http://youthservicebureaus.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33a01974fcdb2b0026a2","services":[{"_id":"521d33a01974fcdb2b0026ac","audience":"Youth
         and families, adults, adult and couples","eligibility":"Resident of area served","fees":"Vary
         according to income. Cash, checks, Medi-Cal and Victims of Crime Assistance
         accepted.","funding_sources":["City","County","Donations","Fees","Grants","State"],"how_to_apply":"Apply
@@ -308,823 +514,176 @@ http_interactions:
         PROTECTION AND CARE SERVICES","Crisis/Abuse Intervention/Hot","Individual/Group
         Counseling","INDIVIDUAL AND FAMILY DEVELOPMENT SERVICES","Growth and Adjustment","Parent
         Groups","LEGAL AND CRIMINAL JUSTICE SERVICES","Diversion","Juvenile Delinquency
-        Prevent","Diversion Programs","Y Facilities","Youth","YMCA"],"service_areas":"San
-        Mateo County","updated_at":"2013-09-19T01:07:05-07:00","wait":"Varies.","categories":[{"_id":"52280f711edd37edff0000c4","depth":0,"lft":391,"name":"Care","oe_id":"108","parent_id":null,"rgt":488},{"_id":"52280f741edd37edff0000e7","depth":1,"lft":460,"name":"Support
+        Prevent","Diversion Programs","Y Facilities","Youth","YMCA"],"service_areas":["San
+        Mateo County"],"updated_at":"2013-11-11T00:45:39-08:00","wait":"Varies.","categories":[{"_id":"52280f711edd37edff0000c4","depth":0,"lft":391,"name":"Care","oe_id":"108","parent_id":null,"rgt":488},{"_id":"52280f741edd37edff0000e7","depth":1,"lft":460,"name":"Support
         Network","oe_id":"108-07","parent_id":"52280f711edd37edff0000c4","rgt":487},{"_id":"52280f741edd37edff0000e8","depth":2,"lft":461,"name":"Counseling","oe_id":"108-07-01","parent_id":"52280f741edd37edff0000e7","rgt":462}]}],"organization":{"_id":"521d339f1974fcdb2b002699","_slugs":["youth-service-bureaus-of-the-ymca"],"created_at":"2013-08-27T16:17:51-07:00","name":"Youth
-        Service Bureaus of the YMCA","updated_at":"2013-10-01T12:18:51-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d339f1974fcdb2b002699","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d339f1974fcdb2b002699/locations"},"slugs":["san-mateo"],"id":"521d33a01974fcdb2b0026a2","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645472000],"highlight":null,"_explanation":null},{"_id":"521d339c1974fcdb2b002638","_slugs":["school-of-dentistry-dot-clinical-services"],"accessibility":["Elevator","Ramp","Disabled
-        Restroom","Disabled Parking","Wheelchair"],"address":{"city":"San Francisco","state":"CA","street":"707
-        Parnassus Avenue","zip":"94143-0752"},"ask_for":["First floor reception desk"],"contacts":[{"_id":"521d339c1974fcdb2b002639","name":"Julian
-        Ponce","title":"Dean, Clinic Administration"},{"_id":"521d339c1974fcdb2b00263a","name":"William
-        Bird, DDS","title":"Associate Dean, Clinic Administration"}],"coordinates":[-122.4617709,37.7622408],"created_at":"2013-08-27T16:17:48-07:00","description":"Provides
-        comprehensive dental care, including fillings, dentures, bridges, root canals,
-        oral surgery, dental hygiene, education and periodontic work. A special clinic
-        provides maxillo-facial rehabilitation (facial reconstruction) and treatment
-        of cleft palate. Clinic reserves the right to redirect patients who require
-        unusually extensive or complex work to another clinic. In general, care costs
-        approximately one-half of private dental fees, but will take longer to complete.
-        Clinics operate year-round, but close for two to three weeks during quarter
-        breaks.","emails":["dental@itsa.ucsf.edu"],"faxes":["415 476-0409"],"hours":"Monday-Wednesday,
-        9-12; Thursday, 9-12, 2-5, 6-9; Friday, 9-45, 2-5","kind":"Clinics","languages":["Chinese
-        (Cantonese)","Filipino (Tagalog)","Japanese","Spanish","Vietnamese"],"mail_address":{"attention":"Clinical
-        Services","city":"San Francisco","state":"CA","street":"707 Parnassus Avenue","zip":"94143-0752"},"name":"School
-        of Dentistry., Clinical Services","phones":[{"number":"415 476-5814","hours":"After-hours
-        Emergency"}],"short_desc":"Provides comprehensive dental care and services.","transportation":"MUNI
-        - 6 Parnassus, 66 Quintara, 43 Masonic, N Judah.","updated_at":"2013-10-06T13:24:02-07:00","urls":["http://dentistry.ucsf.edu"],"url":"http://ohanapi.herokuapp.com/api/locations/521d339c1974fcdb2b002638","services":[{"_id":"521d339c1974fcdb2b002645","audience":"Age
-        3 or over","eligibility":"None","fees":"Vary according to service. Fees in
-        dental student clinics are generally half the cost of private dental fees.
-        Cash, checks, Denti-Cal and private insurance accepted.","funding_sources":["Fees","State"],"how_to_apply":"Apply
-        by phone. Appointment necessary. Walk-in emergency hours 8:30-4.","keywords":["HEALTH
-        SERVICES","Dental","low cost dental services"],"service_areas":["Alameda County","Contra
-        Costa County","Marin County","San Francisco County","San Mateo County","Santa
-        Clara County","Northern California"],"updated_at":"2013-10-06T13:24:01-07:00","wait":"Varies.","categories":[{"_id":"52280f661edd37edff00004e","depth":0,"lft":155,"name":"Health","oe_id":"106","parent_id":null,"rgt":268},{"_id":"52280f671edd37edff000056","depth":1,"lft":170,"name":"Dental
-        Care","oe_id":"106-02","parent_id":"52280f661edd37edff00004e","rgt":171}]}],"organization":{"_id":"521d339c1974fcdb2b002637","_slugs":["university-of-california-san-francisco-ucsf"],"created_at":"2013-08-27T16:17:48-07:00","name":"University
-        of California, San Francisco (UCSF)","updated_at":"2013-10-01T12:18:41-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d339c1974fcdb2b002637","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d339c1974fcdb2b002637/locations"},"slugs":["school-of-dentistry-dot-clinical-services"],"id":"521d339c1974fcdb2b002638","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645468000],"highlight":null,"_explanation":null},{"_id":"521d33971974fcdb2b002609","_slugs":["veterans-affairs-san-francisco-health-care-system-dot-san-bruno-outpatient-clinic"],"accessibility":["Elevator"],"address":{"city":"San
-        Bruno","state":"CA","street":"1001 Sneath Lane, Suite 300","zip":"94066"},"ask_for":["Member
-        Services Representative"],"coordinates":[-122.425371,37.634019],"created_at":"2013-08-27T16:17:43-07:00","description":"Offers
-        a full range of primary care and mental health services.","faxes":["650 615-6015"],"hours":"Monday-Friday,
-        8-4:30","kind":"Clinics","mail_address":{"attention":"San Bruno Outpatient
-        Clinic","city":"San Bruno","state":"CA","street":"1001 Sneath Lane, Suite
-        300","zip":"94066"},"name":"Veterans Affairs San Francisco Health Care System.,
-        San Bruno Outpatient Clinic","phones":[{"number":"650 615-6000"}],"short_desc":"Offers
-        a full range of primary care, mental health, social work and member services.","transportation":"BART
-        - San Bruno Station; SAMTRANS stops within 4 blocks.","updated_at":"2013-10-06T13:28:51-07:00","urls":["http://www.sanfrancisco.va.gov/cboc/sanbruno.asp"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33971974fcdb2b002609","services":[{"_id":"521d339b1974fcdb2b002620","audience":"Veterans
-        of the U.S. Armed Forces","eligibility":"Veteran with other than dishonorable
-        discharge, eligibility individually determined","fees":"Copay to be determined
-        upon enrollment.","funding_sources":["Federal"],"how_to_apply":"Must submit
-        VA Healthcare enrollment form and copy of DD214 (discharge paperwork).","keywords":["HEALTH
-        SERVICES","Outpatient Care","Veteran Outpatient Clinics","Veterans","veteran''s
-        services"],"service_areas":["San Francisco County","San Mateo County"],"updated_at":"2013-10-06T13:28:50-07:00","wait":"3-7
-        days.","categories":[{"_id":"52280f661edd37edff00004e","depth":0,"lft":155,"name":"Health","oe_id":"106","parent_id":null,"rgt":268},{"_id":"52280f691edd37edff00006d","depth":1,"lft":216,"name":"Medical
-        Care","oe_id":"106-06","parent_id":"52280f661edd37edff00004e","rgt":267},{"_id":"52280f691edd37edff000071","depth":2,"lft":223,"name":"Checkup
-        & Test","oe_id":"106-06-04","parent_id":"52280f691edd37edff00006d","rgt":236},{"_id":"52280f6a1edd37edff000075","depth":3,"lft":230,"name":"Mental
-        Health Evaluation","oe_id":"106-06-04-04","parent_id":"52280f691edd37edff000071","rgt":231},{"_id":"52280f6a1edd37edff00007a","depth":2,"lft":241,"name":"Prevent
-        & Treat","oe_id":"106-06-07","parent_id":"52280f691edd37edff00006d","rgt":264},{"_id":"52280f6b1edd37edff000085","depth":3,"lft":262,"name":"Outpatient
-        Treatment","oe_id":"106-06-07-11","parent_id":"52280f6a1edd37edff00007a","rgt":263}]}],"organization":{"_id":"521d33941974fcdb2b0025be","_slugs":["united-states-government"],"created_at":"2013-08-27T16:17:40-07:00","name":"United
-        States Government","updated_at":"2013-10-01T12:18:25-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33941974fcdb2b0025be","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33941974fcdb2b0025be/locations"},"slugs":["veterans-affairs-san-francisco-health-care-system-dot-san-bruno-outpatient-clinic"],"id":"521d33971974fcdb2b002609","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645463000],"highlight":null,"_explanation":null},{"_id":"521d33961974fcdb2b002605","_slugs":["veterans-affairs-palo-alto-health-care-system-dot-hospice-care-center"],"accessibility":["Elevator","Ramp","Disabled
-        Restroom","Disabled Parking","Wheelchair"],"address":{"city":"Palo Alto","state":"CA","street":"3801
-        Miranda Avenue, Building 100, Unit 4A","zip":"94304-1290"},"ask_for":["Social
-        worker"],"contacts":[{"_id":"521d33961974fcdb2b002606","name":"Sheila Kennedy,
-        MSW, LCSW","title":"Hospice Coordinator"}],"coordinates":[-122.1418139,37.403608],"created_at":"2013-08-27T16:17:42-07:00","description":"Provides
-        medical, nursing and end-of-life care to veterans and to members of the community
-        connected with a community hospice when care can no longer be managed at home.
-        The 25-bed facility offers symptom management, nursing care, social services,
-        psychological and bereavement services, spiritual counseling and massage.","emails":["sheila-kennedy@va.gov"],"faxes":["650
-        849-0260"],"hours":"Monday-Friday, 7:30-4:30","kind":"Human Services","languages":["Filipino
-        (Tagalog)"],"mail_address":{"attention":"Hospice Care Center","city":"Palo
-        Alto","state":"CA","street":"3801 Miranda Avenue, Building 100, Unit 4A","zip":"94304-1290"},"name":"Veterans
-        Affairs Palo Alto Health Care System., Hospice Care Center","phones":[{"number":"650
-        849-0176","hours":"(Monday-Friday, 8-4:30)"}],"short_desc":"Provides medical
-        and nursing care to veterans and to members of the community.","transportation":"SAMTRANS,
-        VTA stop in front.","updated_at":"2013-10-01T12:18:37-07:00","urls":["http://www.palo-alto.med.va.gov"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33961974fcdb2b002605","services":[{"_id":"521d339b1974fcdb2b00261f","audience":"Veterans
-        with terminal diagnosis","eligibility":"Honorably discharged veteran facing
-        life-threatening illness given top priority (6 months or less prognosis)","fees":"No
-        fee for veterans. $250 per day for non-veterans. Checks accepted.","funding_sources":["Federal"],"how_to_apply":"For
-        veterans, anyone may initiate referral but physician must verify terminal
-        status. For non-veterans, anyone may initiate referral, but a community hospice
-        must be involved.","keywords":["HEALTH SERVICES","Hospice","Hospice Care","Veterans"],"service_areas":["Alameda
-        County","Calaveras County","Monterey County","San Mateo County","Santa Clara
-        County","Stanislaus County","Tuolumne County","northern California"],"updated_at":"2013-09-15T20:56:19-07:00","wait":"Varies
-        depending on bed availability.","categories":[{"_id":"52280f711edd37edff0000c4","depth":0,"lft":391,"name":"Care","oe_id":"108","parent_id":null,"rgt":488},{"_id":"52280f721edd37edff0000d7","depth":1,"lft":428,"name":"End-of-Life
-        Care","oe_id":"108-04","parent_id":"52280f711edd37edff0000c4","rgt":437},{"_id":"52280f731edd37edff0000da","depth":2,"lft":433,"name":"Hospice","oe_id":"108-04-03","parent_id":"52280f721edd37edff0000d7","rgt":434}]}],"organization":{"_id":"521d33941974fcdb2b0025be","_slugs":["united-states-government"],"created_at":"2013-08-27T16:17:40-07:00","name":"United
-        States Government","updated_at":"2013-10-01T12:18:25-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33941974fcdb2b0025be","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33941974fcdb2b0025be/locations"},"slugs":["veterans-affairs-palo-alto-health-care-system-dot-hospice-care-center"],"id":"521d33961974fcdb2b002605","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645462000],"highlight":null,"_explanation":null},{"_id":"521d33951974fcdb2b0025ec","_slugs":["veterans-affairs-san-francisco-health-care-system"],"accessibility":["Ramp","Disabled
-        Restroom","Disabled Parking","Wheelchair"],"address":{"city":"San Francisco","state":"CA","street":"4150
-        Clement Street","zip":"94121"},"ask_for":["Call Telephone Linked Care (800-733-0502)"],"contacts":[{"_id":"521d33951974fcdb2b0025ed","name":"Sheila
-        M. Cullen","title":"Medical Center Director"}],"coordinates":[-122.5032335,37.781335],"created_at":"2013-08-27T16:17:41-07:00","description":"Provides
-        general medical, surgical and psychiatric services for veterans. Inpatient
-        and outpatient services include arthritic rheumatology, cardiology, dermatology,
-        endocrinology, eye, ear, nose, and throat, gastrointestinal, hematology, hemodialysis,
-        infectious disease, medical research, neurology, neurosurgery, nuclear medicine,
-        heart surgery, ophthalmology, orthopedic, plastic surgery, podiatry, psychiatric,
-        respiratory care, general surgery and social work. Offers limited dental care,
-        eye glasses and other prosthetics based on eligibility. Serves as an outpatient
-        treatment facility for veterans who are misusing alcohol, cocaine, heroin
-        or a combination of drugs, or are dually diagnosed. Treatment may include
-        methadone maintenance, naltrexone therapy, antabuse therapy or drug-free therapy.
-        Services include individual or group therapy, crisis intervention, couples
-        or family therapy, vocational counseling, psychological testing, education
-        classes, psychiatric social work and referral to medical practice clinics.","kind":"Human
-        Services","languages":["Chinese","Filipino (Tagalog)","Japanese","Russian","Spanish"],"mail_address":{"attention":"Veterans
-        Affairs San Francisco","city":"San Francisco","state":"CA","street":"4150
-        Clement Street","zip":"94121"},"name":"Veterans Affairs San Francisco Health
-        Care System","phones":[{"number":"415 221-4810","hours":"(Monday-Friday, 8-4:30)"}],"short_desc":"General
-        medical, psychiatric and surgical services for veterans.","transportation":"MUNI
-        - 38 Geary.","updated_at":"2013-10-01T12:18:33-07:00","urls":["http://www.sf.med.va.gov"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33951974fcdb2b0025ec","services":[{"_id":"521d339a1974fcdb2b002619","audience":"Veterans
-        of the U.S. Armed Forces","eligibility":"Veteran with other than dishonorable
-        discharge, eligibility individually determined","fees":"Vary according to
-        eligibility category. Private insurance accepted.","funding_sources":["Federal"],"how_to_apply":"Walk
-        in during office hours.","keywords":["COMMODITY SERVICES","Assistive/Medical
-        Aids","HEALTH SERVICES","Dental","Inpatient Care","Outpatient Care","MENTAL
-        HEALTH SERVICES","Acute or Sub-acute Treatment","Individual/Group Counseling","Observation/Diagnosis","Hospitals","Veteran
-        Outpatient Clinics","Veterans"],"service_areas":["Del Norte County","Humboldt
-        County","Lake County","Marin County","Mendocino County","Napa County","San
-        Francisco County","San Mateo County","Sonoma County"],"updated_at":"2013-09-18T17:06:53-07:00","wait":"Varies
-        according to service.","categories":[{"_id":"52280f661edd37edff00004e","depth":0,"lft":155,"name":"Health","oe_id":"106","parent_id":null,"rgt":268},{"_id":"52280f661edd37edff00004f","depth":1,"lft":156,"name":"Addiction
-        & Recovery","oe_id":"106-01","parent_id":"52280f661edd37edff00004e","rgt":169},{"_id":"52280f661edd37edff000051","depth":2,"lft":159,"name":"Detox","oe_id":"106-01-02","parent_id":"52280f661edd37edff00004f","rgt":160},{"_id":"52280f661edd37edff000053","depth":2,"lft":163,"name":"Outpatient
-        Treatment","oe_id":"106-01-04","parent_id":"52280f661edd37edff00004f","rgt":164},{"_id":"52280f671edd37edff000056","depth":1,"lft":170,"name":"Dental
-        Care","oe_id":"106-02","parent_id":"52280f661edd37edff00004e","rgt":171},{"_id":"52280f681edd37edff00005c","depth":1,"lft":182,"name":"Health
-        Education","oe_id":"106-04","parent_id":"52280f661edd37edff00004e","rgt":199},{"_id":"52280f681edd37edff00005e","depth":2,"lft":185,"name":"Disease
-        Management","oe_id":"106-04-02","parent_id":"52280f681edd37edff00005c","rgt":186},{"_id":"52280f691edd37edff00006d","depth":1,"lft":216,"name":"Medical
-        Care","oe_id":"106-06","parent_id":"52280f661edd37edff00004e","rgt":267},{"_id":"52280f691edd37edff00006f","depth":2,"lft":219,"name":"Assistive
-        Technology","oe_id":"106-06-02","parent_id":"52280f691edd37edff00006d","rgt":220},{"_id":"52280f6a1edd37edff00007a","depth":2,"lft":241,"name":"Prevent
-        & Treat","oe_id":"106-06-07","parent_id":"52280f691edd37edff00006d","rgt":264},{"_id":"52280f6b1edd37edff000086","depth":2,"lft":265,"name":"Psychiatric
-        Emergency Services","oe_id":"106-06-08","parent_id":"52280f691edd37edff00006d","rgt":266},{"_id":"52280f751edd37edff0000f5","depth":0,"lft":489,"name":"Education","oe_id":"109","parent_id":null,"rgt":582},{"_id":"52280f791edd37edff000124","depth":0,"lft":583,"name":"Work","oe_id":"110","parent_id":null,"rgt":620},{"_id":"52280f7a1edd37edff00012d","depth":1,"lft":600,"name":"Skills
-        & Training","oe_id":"110-03","parent_id":"52280f791edd37edff000124","rgt":615}]}],"organization":{"_id":"521d33941974fcdb2b0025be","_slugs":["united-states-government"],"created_at":"2013-08-27T16:17:40-07:00","name":"United
-        States Government","updated_at":"2013-10-01T12:18:25-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33941974fcdb2b0025be","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33941974fcdb2b0025be/locations"},"slugs":["veterans-affairs-san-francisco-health-care-system"],"id":"521d33951974fcdb2b0025ec","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645461000],"highlight":null,"_explanation":null},{"_id":"521d33951974fcdb2b0025d9","_slugs":["veterans-affairs-palo-alto-health-care-system-dot-menlo-park-division-dot-mental-health-clinic"],"accessibility":["Disabled
-        Restroom","Wheelchair"],"address":{"city":"Menlo Park","state":"CA","street":"795
-        Willow Road","zip":"94025"},"ask_for":["Staff on duty"],"contacts":[{"_id":"521d33951974fcdb2b0025da","name":"Tina
-        Lee, MD","title":"Medical Director"}],"coordinates":[-122.16023,37.466287],"created_at":"2013-08-27T16:17:41-07:00","description":"Offers
-        evaluation for and follow-up of psychotropic medication, limited individual
-        therapy and group psychotherapy, crisis intervention and case management.
-        A multi-disciplinary team evaluates patients for services and refers to non-VA
-        services when appropriate. VA services to which veterans may be referred include
-        day treatment, post traumatic stress disorder (PTSD), drug and alcohol programs
-        and inpatient psychiatry programs. Veterans may call directly but referral
-        from an agency is preferred. When openings are limited, preference is given
-        to veterans whose illnesses are service-connected.","faxes":["650 617-2710"],"hours":"Monday-Friday,
-        8-4:30","kind":"Clinics","languages":["Chinese (Mandarin)","Filipino (Tagalog)","French","German","Hindi","Polish","Punjabi","Spanish"],"mail_address":{"attention":"VA
-        PA Mental Health Clinic","city":"Palo Alto","state":"CA","street":"3801 Miranda
-        Avenue (170AMPD)","zip":"94304"},"name":"Veterans Affairs Palo Alto Health
-        Care System., Menlo Park Division., Mental Health Clinic","phones":[{"number":"650
-        493-5000","extensions":["22234"],"hours":"(Monday-Thursday, 8-6:30; Friday,
-        8-4:30)"}],"short_desc":"Primary provider of psychiatric and mental health
-        services for veterans.","transportation":"SAMTRANS stops in front.","updated_at":"2013-10-06T14:08:57-07:00","urls":["http://www.paloalto.va.gov"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33951974fcdb2b0025d9","services":[{"_id":"521d33991974fcdb2b002614","audience":"Veterans
-        and their families","eligibility":"Honorably discharged veteran. Active duty
-        and dependents under tricare. Priority given to service-connected veterans
-        and to nonservice connected veterans with low incomes","fees":"Treatment of
-        nonservice connected conditions may require partial payment for medications
-        and clinical services. Veterans with insurance will have their insurance billed.
-        Varies.","funding_sources":["Federal"],"how_to_apply":"Walk in or apply by
-        phone.","keywords":["Mental Health Support Services","Veterans"],"service_areas":["Alameda
-        County","Contra Costa County","Monterey County","San Benito County","San Mateo
-        County","Santa Clara County","Santa Cruz County"],"updated_at":"2013-10-06T14:08:56-07:00","wait":"Varies.
-        Not accepting any new TRICARE patients.","categories":[{"_id":"52280f661edd37edff00004e","depth":0,"lft":155,"name":"Health","oe_id":"106","parent_id":null,"rgt":268},{"_id":"52280f691edd37edff00006d","depth":1,"lft":216,"name":"Medical
-        Care","oe_id":"106-06","parent_id":"52280f661edd37edff00004e","rgt":267},{"_id":"52280f691edd37edff000071","depth":2,"lft":223,"name":"Checkup
-        & Test","oe_id":"106-06-04","parent_id":"52280f691edd37edff00006d","rgt":236},{"_id":"52280f6a1edd37edff000075","depth":3,"lft":230,"name":"Mental
-        Health Evaluation","oe_id":"106-06-04-04","parent_id":"52280f691edd37edff000071","rgt":231},{"_id":"52280f6a1edd37edff00007a","depth":2,"lft":241,"name":"Prevent
-        & Treat","oe_id":"106-06-07","parent_id":"52280f691edd37edff00006d","rgt":264},{"_id":"52280f6b1edd37edff000081","depth":3,"lft":254,"name":"Specialized
-        Therapy","oe_id":"106-06-07-07","parent_id":"52280f6a1edd37edff00007a","rgt":255}]}],"organization":{"_id":"521d33941974fcdb2b0025be","_slugs":["united-states-government"],"created_at":"2013-08-27T16:17:40-07:00","name":"United
-        States Government","updated_at":"2013-10-01T12:18:25-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33941974fcdb2b0025be","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33941974fcdb2b0025be/locations"},"slugs":["veterans-affairs-palo-alto-health-care-system-dot-menlo-park-division-dot-mental-health-clinic"],"id":"521d33951974fcdb2b0025d9","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645461000],"highlight":null,"_explanation":null},{"_id":"521d33951974fcdb2b0025dd","_slugs":["veterans-affairs-palo-alto-health-care-system-dot-menlo-park-division-dot-addiction-treatment-services-ats"],"accessibility":["Wheelchair"],"address":{"city":"Menlo
-        Park","state":"CA","street":"795 Willow Road, Building 321","zip":"94025"},"ask_for":["Intake
-        Consultation Team"],"contacts":[{"_id":"521d33951974fcdb2b0025de","name":"Paula
-        Wilbourne","title":"Director"}],"coordinates":[-122.1572991,37.4651746],"created_at":"2013-08-27T16:17:41-07:00","description":"Provides
-        services to veterans addicted to alcohol or other drugs and ready to become
-        abstinent. Provides inpatient medical treatment for withdrawal, a residential
-        therapeutic community and outpatient clinics in support of continuing abstinence
-        in Menlo Park and San Jose.","faxes":["650 617-2618"],"kind":"Human Services","languages":["Interpreter"],"mail_address":{"attention":"VA
-        PA Addiction Treatment Services","city":"Menlo Park","state":"CA","street":"795
-        Willow Road, Building 321","zip":"94025"},"name":"Veterans Affairs Palo Alto
-        Health Care System., Menlo Park Division., Addiction Treatment Services (ATS)","phones":[{"number":"866
-        717-1978"}],"short_desc":"Provides residential and outpatient programs to
-        help veterans with alcohol or other drug-related difficulties.","transportation":"SAMTRANS
-        stops in front.","updated_at":"2013-10-01T12:18:30-07:00","urls":["http://www.paloalto.va.gov"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33951974fcdb2b0025dd","services":[{"_id":"521d33991974fcdb2b002615","audience":"Veterans
-        addicted to alcohol or other drugs","eligibility":"Veteran who meets eligibility
-        for benefits","fees":"Vary according to income.","funding_sources":["Federal"],"how_to_apply":"Phone
-        for information and/or to make an appointment.","keywords":["ALCOHOLISM SERVICES","Detoxification","Individual/Group
-        Counseling","Residential Care","DRUG ABUSE SERVICES","Drug-Free Treatment","Maintenance","Substance
-        Abuse Services","Veterans"],"service_areas":["Alameda County","Contra Costa
-        County","Marin County","San Francisco County","San Mateo County","Santa Clara
-        County","Stanislaus County","Northern California"],"updated_at":"2013-10-06T18:04:35-07:00","wait":"2-3
-        weeks for inpatient programs. No wait for outpatient services.","categories":[{"_id":"52280f661edd37edff00004e","depth":0,"lft":155,"name":"Health","oe_id":"106","parent_id":null,"rgt":268},{"_id":"52280f661edd37edff00004f","depth":1,"lft":156,"name":"Addiction
-        & Recovery","oe_id":"106-01","parent_id":"52280f661edd37edff00004e","rgt":169},{"_id":"52280f661edd37edff000051","depth":2,"lft":159,"name":"Detox","oe_id":"106-01-02","parent_id":"52280f661edd37edff00004f","rgt":160},{"_id":"52280f661edd37edff000053","depth":2,"lft":163,"name":"Outpatient
-        Treatment","oe_id":"106-01-04","parent_id":"52280f661edd37edff00004f","rgt":164}]}],"organization":{"_id":"521d33941974fcdb2b0025be","_slugs":["united-states-government"],"created_at":"2013-08-27T16:17:40-07:00","name":"United
-        States Government","updated_at":"2013-10-01T12:18:25-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33941974fcdb2b0025be","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33941974fcdb2b0025be/locations"},"slugs":["veterans-affairs-palo-alto-health-care-system-dot-menlo-park-division-dot-addiction-treatment-services-ats"],"id":"521d33951974fcdb2b0025dd","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645461000],"highlight":null,"_explanation":null},{"_id":"521d33951974fcdb2b0025e9","_slugs":["veterans-affairs-palo-alto-health-care-system-dot-home-based-primary-care-hbpc"],"contacts":[{"_id":"521d33951974fcdb2b0025ea","name":"Jon
-        D. Fuller, MD","title":"Medical Director"}],"created_at":"2013-08-27T16:17:41-07:00","description":"Provides
-        primary care to homebound veterans. Interdisciplinary team approach, composed
-        of a physician, nurse practitioner, social worker, dietitian, psychologist
-        and occupational therapist, works with the individual and his/her caregiver
-        to provide primary medical care and other services in the home to veterans
-        who are convalescing or have acute chronic or terminal illness. Services include
-        case management, skilled nursing care, rehabilitation, palliative care, emergency
-        and long-term planning, individual and family counseling, health education,
-        nutrition and diet consultation, evaluation for adaptive equipment and home
-        safety, referrals to VA and community resources.","faxes":["650 849-0103"],"hours":"Daily,
-        8-5. 24-hour on-call for all HBPC patients","kind":"Human Services","mail_address":{"attention":"VA
-        PA Home Based Primary Care (HBPC)","city":"Palo Alto","state":"CA","street":"3801
-        Miranda Avenue, 100/2C","zip":"94304"},"name":"Veterans Affairs Palo Alto
-        Health Care System., Home Based Primary Care (HBPC)","phones":[{"number":"650
-        849-0102","department":"(Daily, 8-5)"}],"short_desc":"Provides medical and
-        social services to homebound veterans.","transportation":"Not necessary for
-        service.","updated_at":"2013-10-02T19:25:59-07:00","url":"http://ohanapi.herokuapp.com/api/locations/521d33951974fcdb2b0025e9","services":[{"_id":"521d33991974fcdb2b002618","audience":"Veterans","eligibility":"Homebound
-        veteran living within 30 minutes of VA Palo Alto office or San Jose office
-        at highways 101 and 85. Must be willing to accept HBPC as primary care provider
-        and be enrolled in VA Palo Alto Health Care System","fees":"None to veterans
-        who meet either income criteria or specific service connected guidelines.
-        All other veterans may incur some copayment. Private insurance accepted.","funding_sources":["Federal"],"how_to_apply":"Apply
-        through primary care physician at VA Palo Alto Health Care System.","keywords":["HEALTH
-        SERVICES","Home Nursing","Individual/Group Counseling","Home Health Care","Veterans"],"service_areas":["Belmont","Burlingame","Cupertino","Fremont","Los
-        Altos","Los Altos Hills","Menlo Park","Morgan Hill","Mountain View","Palo
-        Alto","Redwood City","San Carlos","San Jose","San Mateo","Santa Clara","Saratoga","Union
-        City"],"updated_at":"2013-08-27T16:17:45-07:00","wait":"7-30 days."}],"organization":{"_id":"521d33941974fcdb2b0025be","_slugs":["united-states-government"],"created_at":"2013-08-27T16:17:40-07:00","name":"United
-        States Government","updated_at":"2013-10-01T12:18:25-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33941974fcdb2b0025be","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33941974fcdb2b0025be/locations"},"slugs":["veterans-affairs-palo-alto-health-care-system-dot-home-based-primary-care-hbpc"],"id":"521d33951974fcdb2b0025e9","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645461000],"highlight":null,"_explanation":null},{"_id":"521d33951974fcdb2b0025f0","_slugs":["veterans-affairs-palo-alto-health-care-system-dot-menlo-park-division-dot-homeless-veterans-rehabilitation-program-dot-vocational-education-center"],"accessibility":["Disabled
-        Parking","Elevator","Ramp","Wheelchair"],"address":{"city":"Menlo Park","state":"CA","street":"795
-        Willow Road, 180-D","zip":"94025"},"contacts":[{"_id":"521d33951974fcdb2b0025f1","title":"Screening
-        Coordinator"}],"coordinates":[-122.1572991,37.4651746],"created_at":"2013-08-27T16:17:41-07:00","description":"A
-        6 month residential co-ed treatment program designed to provide homeless veterans
-        with the skills necessary to function self-sufficiently in society. Residents
-        attend skills training classes, participate in therapy and support groups
-        and attend community meetings. A complete mental and physical evaluation is
-        made and a treatment program developed to improve well-being. Vocational assessment
-        and assistance with job search provided. Participants continue to attend some
-        meetings and activities for a time following discharge from the program.","faxes":["650
-        617-2619"],"hours":"Monday-Friday, 9-12, 1-3; Screening: Monday-Friday, 9-12,
-        1-3","kind":"Human Services","languages":["Spanish"],"mail_address":{"attention":"Homeless
-        Veterans Rehab Prog","city":"Menlo Park","state":"CA","street":"795 Willow
-        Road, 180-D","zip":"94025"},"name":"Veterans Affairs Palo Alto Health Care
-        System., Menlo Park Division., Homeless Veterans Rehabilitation Program.,
-        Vocational Education Center","phones":[{"number":"800 848-7254","hours":"(Monday-Friday,
-        9-3)"}],"short_desc":"A residential treatment program designed to provide
-        homeless veterans with the skills necessary to function self-sufficiently
-        in society.","transportation":"SAMTRANS stops within 2 blocks.","updated_at":"2013-10-01T12:18:34-07:00","url":"http://ohanapi.herokuapp.com/api/locations/521d33951974fcdb2b0025f0","services":[{"_id":"521d339a1974fcdb2b00261a","audience":"Homeless
-        veterans","eligibility":"Honorably discharged homeless veteran, medically
-        and psychiatrically stable, willing and able to return to full-time work","fees":"For
-        \"non-services connected\" NSC veterans: no fee for vets who make less than
-        $25,000 per year, otherwise $5 per day charge. \"Service connected\" veterans:
-        no charge. Cash and checks accepted.","funding_sources":["Federal"],"how_to_apply":"Apply
-        by phone Monday-Friday, 9-12, 1-3.","keywords":["HOUSING SERVICES","Temporary","Transitional
-        Housing/Shelter","Veterans"],"service_areas":["Alameda County","Contra Costa
-        County","Marin County","San Francisco County","San Mateo County","Santa Clara
-        County","Monterey County","Sacramento County","San Benito County","San Joaquin
-        County","Santa Cruz County","northern California"],"updated_at":"2013-10-06T18:06:14-07:00","wait":"2-8
-        weeks for inpatient admission.","categories":[{"_id":"52280f661edd37edff00004e","depth":0,"lft":155,"name":"Health","oe_id":"106","parent_id":null,"rgt":268},{"_id":"52280f691edd37edff00006d","depth":1,"lft":216,"name":"Medical
-        Care","oe_id":"106-06","parent_id":"52280f661edd37edff00004e","rgt":267},{"_id":"52280f691edd37edff000071","depth":2,"lft":223,"name":"Checkup
-        & Test","oe_id":"106-06-04","parent_id":"52280f691edd37edff00006d","rgt":236},{"_id":"52280f6a1edd37edff000075","depth":3,"lft":230,"name":"Mental
-        Health Evaluation","oe_id":"106-06-04-04","parent_id":"52280f691edd37edff000071","rgt":231},{"_id":"52280f791edd37edff000124","depth":0,"lft":583,"name":"Work","oe_id":"110","parent_id":null,"rgt":620},{"_id":"52280f791edd37edff000125","depth":1,"lft":584,"name":"Help
-        Find Work","oe_id":"110-01","parent_id":"52280f791edd37edff000124","rgt":589},{"_id":"52280f7a1edd37edff00012d","depth":1,"lft":600,"name":"Skills
-        & Training","oe_id":"110-03","parent_id":"52280f791edd37edff000124","rgt":615}]}],"organization":{"_id":"521d33941974fcdb2b0025be","_slugs":["united-states-government"],"created_at":"2013-08-27T16:17:40-07:00","name":"United
-        States Government","updated_at":"2013-10-01T12:18:25-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33941974fcdb2b0025be","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33941974fcdb2b0025be/locations"},"slugs":["veterans-affairs-palo-alto-health-care-system-dot-menlo-park-division-dot-homeless-veterans-rehabilitation-program-dot-vocational-education-center"],"id":"521d33951974fcdb2b0025f0","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645461000],"highlight":null,"_explanation":null},{"_id":"521d33951974fcdb2b0025d5","_slugs":["veterans-affairs-palo-alto-health-care-system-dot-ambulatory-care-service"],"accessibility":["Elevator","Ramp","Disabled
-        Restroom","Disabled Parking","Wheelchair"],"address":{"city":"Palo Alto","state":"CA","street":"3801
-        Miranda Avenue","zip":"94304"},"ask_for":["Staff on duty in admitting/eligibility"],"contacts":[{"_id":"521d33951974fcdb2b0025d6","title":"Educational
-        Coordinator, Nursing Service"}],"coordinates":[-122.1418083,37.4036049],"created_at":"2013-08-27T16:17:41-07:00","description":"Primary
-        entry point for VA medical services in Palo Alto, including admission to the
-        hospital. Services are provided only to veterans, and preference is given
-        to those with service-connected illnesses or disabilities. On the first visit,
-        the veteran should arrive at the clinic with discharge papers and any appropriate
-        medical records. No appointment is necessary, but there may be a two hour
-        or longer wait. If the veteran is legally and medically eligible, he or she
-        will be given an appointment for general medical or speciality services. All
-        persons in need of immediate care will be seen right away. Emergency care
-        is provided 24 hours a day. Limited services are available at satellites in
-        San Jose and Monterey, as well as in the divisions at Menlo Park, Livermore,
-        Stockton and Modesto.","kind":"Human Services","languages":["Japanese","Spanish","Filipino
-        (Tagalog)"],"mail_address":{"attention":"VA PA Ambulatory Care Service","city":"Palo
-        Alto","state":"CA","street":"3801 Miranda Avenue","zip":"94304"},"name":"Veterans
-        Affairs Palo Alto Health Care System., Ambulatory Care Service","phones":[{"number":"650
-        493-5000","extensions":["22175"],"hours":"(Monday-Friday, 8-4:30)"}],"short_desc":"Outpatient
-        care for all honorably discharged veterans.","transportation":"SAMTRANS stops
-        in front.","updated_at":"2013-10-02T19:07:51-07:00","urls":["http://www.paloalto.va.gov"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33951974fcdb2b0025d5","services":[{"_id":"521d33981974fcdb2b002613","audience":"Veterans
-        and employees","eligibility":"Honorably discharged veteran. Priority given
-        to service-connected or low-income veterans","fees":"None for service-connected
-        conditions. Co-payment (30% to 100%) for nonservice connected prescriptions
-        and nonservice connected veterans depending on income. Cash and checks accepted.","funding_sources":["Federal","Fees"],"how_to_apply":"Walk
-        in. Service discharge papers necessary for application. Means testing may
-        be required.","keywords":["Veteran Outpatient Clinics","Veterans"],"service_areas":["Monterey
-        County","San Benito County","San Mateo County","Santa Clara County","Santa
-        Cruz County","Castro Valley","Dublin","Fremont","Hayward","Newark","Pleasanton","San
-        Leandro","San Lorenzo","San Ramon","Union City"],"updated_at":"2013-08-27T16:17:44-07:00","wait":"2-6
-        weeks for scheduled clinic appointments, walk in for same day clinic."}],"organization":{"_id":"521d33941974fcdb2b0025be","_slugs":["united-states-government"],"created_at":"2013-08-27T16:17:40-07:00","name":"United
-        States Government","updated_at":"2013-10-01T12:18:25-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33941974fcdb2b0025be","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33941974fcdb2b0025be/locations"},"slugs":["veterans-affairs-palo-alto-health-care-system-dot-ambulatory-care-service"],"id":"521d33951974fcdb2b0025d5","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645461000],"highlight":null,"_explanation":null},{"_id":"521d33911974fcdb2b002590","_slugs":["parent-support-line-department-of-health-and-recovery-services"],"contacts":[{"_id":"521d33911974fcdb2b002591","name":"Julie
-        Kinloch, LCSW","title":"Program Manager"}],"created_at":"2013-08-27T16:17:37-07:00","description":"Provides
-        support and referrals to parents as an alternative to child abuse. Offers
-        information and referrals to community services related to parental support
-        and child abuse prevention.   Formerly known as Youth and Family Enrichment
-        Services (YFES).","emails":["julie.kinloch@star-vista.org"],"hours":"24 hours
-        daily","kind":"Human Services","languages":["Spanish"],"mail_address":{"attention":"StarVista/Parent
-        Support Line","city":"San Carlos","state":"CA","street":"610 Elm Street, Suite
-        212","zip":"94070"},"name":"Parent Support Line, Department of Health and
-        Recovery Services","phones":[{"number":"888 220-7575","department":"Parent
-        Support Line","hours":"(24 hours daily)"}],"short_desc":"Provides support
-        and referrals to parents as an alternative to child abuse.","transportation":"Not
-        necessary for service.","updated_at":"2013-10-01T12:18:22-07:00","urls":["http://www.crisiscenter.cc"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33911974fcdb2b002590","services":[{"_id":"521d33931974fcdb2b0025a1","audience":"Parents
-        who may be at risk of committing child abuse and need support and resources,
-        people who desire information or referral for themselves or others regarding
-        child abuse, parents seeking support dealing with their children","eligibility":"None","fees":"None.","funding_sources":["County"],"how_to_apply":"Apply
-        by phone.","keywords":["CHILD PROTECTION AND CARE SERVICES","Crisis/Abuse
-        Intervention/Hot","EMERGENCY SERVICES","Telephone Assistance","MENTAL HEALTH
-        SERVICES","Crisis Intervention/Hotlines","Child Abuse Hotlines","Youth","Parents","Child
-        Abuse Issues"],"service_areas":"San Mateo County","updated_at":"2013-08-27T16:17:39-07:00","wait":"No
-        wait."}],"organization":{"_id":"521d33901974fcdb2b002568","_slugs":["starvista-formerly-youth-and-family-enrichment-services-yfes-1"],"created_at":"2013-08-27T16:17:36-07:00","name":"StarVista
-        (formerly Youth and Family Enrichment Services (YFES))","updated_at":"2013-10-01T12:18:10-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568/locations"},"slugs":["parent-support-line-department-of-health-and-recovery-services"],"id":"521d33911974fcdb2b002590","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645457000],"highlight":null,"_explanation":null},{"_id":"521d33911974fcdb2b00258c","_slugs":["first-chance-program-department-of-health-and-recovery-services"],"accessibility":["Wheelchair"],"address":{"city":"San
-        Carlos","state":"CA","street":"335 Quarry Road","zip":"94070"},"contacts":[{"_id":"521d33911974fcdb2b00258d","name":"Julie
-        Kinloch, LCSW","title":"Program Manager"}],"coordinates":[-122.2650208,37.5188953],"created_at":"2013-08-27T16:17:37-07:00","description":"Provides
-        a drop-off and counseling center for persons who have been arrested for driving
-        under the influence, or being intoxicated in public, or drug abuse. Provides
-        a safe alternative to jail, and includes sleeping facilities, a lounge area
-        and a snack, as well as counseling and education. Program participants can
-        stay up to 18 hours and must be brought in by a police officer or referred
-        from a designated hospital. Facilities include a microwave oven, washer/dryer
-        and donated clothing. As of June 30, 2011, First Chance North and First Chance
-        South consolidated into one First Chance program/facility. Formerly known
-        as Youth and Family Enrichment Services (YFES). First Chance North. First
-        Chance South.","emails":["julie.kinloch@star-vista.org"],"faxes":["650 595-8167"],"hours":"24
-        hours daily","kind":"Human Services","languages":["Spanish"],"mail_address":{"attention":"StarVista/First
-        Chance Program","city":"San Carlos","state":"CA","street":"335 Quarry Road","zip":"94070"},"name":"First
-        Chance Program, Department of Health and Recovery Services","phones":[{"number":"650
-        595-8165","hours":"(24 hours daily)"}],"short_desc":"A police drop-off center
-        and jail alternative for persons who have been arrested for driving under
-        the influence or being intoxicated in public.","transportation":"Not necessary
-        for service.","updated_at":"2013-10-01T12:18:21-07:00","urls":["http://www.star-vista.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33911974fcdb2b00258c","services":[{"_id":"521d33931974fcdb2b0025a0","audience":"Persons
-        arrested for DUI or public intoxication, and those under the influence of
-        drugs","eligibility":"Must be brought to the facility by police","fees":"None.","funding_sources":["City","County"],"how_to_apply":"Must
-        be brought in by police.","keywords":["ALCOHOLISM SERVICES","Community Information","Driving
-        While Intoxicated","DRUG ABUSE SERVICES","Public Inebriate Transportation","Substance
-        Abuse Issues"],"service_areas":"San Mateo County","updated_at":"2013-09-18T17:15:20-07:00","wait":"No
-        wait.","categories":[{"_id":"52280f5c1edd37edff000001","depth":0,"lft":1,"name":"Emergency","oe_id":"101","parent_id":null,"rgt":32},{"_id":"52280f5d1edd37edff00000a","depth":1,"lft":18,"name":"Emergency
-        Food","oe_id":"101-03","parent_id":"52280f5c1edd37edff000001","rgt":19},{"_id":"52280f5e1edd37edff000015","depth":1,"lft":40,"name":"Food
-        Pantry","oe_id":"102-04","parent_id":"52280f5e1edd37edff000011","rgt":41},{"_id":"52280f661edd37edff00004e","depth":0,"lft":155,"name":"Health","oe_id":"106","parent_id":null,"rgt":268},{"_id":"52280f661edd37edff00004f","depth":1,"lft":156,"name":"Addiction
-        & Recovery","oe_id":"106-01","parent_id":"52280f661edd37edff00004e","rgt":169},{"_id":"52280f691edd37edff00006d","depth":1,"lft":216,"name":"Medical
-        Care","oe_id":"106-06","parent_id":"52280f661edd37edff00004e","rgt":267},{"_id":"52280f6a1edd37edff000079","depth":2,"lft":239,"name":"Personal
-        Hygiene","oe_id":"106-06-06","parent_id":"52280f691edd37edff00006d","rgt":240},{"_id":"52280f711edd37edff0000c4","depth":0,"lft":391,"name":"Care","oe_id":"108","parent_id":null,"rgt":488},{"_id":"52280f741edd37edff0000e7","depth":1,"lft":460,"name":"Support
-        Network","oe_id":"108-07","parent_id":"52280f711edd37edff0000c4","rgt":487},{"_id":"52280f741edd37edff0000e8","depth":2,"lft":461,"name":"Counseling","oe_id":"108-07-01","parent_id":"52280f741edd37edff0000e7","rgt":462}]}],"organization":{"_id":"521d33901974fcdb2b002568","_slugs":["starvista-formerly-youth-and-family-enrichment-services-yfes-1"],"created_at":"2013-08-27T16:17:36-07:00","name":"StarVista
-        (formerly Youth and Family Enrichment Services (YFES))","updated_at":"2013-10-01T12:18:10-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568/locations"},"slugs":["first-chance-program-department-of-health-and-recovery-services"],"id":"521d33911974fcdb2b00258c","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645457000],"highlight":null,"_explanation":null},{"_id":"521d33911974fcdb2b002593","_slugs":["youth-development-initiative-ydi-department-of-early-childhood-family-and-youth-services"],"accessibility":["Disabled
-        Restroom","Wheelchair"],"address":{"city":"San Mateo","state":"CA","street":"2
-        West 5th Avenue, Suite 301","zip":"94402"},"contacts":[{"_id":"521d33911974fcdb2b002594","name":"Kim
-        DeSimone, MSW","title":"Program Manager"}],"coordinates":[-122.3390936,37.5245965],"created_at":"2013-08-27T16:17:37-07:00","description":"Promotes,
-        champions and sustains the youth asset development model in San Mateo County.
-        YDI joins and assists communities in their efforts to build the strengths
-        and leadership capacities of youth to be partners in creating a healthy San
-        Mateo County. Provides staff for the San Mateo County Youth Commission to
-        promote youth development within county government. YDI''s Youth Asset Teams
-        provide trainings to help create a common language in the community around
-        youth development and the assets model framework. Trainings and technical
-        assistance are also provided. Provides on-site support for youth development
-        projects at Sequoia High School in Redwood City and Menlo-Atherton High School
-        in Atherton. Formerly known as Youth and Family Enrichment Services (YFES).","emails":["kim.desimone@star-vista.org"],"faxes":["650
-        401-7755"],"hours":"Monday-Friday, 9-5","kind":"Human Services","languages":["Spanish"],"mail_address":{"attention":"StarVista/Youth
-        Development Initiative","city":"San Mateo","state":"CA","street":"2 West 5th
-        Avenue, Suite 301","zip":"94402"},"name":"Youth Development Initiative (YDI),
-        Department of Early Childhood, Family, and Youth Services","phones":[{"number":"650
-        401-8617","department":"Ext.20","hours":"(Monday-Friday, 9-5)"}],"short_desc":"Promotes,
-        champions and sustains the youth asset development model in San Mateo County.","transportation":"SAMTRANS
-        stops within 1 block; not far from San Mateo CALTRAIN station .","updated_at":"2013-10-01T12:18:22-07:00","urls":["http://www.star-vista.org","http://www.bethedifference.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33911974fcdb2b002593","services":[{"_id":"521d33931974fcdb2b0025a2","audience":"Youth,
-        ages 14-21","eligibility":"None","fees":"None.","funding_sources":["County","Donations"],"keywords":["ORGANIZATIONAL
-        SUPPORT SERVICES","Staff Training","Technical Assistance","Youth Development","Youth","Adolescents"],"service_areas":"San
-        Mateo County","updated_at":"2013-08-27T16:17:39-07:00","wait":"Varies."}],"organization":{"_id":"521d33901974fcdb2b002568","_slugs":["starvista-formerly-youth-and-family-enrichment-services-yfes-1"],"created_at":"2013-08-27T16:17:36-07:00","name":"StarVista
-        (formerly Youth and Family Enrichment Services (YFES))","updated_at":"2013-10-01T12:18:10-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568/locations"},"slugs":["youth-development-initiative-ydi-department-of-early-childhood-family-and-youth-services"],"id":"521d33911974fcdb2b002593","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645457000],"highlight":null,"_explanation":null},{"_id":"521d33901974fcdb2b002570","_slugs":["your-house-south-department-of-residential-services"],"accessibility":["Wheelchair"],"address":{"city":"Redwood
-        City","state":"CA","street":"394 Sequoia Avenue","zip":"94061-3444"},"ask_for":["Staff
-        on duty"],"contacts":[{"_id":"521d33901974fcdb2b002571","name":"Julie Macecevic,
-        PhD","title":"Program Manager"}],"coordinates":[-122.224321,37.452191],"created_at":"2013-08-27T16:17:36-07:00","description":"An
-        up to thirty-day temporary housing and counseling service for youth, age 10-17,
-        who are experiencing family problems or have run away from home. The co-ed
-        residential program is licensed for up to six youths, and provides a neutral
-        place for parents and youth to come together to work out problems. Services
-        include short-term crisis intervention; a 24-hour Emergency Overnight shelter
-        for youth age 10-17; family, individual and group counseling; and a 24-hour
-        crisis/support phone line. After returning home, youth and family are offered
-        additional counseling sessions. The program is voluntary and the youth are
-        expected to comply with house rules and participate in services offered. A
-        youth and his or her parent or guardian must consent to placement. The program
-        does not accept youth who are chemically addicted or severely emotionally
-        ill.  Formerly known as Youth and Family Enrichment Services (YFES).","emails":["julie.macecevic@star-vista.org"],"faxes":["650
-        367-6828"],"hours":"24 hour facility","kind":"Human Services","languages":["Spanish"],"mail_address":{"attention":"StarVista/Your
-        House South","city":"Redwood City","state":"CA","street":"394 Sequoia Avenue","zip":"94061-3444"},"name":"Your
-        House South, Department of Residential Services","phones":[{"number":"650
-        367-9687","hours":"(24 hours daily)"}],"short_desc":"Temporary housing and
-        counseling center for youth experiencing family problems or who have run away
-        from home.","transportation":"SAMTRANS, CALTRAIN stop within 3 blocks.","updated_at":"2013-10-01T12:18:11-07:00","urls":["http://www.star-vista.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33901974fcdb2b002570","services":[{"_id":"521d33921974fcdb2b002599","audience":"Youth
-        age 10-17","eligibility":"Age 10-17","fees":"Vary according to income. Most
-        costs are covered by Human Services Agency.","funding_sources":["County","Donations","Federal","State"],"how_to_apply":"Walk
-        in or apply by phone for an appointment.","keywords":["CHILD PROTECTION AND
-        CARE SERVICES","Individual/Group Counseling","Out-Of-Home Care","Runaway/Youth
-        Shelters","Family Counseling","Group Counseling","Individual Counseling","Youth","Adolescents"],"service_areas":"San
-        Mateo County","updated_at":"2013-08-27T16:17:38-07:00","wait":"Occasionally
-        there is a short wait."}],"organization":{"_id":"521d33901974fcdb2b002568","_slugs":["starvista-formerly-youth-and-family-enrichment-services-yfes-1"],"created_at":"2013-08-27T16:17:36-07:00","name":"StarVista
-        (formerly Youth and Family Enrichment Services (YFES))","updated_at":"2013-10-01T12:18:10-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568/locations"},"slugs":["your-house-south-department-of-residential-services"],"id":"521d33901974fcdb2b002570","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645456000],"highlight":null,"_explanation":null},{"_id":"521d33901974fcdb2b002574","_slugs":["archway-department-of-health-and-recovery-services"],"accessibility":["Disabled
-        Parking"],"address":{"city":"Redwood City","state":"CA","street":"609 Price
-        Avenue, Suite 201","zip":"94063"},"ask_for":["Liset Martinez (Administrative
-        Assistant)"],"contacts":[{"_id":"521d33901974fcdb2b002575","name":"Randy Yano","title":"Program
-        Manager"},{"_id":"521d33901974fcdb2b002576","name":"Martha C. Greene","title":"Program
-        Coordinator"}],"coordinates":[-122.230319,37.493448],"created_at":"2013-08-27T16:17:36-07:00","description":"Offers
-        a variety of adult outpatient treatment services. Provides the First Offender
-        program for persons arrested driving under the influence. Length of the program
-        is determined by the blood alcohol concentration at the time of the arrest.
-        Also, provides outpatient services for alcohol and drug treatment. Serves
-        clients with referrals from probation and parole (Prop 36, DEJ, Drug Diversion),
-        as well as self-referred clients. Offers a certified 52-week adult domestic
-        intervention program. Also, offers a 16-week anger management program. Referrals
-        can be court-mandated or self-referred. All programs are licensed through
-        the State of California and monitored both by the State of California and
-        the County of San Mateo. Formerly known as Youth and Family Enrichment Services
-        (YFES).","faxes":["650 366-8455"],"hours":"Monday-Thursday, 10-9; Friday,
-        10-5, or by appointment","kind":"Human Services","languages":["Spanish"],"mail_address":{"attention":"StarVista/Archway","city":"Redwood
-        City","state":"CA","street":"609 Price Avenue, Suite 201","zip":"94063"},"name":"Archway,
-        Department of Health and Recovery Services","phones":[{"number":"650 366-8433","hours":"(Monday-Thursday,
-        10-9; Friday, 10-5)"}],"short_desc":"Offers counseling and support for children
-        from chemically dependent families, and First Offender, Drug Diversion and
-        Domestic Non-Violence programs.","transportation":"SAMTRANS stops within 2
-        blocks.","updated_at":"2013-10-01T12:18:18-07:00","urls":["http://www.star-vista.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33901974fcdb2b002574","services":[{"_id":"521d33921974fcdb2b00259a","audience":"Drinking
-        drivers, drug offenders, persons convicted of domestic violence, anger management
-        problems","eligibility":"Court-ordered referrals and self-referrals accepted","fees":"Established
-        by San Mateo County. Some reduced fees available. Cash, checks, credit cards
-        and money orders accepted.","funding_sources":["Fees"],"how_to_apply":"Apply
-        by phone for an appointment or information.","keywords":["ALCOHOLISM SERVICES","Driving
-        While Intoxicated","Individual/Group Counseling","DRUG ABUSE SERVICES","Drug
-        Diversion","INDIVIDUAL AND FAMILY DEVELOPMENT SERVICES","Growth and Adjustment","MENTAL
-        HEALTH SERVICES","Diversion Programs","Spouse/Domestic Partner Abuse Prevention","Anger
-        Management","First Offender DUI Programs","Substance Abuse Education/Prevention"],"service_areas":"San
-        Mateo County","updated_at":"2013-08-27T16:17:38-07:00","wait":"No wait."}],"organization":{"_id":"521d33901974fcdb2b002568","_slugs":["starvista-formerly-youth-and-family-enrichment-services-yfes-1"],"created_at":"2013-08-27T16:17:36-07:00","name":"StarVista
-        (formerly Youth and Family Enrichment Services (YFES))","updated_at":"2013-10-01T12:18:10-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568/locations"},"slugs":["archway-department-of-health-and-recovery-services"],"id":"521d33901974fcdb2b002574","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645456000],"highlight":null,"_explanation":null},{"_id":"521d33901974fcdb2b002579","_slugs":["counseling-center"],"accessibility":["Wheelchair"],"address":{"city":"San
-        Carlos","state":"CA","street":"610 Elm Street, Suite 212","zip":"94070"},"contacts":[{"_id":"521d33901974fcdb2b00257a","name":"Maria
-        Magallanes","title":"Program Coordinator"}],"coordinates":[-122.261743,37.50403],"created_at":"2013-08-27T16:17:36-07:00","description":"Services
-        include individual, child, adult, family and couples counseling by appointment
-        during weekday business hours (9 am to 8 pm). Formerly known as Youth and
-        Family Enrichment Services (YFES).","emails":["info@star-vista.org"],"hours":"Monday-Friday,
-        9-5 and by appointment. Evenings available with an appointment","kind":"Human
-        Services","languages":["French","Spanish"],"mail_address":{"attention":"StarVista/Counseling
-        Services","city":"San Carlos","state":"CA","street":"610 Elm Street, Suite
-        212","zip":"94070"},"name":"Counseling Center","phones":[{"number":"650 591-9623","hours":"(Monday-Friday,
-        8-5)"}],"short_desc":"Provides crisis counseling, outreach and community education.","transportation":"SAMTRANS
-        stops within 1 block, CALTRAIN stops within 4 blocks.","updated_at":"2013-10-02T19:28:06-07:00","urls":["http://www.star-vista.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33901974fcdb2b002579","services":[{"_id":"521d33921974fcdb2b00259b","audience":"Individuals,
-        couples, families, children, teens","eligibility":"None","fees":"Vary according
-        to income. Cash, checks and Medi-Cal accepted.","funding_sources":["City","County","Donations","Fees","Grants"],"how_to_apply":"Call
-        for appointment.","keywords":["INDIVIDUAL AND FAMILY DEVELOPMENT SERVICES","Growth
-        and Adjustment","MENTAL HEALTH SERVICES","Individual/Group Counseling","Support
-        Groups","Family Counseling","Individual Counseling","Youth"],"service_areas":"San
-        Mateo County","updated_at":"2013-10-02T19:28:05-07:00","wait":"Varies.","categories":[{"_id":"52280f711edd37edff0000c4","depth":0,"lft":391,"name":"Care","oe_id":"108","parent_id":null,"rgt":488},{"_id":"52280f741edd37edff0000e7","depth":1,"lft":460,"name":"Support
-        Network","oe_id":"108-07","parent_id":"52280f711edd37edff0000c4","rgt":487},{"_id":"52280f741edd37edff0000e8","depth":2,"lft":461,"name":"Counseling","oe_id":"108-07-01","parent_id":"52280f741edd37edff0000e7","rgt":462}]}],"organization":{"_id":"521d33901974fcdb2b002568","_slugs":["starvista-formerly-youth-and-family-enrichment-services-yfes-1"],"created_at":"2013-08-27T16:17:36-07:00","name":"StarVista
-        (formerly Youth and Family Enrichment Services (YFES))","updated_at":"2013-10-01T12:18:10-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568/locations"},"slugs":["counseling-center"],"id":"521d33901974fcdb2b002579","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645456000],"highlight":null,"_explanation":null},{"_id":"521d33901974fcdb2b002584","_slugs":["daybreak-program-department-of-residential-services"],"address":{"city":"Redwood
-        City","state":"CA","street":"639 Douglas Avenue","zip":"94063"},"contacts":[{"_id":"521d33901974fcdb2b002585","name":"Kara
-        Wahlin","title":"Program Manager"}],"coordinates":[-122.210894,37.480908],"created_at":"2013-08-27T16:17:36-07:00","description":"A
-        transitional living program for homeless teenagers in San Mateo County. Youth
-        can stay in the program for up to 18 months. Support services assist youth
-        with schools and jobs while teaching them independent living skills. Youth
-        are provided with individual and group therapy, and case management to move
-        towards their goals and successfully transition to independence. Aftercare
-        services are available when residents leave the program.   Formerly known
-        as Youth and Family Enrichment Services (YFES).","emails":["sabina.lacosse@star-vista.org"],"faxes":["650
-        369-4584"],"hours":"Monday-Friday, Anytime; Saturday, Sunday, Anytime","kind":"Human
-        Services","languages":["Spanish"],"mail_address":{"attention":"StarVista/Daybreak
-        Program","city":"Redwood City","state":"CA","street":"639 Douglas Avenue","zip":"94063"},"name":"Daybreak
-        Program, Department of Residential Services","phones":[{"number":"650 364-4633","department":"(Daily,
-        Anytime)"}],"short_desc":"A shelter for homeless teenagers, age 16-21, in
-        San Mateo County.","transportation":"SAMTRANS stops within 2 blocks.","updated_at":"2013-10-01T12:18:21-07:00","urls":["http://www.star-vista.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33901974fcdb2b002584","services":[{"_id":"521d33931974fcdb2b00259e","audience":"Teenagers,
-        age 16-21","eligibility":"Age 16-21, homeless","fees":"None.","funding_sources":["County","Donations","Federal","Grants"],"how_to_apply":"Call
-        for information.","keywords":["CHILD PROTECTION AND CARE SERVICES","Out-Of-Home
-        Care","HOUSING SERVICES","Temporary","Transitional Housing/Shelter","Group
-        Counseling","Individual Counseling","Youth","Adolescents"],"service_areas":"San
-        Mateo County","updated_at":"2013-08-27T16:17:39-07:00","wait":"Varies."}],"organization":{"_id":"521d33901974fcdb2b002568","_slugs":["starvista-formerly-youth-and-family-enrichment-services-yfes-1"],"created_at":"2013-08-27T16:17:36-07:00","name":"StarVista
-        (formerly Youth and Family Enrichment Services (YFES))","updated_at":"2013-10-01T12:18:10-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568/locations"},"slugs":["daybreak-program-department-of-residential-services"],"id":"521d33901974fcdb2b002584","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645456000],"highlight":null,"_explanation":null},{"_id":"521d33901974fcdb2b002569","_slugs":["crisis-intervention-and-suicide-prevention-center-department-of-health-and-recovery-services"],"ask_for":["Person
-        on Duty"],"contacts":[{"_id":"521d33901974fcdb2b00256a","name":"Julie Kinloch,
-        LCSW","title":"Program Manager"}],"created_at":"2013-08-27T16:17:36-07:00","description":"A
-        24-hour phone service for people who need assistance coping with a crisis
-        involving themselves or someone close to them. Issues may include suicide,
-        rape, sexual abuse, child abuse, grief, alcohol/drug abuse or any personal
-        crisis. Also refers people to other community agencies for help.   Formerly
-        known as Youth and Family Enrichment Services (YFES).","emails":["julie.kinloch@star-vista.org"],"hours":"24
-        hours daily","kind":"Human Services","languages":["Spanish"],"mail_address":{"attention":"StarVista/Crisis
-        Line","city":"San Carlos","state":"CA","street":"610 Elm Street, Suite 212","zip":"94070"},"name":"Crisis
-        Intervention and Suicide Prevention Center, Department of Health and Recovery
-        Services","phones":[{"vanity_number":"800 273-TALK","hours":"(24 hours daily)"}],"short_desc":"Offers
-        24-hour phone service for people seeking assistance to cope with a crisis
-        involving themselves or someone close to them.","transportation":"Not necessary
-        for service.","updated_at":"2013-10-01T12:18:10-07:00","urls":["http://www.star-vista.org","http://www.onyourmind.net"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33901974fcdb2b002569","services":[{"_id":"521d33911974fcdb2b002597","audience":"Persons
-        who are in crisis, depressed or suicidal. Persons needing help in dealing
-        with another''s suicide","eligibility":"None","fees":"None.","funding_sources":["County","Donations"],"how_to_apply":"Apply
-        by phone.","keywords":["EMERGENCY SERVICES","Telephone Assistance","MENTAL
-        HEALTH SERVICES","Community Information","Crisis Intervention/Hotlines","Telephone
-        Crisis Intervention","Youth"],"service_areas":"San Mateo County","updated_at":"2013-08-27T16:17:37-07:00","wait":"No
-        wait."}],"organization":{"_id":"521d33901974fcdb2b002568","_slugs":["starvista-formerly-youth-and-family-enrichment-services-yfes-1"],"created_at":"2013-08-27T16:17:36-07:00","name":"StarVista
-        (formerly Youth and Family Enrichment Services (YFES))","updated_at":"2013-10-01T12:18:10-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568/locations"},"slugs":["crisis-intervention-and-suicide-prevention-center-department-of-health-and-recovery-services"],"id":"521d33901974fcdb2b002569","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645456000],"highlight":null,"_explanation":null},{"_id":"521d33901974fcdb2b00256c","_slugs":["insights-redwood-city-department-of-health-and-recovery-services"],"accessibility":["Disabled
-        Parking","Disabled Restroom","Wheelchair"],"address":{"city":"Redwood City","state":"CA","street":"609
-        Price Avenue, Suite 101","zip":"94063"},"ask_for":["Program manager","site
-        counselors"],"contacts":[{"_id":"521d33901974fcdb2b00256d","name":"Amy Shull,
-        MFT","title":"Program Manager"}],"coordinates":[-122.230319,37.493448],"created_at":"2013-08-27T16:17:36-07:00","description":"Offers
-        a structured drug and alcohol recovery program for youth. This program is
-        open to all teenagers in the area and teens may self refer. Includes individual,
-        family and group counseling, anger management for adolescents, and a parent/teen
-        support group. Case management is offered throughout program participation.     Additional
-        offices are located at 333 Gellert Blvd., Suite 206 in Daly City. Formerly
-        known as Youth and Family Enrichment Services (YFES).","faxes":["650 366-0220"],"hours":"Monday-Thursday,
-        10-7","kind":"Human Services","languages":["Spanish"],"mail_address":{"attention":"StarVista/Insights","city":"Redwood
-        City","state":"CA","street":"609 Price Avenue, Suite 101","zip":"94063"},"name":"Insights
-        - Redwood City, Department of Health and Recovery Services","phones":[{"number":"650
-        366-8436","hours":"(Monday-Thursday, 10-6)"}],"short_desc":"Offers a structured
-        22-week drug and alcohol recovery program for youth.","transportation":"SAMTRANS
-        stops within 2 blocks.","updated_at":"2013-10-01T12:18:11-07:00","urls":["http://www.star-vista.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33901974fcdb2b00256c","services":[{"_id":"521d33911974fcdb2b002598","audience":"Youth
-        age 13-18 and their families","eligibility":"None","fees":"Vary according
-        to income. Sliding fee scale. Cash, checks, and Medi-Cal accepted.","funding_sources":["City","County","Donations","Fees"],"how_to_apply":"Apply
-        by phone for intake interview.","keywords":["ALCOHOLISM SERVICES","Individual/Group
-        Counseling","DRUG ABUSE SERVICES","Support Groups","Family Counseling","Group
-        Counseling","Individual Counseling","Anger Management","Substance Abuse Day
-        Treatment","Youth","Adolescents"],"service_areas":"San Mateo County","updated_at":"2013-09-18T17:19:56-07:00","categories":[{"_id":"52280f661edd37edff00004e","depth":0,"lft":155,"name":"Health","oe_id":"106","parent_id":null,"rgt":268},{"_id":"52280f661edd37edff00004f","depth":1,"lft":156,"name":"Addiction
-        & Recovery","oe_id":"106-01","parent_id":"52280f661edd37edff00004e","rgt":169},{"_id":"52280f711edd37edff0000c4","depth":0,"lft":391,"name":"Care","oe_id":"108","parent_id":null,"rgt":488},{"_id":"52280f741edd37edff0000e7","depth":1,"lft":460,"name":"Support
-        Network","oe_id":"108-07","parent_id":"52280f711edd37edff0000c4","rgt":487},{"_id":"52280f741edd37edff0000e8","depth":2,"lft":461,"name":"Counseling","oe_id":"108-07-01","parent_id":"52280f741edd37edff0000e7","rgt":462},{"_id":"52280f751edd37edff0000ee","depth":2,"lft":473,"name":"Peer
-        Support","oe_id":"108-07-06","parent_id":"52280f741edd37edff0000e7","rgt":474},{"_id":"52280f751edd37edff0000f0","depth":2,"lft":477,"name":"Support
-        Groups","oe_id":"108-07-08","parent_id":"52280f741edd37edff0000e7","rgt":484}]}],"organization":{"_id":"521d33901974fcdb2b002568","_slugs":["starvista-formerly-youth-and-family-enrichment-services-yfes-1"],"created_at":"2013-08-27T16:17:36-07:00","name":"StarVista
-        (formerly Youth and Family Enrichment Services (YFES))","updated_at":"2013-10-01T12:18:10-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568/locations"},"slugs":["insights-redwood-city-department-of-health-and-recovery-services"],"id":"521d33901974fcdb2b00256c","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645456000],"highlight":null,"_explanation":null},{"_id":"521d33901974fcdb2b00257d","_slugs":["childrens-place-program-department-of-early-childhood-services"],"accessibility":["Disabled
-        Parking","Elevator","Disabled Restroom","Wheelchair"],"address":{"city":"San
-        Carlos","state":"CA","street":"610 Elm Street, Suite 212","zip":"94070"},"ask_for":["Merle
-        Saber"],"contacts":[{"_id":"521d33901974fcdb2b00257e","name":"Merle Saber,
-        MFT","title":"Program Manager"}],"coordinates":[-122.261743,37.50403],"created_at":"2013-08-27T16:17:36-07:00","description":"The
-        program provides individual and family therapy to children, parents and grandparents,
-        whose lives are affected by the disease of addiction. Groups focus on the
-        identification of feelings, defenses, communication skills, problem solving
-        skills, staying safe, building self-esteem, and healthy parenting skills.
-        Formerly known as Youth and Family Enrichment Services (YFES).","emails":["merle.saber@star-vista.org"],"faxes":["650
-        591-9750"],"kind":"Human Services","languages":["Spanish"],"mail_address":{"attention":"StarVista/Children''s
-        Place Program","city":"San Carlos","state":"CA","street":"610 Elm Street,
-        Suite 212","zip":"94070"},"name":"Children''s Place Program, Department of
-        Early Childhood Services","phones":[{"number":"650 591-9623","hours":"(Monday-Thursday,
-        8-5)"}],"short_desc":"Educates children grade K-8 who are living in a substance-abusing
-        family about chemical dependency and teaches them coping skills.","transportation":"SAMTRANS
-        stops within 2 blocks; CALTRAIN station within 4 blocks.","updated_at":"2013-10-01T12:18:19-07:00","urls":["http://www.star-vista.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33901974fcdb2b00257d","services":[{"_id":"521d33921974fcdb2b00259c","audience":"Anyone
-        whose life is being impacted by a family member''s addiction","eligibility":"Child,
-        age 5-14, whose life has been impacted by family addiction","fees":"$300 per
-        10-week session. Sliding fee scale available on a case-by-case basis. No one
-        is turned away for lack of funds. Cash and checks accepted.","funding_sources":["Donations","Fees","Grants"],"how_to_apply":"Apply
-        by phone. In-person registration and intake before child begins the program.","keywords":["ALCOHOLISM
-        SERVICES","Family Support","Individual/Group Counseling","DRUG ABUSE SERVICES","Group
-        Counseling","Individual Counseling","Substance Abuse Education/Prevention","Youth","Children"],"service_areas":"San
-        Mateo County","updated_at":"2013-09-18T17:23:18-07:00","wait":"May be a slight
-        wait for next program to begin.","categories":[{"_id":"52280f661edd37edff00004e","depth":0,"lft":155,"name":"Health","oe_id":"106","parent_id":null,"rgt":268},{"_id":"52280f661edd37edff00004f","depth":1,"lft":156,"name":"Addiction
-        & Recovery","oe_id":"106-01","parent_id":"52280f661edd37edff00004e","rgt":169},{"_id":"52280f681edd37edff00005c","depth":1,"lft":182,"name":"Health
-        Education","oe_id":"106-04","parent_id":"52280f661edd37edff00004e","rgt":199},{"_id":"52280f681edd37edff00005e","depth":2,"lft":185,"name":"Disease
-        Management","oe_id":"106-04-02","parent_id":"52280f681edd37edff00005c","rgt":186},{"_id":"52280f681edd37edff000061","depth":2,"lft":191,"name":"Parenting
-        Education","oe_id":"106-04-05","parent_id":"52280f681edd37edff00005c","rgt":192},{"_id":"52280f711edd37edff0000c4","depth":0,"lft":391,"name":"Care","oe_id":"108","parent_id":null,"rgt":488},{"_id":"52280f741edd37edff0000e7","depth":1,"lft":460,"name":"Support
-        Network","oe_id":"108-07","parent_id":"52280f711edd37edff0000c4","rgt":487},{"_id":"52280f741edd37edff0000e8","depth":2,"lft":461,"name":"Counseling","oe_id":"108-07-01","parent_id":"52280f741edd37edff0000e7","rgt":462},{"_id":"52280f751edd37edff0000f0","depth":2,"lft":477,"name":"Support
-        Groups","oe_id":"108-07-08","parent_id":"52280f741edd37edff0000e7","rgt":484},{"_id":"52280f751edd37edff0000f5","depth":0,"lft":489,"name":"Education","oe_id":"109","parent_id":null,"rgt":582},{"_id":"52280f751edd37edff0000fd","depth":1,"lft":504,"name":"More
-        Education","oe_id":"109-03","parent_id":"52280f751edd37edff0000f5","rgt":545},{"_id":"52280f771edd37edff000107","depth":2,"lft":523,"name":"Health
-        Education","oe_id":"109-03-07","parent_id":"52280f751edd37edff0000fd","rgt":538}]}],"organization":{"_id":"521d33901974fcdb2b002568","_slugs":["starvista-formerly-youth-and-family-enrichment-services-yfes-1"],"created_at":"2013-08-27T16:17:36-07:00","name":"StarVista
-        (formerly Youth and Family Enrichment Services (YFES))","updated_at":"2013-10-01T12:18:10-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568/locations"},"slugs":["childrens-place-program-department-of-early-childhood-services"],"id":"521d33901974fcdb2b00257d","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645456000],"highlight":null,"_explanation":null},{"_id":"521d33901974fcdb2b002581","_slugs":["alcohol-and-drug-helpline-department-of-health-and-recovery-services"],"contacts":[{"_id":"521d33901974fcdb2b002582","name":"Julie
-        Kinloch, LCSW","title":"Program Manager"}],"created_at":"2013-08-27T16:17:36-07:00","description":"Provides
-        information about alcohol and drug recovery programs and referrals to community
-        services. Offers support for persons dealing with their own alcohol and drug
-        issues or for those whose lives have been affected by alcohol and drug abuse.
-        All services provided over the phone.   Formerly known as Youth and Family
-        Enrichment Services (YFES).","emails":["julie.kinloch@star-vista.org"],"hours":"24
-        hours daily","kind":"Human Services","languages":["Spanish"],"mail_address":{"attention":"StarVista/Alcohol
-        and Drug Helpline","city":"San Carlos","state":"CA","street":"610 Elm Street,
-        Suite 212","zip":"94070"},"name":"Alcohol and Drug Helpline, Department of
-        Health and Recovery Services","phones":[{"number":"650 573-3950","department":"Hotline","hours":"(24
-        hours daily)"}],"short_desc":"A 24-hour hotline offering information on alcohol
-        and drug treatment services.","transportation":"Not necessary for service.","updated_at":"2013-10-01T12:18:20-07:00","urls":["http://www.crisiscenter.cc"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33901974fcdb2b002581","services":[{"_id":"521d33921974fcdb2b00259d","audience":"People
-        who desire information or referrals for themselves or others regarding drug
-        and alcohol problems","eligibility":"None","fees":"None.","funding_sources":["County"],"how_to_apply":"Apply
-        by phone.","keywords":["ALCOHOLISM SERVICES","Crisis Intervention/Hotlines","DRUG
-        ABUSE SERVICES","Telephone Crisis Intervention","Substance Abuse Referrals"],"service_areas":"San
-        Mateo County","updated_at":"2013-08-27T16:17:38-07:00","wait":"No wait."}],"organization":{"_id":"521d33901974fcdb2b002568","_slugs":["starvista-formerly-youth-and-family-enrichment-services-yfes-1"],"created_at":"2013-08-27T16:17:36-07:00","name":"StarVista
-        (formerly Youth and Family Enrichment Services (YFES))","updated_at":"2013-10-01T12:18:10-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568/locations"},"slugs":["alcohol-and-drug-helpline-department-of-health-and-recovery-services"],"id":"521d33901974fcdb2b002581","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645456000],"highlight":null,"_explanation":null},{"_id":"521d33901974fcdb2b002588","_slugs":["insights-daly-city-department-of-health-and-recovery-services"],"address":{"city":"Daly
-        City","state":"CA","street":"333 Gellert Blvd., Suite 206","zip":"94015"},"ask_for":["Program
-        Coordinator"],"contacts":[{"_id":"521d33901974fcdb2b002589","name":"Amy Shull,
-        MFT","title":"Program Manager"}],"coordinates":[-122.46678,37.666654],"created_at":"2013-08-27T16:17:36-07:00","description":"Offers
-        a drug and alcohol recovery program for youth designed to empower them to
-        take responsibility for their own recovery. This program is open to all teenagers
-        in the area, and teens may self refer. Offers a structured outpatient treatment
-        program that addresses the needs of youth through intake assessment, individual
-        treatment planning, counseling, socialization activities and relapse prevention.
-        Offers a parent support group.    An additional office is located at 609 Price
-        Avenue in Redwood City (650-366-8436 x316). Formerly known as Youth and Family
-        Enrichment Services (YFES).","faxes":["650 755-1754"],"hours":"Monday-Thursday,
-        10-8:30","kind":"Human Services","languages":["Spanish"],"mail_address":{"attention":"StarVista/Insights","city":"Daly
-        City","state":"CA","street":"333 Gellert Blvd., Suite 206","zip":"94015"},"name":"Insights
-        - Daly City, Department of Health and Recovery Services","phones":[{"number":"650
-        366-8436","hours":"(Monday-Thursday, 10-7)"}],"short_desc":"Offers substance
-        abuse counseling to youth.","transportation":"SAMTRANS stops within 1 block.","updated_at":"2013-10-01T12:18:21-07:00","urls":["http://www.star-vista.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d33901974fcdb2b002588","services":[{"_id":"521d33931974fcdb2b00259f","audience":"Youth
-        age 13-18 and their families","eligibility":"None","fees":"Vary according
-        to income. Cash, checks, credit cards and money orders accepted.","funding_sources":["City","County","Donations","Fees"],"how_to_apply":"Apply
-        by phone for intake interview.","keywords":["ALCOHOLISM SERVICES","Individual/Group
-        Counseling","DRUG ABUSE SERVICES","Support Groups","Group Counseling","Individual
-        Counseling","Substance Abuse Day Treatment","Youth","Adolescents"],"service_areas":"San
-        Mateo County","updated_at":"2013-08-27T16:17:39-07:00","wait":"No wait for
-        intake/assessment."}],"organization":{"_id":"521d33901974fcdb2b002568","_slugs":["starvista-formerly-youth-and-family-enrichment-services-yfes-1"],"created_at":"2013-08-27T16:17:36-07:00","name":"StarVista
-        (formerly Youth and Family Enrichment Services (YFES))","updated_at":"2013-10-01T12:18:10-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d33901974fcdb2b002568/locations"},"slugs":["insights-daly-city-department-of-health-and-recovery-services"],"id":"521d33901974fcdb2b002588","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645456000],"highlight":null,"_explanation":null},{"_id":"521d338f1974fcdb2b00253e","_slugs":["sleep-medicine-center"],"accessibility":["Elevator","Ramp","Disabled
-        Restroom","Disabled Parking","Wheelchair"],"address":{"city":"Redwood City","state":"CA","street":"450
-        Broadway Street, Pavilion B, Second Floor","zip":"94063"},"ask_for":["Appointment
-        desk"],"contacts":[{"_id":"521d338f1974fcdb2b00253f","name":"Jed Black, MD","title":"Director"},{"_id":"521d338f1974fcdb2b002540","name":"Clete
-        A. Kushida, MD, PhD, RPSGT","title":"Medical Director"},{"_id":"521d338f1974fcdb2b002541","name":"Lynda
-        Wolfe","title":"Clinic Manager"}],"coordinates":[-122.2086579,37.5021585],"created_at":"2013-08-27T16:17:35-07:00","description":"Provides
-        evaluation and treatment of sleep disorders A specialized clinic for the evaluation
-        and treatment of sleep disorders in adults and children. Disorders evaluated
-        include insomnia, sleep apnea, narcolepsy, sleep walking, night terrors and
-        other unusual behaviors at night. Persons may call directly for information
-        about the referral procedure or to receive a brochure about the clinic. Otherwise,
-        clinic staff will contact the person after receiving the doctor''s referral
-        letter and will set up an appointment for initial consultation. There is usually
-        a two week wait for this appointment. Previously known as Stanford Health
-        Services. Sleep Disorders Clinic.","faxes":["650 721-3448"],"kind":"Human
-        Services","languages":["French","Spanish","Filipino (Tagalog)"],"mail_address":{"attention":"Sleep
-        Medicine Center","city":"Redwood City","state":"CA","street":"450 Broadway
-        Street, M/C 5730","zip":"94063"},"name":"Sleep Medicine Center","phones":[{"number":"650
-        723-6601","hours":"(Monday-Friday, 8:30-5)"}],"updated_at":"2013-10-01T12:18:06-07:00","url":"http://ohanapi.herokuapp.com/api/locations/521d338f1974fcdb2b00253e","services":[{"_id":"521d338f1974fcdb2b002548","audience":"Adults
-        and children afflicted with sleep disorders","eligibility":"None","fees":"Cash,
-        check, credit card, Medicare, Medi-Cal, military insurance and private insurance
-        accepted.","funding_sources":["Fees"],"how_to_apply":"Apply by mail or phone.
-        Referral from medical doctor preferred for application, but not mandatory.
-        Two week wait for initial consultation.","keywords":["HEALTH SERVICES","Outpatient
-        Care"],"service_areas":["Alameda County","Contra Costa County","Marin County","San
-        Francisco County","San Mateo County","Santa Clara County"],"updated_at":"2013-09-19T22:43:30-07:00","wait":"2
-        weeks.","categories":[{"_id":"52280f661edd37edff00004e","depth":0,"lft":155,"name":"Health","oe_id":"106","parent_id":null,"rgt":268},{"_id":"52280f691edd37edff00006d","depth":1,"lft":216,"name":"Medical
-        Care","oe_id":"106-06","parent_id":"52280f661edd37edff00004e","rgt":267},{"_id":"52280f691edd37edff000071","depth":2,"lft":223,"name":"Checkup
-        & Test","oe_id":"106-06-04","parent_id":"52280f691edd37edff00006d","rgt":236},{"_id":"52280f6a1edd37edff00007a","depth":2,"lft":241,"name":"Prevent
-        & Treat","oe_id":"106-06-07","parent_id":"52280f691edd37edff00006d","rgt":264},{"_id":"52280f6b1edd37edff000081","depth":3,"lft":254,"name":"Specialized
-        Therapy","oe_id":"106-06-07-07","parent_id":"52280f6a1edd37edff00007a","rgt":255}]}],"organization":{"_id":"521d338f1974fcdb2b00253d","_slugs":["stanford-hospital-and-clinics-1"],"created_at":"2013-08-27T16:17:35-07:00","name":"Stanford
-        Hospital and Clinics","updated_at":"2013-10-01T12:18:06-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d338f1974fcdb2b00253d","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d338f1974fcdb2b00253d/locations"},"slugs":["sleep-medicine-center"],"id":"521d338f1974fcdb2b00253e","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645455000],"highlight":null,"_explanation":null},{"_id":"521d338f1974fcdb2b002544","_slugs":["lifeline-dot-aging-adult-services"],"address":{"city":"Stanford","state":"CA","street":"Stanford
-        Hospital and Clinics, 300 Pasteur Drive, HC005","zip":"94305-5279"},"ask_for":["Diane
-        Churchill","Louise Laforet"],"contacts":[{"_id":"521d338f1974fcdb2b002545","name":"Diane
-        Churchill","title":"Director"}],"coordinates":[-122.1660756,37.42410599999999],"created_at":"2013-08-27T16:17:35-07:00","description":"A
-        medical alert system that helps elderly and medically compromised members
-        of the community to remain independent in their own homes. A help button summons
-        immediate assistance from neighbors or emergency responders. Assistance is
-        available 24 hours a day, 365 days a year. Formerly known as Stanford Hospital
-        and Clinics, Lifeline, Guest Services.","emails":["lifeline@stanfordmed.org"],"faxes":["650
-        736-4186"],"hours":"24 hours daily","kind":"Human Services","languages":["AT&T
-        Language Line"],"mail_address":{"attention":"Lifeline","city":"Stanford","state":"CA","street":"300
-        Pasteur Drive, HC005","zip":"94305-5279"},"name":"Lifeline., Aging Adult Services","phones":[{"number":"650
-        723-6906","hours":"(Monday-Friday, 8:30-4:30)"}],"short_desc":"Electronic
-        communication system for medical emergencies for people living alone.","transportation":"Not
-        necessary for service.","updated_at":"2013-10-02T19:31:20-07:00","urls":["http://www.geriatric.stanfordhospital.com"],"url":"http://ohanapi.herokuapp.com/api/locations/521d338f1974fcdb2b002544","services":[{"_id":"521d338f1974fcdb2b002549","audience":"Medically
-        vulnerable elderly and physically limited persons who wish to live independently
-        in their own home or who live alone","eligibility":"Resident of area served","fees":"Vary
-        according to income. $50 installation fee, $40 monthly service charge. Dual
-        subscriber: $60 installation, $45 per month. Checks and money orders accepted.","funding_sources":["Donations","Fees"],"how_to_apply":"Walk
-        in, apply by phone, mail or Web site. Must complete application.","keywords":["EMERGENCY
-        SERVICES","Medical Assistance","Personal Emergency Response Systems","Older
-        Adults"],"service_areas":["Atherton","East Palo Alto","Los Altos","Los Altos
-        Hills","Menlo Park","Mountain View","Palo Alto","Portola Valley","Redwood
-        City","Woodside"],"updated_at":"2013-08-27T16:17:35-07:00","wait":"No wait."}],"organization":{"_id":"521d338f1974fcdb2b00253d","_slugs":["stanford-hospital-and-clinics-1"],"created_at":"2013-08-27T16:17:35-07:00","name":"Stanford
-        Hospital and Clinics","updated_at":"2013-10-01T12:18:06-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d338f1974fcdb2b00253d","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d338f1974fcdb2b00253d/locations"},"slugs":["lifeline-dot-aging-adult-services"],"id":"521d338f1974fcdb2b002544","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645455000],"highlight":null,"_explanation":null},{"_id":"521d338f1974fcdb2b00254f","_slugs":["stanford-hospital-and-clinics-dot-clinic-information"],"accessibility":["Elevator","Ramp","Disabled
-        Restroom","Disabled Parking","Wheelchair"],"address":{"city":"Stanford","state":"CA","street":"300
-        Pasteur Drive","zip":"94305"},"ask_for":["Receptionist"],"contacts":[{"_id":"521d338f1974fcdb2b002550","name":"Helen
-        Wilmot","title":"Vice President, Clinic Operations"},{"_id":"521d338f1974fcdb2b002551","name":"Norman
-        Rizk, MD","title":"Senior Associate Dean for Clinical Affairs"}],"coordinates":[-122.180129,37.4343609],"created_at":"2013-08-27T16:17:35-07:00","description":"Assists
-        persons needing medical care to determine the appropriate clinic and set up
-        an appointment. Many clinics require referral from another doctor. These include
-        (but are not limited to) allergy, cardiology, chest, gastrointestinal, genetic
-        counseling, neurology, oncology, orthopedic, sleep disorders and diagnostic.
-        Persons not having a personal physician can be examined in the general medical
-        clinic and are directed to a specialty clinic if appropriate.   Specialty
-        clinics include dermatology, eye, internal medicine and psychiatric outpatient,
-        among others.","faxes":["650 320-9443"],"hours":"Monday-Friday, 8:30-5","kind":"Human
-        Services","languages":["Interpreter"],"mail_address":{"attention":"Clinic
-        Information","city":"Stanford","state":"CA","street":"300 Pasteur Drive","zip":"94305"},"name":"Stanford
-        Hospital and Clinics., Clinic Information","phones":[{"number":"800 756-9000","hours":"(Monday-Friday,
-        8-5)"}],"short_desc":"Assists persons needing medical care to determine the
-        appropriate clinic and set up an appointment.","transportation":"SAMTRANS,
-        Santa Clara County Transit stop at the medical center.","updated_at":"2013-10-01T12:18:08-07:00","url":"http://ohanapi.herokuapp.com/api/locations/521d338f1974fcdb2b00254f","services":[{"_id":"521d33901974fcdb2b002564","eligibility":"None","fees":"Vary
-        according to service. Cash, checks, credit cards, Medi-Cal, Medicare, private
-        insurance and military insurance accepted.","funding_sources":["Fees"],"how_to_apply":"Apply
-        by phone.","keywords":["HEALTH SERVICES","Outpatient Care","Hospitals"],"service_areas":["Alameda
-        County","Contra Costa County","Marin County","San Francisco County","San Mateo
-        County","Santa Clara County"],"updated_at":"2013-09-18T17:32:37-07:00","wait":"Varies
-        according to service.","categories":[{"_id":"52280f661edd37edff00004e","depth":0,"lft":155,"name":"Health","oe_id":"106","parent_id":null,"rgt":268},{"_id":"52280f691edd37edff00006d","depth":1,"lft":216,"name":"Medical
-        Care","oe_id":"106-06","parent_id":"52280f661edd37edff00004e","rgt":267},{"_id":"52280f691edd37edff000071","depth":2,"lft":223,"name":"Checkup
-        & Test","oe_id":"106-06-04","parent_id":"52280f691edd37edff00006d","rgt":236},{"_id":"52280f6a1edd37edff00007a","depth":2,"lft":241,"name":"Prevent
-        & Treat","oe_id":"106-06-07","parent_id":"52280f691edd37edff00006d","rgt":264}]}],"organization":{"_id":"521d338f1974fcdb2b00254a","_slugs":["stanford-university-medical-center"],"created_at":"2013-08-27T16:17:35-07:00","name":"Stanford
-        University Medical Center","updated_at":"2013-10-01T12:18:07-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d338f1974fcdb2b00254a","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d338f1974fcdb2b00254a/locations"},"slugs":["stanford-hospital-and-clinics-dot-clinic-information"],"id":"521d338f1974fcdb2b00254f","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645455000],"highlight":null,"_explanation":null},{"_id":"521d338f1974fcdb2b00254b","_slugs":["lucile-packard-childrens-hospital"],"accessibility":["Elevator","Disabled
-        Restroom","Disabled Parking","Wheelchair"],"address":{"city":"Palo Alto","state":"CA","street":"725
-        Welch Road","zip":"94304"},"ask_for":["Call toll-free number for information"],"contacts":[{"_id":"521d338f1974fcdb2b00254c","name":"Christopher
-        Dawes","title":"Chief Executive Officer"}],"coordinates":[-122.175049,37.436357],"created_at":"2013-08-27T16:17:35-07:00","description":"Operates
-        the comprehensive 264-bed Lucile Packard Children''s Hospital at Stanford
-        providing pediatric medical and surgical services. The hospital provides cardiology
-        and heart transplantation services, hematology/oncology/bone marrow transplantation,
-        liver and kidney transplantation, general pediatric surgery and neonatology.
-        Outpatient clinics include primary care, adolescent medicine, bone marrow
-        transplant, cardiology, community pediatric after-hours, dermatology, diabetes,
-        eating disorders, endocrinology, gastroenterology, genetics, hematology, hemophilia,
-        infant development, infectious disease, liver transplant, neurology, oncology,
-        ophthalmology, orthopedics, plastic surgery, psychiatry, respiratory medicine,
-        rheumatology, spina bifida, surgery, and urology. The Mommy Van is a special
-        mobile medical unit providing women''s health care in East Palo Alto. Medical
-        services are free of charge and available to women who do not have any type
-        of medical insurance. Provides prenatal services, pregnancy testing, breast
-        exams and referral for mammograms, pap smears, contraception, checking for
-        diabetes and high blood pressure, and pre- and post-natal information. The
-        Mommy Van is also located at two Samaritan House locations: 401 North Humboldt
-        Street, San Mateo (Mondays, 9-3) and 114 5th Avenue, Redwood City (Wednesdays,
-        9-3). Call 650-839-1447. Other services include social services, interpreters,
-        chaplaincy, recreation therapy, physical and occupational therapy, nutrition,
-        pharmacy, radiology, laboratory, rehabilitation engineering and community
-        outreach services. The Parent Information and Referral Center (PIRC) provides
-        information on child healthcare. Pediatric nurses are available to answer
-        questions about a variety of children''s health, growth and development, safety
-        and behavior issues. They can also help choose a physician who meets the special
-        needs of the child as well as provide information about resources for children
-        in a community. Translation services are available through the AT&T Language
-        Line. Call 650-498-KIDS or 800-690-2282. The Teen Health Resource Line offers
-        reliable, accessible and confidential health recommendations. Adolescents
-        with questions about relationships, HIV/AIDS, eating disorders or other health
-        issues are invited to call 888-711-TEEN. The Adolescent Health Van offers
-        comprehensive health services for uninsured and homeless youth, 12 to 21 years
-        of age. Physicians, nurse practitioners, social workers, nutritionists and
-        nurses from Lucile Packard Children''s Hospital staff the Health Van. Services
-        include immunizations, physicals, pregnancy tests, pelvic exams, sick care,
-        HIV counseling and testing, family planning and health education. All services
-        and medications are provided at no charge to the patients. Visits are on a
-        first-come, first-serve basis. The location of the Health Van may change without
-        advance notice. The locations are 2801 Mission Street in San Francisco (1st
-        Tuesday of each month, from 2-7), the Tenderloin Playground at 570 Ellis Street
-        in San Francisco (2nd Tuesday of each month, from 2-7), Peninsula High School
-        at 300 Piedmont Avenue in San Bruno (3rd Tuesday of each month, from 9-2),
-        Phoenix High School at 1950 Mission Street in San Francisco (4th Tuesday of
-        each month, from 9-2) and Alta Vista High School at Bryant Street and Turman
-        in Mountain View (1st Thursday of each month, from 9-2). Call 888-711-TEEN
-        (8336).","emails":["referral@medcenter.stanford.edu"],"kind":"Human Services","languages":["Interpreter"],"mail_address":{"attention":"Packard
-        Children''s Hospital","city":"Palo Alto","state":"CA","street":"725 Welch
-        Road","zip":"94304"},"name":"Lucile Packard Children''s Hospital","phones":[{"number":"800
-        756-9000","hours":"(24 hours daily)"}],"short_desc":"Operates a 214-bed inpatient
-        hospital for children.","transportation":"SAMTRANS and CALTRAIN stop within
-        1/2 mile and connect with Stanford University''s Marguerite shuttle service.","updated_at":"2013-10-02T19:37:45-07:00","urls":["http://www.lpch.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d338f1974fcdb2b00254b","services":[{"_id":"521d33901974fcdb2b002563","audience":"Children,
-        youth, pregnant women","eligibility":"Child or youth in need of the hospital''s
-        services","fees":"Vary according to service. Cash, Medi-Cal, military insurance,
-        private insurance accepted.","funding_sources":["Donations","Fees","Grants"],"how_to_apply":"Apply
-        by phone.","keywords":["FAMILY PLANNING SERVICES","Contraceptive Assistance","Expectant/New
-        Parent Assistance","Pregnancy Testing","HEALTH SERVICES","Inpatient Care","Outpatient
-        Care","MENTAL HEALTH SERVICES","Day Treatment","Observation/Diagnosis","Hospitals"],"service_areas":["Alameda
-        County","Contra Costa County","Marin County","San Francisco County","San Mateo
-        County","Santa Clara County","Santa Cruz County","nationwide"],"updated_at":"2013-10-02T19:37:45-07:00","wait":"No
+        Service Bureaus of the YMCA","updated_at":"2013-10-01T12:18:51-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d339f1974fcdb2b002699","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d339f1974fcdb2b002699/locations"},"slugs":["san-mateo"],"id":"521d33a01974fcdb2b0026a2","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645472000],"highlight":null,"_explanation":null},{"_id":"521d339f1974fcdb2b00269a","_slugs":["south-san-francisco"],"accessibility":["Wheelchair"],"address":{"city":"South
+        San Francisco","state":"CA","street":"1486 Huntington Avenue, Suite 100","zip":"94080-5932"},"ask_for":["Intake
+        coordinator"],"contacts":[{"_id":"521d339f1974fcdb2b00269b","name":"Erika
+        Jennings, MFT","title":"Director of Clinical Services"}],"coordinates":[-122.4221521,37.6444129],"created_at":"2013-08-27T16:17:51-07:00","description":"Provides
+        individual, group and family therapy for children and their families meeting
+        eligibility criteria. Also offers school-based counseling. Much of the counseling
+        is short-term (fewer than ten sessions), but it may be extended if the agency
+        has time available. Offers counseling as an alternative to juvenile justice
+        system for first-time offenders who are referred by local law enforcement
+        agencies. The Juvenile Sexual Responsibility Program (described separately)
+        provides assessment and treatment for juveniles age 12-17 who have committed
+        a sexual offense. Formerly known as North Peninsula Family Alternatives (NPFA).","faxes":[{"number":"650
+        877-8643"}],"hours":"Monday-Thursday, 4-8","kind":"Other","languages":["Spanish"],"mail_address":{"attention":"of
+        SSF","city":"South San Francisco","state":"CA","street":"1486 Huntington Avenue,
+        Suite 100","zip":"94080-5932"},"name":"South San Francisco","phones":[{"number":"650
+        877-8642","hours":"(Monday-Thursday, 11 am-8 pm)"}],"short_desc":"Provides
+        individual and family counseling in an attempt to divert juveniles from criminal
+        activity.","transportation":"SAMTRANS stops within 1 block. BART stops within
+        3/4 mile.","updated_at":"2013-11-07T12:47:12-08:00","urls":["http://youthservicebureaus.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d339f1974fcdb2b00269a","services":[{"_id":"521d33a01974fcdb2b0026aa","audience":"Children
+        and youth age 18 or under and their families","eligibility":"Age 18 or under,
+        living or attending school in area served","fees":"Vary according to income.
+        Cash, checks and Medi-Cal accepted.","funding_sources":["City","County","Donations","Fees","Grants","School
+        district"],"how_to_apply":"Walk in or apply by phone for an appointment. School-based
+        services referred by school personnel, police departments and Diversion Services.","keywords":["CHILD
+        PROTECTION AND CARE SERVICES","Crisis/Abuse Intervention/Hot","INDIVIDUAL
+        AND FAMILY DEVELOPMENT SERVICES","Growth and Adjustment","LEGAL AND CRIMINAL
+        JUSTICE SERVICES","Diversion","Juvenile Delinquency Prevent","Diversion Programs","Y
+        Facilities","Youth"],"service_areas":["Brisbane","Millbrae","San Bruno","South
+        San Francisco"],"updated_at":"2013-09-18T17:05:01-07:00","wait":"Varies.","categories":[{"_id":"52280f661edd37edff00004e","depth":0,"lft":155,"name":"Health","oe_id":"106","parent_id":null,"rgt":268},{"_id":"52280f681edd37edff00005c","depth":1,"lft":182,"name":"Health
+        Education","oe_id":"106-04","parent_id":"52280f661edd37edff00004e","rgt":199},{"_id":"52280f681edd37edff00005d","depth":2,"lft":183,"name":"Daily
+        Life Skills","oe_id":"106-04-01","parent_id":"52280f681edd37edff00005c","rgt":184},{"_id":"52280f681edd37edff000063","depth":2,"lft":195,"name":"Understand
+        Disability","oe_id":"106-04-07","parent_id":"52280f681edd37edff00005c","rgt":196},{"_id":"52280f681edd37edff000064","depth":2,"lft":197,"name":"Understand
+        Mental Health","oe_id":"106-04-08","parent_id":"52280f681edd37edff00005c","rgt":198},{"_id":"52280f7a1edd37edff000137","depth":0,"lft":621,"name":"Legal","oe_id":"111","parent_id":null,"rgt":654},{"_id":"52280f7a1edd37edff000138","depth":1,"lft":622,"name":"Advocacy
+        & Legal Aid","oe_id":"111-01","parent_id":"52280f7a1edd37edff000137","rgt":645}]}],"organization":{"_id":"521d339f1974fcdb2b002699","_slugs":["youth-service-bureaus-of-the-ymca"],"created_at":"2013-08-27T16:17:51-07:00","name":"Youth
+        Service Bureaus of the YMCA","updated_at":"2013-10-01T12:18:51-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d339f1974fcdb2b002699","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d339f1974fcdb2b002699/locations"},"slugs":["south-san-francisco"],"id":"521d339f1974fcdb2b00269a","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645471000],"highlight":null,"_explanation":null},{"_id":"521d339e1974fcdb2b002682","_slugs":["el-camino-branch"],"accessibility":["Wheelchair"],"address":{"city":"Mountain
+        View","state":"CA","street":"2400 Grant Road","zip":"94040"},"coordinates":[-122.0787752,37.370588],"created_at":"2013-08-27T16:17:50-07:00","description":"Provides
+        health and physical fitness programs and facilities, family programs, youth
+        sports, aquatic programs, after-school childcare and a summer day camp. Senior
+        programming is also available.","faxes":[{"number":"650 969-1053"}],"kind":"Sports","languages":["Spanish"],"mail_address":{"attention":"YMCA
+        of Silicon Valley","city":"Mountain View","state":"CA","street":"2400 Grant
+        Road","zip":"94040"},"name":"El Camino Branch","phones":[{"number":"650 969-9622","hours":"(Monday-Thursday,
+        5:30 am-10 pm; Friday, 5:30 am-9 pm; Saturday, Sunday, 7-7)"}],"short_desc":"Health
+        and physical fitness programs, sports and aquatics, child care and senior
+        programs.","transportation":"VTA stops within 1 block.","updated_at":"2013-11-07T12:47:10-08:00","urls":["http://www.ymcasv.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d339e1974fcdb2b002682","services":[{"_id":"521d339f1974fcdb2b002696","eligibility":"None","fees":"Vary
+        according to service. Cash, checks and credit cards accepted.","funding_sources":["Donations","Fees","Grants","Membership
+        dues","United Way Silicon Valley"],"how_to_apply":"Walk in.","keywords":["RECREATION/LEISURE
+        SERVICES","Camping","Sports/Games/Exercise","Y Facilities","leisure activities"],"service_areas":["Los
+        Altos","Los Altos Hills","Mountain View"],"updated_at":"2013-09-18T17:09:47-07:00","wait":"No
+        wait."}],"organization":{"_id":"521d339d1974fcdb2b00265f","_slugs":["ymca-of-silicon-valley"],"created_at":"2013-08-27T16:17:49-07:00","name":"YMCA
+        of Silicon Valley","updated_at":"2013-10-01T12:18:44-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d339d1974fcdb2b00265f","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d339d1974fcdb2b00265f/locations"},"slugs":["el-camino-branch"],"id":"521d339e1974fcdb2b002682","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645470000],"highlight":null,"_explanation":null},{"_id":"521d339e1974fcdb2b002685","_slugs":["palo-alto-family-ymca"],"accessibility":["Wheelchair"],"address":{"city":"Palo
+        Alto","state":"CA","street":"3412 Ross Road","zip":"94303"},"contacts":[{"_id":"521d339e1974fcdb2b002686","name":"Scott
+        Glissmeyer","title":"Executive Director"},{"_id":"521d339e1974fcdb2b002687","name":"Lee
+        Pfab","title":"Associate Executive Director"}],"coordinates":[-122.116555,37.428448],"created_at":"2013-08-27T16:17:50-07:00","description":"A
+        full-service facility featuring a 25-yard lap pool, a recreational pool, and
+        Wellness Center featuring the latest weight and fitness equipment. The Y provides
+        over 150 land and aquatic-based group exercise classes each week, personalized
+        training programs, youth sports leagues, adult drop-in sports, and social
+        opportunities for youth, adults and families. Youth-based programs offer summer
+        camps, youth sports, a teen center, drop-in KidZone, college prep programs,
+        college scholarships, civic engagement and youth fitness programs. Financial
+        aid and scholarships are available.","faxes":[{"number":"650 856-7783"}],"hours":"Monday-Thursday,
+        6:30 am-9:45 pm; Friday, 6:30 am-7:45 pm; Saturday, 7-5:45; Sunday, 9-8:45
+        pm","kind":"Other","languages":["Persian (Farsi)","Spanish","Chinese (Mandarin)","Russian"],"mail_address":{"attention":"YMCA
+        of Silicon Valley","city":"Palo Alto","state":"CA","street":"3412 Ross Road","zip":"94303"},"name":"Palo
+        Alto Family YMCA","phones":[{"number":"650 856-9622","hours":"(Monday-Thursday,
+        6:30 am-10 pm; Friday, 6:30 am-8 pm; Saturday, 7-6; Sunday, 9-9)"}],"short_desc":"Provides
+        health and fitness classes, residential and day camp programs, and extended
+        day care for children enrolled in camp.","transportation":"VTA stops within
+        4 blocks.","updated_at":"2013-11-07T12:47:11-08:00","urls":["http://www.ymcasv.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d339e1974fcdb2b002685","services":[{"_id":"521d339f1974fcdb2b002697","audience":"Youth,
+        adults, families","eligibility":"None","fees":"Fixed fee. Financial aid available.
+        Cash, checks and credit cards accepted.","funding_sources":["Donations","Fees","Grants","Membership
+        dues","United Way Silicon Valley"],"how_to_apply":"Walk in or apply by phone.","keywords":["HEALTH
+        SERVICES","Education/Information","RECREATION/LEISURE SERVICES","Camping","Camperships","Parks/Playground","Sports/Games/Exercise","Y
+        Facilities"],"service_areas":["Atherton","East Palo Alto","Los Altos","Los
+        Altos Hills","Menlo Park","Mountain View","Palo Alto","Portola Valley","Redwood
+        City","Stanford","Sunnyvale","Woodside"],"updated_at":"2013-09-18T17:11:41-07:00","wait":"Varies.
+        Some programs have scheduled starting dates.","categories":[{"_id":"52280f661edd37edff00004e","depth":0,"lft":155,"name":"Health","oe_id":"106","parent_id":null,"rgt":268},{"_id":"52280f681edd37edff00005c","depth":1,"lft":182,"name":"Health
+        Education","oe_id":"106-04","parent_id":"52280f661edd37edff00004e","rgt":199},{"_id":"52280f681edd37edff00005d","depth":2,"lft":183,"name":"Daily
+        Life Skills","oe_id":"106-04-01","parent_id":"52280f681edd37edff00005c","rgt":184},{"_id":"52280f711edd37edff0000c4","depth":0,"lft":391,"name":"Care","oe_id":"108","parent_id":null,"rgt":488},{"_id":"52280f721edd37edff0000cb","depth":1,"lft":404,"name":"Daytime
+        Care","oe_id":"108-03","parent_id":"52280f711edd37edff0000c4","rgt":427},{"_id":"52280f721edd37edff0000d3","depth":2,"lft":419,"name":"Day
+        Camp","oe_id":"108-03-04","parent_id":"52280f721edd37edff0000cb","rgt":420}]}],"organization":{"_id":"521d339d1974fcdb2b00265f","_slugs":["ymca-of-silicon-valley"],"created_at":"2013-08-27T16:17:49-07:00","name":"YMCA
+        of Silicon Valley","updated_at":"2013-10-01T12:18:44-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d339d1974fcdb2b00265f","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d339d1974fcdb2b00265f/locations"},"slugs":["palo-alto-family-ymca"],"id":"521d339e1974fcdb2b002685","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645470000],"highlight":null,"_explanation":null},{"_id":"521d339e1974fcdb2b00268a","_slugs":["east-palo-alto-family-ymca"],"accessibility":["Elevator","Wheelchair"],"address":{"city":"East
+        Palo Alto","state":"CA","street":"550 Bell Street","zip":"94303"},"contacts":[{"_id":"521d339e1974fcdb2b00268b","name":"Robert
+        Hughes","title":"Executive Director"}],"coordinates":[-122.1425461,37.4656323],"created_at":"2013-08-27T16:17:50-07:00","description":"Provides
+        social, recreational and health and fitness services for persons of all ages.
+        Swimming lessons and aquatic exercise are offered in an outdoor pool (seasonal).
+        Day camp for children (seasonal), youth basketball, youth soccer, kids'' club,
+        Childwatch, climbing walls and teen social center are also offered.","faxes":[{"number":"650
+        687-5380"}],"hours":"Monday-Thursday, 6 am-9:30 pm; Friday, 6 am-8 pm; Saturday,
+        7 am-5 pm","kind":"Sports","languages":["Spanish"],"mail_address":{"attention":"East
+        Palo Alto Family YMCA","city":"East Palo Alto","state":"CA","street":"550
+        Bell Street","zip":"94303"},"name":"East Palo Alto Family YMCA","phones":[{"number":"650
+        328-9622","hours":"(Monday-Friday 9-6)"}],"short_desc":"Provides social, recreational
+        and health and fitness services for persons of all ages.","transportation":"SAMTRANS
+        stops within 4 blocks.","updated_at":"2013-11-07T12:47:11-08:00","urls":["http://www.ymcasv.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d339e1974fcdb2b00268a","services":[{"_id":"521d339f1974fcdb2b002698","eligibility":"None","fees":"Vary
+        according to service. Financial assistance available for membership and programs.
+        Cash, checks and credit cards accepted.","funding_sources":["Donations","Fees","Grants"],"how_to_apply":"Walk
+        in or call for information or email.","keywords":["RECREATION/LEISURE SERVICES","Camping","Parks/Playground","Sports/Games/Exercise","Y
+        Facilities","Youth","leisure activities"],"service_areas":["East Palo Alto","Menlo
+        Park"],"updated_at":"2013-09-18T17:08:41-07:00","wait":"No wait for most programs.","categories":[{"_id":"52280f711edd37edff0000c4","depth":0,"lft":391,"name":"Care","oe_id":"108","parent_id":null,"rgt":488},{"_id":"52280f721edd37edff0000cb","depth":1,"lft":404,"name":"Daytime
+        Care","oe_id":"108-03","parent_id":"52280f711edd37edff0000c4","rgt":427},{"_id":"52280f721edd37edff0000d3","depth":2,"lft":419,"name":"Day
+        Camp","oe_id":"108-03-04","parent_id":"52280f721edd37edff0000cb","rgt":420},{"_id":"52280f721edd37edff0000d5","depth":2,"lft":423,"name":"Recreation","oe_id":"108-03-06","parent_id":"52280f721edd37edff0000cb","rgt":424}]}],"organization":{"_id":"521d339d1974fcdb2b00265f","_slugs":["ymca-of-silicon-valley"],"created_at":"2013-08-27T16:17:49-07:00","name":"YMCA
+        of Silicon Valley","updated_at":"2013-10-01T12:18:44-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d339d1974fcdb2b00265f","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d339d1974fcdb2b00265f/locations"},"slugs":["east-palo-alto-family-ymca"],"id":"521d339e1974fcdb2b00268a","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645470000],"highlight":null,"_explanation":null},{"_id":"521d339d1974fcdb2b002651","_slugs":["association-office"],"accessibility":["Wheelchair"],"address":{"city":"San
+        Francisco","state":"CA","street":"631 Howard Street, Suite 500","zip":"94105"},"contacts":[{"_id":"521d339d1974fcdb2b002652","name":"Charles
+        M. Collins","title":"President/CEO"}],"coordinates":[-122.398881,37.786148],"created_at":"2013-08-27T16:17:49-07:00","description":"Administers
+        all the programs and services of the 15 YMCA branch sites. The YMCA provides
+        a variety of services to improve existing problems in the community. These
+        include health, exercise and fitness, recreation, guidance and counseling
+        including mentoring, youth development, parent education, neighborhood and
+        community development, day and resident camps, YMCA Camp Jones Gulch overnight
+        camp in La Honda (described separately), swimming and aquatics, licensed child
+        care and senior centers. See branch office descriptions for specific programs.","emails":["info@ymcasf.org"],"faxes":[{"number":"415
+        777-6915"}],"hours":"Vary","kind":"Other","mail_address":{"attention":"Association
+        Office","city":"San Francisco","state":"CA","street":"631 Howard Street, Suite
+        500","zip":"94105"},"name":"Association Office","phones":[{"number":"415 777-9622","hours":"(Monday-Friday,
+        8:30-5:30)"}],"short_desc":"Administers all the programs and services of the
+        YMCA branch sites.","transportation":"Varies according to location.","updated_at":"2013-11-07T12:45:00-08:00","urls":["http://www.ymcasf.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d339d1974fcdb2b002651","services":[{"_id":"521d339d1974fcdb2b00265d","audience":"Focus
+        is on programs/services for youth and teens but the YMCA is open to all","eligibility":"None","fees":"Vary
+        according to service. Limited financial assistance available. Cash, checks
+        and credit cards accepted.","funding_sources":["City","Donations","Fees","Grants","Membership
+        dues","United Way"],"how_to_apply":"Apply by phone or walk in at closest branch
+        site (see phone book for locations).","keywords":["ADMINISTRATION AND PLANNING
+        SERVICES","Administration and Planning","RECREATION/LEISURE SERVICES","Camping","Parks/Playground","Y
+        Facilities"],"service_areas":["Marin County","Napa County","San Francisco
+        County","San Mateo County","Solano County"],"updated_at":"2013-08-27T16:17:49-07:00","wait":"Varies."}],"organization":{"_id":"521d339c1974fcdb2b002648","_slugs":["ymca-of-san-francisco"],"created_at":"2013-08-27T16:17:48-07:00","name":"YMCA
+        of San Francisco","updated_at":"2013-10-01T12:18:42-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d339c1974fcdb2b002648","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d339c1974fcdb2b002648/locations"},"slugs":["association-office"],"id":"521d339d1974fcdb2b002651","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645469000],"highlight":null,"_explanation":null},{"_id":"521d339d1974fcdb2b002655","_slugs":["stonestown-family-ymca"],"accessibility":["Ramp","Disabled
+        Restroom","Disabled Parking","Wheelchair"],"address":{"city":"San Francisco","state":"CA","street":"333
+        Eucalyptus Drive","zip":"94132"},"ask_for":["Receptionist"],"contacts":[{"_id":"521d339d1974fcdb2b002656","name":"Charlotte
+        Durnin","title":"Executive Director"},{"_id":"521d339d1974fcdb2b002657","name":"Rachel
+        DelMonte","title":"Associate Executive Director"},{"_id":"521d339d1974fcdb2b002658","name":"Erin
+        Reedy","title":"Associate Executive Director"}],"coordinates":[-122.4766884,37.730927],"created_at":"2013-08-27T16:17:49-07:00","description":"Offers
+        licensed elementary school-age childcare at several sites, preschool, youth
+        activities, residential camp, day camp and special interest activities including
+        programming for children of single parents and family nights. Also offers
+        mentoring, counseling and tutoring services.   The Seniors Drop-In Center
+        provides information and referral, recreational and cultural activities, health
+        screening, blood pressure check-ups, adaptive exercise for stroke survivors,
+        travel program, annual tax preparation assistance, Christmas Day party and
+        companionship for single seniors, and hot lunch served weekdays at 11:45 am.
+        The Senior Program is at 3150 - 20th Avenue, San Francisco. The branch is
+        also a full facility fitness center with an approach to total wellness offering
+        aerobics, swimming, youth sports, stretching and toning, strength training,
+        basketball, martial arts, yoga, tai chi, water aerobics, pilates, dance, youth
+        dance and soccer. Childcare is available for parents while they workout.","faxes":[{"number":"415
+        759-9630"}],"hours":"Monday-Friday, 5 am-10 pm; Saturday, Sunday 7 am-8 pm;
+        Senior Program, Monday-Friday, 7:30-3:30","kind":"Other","languages":["Chinese
+        (Mandarin)","Russian","Spanish"],"mail_address":{"attention":"Stonestown Family
+        YMCA","city":"San Francisco","state":"CA","street":"333 Eucalyptus Drive","zip":"94132"},"name":"Stonestown
+        Family YMCA","phones":[{"number":"415 242-7100","hours":"(Monday-Friday, 5
+        am-10 pm; Saturday, Sunday, 7 am-8 pm)"}],"short_desc":"Athletic/fitness programs
+        for youth/adults, drop-in senior center, meal site, day camp, after school
+        care for children.","transportation":"MUNI - 17 Parkmerced, 28 Nineteenth
+        Avenue, K Ingleside, M Oceanview, 29 Sunset, 18 46th Avenue.","updated_at":"2013-11-07T12:44:54-08:00","urls":["http://www.ymcasf.org"],"url":"http://ohanapi.herokuapp.com/api/locations/521d339d1974fcdb2b002655","services":[{"_id":"521d339d1974fcdb2b00265e","audience":"Adults,
+        seniors, families, teens","eligibility":"None","fees":"Vary according to income
+        and service. Cash and credit cards accepted.","funding_sources":["Donations","Fees","Grants"],"how_to_apply":"Walk
+        in or apply by phone.","keywords":["ADULT PROTECTION AND CARE SERVICES","Meal
+        Sites/Home-delivered Mea","CHILD PROTECTION AND CARE SERVICES","Day Care","HEALTH
+        SERVICES","Screening/Immunization","INDIVIDUAL AND FAMILY DEVELOPMENT SERVICES","Companion","Growth
+        and Adjustment","RECREATION/LEISURE SERVICES","Camping","Parks/Playground","Sports/Games/Exercise","Y
+        Facilities"],"service_areas":["San Francisco County","Colma","Daly City","Pacifica"],"updated_at":"2013-09-18T17:13:46-07:00","wait":"No
         wait.","categories":[{"_id":"52280f661edd37edff00004e","depth":0,"lft":155,"name":"Health","oe_id":"106","parent_id":null,"rgt":268},{"_id":"52280f681edd37edff00005c","depth":1,"lft":182,"name":"Health
-        Education","oe_id":"106-04","parent_id":"52280f661edd37edff00004e","rgt":199},{"_id":"52280f681edd37edff00005f","depth":2,"lft":187,"name":"Family
-        Planning","oe_id":"106-04-03","parent_id":"52280f681edd37edff00005c","rgt":188},{"_id":"52280f691edd37edff00006d","depth":1,"lft":216,"name":"Medical
-        Care","oe_id":"106-06","parent_id":"52280f661edd37edff00004e","rgt":267},{"_id":"52280f691edd37edff000071","depth":2,"lft":223,"name":"Checkup
-        & Test","oe_id":"106-06-04","parent_id":"52280f691edd37edff00006d","rgt":236},{"_id":"52280f6a1edd37edff000076","depth":3,"lft":232,"name":"Pregnancy
-        Tests","oe_id":"106-06-04-05","parent_id":"52280f691edd37edff000071","rgt":233},{"_id":"52280f6a1edd37edff00007a","depth":2,"lft":241,"name":"Prevent
-        & Treat","oe_id":"106-06-07","parent_id":"52280f691edd37edff00006d","rgt":264},{"_id":"52280f6a1edd37edff00007b","depth":3,"lft":242,"name":"Counseling","oe_id":"106-06-07-01","parent_id":"52280f6a1edd37edff00007a","rgt":243},{"_id":"52280f6b1edd37edff000082","depth":3,"lft":256,"name":"Vaccinations","oe_id":"106-06-07-08","parent_id":"52280f6a1edd37edff00007a","rgt":257}]}],"organization":{"_id":"521d338f1974fcdb2b00254a","_slugs":["stanford-university-medical-center"],"created_at":"2013-08-27T16:17:35-07:00","name":"Stanford
-        University Medical Center","updated_at":"2013-10-01T12:18:07-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d338f1974fcdb2b00254a","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d338f1974fcdb2b00254a/locations"},"slugs":["lucile-packard-childrens-hospital"],"id":"521d338f1974fcdb2b00254b","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645455000],"highlight":null,"_explanation":null},{"_id":"521d338f1974fcdb2b00255a","_slugs":["social-work-and-case-management"],"accessibility":["Elevator","Ramp","Disabled
-        Parking","Wheelchair"],"address":{"city":"Stanford","state":"CA","street":"300
-        Pasteur Drive, Room H0315","zip":"94305"},"ask_for":["Receptionist"],"contacts":[{"_id":"521d338f1974fcdb2b00255b","name":"Elizabeth
-        Polek","title":"Director of Social Work"},{"_id":"521d338f1974fcdb2b00255c","name":"Judy
-        Barnes","title":"Assistant Director for Social Work"}],"coordinates":[-122.1801845,37.4344738],"created_at":"2013-08-27T16:17:35-07:00","description":"Addresses
-        the psychosocial, financial, and continuing care needs of patients and their
-        families. Services help to facilitate adjustment to life changes precipitated
-        by illness and by hospitalization. Provides inpatient services and works with
-        many other outpatient clinics. Also provides a multitude of support groups
-        that provide support and adjustment for various illnesses.","kind":"Human
-        Services","languages":["Spanish"],"mail_address":{"attention":"Social Work/Case
-        Management","city":"Stanford","state":"CA","street":"300 Pasteur Drive, Room
-        H0315","zip":"94305"},"name":"Social Work and Case Management","phones":[{"number":"650
-        723-5091","hours":"(Monday-Friday, 8-4:30)"}],"short_desc":"Provides social
-        work services for clinic and hospital patients and consultation to staff.","transportation":"SAMTRANS,
-        VTA stop within 4 blocks.","updated_at":"2013-10-01T12:18:08-07:00","url":"http://ohanapi.herokuapp.com/api/locations/521d338f1974fcdb2b00255a","services":[{"_id":"521d33901974fcdb2b002566","eligibility":"Must
-        be a patient and/or family receiving health care services at Stanford Health
-        Services","fees":"None.","funding_sources":["Fees"],"how_to_apply":"Walk in,
-        request services through physician, nurse, other hospital clinic personnel,
-        or upon admission.","keywords":["HEALTH SERVICES","Family Support"],"service_areas":["Alameda
-        County","Contra Costa County","Marin County","San Francisco County","San Mateo
-        County","Santa Clara County"],"updated_at":"2013-08-27T16:17:36-07:00","wait":"No
-        wait."}],"organization":{"_id":"521d338f1974fcdb2b00254a","_slugs":["stanford-university-medical-center"],"created_at":"2013-08-27T16:17:35-07:00","name":"Stanford
-        University Medical Center","updated_at":"2013-10-01T12:18:07-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d338f1974fcdb2b00254a","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d338f1974fcdb2b00254a/locations"},"slugs":["social-work-and-case-management"],"id":"521d338f1974fcdb2b00255a","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645455000],"highlight":null,"_explanation":null},{"_id":"521d338f1974fcdb2b00255f","_slugs":["lucile-packard-childrens-hospital-dot-diabetes-program"],"accessibility":["Elevator","Ramp","Disabled
-        Restroom","Disabled Parking","Wheelchair"],"address":{"city":"Stanford","state":"CA","street":"730
-        Welch Road","zip":"94305"},"contacts":[{"_id":"521d338f1974fcdb2b002560","name":"Darrell
-        M. Wilson, MD","title":"Division Chief"}],"coordinates":[-122.1795526,37.4337567],"created_at":"2013-08-27T16:17:35-07:00","description":"Young
-        diabetics (birth to age 20) and their families are provided with the information
-        and skills they need for appropriate management of their illness. The staff
-        includes pediatric endocrinologists, a diabetes nurse educator and a dietitian
-        experienced in working with young diabetics. The Clinic is part of the Stanford
-        Children''s Ambulatory Care Center which provides full support services for
-        all outpatients.","kind":"Human Services","languages":["Interpreter"],"mail_address":{"attention":"Diabetes
-        Program","city":"Stanford","state":"CA","street":"300 Pasteur Drive, Room
-        G313","zip":"94305-5208"},"name":"Lucile Packard Children''s Hospital., Diabetes
-        Program","phones":[{"number":"650 723-5791","hours":"(Wednesday, 12:45-3:15)"}],"short_desc":"Provides
-        care for young diabetics age 20 or under and their families.","transportation":"SAMTRANS
-        stops within 1 block.","updated_at":"2013-10-01T12:18:09-07:00","urls":["http://dped.stanford.edu"],"url":"http://ohanapi.herokuapp.com/api/locations/521d338f1974fcdb2b00255f","services":[{"_id":"521d33901974fcdb2b002567","audience":"Children
-        and youth with a diabetic condition","eligibility":"Birth to age 20","fees":"Vary
-        according to service. Medi-Cal, California Children''s Services, private insurance
-        and voucher accepted.","funding_sources":["Fees"],"how_to_apply":"Apply by
-        phone to 800-381-2155 or 650-736-7642. Appointment necessary.","keywords":["HEALTH
-        SERVICES","Prevention","Outpatient Care","Diabetes Management Clinics","Youth","Adolescents","Children","Diabetes"],"service_areas":["Alameda
-        County","Contra Costa County","Marin County","San Francisco County","San Mateo
-        County","Santa Clara County"],"updated_at":"2013-09-18T17:35:31-07:00","wait":"Up
-        to 4 weeks.","categories":[{"_id":"52280f661edd37edff00004e","depth":0,"lft":155,"name":"Health","oe_id":"106","parent_id":null,"rgt":268},{"_id":"52280f681edd37edff00005c","depth":1,"lft":182,"name":"Health
-        Education","oe_id":"106-04","parent_id":"52280f661edd37edff00004e","rgt":199},{"_id":"52280f681edd37edff00005e","depth":2,"lft":185,"name":"Disease
-        Management","oe_id":"106-04-02","parent_id":"52280f681edd37edff00005c","rgt":186},{"_id":"52280f681edd37edff000060","depth":2,"lft":189,"name":"Nutrition","oe_id":"106-04-04","parent_id":"52280f681edd37edff00005c","rgt":190},{"_id":"52280f681edd37edff000061","depth":2,"lft":191,"name":"Parenting
-        Education","oe_id":"106-04-05","parent_id":"52280f681edd37edff00005c","rgt":192},{"_id":"52280f751edd37edff0000f5","depth":0,"lft":489,"name":"Education","oe_id":"109","parent_id":null,"rgt":582},{"_id":"52280f751edd37edff0000fd","depth":1,"lft":504,"name":"More
-        Education","oe_id":"109-03","parent_id":"52280f751edd37edff0000f5","rgt":545},{"_id":"52280f771edd37edff000107","depth":2,"lft":523,"name":"Health
-        Education","oe_id":"109-03-07","parent_id":"52280f751edd37edff0000fd","rgt":538}]}],"organization":{"_id":"521d338f1974fcdb2b00254a","_slugs":["stanford-university-medical-center"],"created_at":"2013-08-27T16:17:35-07:00","name":"Stanford
-        University Medical Center","updated_at":"2013-10-01T12:18:07-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d338f1974fcdb2b00254a","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d338f1974fcdb2b00254a/locations"},"slugs":["lucile-packard-childrens-hospital-dot-diabetes-program"],"id":"521d338f1974fcdb2b00255f","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645455000],"highlight":null,"_explanation":null},{"_id":"521d338e1974fcdb2b002515","_slugs":["adult-day-program"],"accessibility":["Disabled
-        Parking","Disabled Restroom","Wheelchair"],"address":{"city":"South San Francisco","state":"CA","street":"601
-        Grand Avenue","zip":"94080"},"ask_for":["Joseph Hunziker"],"contacts":[{"_id":"521d338e1974fcdb2b002516","name":"Joseph
-        Hunziker","title":"Recreation Supervisor, Senior Services and Adult Day Care
-        Coordinator"}],"coordinates":[-122.4198725,37.657129],"created_at":"2013-08-27T16:17:34-07:00","description":"Offers
-        structured and adaptive recreation, education and social programs designed
-        to maintain and support capabilities of frail or older adults in order for
-        them to remain in their homes. The program includes reminiscing, current event
-        discussions, music, art, karaoke, exercise, Bingo, and entertainment. Individualized
-        goals may include activities to improve existing motor skills or memory improvement.
-        Participants receive a morning snack, hot lunch, and afternoon refreshments.
-        The program provides ongoing support to the family and referral to community
-        resources. By participating, it eases families'' constant responsibility for
-        caregiving.","emails":["joe.hunziker@ssf.net"],"kind":"Human Services","languages":["Chinese
-        (Cantonese)","Filipino (Tagalog)","Spanish"],"mail_address":{"attention":"South
-        SF Adult Day","city":"South San Francisco","state":"CA","street":"P.O. Box
-        711","zip":"94083-0711"},"name":"Adult Day Program","phones":[{"number":"650
-        829-3824","hours":"(Monday-Friday, 8-3)"}],"short_desc":"A day program for
-        frail and/or impaired older adults in northern San Mateo county.","transportation":"South
-        San Francisco Senior Center van - South San Francisco residents only. Redi-Wheels
-        on space available basis.","updated_at":"2013-10-13T21:20:17-07:00","url":"http://ohanapi.herokuapp.com/api/locations/521d338e1974fcdb2b002515","services":[{"_id":"521d338e1974fcdb2b00251a","audience":"Older
-        adults with disabilities","eligibility":"Meet program requirements","fees":"$48
-        per day for full day program, based on ability to pay. Multipurpose Senior
-        Services Program (MSSP), Family Caregiver Alliance (FCA), cash and vouchers
-        accepted.","funding_sources":["City","County","Grants"],"how_to_apply":"Apply
-        by phone for intake interview appointment.","keywords":["ADULT PROTECTION
-        AND CARE SERVICES","Adult Day Care","Adult Day Programs","Older Adults"],"service_areas":["Daly
-        City","Pacifica","San Bruno","South San Francisco"],"updated_at":"2013-10-06T18:36:49-07:00","wait":"No
-        wait.","categories":[{"_id":"52280f5e1edd37edff000011","depth":0,"lft":33,"name":"Food","oe_id":"102","parent_id":null,"rgt":52},{"_id":"52280f5e1edd37edff000016","depth":1,"lft":42,"name":"Free
-        Meals","oe_id":"102-05","parent_id":"52280f5e1edd37edff000011","rgt":43},{"_id":"52280f711edd37edff0000c4","depth":0,"lft":391,"name":"Care","oe_id":"108","parent_id":null,"rgt":488},{"_id":"52280f721edd37edff0000cb","depth":1,"lft":404,"name":"Daytime
-        Care","oe_id":"108-03","parent_id":"52280f711edd37edff0000c4","rgt":427},{"_id":"52280f721edd37edff0000cc","depth":2,"lft":405,"name":"Adult
-        Daycare","oe_id":"108-03-01","parent_id":"52280f721edd37edff0000cb","rgt":406},{"_id":"52280f721edd37edff0000d5","depth":2,"lft":423,"name":"Recreation","oe_id":"108-03-06","parent_id":"52280f721edd37edff0000cb","rgt":424},{"_id":"52280f721edd37edff0000d6","depth":2,"lft":425,"name":"Relief
-        for Caregivers","oe_id":"108-03-07","parent_id":"52280f721edd37edff0000cb","rgt":426}]}],"organization":{"_id":"521d338e1974fcdb2b002510","_slugs":["south-san-francisco-senior-services"],"created_at":"2013-08-27T16:17:34-07:00","name":"South
-        San Francisco Senior Services","updated_at":"2013-10-01T12:18:02-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d338e1974fcdb2b002510","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d338e1974fcdb2b002510/locations"},"slugs":["adult-day-program"],"id":"521d338e1974fcdb2b002515","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645454000],"highlight":null,"_explanation":null}]'
+        Education","oe_id":"106-04","parent_id":"52280f661edd37edff00004e","rgt":199},{"_id":"52280f681edd37edff00005d","depth":2,"lft":183,"name":"Daily
+        Life Skills","oe_id":"106-04-01","parent_id":"52280f681edd37edff00005c","rgt":184},{"_id":"52280f711edd37edff0000c4","depth":0,"lft":391,"name":"Care","oe_id":"108","parent_id":null,"rgt":488},{"_id":"52280f721edd37edff0000cb","depth":1,"lft":404,"name":"Daytime
+        Care","oe_id":"108-03","parent_id":"52280f711edd37edff0000c4","rgt":427},{"_id":"52280f721edd37edff0000d5","depth":2,"lft":423,"name":"Recreation","oe_id":"108-03-06","parent_id":"52280f721edd37edff0000cb","rgt":424}]}],"organization":{"_id":"521d339c1974fcdb2b002648","_slugs":["ymca-of-san-francisco"],"created_at":"2013-08-27T16:17:48-07:00","name":"YMCA
+        of San Francisco","updated_at":"2013-10-01T12:18:42-07:00","url":"http://ohanapi.herokuapp.com/api/organizations/521d339c1974fcdb2b002648","locations_url":"http://ohanapi.herokuapp.com/api/organizations/521d339c1974fcdb2b002648/locations"},"slugs":["stonestown-family-ymca"],"id":"521d339d1974fcdb2b002655","_score":null,"_type":"location","_index":"production-ohana_api","_version":null,"sort":[1377645469000],"highlight":null,"_explanation":null}]'
     http_version: 
-  recorded_at: Mon, 04 Nov 2013 08:15:41 GMT
+  recorded_at: Wed, 13 Nov 2013 06:33:17 GMT
 - request:
     method: get
     uri: http://ohanapi.herokuapp.com/api/locations/admin-test-location?api_token=<API_TOKEN>
@@ -1150,36 +709,41 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 04 Nov 2013 08:15:38 GMT
+      - Wed, 13 Nov 2013 06:33:17 GMT
       Etag:
-      - '"6d6e62e29b60a53a9a980d987972a741"'
+      - '"4a148b1783e7f891baf4cadcdff7953d"'
+      Server:
+      - nginx/1.4.3 + Phusion Passenger 4.0.23
       Status:
       - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.23
       X-Rack-Cache:
       - miss
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4903'
+      - '4808'
       X-Request-Id:
-      - b426cdaa1b652ece6325786b8821df23
+      - 84a374d953072d30803ba5800d06c7e1
       X-Runtime:
-      - '0.106412'
+      - '0.027055'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
-      - '1239'
+      - '1450'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":"52733b05fafbf0a01a000001","accessibility":["Elevator","Disabled
-        Restroom"],"address":{"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":"527757a737f9bab943000002","name":"Moncef","title":"Director"}],"coordinates":[-73.9395687,42.8142432],"description":"This
-        is a description","faxes":[{"number":"7035551212","department":"CalFresh"}],"kind":"Test","name":"Admin
+      string: '{"id":"52733b05fafbf0a01a000001","accessibility":["Disabled Restroom"],"address":{"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":"52831d2a514539c76a00000a","name":"Moncef","title":"Director","phone":"703-555-1212","email":"email@email.org","fax":"703-555-1234"}],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","emails":["eml@example.org"],"faxes":[{"number":"2025551212","department":"CalFresh"}],"kind":"Test","name":"Admin
         Test Location","phones":[{"number":"7035551212","vanity_number":"703555-ABCD","extension":"x1223","department":"CalFresh"}],"short_desc":"This
         is a short description","slugs":["job-training-and-placement-program-1","admin-test-location"],"transportation":"SAMTRANS
-        stops within 1/2 mile.","updated_at":"2013-11-04T00:15:35-08:00","urls":["http://codeforamerica.org"],"url":"http://ohanapi.herokuapp.com/api/locations/52733b05fafbf0a01a000001","services":[{"id":"52733ce076ac6ae977000002","name":"huzzah","updated_at":"2013-10-31T22:50:38-07:00"}],"organization":{"id":"527334e4456acab967000002","name":"Admin
+        stops within 1/2 mile.","updated_at":"2013-11-12T22:33:14-08:00","urls":["http://codeforamerica.org"],"url":"http://ohanapi.herokuapp.com/api/locations/52733b05fafbf0a01a000001","services":[{"id":"52733ce076ac6ae977000002","description":"This
+        is a description","funding_sources":["Federal Government"],"keywords":["testric"],"service_areas":["San
+        Mateo County"],"updated_at":"2013-11-12T22:33:00-08:00"}],"organization":{"id":"527334e4456acab967000002","name":"Admin
         Test Org","slugs":["jobtrain-1","admin-test-org"],"url":"http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002","locations_url":"http://ohanapi.herokuapp.com/api/organizations/527334e4456acab967000002/locations"}}'
     http_version: 
-  recorded_at: Mon, 04 Nov 2013 08:15:42 GMT
+  recorded_at: Wed, 13 Nov 2013 06:33:17 GMT
 recorded_with: VCR 2.6.0

@@ -25,34 +25,37 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 04 Nov 2013 08:18:32 GMT
+      - Wed, 13 Nov 2013 06:37:41 GMT
       Etag:
-      - '"47dbd2274017293813d5d07be24ae5be"'
+      - '"650c49779de1785b55fc78dedcef2089"'
+      Server:
+      - nginx/1.4.3 + Phusion Passenger 4.0.23
       Status:
       - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.23
       X-Rack-Cache:
       - miss
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4748'
+      - '4581'
       X-Request-Id:
-      - 4a0edf1f51cb83608eb7364e690e7cd5
+      - 4e9cdcb4de364b5ce81a5c9677c0dcec
       X-Runtime:
-      - '0.067731'
+      - '0.048563'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
-      - '778'
+      - '744'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":"5273400476ac6ae977000003","coordinates":[-73.9395687,42.8142432],"description":"no
-        phone","kind":"Test","mail_address":{"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
-        with no phone","short_desc":"no phone","slugs":["location-with-no-phone"],"updated_at":"2013-11-04T00:17:54-08:00","url":"http://ohanapi.herokuapp.com/api/locations/5273400476ac6ae977000003","services":[{"id":"52734015fafbf0a01a000003","name":"no
-        service","updated_at":"2013-10-31T22:54:52-07:00"}],"organization":{"id":"52733d5676ac6a5df7000001","name":"Testing
+      string: '{"id":"5273400476ac6ae977000003","description":"no phone","kind":"Test","mail_address":{"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slugs":["location-with-no-phone"],"updated_at":"2013-11-12T22:37:38-08:00","url":"http://ohanapi.herokuapp.com/api/locations/5273400476ac6ae977000003","services":[{"id":"52734015fafbf0a01a000003","description":"no
+        phone","updated_at":"2013-11-12T22:35:04-08:00"}],"organization":{"id":"52733d5676ac6a5df7000001","name":"Testing
         org","slugs":["testing-org"],"url":"http://ohanapi.herokuapp.com/api/organizations/52733d5676ac6a5df7000001","locations_url":"http://ohanapi.herokuapp.com/api/organizations/52733d5676ac6a5df7000001/locations"}}'
     http_version: 
-  recorded_at: Mon, 04 Nov 2013 08:18:36 GMT
+  recorded_at: Wed, 13 Nov 2013 06:37:41 GMT
 recorded_with: VCR 2.6.0
