@@ -77,6 +77,19 @@ The bootstrap script you ran earlier created three users for you that you can si
 
 The third user is there to let you try the interface as a master admin, but you can set any of the three users as an admin by setting the "role" field to "admin". To do that, you need direct access to your Mongo database. The easiest way to view and update Mongo data is with a GUI like [one of these](http://docs.mongodb.org/ecosystem/tools/administration-interfaces/).
 
+### Test the app
+Run tests locally with this simple command:
+
+    rspec
+
+For faster tests (and many other rails commands, like rake):
+
+    gem install zeus
+    zeus start #in a separate Terminal window or tab
+    zeus rspec spec
+
+To see the actual tests, browse through the [spec](https://github.com/codeforamerica/ohana-api-admin/tree/master/spec) directory.
+
 ## Contributing
 
 In the spirit of open source software, **everyone** is encouraged to help improve this project.
