@@ -52,7 +52,9 @@ See the Downloads page on mongodb.org for steps to install on other systems: [ht
 In order to be able to test the admin interface, you need data. Since this app gets its data from the Ohana API, you need to [install the Ohana API](https://github.com/codeforamerica/ohana-api#installation) first, which comes with a sample dataset.
 
 ### Configure Ohana API Admin to point to your local Ohana API
-In the Admin app, go to `/config/initializers/ohanakapa.rb` and uncomment line 8.
+In the Ohana API, go to `config/application.yml` and add an entry like this to define your API endpoint:
+
+    OHANA_API_ENDPOINT: http://localhost:8080/api
 
 ### Allow the Admin app to write to the Ohana API
 The Ohana API currently only allows one app to write to the API. It determines if an HTTP request is authorized to make a PUT, POST, or DELETE request based on the `X-Api-Token` header that it sends. Normally, you would obtain an API Token by signing up on the Ohana API site and registering an application. For testing purposes, you can skip that step and just define your own token (a series of alphanumeric characters, such as `as56hsd789sdf`).
