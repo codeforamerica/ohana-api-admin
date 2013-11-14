@@ -9,8 +9,12 @@ If there are any locations missing, please #{mail_to "sanmateoco@codeforamerica.
 - if current_user.role == "admin"
   %p As an admin, you have access to all locations in the database. Please make updates responsibly.
 %br
+- if current_user.role != "admin"
+  %p
+    %strong="#{@org.name} locations:"
 %p
   - @locations.each do |location|
     %ul
       = link_to location.name, location.id
-
+%p
+  = link_to "Add a new location", locations_new_path, :class => "btn btn-primary"

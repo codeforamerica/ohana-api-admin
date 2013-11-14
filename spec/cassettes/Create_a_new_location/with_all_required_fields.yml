@@ -1,0 +1,601 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:8080/api/search?api_token=<API_TOKEN>&email=samaritanhouse.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - <API_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '16016'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Total-Count:
+      - '5'
+      X-Total-Pages:
+      - '1'
+      X-Current-Page:
+      - '1'
+      Etag:
+      - '"be0be5575dae565cc8307aa85b4e8ac3"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible:
+      - IE=Edge
+      X-Request-Id:
+      - c44b82cf11174bff0b01f06876fbbb58
+      X-Runtime:
+      - '0.045656'
+      X-Powered-By:
+      - Phusion Passenger 4.0.23
+      Date:
+      - Thu, 14 Nov 2013 05:10:47 UTC
+      Server:
+      - nginx/1.4.3 + Phusion Passenger 4.0.23
+    body:
+      encoding: UTF-8
+      string: '[{"_id":"528342661974fceccd000063","_slugs":["redwood-city-free-medical-clinic"],"accessibility":["Disabled
+        Restroom","Wheelchair"],"address":{"city":"Redwood City","state":"CA","street":"114
+        Fifth Avenue","zip":"94063"},"contacts":[{"_id":"528342661974fceccd000064","name":"Sharon
+        Petersen","title":"Administrator"}],"coordinates":[-122.207057,37.468678],"created_at":"2013-11-13T01:12:06-08:00","description":"Provides
+        free medical care to those in need. Offers basic medical exams for adults
+        and tuberculosis screening. Assists the individual to access other services
+        in the community. By appointment only, Project Smile provides a free dental
+        exam, dental cleaning and oral hygiene instruction for children, age 3-12,
+        of Samaritan House clients.","emails":["gracie@samaritanhouse.com"],"faxes":[{"number":"650
+        839-1457"}],"hours":"Monday-Friday, 9-12, 2-5","languages":["Spanish"],"mail_address":{"attention":"Redwood
+        City Free Medical Clin","city":"Redwood City","state":"CA","street":"114 Fifth
+        Avenue","zip":"94063"},"name":"Redwood City Free Medical Clinic","phones":[{"number":"650
+        839-1447","hours":"(Monday-Friday, 8:30-12, 1:30-5)"}],"short_desc":"Provides
+        free medical care to those in need.","transportation":"SAMTRANS stops within
+        2 blocks.","updated_at":"2013-11-13T01:12:06-08:00","urls":["http://www.samaritanhouse.com"],"url":"http://localhost:8080/api/locations/528342661974fceccd000063","services":[{"_id":"528342661974fceccd00006b","eligibility":"Low-income
+        person without access to health care","fees":"None.","how_to_apply":"Call
+        for screening appointment. Medical visits are by appointment only.","keywords":["HEALTH
+        SERVICES","Outpatient Care","Community Clinics"],"service_areas":["Atherton","East
+        Palo Alto","Menlo Park","Redwood City","San Carlos"],"updated_at":"2013-11-13T19:45:29-08:00","wait":"Varies."}],"organization":{"_id":"528342661974fceccd000062","_slugs":["samaritan-house"],"created_at":"2013-11-13T01:12:06-08:00","name":"Samaritan
+        House","updated_at":"2013-11-13T01:12:06-08:00","url":"http://localhost:8080/api/organizations/528342661974fceccd000062","locations_url":"http://localhost:8080/api/organizations/528342661974fceccd000062/locations"},"slugs":["redwood-city-free-medical-clinic"],"id":"528342661974fceccd000063","_score":3.0872238,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"528342661974fceccd000067","_slugs":["san-mateo-free-medical-clinic"],"accessibility":["Elevator","Ramp","Wheelchair"],"address":{"city":"San
+        Mateo","state":"CA","street":"19 West 39th Avenue","zip":"94403"},"contacts":[{"_id":"528342661974fceccd000068","name":"Sharon
+        Petersen","title":"Administrator"}],"coordinates":[-122.2931271,37.5326926],"created_at":"2013-11-13T01:12:06-08:00","description":"Provides
+        free medical and dental care to those in need. Offers basic medical care for
+        adults.","emails":["smcmed@samaritanhouse.com"],"faxes":[{"number":"650 578-0440"}],"hours":"Monday-Friday,
+        9-12, 1-4","languages":["Spanish"],"mail_address":{"attention":"San Mateo
+        Free Medical/Dental","city":"San Mateo","state":"CA","street":"19 West 39th
+        Avenue","zip":"94403"},"name":"San Mateo Free Medical Clinic","phones":[{"number":"650
+        578-0400","hours":"(Monday-Friday, 9-12, 1-4)"}],"short_desc":"Provides free
+        medical and dental care to those in need. Offers basic medical care for adults.","transportation":"SAMTRANS
+        stops within 1 block.","updated_at":"2013-11-13T01:12:06-08:00","urls":["http://www.samaritanhouse.com"],"url":"http://localhost:8080/api/locations/528342661974fceccd000067","services":[{"_id":"528342661974fceccd00006c","eligibility":"Low-income
+        person without access to health care","fees":"None.","funding_sources":["Donations","Grants"],"how_to_apply":"Call
+        for screening appointment (650-347-3648).","keywords":["HEALTH SERVICES","Outpatient
+        Care","Community Clinics"],"service_areas":["Belmont","Burlingame","Foster
+        City","Millbrae","San Carlos","San Mateo"],"updated_at":"2013-11-13T01:12:06-08:00","wait":"Varies."}],"organization":{"_id":"528342661974fceccd000062","_slugs":["samaritan-house"],"created_at":"2013-11-13T01:12:06-08:00","name":"Samaritan
+        House","updated_at":"2013-11-13T01:12:06-08:00","url":"http://localhost:8080/api/organizations/528342661974fceccd000062","locations_url":"http://localhost:8080/api/organizations/528342661974fceccd000062/locations"},"slugs":["san-mateo-free-medical-clinic"],"id":"528342661974fceccd000067","_score":3.0872238,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"5284559e1974fc9646000063","_slugs":["redwood-city-free-medical-clinic"],"accessibility":["Disabled
+        Restroom","Wheelchair"],"address":{"city":"Redwood City","state":"CA","street":"114
+        Fifth Avenue","zip":"94063"},"contacts":[{"_id":"5284559e1974fc9646000064","name":"Sharon
+        Petersen","title":"Administrator"}],"coordinates":[-122.207057,37.468678],"created_at":"2013-11-13T20:46:22-08:00","description":"Provides
+        free medical care to those in need. Offers basic medical exams for adults
+        and tuberculosis screening. Assists the individual to access other services
+        in the community. By appointment only, Project Smile provides a free dental
+        exam, dental cleaning and oral hygiene instruction for children, age 3-12,
+        of Samaritan House clients.","emails":["gracie@samaritanhouse.com"],"faxes":[{"number":"650
+        839-1457"}],"hours":"Monday-Friday, 9-12, 2-5","languages":["Spanish"],"mail_address":{"attention":"Redwood
+        City Free Medical Clin","city":"Redwood City","state":"CA","street":"114 Fifth
+        Avenue","zip":"94063"},"name":"Redwood City Free Medical Clinic","phones":[{"number":"650
+        839-1447","hours":"(Monday-Friday, 8:30-12, 1:30-5)"}],"short_desc":"Provides
+        free medical care to those in need.","transportation":"SAMTRANS stops within
+        2 blocks.","updated_at":"2013-11-13T20:46:22-08:00","urls":["http://www.samaritanhouse.com"],"url":"http://localhost:8080/api/locations/5284559e1974fc9646000063","services":[{"_id":"5284559f1974fc964600006b","eligibility":"Low-income
+        person without access to health care","fees":"None.","funding_sources":["Donations","Grants"],"how_to_apply":"Call
+        for screening appointment. Medical visits are by appointment only.","keywords":["HEALTH
+        SERVICES","Outpatient Care","Community Clinics"],"service_areas":["Atherton","East
+        Palo Alto","Menlo Park","Redwood City","San Carlos"],"updated_at":"2013-11-13T20:46:23-08:00","wait":"Varies."}],"organization":{"_id":"5284559e1974fc9646000062","_slugs":["samaritan-house"],"created_at":"2013-11-13T20:46:22-08:00","locs":[{"name":"Redwood
+        City Free Medical Clinic","contacts":[{"name":"Sharon Petersen","title":"Administrator"}],"description":"Provides
+        free medical care to those in need. Offers basic medical exams for adults
+        and tuberculosis screening. Assists the individual to access other services
+        in the community. By appointment only, Project Smile provides a free dental
+        exam, dental cleaning and oral hygiene instruction for children, age 3-12,
+        of Samaritan House clients.","short_desc":"Provides free medical care to those
+        in need.","address":{"street":"114 Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"mail_address":{"attention":"Redwood
+        City Free Medical Clin","street":"114 Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"ask_for":null,"hours":"Monday-Friday,
+        9-12, 2-5","transportation":"SAMTRANS stops within 2 blocks.","accessibility":["restroom","wheelchair"],"languages":["Spanish"],"emails":["gracie@samaritanhouse.com"],"faxes":[{"number":"650
+        839-1457"}],"phones":[{"number":"650 839-1447","hours":"(Monday-Friday, 8:30-12,
+        1:30-5)"}],"urls":["http://www.samaritanhouse.com"],"servs":[{"audience":null,"eligibility":"Low-income
+        person without access to health care","fees":"None.","how_to_apply":"Call
+        for screening appointment. Medical visits are by appointment only.","service_areas":["Atherton","East
+        Palo Alto","Menlo Park","Redwood City","San Carlos"],"keywords":["HEALTH SERVICES","Outpatient
+        Care","Community Clinics"],"wait":"Varies.","funding_sources":["Donations","Grants"]}]},{"name":"San
+        Mateo Free Medical Clinic","contacts":[{"name":"Sharon Petersen","title":"Administrator"}],"description":"Provides
+        free medical and dental care to those in need. Offers basic medical care for
+        adults.","short_desc":"Provides free medical and dental care to those in need.
+        Offers basic medical care for adults.","address":{"street":"19 West 39th Avenue","city":"San
+        Mateo","state":"CA","zip":"94403"},"mail_address":{"attention":"San Mateo
+        Free Medical/Dental","street":"19 West 39th Avenue","city":"San Mateo","state":"CA","zip":"94403"},"ask_for":null,"hours":"Monday-Friday,
+        9-12, 1-4","transportation":"SAMTRANS stops within 1 block.","accessibility":["elevator","ramp","wheelchair"],"languages":["Spanish"],"emails":["smcmed@samaritanhouse.com"],"faxes":[{"number":"650
+        578-0440"}],"phones":[{"number":"650 578-0400","hours":"(Monday-Friday, 9-12,
+        1-4)"}],"urls":["http://www.samaritanhouse.com"],"servs":[{"audience":null,"eligibility":"Low-income
+        person without access to health care","fees":"None.","how_to_apply":"Call
+        for screening appointment (650-347-3648).","service_areas":["Belmont","Burlingame","Foster
+        City","Millbrae","San Carlos","San Mateo"],"keywords":["HEALTH SERVICES","Outpatient
+        Care","Community Clinics"],"wait":"Varies.","funding_sources":["Donations","Grants"]}]}],"name":"Samaritan
+        House","updated_at":"2013-11-13T20:46:22-08:00","url":"http://localhost:8080/api/organizations/5284559e1974fc9646000062","locations_url":"http://localhost:8080/api/organizations/5284559e1974fc9646000062/locations"},"slugs":["redwood-city-free-medical-clinic"],"id":"5284559e1974fc9646000063","_score":3.0872238,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"5284559e1974fc9646000067","_slugs":["san-mateo-free-medical-clinic"],"accessibility":["Elevator","Ramp","Wheelchair"],"address":{"city":"San
+        Mateo","state":"CA","street":"19 West 39th Avenue","zip":"94403"},"contacts":[{"_id":"5284559e1974fc9646000068","name":"Sharon
+        Petersen","title":"Administrator"}],"coordinates":[-122.2931271,37.5326926],"created_at":"2013-11-13T20:46:22-08:00","description":"Provides
+        free medical and dental care to those in need. Offers basic medical care for
+        adults.","emails":["smcmed@samaritanhouse.com"],"faxes":[{"number":"650 578-0440"}],"hours":"Monday-Friday,
+        9-12, 1-4","languages":["Spanish"],"mail_address":{"attention":"San Mateo
+        Free Medical/Dental","city":"San Mateo","state":"CA","street":"19 West 39th
+        Avenue","zip":"94403"},"name":"San Mateo Free Medical Clinic","phones":[{"number":"650
+        578-0400","hours":"(Monday-Friday, 9-12, 1-4)"}],"short_desc":"Provides free
+        medical and dental care to those in need. Offers basic medical care for adults.","transportation":"SAMTRANS
+        stops within 1 block.","updated_at":"2013-11-13T20:46:22-08:00","urls":["http://www.samaritanhouse.com"],"url":"http://localhost:8080/api/locations/5284559e1974fc9646000067","services":[{"_id":"5284559f1974fc964600006c","eligibility":"Low-income
+        person without access to health care","fees":"None.","funding_sources":["Donations","Grants"],"how_to_apply":"Call
+        for screening appointment (650-347-3648).","keywords":["HEALTH SERVICES","Outpatient
+        Care","Community Clinics"],"service_areas":["Belmont","Burlingame","Foster
+        City","Millbrae","San Carlos","San Mateo"],"updated_at":"2013-11-13T20:46:23-08:00","wait":"Varies."}],"organization":{"_id":"5284559e1974fc9646000062","_slugs":["samaritan-house"],"created_at":"2013-11-13T20:46:22-08:00","locs":[{"name":"Redwood
+        City Free Medical Clinic","contacts":[{"name":"Sharon Petersen","title":"Administrator"}],"description":"Provides
+        free medical care to those in need. Offers basic medical exams for adults
+        and tuberculosis screening. Assists the individual to access other services
+        in the community. By appointment only, Project Smile provides a free dental
+        exam, dental cleaning and oral hygiene instruction for children, age 3-12,
+        of Samaritan House clients.","short_desc":"Provides free medical care to those
+        in need.","address":{"street":"114 Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"mail_address":{"attention":"Redwood
+        City Free Medical Clin","street":"114 Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"ask_for":null,"hours":"Monday-Friday,
+        9-12, 2-5","transportation":"SAMTRANS stops within 2 blocks.","accessibility":["restroom","wheelchair"],"languages":["Spanish"],"emails":["gracie@samaritanhouse.com"],"faxes":[{"number":"650
+        839-1457"}],"phones":[{"number":"650 839-1447","hours":"(Monday-Friday, 8:30-12,
+        1:30-5)"}],"urls":["http://www.samaritanhouse.com"],"servs":[{"audience":null,"eligibility":"Low-income
+        person without access to health care","fees":"None.","how_to_apply":"Call
+        for screening appointment. Medical visits are by appointment only.","service_areas":["Atherton","East
+        Palo Alto","Menlo Park","Redwood City","San Carlos"],"keywords":["HEALTH SERVICES","Outpatient
+        Care","Community Clinics"],"wait":"Varies.","funding_sources":["Donations","Grants"]}]},{"name":"San
+        Mateo Free Medical Clinic","contacts":[{"name":"Sharon Petersen","title":"Administrator"}],"description":"Provides
+        free medical and dental care to those in need. Offers basic medical care for
+        adults.","short_desc":"Provides free medical and dental care to those in need.
+        Offers basic medical care for adults.","address":{"street":"19 West 39th Avenue","city":"San
+        Mateo","state":"CA","zip":"94403"},"mail_address":{"attention":"San Mateo
+        Free Medical/Dental","street":"19 West 39th Avenue","city":"San Mateo","state":"CA","zip":"94403"},"ask_for":null,"hours":"Monday-Friday,
+        9-12, 1-4","transportation":"SAMTRANS stops within 1 block.","accessibility":["elevator","ramp","wheelchair"],"languages":["Spanish"],"emails":["smcmed@samaritanhouse.com"],"faxes":[{"number":"650
+        578-0440"}],"phones":[{"number":"650 578-0400","hours":"(Monday-Friday, 9-12,
+        1-4)"}],"urls":["http://www.samaritanhouse.com"],"servs":[{"audience":null,"eligibility":"Low-income
+        person without access to health care","fees":"None.","how_to_apply":"Call
+        for screening appointment (650-347-3648).","service_areas":["Belmont","Burlingame","Foster
+        City","Millbrae","San Carlos","San Mateo"],"keywords":["HEALTH SERVICES","Outpatient
+        Care","Community Clinics"],"wait":"Varies.","funding_sources":["Donations","Grants"]}]}],"name":"Samaritan
+        House","updated_at":"2013-11-13T20:46:22-08:00","url":"http://localhost:8080/api/organizations/5284559e1974fc9646000062","locations_url":"http://localhost:8080/api/organizations/5284559e1974fc9646000062/locations"},"slugs":["san-mateo-free-medical-clinic"],"id":"5284559e1974fc9646000067","_score":3.0872238,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"528453d81974fc83f7000001","_slugs":["redwood-city-pantry"],"accessibility":["Disabled
+        Parking","Ramp"],"address":{"city":"Belmont","state":"CA","street":"1200 O''Brien
+        Drive","zip":"94002"},"coordinates":[-122.2758008,37.5202145],"created_at":"2013-11-13T20:38:48-08:00","description":"sH
+        New Locatione","name":"Redwood City Pantry","short_desc":"sH New Locatione","updated_at":"2013-11-13T20:38:48-08:00","urls":["http://www.samaritanhouse.com"],"url":"http://localhost:8080/api/locations/528453d81974fc83f7000001","organization":{"_id":"528342661974fceccd000062","_slugs":["samaritan-house"],"created_at":"2013-11-13T01:12:06-08:00","name":"Samaritan
+        House","updated_at":"2013-11-13T01:12:06-08:00","url":"http://localhost:8080/api/organizations/528342661974fceccd000062","locations_url":"http://localhost:8080/api/organizations/528342661974fceccd000062/locations"},"slugs":["redwood-city-pantry"],"id":"528453d81974fc83f7000001","_score":2.8561513,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null}]'
+    http_version: 
+  recorded_at: Thu, 14 Nov 2013 05:10:47 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/api/search?api_token=<API_TOKEN>&email=samaritanhouse.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - <API_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '16016'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Total-Count:
+      - '5'
+      X-Total-Pages:
+      - '1'
+      X-Current-Page:
+      - '1'
+      Etag:
+      - '"be0be5575dae565cc8307aa85b4e8ac3"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible:
+      - IE=Edge
+      X-Request-Id:
+      - 8aab3b0ee159a8a7b3d4375d591dc4e1
+      X-Runtime:
+      - '0.027114'
+      X-Powered-By:
+      - Phusion Passenger 4.0.23
+      Date:
+      - Thu, 14 Nov 2013 05:10:47 UTC
+      Server:
+      - nginx/1.4.3 + Phusion Passenger 4.0.23
+    body:
+      encoding: UTF-8
+      string: '[{"_id":"528342661974fceccd000063","_slugs":["redwood-city-free-medical-clinic"],"accessibility":["Disabled
+        Restroom","Wheelchair"],"address":{"city":"Redwood City","state":"CA","street":"114
+        Fifth Avenue","zip":"94063"},"contacts":[{"_id":"528342661974fceccd000064","name":"Sharon
+        Petersen","title":"Administrator"}],"coordinates":[-122.207057,37.468678],"created_at":"2013-11-13T01:12:06-08:00","description":"Provides
+        free medical care to those in need. Offers basic medical exams for adults
+        and tuberculosis screening. Assists the individual to access other services
+        in the community. By appointment only, Project Smile provides a free dental
+        exam, dental cleaning and oral hygiene instruction for children, age 3-12,
+        of Samaritan House clients.","emails":["gracie@samaritanhouse.com"],"faxes":[{"number":"650
+        839-1457"}],"hours":"Monday-Friday, 9-12, 2-5","languages":["Spanish"],"mail_address":{"attention":"Redwood
+        City Free Medical Clin","city":"Redwood City","state":"CA","street":"114 Fifth
+        Avenue","zip":"94063"},"name":"Redwood City Free Medical Clinic","phones":[{"number":"650
+        839-1447","hours":"(Monday-Friday, 8:30-12, 1:30-5)"}],"short_desc":"Provides
+        free medical care to those in need.","transportation":"SAMTRANS stops within
+        2 blocks.","updated_at":"2013-11-13T01:12:06-08:00","urls":["http://www.samaritanhouse.com"],"url":"http://localhost:8080/api/locations/528342661974fceccd000063","services":[{"_id":"528342661974fceccd00006b","eligibility":"Low-income
+        person without access to health care","fees":"None.","how_to_apply":"Call
+        for screening appointment. Medical visits are by appointment only.","keywords":["HEALTH
+        SERVICES","Outpatient Care","Community Clinics"],"service_areas":["Atherton","East
+        Palo Alto","Menlo Park","Redwood City","San Carlos"],"updated_at":"2013-11-13T19:45:29-08:00","wait":"Varies."}],"organization":{"_id":"528342661974fceccd000062","_slugs":["samaritan-house"],"created_at":"2013-11-13T01:12:06-08:00","name":"Samaritan
+        House","updated_at":"2013-11-13T01:12:06-08:00","url":"http://localhost:8080/api/organizations/528342661974fceccd000062","locations_url":"http://localhost:8080/api/organizations/528342661974fceccd000062/locations"},"slugs":["redwood-city-free-medical-clinic"],"id":"528342661974fceccd000063","_score":3.0872238,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"528342661974fceccd000067","_slugs":["san-mateo-free-medical-clinic"],"accessibility":["Elevator","Ramp","Wheelchair"],"address":{"city":"San
+        Mateo","state":"CA","street":"19 West 39th Avenue","zip":"94403"},"contacts":[{"_id":"528342661974fceccd000068","name":"Sharon
+        Petersen","title":"Administrator"}],"coordinates":[-122.2931271,37.5326926],"created_at":"2013-11-13T01:12:06-08:00","description":"Provides
+        free medical and dental care to those in need. Offers basic medical care for
+        adults.","emails":["smcmed@samaritanhouse.com"],"faxes":[{"number":"650 578-0440"}],"hours":"Monday-Friday,
+        9-12, 1-4","languages":["Spanish"],"mail_address":{"attention":"San Mateo
+        Free Medical/Dental","city":"San Mateo","state":"CA","street":"19 West 39th
+        Avenue","zip":"94403"},"name":"San Mateo Free Medical Clinic","phones":[{"number":"650
+        578-0400","hours":"(Monday-Friday, 9-12, 1-4)"}],"short_desc":"Provides free
+        medical and dental care to those in need. Offers basic medical care for adults.","transportation":"SAMTRANS
+        stops within 1 block.","updated_at":"2013-11-13T01:12:06-08:00","urls":["http://www.samaritanhouse.com"],"url":"http://localhost:8080/api/locations/528342661974fceccd000067","services":[{"_id":"528342661974fceccd00006c","eligibility":"Low-income
+        person without access to health care","fees":"None.","funding_sources":["Donations","Grants"],"how_to_apply":"Call
+        for screening appointment (650-347-3648).","keywords":["HEALTH SERVICES","Outpatient
+        Care","Community Clinics"],"service_areas":["Belmont","Burlingame","Foster
+        City","Millbrae","San Carlos","San Mateo"],"updated_at":"2013-11-13T01:12:06-08:00","wait":"Varies."}],"organization":{"_id":"528342661974fceccd000062","_slugs":["samaritan-house"],"created_at":"2013-11-13T01:12:06-08:00","name":"Samaritan
+        House","updated_at":"2013-11-13T01:12:06-08:00","url":"http://localhost:8080/api/organizations/528342661974fceccd000062","locations_url":"http://localhost:8080/api/organizations/528342661974fceccd000062/locations"},"slugs":["san-mateo-free-medical-clinic"],"id":"528342661974fceccd000067","_score":3.0872238,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"5284559e1974fc9646000063","_slugs":["redwood-city-free-medical-clinic"],"accessibility":["Disabled
+        Restroom","Wheelchair"],"address":{"city":"Redwood City","state":"CA","street":"114
+        Fifth Avenue","zip":"94063"},"contacts":[{"_id":"5284559e1974fc9646000064","name":"Sharon
+        Petersen","title":"Administrator"}],"coordinates":[-122.207057,37.468678],"created_at":"2013-11-13T20:46:22-08:00","description":"Provides
+        free medical care to those in need. Offers basic medical exams for adults
+        and tuberculosis screening. Assists the individual to access other services
+        in the community. By appointment only, Project Smile provides a free dental
+        exam, dental cleaning and oral hygiene instruction for children, age 3-12,
+        of Samaritan House clients.","emails":["gracie@samaritanhouse.com"],"faxes":[{"number":"650
+        839-1457"}],"hours":"Monday-Friday, 9-12, 2-5","languages":["Spanish"],"mail_address":{"attention":"Redwood
+        City Free Medical Clin","city":"Redwood City","state":"CA","street":"114 Fifth
+        Avenue","zip":"94063"},"name":"Redwood City Free Medical Clinic","phones":[{"number":"650
+        839-1447","hours":"(Monday-Friday, 8:30-12, 1:30-5)"}],"short_desc":"Provides
+        free medical care to those in need.","transportation":"SAMTRANS stops within
+        2 blocks.","updated_at":"2013-11-13T20:46:22-08:00","urls":["http://www.samaritanhouse.com"],"url":"http://localhost:8080/api/locations/5284559e1974fc9646000063","services":[{"_id":"5284559f1974fc964600006b","eligibility":"Low-income
+        person without access to health care","fees":"None.","funding_sources":["Donations","Grants"],"how_to_apply":"Call
+        for screening appointment. Medical visits are by appointment only.","keywords":["HEALTH
+        SERVICES","Outpatient Care","Community Clinics"],"service_areas":["Atherton","East
+        Palo Alto","Menlo Park","Redwood City","San Carlos"],"updated_at":"2013-11-13T20:46:23-08:00","wait":"Varies."}],"organization":{"_id":"5284559e1974fc9646000062","_slugs":["samaritan-house"],"created_at":"2013-11-13T20:46:22-08:00","locs":[{"name":"Redwood
+        City Free Medical Clinic","contacts":[{"name":"Sharon Petersen","title":"Administrator"}],"description":"Provides
+        free medical care to those in need. Offers basic medical exams for adults
+        and tuberculosis screening. Assists the individual to access other services
+        in the community. By appointment only, Project Smile provides a free dental
+        exam, dental cleaning and oral hygiene instruction for children, age 3-12,
+        of Samaritan House clients.","short_desc":"Provides free medical care to those
+        in need.","address":{"street":"114 Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"mail_address":{"attention":"Redwood
+        City Free Medical Clin","street":"114 Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"ask_for":null,"hours":"Monday-Friday,
+        9-12, 2-5","transportation":"SAMTRANS stops within 2 blocks.","accessibility":["restroom","wheelchair"],"languages":["Spanish"],"emails":["gracie@samaritanhouse.com"],"faxes":[{"number":"650
+        839-1457"}],"phones":[{"number":"650 839-1447","hours":"(Monday-Friday, 8:30-12,
+        1:30-5)"}],"urls":["http://www.samaritanhouse.com"],"servs":[{"audience":null,"eligibility":"Low-income
+        person without access to health care","fees":"None.","how_to_apply":"Call
+        for screening appointment. Medical visits are by appointment only.","service_areas":["Atherton","East
+        Palo Alto","Menlo Park","Redwood City","San Carlos"],"keywords":["HEALTH SERVICES","Outpatient
+        Care","Community Clinics"],"wait":"Varies.","funding_sources":["Donations","Grants"]}]},{"name":"San
+        Mateo Free Medical Clinic","contacts":[{"name":"Sharon Petersen","title":"Administrator"}],"description":"Provides
+        free medical and dental care to those in need. Offers basic medical care for
+        adults.","short_desc":"Provides free medical and dental care to those in need.
+        Offers basic medical care for adults.","address":{"street":"19 West 39th Avenue","city":"San
+        Mateo","state":"CA","zip":"94403"},"mail_address":{"attention":"San Mateo
+        Free Medical/Dental","street":"19 West 39th Avenue","city":"San Mateo","state":"CA","zip":"94403"},"ask_for":null,"hours":"Monday-Friday,
+        9-12, 1-4","transportation":"SAMTRANS stops within 1 block.","accessibility":["elevator","ramp","wheelchair"],"languages":["Spanish"],"emails":["smcmed@samaritanhouse.com"],"faxes":[{"number":"650
+        578-0440"}],"phones":[{"number":"650 578-0400","hours":"(Monday-Friday, 9-12,
+        1-4)"}],"urls":["http://www.samaritanhouse.com"],"servs":[{"audience":null,"eligibility":"Low-income
+        person without access to health care","fees":"None.","how_to_apply":"Call
+        for screening appointment (650-347-3648).","service_areas":["Belmont","Burlingame","Foster
+        City","Millbrae","San Carlos","San Mateo"],"keywords":["HEALTH SERVICES","Outpatient
+        Care","Community Clinics"],"wait":"Varies.","funding_sources":["Donations","Grants"]}]}],"name":"Samaritan
+        House","updated_at":"2013-11-13T20:46:22-08:00","url":"http://localhost:8080/api/organizations/5284559e1974fc9646000062","locations_url":"http://localhost:8080/api/organizations/5284559e1974fc9646000062/locations"},"slugs":["redwood-city-free-medical-clinic"],"id":"5284559e1974fc9646000063","_score":3.0872238,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"5284559e1974fc9646000067","_slugs":["san-mateo-free-medical-clinic"],"accessibility":["Elevator","Ramp","Wheelchair"],"address":{"city":"San
+        Mateo","state":"CA","street":"19 West 39th Avenue","zip":"94403"},"contacts":[{"_id":"5284559e1974fc9646000068","name":"Sharon
+        Petersen","title":"Administrator"}],"coordinates":[-122.2931271,37.5326926],"created_at":"2013-11-13T20:46:22-08:00","description":"Provides
+        free medical and dental care to those in need. Offers basic medical care for
+        adults.","emails":["smcmed@samaritanhouse.com"],"faxes":[{"number":"650 578-0440"}],"hours":"Monday-Friday,
+        9-12, 1-4","languages":["Spanish"],"mail_address":{"attention":"San Mateo
+        Free Medical/Dental","city":"San Mateo","state":"CA","street":"19 West 39th
+        Avenue","zip":"94403"},"name":"San Mateo Free Medical Clinic","phones":[{"number":"650
+        578-0400","hours":"(Monday-Friday, 9-12, 1-4)"}],"short_desc":"Provides free
+        medical and dental care to those in need. Offers basic medical care for adults.","transportation":"SAMTRANS
+        stops within 1 block.","updated_at":"2013-11-13T20:46:22-08:00","urls":["http://www.samaritanhouse.com"],"url":"http://localhost:8080/api/locations/5284559e1974fc9646000067","services":[{"_id":"5284559f1974fc964600006c","eligibility":"Low-income
+        person without access to health care","fees":"None.","funding_sources":["Donations","Grants"],"how_to_apply":"Call
+        for screening appointment (650-347-3648).","keywords":["HEALTH SERVICES","Outpatient
+        Care","Community Clinics"],"service_areas":["Belmont","Burlingame","Foster
+        City","Millbrae","San Carlos","San Mateo"],"updated_at":"2013-11-13T20:46:23-08:00","wait":"Varies."}],"organization":{"_id":"5284559e1974fc9646000062","_slugs":["samaritan-house"],"created_at":"2013-11-13T20:46:22-08:00","locs":[{"name":"Redwood
+        City Free Medical Clinic","contacts":[{"name":"Sharon Petersen","title":"Administrator"}],"description":"Provides
+        free medical care to those in need. Offers basic medical exams for adults
+        and tuberculosis screening. Assists the individual to access other services
+        in the community. By appointment only, Project Smile provides a free dental
+        exam, dental cleaning and oral hygiene instruction for children, age 3-12,
+        of Samaritan House clients.","short_desc":"Provides free medical care to those
+        in need.","address":{"street":"114 Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"mail_address":{"attention":"Redwood
+        City Free Medical Clin","street":"114 Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"ask_for":null,"hours":"Monday-Friday,
+        9-12, 2-5","transportation":"SAMTRANS stops within 2 blocks.","accessibility":["restroom","wheelchair"],"languages":["Spanish"],"emails":["gracie@samaritanhouse.com"],"faxes":[{"number":"650
+        839-1457"}],"phones":[{"number":"650 839-1447","hours":"(Monday-Friday, 8:30-12,
+        1:30-5)"}],"urls":["http://www.samaritanhouse.com"],"servs":[{"audience":null,"eligibility":"Low-income
+        person without access to health care","fees":"None.","how_to_apply":"Call
+        for screening appointment. Medical visits are by appointment only.","service_areas":["Atherton","East
+        Palo Alto","Menlo Park","Redwood City","San Carlos"],"keywords":["HEALTH SERVICES","Outpatient
+        Care","Community Clinics"],"wait":"Varies.","funding_sources":["Donations","Grants"]}]},{"name":"San
+        Mateo Free Medical Clinic","contacts":[{"name":"Sharon Petersen","title":"Administrator"}],"description":"Provides
+        free medical and dental care to those in need. Offers basic medical care for
+        adults.","short_desc":"Provides free medical and dental care to those in need.
+        Offers basic medical care for adults.","address":{"street":"19 West 39th Avenue","city":"San
+        Mateo","state":"CA","zip":"94403"},"mail_address":{"attention":"San Mateo
+        Free Medical/Dental","street":"19 West 39th Avenue","city":"San Mateo","state":"CA","zip":"94403"},"ask_for":null,"hours":"Monday-Friday,
+        9-12, 1-4","transportation":"SAMTRANS stops within 1 block.","accessibility":["elevator","ramp","wheelchair"],"languages":["Spanish"],"emails":["smcmed@samaritanhouse.com"],"faxes":[{"number":"650
+        578-0440"}],"phones":[{"number":"650 578-0400","hours":"(Monday-Friday, 9-12,
+        1-4)"}],"urls":["http://www.samaritanhouse.com"],"servs":[{"audience":null,"eligibility":"Low-income
+        person without access to health care","fees":"None.","how_to_apply":"Call
+        for screening appointment (650-347-3648).","service_areas":["Belmont","Burlingame","Foster
+        City","Millbrae","San Carlos","San Mateo"],"keywords":["HEALTH SERVICES","Outpatient
+        Care","Community Clinics"],"wait":"Varies.","funding_sources":["Donations","Grants"]}]}],"name":"Samaritan
+        House","updated_at":"2013-11-13T20:46:22-08:00","url":"http://localhost:8080/api/organizations/5284559e1974fc9646000062","locations_url":"http://localhost:8080/api/organizations/5284559e1974fc9646000062/locations"},"slugs":["san-mateo-free-medical-clinic"],"id":"5284559e1974fc9646000067","_score":3.0872238,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"528453d81974fc83f7000001","_slugs":["redwood-city-pantry"],"accessibility":["Disabled
+        Parking","Ramp"],"address":{"city":"Belmont","state":"CA","street":"1200 O''Brien
+        Drive","zip":"94002"},"coordinates":[-122.2758008,37.5202145],"created_at":"2013-11-13T20:38:48-08:00","description":"sH
+        New Locatione","name":"Redwood City Pantry","short_desc":"sH New Locatione","updated_at":"2013-11-13T20:38:48-08:00","urls":["http://www.samaritanhouse.com"],"url":"http://localhost:8080/api/locations/528453d81974fc83f7000001","organization":{"_id":"528342661974fceccd000062","_slugs":["samaritan-house"],"created_at":"2013-11-13T01:12:06-08:00","name":"Samaritan
+        House","updated_at":"2013-11-13T01:12:06-08:00","url":"http://localhost:8080/api/organizations/528342661974fceccd000062","locations_url":"http://localhost:8080/api/organizations/528342661974fceccd000062/locations"},"slugs":["redwood-city-pantry"],"id":"528453d81974fc83f7000001","_score":2.8561513,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null}]'
+    http_version: 
+  recorded_at: Thu, 14 Nov 2013 05:10:47 GMT
+- request:
+    method: post
+    uri: http://localhost:8080/api/locations/?accessibility&address%5Bcity%5D=utopia&address%5Bstate%5D=XX&address%5Bstreet%5D=modularity&address%5Bzip%5D=12345&api_token=<API_TOKEN>&description=new%20description&emails&hours=&kind&mail_address&name=new%20location&organization_id=528342661974fceccd000062&phones&short_desc=new%20short%20description&transportation=&urls%5B0%5D=http://samaritanhouse.com
+    body:
+      encoding: UTF-8
+      string: '{}'
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - <API_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '219'
+      Connection:
+      - keep-alive
+      Status:
+      - 400 Bad Request
+      X-Ua-Compatible:
+      - IE=Edge
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 871a4e45981cd80c38b49df5d23dbd72
+      X-Runtime:
+      - '0.023556'
+      X-Powered-By:
+      - Phusion Passenger 4.0.23
+      Date:
+      - Thu, 14 Nov 2013 05:10:47 UTC
+      Server:
+      - nginx/1.4.3 + Phusion Passenger 4.0.23
+    body:
+      encoding: UTF-8
+      string: '{"message":"\nProblem:\n  Validation of Location failed.\nSummary:\n  The
+        following errors were found: Organization can''t be blank\nResolution:\n  Try
+        persisting the document with valid data or remove the validations."}'
+    http_version: 
+  recorded_at: Thu, 14 Nov 2013 05:10:47 GMT
+- request:
+    method: get
+    uri: http://localhost:8080/api/search?api_token=<API_TOKEN>&email=samaritanhouse.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - <API_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '16016'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Total-Count:
+      - '5'
+      X-Total-Pages:
+      - '1'
+      X-Current-Page:
+      - '1'
+      Etag:
+      - '"be0be5575dae565cc8307aa85b4e8ac3"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible:
+      - IE=Edge
+      X-Request-Id:
+      - c1e21f2580d250a18a4437e6b4294661
+      X-Runtime:
+      - '0.033585'
+      X-Powered-By:
+      - Phusion Passenger 4.0.23
+      Date:
+      - Thu, 14 Nov 2013 05:10:47 UTC
+      Server:
+      - nginx/1.4.3 + Phusion Passenger 4.0.23
+    body:
+      encoding: UTF-8
+      string: '[{"_id":"528342661974fceccd000063","_slugs":["redwood-city-free-medical-clinic"],"accessibility":["Disabled
+        Restroom","Wheelchair"],"address":{"city":"Redwood City","state":"CA","street":"114
+        Fifth Avenue","zip":"94063"},"contacts":[{"_id":"528342661974fceccd000064","name":"Sharon
+        Petersen","title":"Administrator"}],"coordinates":[-122.207057,37.468678],"created_at":"2013-11-13T01:12:06-08:00","description":"Provides
+        free medical care to those in need. Offers basic medical exams for adults
+        and tuberculosis screening. Assists the individual to access other services
+        in the community. By appointment only, Project Smile provides a free dental
+        exam, dental cleaning and oral hygiene instruction for children, age 3-12,
+        of Samaritan House clients.","emails":["gracie@samaritanhouse.com"],"faxes":[{"number":"650
+        839-1457"}],"hours":"Monday-Friday, 9-12, 2-5","languages":["Spanish"],"mail_address":{"attention":"Redwood
+        City Free Medical Clin","city":"Redwood City","state":"CA","street":"114 Fifth
+        Avenue","zip":"94063"},"name":"Redwood City Free Medical Clinic","phones":[{"number":"650
+        839-1447","hours":"(Monday-Friday, 8:30-12, 1:30-5)"}],"short_desc":"Provides
+        free medical care to those in need.","transportation":"SAMTRANS stops within
+        2 blocks.","updated_at":"2013-11-13T01:12:06-08:00","urls":["http://www.samaritanhouse.com"],"url":"http://localhost:8080/api/locations/528342661974fceccd000063","services":[{"_id":"528342661974fceccd00006b","eligibility":"Low-income
+        person without access to health care","fees":"None.","how_to_apply":"Call
+        for screening appointment. Medical visits are by appointment only.","keywords":["HEALTH
+        SERVICES","Outpatient Care","Community Clinics"],"service_areas":["Atherton","East
+        Palo Alto","Menlo Park","Redwood City","San Carlos"],"updated_at":"2013-11-13T19:45:29-08:00","wait":"Varies."}],"organization":{"_id":"528342661974fceccd000062","_slugs":["samaritan-house"],"created_at":"2013-11-13T01:12:06-08:00","name":"Samaritan
+        House","updated_at":"2013-11-13T01:12:06-08:00","url":"http://localhost:8080/api/organizations/528342661974fceccd000062","locations_url":"http://localhost:8080/api/organizations/528342661974fceccd000062/locations"},"slugs":["redwood-city-free-medical-clinic"],"id":"528342661974fceccd000063","_score":3.0872238,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"528342661974fceccd000067","_slugs":["san-mateo-free-medical-clinic"],"accessibility":["Elevator","Ramp","Wheelchair"],"address":{"city":"San
+        Mateo","state":"CA","street":"19 West 39th Avenue","zip":"94403"},"contacts":[{"_id":"528342661974fceccd000068","name":"Sharon
+        Petersen","title":"Administrator"}],"coordinates":[-122.2931271,37.5326926],"created_at":"2013-11-13T01:12:06-08:00","description":"Provides
+        free medical and dental care to those in need. Offers basic medical care for
+        adults.","emails":["smcmed@samaritanhouse.com"],"faxes":[{"number":"650 578-0440"}],"hours":"Monday-Friday,
+        9-12, 1-4","languages":["Spanish"],"mail_address":{"attention":"San Mateo
+        Free Medical/Dental","city":"San Mateo","state":"CA","street":"19 West 39th
+        Avenue","zip":"94403"},"name":"San Mateo Free Medical Clinic","phones":[{"number":"650
+        578-0400","hours":"(Monday-Friday, 9-12, 1-4)"}],"short_desc":"Provides free
+        medical and dental care to those in need. Offers basic medical care for adults.","transportation":"SAMTRANS
+        stops within 1 block.","updated_at":"2013-11-13T01:12:06-08:00","urls":["http://www.samaritanhouse.com"],"url":"http://localhost:8080/api/locations/528342661974fceccd000067","services":[{"_id":"528342661974fceccd00006c","eligibility":"Low-income
+        person without access to health care","fees":"None.","funding_sources":["Donations","Grants"],"how_to_apply":"Call
+        for screening appointment (650-347-3648).","keywords":["HEALTH SERVICES","Outpatient
+        Care","Community Clinics"],"service_areas":["Belmont","Burlingame","Foster
+        City","Millbrae","San Carlos","San Mateo"],"updated_at":"2013-11-13T01:12:06-08:00","wait":"Varies."}],"organization":{"_id":"528342661974fceccd000062","_slugs":["samaritan-house"],"created_at":"2013-11-13T01:12:06-08:00","name":"Samaritan
+        House","updated_at":"2013-11-13T01:12:06-08:00","url":"http://localhost:8080/api/organizations/528342661974fceccd000062","locations_url":"http://localhost:8080/api/organizations/528342661974fceccd000062/locations"},"slugs":["san-mateo-free-medical-clinic"],"id":"528342661974fceccd000067","_score":3.0872238,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"5284559e1974fc9646000063","_slugs":["redwood-city-free-medical-clinic"],"accessibility":["Disabled
+        Restroom","Wheelchair"],"address":{"city":"Redwood City","state":"CA","street":"114
+        Fifth Avenue","zip":"94063"},"contacts":[{"_id":"5284559e1974fc9646000064","name":"Sharon
+        Petersen","title":"Administrator"}],"coordinates":[-122.207057,37.468678],"created_at":"2013-11-13T20:46:22-08:00","description":"Provides
+        free medical care to those in need. Offers basic medical exams for adults
+        and tuberculosis screening. Assists the individual to access other services
+        in the community. By appointment only, Project Smile provides a free dental
+        exam, dental cleaning and oral hygiene instruction for children, age 3-12,
+        of Samaritan House clients.","emails":["gracie@samaritanhouse.com"],"faxes":[{"number":"650
+        839-1457"}],"hours":"Monday-Friday, 9-12, 2-5","languages":["Spanish"],"mail_address":{"attention":"Redwood
+        City Free Medical Clin","city":"Redwood City","state":"CA","street":"114 Fifth
+        Avenue","zip":"94063"},"name":"Redwood City Free Medical Clinic","phones":[{"number":"650
+        839-1447","hours":"(Monday-Friday, 8:30-12, 1:30-5)"}],"short_desc":"Provides
+        free medical care to those in need.","transportation":"SAMTRANS stops within
+        2 blocks.","updated_at":"2013-11-13T20:46:22-08:00","urls":["http://www.samaritanhouse.com"],"url":"http://localhost:8080/api/locations/5284559e1974fc9646000063","services":[{"_id":"5284559f1974fc964600006b","eligibility":"Low-income
+        person without access to health care","fees":"None.","funding_sources":["Donations","Grants"],"how_to_apply":"Call
+        for screening appointment. Medical visits are by appointment only.","keywords":["HEALTH
+        SERVICES","Outpatient Care","Community Clinics"],"service_areas":["Atherton","East
+        Palo Alto","Menlo Park","Redwood City","San Carlos"],"updated_at":"2013-11-13T20:46:23-08:00","wait":"Varies."}],"organization":{"_id":"5284559e1974fc9646000062","_slugs":["samaritan-house"],"created_at":"2013-11-13T20:46:22-08:00","locs":[{"name":"Redwood
+        City Free Medical Clinic","contacts":[{"name":"Sharon Petersen","title":"Administrator"}],"description":"Provides
+        free medical care to those in need. Offers basic medical exams for adults
+        and tuberculosis screening. Assists the individual to access other services
+        in the community. By appointment only, Project Smile provides a free dental
+        exam, dental cleaning and oral hygiene instruction for children, age 3-12,
+        of Samaritan House clients.","short_desc":"Provides free medical care to those
+        in need.","address":{"street":"114 Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"mail_address":{"attention":"Redwood
+        City Free Medical Clin","street":"114 Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"ask_for":null,"hours":"Monday-Friday,
+        9-12, 2-5","transportation":"SAMTRANS stops within 2 blocks.","accessibility":["restroom","wheelchair"],"languages":["Spanish"],"emails":["gracie@samaritanhouse.com"],"faxes":[{"number":"650
+        839-1457"}],"phones":[{"number":"650 839-1447","hours":"(Monday-Friday, 8:30-12,
+        1:30-5)"}],"urls":["http://www.samaritanhouse.com"],"servs":[{"audience":null,"eligibility":"Low-income
+        person without access to health care","fees":"None.","how_to_apply":"Call
+        for screening appointment. Medical visits are by appointment only.","service_areas":["Atherton","East
+        Palo Alto","Menlo Park","Redwood City","San Carlos"],"keywords":["HEALTH SERVICES","Outpatient
+        Care","Community Clinics"],"wait":"Varies.","funding_sources":["Donations","Grants"]}]},{"name":"San
+        Mateo Free Medical Clinic","contacts":[{"name":"Sharon Petersen","title":"Administrator"}],"description":"Provides
+        free medical and dental care to those in need. Offers basic medical care for
+        adults.","short_desc":"Provides free medical and dental care to those in need.
+        Offers basic medical care for adults.","address":{"street":"19 West 39th Avenue","city":"San
+        Mateo","state":"CA","zip":"94403"},"mail_address":{"attention":"San Mateo
+        Free Medical/Dental","street":"19 West 39th Avenue","city":"San Mateo","state":"CA","zip":"94403"},"ask_for":null,"hours":"Monday-Friday,
+        9-12, 1-4","transportation":"SAMTRANS stops within 1 block.","accessibility":["elevator","ramp","wheelchair"],"languages":["Spanish"],"emails":["smcmed@samaritanhouse.com"],"faxes":[{"number":"650
+        578-0440"}],"phones":[{"number":"650 578-0400","hours":"(Monday-Friday, 9-12,
+        1-4)"}],"urls":["http://www.samaritanhouse.com"],"servs":[{"audience":null,"eligibility":"Low-income
+        person without access to health care","fees":"None.","how_to_apply":"Call
+        for screening appointment (650-347-3648).","service_areas":["Belmont","Burlingame","Foster
+        City","Millbrae","San Carlos","San Mateo"],"keywords":["HEALTH SERVICES","Outpatient
+        Care","Community Clinics"],"wait":"Varies.","funding_sources":["Donations","Grants"]}]}],"name":"Samaritan
+        House","updated_at":"2013-11-13T20:46:22-08:00","url":"http://localhost:8080/api/organizations/5284559e1974fc9646000062","locations_url":"http://localhost:8080/api/organizations/5284559e1974fc9646000062/locations"},"slugs":["redwood-city-free-medical-clinic"],"id":"5284559e1974fc9646000063","_score":3.0872238,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"5284559e1974fc9646000067","_slugs":["san-mateo-free-medical-clinic"],"accessibility":["Elevator","Ramp","Wheelchair"],"address":{"city":"San
+        Mateo","state":"CA","street":"19 West 39th Avenue","zip":"94403"},"contacts":[{"_id":"5284559e1974fc9646000068","name":"Sharon
+        Petersen","title":"Administrator"}],"coordinates":[-122.2931271,37.5326926],"created_at":"2013-11-13T20:46:22-08:00","description":"Provides
+        free medical and dental care to those in need. Offers basic medical care for
+        adults.","emails":["smcmed@samaritanhouse.com"],"faxes":[{"number":"650 578-0440"}],"hours":"Monday-Friday,
+        9-12, 1-4","languages":["Spanish"],"mail_address":{"attention":"San Mateo
+        Free Medical/Dental","city":"San Mateo","state":"CA","street":"19 West 39th
+        Avenue","zip":"94403"},"name":"San Mateo Free Medical Clinic","phones":[{"number":"650
+        578-0400","hours":"(Monday-Friday, 9-12, 1-4)"}],"short_desc":"Provides free
+        medical and dental care to those in need. Offers basic medical care for adults.","transportation":"SAMTRANS
+        stops within 1 block.","updated_at":"2013-11-13T20:46:22-08:00","urls":["http://www.samaritanhouse.com"],"url":"http://localhost:8080/api/locations/5284559e1974fc9646000067","services":[{"_id":"5284559f1974fc964600006c","eligibility":"Low-income
+        person without access to health care","fees":"None.","funding_sources":["Donations","Grants"],"how_to_apply":"Call
+        for screening appointment (650-347-3648).","keywords":["HEALTH SERVICES","Outpatient
+        Care","Community Clinics"],"service_areas":["Belmont","Burlingame","Foster
+        City","Millbrae","San Carlos","San Mateo"],"updated_at":"2013-11-13T20:46:23-08:00","wait":"Varies."}],"organization":{"_id":"5284559e1974fc9646000062","_slugs":["samaritan-house"],"created_at":"2013-11-13T20:46:22-08:00","locs":[{"name":"Redwood
+        City Free Medical Clinic","contacts":[{"name":"Sharon Petersen","title":"Administrator"}],"description":"Provides
+        free medical care to those in need. Offers basic medical exams for adults
+        and tuberculosis screening. Assists the individual to access other services
+        in the community. By appointment only, Project Smile provides a free dental
+        exam, dental cleaning and oral hygiene instruction for children, age 3-12,
+        of Samaritan House clients.","short_desc":"Provides free medical care to those
+        in need.","address":{"street":"114 Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"mail_address":{"attention":"Redwood
+        City Free Medical Clin","street":"114 Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"ask_for":null,"hours":"Monday-Friday,
+        9-12, 2-5","transportation":"SAMTRANS stops within 2 blocks.","accessibility":["restroom","wheelchair"],"languages":["Spanish"],"emails":["gracie@samaritanhouse.com"],"faxes":[{"number":"650
+        839-1457"}],"phones":[{"number":"650 839-1447","hours":"(Monday-Friday, 8:30-12,
+        1:30-5)"}],"urls":["http://www.samaritanhouse.com"],"servs":[{"audience":null,"eligibility":"Low-income
+        person without access to health care","fees":"None.","how_to_apply":"Call
+        for screening appointment. Medical visits are by appointment only.","service_areas":["Atherton","East
+        Palo Alto","Menlo Park","Redwood City","San Carlos"],"keywords":["HEALTH SERVICES","Outpatient
+        Care","Community Clinics"],"wait":"Varies.","funding_sources":["Donations","Grants"]}]},{"name":"San
+        Mateo Free Medical Clinic","contacts":[{"name":"Sharon Petersen","title":"Administrator"}],"description":"Provides
+        free medical and dental care to those in need. Offers basic medical care for
+        adults.","short_desc":"Provides free medical and dental care to those in need.
+        Offers basic medical care for adults.","address":{"street":"19 West 39th Avenue","city":"San
+        Mateo","state":"CA","zip":"94403"},"mail_address":{"attention":"San Mateo
+        Free Medical/Dental","street":"19 West 39th Avenue","city":"San Mateo","state":"CA","zip":"94403"},"ask_for":null,"hours":"Monday-Friday,
+        9-12, 1-4","transportation":"SAMTRANS stops within 1 block.","accessibility":["elevator","ramp","wheelchair"],"languages":["Spanish"],"emails":["smcmed@samaritanhouse.com"],"faxes":[{"number":"650
+        578-0440"}],"phones":[{"number":"650 578-0400","hours":"(Monday-Friday, 9-12,
+        1-4)"}],"urls":["http://www.samaritanhouse.com"],"servs":[{"audience":null,"eligibility":"Low-income
+        person without access to health care","fees":"None.","how_to_apply":"Call
+        for screening appointment (650-347-3648).","service_areas":["Belmont","Burlingame","Foster
+        City","Millbrae","San Carlos","San Mateo"],"keywords":["HEALTH SERVICES","Outpatient
+        Care","Community Clinics"],"wait":"Varies.","funding_sources":["Donations","Grants"]}]}],"name":"Samaritan
+        House","updated_at":"2013-11-13T20:46:22-08:00","url":"http://localhost:8080/api/organizations/5284559e1974fc9646000062","locations_url":"http://localhost:8080/api/organizations/5284559e1974fc9646000062/locations"},"slugs":["san-mateo-free-medical-clinic"],"id":"5284559e1974fc9646000067","_score":3.0872238,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"528453d81974fc83f7000001","_slugs":["redwood-city-pantry"],"accessibility":["Disabled
+        Parking","Ramp"],"address":{"city":"Belmont","state":"CA","street":"1200 O''Brien
+        Drive","zip":"94002"},"coordinates":[-122.2758008,37.5202145],"created_at":"2013-11-13T20:38:48-08:00","description":"sH
+        New Locatione","name":"Redwood City Pantry","short_desc":"sH New Locatione","updated_at":"2013-11-13T20:38:48-08:00","urls":["http://www.samaritanhouse.com"],"url":"http://localhost:8080/api/locations/528453d81974fc83f7000001","organization":{"_id":"528342661974fceccd000062","_slugs":["samaritan-house"],"created_at":"2013-11-13T01:12:06-08:00","name":"Samaritan
+        House","updated_at":"2013-11-13T01:12:06-08:00","url":"http://localhost:8080/api/organizations/528342661974fceccd000062","locations_url":"http://localhost:8080/api/organizations/528342661974fceccd000062/locations"},"slugs":["redwood-city-pantry"],"id":"528453d81974fc83f7000001","_score":2.8561513,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null}]'
+    http_version: 
+  recorded_at: Thu, 14 Nov 2013 05:10:47 GMT
+recorded_with: VCR 2.7.0

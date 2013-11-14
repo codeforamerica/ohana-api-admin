@@ -23,41 +23,42 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '1238'
+      - '1287'
       Connection:
       - keep-alive
       Status:
       - 200 OK
       Etag:
-      - '"804eedeac5b200160b1160c54e75a06d"'
+      - '"3e49000b8c54e4c4bf4c3a5e7ff25bb6"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Ua-Compatible:
       - IE=Edge
       X-Request-Id:
-      - 846f63066e80c0c7a6338cb436c07d9a
+      - e2bb5b0cfc6a13c758c56d879eb74aa2
       X-Runtime:
-      - '0.024448'
+      - '0.024967'
       X-Powered-By:
       - Phusion Passenger 4.0.23
       Date:
-      - Wed, 13 Nov 2013 09:17:34 UTC
+      - Thu, 14 Nov 2013 05:07:06 UTC
       Server:
       - nginx/1.4.3 + Phusion Passenger 4.0.23
     body:
       encoding: UTF-8
-      string: '{"id":"528342661974fceccd000072","accessibility":["Disabled Restroom"],"address":{"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":"528343901974fce954000056","name":"Moncef","title":"Director"}],"coordinates":[-73.9395687,42.8142432],"description":"This
-        is a description","faxes":[{"number":"7035551212","department":"CalFresh"}],"hours":"Monday-Friday
-        10am-5pm","kind":"Test","name":"Admin Test Location","phones":[{"number":"7035551212","vanity_number":"703555-ABCD","extension":"x1223","department":"CalFresh"}],"short_desc":"This
+      string: '{"id":"5284559f1974fc9646000072","accessibility":["Elevator","Disabled
+        Restroom"],"address":{"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":"52845a531974fc83f7000032","name":"Moncef","title":"Director","phone":"703-555-1212","email":"email@email.org","fax":"703-555-1234"}],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","emails":["eml@example.org"],"faxes":[{"number":"7035551212","department":"CalFresh"}],"kind":"Test","name":"Admin
+        Test Location","phones":[{"number":"7035551212","vanity_number":"703555-ABCD","extension":"x1223","department":"CalFresh"}],"short_desc":"This
         is a short description","slugs":["admin-test-location"],"transportation":"SAMTRANS
-        stops within 1/2 mile.","updated_at":"2013-11-13T01:17:04-08:00","urls":["http://codeforamerica.org"],"url":"http://localhost:8080/api/locations/528342661974fceccd000072","services":[{"id":"528342661974fceccd000075","description":"This
-        is a description","service_areas":["Belmont"],"updated_at":"2013-11-13T01:17:04-08:00"}],"organization":{"id":"528342661974fceccd000071","name":"Admin
-        Test Org","slugs":["admin-test-org"],"url":"http://localhost:8080/api/organizations/528342661974fceccd000071","locations_url":"http://localhost:8080/api/organizations/528342661974fceccd000071/locations"}}'
+        stops within 1/2 mile.","updated_at":"2013-11-13T21:06:27-08:00","url":"http://localhost:8080/api/locations/5284559f1974fc9646000072","services":[{"id":"5284559f1974fc9646000075","description":"This
+        is a description","service_areas":["San Mateo County"],"updated_at":"2013-11-13T20:50:39-08:00"}],"organization":{"id":"5284559f1974fc9646000071","name":"Admin
+        Test Org","slugs":["admin-test-org"],"url":"http://localhost:8080/api/organizations/5284559f1974fc9646000071","locations_url":"http://localhost:8080/api/organizations/5284559f1974fc9646000071/locations"}}'
     http_version: 
-  recorded_at: Wed, 13 Nov 2013 09:17:34 GMT
+  recorded_at: Thu, 14 Nov 2013 05:07:06 GMT
 - request:
     method: put
-    uri: http://localhost:8080/api/locations/528342661974fceccd000072?accessibility%5B0%5D=restroom&address%5Bcity%5D=utopia&address%5Bstate%5D=&address%5Bstreet%5D=123&address%5Bzip%5D=12345&api_token=<API_TOKEN>&contacts%5Bname%5D=Moncef&contacts%5Btitle%5D=Director&description=%0AThis%20is%20a%20description&emails%5B0%5D=&faxes%5Bdepartment%5D=CalFresh&faxes%5Bnumber%5D=7035551212&hours=Monday-Friday%2010am-5pm&kind=test&mail_address&name=Admin%20Test%20Location&phones%5Bdepartment%5D=CalFresh&phones%5Bextension%5D=x1223&phones%5Bnumber%5D=7035551212&phones%5Bvanity_number%5D=703555-ABCD&short_desc=%0AThis%20is%20a%20short%20description&transportation=%0ASAMTRANS%20stops%20within%201/2%20mile.&urls%5B0%5D=http://codeforamerica.org
+    uri: http://localhost:8080/api/locations/5284559f1974fc9646000072?accessibility%5B0%5D=elevator&accessibility%5B1%5D=restroom&address%5Bcity%5D=utopia&address%5Bstate%5D=&address%5Bstreet%5D=123&address%5Bzip%5D=12345&api_token=<API_TOKEN>&contacts%5Bemail%5D=email@email.org&contacts%5Bfax%5D=703-555-1234&contacts%5Bname%5D=Moncef&contacts%5Bphone%5D=703-555-1212&contacts%5Btitle%5D=Director&description=%0AThis%20is%20a%20description&emails%5B0%5D=eml@example.org&faxes%5Bdepartment%5D=CalFresh&faxes%5Bnumber%5D=7035551212&hours=&kind=test&mail_address&name=Admin%20Test%20Location&phones%5Bdepartment%5D=CalFresh&phones%5Bextension%5D=x1223&phones%5Bnumber%5D=7035551212&phones%5Bvanity_number%5D=703555-ABCD&short_desc=%0AThis%20is%20a%20short%20description&transportation=%0ASAMTRANS%20stops%20within%201/2%20mile.&urls
     body:
       encoding: UTF-8
       string: '{}'
@@ -88,13 +89,13 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - b22c4e6ce138939d3e50cd347735b16c
+      - 864818a8c3724edcf1e498e5aaef3a1e
       X-Runtime:
-      - '0.027427'
+      - '0.029630'
       X-Powered-By:
       - Phusion Passenger 4.0.23
       Date:
-      - Wed, 13 Nov 2013 09:17:35 UTC
+      - Thu, 14 Nov 2013 05:07:08 UTC
       Server:
       - nginx/1.4.3 + Phusion Passenger 4.0.23
     body:
@@ -104,7 +105,7 @@ http_interactions:
         is 2 characters)\nResolution:\n  Try persisting the document with valid data
         or remove the validations."}'
     http_version: 
-  recorded_at: Wed, 13 Nov 2013 09:17:35 GMT
+  recorded_at: Thu, 14 Nov 2013 05:07:08 GMT
 - request:
     method: get
     uri: http://localhost:8080/api/locations/admin-test-location?api_token=<API_TOKEN>
@@ -128,36 +129,37 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '1238'
+      - '1287'
       Connection:
       - keep-alive
       Status:
       - 200 OK
       Etag:
-      - '"804eedeac5b200160b1160c54e75a06d"'
+      - '"3e49000b8c54e4c4bf4c3a5e7ff25bb6"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Ua-Compatible:
       - IE=Edge
       X-Request-Id:
-      - 2fb77ec3d391a77df7589417289d95c7
+      - 960838681296f8c824951ce492424245
       X-Runtime:
-      - '0.026229'
+      - '0.023661'
       X-Powered-By:
       - Phusion Passenger 4.0.23
       Date:
-      - Wed, 13 Nov 2013 09:17:35 UTC
+      - Thu, 14 Nov 2013 05:07:08 UTC
       Server:
       - nginx/1.4.3 + Phusion Passenger 4.0.23
     body:
       encoding: UTF-8
-      string: '{"id":"528342661974fceccd000072","accessibility":["Disabled Restroom"],"address":{"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":"528343901974fce954000056","name":"Moncef","title":"Director"}],"coordinates":[-73.9395687,42.8142432],"description":"This
-        is a description","faxes":[{"number":"7035551212","department":"CalFresh"}],"hours":"Monday-Friday
-        10am-5pm","kind":"Test","name":"Admin Test Location","phones":[{"number":"7035551212","vanity_number":"703555-ABCD","extension":"x1223","department":"CalFresh"}],"short_desc":"This
+      string: '{"id":"5284559f1974fc9646000072","accessibility":["Elevator","Disabled
+        Restroom"],"address":{"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":"52845a531974fc83f7000032","name":"Moncef","title":"Director","phone":"703-555-1212","email":"email@email.org","fax":"703-555-1234"}],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","emails":["eml@example.org"],"faxes":[{"number":"7035551212","department":"CalFresh"}],"kind":"Test","name":"Admin
+        Test Location","phones":[{"number":"7035551212","vanity_number":"703555-ABCD","extension":"x1223","department":"CalFresh"}],"short_desc":"This
         is a short description","slugs":["admin-test-location"],"transportation":"SAMTRANS
-        stops within 1/2 mile.","updated_at":"2013-11-13T01:17:04-08:00","urls":["http://codeforamerica.org"],"url":"http://localhost:8080/api/locations/528342661974fceccd000072","services":[{"id":"528342661974fceccd000075","description":"This
-        is a description","service_areas":["Belmont"],"updated_at":"2013-11-13T01:17:04-08:00"}],"organization":{"id":"528342661974fceccd000071","name":"Admin
-        Test Org","slugs":["admin-test-org"],"url":"http://localhost:8080/api/organizations/528342661974fceccd000071","locations_url":"http://localhost:8080/api/organizations/528342661974fceccd000071/locations"}}'
+        stops within 1/2 mile.","updated_at":"2013-11-13T21:06:27-08:00","url":"http://localhost:8080/api/locations/5284559f1974fc9646000072","services":[{"id":"5284559f1974fc9646000075","description":"This
+        is a description","service_areas":["San Mateo County"],"updated_at":"2013-11-13T20:50:39-08:00"}],"organization":{"id":"5284559f1974fc9646000071","name":"Admin
+        Test Org","slugs":["admin-test-org"],"url":"http://localhost:8080/api/organizations/5284559f1974fc9646000071","locations_url":"http://localhost:8080/api/organizations/5284559f1974fc9646000071/locations"}}'
     http_version: 
-  recorded_at: Wed, 13 Nov 2013 09:17:35 GMT
-recorded_with: VCR 2.6.0
+  recorded_at: Thu, 14 Nov 2013 05:07:08 GMT
+recorded_with: VCR 2.7.0

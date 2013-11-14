@@ -1,0 +1,23 @@
+%h1 Add a new location for #{@org.name}
+
+= form_tag "create_location", :name => "edit_form", :id => "edit_form" do
+
+  = render "forms/new/location_name"
+  = render "forms/new/description"
+  = render "forms/new/short_desc"
+
+  = render "forms/new/address"
+  = render "forms/new/mail_address"
+  = render "forms/new/phones"
+  = render "forms/new/fax"
+  = render "forms/new/contacts"
+  = render "forms/new/email"
+  = render "forms/new/text_hours"
+  = render "forms/new/accessibility"
+  = render "forms/new/transportation"
+  = render "forms/new/urls"
+  = render "forms/new/kind"
+
+  = hidden_field_tag :org_id, @org._id
+  = hidden_field_tag :page, params[:page]
+  = submit_tag "Create new location for #{@org.name}", :class => "btn btn-primary"

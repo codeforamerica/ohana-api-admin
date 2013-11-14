@@ -13,6 +13,21 @@ module ApplicationHelper
     %w[Monday Tuesday Wednesday Thursday Friday Saturday Sunday]
   end
 
+  def accessibility_options
+    [
+      ["Information on CD", "cd"],
+      ["Interpreter for the deaf", "deaf_interpreter"],
+      ["Disabled Parking", "disabled_parking"],
+      ["Elevator", "elevator"],
+      ["Ramp", "ramp"],
+      ["Disabled Restroom", "restroom"],
+      ["Information on tape or in Braille", "tape_braille"],
+      ["TTY", "tty"],
+      ["Wheelchair", "wheelchair"],
+      ["Wheelchair-accessible van", "wheelchair_van"]
+    ]
+  end
+
   # Handles formatting of the page title by appending site name to end
   # of a particular page's title.
   # @param page_title [String] the page title from a particular view.

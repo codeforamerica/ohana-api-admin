@@ -29,27 +29,27 @@ http_interactions:
       Status:
       - 200 OK
       Etag:
-      - '"f52d836046183dc7e20e6ddaafc1a67c"'
+      - '"18e826d7e8324abc462d65e4f5611e10"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Ua-Compatible:
       - IE=Edge
       X-Request-Id:
-      - ef04388927468ad7146a7fd79e6c5469
+      - bf08c17a9df13f19ea08967e807b3c99
       X-Runtime:
-      - '0.026178'
+      - '0.028822'
       X-Powered-By:
       - Phusion Passenger 4.0.23
       Date:
-      - Wed, 13 Nov 2013 09:15:21 UTC
+      - Thu, 14 Nov 2013 05:08:19 UTC
       Server:
       - nginx/1.4.3 + Phusion Passenger 4.0.23
     body:
       encoding: UTF-8
-      string: '{"id":"528342661974fceccd00006e","description":"no phone","kind":"Test","mail_address":{"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
-        with no phone","short_desc":"no phone","slugs":["location-with-no-phone"],"updated_at":"2013-11-13T01:13:17-08:00","url":"http://localhost:8080/api/locations/528342661974fceccd00006e","services":[{"id":"528342661974fceccd000070","description":"no
-        phone","updated_at":"2013-11-13T01:12:54-08:00"}],"organization":{"id":"528342661974fceccd00006d","name":"Location
-        with no phone","slugs":["location-with-no-phone"],"url":"http://localhost:8080/api/organizations/528342661974fceccd00006d","locations_url":"http://localhost:8080/api/organizations/528342661974fceccd00006d/locations"}}'
+      string: '{"id":"5284559f1974fc964600006e","description":"no phone","kind":"Test","mail_address":{"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slugs":["location-with-no-phone"],"updated_at":"2013-11-13T21:06:58-08:00","url":"http://localhost:8080/api/locations/5284559f1974fc964600006e","services":[{"id":"5284559f1974fc9646000070","description":"no
+        phone","updated_at":"2013-11-13T21:04:31-08:00"}],"organization":{"id":"5284559f1974fc964600006d","name":"Location
+        with no phone","slugs":["location-with-no-phone"],"url":"http://localhost:8080/api/organizations/5284559f1974fc964600006d","locations_url":"http://localhost:8080/api/organizations/5284559f1974fc964600006d/locations"}}'
     http_version: 
-  recorded_at: Wed, 13 Nov 2013 09:15:21 GMT
-recorded_with: VCR 2.6.0
+  recorded_at: Thu, 14 Nov 2013 05:08:19 GMT
+recorded_with: VCR 2.7.0

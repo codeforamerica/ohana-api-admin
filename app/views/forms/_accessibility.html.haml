@@ -4,7 +4,7 @@
       Accessibility Options
     - accessibility = @location.key?(:accessibility) ? @location.accessibility : ""
   %fieldset#accessibility
-    - @accessibility.each do |a|
+    - accessibility_options.each do |a|
       = check_box_tag "accessibility_#{a[1]}", a[1], accessibility.include?(a[0]) ? true : false, :name => "accessibility_options[]"
       = a[0]
       %br

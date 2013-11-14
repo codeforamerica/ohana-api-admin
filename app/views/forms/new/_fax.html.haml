@@ -1,0 +1,15 @@
+%div.inst-box
+  %header
+    %strong
+      Fax Numbers
+  %fieldset#faxes
+    = "Number*"
+    = text_field_tag "fax_number[]", "", maxlength: 12, class: "span2"
+    %br
+    = "Department:"
+    = text_field_tag "fax_department[]", "", maxlength: 50, class: "span2"
+    %br
+    = link_to "Delete this fax number permanently", '#', class: "btn btn-danger remove_fax"
+  - fields = render "forms/single_fax"
+  %p
+    = link_to_function "Add a new fax number", ("add_fields(2, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary add_fax"

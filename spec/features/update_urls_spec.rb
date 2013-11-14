@@ -17,11 +17,13 @@ feature "Update a location's websites" do
     delete_two_urls
   end
 
-  scenario "with empty website", :vcr do
+  scenario "with empty website", { :js => true, :vcr => true } do
     visit_test_location
     fill_in "urls[]", with: ""
     click_button "Save changes"
-    expect(page).to_not have_content "Please enter a website"
+    visit_test_location
+    page.should have_no_selector(:xpath, "//input[@type='text' and @name='urls[]']")
+    add_url
   end
 
   scenario "with invalid website", :vcr do

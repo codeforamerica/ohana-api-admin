@@ -5,16 +5,16 @@
   - if @location.key?(:phones)
     - @location.phones.each do |phone|
       %fieldset#phones
-        = "Number*:"
+        = "Number*"
         = text_field_tag "number[]", phone.key?(:number) ? phone.number : "", maxlength: 12, class: "span2"
         %br
-        = "Vanity Number:"
+        = "Vanity Number (for example: 650-123-HELP)"
         = text_field_tag "vanity_number[]", phone.key?(:vanity_number) ? phone.vanity_number : "", maxlength: 12, class: "span2"
         %br
-        = "Extension:"
+        = "Extension"
         = text_field_tag "extension[]", phone.key?(:extension) ? phone.extension : "", maxlength: 8, class: "span2"
         %br
-        = "Department:"
+        = "Department"
         = text_field_tag "department[]", phone.key?(:department) ? phone.department : "", maxlength: 50, class: "span4"
         %br
         = link_to "Delete this number permanently", '#', class: "btn btn-danger remove_phone"

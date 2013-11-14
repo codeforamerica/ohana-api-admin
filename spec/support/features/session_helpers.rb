@@ -10,6 +10,10 @@ module Features
       click_button 'Sign in'
     end
 
+    def visit_locations
+      visit("/locations")
+    end
+
     def visit_test_location
       visit("/admin-test-location")
     end
@@ -54,11 +58,11 @@ module Features
       click_button "Save changes"
     end
 
-    # def add_url
-    #   click_link "Add a new website"
-    #   fill_in "urls[]", with: "http://monfresh.com"
-    #   click_button "Save changes"
-    # end
+    def add_url
+      click_link "Add a new website"
+      fill_in "urls[]", with: "http://monfresh.com"
+      click_button "Save changes"
+    end
 
     def add_two_urls
       click_link "Add a new website"

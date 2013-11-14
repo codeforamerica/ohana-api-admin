@@ -9,6 +9,29 @@ class ApplicationController < ActionController::Base
     %w[Sunday Monday Tuesday Wednesday Thursday Friday Saturday]
   end
 
+  def location_attributes
+    {
+      :accessibility  => accessibility,
+      :address        => address,
+      :contacts       => contacts,
+      :description    => params[:description],
+      :emails         => emails,
+      :faxes          => faxes,
+      :hours          => params[:text_hours],
+      :kind           => kind,
+      :mail_address   => mail_address,
+      :name           => location_name,
+      :phones         => phones,
+      :short_desc     => params[:short_desc],
+      :transportation => params[:transportation],
+      :urls           => urls
+    }
+  end
+
+  def accessibility
+    params[:accessibility_options]
+  end
+
   def address
     non_state_fields = [params[:street], params[:city], params[:zip]]
 
@@ -47,6 +70,18 @@ class ApplicationController < ActionController::Base
     contacts
   end
 
+  def emails
+    params[:emails] unless params[:emails].all?(&:empty?)
+  end
+
+  def kind
+    params[:kind] unless params[:kind].blank?
+  end
+
+  def location_name
+    params[:location_name]
+  end
+
   def mail_address
     all_fields = [params[:attention], params[:m_street], params[:m_city], params[:m_state], params[:m_zip]]
     unless all_fields.all?(&:empty?)
@@ -65,9 +100,9 @@ class ApplicationController < ActionController::Base
     vanity_numbers = params[:vanity_number]
     departments = params[:department]
     extensions = params[:extension]
-    hours = params[:hours]
+    hours = params[:hours] unless params[:hours].blank?
 
-    if numbers.present?
+    if numbers.present? && !numbers.all?(&:empty?)
       phones = []
       (0..numbers.length).each do |i|
         hash = {
@@ -119,6 +154,16 @@ class ApplicationController < ActionController::Base
     if k.present? && !k.all?(&:empty?)
       params[:keywords]
     end
+  end
+
+  def urls
+    if params[:urls].present? && !params[:urls].all?(&:empty?)
+      params[:urls]
+    end
+  end
+
+  def org_id
+    params[:org_id]
   end
 
   def schedule
