@@ -23,31 +23,31 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '4656'
+      - '5655'
       Connection:
       - keep-alive
       Status:
       - 200 OK
       X-Total-Count:
-      - '2'
+      - '3'
       X-Total-Pages:
       - '1'
       X-Current-Page:
       - '1'
       Etag:
-      - '"4f2b4c52d77889ba41833008fada3eac"'
+      - '"1e654d46e7b789ff33252109a117f094"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Ua-Compatible:
       - IE=Edge
       X-Request-Id:
-      - 334e28784d37a72eb8ffa5e803b6b991
+      - 826288629b46991af8de6974136dfec4
       X-Runtime:
-      - '0.022426'
+      - '0.025683'
       X-Powered-By:
       - Phusion Passenger 4.0.23
       Date:
-      - Fri, 15 Nov 2013 09:34:24 UTC
+      - Fri, 15 Nov 2013 09:34:26 UTC
       Server:
       - nginx/1.4.3 + Phusion Passenger 4.0.23
     body:
@@ -71,7 +71,7 @@ http_interactions:
         for screening appointment. Medical visits are by appointment only.","keywords":["HEALTH
         SERVICES","Outpatient Care","Community Clinics"],"service_areas":["Atherton","East
         Palo Alto","Menlo Park","Redwood City","San Carlos"],"updated_at":"2013-11-15T00:58:47-08:00","wait":"Varies."}],"organization":{"_id":"5285e2471974fc8edc000062","_slugs":["samaritan-house"],"created_at":"2013-11-15T00:58:47-08:00","name":"Samaritan
-        House","updated_at":"2013-11-15T00:58:47-08:00","url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062","locations_url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062/locations"},"slugs":["redwood-city-free-medical-clinic"],"id":"5285e2471974fc8edc000063","_score":2.9459102,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"5285e2471974fc8edc000067","_slugs":["san-mateo-free-medical-clinic"],"accessibility":["Elevator","Ramp","Wheelchair"],"address":{"city":"San
+        House","updated_at":"2013-11-15T00:58:47-08:00","url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062","locations_url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062/locations"},"slugs":["redwood-city-free-medical-clinic"],"id":"5285e2471974fc8edc000063","_score":2.609438,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"5285e2471974fc8edc000067","_slugs":["san-mateo-free-medical-clinic"],"accessibility":["Elevator","Ramp","Wheelchair"],"address":{"city":"San
         Mateo","state":"CA","street":"19 West 39th Avenue","zip":"94403"},"contacts":[{"_id":"5285e2471974fc8edc000068","name":"Sharon
         Petersen","title":"Administrator"}],"coordinates":[-122.2931271,37.5326926],"created_at":"2013-11-15T00:58:47-08:00","description":"Provides
         free medical and dental care to those in need. Offers basic medical care for
@@ -86,9 +86,11 @@ http_interactions:
         for screening appointment (650-347-3648).","keywords":["HEALTH SERVICES","Outpatient
         Care","Community Clinics"],"service_areas":["Belmont","Burlingame","Foster
         City","Millbrae","San Carlos","San Mateo"],"updated_at":"2013-11-15T00:58:47-08:00","wait":"Varies."}],"organization":{"_id":"5285e2471974fc8edc000062","_slugs":["samaritan-house"],"created_at":"2013-11-15T00:58:47-08:00","name":"Samaritan
-        House","updated_at":"2013-11-15T00:58:47-08:00","url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062","locations_url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062/locations"},"slugs":["san-mateo-free-medical-clinic"],"id":"5285e2471974fc8edc000067","_score":2.9459102,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null}]'
+        House","updated_at":"2013-11-15T00:58:47-08:00","url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062","locations_url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062/locations"},"slugs":["san-mateo-free-medical-clinic"],"id":"5285e2471974fc8edc000067","_score":2.609438,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"5285eaa01974fcc45a000001","_slugs":["new-location"],"address":{"city":"utopia","state":"XX","street":"modularity","zip":"12345"},"coordinates":[-73.9395687,42.8142432],"created_at":"2013-11-15T01:34:24-08:00","description":"new
+        description","name":"new location","short_desc":"new short description","updated_at":"2013-11-15T01:34:24-08:00","urls":["http://samaritanhouse.com"],"url":"http://localhost:8080/api/locations/5285eaa01974fcc45a000001","organization":{"_id":"5285e2471974fc8edc000062","_slugs":["samaritan-house"],"created_at":"2013-11-15T00:58:47-08:00","name":"Samaritan
+        House","updated_at":"2013-11-15T00:58:47-08:00","url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062","locations_url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062/locations"},"slugs":["new-location"],"id":"5285eaa01974fcc45a000001","_score":1.9798795,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null}]'
     http_version: 
-  recorded_at: Fri, 15 Nov 2013 09:34:24 GMT
+  recorded_at: Fri, 15 Nov 2013 09:34:26 GMT
 - request:
     method: get
     uri: http://localhost:8080/api/search?api_token=<API_TOKEN>&domain=samaritanhouse.com
@@ -112,31 +114,31 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '4656'
+      - '5655'
       Connection:
       - keep-alive
       Status:
       - 200 OK
       X-Total-Count:
-      - '2'
+      - '3'
       X-Total-Pages:
       - '1'
       X-Current-Page:
       - '1'
       Etag:
-      - '"4f2b4c52d77889ba41833008fada3eac"'
+      - '"1e654d46e7b789ff33252109a117f094"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Ua-Compatible:
       - IE=Edge
       X-Request-Id:
-      - 546fa59a99cd13cf9ce6565d131c8e20
+      - 76bcb263c91786da6271980cbb20e18d
       X-Runtime:
-      - '0.022946'
+      - '0.023102'
       X-Powered-By:
       - Phusion Passenger 4.0.23
       Date:
-      - Fri, 15 Nov 2013 09:34:24 UTC
+      - Fri, 15 Nov 2013 09:34:26 UTC
       Server:
       - nginx/1.4.3 + Phusion Passenger 4.0.23
     body:
@@ -160,7 +162,7 @@ http_interactions:
         for screening appointment. Medical visits are by appointment only.","keywords":["HEALTH
         SERVICES","Outpatient Care","Community Clinics"],"service_areas":["Atherton","East
         Palo Alto","Menlo Park","Redwood City","San Carlos"],"updated_at":"2013-11-15T00:58:47-08:00","wait":"Varies."}],"organization":{"_id":"5285e2471974fc8edc000062","_slugs":["samaritan-house"],"created_at":"2013-11-15T00:58:47-08:00","name":"Samaritan
-        House","updated_at":"2013-11-15T00:58:47-08:00","url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062","locations_url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062/locations"},"slugs":["redwood-city-free-medical-clinic"],"id":"5285e2471974fc8edc000063","_score":2.9459102,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"5285e2471974fc8edc000067","_slugs":["san-mateo-free-medical-clinic"],"accessibility":["Elevator","Ramp","Wheelchair"],"address":{"city":"San
+        House","updated_at":"2013-11-15T00:58:47-08:00","url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062","locations_url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062/locations"},"slugs":["redwood-city-free-medical-clinic"],"id":"5285e2471974fc8edc000063","_score":2.609438,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"5285e2471974fc8edc000067","_slugs":["san-mateo-free-medical-clinic"],"accessibility":["Elevator","Ramp","Wheelchair"],"address":{"city":"San
         Mateo","state":"CA","street":"19 West 39th Avenue","zip":"94403"},"contacts":[{"_id":"5285e2471974fc8edc000068","name":"Sharon
         Petersen","title":"Administrator"}],"coordinates":[-122.2931271,37.5326926],"created_at":"2013-11-15T00:58:47-08:00","description":"Provides
         free medical and dental care to those in need. Offers basic medical care for
@@ -175,12 +177,14 @@ http_interactions:
         for screening appointment (650-347-3648).","keywords":["HEALTH SERVICES","Outpatient
         Care","Community Clinics"],"service_areas":["Belmont","Burlingame","Foster
         City","Millbrae","San Carlos","San Mateo"],"updated_at":"2013-11-15T00:58:47-08:00","wait":"Varies."}],"organization":{"_id":"5285e2471974fc8edc000062","_slugs":["samaritan-house"],"created_at":"2013-11-15T00:58:47-08:00","name":"Samaritan
-        House","updated_at":"2013-11-15T00:58:47-08:00","url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062","locations_url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062/locations"},"slugs":["san-mateo-free-medical-clinic"],"id":"5285e2471974fc8edc000067","_score":2.9459102,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null}]'
+        House","updated_at":"2013-11-15T00:58:47-08:00","url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062","locations_url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062/locations"},"slugs":["san-mateo-free-medical-clinic"],"id":"5285e2471974fc8edc000067","_score":2.609438,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"5285eaa01974fcc45a000001","_slugs":["new-location"],"address":{"city":"utopia","state":"XX","street":"modularity","zip":"12345"},"coordinates":[-73.9395687,42.8142432],"created_at":"2013-11-15T01:34:24-08:00","description":"new
+        description","name":"new location","short_desc":"new short description","updated_at":"2013-11-15T01:34:24-08:00","urls":["http://samaritanhouse.com"],"url":"http://localhost:8080/api/locations/5285eaa01974fcc45a000001","organization":{"_id":"5285e2471974fc8edc000062","_slugs":["samaritan-house"],"created_at":"2013-11-15T00:58:47-08:00","name":"Samaritan
+        House","updated_at":"2013-11-15T00:58:47-08:00","url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062","locations_url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062/locations"},"slugs":["new-location"],"id":"5285eaa01974fcc45a000001","_score":1.9798795,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null}]'
     http_version: 
-  recorded_at: Fri, 15 Nov 2013 09:34:24 GMT
+  recorded_at: Fri, 15 Nov 2013 09:34:26 GMT
 - request:
     method: post
-    uri: http://localhost:8080/api/locations/?accessibility&address%5Bcity%5D=utopia&address%5Bstate%5D=XX&address%5Bstreet%5D=modularity&address%5Bzip%5D=12345&api_token=<API_TOKEN>&description=new%20description&emails&hours=&kind&mail_address&name=new%20location&organization_id=5285e2471974fc8edc000062&phones&short_desc=new%20short%20description&transportation=&urls%5B0%5D=http://samaritanhouse.com
+    uri: http://localhost:8080/api/locations/?accessibility&address%5Bcity%5D=utopia&address%5Bstate%5D=XX&address%5Bstreet%5D=modularity&address%5Bzip%5D=12345&api_token=<API_TOKEN>&description=new%20description&emails&hours=&kind&mail_address&name=new%20location&organization_id=5285e2471974fc8edc000062&phones&short_desc=&transportation=&urls%5B0%5D=http://samaritanhouse.com
     body:
       encoding: UTF-8
       string: '{}'
@@ -195,40 +199,38 @@ http_interactions:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
-      code: 201
-      message: Created
+      code: 400
+      message: Bad Request
     headers:
       Content-Type:
       - application/json
       Content-Length:
-      - '680'
+      - '217'
       Connection:
       - keep-alive
       Status:
-      - 201 Created
-      Etag:
-      - '"951495e3a603f15846b46e8dd711aed7"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      - 400 Bad Request
       X-Ua-Compatible:
       - IE=Edge
+      Cache-Control:
+      - no-cache
       X-Request-Id:
-      - 783b325375da22a697e42d706594f699
+      - 6f3f5c9007ff4b5ac565dd9a5e576bc8
       X-Runtime:
-      - '0.524788'
+      - '0.021416'
       X-Powered-By:
       - Phusion Passenger 4.0.23
       Date:
-      - Fri, 15 Nov 2013 09:34:25 UTC
+      - Fri, 15 Nov 2013 09:34:26 UTC
       Server:
       - nginx/1.4.3 + Phusion Passenger 4.0.23
     body:
       encoding: UTF-8
-      string: '{"id":"5285eaa01974fcc45a000001","address":{"street":"modularity","city":"utopia","state":"XX","zip":"12345"},"coordinates":[-73.9395687,42.8142432],"description":"new
-        description","name":"new location","short_desc":"new short description","slugs":["new-location"],"updated_at":"2013-11-15T01:34:24-08:00","urls":["http://samaritanhouse.com"],"url":"http://localhost:8080/api/locations/5285eaa01974fcc45a000001","organization":{"id":"5285e2471974fc8edc000062","name":"Samaritan
-        House","slugs":["samaritan-house"],"url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062","locations_url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062/locations"}}'
+      string: '{"message":"\nProblem:\n  Validation of Location failed.\nSummary:\n  The
+        following errors were found: Short desc can''t be blank\nResolution:\n  Try
+        persisting the document with valid data or remove the validations."}'
     http_version: 
-  recorded_at: Fri, 15 Nov 2013 09:34:25 GMT
+  recorded_at: Fri, 15 Nov 2013 09:34:26 GMT
 - request:
     method: get
     uri: http://localhost:8080/api/search?api_token=<API_TOKEN>&domain=samaritanhouse.com
@@ -252,31 +254,31 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '4656'
+      - '5655'
       Connection:
       - keep-alive
       Status:
       - 200 OK
       X-Total-Count:
-      - '2'
+      - '3'
       X-Total-Pages:
       - '1'
       X-Current-Page:
       - '1'
       Etag:
-      - '"44f6dcbe2285a354bf9d6ca558211524"'
+      - '"1e654d46e7b789ff33252109a117f094"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Ua-Compatible:
       - IE=Edge
       X-Request-Id:
-      - 7417054501eca53de4227238a95b5083
+      - 63d10af8aca3ae26594f1ea950e185ea
       X-Runtime:
-      - '0.045929'
+      - '0.022912'
       X-Powered-By:
       - Phusion Passenger 4.0.23
       Date:
-      - Fri, 15 Nov 2013 09:34:25 UTC
+      - Fri, 15 Nov 2013 09:34:26 UTC
       Server:
       - nginx/1.4.3 + Phusion Passenger 4.0.23
     body:
@@ -300,7 +302,7 @@ http_interactions:
         for screening appointment. Medical visits are by appointment only.","keywords":["HEALTH
         SERVICES","Outpatient Care","Community Clinics"],"service_areas":["Atherton","East
         Palo Alto","Menlo Park","Redwood City","San Carlos"],"updated_at":"2013-11-15T00:58:47-08:00","wait":"Varies."}],"organization":{"_id":"5285e2471974fc8edc000062","_slugs":["samaritan-house"],"created_at":"2013-11-15T00:58:47-08:00","name":"Samaritan
-        House","updated_at":"2013-11-15T00:58:47-08:00","url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062","locations_url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062/locations"},"slugs":["redwood-city-free-medical-clinic"],"id":"5285e2471974fc8edc000063","_score":2.5260563,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"5285e2471974fc8edc000067","_slugs":["san-mateo-free-medical-clinic"],"accessibility":["Elevator","Ramp","Wheelchair"],"address":{"city":"San
+        House","updated_at":"2013-11-15T00:58:47-08:00","url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062","locations_url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062/locations"},"slugs":["redwood-city-free-medical-clinic"],"id":"5285e2471974fc8edc000063","_score":2.609438,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"5285e2471974fc8edc000067","_slugs":["san-mateo-free-medical-clinic"],"accessibility":["Elevator","Ramp","Wheelchair"],"address":{"city":"San
         Mateo","state":"CA","street":"19 West 39th Avenue","zip":"94403"},"contacts":[{"_id":"5285e2471974fc8edc000068","name":"Sharon
         Petersen","title":"Administrator"}],"coordinates":[-122.2931271,37.5326926],"created_at":"2013-11-15T00:58:47-08:00","description":"Provides
         free medical and dental care to those in need. Offers basic medical care for
@@ -315,7 +317,9 @@ http_interactions:
         for screening appointment (650-347-3648).","keywords":["HEALTH SERVICES","Outpatient
         Care","Community Clinics"],"service_areas":["Belmont","Burlingame","Foster
         City","Millbrae","San Carlos","San Mateo"],"updated_at":"2013-11-15T00:58:47-08:00","wait":"Varies."}],"organization":{"_id":"5285e2471974fc8edc000062","_slugs":["samaritan-house"],"created_at":"2013-11-15T00:58:47-08:00","name":"Samaritan
-        House","updated_at":"2013-11-15T00:58:47-08:00","url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062","locations_url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062/locations"},"slugs":["san-mateo-free-medical-clinic"],"id":"5285e2471974fc8edc000067","_score":2.5260563,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null}]'
+        House","updated_at":"2013-11-15T00:58:47-08:00","url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062","locations_url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062/locations"},"slugs":["san-mateo-free-medical-clinic"],"id":"5285e2471974fc8edc000067","_score":2.609438,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null},{"_id":"5285eaa01974fcc45a000001","_slugs":["new-location"],"address":{"city":"utopia","state":"XX","street":"modularity","zip":"12345"},"coordinates":[-73.9395687,42.8142432],"created_at":"2013-11-15T01:34:24-08:00","description":"new
+        description","name":"new location","short_desc":"new short description","updated_at":"2013-11-15T01:34:24-08:00","urls":["http://samaritanhouse.com"],"url":"http://localhost:8080/api/locations/5285eaa01974fcc45a000001","organization":{"_id":"5285e2471974fc8edc000062","_slugs":["samaritan-house"],"created_at":"2013-11-15T00:58:47-08:00","name":"Samaritan
+        House","updated_at":"2013-11-15T00:58:47-08:00","url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062","locations_url":"http://localhost:8080/api/organizations/5285e2471974fc8edc000062/locations"},"slugs":["new-location"],"id":"5285eaa01974fcc45a000001","_score":1.9798795,"_type":"location","_index":"development-ohana_api","_version":null,"sort":null,"highlight":null,"_explanation":null}]'
     http_version: 
-  recorded_at: Fri, 15 Nov 2013 09:34:25 GMT
+  recorded_at: Fri, 15 Nov 2013 09:34:26 GMT
 recorded_with: VCR 2.7.0

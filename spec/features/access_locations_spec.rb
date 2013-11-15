@@ -6,6 +6,8 @@ feature "Accessing /locations" do
     visit("/locations")
     expect(page).to have_content 'Below you should see a list of locations'
     expect(page).to_not have_content 'As an admin'
+    only_admin_locations = all('a').select { |a| a.text.include?("Corps") }
+    expect(only_admin_locations).to be_empty
   end
 
   scenario "when signed in as an admin" do
@@ -13,6 +15,8 @@ feature "Accessing /locations" do
     sign_in(valid_user.email, valid_user.password)
     visit("/locations")
     expect(page).to have_content 'As an admin'
+    only_admin_locations = all('a').select { |a| a.text.include?("Corps") }
+    expect(only_admin_locations).to_not be_empty
   end
 
   scenario "when not signed in" do

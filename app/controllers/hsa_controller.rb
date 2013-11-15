@@ -8,9 +8,8 @@ class HsaController < ApplicationController
       page = params[:page].present? ? params[:page] : 1
       @locations = Ohanakapa.locations(page: page)
     else
-      domain = current_user.email.split("@").last
-      @locations = Ohanakapa.search("search", :email => domain)
-      @org = @locations.first.organization
+      @locations = perform_search
+      @org = @locations.first.organization if @locations.present?
     end
   end
 
@@ -39,6 +38,11 @@ class HsaController < ApplicationController
     #   end
     # end
 
+  end
+
+  def new
+    @locations = perform_search
+    @org = @locations.first.organization
   end
 
   def edit_services
@@ -188,12 +192,6 @@ class HsaController < ApplicationController
     redirect_to locations_path, notice: "Changes for #{location_name} successfully saved!" and return
   end
 
-  def new
-    domain = current_user.email.split("@").last
-    @locations = Ohanakapa.search("search", :email => domain)
-    @org = @locations.first.organization
-  end
-
   def create_location
     begin
       Ohanakapa.post("locations/",
@@ -295,6 +293,10 @@ class HsaController < ApplicationController
     redirect_to locations_path, notice: "New location #{location_name} successfully created!" and return
   end
 
+  def domain
+    current_user.email.split("@").last
+  end
+
   private
 
   def admin?
@@ -302,17 +304,33 @@ class HsaController < ApplicationController
   end
 
   def location_domain_matches_user_domain?(location)
-    domain = current_user.email.split("@").last
-
     if location.key?(:emails)
       emails = location.emails.select { |email| email.include?(domain) }
+      exact_match = location.emails.select { |email| email == current_user.email }
     end
 
     if location.key?(:urls)
       urls = location.urls.select { |url| url.include?(domain) }
     end
 
-    emails.present? || urls.present?
+    if current_user_has_generic_email?
+      exact_match.present?
+    else
+      emails.present? || urls.present?
+    end
+  end
+
+  def current_user_has_generic_email?
+    generic_domains = %w(gmail.com hotmail.com aol.com yahoo.com sbcglobal.net)
+    generic_domains.include?(domain)
+  end
+
+  def perform_search
+    if current_user_has_generic_email?
+      Ohanakapa.search("search", :email => current_user.email)
+    else
+      Ohanakapa.search("search", :domain => domain)
+    end
   end
 
 end
