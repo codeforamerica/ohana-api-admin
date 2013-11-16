@@ -321,7 +321,7 @@ class HsaController < ApplicationController
   end
 
   def current_user_has_generic_email?
-    generic_domains = %w(gmail.com hotmail.com aol.com yahoo.com sbcglobal.net)
+    generic_domains = %w(gmail.com hotmail.com aol.com yahoo.com sbcglobal.net co.sanmateo.ca.us)
     generic_domains.include?(domain)
   end
 
