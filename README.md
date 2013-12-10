@@ -59,7 +59,7 @@ In the Ohana API, go to `config/application.yml` and add an entry like this to d
 ### Allow the Admin app to write to the Ohana API
 The Ohana API currently only allows one app to write to the API. It determines if an HTTP request is authorized to make a PUT, POST, or DELETE request based on the `X-Api-Token` header that it sends. Normally, you would obtain an API Token by signing up on the Ohana API site and registering an application. For testing purposes, you can skip that step and just define your own token (a series of alphanumeric characters, such as `as56hsd789sdf`).
 
-In the Ohana API, go to `config/application.yml` and add an entry like this to define your token:
+In the Ohana API, make sure `config/application.yml` includes an entry like this that defines the token used by the admin app:
 
     ADMIN_APP_TOKEN: your_token
 
