@@ -37,7 +37,7 @@ GEM
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    bootstrap-sass (3.1.0.2)
+    bootstrap-sass (2.3.2.2)
       sass (~> 3.2)
     builder (3.0.4)
     cancan (1.6.10)
@@ -237,7 +237,7 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
-  bootstrap-sass
+  bootstrap-sass (~> 2.3.2)
   cancan
   capybara
   coffee-rails (~> 3.2.1)
