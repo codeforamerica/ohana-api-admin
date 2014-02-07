@@ -9,7 +9,7 @@ by setting their "role" field to "admin". This is done by editing the role field
 ## Stack Overview
 
 * Ruby version 2.0.0
-* Rails version 3.2.13
+* Rails version 3.2.16
 * MongoDB with the Mongoid ORM
 * Testing Frameworks: RSpec, Factory Girl, Capybara
 
@@ -18,7 +18,7 @@ Please note that the instructions below have only been tested on OS X. If you ar
 
 ###Prerequisites
 
-#### Git, Ruby 2.0.0+, Rails 3.2.13+ (+ Homebrew on OS X)
+#### Git, Ruby 2.0.0+, Rails 3.2.16+ (+ Homebrew on OS X)
 **OS X**: [Set up a dev environment on OS X with Homebrew, Git, RVM, Ruby, and Rails](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/)
 
 **Windows**: Try [RailsInstaller](http://railsinstaller.org), along with some of these [tutorials](https://www.google.com/search?q=install+rails+on+windows) if you get stuck.
@@ -53,7 +53,7 @@ See the Downloads page on mongodb.org for steps to install on other systems: [ht
 In order to be able to test the admin interface, you need data. Since this app gets its data from the Ohana API, you need to [install the Ohana API](https://github.com/codeforamerica/ohana-api#installation) first, which comes with a sample dataset.
 
 ### Configure Ohana API Admin to point to your local Ohana API
-In the Ohana API, go to `config/application.yml` and add an entry like this to define your API endpoint:
+In the Ohana API Admin, go to `config/application.yml` and add an entry like this to define your API endpoint:
 
     OHANA_API_ENDPOINT: http://localhost:8080/api
 
