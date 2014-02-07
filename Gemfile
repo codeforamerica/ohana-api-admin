@@ -39,7 +39,7 @@ group :test do
   #gem 'poltergeist'
   gem 'selenium-webdriver'
   gem "vcr"
-  gem 'webmock'
+  gem 'webmock', "< 1.16.0"
 end
 
 gem "ohanakapa", "~> 1.0"
