@@ -222,7 +222,7 @@ GEM
       rack
       raindrops (~> 0.7)
     uri_template (0.5.3)
-    vcr (2.7.0)
+    vcr (2.8.0)
     warden (1.2.3)
       rack (>= 1.0)
     webmock (1.15.2)
