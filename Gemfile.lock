@@ -32,7 +32,7 @@ GEM
     arel (3.0.3)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
-    better_errors (0.9.0)
+    better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
