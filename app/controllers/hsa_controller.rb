@@ -46,15 +46,8 @@ class HsaController < ApplicationController
   end
 
   def edit_services
-    cat_ids = params[:category_ids]
     service_id = params[:service_id]
     location_id = params[:location_id]
-
-    # contacts
-    names = params[:names]
-    if names.blank?
-      Ohanakapa.delete("locations/#{location_id}/contacts")
-    end
 
     begin
       Ohanakapa.update_location(location_id, location_attributes)
@@ -159,7 +152,6 @@ class HsaController < ApplicationController
           :description     => params[:description],
           :eligibility     => params[:eligibility],
           :fees            => params[:fees],
-          :funding_sources => funding_sources,
           :how_to_apply    => params[:how_to_apply],
           :keywords        => keywords,
           :name            => params[:service_name],
@@ -177,7 +169,6 @@ class HsaController < ApplicationController
       end
     end
 
-    Ohanakapa.replace_all_categories(service_id, cat_ids) if cat_ids
     #Ohanakapa.put("locations/#{location_id}/schedule", :query => { :schedule => schedule }) if schedule
 
     begin
@@ -188,6 +179,12 @@ class HsaController < ApplicationController
           alert: "Organization name can't be blank!" and return
       end
     end
+
+    Ohanakapa.put("services/#{service_id}/categories", :query =>
+      {
+        :category_slugs => params[:category_slugs]
+      }
+    )
 
     redirect_to locations_path, notice: "Changes for #{location_name} successfully saved!" and return
   end

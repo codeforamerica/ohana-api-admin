@@ -7,7 +7,16 @@ var main = (function () {
 	// initalize the application
 	function init()
 	{
-		var lnks = $('#categories li');
+		var checkboxes = $('#categories input');
+
+		var currentCheckbox;
+		for (var i=0; i < checkboxes.length; i++)
+		{
+			currentCheckbox = checkboxes[i];
+			_checkState('depth',0,currentCheckbox);
+		}
+
+		var lnks = $('#categories input');
 
 		var curr;
 		for (var l=0; l < lnks.length; l++)
@@ -29,7 +38,7 @@ var main = (function () {
 
 	function _checkState(prefix,depth,checkbox)
 	{
-		var item = $(checkbox).parent().parent(); // parent li item
+		var item = $(checkbox).parent(); // parent li item
 		var id = prefix+String(depth);
 		while(!item.hasClass(id))
 		{

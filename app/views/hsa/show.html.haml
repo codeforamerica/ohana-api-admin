@@ -42,21 +42,21 @@
       = render "forms/keywords", :service => service
 
       %div.content-box
-        %p#existing-keywords
+        %p
           %strong= "Existing Categories:"
-          %ul
+          %ul#existing-categories
             - if service.key?(:categories)
-              - service.categories.each do |cat|
+              - cats = service.categories
+              - @slugs = cats.map(&:slugs)
+              - cats.each do |cat|
                 %li
                   = cat.name
       %div#categories.inst-box
         %header
           %strong
-            Categories:
-          Please note that by making any changes to the categories, you will be replacing the existing categories, not adding to them. We are working on fixing that.
-
+            Categories
         %ul
-          = render "categories"
+          = render "forms/categories", :service => service, :slugs => @slugs
 
   %div.inst-box
     %header
