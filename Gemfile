@@ -38,12 +38,10 @@ group :test do
   #gem "capybara-webkit"
   #gem 'poltergeist'
   gem 'selenium-webdriver'
-  gem "vcr"
-  gem 'webmock', "< 1.16.0"
 end
 
 gem "ohanakapa", "~> 1.0"
-gem 'faraday-http-cache'
+gem 'faraday-http-cache', "0.2.1"
 gem 'newrelic_rpm'
 
 gem "devise" # for authentication

@@ -5,7 +5,7 @@ feature "Update a service's eligibility" do
     login_admin
   end
 
-  scenario "with full then empty eligibility", :vcr do
+  scenario "with full then empty eligibility" do
     visit_test_location
     fill_in "eligibility", with: "This is an eligibility"
     click_button "Save changes"

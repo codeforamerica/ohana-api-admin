@@ -2,8 +2,9 @@
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
+
 #require 'capybara/poltergeist'
-#Capybara.javascript_driver = :webkit
+Capybara.javascript_driver = :selenium
 #Capybara.ignore_hidden_elements = true
 #require 'email_spec'
 
@@ -12,9 +13,10 @@ require 'rspec/rails'
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
 RSpec.configure do |config|
-  config.treat_symbols_as_metadata_keys_with_true_values = true
+  #config.treat_symbols_as_metadata_keys_with_true_values = true
   config.include Features::SessionHelpers, type: :feature
-  config.include Features::AdminHelper, type: :feature
+  config.include Warden::Test::Helpers
+  Warden.test_mode!
   #config.include(EmailSpec::Helpers)
   #config.include(EmailSpec::Matchers)
 
@@ -30,26 +32,20 @@ RSpec.configure do |config|
   config.order = "random"
 
   config.before(:suite) do
+    DatabaseCleaner.clean_with(:truncation)
+  end
+
+  config.before(:each, :js => true) do
     DatabaseCleaner.strategy = :truncation
   end
+
   config.before(:each) do
     DatabaseCleaner.start
   end
+
   config.after(:each) do
     DatabaseCleaner.clean
     Warden.test_reset!
   end
 end
 
-require 'vcr'
-VCR.configure do |c|
-  c.configure_rspec_metadata!
-  c.allow_http_connections_when_no_cassette = true
-  c.ignore_hosts '127.0.0.1'
-  #c.default_cassette_options = { :record => ENV['TRAVIS'] ? :none : :once, :allow_playback_repeats => true }
-  c.cassette_library_dir  = "spec/cassettes"
-  c.hook_into :webmock
-  c.filter_sensitive_data("<API_TOKEN>") do
-    ENV['OHANA_API_TOKEN']
-  end
-end

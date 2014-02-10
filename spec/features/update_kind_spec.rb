@@ -5,14 +5,14 @@ feature "Update a location's kind" do
     login_admin
   end
 
-  scenario "with empty kind", :vcr do
+  scenario "with empty kind" do
     visit_test_location
     select("--CHOOSE--", :from => "kind")
     click_button "Save changes"
     expect(page).to_not have_content "Please enter a kind"
   end
 
-  scenario "with valid kind", :vcr do
+  scenario "with valid kind" do
     visit_test_location
     select("Test", :from => "kind")
     click_button "Save changes"

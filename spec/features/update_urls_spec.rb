@@ -5,35 +5,51 @@ feature "Update a location's websites" do
     login_admin
   end
 
-  scenario "when location doesn't have any websites", :vcr do
+  scenario "when location doesn't have any websites" do
     visit_location_with_no_phone
-    page.should have_no_selector(:xpath, "//input[@type='text' and @name='urls[]']")
+    page.should have_no_selector(
+      :xpath, "//input[@type='text' and @name='urls[]']")
   end
 
-  scenario "by adding 2 new websites", { :js => true, :vcr => true } do
+  scenario "by adding 2 new websites", :js => true do
     visit_location_with_no_phone
     add_two_urls
     visit_location_with_no_phone
-    delete_two_urls
+    expect(page).to have_link "Delete this website permanently"
+    delete_all_urls
+    visit_location_with_no_phone
+    page.should have_no_selector(
+      :xpath, "//input[@type='text' and @name='urls[]']")
   end
 
-  scenario "with empty website", { :js => true, :vcr => true } do
+  scenario "with empty website", :js => true do
     visit_test_location
     fill_in "urls[]", with: ""
     click_button "Save changes"
     visit_test_location
-    page.should have_no_selector(:xpath, "//input[@type='text' and @name='urls[]']")
+    page.should have_no_selector(
+      :xpath, "//input[@type='text' and @name='urls[]']")
     add_url
   end
 
-  scenario "with invalid website", :vcr do
+  scenario "with 2 urls but one is empty", :js => true do
+    visit_test_location # it already has one
+    click_link "Add a new website"
+    click_button "Save changes"
+    visit_test_location
+    total_urls = page.
+      all(:xpath, "//input[@type='text' and @name='urls[]']")
+    total_urls.length.should eq 1
+  end
+
+  scenario "with invalid website" do
     visit_test_location
     fill_in "urls[]", with: "www.monfresh.com"
     click_button "Save changes"
     expect(page).to have_content "Please enter a valid URL"
   end
 
-  scenario "with valid website", :vcr do
+  scenario "with valid website" do
     visit_test_location
     fill_in "urls[]", with: "http://codeforamerica.org"
     click_button "Save changes"

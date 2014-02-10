@@ -5,7 +5,7 @@ feature "Update a service's wait time" do
     login_admin
   end
 
-  scenario "with full then empty wait", :vcr do
+  scenario "with full then empty wait" do
     visit_test_location
     fill_in "wait", with: "This is a wait"
     click_button "Save changes"

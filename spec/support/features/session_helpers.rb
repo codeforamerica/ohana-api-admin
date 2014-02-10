@@ -10,6 +10,16 @@ module Features
       click_button 'Sign in'
     end
 
+    def login_admin
+      admin = FactoryGirl.create(:admin_user)
+      login_as(admin, :scope => :user)
+    end
+
+    def login_user
+      user = FactoryGirl.create(:user)
+      login_as(user, :scope => :user)
+    end
+
     def visit_locations
       visit("/locations")
     end
@@ -78,7 +88,7 @@ module Features
     #   click_button "Save changes"
     # end
 
-    def delete_two_urls
+    def delete_all_urls
       delete_links = all("a", :text => "Delete this website permanently")
       delete_links.each do |a|
         click_link a[:text], match: :first
@@ -101,10 +111,27 @@ module Features
       click_button "Save changes"
     end
 
-    def delete_two_service_areas
+    def delete_all_service_areas
       delete_links = all("a", :text => "Delete this service area permanently")
       delete_links.each do |a|
-        click_link a[:text], match: :first
+        click_link a.text, match: :first
+      end
+      click_button "Save changes"
+    end
+
+    def add_two_keywords
+      click_link "Add a new keyword"
+      fill_in "keywords[]", with: "homeless"
+      click_link "Add a new keyword"
+      keywords = page.all(:xpath, "//input[@type='text' and @name='keywords[]']")
+      fill_in keywords[-1][:id], with: "CalFresh"
+      click_button "Save changes"
+    end
+
+    def delete_all_keywords
+      delete_links = all("a", :text => "Delete this keyword permanently")
+      delete_links.each do |a|
+        click_link a.text, match: :first
       end
       click_button "Save changes"
     end
@@ -155,6 +182,15 @@ module Features
       within_fieldset("accessibility") do
         all('input[type=checkbox]').each do |checkbox|
           check checkbox[:id]
+        end
+      end
+      click_button "Save changes"
+    end
+
+    def reset_categories
+      within("#categories") do
+        all('input[type=checkbox]').each do |checkbox|
+          uncheck checkbox[:id]
         end
       end
       click_button "Save changes"

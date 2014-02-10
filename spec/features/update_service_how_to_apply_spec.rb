@@ -5,7 +5,7 @@ feature "Update a service's how to apply" do
     login_admin
   end
 
-  scenario "with full then empty how to apply", :vcr do
+  scenario "with full then empty how to apply" do
     visit_test_location
     fill_in "how_to_apply", with: "This is a how to apply"
     click_button "Save changes"

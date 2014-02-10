@@ -5,28 +5,30 @@ feature "Update a service's funding sources" do
     login_admin
   end
 
-  xscenario "when service doesn't have any funding sources", :vcr do
+  xscenario "when service doesn't have any funding sources" do
     visit_location_with_no_phone
-    page.should have_no_selector(:xpath, "//input[@type='text' and @name='funding_sources[]']")
+    page.should have_no_selector(
+      :xpath, "//input[@type='text' and @name='funding_sources[]']")
   end
 
-  xscenario "by adding 2 new funding_sources", { :js => true, :vcr => true } do
+  xscenario "by adding 2 new funding_sources", :js => true do
     visit_location_with_no_phone
     add_two_funding_sources
     visit_location_with_no_phone
     delete_two_funding_sources
   end
 
-  xscenario "with empty funding source", { :js => true, :vcr => true } do
+  xscenario "with empty funding source", :js => true do
     visit_test_location
     fill_in "funding_sources[]", with: ""
     click_button "Save changes"
     visit_test_location
-    page.should have_no_selector(:xpath, "//input[@type='text' and @name='funding_sources[]']")
+    page.should have_no_selector(
+      :xpath, "//input[@type='text' and @name='funding_sources[]']")
     add_funding_source
   end
 
-  xscenario "with invalid funding source", :vcr do
+  xscenario "with invalid funding source" do
     visit_test_location
     fill_in "funding_sources[]", with: "Belmont, CA"
     click_button "Save changes"
@@ -35,7 +37,7 @@ feature "Update a service's funding sources" do
       all words are capitalized."
   end
 
-  xscenario "with valid funding source", :vcr do
+  xscenario "with valid funding source" do
     visit_test_location
     fill_in "funding_sources[]", with: "San Mateo County"
     click_button "Save changes"

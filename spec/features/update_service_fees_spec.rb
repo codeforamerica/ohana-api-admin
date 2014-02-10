@@ -5,7 +5,7 @@ feature "Update a service's fees" do
     login_admin
   end
 
-  scenario "with full then empty fees", :vcr do
+  scenario "with full then empty fees" do
     visit_test_location
     fill_in "fees", with: "These are fees"
     click_button "Save changes"

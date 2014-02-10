@@ -5,7 +5,7 @@ feature "Update a location's hours" do
     login_admin
   end
 
-  scenario "with empty hours", :vcr do
+  scenario "with empty hours" do
     visit_test_location
     fill_in "text_hours", with: ""
     click_button "Save changes"
@@ -13,7 +13,7 @@ feature "Update a location's hours" do
     find_field('text_hours').value.should eq ""
   end
 
-  scenario "with valid description", :vcr do
+  scenario "with valid description" do
     visit_test_location
     fill_in "text_hours", with: "Monday-Friday 10am-5pm"
     click_button "Save changes"

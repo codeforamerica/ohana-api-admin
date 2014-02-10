@@ -5,12 +5,12 @@ feature "Update a location's street address" do
     login_admin
   end
 
-  scenario "when location doesn't have a street address", :vcr do
+  scenario "when location doesn't have a street address" do
     visit_location_with_no_phone
     find_field('street').value.should eq ""
   end
 
-  scenario "by adding a new street address", :vcr do
+  scenario "by adding a new street address" do
     visit_location_with_no_phone
     add_street_address
     visit_location_with_no_phone
@@ -19,9 +19,11 @@ feature "Update a location's street address" do
     find_field('state').value.should eq "XX"
     find_field('zip').value.should eq "12345"
     remove_street_address
+    visit_location_with_no_phone
+    find_field('street').value.should eq ""
   end
 
-    scenario "with an empty street", :vcr do
+    scenario "with an empty street" do
     visit_test_location
     fill_in "street", with: ""
     fill_in "city", with: "utopia"
@@ -31,7 +33,7 @@ feature "Update a location's street address" do
     expect(page).to have_content "Please enter a street"
   end
 
-  scenario "with an empty city", :vcr do
+  scenario "with an empty city" do
     visit_test_location
     fill_in "street", with: "123"
     fill_in "city", with: ""
@@ -41,7 +43,7 @@ feature "Update a location's street address" do
     expect(page).to have_content "Please enter a city"
   end
 
-  scenario "with an empty state", :vcr do
+  scenario "with an empty state" do
     visit_test_location
     fill_in "street", with: "123"
     fill_in "city", with: "utopia"
@@ -51,7 +53,7 @@ feature "Update a location's street address" do
     expect(page).to have_content "Please enter a state abbreviation"
   end
 
-  scenario "with an empty zip", :vcr do
+  scenario "with an empty zip" do
     visit_test_location
     fill_in "street", with: "123"
     fill_in "city", with: "utopia"
@@ -61,7 +63,7 @@ feature "Update a location's street address" do
     expect(page).to have_content "Please enter a ZIP code"
   end
 
-  scenario "with an invalid state", :vcr do
+  scenario "with an invalid state" do
     visit_test_location
     fill_in "street", with: "123"
     fill_in "city", with: "utopia"
@@ -71,7 +73,7 @@ feature "Update a location's street address" do
     expect(page).to have_content "Please enter a valid state abbreviation"
   end
 
-  scenario "with an invalid zip", :vcr do
+  scenario "with an invalid zip" do
     visit_test_location
     fill_in "street", with: "123"
     fill_in "city", with: "utopia"
