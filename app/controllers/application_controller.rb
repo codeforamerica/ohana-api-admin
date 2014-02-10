@@ -138,27 +138,27 @@ class ApplicationController < ActionController::Base
   def service_areas
     service_areas = params[:service_areas]
     if service_areas.present? && !service_areas.all?(&:empty?)
-      params[:service_areas]
+      params[:service_areas].delete_if { |sa| sa.blank? }
     end
   end
 
-  def funding_sources
-    fs = params[:funding_sources]
-    if fs.present? && !fs.all?(&:empty?)
-      params[:funding_sources]
-    end
-  end
+  # def funding_sources
+  #   fs = params[:funding_sources]
+  #   if fs.present? && !fs.all?(&:empty?)
+  #     params[:funding_sources]
+  #   end
+  # end
 
   def keywords
     k = params[:keywords]
     if k.present? && !k.all?(&:empty?)
-      params[:keywords]
+      params[:keywords].delete_if { |k| k.blank? }
     end
   end
 
   def urls
     if params[:urls].present? && !params[:urls].all?(&:empty?)
-      params[:urls]
+      params[:urls].delete_if { |url| url.blank? }
     end
   end
 
