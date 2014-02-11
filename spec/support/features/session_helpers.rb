@@ -189,9 +189,17 @@ module Features
 
     def reset_categories
       within("#categories") do
-        all('input[type=checkbox]').each do |checkbox|
-          uncheck checkbox[:id]
-        end
+        uncheck "category_emergency"
+        uncheck "category_food"
+        uncheck "category_housing"
+        uncheck "category_goods"
+        uncheck "category_transit"
+        uncheck "category_health"
+        uncheck "category_money"
+        uncheck "category_care"
+        uncheck "category_education"
+        uncheck "category_work"
+        uncheck "category_legal"
       end
       click_button "Save changes"
     end
