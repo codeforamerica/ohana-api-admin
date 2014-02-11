@@ -49,6 +49,12 @@ See the Downloads page on mongodb.org for steps to install on other systems: [ht
 
     script/bootstrap
 
+If you get a `permission denied` message, set the correct permissions:
+
+    chmod -R 755 script
+
+then run `script/bootstrap` again.
+
 ### Install the Ohana API and run it locally
 In order to be able to test the admin interface, you need data. Since this app gets its data from the Ohana API, you need to [install the Ohana API](https://github.com/codeforamerica/ohana-api#installation) first, which comes with a sample dataset.
 
