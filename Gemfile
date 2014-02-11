@@ -41,7 +41,7 @@ group :test do
 end
 
 gem "ohanakapa", "~> 1.0"
-gem 'faraday-http-cache', "0.2.1"
+#gem 'faraday-http-cache', "0.2.1"
 gem 'newrelic_rpm'
 
 gem "devise" # for authentication
