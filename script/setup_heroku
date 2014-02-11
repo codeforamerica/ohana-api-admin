@@ -1,0 +1,48 @@
+#!/bin/sh
+
+set -e
+
+while getopts "a:o" opt; do
+  case $opt in
+    a)
+      echo "Getting ready to set environment variables for $2"
+      echo "Setting MAILER_URL"
+      heroku config:set MAILER_URL=$2.herokuapp.com --app $2
+
+      echo "Setting DEVISE_SECRET_KEY"
+      # generate a random string with 128 alphanumeric characters
+      token1=$(cat /dev/random | LC_CTYPE=C tr -dc "[:alnum:]" | head -c 128)
+      heroku config:set DEVISE_SECRET_KEY=$token1 --app $2
+
+      echo "Setting SECRET_TOKEN"
+      token2=$(cat /dev/random | LC_CTYPE=C tr -dc "[:alnum:]" | head -c 128)
+      heroku config:set SECRET_TOKEN=$token2 --app $2
+
+      echo "Getting ready to install add-ons for $2"
+
+      echo "Installing MongoLab"
+      heroku addons:add mongolab --app $2
+
+      echo "Installing Mandrill by MailChimp"
+      heroku addons:add mandrill --app $2
+
+      echo "All done setting up env vars and add-ons."
+      echo "Pushing code to Heroku now. This will take a few minutes..."
+
+      git push heroku master
+
+      heroku run script/users --app $2
+      ;;
+    o)
+      echo "Setting OHANA_API_ENDPOINT"
+      heroku config:set OHANA_API_ENDPOINT=$4 --app $2
+      ;;
+    \?)
+      echo "Usage: setup_heroku -a your_app_name -o your_api_app_name" >&2
+      ;;
+  esac
+done
+
+if [ $(( OPTIND -1 )) -eq 0 ]
+  then echo "Usage: setup_heroku -a your_app_name -o your_api_app_name"
+fi

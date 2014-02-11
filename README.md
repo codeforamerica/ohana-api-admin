@@ -99,6 +99,25 @@ To see the actual tests, browse through the [spec](https://github.com/codeforame
 
 The tests will take around 3 to 5 minutes to run. Note that a browser window will open during the integration tests as some of them use the Selenium web driver.
 
+### Deploying to Heroku
+First, you need to [deploy the Ohana API to Heroku](https://github.com/codeforamerica/ohana-api/wiki/How-to-deploy-the-Ohana-API-to-your-Heroku-account). Then, create a new app on Heroku for the Admin site:
+
+    heroku apps:create your_app_name
+
+Run the Heroku deployment script:
+
+    script/setup_heroku -a your_app_name -o your_api_endpoint
+
+`your_api_endpoint` is the full URL to your API endpoint. For example: `http://ohanapi.herokuapp.com/api`
+
+Set `OHANA_API_TOKEN` to the same value as `ADMIN_APP_TOKEN` in your instance of Ohana API:
+
+    heroku config:set OHANA_API_TOKEN=value_of_ADMIN_APP_TOKEN
+
+Visit your site:
+
+    heroku open -a your_app_name
+
 ## Contributing
 
 In the spirit of open source software, **everyone** is encouraged to help improve this project.
