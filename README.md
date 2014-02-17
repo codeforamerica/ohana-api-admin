@@ -16,6 +16,8 @@ by setting their "role" field to "admin". This is done by editing the role field
 ## Installation
 Please note that the instructions below have only been tested on OS X. If you are running another operating system and run into any issues, feel free to update this README, or open an issue if you are unable to resolve installation issues.
 
+_Additional installation instructions are available on the [wiki](https://github.com/codeforamerica/ohana-api-admin/wiki)._
+
 ###Prerequisites
 
 #### Git, Ruby 2.0.0+, Rails 3.2.16+ (+ Homebrew on OS X)
@@ -40,7 +42,9 @@ Follow the Homebrew instructions for configuring MongoDB and starting it automat
 
 See the Downloads page on mongodb.org for steps to install on other systems: [http://www.mongodb.org/downloads](http://www.mongodb.org/downloads)
 
-### Clone the app on your local machine:
+### Clone the app on your local machine.
+
+From the Terminal, navigate to the directory into which you'd like to create a copy of the Ohana API Admin source code. For instance, on OS X `cd ~` will place you in your home directory. Next download this repository into your working directory with:
 
     git clone git://github.com/codeforamerica/ohana-api-admin.git
     cd ohana-api-admin
