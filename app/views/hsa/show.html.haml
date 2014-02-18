@@ -44,6 +44,9 @@
 
       %div#categories.inst-box
         %header
+          - if service.key?(:categories)
+            - cats = service.categories
+            - @slugs = cats.map(&:slugs)
           %strong
             Categories
         %ul
