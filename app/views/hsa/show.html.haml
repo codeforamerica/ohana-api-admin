@@ -46,22 +46,6 @@
         %header
           %strong
             Categories
-
-        %div.inset-content-box
-          %p
-            %strong= "Existing Categories:"
-            - if service.key?(:categories)
-              %ul#existing-categories
-                - cats = service.categories
-                - @slugs = cats.map(&:slugs)
-                - cats.each do |cat|
-                  %li
-                    = cat.name
-            - else
-              None
-
-        %p
-          Update Categories:
         %ul
           = render "forms/categories", :service => service, :slugs => @slugs
 
