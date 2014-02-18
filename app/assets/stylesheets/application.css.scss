@@ -124,4 +124,11 @@
 	{
 		margin:20px;
 	}
+
+// creates styles for text in the navbar that is not a link
+.navbar .nav > li > span
+{
+	padding: 10px 15px 10px;
+	color:#DE9292;
+	display:block;
 }
