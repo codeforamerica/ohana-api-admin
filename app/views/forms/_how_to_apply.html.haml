@@ -2,5 +2,7 @@
   %header
     %strong
       How to apply
+    %p.desc
+      How does a client apply to receive services, if applicable?
   %p
     = text_area_tag "how_to_apply", service.key?(:how_to_apply) ? service.how_to_apply : "", :class => "span5"

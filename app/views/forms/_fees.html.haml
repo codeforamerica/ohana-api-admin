@@ -2,5 +2,7 @@
   %header
     %strong
       Fees
+    %p.desc
+      Are there any fees to receive services?
   %p
     = text_area_tag "fees", service.key?(:fees) ? service.fees : "", :class => "span5"

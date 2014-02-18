@@ -2,8 +2,10 @@
   %header
     %strong
       Service Areas
-    (Service Areas can either be city names or county names.
-    Each word must be capitalized.)
+    %p.desc
+      What city or county does the location serve?
+      %em
+        Can either be city names or county names. Each word must be capitalized.
   - if service.key?(:service_areas)
     - service.service_areas.each_with_index do |service_area, i|
       %fieldset#service_areas

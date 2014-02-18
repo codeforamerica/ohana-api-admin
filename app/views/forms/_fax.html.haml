@@ -2,8 +2,11 @@
   %header
     %strong
       Fax Numbers
-    If the fax belongs to a contact, please move it to the existing contact, or create a new contact.
-    If the fax number contains a department in parentheses, move the department to the department field.
+    %p.desc
+      %em
+        If the fax belongs to a contact, please move it to the existing contact, or create a new contact.
+        %br
+        If the fax number contains a department in parentheses, move the department to the department field.
   - if @location.key?(:faxes)
     - @location.faxes.each do |fax|
       - if fax.is_a?(String)

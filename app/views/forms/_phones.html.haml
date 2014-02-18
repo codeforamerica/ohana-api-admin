@@ -1,7 +1,10 @@
 %div.inst-box
   %header
     %strong
-      Phone Numbers (10 digits only please, in this format: 650-802-7922)
+      Phone Numbers
+    %p.desc
+      %em
+        10 digits only please, in this format: 650-802-7922.
   - if @location.key?(:phones)
     - @location.phones.each do |phone|
       %fieldset#phones

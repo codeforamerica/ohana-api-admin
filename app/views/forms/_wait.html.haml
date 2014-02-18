@@ -2,5 +2,7 @@
   %header
     %strong
       Wait Time
+    %p.desc
+      How long on average does a client need to wait to receive services?
   %p
     = text_area_tag "wait", service.key?(:wait) ? service.wait : "", :class => "span5"
