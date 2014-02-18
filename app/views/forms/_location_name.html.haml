@@ -2,5 +2,7 @@
   %header
     %strong
       Location Name*
+    %p.desc
+      The name of the organization at a location, such as a branch, department, or similar.
   %p
     = text_field_tag "location_name", @location.key?(:name) ? @location.name : "", maxlength: 150, :class => "span10"

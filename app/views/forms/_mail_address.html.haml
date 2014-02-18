@@ -2,6 +2,8 @@
   %header
     %strong
       Mailing Address
+    %p.desc
+      Where does the location receive mail?
   %p
     = "Attention"
     = text_field_tag "attention", @location.key?(:mail_address) && @location.mail_address.key?(:attention) ? @location.mail_address.attention : "", maxlength: 50, :class => "span4"
