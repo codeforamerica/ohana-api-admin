@@ -36,11 +36,15 @@ Follow the Homebrew instructions for configuring MongoDB and starting it automat
 
     mongod
 
+MongoDB installation instructions using MacPorts are available on the [wiki](https://github.com/codeforamerica/ohana-api-admin/wiki/Installation).
+
 **Other**
 
 See the Downloads page on mongodb.org for steps to install on other systems: [http://www.mongodb.org/downloads](http://www.mongodb.org/downloads)
 
-### Clone the app on your local machine:
+### Clone the app on your local machine.
+
+From the Terminal, navigate to the directory into which you'd like to create a copy of the Ohana API Admin source code. For instance, on OS X `cd ~` will place you in your home directory. Next download this repository into your working directory with:
 
     git clone git://github.com/codeforamerica/ohana-api-admin.git
     cd ohana-api-admin
@@ -78,6 +82,10 @@ In the Admin app, go to `config/application.yml` and add an entry like this with
 Start the app locally:
 
     rails s
+
+And visit it in a web browser at:
+
+    localhost:3000
 
 ### Sign in
 The bootstrap script you ran earlier created three users for you that you can sign in with. You can see the username and password for each user in [db/seeds.rb](https://github.com/codeforamerica/ohana-api-admin/blob/master/db/seeds.rb). When you sign in with the first two, you'll have access to locations whose email or website domains match the domain name of the user's email address. The locations come from the [sample data](https://github.com/codeforamerica/ohana-api/blob/master/data/sample_data.json) provided by the Ohana API.
