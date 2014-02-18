@@ -2,7 +2,8 @@
 %ul.nav
   - if user_signed_in?
     %li
-      = link_to "Logged in as #{current_user.name}", ""
+      %span
+        Logged in as #{current_user.name}
     %li
       = link_to 'Sign out', destroy_user_session_path, :method=>'delete'
   - else
