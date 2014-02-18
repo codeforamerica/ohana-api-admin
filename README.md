@@ -16,8 +16,6 @@ by setting their "role" field to "admin". This is done by editing the role field
 ## Installation
 Please note that the instructions below have only been tested on OS X. If you are running another operating system and run into any issues, feel free to update this README, or open an issue if you are unable to resolve installation issues.
 
-_Additional installation instructions are available on the [wiki](https://github.com/codeforamerica/ohana-api-admin/wiki)._
-
 ###Prerequisites
 
 #### Git, Ruby 2.0.0+, Rails 3.2.16+ (+ Homebrew on OS X)
@@ -37,6 +35,8 @@ On OS X, the easiest way to install MongoDB (or almost any development tool) is 
 Follow the Homebrew instructions for configuring MongoDB and starting it automatically every time you restart your computer. Otherwise, you can launch MongoDB manually in a separate Terminal tab or window with this command:
 
     mongod
+
+MongoDB installation instructions using MacPorts are available on the [wiki](https://github.com/codeforamerica/ohana-api-admin/wiki/Installation).
 
 **Other**
 
