@@ -3,7 +3,7 @@
     %strong
       Street Address
     %p.desc
-      Where is the location physically?
+      The physical location.
   %p
     = "Street"
     = text_field_tag "street", @location.key?(:address) ? @location.address.street : "", maxlength: 50, class: "span4"
