@@ -61,7 +61,11 @@
           = render "forms/categories", :service => service, :slugs => @slugs
 
   %div.save-box.navbar-inner
+    %p
+      = "Editing"
+      %strong
+        = "#{org_name} / #{loc_name}"
     = hidden_field_tag :location_id, @location.id
     = hidden_field_tag :org_id, @location.organization.id
     = hidden_field_tag :page, params[:page]
-    = submit_tag "Save changes and apply edits to database", :class => "btn btn-primary"
+    = submit_tag "Save changes & apply edits to database", :class => "btn btn-primary"
