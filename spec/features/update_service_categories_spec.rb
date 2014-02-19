@@ -21,6 +21,9 @@ feature "Update a service's categories" do
     click_button "Save changes"
     visit_test_location
     find("#category_emergency").should be_checked
+    within("#existing-categories") do
+      expect(page).to have_content "Disaster Response"
+    end
     find("#category_disaster-response").should be_checked
     reset_categories
     visit_test_location
