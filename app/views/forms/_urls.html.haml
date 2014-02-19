@@ -1,7 +1,11 @@
 %div.inst-box
   %header
     %strong
-      Websites (must include "http://" or "https://")
+      Websites
+    %p.desc
+      What websites are associated with the location?
+      %em
+        Must include "http://" or "https://"
   - if @location.key?(:urls)
     - @location.urls.each_with_index do |url, i|
       %fieldset#urls

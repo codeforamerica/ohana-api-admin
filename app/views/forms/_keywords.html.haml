@@ -2,6 +2,8 @@
   %header
     %strong
       Keywords
+    %p.desc
+      What search terms does this location's services fall under?
   - if service.key?(:keywords)
     - service.keywords.each_with_index do |keyword, i|
       %fieldset#keywords

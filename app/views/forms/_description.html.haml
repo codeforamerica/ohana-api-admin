@@ -2,5 +2,7 @@
   %header
     %strong
       Description*
+    %p.desc
+      A description of the location's services.
   %p
     = text_area_tag "description", @location.key?(:description) ? @location.description : "", :class => "span9", rows: 10

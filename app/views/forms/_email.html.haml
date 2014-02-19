@@ -1,8 +1,10 @@
 %div.inst-box
   %header
     %strong
-      Email (for general info)
-    If the email belongs to a contact, please move it to the existing contact, or create a new contact.
+      Email (general info)
+    %p.desc
+      %em
+        If the email belongs to a contact, please move it to the existing contact, or create a new contact.
   %p
     - if @location.key?(:emails)
       - @location.emails.each_with_index do |email, i|

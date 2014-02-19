@@ -2,5 +2,7 @@
   %header
     %strong
       Short Description* (200 characters max)
+    %p.desc
+      A short summary of the description of services.
   %p
     = text_area_tag "short_desc", @location.key?(:short_desc) ? @location.short_desc : "", :class => "span9", maxlength: 200

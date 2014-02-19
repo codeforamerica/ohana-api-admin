@@ -2,5 +2,7 @@
   %header
     %strong
       Eligibility
+    %p.desc
+      What criteria must served groups have to receive service, if not everyone?
   %p
     = text_area_tag "eligibility", service.key?(:eligibility) ? service.eligibility : "", :class => "span5"

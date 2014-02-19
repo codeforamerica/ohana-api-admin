@@ -2,6 +2,8 @@
   %header
     %strong
       Contacts
+    %p.desc
+      Who are the main contact people at the location?
   - if @location.key?(:contacts)
     - @location.contacts.each do |contact|
       %fieldset#contact

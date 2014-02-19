@@ -93,9 +93,20 @@
 	margin-bottom:20px;
 	header
 	{
-	background:#9CFFA4;
+	background:#bbb0a6;
 	margin-bottom:10px;
 	padding:10px;
+
+		.desc
+		{
+			font-size:12px;
+			display:inline;
+
+			em
+			{
+				color:#b5121b;
+			}
+		}
 	}
 	input
 	{
