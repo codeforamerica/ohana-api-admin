@@ -186,7 +186,7 @@ class HsaController < ApplicationController
       }
     )
 
-    redirect_to locations_path, notice: "Changes for #{location_name} successfully saved!" and return
+    redirect_to locations_path, notice: "Changes for <a href='#{location_id}'>#{location_name}</a> successfully saved!".html_safe and return
   end
 
   def create_location
