@@ -5,4 +5,4 @@
     %p.desc
       The name of the overall organization encompassing all locations.
   %p
-    = text_field_tag "org_name", @location.organization.name, maxlength: 100, :class => "span10"
+    = text_field_tag "org_name", @location.organization.name, maxlength: 255, :class => "span10"

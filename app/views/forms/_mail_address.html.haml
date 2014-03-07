@@ -6,13 +6,13 @@
       Where does the location receive mail?
   %p
     = "Attention"
-    = text_field_tag "attention", @location.key?(:mail_address) && @location.mail_address.key?(:attention) ? @location.mail_address.attention : "", maxlength: 50, :class => "span4"
+    = text_field_tag "attention", @location.key?(:mail_address) && @location.mail_address.key?(:attention) ? @location.mail_address.attention : "", maxlength: 255, :class => "span4"
     %br
     = "Street"
-    = text_field_tag "m_street", @location.key?(:mail_address) ? @location.mail_address.street : "", maxlength: 50, class: "span4"
+    = text_field_tag "m_street", @location.key?(:mail_address) ? @location.mail_address.street : "", maxlength: 255, class: "span4"
     %br
     = "City"
-    = text_field_tag "m_city", @location.key?(:mail_address) ? @location.mail_address.city : "", maxlength: 25
+    = text_field_tag "m_city", @location.key?(:mail_address) ? @location.mail_address.city : "", maxlength: 255
     %br
     = "State (2-letter abbreviation)"
     = text_field_tag "m_state", @location.key?(:mail_address) ? @location.mail_address.state : "", maxlength: 2

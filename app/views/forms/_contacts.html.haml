@@ -8,13 +8,13 @@
     - @location.contacts.each do |contact|
       %fieldset#contact
         = "Name*:"
-        = text_field_tag "names[]", contact.key?(:name) ? contact.name : "", maxlength: 20, class: "span2", id: "names_#{contact.id}"
+        = text_field_tag "names[]", contact.key?(:name) ? contact.name : "", maxlength: 255, class: "span2", id: "names_#{contact.id}"
         %br
         = "Title*:"
-        = text_field_tag "titles[]", contact.key?(:title) ? contact.title : "", maxlength: 20, class: "span2", id: "titles_#{contact.id}"
+        = text_field_tag "titles[]", contact.key?(:title) ? contact.title : "", maxlength: 255, class: "span2", id: "titles_#{contact.id}"
         %br
         = "Email:"
-        = text_field_tag "contact_emails[]", contact.key?(:email) ? contact.email : "", maxlength: 50, class: "span3", id: "emails_#{contact.id}"
+        = text_field_tag "contact_emails[]", contact.key?(:email) ? contact.email : "", maxlength: 255, class: "span3", id: "emails_#{contact.id}"
         %br
         = "Phone:"
         = text_field_tag "contact_phones[]", contact.key?(:phone) ? contact.phone : "", maxlength: 12, class: "span2", id: "phones_#{contact.id}"

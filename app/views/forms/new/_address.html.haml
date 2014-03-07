@@ -4,10 +4,10 @@
       Street Address
   %p
     = "Street"
-    = text_field_tag "street", "", maxlength: 50, class: "span4"
+    = text_field_tag "street", "", maxlength: 255, class: "span4"
     %br
     = "City"
-    = text_field_tag "city", "", maxlength: 25
+    = text_field_tag "city", "", maxlength: 255
     %br
     = "State (2-letter abbreviation)"
     = text_field_tag "state", "CA", maxlength: 2

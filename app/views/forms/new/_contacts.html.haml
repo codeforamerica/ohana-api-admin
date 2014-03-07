@@ -4,13 +4,13 @@
       Contacts
   %fieldset#contact
     = "Name*:"
-    = text_field_tag "names[]", "", maxlength: 20, class: "span2", id: "names_new_contact"
+    = text_field_tag "names[]", "", maxlength: 255, class: "span2", id: "names_new_contact"
     %br
     = "Title*:"
-    = text_field_tag "titles[]", "", maxlength: 20, class: "span2", id: "titles_new_contact"
+    = text_field_tag "titles[]", "", maxlength: 255, class: "span2", id: "titles_new_contact"
     %br
     = "Email:"
-    = text_field_tag "contact_emails[]", "", maxlength: 50, class: "span3", id: "emails_new_contact"
+    = text_field_tag "contact_emails[]", "", maxlength: 255, class: "span3", id: "emails_new_contact"
     %br
     = "Phone:"
     = text_field_tag "contact_phones[]", "", maxlength: 12, class: "span2", id: "phones_new_contact"
