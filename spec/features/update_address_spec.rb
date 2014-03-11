@@ -14,10 +14,10 @@ feature "Update a location's street address" do
     visit_location_with_no_phone
     add_street_address
     visit_location_with_no_phone
-    find_field('street').value.should eq "modularity"
-    find_field('city').value.should eq "utopia"
-    find_field('state').value.should eq "XX"
-    find_field('zip').value.should eq "12345"
+    find_field('street').value.should eq "1486 Huntington Avenue, Suite 100"
+    find_field('city').value.should eq "Redwood City"
+    find_field('state').value.should eq "CA"
+    find_field('zip').value.should eq "94080-5932"
     remove_street_address
     visit_location_with_no_phone
     find_field('street').value.should eq ""

@@ -4,17 +4,17 @@
       Mailing Address
   %p
     = "Attention"
-    = text_field_tag "attention", "", maxlength: 100, :class => "span4"
+    = text_field_tag "attention", "", maxlength: 255, class: "span5"
     %br
     = "Street"
-    = text_field_tag "m_street", "", maxlength: 100, class: "span4"
+    = text_field_tag "m_street", "", maxlength: 255, class: "span5"
     %br
     = "City"
-    = text_field_tag "m_city", "", maxlength: 25
+    = text_field_tag "m_city", "", maxlength: 255
     %br
     = "State (2-letter abbreviation)"
-    = text_field_tag "m_state", "", maxlength: 2
+    = text_field_tag "m_state", "", maxlength: 2, class: "span1"
     %br
     = "ZIP Code"
-    = text_field_tag "m_zip", "", maxlength: 10
+    = text_field_tag "m_zip", "", maxlength: 10, class: "span2"
     %br

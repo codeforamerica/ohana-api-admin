@@ -6,4 +6,4 @@
       %em
         If the email belongs to a contact, please enter it in the Contacts section.
   %p
-    = text_field_tag "emails[]", "", :class => "span6", maxlength: 100, id: "new_email"
+    = text_field_tag "emails[]", "", class: "span6", maxlength: 255, id: "new_email"
