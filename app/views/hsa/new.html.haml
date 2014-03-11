@@ -18,6 +18,24 @@
   = render "forms/new/urls"
   = render "forms/new/kind"
 
+  = render "forms/new/audience"
+  = render "forms/new/eligibility"
+  = render "forms/new/fees"
+  = render "forms/new/how_to_apply"
+  = render "forms/new/wait"
+  = render "forms/new/service_areas"
+  = render "forms/new/keywords"
+
+  %div#categories.inst-box
+    %header
+      %strong
+        Categories
+      %p.desc
+        What categories does this location's services fall under?
+    %ul
+      = render "forms/new/categories"
+
   = hidden_field_tag :org_id, @org._id
+  = hidden_field_tag :org_name, @org.name
   = hidden_field_tag :page, params[:page]
   = submit_tag "Create new location for #{@org.name}", :class => "btn btn-primary"

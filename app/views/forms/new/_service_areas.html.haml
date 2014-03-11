@@ -1,0 +1,13 @@
+%div.inst-box
+  %header
+    %strong
+      Service Areas
+    %p.desc
+      What city or county does the location serve?
+      %em
+        Can either be city names or county names. Each word must be capitalized.
+
+  - fields = render "forms/add_service_area"
+  %p
+    = link_to_function "Add a service area", ("add_fields(1, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"
+

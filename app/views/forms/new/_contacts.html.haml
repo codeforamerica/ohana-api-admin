@@ -2,15 +2,17 @@
   %header
     %strong
       Contacts
+    %p.desc
+      Who are the main points of contact at the location?
   %fieldset#contact
     = "Name*:"
-    = text_field_tag "names[]", "", maxlength: 255, class: "span2", id: "names_new_contact"
+    = text_field_tag "names[]", "", maxlength: 255, class: "span4", id: "names_new_contact"
     %br
     = "Title*:"
-    = text_field_tag "titles[]", "", maxlength: 255, class: "span2", id: "titles_new_contact"
+    = text_field_tag "titles[]", "", maxlength: 255, class: "span5", id: "titles_new_contact"
     %br
     = "Email:"
-    = text_field_tag "contact_emails[]", "", maxlength: 255, class: "span3", id: "emails_new_contact"
+    = text_field_tag "contact_emails[]", "", maxlength: 255, class: "span6", id: "emails_new_contact"
     %br
     = "Phone:"
     = text_field_tag "contact_phones[]", "", maxlength: 12, class: "span2", id: "phones_new_contact"
@@ -23,6 +25,7 @@
     %br
     = link_to "Delete this contact permanently", '#', class: "btn btn-danger"
 
+
   - fields = render "forms/single_contact"
   %p
-    = link_to_function "Add a new contact", ("add_fields(6, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"
+    = link_to_function "Add a point of contact", ("add_fields(6, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"

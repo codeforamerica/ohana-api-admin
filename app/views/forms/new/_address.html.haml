@@ -2,15 +2,19 @@
   %header
     %strong
       Street Address
+    %p.desc
+      The physical location, if any.
+      %em
+        Note that a location must have at least one type of address, whether street or mailing.
   %p
     = "Street"
-    = text_field_tag "street", "", maxlength: 255, class: "span4"
+    = text_field_tag "street", "", maxlength: 255, class: "span5"
     %br
     = "City"
     = text_field_tag "city", "", maxlength: 255
     %br
     = "State (2-letter abbreviation)"
-    = text_field_tag "state", "CA", maxlength: 2
+    = text_field_tag "state", "CA", maxlength: 2, class: "span1"
     %br
     = "ZIP Code"
     = text_field_tag "zip", "", maxlength: 10, class: "span2"

@@ -6,13 +6,13 @@
       The physical location.
   %p
     = "Street"
-    = text_field_tag "street", @location.key?(:address) ? @location.address.street : "", maxlength: 255, class: "span4"
+    = text_field_tag "street", @location.key?(:address) ? @location.address.street : "", maxlength: 255, class: "span5"
     %br
     = "City"
     = text_field_tag "city", @location.key?(:address) ? @location.address.city : "", maxlength: 255
     %br
     = "State (2-letter abbreviation)"
-    = text_field_tag "state", @location.key?(:address) ? @location.address.state : "CA", maxlength: 2
+    = text_field_tag "state", @location.key?(:address) ? @location.address.state : "CA", maxlength: 2, class: "span1"
     %br
     = "ZIP Code"
     = text_field_tag "zip", @location.key?(:address) ? @location.address.zip : "", maxlength: 10, class: "span2"

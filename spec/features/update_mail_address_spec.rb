@@ -14,10 +14,11 @@ feature "Update a location's mailing address" do
     visit_test_location
     add_mail_address
     visit_test_location
-    find_field('m_street').value.should eq "modularity"
-    find_field('m_city').value.should eq "utopia"
-    find_field('m_state').value.should eq "XX"
-    find_field('m_zip').value.should eq "12345"
+    find_field('attention').value.should eq "Redwood City Free Medical Clinic"
+    find_field('m_street').value.should eq "1486 Huntington Avenue, Suite 100"
+    find_field('m_city').value.should eq "Redwood City"
+    find_field('m_state').value.should eq "CA"
+    find_field('m_zip').value.should eq "94080-5932"
     remove_mail_address
     visit_test_location
     find_field('m_street').value.should eq ""

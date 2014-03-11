@@ -48,9 +48,9 @@ module Features
 
     def add_contact
       click_link "Add a new contact"
-      fill_in "names[]", with: "Moncef"
-      fill_in "titles[]", with: "Director"
-      fill_in "contact_emails[]", with: "email@email.org"
+      fill_in "names[]", with: "Moncef Belyamani-Belyamani"
+      fill_in "titles[]", with: "Director of Development and Operations"
+      fill_in "contact_emails[]", with: "moncefbelyamani@samaritanhousesanmateo.org"
       fill_in "contact_phones[]", with: "703-555-1212"
       fill_in "contact_faxes[]", with: "703-555-1234"
       click_button "Save changes"
@@ -137,10 +137,10 @@ module Features
     end
 
     def add_street_address
-      fill_in "street", with: "modularity"
-      fill_in "city", with: "utopia"
-      fill_in "state", with: "XX"
-      fill_in "zip", with: "12345"
+      fill_in "street", with: "1486 Huntington Avenue, Suite 100"
+      fill_in "city", with: "Redwood City"
+      fill_in "state", with: "CA"
+      fill_in "zip", with: "94080-5932"
       click_button "Save changes"
     end
 
@@ -153,14 +153,16 @@ module Features
     end
 
     def add_mail_address
-      fill_in "m_street", with: "modularity"
-      fill_in "m_city", with: "utopia"
-      fill_in "m_state", with: "XX"
-      fill_in "m_zip", with: "12345"
+      fill_in "attention", with: "Redwood City Free Medical Clinic"
+      fill_in "m_street", with: "1486 Huntington Avenue, Suite 100"
+      fill_in "m_city", with: "Redwood City"
+      fill_in "m_state", with: "CA"
+      fill_in "m_zip", with: "94080-5932"
       click_button "Save changes"
     end
 
     def remove_mail_address
+      fill_in "attention", with: ""
       fill_in "m_street", with: ""
       fill_in "m_city", with: ""
       fill_in "m_state", with: ""
@@ -202,6 +204,16 @@ module Features
         uncheck "category_legal"
       end
       click_button "Save changes"
+    end
+
+    def fill_in_all_required_fields
+      fill_in "location_name", with: "new location with service fields"
+      fill_in "description", with: "new description"
+      fill_in "short_desc", with: "new short description"
+      fill_in "street", with: "modularity"
+      fill_in "city", with: "utopia"
+      fill_in "state", with: "XX"
+      fill_in "zip", with: "12345"
     end
   end
 end

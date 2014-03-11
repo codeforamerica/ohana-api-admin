@@ -2,6 +2,8 @@
   %header
     %strong
       Accessibility Options
+    %p.desc
+      Which accessibility amenities for the location are available?
   %fieldset#accessibility
     - accessibility_options.each do |a|
       = check_box_tag "accessibility_#{a[1]}", a[1], false, :name => "accessibility_options[]"

@@ -43,6 +43,13 @@ class HsaController < ApplicationController
   def new
     @locations = perform_search
     @org = @locations.first.organization
+    urls = []
+    @org.rels[:locations].get.data.each do |loc|
+      if loc.key?(:urls)
+        urls.push(loc.urls)
+      end
+    end
+    @location_url = urls.uniq.flatten.first
   end
 
   def edit_services
@@ -146,19 +153,7 @@ class HsaController < ApplicationController
     end
 
     begin
-      Ohanakapa.put("services/#{service_id}/", :query =>
-        {
-          :audience        => params[:audience],
-          :description     => params[:description],
-          :eligibility     => params[:eligibility],
-          :fees            => params[:fees],
-          :how_to_apply    => params[:how_to_apply],
-          :keywords        => keywords,
-          :name            => params[:service_name],
-          :service_areas   => service_areas,
-          :wait            => params[:wait]
-        }
-      )
+      Ohanakapa.put("services/#{service_id}/", :query => service_attributes)
     rescue Ohanakapa::BadRequest => e
       # Wrong format for service area
       if e.to_s.include?("improperly formatted")
@@ -287,7 +282,32 @@ class HsaController < ApplicationController
       end
     end
 
-    redirect_to locations_path, notice: "New location #{location_name} successfully created!" and return
+    location_id = Ohanakapa.last_response.data.id
+
+    begin
+      Ohanakapa.post("locations/#{location_id}/services/",
+        query: service_attributes)
+    rescue Ohanakapa::BadRequest => e
+      # Wrong format for service area
+      if e.to_s.include?("improperly formatted")
+        redirect_to request.referer,
+          alert: "At least one service area is improperly formatted,
+        or is not an accepted city or county name. Please make sure all
+        words are capitalized." and return
+      end
+    end
+
+    service_id = Ohanakapa.last_response.data._id
+
+    Ohanakapa.put("services/#{service_id}/categories", :query =>
+      {
+        :category_slugs => params[:category_slugs]
+      }
+    )
+
+    redirect_to locations_path,
+      notice: "New location \"#{location_name}\" for #{org_name} successfully "+
+        "created! Refresh this page to see your new location." and return
   end
 
   def domain
@@ -318,7 +338,7 @@ class HsaController < ApplicationController
   end
 
   def current_user_has_generic_email?
-    generic_domains = %w(gmail.com hotmail.com aol.com yahoo.com sbcglobal.net co.sanmateo.ca.us)
+    generic_domains = %w(gmail.com hotmail.com aol.com yahoo.com sbcglobal.net co.sanmateo.ca.us smcgov.org)
     generic_domains.include?(domain)
   end
 

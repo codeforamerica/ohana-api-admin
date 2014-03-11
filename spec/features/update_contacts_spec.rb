@@ -15,9 +15,11 @@ feature "Update a location's contacts" do
     visit_location_with_no_phone
     add_contact
     visit_location_with_no_phone
-    find_field('names[]').value.should eq "Moncef"
-    find_field('titles[]').value.should eq "Director"
-    find_field('contact_emails[]').value.should eq "email@email.org"
+    find_field('names[]').value.should eq "Moncef Belyamani-Belyamani"
+    find_field('titles[]').
+      value.should eq "Director of Development and Operations"
+    find_field('contact_emails[]').
+      value.should eq "moncefbelyamani@samaritanhousesanmateo.org"
     find_field('contact_phones[]').value.should eq "703-555-1212"
     find_field('contact_faxes[]').value.should eq "703-555-1234"
     delete_contact
