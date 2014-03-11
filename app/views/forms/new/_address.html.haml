@@ -2,6 +2,10 @@
   %header
     %strong
       Street Address
+    %p.desc
+      The physical location, if any.
+      %em
+        Note that a location must have at least one type of address, whether street or mailing.
   %p
     = "Street"
     = text_field_tag "street", "", maxlength: 50, class: "span4"

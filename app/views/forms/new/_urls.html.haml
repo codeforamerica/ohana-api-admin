@@ -1,11 +1,14 @@
 %div.inst-box
   %header
     %strong
-      Websites - only if different from the organization website (must include "http://" or "https://")
+      Websites
+    %p.desc
+      What websites are associated with the location?
+      %em
+        Must include "http://" or "https://"
   %fieldset#urls
-    = text_field_tag "urls[]", "", class: "span9", id: "new_url"
-    %br
-    = link_to "Delete this website permanently", '#', class: "btn btn-danger"
+    = text_field_tag "urls[]", @location_url, class: "span9"
+
   - fields = render "forms/add_url"
   %p
-    = link_to_function "Add a new website", ("add_fields(1, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"
+    = link_to_function "Add a website", ("add_fields(1, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"

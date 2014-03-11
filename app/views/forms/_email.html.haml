@@ -8,6 +8,6 @@
   %p
     - if @location.key?(:emails)
       - @location.emails.each_with_index do |email, i|
-        = text_field_tag "emails[]", email, :class => "span3", maxlength: 25, id: "email_#{i}"
+        = text_field_tag "emails[]", email, :class => "span6", maxlength: 100, id: "email_#{i}"
     - else
-      = text_field_tag "emails[]", "", :class => "span3", maxlength: 25, id: "new_email"
+      = text_field_tag "emails[]", "", :class => "span6", maxlength: 100, id: "new_email"

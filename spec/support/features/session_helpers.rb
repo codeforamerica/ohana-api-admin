@@ -49,7 +49,7 @@ module Features
     def add_contact
       click_link "Add a new contact"
       fill_in "names[]", with: "Moncef"
-      fill_in "titles[]", with: "Director"
+      fill_in "titles[]", with: "Director of Development"
       fill_in "contact_emails[]", with: "email@email.org"
       fill_in "contact_phones[]", with: "703-555-1212"
       fill_in "contact_faxes[]", with: "703-555-1234"
@@ -202,6 +202,16 @@ module Features
         uncheck "category_legal"
       end
       click_button "Save changes"
+    end
+
+    def fill_in_all_required_fields
+      fill_in "location_name", with: "new location with service fields"
+      fill_in "description", with: "new description"
+      fill_in "short_desc", with: "new short description"
+      fill_in "street", with: "modularity"
+      fill_in "city", with: "utopia"
+      fill_in "state", with: "XX"
+      fill_in "zip", with: "12345"
     end
   end
 end

@@ -2,5 +2,7 @@
   %header
     %strong
       Organization Name*
+    %p.desc
+      The name of the overall organization encompassing all locations.
   %p
     = text_field_tag "org_name", @org.name, maxlength: 100, :class => "span10"

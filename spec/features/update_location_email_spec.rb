@@ -14,10 +14,10 @@ feature "Update a location's email" do
 
   scenario "with valid email" do
     visit_test_location
-    fill_in "emails[]", with: "eml@example.org"
+    fill_in "emails[]", with: "moncefbelyamani@samaritanhousesanmateo.org"
     click_button "Save changes"
     visit_test_location
-    find_field('emails[]').value.should eq "eml@example.org"
+    find_field('emails[]').value.should eq "moncefbelyamani@samaritanhousesanmateo.org"
   end
 
   scenario "with an invalid email" do

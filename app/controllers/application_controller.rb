@@ -28,6 +28,20 @@ class ApplicationController < ActionController::Base
     }
   end
 
+  def service_attributes
+    {
+      :audience        => params[:audience],
+      :description     => params[:description],
+      :eligibility     => params[:eligibility],
+      :fees            => params[:fees],
+      :how_to_apply    => params[:how_to_apply],
+      :keywords        => keywords,
+      :name            => params[:service_name],
+      :service_areas   => service_areas,
+      :wait            => params[:wait]
+    }
+  end
+
   def accessibility
     params[:accessibility_options]
   end
@@ -139,6 +153,8 @@ class ApplicationController < ActionController::Base
     service_areas = params[:service_areas]
     if service_areas.present? && !service_areas.all?(&:empty?)
       params[:service_areas].delete_if { |sa| sa.blank? }
+    else
+      []
     end
   end
 
@@ -164,6 +180,10 @@ class ApplicationController < ActionController::Base
 
   def org_id
     params[:org_id]
+  end
+
+  def org_name
+    params[:org_name]
   end
 
   def schedule

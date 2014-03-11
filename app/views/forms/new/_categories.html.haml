@@ -1,0 +1,1372 @@
+%li.depth0
+  = check_box_tag "category_emergency", 'emergency', false, :name => "category_slugs[]"
+  %label
+    = 'Emergency'
+  %ul
+    %li.hide.depth1
+      = check_box_tag "category_disaster-response", 'disaster-response', false, :name => "category_slugs[]"
+      %label
+        = 'Disaster Response'
+    %li.hide.depth1
+      = check_box_tag "category_emergency-cash", 'emergency-cash', false, :name => "category_slugs[]"
+      %label
+        = 'Emergency Cash'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-food", 'cash-for-food', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for Food'
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-healthcare", 'cash-for-healthcare', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for Healthcare'
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-housing", 'cash-for-housing', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for Housing'
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-gas", 'cash-for-gas', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for Gas'
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-school", 'cash-for-school', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for School'
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-utilities", 'cash-for-utilities', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for Utilities'
+    %li.hide.depth1
+      = check_box_tag "category_emergency-food", 'emergency-food', false, :name => "category_slugs[]"
+      %label
+        = 'Emergency Food'
+    %li.hide.depth1
+      = check_box_tag "category_emergency-shelter", 'emergency-shelter', false, :name => "category_slugs[]"
+      %label
+        = 'Emergency Shelter'
+    %li.hide.depth1
+      = check_box_tag "category_help-find-missing-persons", 'help-find-missing-persons', false, :name => "category_slugs[]"
+      %label
+        = 'Help Find Missing Persons'
+    %li.hide.depth1
+      = check_box_tag "category_immediate-safety", 'immediate-safety', false, :name => "category_slugs[]"
+      %label
+        = 'Immediate Safety'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_help-escape-violence", 'help-escape-violence', false, :name => "category_slugs[]"
+          %label
+            = 'Help Escape Violence'
+        %li.hide.depth2
+          = check_box_tag "category_safe-housing", 'safe-housing', false, :name => "category_slugs[]"
+          %label
+            = 'Safe Housing'
+    %li.hide.depth1
+      = check_box_tag "category_psychiatric-emergency-services", 'psychiatric-emergency-services', false, :name => "category_slugs[]"
+      %label
+        = 'Psychiatric Emergency Services'
+%li.depth0
+  = check_box_tag "category_food", 'food', false, :name => "category_slugs[]"
+  %label
+    = 'Food'
+  %ul
+    %li.hide.depth1
+      = check_box_tag "category_community-gardens", 'community-gardens', false, :name => "category_slugs[]"
+      %label
+        = 'Community Gardens'
+    %li.hide.depth1
+      = check_box_tag "category_emergency-food-1", 'emergency-food-1', false, :name => "category_slugs[]"
+      %label
+        = 'Emergency Food'
+    %li.hide.depth1
+      = check_box_tag "category_food-delivery", 'food-delivery', false, :name => "category_slugs[]"
+      %label
+        = 'Food Delivery'
+    %li.hide.depth1
+      = check_box_tag "category_food-pantry", 'food-pantry', false, :name => "category_slugs[]"
+      %label
+        = 'Food Pantry'
+    %li.hide.depth1
+      = check_box_tag "category_free-meals", 'free-meals', false, :name => "category_slugs[]"
+      %label
+        = 'Free Meals'
+    %li.hide.depth1
+      = check_box_tag "category_help-pay-for-food", 'help-pay-for-food', false, :name => "category_slugs[]"
+      %label
+        = 'Help Pay for Food'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-food-1", 'cash-for-food-1', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for Food'
+        %li.hide.depth2
+          = check_box_tag "category_food-benefits", 'food-benefits', false, :name => "category_slugs[]"
+          %label
+            = 'Food Benefits'
+    %li.hide.depth1
+      = check_box_tag "category_nutrition", 'nutrition', false, :name => "category_slugs[]"
+      %label
+        = 'Nutrition'
+%li.depth0
+  = check_box_tag "category_housing", 'housing', false, :name => "category_slugs[]"
+  %label
+    = 'Housing'
+  %ul
+    %li.hide.depth1
+      = check_box_tag "category_emergency-shelter-1", 'emergency-shelter-1', false, :name => "category_slugs[]"
+      %label
+        = 'Emergency Shelter'
+    %li.hide.depth1
+      = check_box_tag "category_help-find-housing", 'help-find-housing', false, :name => "category_slugs[]"
+      %label
+        = 'Help Find Housing'
+    %li.hide.depth1
+      = check_box_tag "category_help-pay-for-housing", 'help-pay-for-housing', false, :name => "category_slugs[]"
+      %label
+        = 'Help Pay for Housing'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-housing-1", 'cash-for-housing-1', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for Housing'
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-utilities-1", 'cash-for-utilities-1', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for Utilities'
+        %li.hide.depth2
+          = check_box_tag "category_home-and-renters-insurance", 'home-and-renters-insurance', false, :name => "category_slugs[]"
+          %label
+            = 'Home & Renters Insurance'
+        %li.hide.depth2
+          = check_box_tag "category_housing-vouchers", 'housing-vouchers', false, :name => "category_slugs[]"
+          %label
+            = 'Housing Vouchers'
+        %li.hide.depth2
+          = check_box_tag "category_maintenance-and-repairs", 'maintenance-and-repairs', false, :name => "category_slugs[]"
+          %label
+            = 'Maintenance & Repairs'
+    %li.hide.depth1
+      = check_box_tag "category_housing-advice", 'housing-advice', false, :name => "category_slugs[]"
+      %label
+        = 'Housing Advice'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_foreclosure-counseling", 'foreclosure-counseling', false, :name => "category_slugs[]"
+          %label
+            = 'Foreclosure Counseling'
+        %li.hide.depth2
+          = check_box_tag "category_homebuyer-education", 'homebuyer-education', false, :name => "category_slugs[]"
+          %label
+            = 'Homebuyer Education'
+    %li.hide.depth1
+      = check_box_tag "category_residential-housing", 'residential-housing', false, :name => "category_slugs[]"
+      %label
+        = 'Residential Housing'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_housing-with-support", 'housing-with-support', false, :name => "category_slugs[]"
+          %label
+            = 'Housing with Support'
+        %li.hide.depth2
+          = check_box_tag "category_long-term-housing", 'long-term-housing', false, :name => "category_slugs[]"
+          %label
+            = 'Long-Term Housing'
+          %ul
+            %li.hide.depth3
+              = check_box_tag "category_assisted-living", 'assisted-living', false, :name => "category_slugs[]"
+              %label
+                = 'Assisted Living'
+            %li.hide.depth3
+              = check_box_tag "category_independent-living", 'independent-living', false, :name => "category_slugs[]"
+              %label
+                = 'Independent Living'
+            %li.hide.depth3
+              = check_box_tag "category_nursing-home", 'nursing-home', false, :name => "category_slugs[]"
+              %label
+                = 'Nursing Home'
+            %li.hide.depth3
+              = check_box_tag "category_public-housing", 'public-housing', false, :name => "category_slugs[]"
+              %label
+                = 'Public Housing'
+        %li.hide.depth2
+          = check_box_tag "category_safe-housing-1", 'safe-housing-1', false, :name => "category_slugs[]"
+          %label
+            = 'Safe Housing'
+        %li.hide.depth2
+          = check_box_tag "category_short-term-housing", 'short-term-housing', false, :name => "category_slugs[]"
+          %label
+            = 'Short-Term Housing'
+          %ul
+            %li.hide.depth3
+              = check_box_tag "category_nursing-home-1", 'nursing-home-1', false, :name => "category_slugs[]"
+              %label
+                = 'Nursing Home'
+            %li.hide.depth3
+              = check_box_tag "category_sober-living", 'sober-living', false, :name => "category_slugs[]"
+              %label
+                = 'Sober Living'
+%li.depth0
+  = check_box_tag "category_goods", 'goods', false, :name => "category_slugs[]"
+  %label
+    = 'Goods'
+  %ul
+    %li.hide.depth1
+      = check_box_tag "category_baby-supplies", 'baby-supplies', false, :name => "category_slugs[]"
+      %label
+        = 'Baby Supplies'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_baby-clothes", 'baby-clothes', false, :name => "category_slugs[]"
+          %label
+            = 'Baby Clothes'
+        %li.hide.depth2
+          = check_box_tag "category_diapers-and-formula", 'diapers-and-formula', false, :name => "category_slugs[]"
+          %label
+            = 'Diapers & Formula'
+    %li.hide.depth1
+      = check_box_tag "category_clothing", 'clothing', false, :name => "category_slugs[]"
+      %label
+        = 'Clothing'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_baby-clothes-1", 'baby-clothes-1', false, :name => "category_slugs[]"
+          %label
+            = 'Baby Clothes'
+        %li.hide.depth2
+          = check_box_tag "category_clothes-for-school", 'clothes-for-school', false, :name => "category_slugs[]"
+          %label
+            = 'Clothes for School'
+        %li.hide.depth2
+          = check_box_tag "category_clothes-for-work", 'clothes-for-work', false, :name => "category_slugs[]"
+          %label
+            = 'Clothes for Work'
+        %li.hide.depth2
+          = check_box_tag "category_clothing-vouchers", 'clothing-vouchers', false, :name => "category_slugs[]"
+          %label
+            = 'Clothing Vouchers'
+    %li.hide.depth1
+      = check_box_tag "category_home-goods", 'home-goods', false, :name => "category_slugs[]"
+      %label
+        = 'Home Goods'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_blankets-and-fans", 'blankets-and-fans', false, :name => "category_slugs[]"
+          %label
+            = 'Blankets & Fans'
+        %li.hide.depth2
+          = check_box_tag "category_books", 'books', false, :name => "category_slugs[]"
+          %label
+            = 'Books'
+        %li.hide.depth2
+          = check_box_tag "category_furniture", 'furniture', false, :name => "category_slugs[]"
+          %label
+            = 'Furniture'
+        %li.hide.depth2
+          = check_box_tag "category_personal-care-items", 'personal-care-items', false, :name => "category_slugs[]"
+          %label
+            = 'Personal Care Items'
+        %li.hide.depth2
+          = check_box_tag "category_supplies-for-work", 'supplies-for-work', false, :name => "category_slugs[]"
+          %label
+            = 'Supplies for Work'
+    %li.hide.depth1
+      = check_box_tag "category_medical-supplies", 'medical-supplies', false, :name => "category_slugs[]"
+      %label
+        = 'Medical Supplies'
+    %li.hide.depth1
+      = check_box_tag "category_technology", 'technology', false, :name => "category_slugs[]"
+      %label
+        = 'Technology'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_assistive-technology", 'assistive-technology', false, :name => "category_slugs[]"
+          %label
+            = 'Assistive Technology'
+        %li.hide.depth2
+          = check_box_tag "category_internet", 'internet', false, :name => "category_slugs[]"
+          %label
+            = 'Internet'
+        %li.hide.depth2
+          = check_box_tag "category_phone-services", 'phone-services', false, :name => "category_slugs[]"
+          %label
+            = 'Phone Services'
+    %li.hide.depth1
+      = check_box_tag "category_toys-and-gifts", 'toys-and-gifts', false, :name => "category_slugs[]"
+      %label
+        = 'Toys & Gifts'
+%li.depth0
+  = check_box_tag "category_transit", 'transit', false, :name => "category_slugs[]"
+  %label
+    = 'Transit'
+  %ul
+    %li.hide.depth1
+      = check_box_tag "category_help-pay-for-transit", 'help-pay-for-transit', false, :name => "category_slugs[]"
+      %label
+        = 'Help Pay for Transit'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_bus-passes", 'bus-passes', false, :name => "category_slugs[]"
+          %label
+            = 'Bus Passes'
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-gas-1", 'cash-for-gas-1', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for Gas'
+    %li.hide.depth1
+      = check_box_tag "category_transportation", 'transportation', false, :name => "category_slugs[]"
+      %label
+        = 'Transportation'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_transportation-for-healthcare", 'transportation-for-healthcare', false, :name => "category_slugs[]"
+          %label
+            = 'Transportation for Healthcare'
+        %li.hide.depth2
+          = check_box_tag "category_transportation-for-school", 'transportation-for-school', false, :name => "category_slugs[]"
+          %label
+            = 'Transportation for School'
+%li.depth0
+  = check_box_tag "category_health", 'health', false, :name => "category_slugs[]"
+  %label
+    = 'Health'
+  %ul
+    %li.hide.depth1
+      = check_box_tag "category_addiction-and-recovery", 'addiction-and-recovery', false, :name => "category_slugs[]"
+      %label
+        = 'Addiction & Recovery'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_12-step", '12-step', false, :name => "category_slugs[]"
+          %label
+            = '12-Step'
+        %li.hide.depth2
+          = check_box_tag "category_detox", 'detox', false, :name => "category_slugs[]"
+          %label
+            = 'Detox'
+        %li.hide.depth2
+          = check_box_tag "category_halfway-housing", 'halfway-housing', false, :name => "category_slugs[]"
+          %label
+            = 'Halfway Housing'
+        %li.hide.depth2
+          = check_box_tag "category_outpatient-treatment", 'outpatient-treatment', false, :name => "category_slugs[]"
+          %label
+            = 'Outpatient Treatment'
+        %li.hide.depth2
+          = check_box_tag "category_residential-treatment", 'residential-treatment', false, :name => "category_slugs[]"
+          %label
+            = 'Residential Treatment'
+        %li.hide.depth2
+          = check_box_tag "category_sober-living-1", 'sober-living-1', false, :name => "category_slugs[]"
+          %label
+            = 'Sober Living'
+    %li.hide.depth1
+      = check_box_tag "category_dental-care", 'dental-care', false, :name => "category_slugs[]"
+      %label
+        = 'Dental Care'
+    %li.hide.depth1
+      = check_box_tag "category_end-of-life-care", 'end-of-life-care', false, :name => "category_slugs[]"
+      %label
+        = 'End-of-Life Care'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_bereavement", 'bereavement', false, :name => "category_slugs[]"
+          %label
+            = 'Bereavement'
+        %li.hide.depth2
+          = check_box_tag "category_burial-and-funeral-help", 'burial-and-funeral-help', false, :name => "category_slugs[]"
+          %label
+            = 'Burial & Funeral Help'
+        %li.hide.depth2
+          = check_box_tag "category_hospice", 'hospice', false, :name => "category_slugs[]"
+          %label
+            = 'Hospice'
+        %li.hide.depth2
+          = check_box_tag "category_pain-management", 'pain-management', false, :name => "category_slugs[]"
+          %label
+            = 'Pain Management'
+    %li.hide.depth1
+      = check_box_tag "category_health-education", 'health-education', false, :name => "category_slugs[]"
+      %label
+        = 'Health Education'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_daily-life-skills", 'daily-life-skills', false, :name => "category_slugs[]"
+          %label
+            = 'Daily Life Skills'
+        %li.hide.depth2
+          = check_box_tag "category_disease-management", 'disease-management', false, :name => "category_slugs[]"
+          %label
+            = 'Disease Management'
+        %li.hide.depth2
+          = check_box_tag "category_family-planning", 'family-planning', false, :name => "category_slugs[]"
+          %label
+            = 'Family Planning'
+        %li.hide.depth2
+          = check_box_tag "category_nutrition-1", 'nutrition-1', false, :name => "category_slugs[]"
+          %label
+            = 'Nutrition'
+        %li.hide.depth2
+          = check_box_tag "category_parenting-education", 'parenting-education', false, :name => "category_slugs[]"
+          %label
+            = 'Parenting Education'
+        %li.hide.depth2
+          = check_box_tag "category_sex-education", 'sex-education', false, :name => "category_slugs[]"
+          %label
+            = 'Sex Education'
+        %li.hide.depth2
+          = check_box_tag "category_understand-disability", 'understand-disability', false, :name => "category_slugs[]"
+          %label
+            = 'Understand Disability'
+        %li.hide.depth2
+          = check_box_tag "category_understand-mental-health", 'understand-mental-health', false, :name => "category_slugs[]"
+          %label
+            = 'Understand Mental Health'
+    %li.hide.depth1
+      = check_box_tag "category_help-pay-for-healthcare", 'help-pay-for-healthcare', false, :name => "category_slugs[]"
+      %label
+        = 'Help Pay for Healthcare'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-healthcare-1", 'cash-for-healthcare-1', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for Healthcare'
+        %li.hide.depth2
+          = check_box_tag "category_disability-benefits", 'disability-benefits', false, :name => "category_slugs[]"
+          %label
+            = 'Disability Benefits'
+        %li.hide.depth2
+          = check_box_tag "category_discounted-healthcare", 'discounted-healthcare', false, :name => "category_slugs[]"
+          %label
+            = 'Discounted Healthcare'
+        %li.hide.depth2
+          = check_box_tag "category_health-insurance", 'health-insurance', false, :name => "category_slugs[]"
+          %label
+            = 'Health Insurance'
+        %li.hide.depth2
+          = check_box_tag "category_medical-supplies-1", 'medical-supplies-1', false, :name => "category_slugs[]"
+          %label
+            = 'Medical Supplies'
+        %li.hide.depth2
+          = check_box_tag "category_prescription-assistance", 'prescription-assistance', false, :name => "category_slugs[]"
+          %label
+            = 'Prescription Assistance'
+        %li.hide.depth2
+          = check_box_tag "category_transportation-for-healthcare-1", 'transportation-for-healthcare-1', false, :name => "category_slugs[]"
+          %label
+            = 'Transportation for Healthcare'
+    %li.hide.depth1
+      = check_box_tag "category_medical-care", 'medical-care', false, :name => "category_slugs[]"
+      %label
+        = 'Medical Care'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_alternative-medicine", 'alternative-medicine', false, :name => "category_slugs[]"
+          %label
+            = 'Alternative Medicine'
+        %li.hide.depth2
+          = check_box_tag "category_assistive-technology-1", 'assistive-technology-1', false, :name => "category_slugs[]"
+          %label
+            = 'Assistive Technology'
+        %li.hide.depth2
+          = check_box_tag "category_birth-control", 'birth-control', false, :name => "category_slugs[]"
+          %label
+            = 'Birth Control'
+        %li.hide.depth2
+          = check_box_tag "category_checkup-and-test", 'checkup-and-test', false, :name => "category_slugs[]"
+          %label
+            = 'Checkup & Test'
+          %ul
+            %li.hide.depth3
+              = check_box_tag "category_disability-screening", 'disability-screening', false, :name => "category_slugs[]"
+              %label
+                = 'Disability Screening'
+            %li.hide.depth3
+              = check_box_tag "category_disease-screening", 'disease-screening', false, :name => "category_slugs[]"
+              %label
+                = 'Disease Screening'
+            %li.hide.depth3
+              = check_box_tag "category_hearing-tests", 'hearing-tests', false, :name => "category_slugs[]"
+              %label
+                = 'Hearing Tests'
+            %li.hide.depth3
+              = check_box_tag "category_mental-health-evaluation", 'mental-health-evaluation', false, :name => "category_slugs[]"
+              %label
+                = 'Mental Health Evaluation'
+            %li.hide.depth3
+              = check_box_tag "category_pregnancy-tests", 'pregnancy-tests', false, :name => "category_slugs[]"
+              %label
+                = 'Pregnancy Tests'
+            %li.hide.depth3
+              = check_box_tag "category_vision-tests", 'vision-tests', false, :name => "category_slugs[]"
+              %label
+                = 'Vision Tests'
+        %li.hide.depth2
+          = check_box_tag "category_maternity-care", 'maternity-care', false, :name => "category_slugs[]"
+          %label
+            = 'Maternity Care'
+        %li.hide.depth2
+          = check_box_tag "category_personal-hygiene", 'personal-hygiene', false, :name => "category_slugs[]"
+          %label
+            = 'Personal Hygiene'
+        %li.hide.depth2
+          = check_box_tag "category_prevent-and-treat", 'prevent-and-treat', false, :name => "category_slugs[]"
+          %label
+            = 'Prevent & Treat'
+          %ul
+            %li.hide.depth3
+              = check_box_tag "category_counseling", 'counseling', false, :name => "category_slugs[]"
+              %label
+                = 'Counseling'
+            %li.hide.depth3
+              = check_box_tag "category_hiv-treatment", 'hiv-treatment', false, :name => "category_slugs[]"
+              %label
+                = 'HIV Treatment'
+            %li.hide.depth3
+              = check_box_tag "category_pain-management-1", 'pain-management-1', false, :name => "category_slugs[]"
+              %label
+                = 'Pain Management'
+            %li.hide.depth3
+              = check_box_tag "category_disease-management-1", 'disease-management-1', false, :name => "category_slugs[]"
+              %label
+                = 'Disease Management'
+            %li.hide.depth3
+              = check_box_tag "category_nursing-home-2", 'nursing-home-2', false, :name => "category_slugs[]"
+              %label
+                = 'Nursing Home'
+            %li.hide.depth3
+              = check_box_tag "category_physical-therapy", 'physical-therapy', false, :name => "category_slugs[]"
+              %label
+                = 'Physical Therapy'
+            %li.hide.depth3
+              = check_box_tag "category_specialized-therapy", 'specialized-therapy', false, :name => "category_slugs[]"
+              %label
+                = 'Specialized Therapy'
+            %li.hide.depth3
+              = check_box_tag "category_vaccinations", 'vaccinations', false, :name => "category_slugs[]"
+              %label
+                = 'Vaccinations'
+            %li.hide.depth3
+              = check_box_tag "category_in-home-support", 'in-home-support', false, :name => "category_slugs[]"
+              %label
+                = 'In-Home Support'
+            %li.hide.depth3
+              = check_box_tag "category_residential-treatment-1", 'residential-treatment-1', false, :name => "category_slugs[]"
+              %label
+                = 'Residential Treatment'
+            %li.hide.depth3
+              = check_box_tag "category_outpatient-treatment-1", 'outpatient-treatment-1', false, :name => "category_slugs[]"
+              %label
+                = 'Outpatient Treatment'
+        %li.hide.depth2
+          = check_box_tag "category_psychiatric-emergency-services-1", 'psychiatric-emergency-services-1', false, :name => "category_slugs[]"
+          %label
+            = 'Psychiatric Emergency Services'
+%li.depth0
+  = check_box_tag "category_money", 'money', false, :name => "category_slugs[]"
+  %label
+    = 'Money'
+  %ul
+    %li.hide.depth1
+      = check_box_tag "category_emergency-cash-1", 'emergency-cash-1', false, :name => "category_slugs[]"
+      %label
+        = 'Emergency Cash'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-food-2", 'cash-for-food-2', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for Food'
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-healthcare-2", 'cash-for-healthcare-2', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for Healthcare'
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-housing-2", 'cash-for-housing-2', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for Housing'
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-childcare", 'cash-for-childcare', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for Childcare'
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-gas-2", 'cash-for-gas-2', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for Gas'
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-school-1", 'cash-for-school-1', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for School'
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-utilities-2", 'cash-for-utilities-2', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for Utilities'
+    %li.hide.depth1
+      = check_box_tag "category_financial-assistance", 'financial-assistance', false, :name => "category_slugs[]"
+      %label
+        = 'Financial Assistance'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_help-pay-for-childcare", 'help-pay-for-childcare', false, :name => "category_slugs[]"
+          %label
+            = 'Help Pay for Childcare'
+          %ul
+            %li.hide.depth3
+              = check_box_tag "category_cash-for-childcare-1", 'cash-for-childcare-1', false, :name => "category_slugs[]"
+              %label
+                = 'Cash for Childcare'
+            %li.hide.depth3
+              = check_box_tag "category_childcare-vouchers", 'childcare-vouchers', false, :name => "category_slugs[]"
+              %label
+                = 'Childcare Vouchers'
+        %li.hide.depth2
+          = check_box_tag "category_help-pay-for-food-1", 'help-pay-for-food-1', false, :name => "category_slugs[]"
+          %label
+            = 'Help Pay for Food'
+          %ul
+            %li.hide.depth3
+              = check_box_tag "category_food-benefits-1", 'food-benefits-1', false, :name => "category_slugs[]"
+              %label
+                = 'Food Benefits'
+            %li.hide.depth3
+              = check_box_tag "category_cash-for-food-3", 'cash-for-food-3', false, :name => "category_slugs[]"
+              %label
+                = 'Cash for Food'
+        %li.hide.depth2
+          = check_box_tag "category_help-pay-for-healthcare-1", 'help-pay-for-healthcare-1', false, :name => "category_slugs[]"
+          %label
+            = 'Help Pay for Healthcare'
+          %ul
+            %li.hide.depth3
+              = check_box_tag "category_cash-for-healthcare-3", 'cash-for-healthcare-3', false, :name => "category_slugs[]"
+              %label
+                = 'Cash for Healthcare'
+            %li.hide.depth3
+              = check_box_tag "category_disability-benefits-1", 'disability-benefits-1', false, :name => "category_slugs[]"
+              %label
+                = 'Disability Benefits'
+            %li.hide.depth3
+              = check_box_tag "category_discounted-healthcare-1", 'discounted-healthcare-1', false, :name => "category_slugs[]"
+              %label
+                = 'Discounted Healthcare'
+            %li.hide.depth3
+              = check_box_tag "category_health-insurance-1", 'health-insurance-1', false, :name => "category_slugs[]"
+              %label
+                = 'Health Insurance'
+            %li.hide.depth3
+              = check_box_tag "category_medical-supplies-2", 'medical-supplies-2', false, :name => "category_slugs[]"
+              %label
+                = 'Medical Supplies'
+            %li.hide.depth3
+              = check_box_tag "category_prescription-assistance-1", 'prescription-assistance-1', false, :name => "category_slugs[]"
+              %label
+                = 'Prescription Assistance'
+            %li.hide.depth3
+              = check_box_tag "category_transportation-for-healthcare-2", 'transportation-for-healthcare-2', false, :name => "category_slugs[]"
+              %label
+                = 'Transportation for Healthcare'
+            %li.hide.depth3
+              = check_box_tag "category_healthcare-vouchers", 'healthcare-vouchers', false, :name => "category_slugs[]"
+              %label
+                = 'Healthcare Vouchers'
+        %li.hide.depth2
+          = check_box_tag "category_help-pay-for-housing-1", 'help-pay-for-housing-1', false, :name => "category_slugs[]"
+          %label
+            = 'Help Pay for Housing'
+          %ul
+            %li.hide.depth3
+              = check_box_tag "category_cash-for-housing-3", 'cash-for-housing-3', false, :name => "category_slugs[]"
+              %label
+                = 'Cash for Housing'
+            %li.hide.depth3
+              = check_box_tag "category_cash-for-utilities-3", 'cash-for-utilities-3', false, :name => "category_slugs[]"
+              %label
+                = 'Cash for Utilities'
+            %li.hide.depth3
+              = check_box_tag "category_home-and-renters-insurance-1", 'home-and-renters-insurance-1', false, :name => "category_slugs[]"
+              %label
+                = 'Home & Renters Insurance'
+            %li.hide.depth3
+              = check_box_tag "category_housing-vouchers-1", 'housing-vouchers-1', false, :name => "category_slugs[]"
+              %label
+                = 'Housing Vouchers'
+            %li.hide.depth3
+              = check_box_tag "category_maintenance-and-repairs-1", 'maintenance-and-repairs-1', false, :name => "category_slugs[]"
+              %label
+                = 'Maintenance & Repairs'
+        %li.hide.depth2
+          = check_box_tag "category_help-pay-for-school", 'help-pay-for-school', false, :name => "category_slugs[]"
+          %label
+            = 'Help Pay for School'
+          %ul
+            %li.hide.depth3
+              = check_box_tag "category_books-1", 'books-1', false, :name => "category_slugs[]"
+              %label
+                = 'Books'
+            %li.hide.depth3
+              = check_box_tag "category_cash-for-school-2", 'cash-for-school-2', false, :name => "category_slugs[]"
+              %label
+                = 'Cash for School'
+            %li.hide.depth3
+              = check_box_tag "category_clothes-for-school-1", 'clothes-for-school-1', false, :name => "category_slugs[]"
+              %label
+                = 'Clothes for School'
+            %li.hide.depth3
+              = check_box_tag "category_financial-aid-and-loans", 'financial-aid-and-loans', false, :name => "category_slugs[]"
+              %label
+                = 'Financial Aid & Loans'
+            %li.hide.depth3
+              = check_box_tag "category_transportation-for-school-1", 'transportation-for-school-1', false, :name => "category_slugs[]"
+              %label
+                = 'Transportation for School'
+        %li.hide.depth2
+          = check_box_tag "category_help-pay-for-transit-1", 'help-pay-for-transit-1', false, :name => "category_slugs[]"
+          %label
+            = 'Help Pay for Transit'
+          %ul
+            %li.hide.depth3
+              = check_box_tag "category_cash-for-gas-3", 'cash-for-gas-3', false, :name => "category_slugs[]"
+              %label
+                = 'Cash for Gas'
+            %li.hide.depth3
+              = check_box_tag "category_bus-passes-1", 'bus-passes-1', false, :name => "category_slugs[]"
+              %label
+                = 'Bus Passes'
+        %li.hide.depth2
+          = check_box_tag "category_help-pay-for-work-expenses", 'help-pay-for-work-expenses', false, :name => "category_slugs[]"
+          %label
+            = 'Help Pay for Work Expenses'
+    %li.hide.depth1
+      = check_box_tag "category_government-benefits", 'government-benefits', false, :name => "category_slugs[]"
+      %label
+        = 'Government Benefits'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_disability-benefits-2", 'disability-benefits-2', false, :name => "category_slugs[]"
+          %label
+            = 'Disability Benefits'
+        %li.hide.depth2
+          = check_box_tag "category_food-benefits-2", 'food-benefits-2', false, :name => "category_slugs[]"
+          %label
+            = 'Food Benefits'
+        %li.hide.depth2
+          = check_box_tag "category_retirement-benefits", 'retirement-benefits', false, :name => "category_slugs[]"
+          %label
+            = 'Retirement Benefits'
+        %li.hide.depth2
+          = check_box_tag "category_understand-government-programs", 'understand-government-programs', false, :name => "category_slugs[]"
+          %label
+            = 'Understand Government Programs'
+        %li.hide.depth2
+          = check_box_tag "category_unemployment-benefits", 'unemployment-benefits', false, :name => "category_slugs[]"
+          %label
+            = 'Unemployment Benefits'
+    %li.hide.depth1
+      = check_box_tag "category_vouchers", 'vouchers', false, :name => "category_slugs[]"
+      %label
+        = 'Vouchers'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_childcare-vouchers-1", 'childcare-vouchers-1', false, :name => "category_slugs[]"
+          %label
+            = 'Childcare Vouchers'
+        %li.hide.depth2
+          = check_box_tag "category_clothing-vouchers-1", 'clothing-vouchers-1', false, :name => "category_slugs[]"
+          %label
+            = 'Clothing Vouchers'
+        %li.hide.depth2
+          = check_box_tag "category_healthcare-vouchers-1", 'healthcare-vouchers-1', false, :name => "category_slugs[]"
+          %label
+            = 'Healthcare Vouchers'
+        %li.hide.depth2
+          = check_box_tag "category_housing-vouchers-2", 'housing-vouchers-2', false, :name => "category_slugs[]"
+          %label
+            = 'Housing Vouchers'
+    %li.hide.depth1
+      = check_box_tag "category_financial-education", 'financial-education', false, :name => "category_slugs[]"
+      %label
+        = 'Financial Education'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_credit-counseling", 'credit-counseling', false, :name => "category_slugs[]"
+          %label
+            = 'Credit Counseling'
+        %li.hide.depth2
+          = check_box_tag "category_foreclosure-counseling-1", 'foreclosure-counseling-1', false, :name => "category_slugs[]"
+          %label
+            = 'Foreclosure Counseling'
+        %li.hide.depth2
+          = check_box_tag "category_homebuyer-education-1", 'homebuyer-education-1', false, :name => "category_slugs[]"
+          %label
+            = 'Homebuyer Education'
+        %li.hide.depth2
+          = check_box_tag "category_savings-program", 'savings-program', false, :name => "category_slugs[]"
+          %label
+            = 'Savings Program'
+    %li.hide.depth1
+      = check_box_tag "category_insurance", 'insurance', false, :name => "category_slugs[]"
+      %label
+        = 'Insurance'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_health-insurance-2", 'health-insurance-2', false, :name => "category_slugs[]"
+          %label
+            = 'Health Insurance'
+        %li.hide.depth2
+          = check_box_tag "category_home-and-renters-insurance-2", 'home-and-renters-insurance-2', false, :name => "category_slugs[]"
+          %label
+            = 'Home & Renters Insurance'
+    %li.hide.depth1
+      = check_box_tag "category_tax-preparation", 'tax-preparation', false, :name => "category_slugs[]"
+      %label
+        = 'Tax Preparation'
+%li.depth0
+  = check_box_tag "category_care", 'care', false, :name => "category_slugs[]"
+  %label
+    = 'Care'
+  %ul
+    %li.hide.depth1
+      = check_box_tag "category_adoption-and-foster-care", 'adoption-and-foster-care', false, :name => "category_slugs[]"
+      %label
+        = 'Adoption & Foster Care'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_adoption-and-foster-placement", 'adoption-and-foster-placement', false, :name => "category_slugs[]"
+          %label
+            = 'Adoption & Foster Placement'
+        %li.hide.depth2
+          = check_box_tag "category_adoption-and-foster-parenting", 'adoption-and-foster-parenting', false, :name => "category_slugs[]"
+          %label
+            = 'Adoption & Foster Parenting'
+        %li.hide.depth2
+          = check_box_tag "category_adoption-planning", 'adoption-planning', false, :name => "category_slugs[]"
+          %label
+            = 'Adoption Planning'
+        %li.hide.depth2
+          = check_box_tag "category_post-adoption-support", 'post-adoption-support', false, :name => "category_slugs[]"
+          %label
+            = 'Post-Adoption Support'
+    %li.hide.depth1
+      = check_box_tag "category_animal-welfare", 'animal-welfare', false, :name => "category_slugs[]"
+      %label
+        = 'Animal Welfare'
+    %li.hide.depth1
+      = check_box_tag "category_daytime-care", 'daytime-care', false, :name => "category_slugs[]"
+      %label
+        = 'Daytime Care'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_adult-daycare", 'adult-daycare', false, :name => "category_slugs[]"
+          %label
+            = 'Adult Daycare'
+        %li.hide.depth2
+          = check_box_tag "category_afterschool-care", 'afterschool-care', false, :name => "category_slugs[]"
+          %label
+            = 'Afterschool Care'
+        %li.hide.depth2
+          = check_box_tag "category_childcare", 'childcare', false, :name => "category_slugs[]"
+          %label
+            = 'Childcare'
+          %ul
+            %li.hide.depth3
+              = check_box_tag "category_child-daycare", 'child-daycare', false, :name => "category_slugs[]"
+              %label
+                = 'Child Daycare'
+            %li.hide.depth3
+              = check_box_tag "category_help-find-childcare", 'help-find-childcare', false, :name => "category_slugs[]"
+              %label
+                = 'Help Find Childcare'
+            %li.hide.depth3
+              = check_box_tag "category_childcare-vouchers-2", 'childcare-vouchers-2', false, :name => "category_slugs[]"
+              %label
+                = 'Childcare Vouchers'
+            %li.hide.depth3
+              = check_box_tag "category_cash-for-childcare-2", 'cash-for-childcare-2', false, :name => "category_slugs[]"
+              %label
+                = 'Cash for Childcare'
+        %li.hide.depth2
+          = check_box_tag "category_day-camp", 'day-camp', false, :name => "category_slugs[]"
+          %label
+            = 'Day Camp'
+        %li.hide.depth2
+          = check_box_tag "category_preschool", 'preschool', false, :name => "category_slugs[]"
+          %label
+            = 'Preschool'
+        %li.hide.depth2
+          = check_box_tag "category_recreation", 'recreation', false, :name => "category_slugs[]"
+          %label
+            = 'Recreation'
+        %li.hide.depth2
+          = check_box_tag "category_relief-for-caregivers", 'relief-for-caregivers', false, :name => "category_slugs[]"
+          %label
+            = 'Relief for Caregivers'
+    %li.hide.depth1
+      = check_box_tag "category_end-of-life-care-1", 'end-of-life-care-1', false, :name => "category_slugs[]"
+      %label
+        = 'End-of-Life Care'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_bereavement-1", 'bereavement-1', false, :name => "category_slugs[]"
+          %label
+            = 'Bereavement'
+        %li.hide.depth2
+          = check_box_tag "category_burial-and-funeral-help-1", 'burial-and-funeral-help-1', false, :name => "category_slugs[]"
+          %label
+            = 'Burial & Funeral Help'
+        %li.hide.depth2
+          = check_box_tag "category_hospice-1", 'hospice-1', false, :name => "category_slugs[]"
+          %label
+            = 'Hospice'
+        %li.hide.depth2
+          = check_box_tag "category_pain-management-2", 'pain-management-2', false, :name => "category_slugs[]"
+          %label
+            = 'Pain Management'
+    %li.hide.depth1
+      = check_box_tag "category_navigating-the-system", 'navigating-the-system', false, :name => "category_slugs[]"
+      %label
+        = 'Navigating the System'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_help-fill-out-forms", 'help-fill-out-forms', false, :name => "category_slugs[]"
+          %label
+            = 'Help Fill out Forms'
+        %li.hide.depth2
+          = check_box_tag "category_help-find-childcare-1", 'help-find-childcare-1', false, :name => "category_slugs[]"
+          %label
+            = 'Help Find Childcare'
+        %li.hide.depth2
+          = check_box_tag "category_help-find-housing-1", 'help-find-housing-1', false, :name => "category_slugs[]"
+          %label
+            = 'Help Find Housing'
+        %li.hide.depth2
+          = check_box_tag "category_help-find-school", 'help-find-school', false, :name => "category_slugs[]"
+          %label
+            = 'Help Find School'
+        %li.hide.depth2
+          = check_box_tag "category_help-find-work", 'help-find-work', false, :name => "category_slugs[]"
+          %label
+            = 'Help Find Work'
+    %li.hide.depth1
+      = check_box_tag "category_residential-care", 'residential-care', false, :name => "category_slugs[]"
+      %label
+        = 'Residential Care'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_assisted-living-1", 'assisted-living-1', false, :name => "category_slugs[]"
+          %label
+            = 'Assisted Living'
+        %li.hide.depth2
+          = check_box_tag "category_residential-treatment-2", 'residential-treatment-2', false, :name => "category_slugs[]"
+          %label
+            = 'Residential Treatment'
+        %li.hide.depth2
+          = check_box_tag "category_nursing-home-3", 'nursing-home-3', false, :name => "category_slugs[]"
+          %label
+            = 'Nursing Home'
+        %li.hide.depth2
+          = check_box_tag "category_overnight-camp", 'overnight-camp', false, :name => "category_slugs[]"
+          %label
+            = 'Overnight Camp'
+    %li.hide.depth1
+      = check_box_tag "category_support-network", 'support-network', false, :name => "category_slugs[]"
+      %label
+        = 'Support Network'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_counseling-1", 'counseling-1', false, :name => "category_slugs[]"
+          %label
+            = 'Counseling'
+        %li.hide.depth2
+          = check_box_tag "category_help-hotlines", 'help-hotlines', false, :name => "category_slugs[]"
+          %label
+            = 'Help Hotlines'
+        %li.hide.depth2
+          = check_box_tag "category_home-visiting", 'home-visiting', false, :name => "category_slugs[]"
+          %label
+            = 'Home Visiting'
+        %li.hide.depth2
+          = check_box_tag "category_in-home-support-1", 'in-home-support-1', false, :name => "category_slugs[]"
+          %label
+            = 'In-Home Support'
+        %li.hide.depth2
+          = check_box_tag "category_mentoring", 'mentoring', false, :name => "category_slugs[]"
+          %label
+            = 'Mentoring'
+        %li.hide.depth2
+          = check_box_tag "category_one-on-one-support", 'one-on-one-support', false, :name => "category_slugs[]"
+          %label
+            = 'One-on-One Support'
+        %li.hide.depth2
+          = check_box_tag "category_peer-support", 'peer-support', false, :name => "category_slugs[]"
+          %label
+            = 'Peer Support'
+        %li.hide.depth2
+          = check_box_tag "category_spiritual-support", 'spiritual-support', false, :name => "category_slugs[]"
+          %label
+            = 'Spiritual Support'
+        %li.hide.depth2
+          = check_box_tag "category_support-groups", 'support-groups', false, :name => "category_slugs[]"
+          %label
+            = 'Support Groups'
+          %ul
+            %li.hide.depth3
+              = check_box_tag "category_12-step-1", '12-step-1', false, :name => "category_slugs[]"
+              %label
+                = '12-Step'
+            %li.hide.depth3
+              = check_box_tag "category_bereavement-2", 'bereavement-2', false, :name => "category_slugs[]"
+              %label
+                = 'Bereavement'
+            %li.hide.depth3
+              = check_box_tag "category_parenting-education-1", 'parenting-education-1', false, :name => "category_slugs[]"
+              %label
+                = 'Parenting Education'
+        %li.hide.depth2
+          = check_box_tag "category_virtual-support", 'virtual-support', false, :name => "category_slugs[]"
+          %label
+            = 'Virtual Support'
+%li.depth0
+  = check_box_tag "category_education", 'education', false, :name => "category_slugs[]"
+  %label
+    = 'Education'
+  %ul
+    %li.hide.depth1
+      = check_box_tag "category_help-find-school-1", 'help-find-school-1', false, :name => "category_slugs[]"
+      %label
+        = 'Help Find School'
+    %li.hide.depth1
+      = check_box_tag "category_help-pay-for-school-1", 'help-pay-for-school-1', false, :name => "category_slugs[]"
+      %label
+        = 'Help Pay for School'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_books-2", 'books-2', false, :name => "category_slugs[]"
+          %label
+            = 'Books'
+        %li.hide.depth2
+          = check_box_tag "category_cash-for-school-3", 'cash-for-school-3', false, :name => "category_slugs[]"
+          %label
+            = 'Cash for School'
+        %li.hide.depth2
+          = check_box_tag "category_clothes-for-school-2", 'clothes-for-school-2', false, :name => "category_slugs[]"
+          %label
+            = 'Clothes for School'
+        %li.hide.depth2
+          = check_box_tag "category_financial-aid-and-loans-1", 'financial-aid-and-loans-1', false, :name => "category_slugs[]"
+          %label
+            = 'Financial Aid & Loans'
+        %li.hide.depth2
+          = check_box_tag "category_transportation-for-school-2", 'transportation-for-school-2', false, :name => "category_slugs[]"
+          %label
+            = 'Transportation for School'
+    %li.hide.depth1
+      = check_box_tag "category_more-education", 'more-education', false, :name => "category_slugs[]"
+      %label
+        = 'More Education'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_alternative-education", 'alternative-education', false, :name => "category_slugs[]"
+          %label
+            = 'Alternative Education'
+        %li.hide.depth2
+          = check_box_tag "category_disaster-preparedness-and-response", 'disaster-preparedness-and-response', false, :name => "category_slugs[]"
+          %label
+            = 'Disaster Preparedness & Response'
+        %li.hide.depth2
+          = check_box_tag "category_english-as-a-second-language-esl", 'english-as-a-second-language-esl', false, :name => "category_slugs[]"
+          %label
+            = 'English as a Second Language (ESL)'
+        %li.hide.depth2
+          = check_box_tag "category_financial-education-1", 'financial-education-1', false, :name => "category_slugs[]"
+          %label
+            = 'Financial Education'
+          %ul
+            %li.hide.depth3
+              = check_box_tag "category_credit-counseling-1", 'credit-counseling-1', false, :name => "category_slugs[]"
+              %label
+                = 'Credit Counseling'
+            %li.hide.depth3
+              = check_box_tag "category_foreclosure-counseling-2", 'foreclosure-counseling-2', false, :name => "category_slugs[]"
+              %label
+                = 'Foreclosure Counseling'
+            %li.hide.depth3
+              = check_box_tag "category_homebuyer-education-2", 'homebuyer-education-2', false, :name => "category_slugs[]"
+              %label
+                = 'Homebuyer Education'
+        %li.hide.depth2
+          = check_box_tag "category_foreign-languages", 'foreign-languages', false, :name => "category_slugs[]"
+          %label
+            = 'Foreign Languages'
+        %li.hide.depth2
+          = check_box_tag "category_ged-slash-high-school-equivalency", 'ged-slash-high-school-equivalency', false, :name => "category_slugs[]"
+          %label
+            = 'GED/High-School Equivalency'
+        %li.hide.depth2
+          = check_box_tag "category_health-education-1", 'health-education-1', false, :name => "category_slugs[]"
+          %label
+            = 'Health Education'
+          %ul
+            %li.hide.depth3
+              = check_box_tag "category_disease-management-2", 'disease-management-2', false, :name => "category_slugs[]"
+              %label
+                = 'Disease Management'
+            %li.hide.depth3
+              = check_box_tag "category_family-planning-1", 'family-planning-1', false, :name => "category_slugs[]"
+              %label
+                = 'Family Planning'
+            %li.hide.depth3
+              = check_box_tag "category_nutrition-education", 'nutrition-education', false, :name => "category_slugs[]"
+              %label
+                = 'Nutrition Education'
+            %li.hide.depth3
+              = check_box_tag "category_parenting-education-2", 'parenting-education-2', false, :name => "category_slugs[]"
+              %label
+                = 'Parenting Education'
+            %li.hide.depth3
+              = check_box_tag "category_sex-education-1", 'sex-education-1', false, :name => "category_slugs[]"
+              %label
+                = 'Sex Education'
+            %li.hide.depth3
+              = check_box_tag "category_understand-disability-1", 'understand-disability-1', false, :name => "category_slugs[]"
+              %label
+                = 'Understand Disability'
+            %li.hide.depth3
+              = check_box_tag "category_understand-mental-health-1", 'understand-mental-health-1', false, :name => "category_slugs[]"
+              %label
+                = 'Understand Mental Health'
+        %li.hide.depth2
+          = check_box_tag "category_supported-employment", 'supported-employment', false, :name => "category_slugs[]"
+          %label
+            = 'Supported Employment'
+        %li.hide.depth2
+          = check_box_tag "category_special-education", 'special-education', false, :name => "category_slugs[]"
+          %label
+            = 'Special Education'
+        %li.hide.depth2
+          = check_box_tag "category_tutoring", 'tutoring', false, :name => "category_slugs[]"
+          %label
+            = 'Tutoring'
+    %li.hide.depth1
+      = check_box_tag "category_preschool-1", 'preschool-1', false, :name => "category_slugs[]"
+      %label
+        = 'Preschool'
+    %li.hide.depth1
+      = check_box_tag "category_screening-and-exams", 'screening-and-exams', false, :name => "category_slugs[]"
+      %label
+        = 'Screening & Exams'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_citizenship-and-immigration", 'citizenship-and-immigration', false, :name => "category_slugs[]"
+          %label
+            = 'Citizenship & Immigration'
+        %li.hide.depth2
+          = check_box_tag "category_ged-slash-high-school", 'ged-slash-high-school', false, :name => "category_slugs[]"
+          %label
+            = 'GED/High-School'
+        %li.hide.depth2
+          = check_box_tag "category_english-as-a-second-language-esl-1", 'english-as-a-second-language-esl-1', false, :name => "category_slugs[]"
+          %label
+            = 'English as a Second Language (ESL)'
+    %li.hide.depth1
+      = check_box_tag "category_skills-and-training", 'skills-and-training', false, :name => "category_slugs[]"
+      %label
+        = 'Skills & Training'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_basic-literacy", 'basic-literacy', false, :name => "category_slugs[]"
+          %label
+            = 'Basic Literacy'
+        %li.hide.depth2
+          = check_box_tag "category_computer-class", 'computer-class', false, :name => "category_slugs[]"
+          %label
+            = 'Computer Class'
+        %li.hide.depth2
+          = check_box_tag "category_daily-life-skills-1", 'daily-life-skills-1', false, :name => "category_slugs[]"
+          %label
+            = 'Daily Life Skills'
+        %li.hide.depth2
+          = check_box_tag "category_interview-training", 'interview-training', false, :name => "category_slugs[]"
+          %label
+            = 'Interview Training'
+        %li.hide.depth2
+          = check_box_tag "category_resume-development", 'resume-development', false, :name => "category_slugs[]"
+          %label
+            = 'Resume Development'
+        %li.hide.depth2
+          = check_box_tag "category_skills-assessment", 'skills-assessment', false, :name => "category_slugs[]"
+          %label
+            = 'Skills Assessment'
+        %li.hide.depth2
+          = check_box_tag "category_specialized-training", 'specialized-training', false, :name => "category_slugs[]"
+          %label
+            = 'Specialized Training'
+    %li.hide.depth1
+      = check_box_tag "category_technology-1", 'technology-1', false, :name => "category_slugs[]"
+      %label
+        = 'Technology'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_assistive-technology-2", 'assistive-technology-2', false, :name => "category_slugs[]"
+          %label
+            = 'Assistive Technology'
+        %li.hide.depth2
+          = check_box_tag "category_internet-1", 'internet-1', false, :name => "category_slugs[]"
+          %label
+            = 'Internet'
+        %li.hide.depth2
+          = check_box_tag "category_medical-supplies-3", 'medical-supplies-3', false, :name => "category_slugs[]"
+          %label
+            = 'Medical Supplies'
+        %li.hide.depth2
+          = check_box_tag "category_phone-services-1", 'phone-services-1', false, :name => "category_slugs[]"
+          %label
+            = 'Phone Services'
+%li.depth0
+  = check_box_tag "category_work", 'work', false, :name => "category_slugs[]"
+  %label
+    = 'Work'
+  %ul
+    %li.hide.depth1
+      = check_box_tag "category_help-find-work-1", 'help-find-work-1', false, :name => "category_slugs[]"
+      %label
+        = 'Help Find Work'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_job-placement", 'job-placement', false, :name => "category_slugs[]"
+          %label
+            = 'Job Placement'
+        %li.hide.depth2
+          = check_box_tag "category_supported-employment-1", 'supported-employment-1', false, :name => "category_slugs[]"
+          %label
+            = 'Supported Employment'
+    %li.hide.depth1
+      = check_box_tag "category_help-pay-for-work-expenses-1", 'help-pay-for-work-expenses-1', false, :name => "category_slugs[]"
+      %label
+        = 'Help Pay for Work Expenses'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_clothes-for-work-1", 'clothes-for-work-1', false, :name => "category_slugs[]"
+          %label
+            = 'Clothes for Work'
+        %li.hide.depth2
+          = check_box_tag "category_retirement-benefits-1", 'retirement-benefits-1', false, :name => "category_slugs[]"
+          %label
+            = 'Retirement Benefits'
+        %li.hide.depth2
+          = check_box_tag "category_supplies-for-work-1", 'supplies-for-work-1', false, :name => "category_slugs[]"
+          %label
+            = 'Supplies for Work'
+        %li.hide.depth2
+          = check_box_tag "category_unemployment-benefits-1", 'unemployment-benefits-1', false, :name => "category_slugs[]"
+          %label
+            = 'Unemployment Benefits'
+    %li.hide.depth1
+      = check_box_tag "category_skills-and-training-1", 'skills-and-training-1', false, :name => "category_slugs[]"
+      %label
+        = 'Skills & Training'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_basic-literacy-1", 'basic-literacy-1', false, :name => "category_slugs[]"
+          %label
+            = 'Basic Literacy'
+        %li.hide.depth2
+          = check_box_tag "category_computer-class-1", 'computer-class-1', false, :name => "category_slugs[]"
+          %label
+            = 'Computer Class'
+        %li.hide.depth2
+          = check_box_tag "category_ged-slash-high-school-equivalency-1", 'ged-slash-high-school-equivalency-1', false, :name => "category_slugs[]"
+          %label
+            = 'GED/High-School Equivalency'
+        %li.hide.depth2
+          = check_box_tag "category_interview-training-1", 'interview-training-1', false, :name => "category_slugs[]"
+          %label
+            = 'Interview Training'
+        %li.hide.depth2
+          = check_box_tag "category_resume-development-1", 'resume-development-1', false, :name => "category_slugs[]"
+          %label
+            = 'Resume Development'
+        %li.hide.depth2
+          = check_box_tag "category_skills-assessment-1", 'skills-assessment-1', false, :name => "category_slugs[]"
+          %label
+            = 'Skills Assessment'
+        %li.hide.depth2
+          = check_box_tag "category_specialized-training-1", 'specialized-training-1', false, :name => "category_slugs[]"
+          %label
+            = 'Specialized Training'
+    %li.hide.depth1
+      = check_box_tag "category_supported-employment-2", 'supported-employment-2', false, :name => "category_slugs[]"
+      %label
+        = 'Supported Employment'
+    %li.hide.depth1
+      = check_box_tag "category_workplace-rights", 'workplace-rights', false, :name => "category_slugs[]"
+      %label
+        = 'Workplace Rights'
+%li.depth0
+  = check_box_tag "category_legal", 'legal', false, :name => "category_slugs[]"
+  %label
+    = 'Legal'
+  %ul
+    %li.hide.depth1
+      = check_box_tag "category_advocacy-and-legal-aid", 'advocacy-and-legal-aid', false, :name => "category_slugs[]"
+      %label
+        = 'Advocacy & Legal Aid'
+      %ul
+        %li.hide.depth2
+          = check_box_tag "category_adoption-and-foster-care-1", 'adoption-and-foster-care-1', false, :name => "category_slugs[]"
+          %label
+            = 'Adoption & Foster Care'
+          %ul
+            %li.hide.depth3
+              = check_box_tag "category_adoption-and-foster-placement-1", 'adoption-and-foster-placement-1', false, :name => "category_slugs[]"
+              %label
+                = 'Adoption & Foster Placement'
+            %li.hide.depth3
+              = check_box_tag "category_adoption-and-foster-parenting-1", 'adoption-and-foster-parenting-1', false, :name => "category_slugs[]"
+              %label
+                = 'Adoption & Foster Parenting'
+            %li.hide.depth3
+              = check_box_tag "category_adoption-planning-1", 'adoption-planning-1', false, :name => "category_slugs[]"
+              %label
+                = 'Adoption Planning'
+            %li.hide.depth3
+              = check_box_tag "category_post-adoption-support-1", 'post-adoption-support-1', false, :name => "category_slugs[]"
+              %label
+                = 'Post-Adoption Support'
+        %li.hide.depth2
+          = check_box_tag "category_citizenship-and-immigration-1", 'citizenship-and-immigration-1', false, :name => "category_slugs[]"
+          %label
+            = 'Citizenship & Immigration'
+        %li.hide.depth2
+          = check_box_tag "category_discrimination-and-civil-rights", 'discrimination-and-civil-rights', false, :name => "category_slugs[]"
+          %label
+            = 'Discrimination & Civil Rights'
+        %li.hide.depth2
+          = check_box_tag "category_guardianship", 'guardianship', false, :name => "category_slugs[]"
+          %label
+            = 'Guardianship'
+        %li.hide.depth2
+          = check_box_tag "category_identification-recovery", 'identification-recovery', false, :name => "category_slugs[]"
+          %label
+            = 'Identification Recovery'
+        %li.hide.depth2
+          = check_box_tag "category_understand-government-programs-1", 'understand-government-programs-1', false, :name => "category_slugs[]"
+          %label
+            = 'Understand Government Programs'
+        %li.hide.depth2
+          = check_box_tag "category_workplace-rights-1", 'workplace-rights-1', false, :name => "category_slugs[]"
+          %label
+            = 'Workplace Rights'
+    %li.hide.depth1
+      = check_box_tag "category_mediation", 'mediation', false, :name => "category_slugs[]"
+      %label
+        = 'Mediation'
+    %li.hide.depth1
+      = check_box_tag "category_notary", 'notary', false, :name => "category_slugs[]"
+      %label
+        = 'Notary'
+    %li.hide.depth1
+      = check_box_tag "category_representation", 'representation', false, :name => "category_slugs[]"
+      %label
+        = 'Representation'
+    %li.hide.depth1
+      = check_box_tag "category_translation-and-interpretation", 'translation-and-interpretation', false, :name => "category_slugs[]"
+      %label
+        = 'Translation & Interpretation'
