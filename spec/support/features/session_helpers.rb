@@ -48,9 +48,9 @@ module Features
 
     def add_contact
       click_link "Add a new contact"
-      fill_in "names[]", with: "Moncef"
-      fill_in "titles[]", with: "Director of Development"
-      fill_in "contact_emails[]", with: "email@email.org"
+      fill_in "names[]", with: "Moncef Belyamani-Belyamani"
+      fill_in "titles[]", with: "Director of Development and Operations"
+      fill_in "contact_emails[]", with: "moncefbelyamani@samaritanhousesanmateo.org"
       fill_in "contact_phones[]", with: "703-555-1212"
       fill_in "contact_faxes[]", with: "703-555-1234"
       click_button "Save changes"
