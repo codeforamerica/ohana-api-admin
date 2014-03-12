@@ -14,6 +14,7 @@ feature "Update a location's contacts" do
   scenario "by adding a new contact", :js => true do
     visit_location_with_no_phone
     add_contact
+    click_button "Save changes"
     visit_location_with_no_phone
     find_field('names[]').value.should eq "Moncef Belyamani-Belyamani"
     find_field('titles[]').

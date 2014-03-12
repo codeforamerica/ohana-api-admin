@@ -19,5 +19,6 @@ feature "Delete a location's contacts" do
     visit_test_location
     expect(page).to_not have_link "Delete this contact permanently"
     add_contact
+    click_button "Save changes"
   end
 end

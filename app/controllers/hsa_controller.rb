@@ -57,6 +57,15 @@ class HsaController < ApplicationController
     location_id = params[:location_id]
 
     begin
+      Ohanakapa.put("organizations/#{org_id}/", :query => { :name => params[:org_name] })
+    rescue Ohanakapa::BadRequest => e
+      if e.to_s.include?("Name can't be blank")
+        redirect_to request.referer,
+          alert: "Organization name can't be blank!" and return
+      end
+    end
+
+    begin
       Ohanakapa.update_location(location_id, location_attributes)
     rescue Ohanakapa::BadRequest => e
       # Invalid Phone
@@ -165,15 +174,6 @@ class HsaController < ApplicationController
     end
 
     #Ohanakapa.put("locations/#{location_id}/schedule", :query => { :schedule => schedule }) if schedule
-
-    begin
-      Ohanakapa.put("organizations/#{org_id}/", :query => { :name => params[:org_name] })
-    rescue Ohanakapa::BadRequest => e
-      if e.to_s.include?("Name can't be blank")
-        redirect_to request.referer,
-          alert: "Organization name can't be blank!" and return
-      end
-    end
 
     Ohanakapa.put("services/#{service_id}/categories", :query =>
       {
@@ -312,6 +312,27 @@ class HsaController < ApplicationController
 
   def domain
     current_user.email.split("@").last
+  end
+
+  def delete_location
+    location_id = params[:location_id]
+    location_name = params[:loc_name]
+    org_name = params[:org_name]
+
+    Ohanakapa.delete("locations/#{location_id}")
+    redirect_to locations_path,
+      notice: "Location \"#{location_name}\" for #{org_name} successfully "+
+        "deleted! Refresh the page to see the changes." and return
+  end
+
+  def confirm_delete_location
+    @loc_name = params[:loc_name]
+    @org_name = params[:org_name]
+    @location_id =  params[:location_id]
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   private

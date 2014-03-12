@@ -13,6 +13,7 @@ feature "Update a location's mailing address" do
   scenario "by adding a new mailing address" do
     visit_test_location
     add_mail_address
+    click_button "Save changes"
     visit_test_location
     find_field('attention').value.should eq "Redwood City Free Medical Clinic"
     find_field('m_street').value.should eq "1486 Huntington Avenue, Suite 100"

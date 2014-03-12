@@ -14,6 +14,7 @@ feature "Update a location's phone numbers" do
   scenario "by adding a new number", :js => true do
     visit_location_with_no_phone
     add_phone_number
+    click_button "Save changes"
     visit_location_with_no_phone
     find_field('number[]').value.should eq "7035551212"
     find_field('vanity_number[]').value.should eq "703555-ABCD"

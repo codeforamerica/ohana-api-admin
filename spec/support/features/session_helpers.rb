@@ -38,7 +38,6 @@ module Features
       fill_in "vanity_number[]", with: "703555-ABCD"
       fill_in "extension[]", with: "x1223"
       fill_in "department[]", with: "CalFresh"
-      click_button "Save changes"
     end
 
     def delete_phone_number
@@ -53,7 +52,14 @@ module Features
       fill_in "contact_emails[]", with: "moncefbelyamani@samaritanhousesanmateo.org"
       fill_in "contact_phones[]", with: "703-555-1212"
       fill_in "contact_faxes[]", with: "703-555-1234"
-      click_button "Save changes"
+    end
+
+    def fill_in_contact
+      fill_in "names[]", with: "Moncef Belyamani-Belyamani"
+      fill_in "titles[]", with: "Director of Development and Operations"
+      fill_in "contact_emails[]", with: "moncefbelyamani@samaritanhousesanmateo.org"
+      fill_in "contact_phones[]", with: "703-555-1212"
+      fill_in "contact_faxes[]", with: "703-555-1234"
     end
 
     def delete_contact
@@ -158,7 +164,6 @@ module Features
       fill_in "m_city", with: "Redwood City"
       fill_in "m_state", with: "CA"
       fill_in "m_zip", with: "94080-5932"
-      click_button "Save changes"
     end
 
     def remove_mail_address
@@ -207,13 +212,27 @@ module Features
     end
 
     def fill_in_all_required_fields
-      fill_in "location_name", with: "new location with service fields"
+      fill_in "location_name", with: "new samaritan house location"
       fill_in "description", with: "new description"
       fill_in "short_desc", with: "new short description"
       fill_in "street", with: "modularity"
       fill_in "city", with: "utopia"
       fill_in "state", with: "XX"
       fill_in "zip", with: "12345"
+    end
+
+    def delete_location
+      find_link("Permanently delete this location").click
+      find_link("I understand the consequences, delete this location").click
+    end
+
+    def create_location_and_visit_it
+      click_button "Create new location for Samaritan House"
+      find_link "Add a new location"
+      click_link "Edit account"
+      sleep 1
+      click_link "Your locations"
+      find_link("new samaritan house location").click
     end
   end
 end

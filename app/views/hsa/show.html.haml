@@ -50,6 +50,18 @@
             What categories does this location's services fall under?
         %ul
           = render "forms/categories", :service => service, :slugs => @slugs
+  %div.danger-zone
+    %header
+      %strong
+        Danger Zone
+    %h4
+      Delete this location
+    %p
+      Once you delete a location, there is no going be back. Please be certain.
+    %p
+      = link_to 'Permanently delete this location', confirm_delete_location_path(loc_name: loc_name, org_name: org_name, location_id: @location.id), remote: true, data: { toggle: "modal", target: "#modal-window" }, :class => "boxed-action"
+  %div#modal-window.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog"}
+
 
   %div.save-box.navbar-inner
     %p
@@ -60,3 +72,4 @@
     = hidden_field_tag :org_id, @location.organization.id
     = hidden_field_tag :page, params[:page]
     = submit_tag "Save changes & apply edits to database", :class => "btn btn-primary"
+

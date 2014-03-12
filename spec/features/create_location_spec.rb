@@ -7,21 +7,33 @@ feature "Create a new location" do
     click_link "Add a new location"
   end
 
+  describe "when adding a new location" do
+    it "should prepopulate the website" do
+      find_field('urls[]').value.should eq "http://www.samaritanhouse.com"
+    end
+  end
+
   scenario "with all required fields", :js => true do
-    fill_in "location_name", with: "new location"
+    fill_in "location_name", with: "new samaritan house location"
     fill_in "description", with: "new description"
     fill_in "short_desc", with: "new short description"
     fill_in "street", with: "1486 Huntington Avenue, Suite 100"
     fill_in "city", with: "Redwood City"
     fill_in "state", with: "XX"
     fill_in "zip", with: "94080-5932"
-    click_button "Create new location for Samaritan House"
-    expect(page).
-      to have_content "New location \"new location\" for Samaritan House successfully created"
+    create_location_and_visit_it
+    find_field('location_name').value.should eq "new samaritan house location"
+    find_field('description').value.should eq "new description"
+    find_field('short_desc').value.should eq "new short description"
+    find_field('street').value.should eq "1486 Huntington Avenue, Suite 100"
+    find_field('city').value.should eq "Redwood City"
+    find_field('state').value.should eq "XX"
+    find_field('zip').value.should eq "94080-5932"
+    delete_location
   end
 
   scenario "with empty description" do
-    fill_in "location_name", with: "new location"
+    fill_in "location_name", with: "new samaritan house location"
     fill_in "short_desc", with: "new short description"
     fill_in "street", with: "1486 Huntington Avenue, Suite 100"
     fill_in "city", with: "Redwood City"
@@ -43,7 +55,7 @@ feature "Create a new location" do
   end
 
   scenario "with empty short description" do
-    fill_in "location_name", with: "new location"
+    fill_in "location_name", with: "new samaritan house location"
     fill_in "description", with: "new description"
     fill_in "street", with: "modularity"
     fill_in "city", with: "utopia"
@@ -54,25 +66,230 @@ feature "Create a new location" do
   end
 
   scenario "with no address" do
-    fill_in "location_name", with: "new location"
+    fill_in "location_name", with: "new samaritan house location"
     fill_in "description", with: "new description"
     fill_in "short_desc", with: "new short description"
     click_button "Create new location for Samaritan House"
     expect(page).to have_content "Please enter at least one type of address"
   end
 
-  scenario "with service fields filled out", :js => true do
+  scenario "with valid mailing address", :js => true do
     fill_in_all_required_fields
-    fill_in "fees", with: "no fees"
+    add_mail_address
+    create_location_and_visit_it
+    find_field('attention').value.should eq "Redwood City Free Medical Clinic"
+    find_field('m_street').value.should eq "1486 Huntington Avenue, Suite 100"
+    find_field('m_city').value.should eq "Redwood City"
+    find_field('m_state').value.should eq "CA"
+    find_field('m_zip').value.should eq "94080-5932"
+    delete_location
+  end
+
+  scenario "with valid phone number", :js => true do
+    fill_in_all_required_fields
+    add_phone_number
+    create_location_and_visit_it
+    find_field('number[]').value.should eq "7035551212"
+    find_field('vanity_number[]').value.should eq "703555-ABCD"
+    find_field('extension[]').value.should eq "x1223"
+    find_field('department[]').value.should eq "CalFresh"
+    delete_location
+  end
+
+  scenario "with an invalid phone number", :js => true do
+    fill_in_all_required_fields
+    click_link "Add a phone number"
+    fill_in "number[]", with: "703"
+    click_button "Create new location for Samaritan House"
+    expect(page).to have_content "Please enter a valid US phone number"
+  end
+
+  scenario "with valid fax number", :js => true do
+    fill_in_all_required_fields
+    click_link "Add a fax number"
+    fill_in "fax_number[]", with: "7035551212"
+    fill_in "fax_department[]", with: "CalFresh"
+    create_location_and_visit_it
+    find_field('fax_number[]').value.should eq "7035551212"
+    find_field('fax_department[]').value.should eq "CalFresh"
+    delete_location
+  end
+
+  scenario "with an invalid fax number", :js => true do
+    fill_in_all_required_fields
+    click_link "Add a fax number"
+    fill_in "fax_number[]", with: "703"
+    click_button "Create new location for Samaritan House"
+    expect(page).to have_content "Please enter a valid US fax number"
+  end
+
+  scenario "with a valid contact", :js => true do
+    fill_in_all_required_fields
+    fill_in_contact
+    create_location_and_visit_it
+    find_field('names[]').value.should eq "Moncef Belyamani-Belyamani"
+    find_field('titles[]').
+      value.should eq "Director of Development and Operations"
+    find_field('contact_emails[]').
+      value.should eq "moncefbelyamani@samaritanhousesanmateo.org"
+    find_field('contact_phones[]').value.should eq "703-555-1212"
+    find_field('contact_faxes[]').value.should eq "703-555-1234"
+    delete_location
+  end
+
+  scenario "with an empty contact name" do
+    fill_in_all_required_fields
+    fill_in "names[]", with: ""
+    fill_in "titles[]", with: "Director"
+    click_button "Create new location for Samaritan House"
+    expect(page).to have_content "Please enter a contact name"
+  end
+
+  scenario "with an empty contact title" do
+    fill_in_all_required_fields
+    fill_in "names[]", with: "Contact Name"
+    fill_in "titles[]", with: ""
+    click_button "Create new location for Samaritan House"
+    expect(page).to have_content "Please enter a contact title"
+  end
+
+  scenario "with an invalid contact phone" do
+    fill_in_all_required_fields
+    fill_in "names[]", with: "Contact Name"
+    fill_in "titles[]", with: "Contact Title"
+    fill_in "contact_phones[]", with: "703"
+    click_button "Create new location for Samaritan House"
+    expect(page).to have_content "Please enter a valid US phone number"
+  end
+
+  scenario "with an invalid contact fax" do
+    fill_in_all_required_fields
+    fill_in "names[]", with: "Contact Name"
+    fill_in "titles[]", with: "Contact Title"
+    fill_in "contact_faxes[]", with: "202"
+    click_button "Create new location for Samaritan House"
+    expect(page).to have_content "Please enter a valid US fax number"
+  end
+
+  scenario "with valid location email", :js => true do
+    fill_in_all_required_fields
+    fill_in "emails[]", with: "moncefbelyamani@samaritanhousesanmateo.org"
+    create_location_and_visit_it
+    find_field('emails[]').value.should eq "moncefbelyamani@samaritanhousesanmateo.org"
+    delete_location
+  end
+
+  scenario "with valid location hours", :js => true do
+    fill_in_all_required_fields
+    fill_in "text_hours", with: "Monday-Friday 10am-5pm"
+    create_location_and_visit_it
+    find_field('text_hours').value.should eq "Monday-Friday 10am-5pm"
+    delete_location
+  end
+
+  scenario "when adding an accessibility option", :js => true do
+    fill_in_all_required_fields
+    check "accessibility_elevator"
+    create_location_and_visit_it
+    find("#accessibility_elevator").should be_checked
+    delete_location
+  end
+
+  scenario "when adding transportation option", :js => true do
+    fill_in_all_required_fields
+    fill_in "transportation", with: "SAMTRANS stops within 1/2 mile."
+    create_location_and_visit_it
+    find_field('transportation').value.should eq "SAMTRANS stops within 1/2 mile."
+    delete_location
+  end
+
+  scenario "when adding a website", :js => true do
+    fill_in_all_required_fields
+    click_link "Add a website"
+    urls = page.all(:xpath, "//input[@type='text' and @name='urls[]']")
+    fill_in urls[-1][:id], with: "http://monfresh.com"
+    create_location_and_visit_it
+    urls = page.all(:xpath, "//input[@type='text' and @name='urls[]']")
+    url_id = urls[-1][:id]
+    find_field(url_id).value.should eq "http://monfresh.com"
+    delete_location
+  end
+
+  scenario "when adding an audience", :js => true do
+    fill_in_all_required_fields
+    fill_in "audience", with: "This is an audience"
+    create_location_and_visit_it
+    find_field('audience').value.should eq "This is an audience"
+    delete_location
+  end
+
+  scenario "when adding an eligibility", :js => true do
+    fill_in_all_required_fields
+    fill_in "eligibility", with: "This is an eligibility"
+    create_location_and_visit_it
+    find_field('eligibility').value.should eq "This is an eligibility"
+    delete_location
+  end
+
+  scenario "when adding fees", :js => true do
+    fill_in_all_required_fields
+    fill_in "fees", with: "These are fees"
+    create_location_and_visit_it
+    find_field('fees').value.should eq "These are fees"
+    delete_location
+  end
+
+  scenario "when adding how to apply", :js => true do
+    fill_in_all_required_fields
+    fill_in "how_to_apply", with: "This is how to apply"
+    create_location_and_visit_it
+    find_field('how_to_apply').value.should eq "This is how to apply"
+    delete_location
+  end
+
+  scenario "when adding wait time", :js => true do
+    fill_in_all_required_fields
+    fill_in "wait", with: "This is a wait time"
+    create_location_and_visit_it
+    find_field('wait').value.should eq "This is a wait time"
+    delete_location
+  end
+
+  xscenario "when adding a valid service area", :js => true do
+    fill_in_all_required_fields
+    click_link "Add a service area"
+    fill_in "service_areas[]", with: "Belmont"
+    create_location_and_visit_it
+    find_field('service_areas[]').value.should eq "Belmont"
+    delete_location
+  end
+
+  xscenario "when adding an invalid service area", :js => true do
+    fill_in_all_required_fields
+    click_link "Add a service area"
+    fill_in "service_areas[]", with: "Belmont, CA"
+    click_button "Create new location for Samaritan House"
+    expect(page).to have_content "At least one service area is improperly
+      formatted, or is not an accepted city or county name. Please make sure
+      all words are capitalized."
+  end
+
+  scenario "when adding a keyword", :js => true do
+    fill_in_all_required_fields
+    click_link "Add a keyword"
+    fill_in "keywords[]", with: "Food Pantry"
+    create_location_and_visit_it
+    find_field('keywords[]').value.should eq "Food Pantry"
+    delete_location
+  end
+
+  scenario "when adding categories", :js => true do
+    fill_in_all_required_fields
     find("#category_emergency").click
     check "category_disaster-response"
-    click_button "Create new location for Samaritan House"
-    visit("/locations")
-    visit("/locations")
-    #click_link "new location with service fields"
-    page.all('a')[-2].click
-    expect(page).to have_content "no fees"
+    create_location_and_visit_it
     find("#category_emergency").should be_checked
     find("#category_disaster-response").should be_checked
+    delete_location
   end
 end

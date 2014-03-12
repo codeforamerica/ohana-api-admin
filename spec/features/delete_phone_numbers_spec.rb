@@ -19,5 +19,6 @@ feature "Delete a location's phone numbers" do
     visit_test_location
     expect(page).to_not have_link "Delete this number permanently"
     add_phone_number
+    click_button "Save changes"
   end
 end
