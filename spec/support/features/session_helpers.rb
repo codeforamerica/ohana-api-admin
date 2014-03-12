@@ -225,14 +225,5 @@ module Features
       find_link("Permanently delete this location").click
       find_link("I understand the consequences, delete this location").click
     end
-
-    def create_location_and_visit_it
-      click_button "Create new location for Samaritan House"
-      find_link "Add a new location"
-      click_link "Edit account"
-      sleep 1
-      click_link "Your locations"
-      find_link("new samaritan house location").click
-    end
   end
 end

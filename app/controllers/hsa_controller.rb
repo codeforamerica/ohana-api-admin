@@ -305,9 +305,10 @@ class HsaController < ApplicationController
       }
     )
 
-    redirect_to locations_path,
+    redirect_to location_path(location_id),
       notice: "New location \"#{location_name}\" for #{org_name} successfully "+
-        "created! Refresh this page to see your new location." and return
+        "created! If you haven't already, please continue filling out as many "+
+        "fields as possible." and return
   end
 
   def domain
