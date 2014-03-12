@@ -4,6 +4,8 @@
       Fax Numbers
     %p.desc
       %em
+        10 digits only please, in this format: 650-802-7922.
+        %br
         If the fax belongs to a contact, please move it to the existing contact, or create a new contact.
         %br
         If the fax number contains a department in parentheses, move the department to the department field.
@@ -15,4 +17,4 @@
         = render "forms/single_fax_hash", :fax => fax
   - fields = render "forms/single_fax"
   %p
-    = link_to_function "Add a new fax number", ("add_fields(2, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary add_fax"
+    = link_to_function "Add a fax number", ("add_fields(2, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary add_fax"

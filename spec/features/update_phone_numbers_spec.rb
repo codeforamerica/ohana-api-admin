@@ -42,7 +42,7 @@ feature "Update a location's phone numbers" do
 
   scenario "with 2 phones but one is empty", :js => true do
     visit_test_location # it already has one
-    click_link "Add a new number"
+    click_link "Add a phone number"
     click_button "Save changes"
     visit_test_location
     total_phones = page.

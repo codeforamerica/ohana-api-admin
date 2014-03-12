@@ -14,4 +14,4 @@
         = link_to "Delete this website permanently", '#', class: "btn btn-danger"
   - fields = render "forms/add_url"
   %p
-    = link_to_function "Add a new website", ("add_fields(1, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"
+    = link_to_function "Add a website", ("add_fields(1, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"

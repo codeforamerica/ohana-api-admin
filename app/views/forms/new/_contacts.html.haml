@@ -23,8 +23,6 @@
     = "Fax:"
     = text_field_tag "contact_faxes[]", "", maxlength: 50, class: "span2", id: "fax_new_contact"
     %br
-    = link_to "Delete this contact permanently", '#', class: "btn btn-danger"
-
 
   - fields = render "forms/single_contact"
   %p

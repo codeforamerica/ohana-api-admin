@@ -13,7 +13,7 @@ feature "Update a location's hours" do
     find_field('text_hours').value.should eq ""
   end
 
-  scenario "with valid description" do
+  scenario "with valid hours" do
     visit_test_location
     fill_in "text_hours", with: "Monday-Friday 10am-5pm"
     click_button "Save changes"

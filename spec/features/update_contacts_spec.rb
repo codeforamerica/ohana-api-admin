@@ -89,7 +89,7 @@ feature "Update a location's contacts" do
 
   scenario "with 2 contacts but one is empty", :js => true do
     visit_test_location # it already has one
-    click_link "Add a new contact"
+    click_link "Add a point of contact"
     click_button "Save changes"
     visit_test_location
     total_contacts = page.

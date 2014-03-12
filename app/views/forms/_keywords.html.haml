@@ -12,5 +12,5 @@
         = link_to "Delete this keyword permanently", '#', class: "btn btn-danger"
   - fields = render "forms/add_keyword"
   %p
-    = link_to_function "Add a new keyword", ("add_fields(1, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"
+    = link_to_function "Add a keyword", ("add_fields(1, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"
 

@@ -26,7 +26,7 @@ feature "Update a service's keywords" do
 
   scenario "with empty keyword", :js => true do
     visit_test_location
-    click_link "Add a new keyword"
+    click_link "Add a keyword"
     page.should have_selector(
       :xpath, "//input[@type='text' and @name='keywords[]']")
     click_button "Save changes"
@@ -37,9 +37,9 @@ feature "Update a service's keywords" do
 
   scenario "with 2 keywords but one is empty", :js => true do
     visit_test_location
-    click_link "Add a new keyword"
+    click_link "Add a keyword"
     fill_in "keywords[]", with: "Food Pantry"
-    click_link "Add a new keyword"
+    click_link "Add a keyword"
     click_button "Save changes"
     visit_test_location
     total_keywords = page.
@@ -50,7 +50,7 @@ feature "Update a service's keywords" do
 
   scenario "with valid keyword", :js => true do
     visit_test_location
-    click_link "Add a new keyword"
+    click_link "Add a keyword"
     fill_in "keywords[]", with: "Food Pantry"
     click_button "Save changes"
     visit_test_location

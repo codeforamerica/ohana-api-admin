@@ -10,5 +10,5 @@
         = link_to "Delete this funding source permanently", '#', class: "btn btn-danger"
   - fields = render "forms/add_funding_source"
   %p
-    = link_to_function "Add a new funding source", ("add_fields(1, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"
+    = link_to_function "Add a funding source", ("add_fields(1, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"
 

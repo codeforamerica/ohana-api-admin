@@ -34,7 +34,7 @@ feature "Update a service's service areas" do
 
   scenario "with 2 service_areas but one is empty", :js => true do
     visit_test_location # it already has one
-    click_link "Add a new service area"
+    click_link "Add a service area"
     click_button "Save changes"
     visit_test_location
     total_service_areas = page.

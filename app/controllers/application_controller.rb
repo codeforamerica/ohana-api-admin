@@ -31,12 +31,10 @@ class ApplicationController < ActionController::Base
   def service_attributes
     {
       :audience        => params[:audience],
-      :description     => params[:description],
       :eligibility     => params[:eligibility],
       :fees            => params[:fees],
       :how_to_apply    => params[:how_to_apply],
       :keywords        => keywords,
-      :name            => params[:service_name],
       :service_areas   => service_areas,
       :wait            => params[:wait]
     }

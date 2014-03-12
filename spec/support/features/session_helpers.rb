@@ -33,7 +33,7 @@ module Features
     end
 
     def add_phone_number
-      click_link "Add a new number"
+      click_link "Add a phone number"
       fill_in "number[]", with: "7035551212"
       fill_in "vanity_number[]", with: "703555-ABCD"
       fill_in "extension[]", with: "x1223"
@@ -47,7 +47,7 @@ module Features
     end
 
     def add_contact
-      click_link "Add a new contact"
+      click_link "Add a point of contact"
       fill_in "names[]", with: "Moncef Belyamani-Belyamani"
       fill_in "titles[]", with: "Director of Development and Operations"
       fill_in "contact_emails[]", with: "moncefbelyamani@samaritanhousesanmateo.org"
@@ -62,22 +62,22 @@ module Features
     end
 
     def add_fax_number
-      click_link "Add a new fax number"
+      click_link "Add a fax number"
       fill_in "fax_number[]", with: "2025551212"
       fill_in "fax_department[]", with: "CalFresh"
       click_button "Save changes"
     end
 
     def add_url
-      click_link "Add a new website"
+      click_link "Add a website"
       fill_in "urls[]", with: "http://monfresh.com"
       click_button "Save changes"
     end
 
     def add_two_urls
-      click_link "Add a new website"
+      click_link "Add a website"
       fill_in "urls[]", with: "http://ruby.com"
-      click_link "Add a new website"
+      click_link "Add a website"
       urls = page.all(:xpath, "//input[@type='text' and @name='urls[]']")
       fill_in urls[-1][:id], with: "http://monfresh.com"
       click_button "Save changes"
@@ -97,15 +97,15 @@ module Features
     end
 
     def add_service_area
-      click_link "Add a new service area"
+      click_link "Add a service area"
       fill_in "service_areas[]", with: "Belmont"
       click_button "Save changes"
     end
 
     def add_two_service_areas
-      click_link "Add a new service area"
+      click_link "Add a service area"
       fill_in "service_areas[]", with: "Belmont"
-      click_link "Add a new service area"
+      click_link "Add a service area"
       service_areas = page.all(:xpath, "//input[@type='text' and @name='service_areas[]']")
       fill_in service_areas[-1][:id], with: "East Palo Alto"
       click_button "Save changes"
@@ -120,9 +120,9 @@ module Features
     end
 
     def add_two_keywords
-      click_link "Add a new keyword"
+      click_link "Add a keyword"
       fill_in "keywords[]", with: "homeless"
-      click_link "Add a new keyword"
+      click_link "Add a keyword"
       keywords = page.all(:xpath, "//input[@type='text' and @name='keywords[]']")
       fill_in keywords[-1][:id], with: "CalFresh"
       click_button "Save changes"

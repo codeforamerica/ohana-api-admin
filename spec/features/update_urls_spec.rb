@@ -34,7 +34,7 @@ feature "Update a location's websites" do
 
   scenario "with 2 urls but one is empty", :js => true do
     visit_test_location # it already has one
-    click_link "Add a new website"
+    click_link "Add a website"
     click_button "Save changes"
     visit_test_location
     total_urls = page.
