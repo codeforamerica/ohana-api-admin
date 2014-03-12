@@ -16,7 +16,6 @@ feature "Delete a location's contacts" do
     click_button "Save changes"
     expect(page).
       to have_content "Changes for Admin Test Location successfully saved!"
-    visit_test_location
     expect(page).to_not have_link "Delete this contact permanently"
     add_contact
     click_button "Save changes"

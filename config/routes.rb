@@ -10,5 +10,5 @@ Hsa::Application.routes.draw do
   match 'edit_services' => 'hsa#edit_services'
   match 'delete_location' => 'hsa#delete_location'
   match "confirm_delete_location" => 'hsa#confirm_delete_location', :as => :confirm_delete_location
-  get "*id/" => "hsa#show"
+  get "*id/" => "hsa#show", :as => "location"
 end

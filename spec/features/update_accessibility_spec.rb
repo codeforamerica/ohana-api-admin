@@ -18,7 +18,6 @@ feature "Update a location's accessibility options" do
     click_button "Save changes"
     expect(page).
       to have_content "Changes for Admin Test Location successfully saved!"
-    visit_test_location
     find("#accessibility_elevator").should be_checked
   end
 
@@ -28,7 +27,6 @@ feature "Update a location's accessibility options" do
     click_button "Save changes"
     expect(page).
       to have_content "Changes for Admin Test Location successfully saved!"
-    visit_test_location
     find("#accessibility_restroom").should_not be_checked
     reset_accessibility
   end
