@@ -13,6 +13,7 @@ class ApplicationController < ActionController::Base
     {
       :accessibility  => accessibility,
       :address        => address,
+      :admins         => admins,
       :contacts       => contacts,
       :description    => params[:description],
       :emails         => emails,
@@ -54,6 +55,13 @@ class ApplicationController < ActionController::Base
         :state => params[:state],
         :zip => params[:zip]
       }
+    end
+  end
+
+  def admins
+    admins = params[:admins]
+    if admins.present? && !admins.all?(&:empty?)
+      params[:admins].delete_if { |admin| admin.blank? }
     end
   end
 

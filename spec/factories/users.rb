@@ -8,6 +8,10 @@ FactoryGirl.define do
     password_confirmation 'mong01dtest'
     # required if the Devise Confirmable module is used
     confirmed_at Time.now
+
+    factory :second_user do
+      email "moncef@smcgov.org"
+    end
   end
 
   factory :admin_user, :class => :user do

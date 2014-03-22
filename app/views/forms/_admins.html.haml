@@ -1,0 +1,11 @@
+%div.inst-box
+  - if @location.key?(:admins)
+    - @location.admins.each_with_index do |admin, i|
+      %fieldset#admins
+        = text_field_tag "admins[]", admin, class: "span4", id: "admin_#{i}"
+        %br
+        = link_to "Delete this admin permanently", '#', class: "btn btn-danger"
+  - fields = render "forms/add_admin"
+  %p
+    = link_to_function "Add an admin", ("add_fields(1, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"
+

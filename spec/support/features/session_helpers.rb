@@ -15,8 +15,7 @@ module Features
       login_as(admin, :scope => :user)
     end
 
-    def login_user
-      user = FactoryGirl.create(:user)
+    def login_user(user)
       login_as(user, :scope => :user)
     end
 
@@ -142,6 +141,23 @@ module Features
       click_button "Save changes"
     end
 
+    def add_two_admins
+      click_link "Add an admin"
+      fill_in "admins[]", with: "moncef@foo.com"
+      click_link "Add an admin"
+      admins = page.all(:xpath, "//input[@type='text' and @name='admins[]']")
+      fill_in admins[-1][:id], with: "moncef@otherlocation.com"
+      click_button "Save changes"
+    end
+
+    def delete_all_admins
+      delete_links = all("a", :text => "Delete this admin permanently")
+      delete_links.each do |a|
+        click_link a.text, match: :first
+      end
+      click_button "Save changes"
+    end
+
     def add_street_address
       fill_in "street", with: "1486 Huntington Avenue, Suite 100"
       fill_in "city", with: "Redwood City"
@@ -224,6 +240,17 @@ module Features
     def delete_location
       find_link("Permanently delete this location").click
       find_link("I understand the consequences, delete this location").click
+    end
+
+    def set_user_as_admin(email, location)
+      @admin = create(:admin_user)
+      sign_in(@admin.email, @admin.password)
+      visit_locations
+      click_link location
+      click_link "Add an admin"
+      fill_in "admins[]", with: email
+      click_button "Save changes"
+      click_link "Sign out"
     end
   end
 end
