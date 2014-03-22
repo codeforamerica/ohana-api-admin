@@ -17,7 +17,7 @@ class HsaController < ApplicationController
     id = params[:id].split("/")[-1]
     begin
       @location = Ohanakapa.location(id)
-      unless location_domain_matches_user_domain?(@location) || admin?
+      unless user_allowed_access_to_location?(@location) || admin?
         redirect_to root_url,
           :alert => "Sorry, you don't have access to that page."
       end
@@ -42,14 +42,19 @@ class HsaController < ApplicationController
 
   def new
     @locations = perform_search
-    @org = @locations.first.organization
-    urls = []
-    @org.rels[:locations].get.data.each do |loc|
-      if loc.key?(:urls)
-        urls.push(loc.urls)
+    @org = @locations.first.organization if @locations.present?
+    if @org.present?
+      urls = []
+      @org.rels[:locations].get.data.each do |loc|
+        if loc.key?(:urls)
+          urls.push(loc.urls)
+        end
       end
+      @location_url = urls.uniq.flatten.first
+    else
+      redirect_to locations_path,
+        alert: "Sorry, you don't have access to that page." and return
     end
-    @location_url = urls.uniq.flatten.first
   end
 
   def edit_services
@@ -88,6 +93,11 @@ class HsaController < ApplicationController
       elsif e.to_s.include?("at least one address")
         redirect_to request.referer,
           alert: "Please enter at least one type of address" and return
+
+      # Invalid admin email address
+      elsif e.to_s.include?("Admins must be an array of valid email addresses")
+        redirect_to request.referer,
+          alert: "Please enter a valid admin email address" and return
 
       # Empty Street
       elsif e.to_s.include?("Street can't be blank")
@@ -284,6 +294,10 @@ class HsaController < ApplicationController
 
     location_id = Ohanakapa.last_response.data.id
 
+    if current_user_has_generic_email?
+      Ohanakapa.update_location(location_id, { admins: [current_user.email] })
+    end
+
     begin
       Ohanakapa.post("locations/#{location_id}/services/",
         query: service_attributes)
@@ -342,20 +356,35 @@ class HsaController < ApplicationController
     current_user.role == "admin"
   end
 
-  def location_domain_matches_user_domain?(location)
-    if location.key?(:emails)
-      emails = location.emails.select { |email| email.include?(domain) }
-      exact_match = location.emails.select { |email| email == current_user.email }
-    end
-
-    if location.key?(:urls)
-      urls = location.urls.select { |url| url.include?(domain) }
-    end
-
+  def user_allowed_access_to_location?(location)
     if current_user_has_generic_email?
-      exact_match.present?
+      emails_match_user_email?(location) || admins_match_user_email?(location)
     else
-      emails.present? || urls.present?
+      emails_match_domain?(location) || urls_match_domain?(location)
+    end
+  end
+
+  def urls_match_domain?(location)
+    if location.key?(:urls)
+      location.urls.select { |url| url.include?(domain) }.length > 0
+    end
+  end
+
+  def emails_match_domain?(location)
+    if location.key?(:emails)
+      location.emails.select { |email| email.include?(domain) }.length > 0
+    end
+  end
+
+  def emails_match_user_email?(location)
+    if location.key?(:emails)
+      location.emails.select { |email| email == current_user.email }.length > 0
+    end
+  end
+
+  def admins_match_user_email?(location)
+    if location.key?(:admins)
+      location.admins.select { |email| email == current_user.email }.length > 0
     end
   end
 

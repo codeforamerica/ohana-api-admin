@@ -2,7 +2,7 @@ Hsa::Application.routes.draw do
 
   devise_for :users
 
-  root :to => "home#index"
+  root :to => "hsa#index"
   match "/locations" => "hsa#index"
   match "/locations/new" => "hsa#new"
   match "/locations/create_location" => "hsa#create_location"

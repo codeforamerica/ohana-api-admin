@@ -27,4 +27,25 @@ feature "Accessing /locations" do
       to have_content 'You need to sign in or sign up before continuing.'
   end
 
+  context "when signed in as location admin", js: true do
+    it "should display the add new location button" do
+      new_admin = create(:second_user)
+      set_user_as_admin(new_admin.email, "San Mateo Free Medical Clinic")
+      login_user(new_admin)
+      visit_locations
+      expect(page).to have_link "Add a new location"
+      visit("/san-mateo-free-medical-clinic")
+      delete_all_admins
+    end
+  end
+
+  context "when signed in as user with no locations" do
+    it "should not display the add new location button" do
+      user = create(:second_user)
+      login_user(user)
+      visit_locations
+      expect(page).to_not have_link "Add a new location"
+    end
+  end
+
 end

@@ -5,13 +5,6 @@ feature "Update a location's short description" do
     login_admin
   end
 
-  scenario "with empty short description" do
-    visit_test_location
-    fill_in "short_desc", with: ""
-    click_button "Save changes"
-    expect(page).to have_content "Please enter a short description"
-  end
-
   scenario "with valid description" do
     visit_test_location
     fill_in "short_desc", with: "This is a short description"

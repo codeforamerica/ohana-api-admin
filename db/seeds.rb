@@ -9,15 +9,15 @@
 # See http://railsapps.github.io/rails-environment-variables.html
 
 puts '===> Setting up first test user...'
-user = User.create! :name => 'Samaritan House',
+user = User.create! :name => 'User with custom domain name',
                     :email => 'ohana@samaritanhouse.com',
                     :password => 'ohanatest',
                     :password_confirmation => 'ohanatest'
 user.confirm!
 
 puts '===> Setting up second test user...'
-user2 = User.create! :name => 'Peninsula Family Service',
-                     :email => 'ohana@peninsulafamilyservice.org',
+user2 = User.create! :name => 'User with generic email',
+                     :email => 'ohana@gmail.com',
                      :password => 'ohanatest',
                      :password_confirmation => 'ohanatest'
 user2.confirm!

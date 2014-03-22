@@ -8,6 +8,14 @@
   %div.content-box
     %h2= loc_name == org_name ? loc_name : "#{org_name} / #{loc_name}"
 
+  - if current_user.role == "admin" || (@location.key?(:admins) && @location.admins.include?(current_user.email))
+    %div.content-box
+      %h4
+        Add an admin to this location
+      %p
+        Which email addresses should be allowed to update and delete this location?
+      = render "forms/admins"
+
   = render "forms/org_name"
   = render "forms/location_name"
   = render "forms/description"
