@@ -163,7 +163,7 @@ We use the [GitHub issue tracker](https://github.com/codeforamerica/ohana-api-ad
 [pr]: http://help.github.com/send-pull-requests/
 
 ## Supported Ruby Version
-This library aims to support and is [tested against](http://travis-ci.org/codeforamerica/ohana-api) Ruby version 2.1.1.
+This library aims to support and is tested against Ruby version 2.1.1.
 
 If something doesn't work on this version, it should be considered a bug.
 
