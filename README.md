@@ -36,7 +36,7 @@ Follow the Homebrew instructions for configuring MongoDB and starting it automat
 
     mongod
 
-MongoDB installation instructions using MacPorts are available on the [wiki](https://github.com/codeforamerica/ohana-api-admin/wiki/Installation).
+[MongoDB installation instructions using MacPorts](https://github.com/codeforamerica/ohana-api-admin/wiki/Installing-MongoDB-with-MacPorts-on-OS-X) are available on the Wiki.
 
 **Other**
 
