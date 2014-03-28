@@ -118,6 +118,14 @@ Run the Heroku deployment script:
 
 `your_api_endpoint` is the full URL to your API endpoint. For example: `http://ohanapi.herokuapp.com/api`
 
+This script will take a few minutes to run, and when it's done, you'll see the following messages:
+
+```
+All done pushing code.
+You can now visit your site at http://your_app_name.herokuapp.com
+```
+Once the script is done, do the following:
+
 Set `OHANA_API_TOKEN` to the same value as `ADMIN_APP_TOKEN` in your instance of Ohana API:
 
     heroku config:set OHANA_API_TOKEN=value_of_ADMIN_APP_TOKEN
@@ -125,6 +133,8 @@ Set `OHANA_API_TOKEN` to the same value as `ADMIN_APP_TOKEN` in your instance of
 Visit your site:
 
     heroku open -a your_app_name
+
+You'll then want to sign up for an account to be able to edit the data. To set yourself (or anyone) as a "master admin" who will have access to everything in the database, you can set their "role" field to "admin". The easiest way to do this is by editing the "role" field directly in the MongoDB interface (via the Mongolab add-on if you are deploying to Heroku using this app's default configuration).
 
 ## Contributing
 
