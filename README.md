@@ -107,8 +107,8 @@ To see the actual tests, browse through the [spec](https://github.com/codeforame
 
 The tests will take around 3 to 5 minutes to run. Note that a browser window will open during the integration tests as some of them use the Selenium web driver.
 
-### Deploying to Heroku
-First, you need to [deploy the Ohana API to Heroku](https://github.com/codeforamerica/ohana-api/wiki/How-to-deploy-the-Ohana-API-to-your-Heroku-account). Then, create a new app on Heroku for the Admin site:
+## Deploying to Heroku
+First, you need to [deploy the Ohana API to Heroku](https://github.com/codeforamerica/ohana-api/wiki/How-to-deploy-the-Ohana-API-to-your-Heroku-account). Then, create a new app on Heroku for the Admin site. Run this command from the root directory of your local copy of this repo:
 
     heroku apps:create your_app_name
 
