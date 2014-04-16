@@ -3,10 +3,11 @@ require "spec_helper"
 feature "Signing in" do
   # The 'sign_in' method is defined in spec/support/features/session_helpers.rb
   scenario "with correct credentials" do
-    valid_user = FactoryGirl.create(:user)
+    valid_user = create(:user)
     sign_in(valid_user.email, valid_user.password)
     expect(page).to have_content 'Welcome back, Org Member'
     expect(page).to have_content 'Signed in successfully'
+    click_link "Sign out"
   end
 
   scenario "with invalid credentials" do
@@ -15,7 +16,7 @@ feature "Signing in" do
   end
 
   scenario "with an unconfirmed user" do
-    unconfirmed_user = FactoryGirl.create(:unconfirmed_user)
+    unconfirmed_user = create(:unconfirmed_user)
     sign_in(unconfirmed_user.email, unconfirmed_user.password)
     expect(page)
       .to have_content 'You have to confirm your account before continuing.'

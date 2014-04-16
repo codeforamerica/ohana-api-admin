@@ -5,12 +5,7 @@ feature "Update a location's street address" do
     login_admin
   end
 
-  scenario "when location doesn't have a street address" do
-    visit_location_with_no_phone
-    find_field('street').value.should eq ""
-  end
-
-  scenario "by adding a new street address" do
+  scenario "by adding a new street address", js: true do
     visit_location_with_no_phone
     add_street_address
     visit_location_with_no_phone
@@ -20,10 +15,16 @@ feature "Update a location's street address" do
     find_field('zip').value.should eq "94080-5932"
     remove_street_address
     visit_location_with_no_phone
-    find_field('street').value.should eq ""
+    expect(page).to have_link "Add a street address"
   end
 
-    scenario "with an empty street" do
+  scenario "when leaving location without address or mail address", js: true do
+    visit_location_with_no_phone
+    remove_mail_address
+    expect(page).to have_content "Please enter at least one type of address"
+  end
+
+  scenario "with an empty street" do
     visit_test_location
     fill_in "street", with: ""
     fill_in "city", with: "utopia"

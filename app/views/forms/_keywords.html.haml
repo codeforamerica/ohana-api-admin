@@ -9,7 +9,7 @@
       %fieldset#keywords
         = text_field_tag "keywords[]", keyword, class: "span4", id: "keyword_#{i}"
         %br
-        = link_to "Delete this keyword permanently", '#', class: "btn btn-danger"
+        = link_to "Delete this keyword permanently", '#', class: "btn btn-danger delete_attribute"
   - fields = render "forms/add_keyword"
   %p
     = link_to_function "Add a keyword", ("add_fields(1, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"

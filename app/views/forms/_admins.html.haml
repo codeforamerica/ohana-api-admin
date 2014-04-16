@@ -1,10 +1,10 @@
 %div.inst-box
-  - if @location.key?(:admins)
-    - @location.admins.each_with_index do |admin, i|
-      %fieldset#admins
-        = text_field_tag "admins[]", admin, class: "span4", id: "admin_#{i}"
+  - if @location.key?(:admin_emails)
+    - @location.admin_emails.each_with_index do |admin, i|
+      %fieldset#admin_emails
+        = text_field_tag "admin_emails[]", admin, class: "span4", id: "admin_email_#{i}"
         %br
-        = link_to "Delete this admin permanently", '#', class: "btn btn-danger"
+        = link_to "Delete this admin permanently", '#', class: "btn btn-danger delete_attribute"
   - fields = render "forms/add_admin"
   %p
     = link_to_function "Add an admin", ("add_fields(1, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"

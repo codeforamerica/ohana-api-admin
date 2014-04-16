@@ -1,8 +1,0 @@
-%fieldset#faxes
-  = "Number*"
-  = text_field_tag "fax_number[]", fax.key?(:number) ? fax.number : "", maxlength: 12, class: "span2"
-  %br
-  = "Department:"
-  = text_field_tag "fax_department[]", fax.key?(:department) ? fax.department : "", maxlength: 50, class: "span2"
-  %br
-  = link_to "Delete this fax number permanently", '#', class: "btn btn-danger remove_fax"

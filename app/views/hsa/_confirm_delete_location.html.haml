@@ -16,4 +16,4 @@
   /   = text_field_tag "location-name", "", class: "span5"
 %div.modal-footer
   %button.btn{"aria-hidden" => "true", "data-dismiss" => "modal"} Close
-  = link_to 'I understand the consequences, delete this location', { :action => :delete_location, location_id: @location_id, loc_name: @loc_name, org_name: @org_name }, :method => :put, :class => "btn btn-danger"
+  = link_to 'I understand the consequences, delete this location', { :action => :delete_location, location_id: @location_id, loc_name: @loc_name, org_name: @org_name }, :method => :delete, :class => "btn btn-danger"

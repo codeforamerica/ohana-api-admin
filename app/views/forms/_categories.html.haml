@@ -1,1372 +1,1372 @@
 %li.depth0
-  = check_box_tag "category_emergency", 'emergency', service.key?(:categories) && slugs.include?(["emergency"]) ? true : false, :name => "category_slugs[]"
+  = check_box_tag "category_emergency", "emergency", service.key?(:categories) && slugs.include?("emergency") ? true : false, :name => "category_slugs[]"
   %label
-    = 'Emergency'
+    = "Emergency"
   %ul
     %li.hide.depth1
-      = check_box_tag "category_disaster-response", 'disaster-response', service.key?(:categories) && slugs.include?(["disaster-response"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_disaster-response", "disaster-response", service.key?(:categories) && slugs.include?("disaster-response") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Disaster Response'
+        = "Disaster Response"
     %li.hide.depth1
-      = check_box_tag "category_emergency-cash", 'emergency-cash', service.key?(:categories) && slugs.include?(["emergency-cash"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_emergency-cash", "emergency-cash", service.key?(:categories) && slugs.include?("emergency-cash") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Emergency Cash'
+        = "Emergency Cash"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_cash-for-food", 'cash-for-food', service.key?(:categories) && slugs.include?(["cash-for-food"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-food", "cash-for-food", service.key?(:categories) && slugs.include?("cash-for-food") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for Food'
+            = "Cash for Food"
         %li.hide.depth2
-          = check_box_tag "category_cash-for-healthcare", 'cash-for-healthcare', service.key?(:categories) && slugs.include?(["cash-for-healthcare"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-healthcare", "cash-for-healthcare", service.key?(:categories) && slugs.include?("cash-for-healthcare") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for Healthcare'
+            = "Cash for Healthcare"
         %li.hide.depth2
-          = check_box_tag "category_cash-for-housing", 'cash-for-housing', service.key?(:categories) && slugs.include?(["cash-for-housing"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-housing", "cash-for-housing", service.key?(:categories) && slugs.include?("cash-for-housing") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for Housing'
+            = "Cash for Housing"
         %li.hide.depth2
-          = check_box_tag "category_cash-for-gas", 'cash-for-gas', service.key?(:categories) && slugs.include?(["cash-for-gas"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-gas", "cash-for-gas", service.key?(:categories) && slugs.include?("cash-for-gas") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for Gas'
+            = "Cash for Gas"
         %li.hide.depth2
-          = check_box_tag "category_cash-for-school", 'cash-for-school', service.key?(:categories) && slugs.include?(["cash-for-school"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-school", "cash-for-school", service.key?(:categories) && slugs.include?("cash-for-school") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for School'
+            = "Cash for School"
         %li.hide.depth2
-          = check_box_tag "category_cash-for-utilities", 'cash-for-utilities', service.key?(:categories) && slugs.include?(["cash-for-utilities"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-utilities", "cash-for-utilities", service.key?(:categories) && slugs.include?("cash-for-utilities") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for Utilities'
+            = "Cash for Utilities"
     %li.hide.depth1
-      = check_box_tag "category_emergency-food", 'emergency-food', service.key?(:categories) && slugs.include?(["emergency-food"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_emergency-food", "emergency-food", service.key?(:categories) && slugs.include?("emergency-food") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Emergency Food'
+        = "Emergency Food"
     %li.hide.depth1
-      = check_box_tag "category_emergency-shelter", 'emergency-shelter', service.key?(:categories) && slugs.include?(["emergency-shelter"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_emergency-shelter", "emergency-shelter", service.key?(:categories) && slugs.include?("emergency-shelter") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Emergency Shelter'
+        = "Emergency Shelter"
     %li.hide.depth1
-      = check_box_tag "category_help-find-missing-persons", 'help-find-missing-persons', service.key?(:categories) && slugs.include?(["help-find-missing-persons"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_help-find-missing-persons", "help-find-missing-persons", service.key?(:categories) && slugs.include?("help-find-missing-persons") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Help Find Missing Persons'
+        = "Help Find Missing Persons"
     %li.hide.depth1
-      = check_box_tag "category_immediate-safety", 'immediate-safety', service.key?(:categories) && slugs.include?(["immediate-safety"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_immediate-safety", "immediate-safety", service.key?(:categories) && slugs.include?("immediate-safety") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Immediate Safety'
+        = "Immediate Safety"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_help-escape-violence", 'help-escape-violence', service.key?(:categories) && slugs.include?(["help-escape-violence"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_help-escape-violence", "help-escape-violence", service.key?(:categories) && slugs.include?("help-escape-violence") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Help Escape Violence'
+            = "Help Escape Violence"
         %li.hide.depth2
-          = check_box_tag "category_safe-housing", 'safe-housing', service.key?(:categories) && slugs.include?(["safe-housing"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_safe-housing", "safe-housing", service.key?(:categories) && slugs.include?("safe-housing") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Safe Housing'
+            = "Safe Housing"
     %li.hide.depth1
-      = check_box_tag "category_psychiatric-emergency-services", 'psychiatric-emergency-services', service.key?(:categories) && slugs.include?(["psychiatric-emergency-services"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_psychiatric-emergency-services", "psychiatric-emergency-services", service.key?(:categories) && slugs.include?("psychiatric-emergency-services") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Psychiatric Emergency Services'
+        = "Psychiatric Emergency Services"
 %li.depth0
-  = check_box_tag "category_food", 'food', service.key?(:categories) && slugs.include?(["food"]) ? true : false, :name => "category_slugs[]"
+  = check_box_tag "category_food", "food", service.key?(:categories) && slugs.include?("food") ? true : false, :name => "category_slugs[]"
   %label
-    = 'Food'
+    = "Food"
   %ul
     %li.hide.depth1
-      = check_box_tag "category_community-gardens", 'community-gardens', service.key?(:categories) && slugs.include?(["community-gardens"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_community-gardens", "community-gardens", service.key?(:categories) && slugs.include?("community-gardens") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Community Gardens'
+        = "Community Gardens"
     %li.hide.depth1
-      = check_box_tag "category_emergency-food-1", 'emergency-food-1', service.key?(:categories) && slugs.include?(["emergency-food-1"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_emergency-food-102-02", "emergency-food-102-02", service.key?(:categories) && slugs.include?("emergency-food-102-02") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Emergency Food'
+        = "Emergency Food"
     %li.hide.depth1
-      = check_box_tag "category_food-delivery", 'food-delivery', service.key?(:categories) && slugs.include?(["food-delivery"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_food-delivery", "food-delivery", service.key?(:categories) && slugs.include?("food-delivery") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Food Delivery'
+        = "Food Delivery"
     %li.hide.depth1
-      = check_box_tag "category_food-pantry", 'food-pantry', service.key?(:categories) && slugs.include?(["food-pantry"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_food-pantry", "food-pantry", service.key?(:categories) && slugs.include?("food-pantry") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Food Pantry'
+        = "Food Pantry"
     %li.hide.depth1
-      = check_box_tag "category_free-meals", 'free-meals', service.key?(:categories) && slugs.include?(["free-meals"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_free-meals", "free-meals", service.key?(:categories) && slugs.include?("free-meals") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Free Meals'
+        = "Free Meals"
     %li.hide.depth1
-      = check_box_tag "category_help-pay-for-food", 'help-pay-for-food', service.key?(:categories) && slugs.include?(["help-pay-for-food"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_help-pay-for-food", "help-pay-for-food", service.key?(:categories) && slugs.include?("help-pay-for-food") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Help Pay for Food'
+        = "Help Pay for Food"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_cash-for-food-1", 'cash-for-food-1', service.key?(:categories) && slugs.include?(["cash-for-food-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-food-102-06-01", "cash-for-food-102-06-01", service.key?(:categories) && slugs.include?("cash-for-food-102-06-01") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for Food'
+            = "Cash for Food"
         %li.hide.depth2
-          = check_box_tag "category_food-benefits", 'food-benefits', service.key?(:categories) && slugs.include?(["food-benefits"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_food-benefits", "food-benefits", service.key?(:categories) && slugs.include?("food-benefits") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Food Benefits'
+            = "Food Benefits"
     %li.hide.depth1
-      = check_box_tag "category_nutrition", 'nutrition', service.key?(:categories) && slugs.include?(["nutrition"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_nutrition", "nutrition", service.key?(:categories) && slugs.include?("nutrition") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Nutrition'
+        = "Nutrition"
 %li.depth0
-  = check_box_tag "category_housing", 'housing', service.key?(:categories) && slugs.include?(["housing"]) ? true : false, :name => "category_slugs[]"
+  = check_box_tag "category_housing", "housing", service.key?(:categories) && slugs.include?("housing") ? true : false, :name => "category_slugs[]"
   %label
-    = 'Housing'
+    = "Housing"
   %ul
     %li.hide.depth1
-      = check_box_tag "category_emergency-shelter-1", 'emergency-shelter-1', service.key?(:categories) && slugs.include?(["emergency-shelter-1"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_emergency-shelter-103-01", "emergency-shelter-103-01", service.key?(:categories) && slugs.include?("emergency-shelter-103-01") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Emergency Shelter'
+        = "Emergency Shelter"
     %li.hide.depth1
-      = check_box_tag "category_help-find-housing", 'help-find-housing', service.key?(:categories) && slugs.include?(["help-find-housing"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_help-find-housing", "help-find-housing", service.key?(:categories) && slugs.include?("help-find-housing") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Help Find Housing'
+        = "Help Find Housing"
     %li.hide.depth1
-      = check_box_tag "category_help-pay-for-housing", 'help-pay-for-housing', service.key?(:categories) && slugs.include?(["help-pay-for-housing"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_help-pay-for-housing", "help-pay-for-housing", service.key?(:categories) && slugs.include?("help-pay-for-housing") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Help Pay for Housing'
+        = "Help Pay for Housing"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_cash-for-housing-1", 'cash-for-housing-1', service.key?(:categories) && slugs.include?(["cash-for-housing-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-housing-103-03-01", "cash-for-housing-103-03-01", service.key?(:categories) && slugs.include?("cash-for-housing-103-03-01") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for Housing'
+            = "Cash for Housing"
         %li.hide.depth2
-          = check_box_tag "category_cash-for-utilities-1", 'cash-for-utilities-1', service.key?(:categories) && slugs.include?(["cash-for-utilities-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-utilities-103-03-02", "cash-for-utilities-103-03-02", service.key?(:categories) && slugs.include?("cash-for-utilities-103-03-02") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for Utilities'
+            = "Cash for Utilities"
         %li.hide.depth2
-          = check_box_tag "category_home-and-renters-insurance", 'home-and-renters-insurance', service.key?(:categories) && slugs.include?(["home-and-renters-insurance"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_home-renters-insurance", "home-renters-insurance", service.key?(:categories) && slugs.include?("home-renters-insurance") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Home & Renters Insurance'
+            = "Home & Renters Insurance"
         %li.hide.depth2
-          = check_box_tag "category_housing-vouchers", 'housing-vouchers', service.key?(:categories) && slugs.include?(["housing-vouchers"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_housing-vouchers", "housing-vouchers", service.key?(:categories) && slugs.include?("housing-vouchers") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Housing Vouchers'
+            = "Housing Vouchers"
         %li.hide.depth2
-          = check_box_tag "category_maintenance-and-repairs", 'maintenance-and-repairs', service.key?(:categories) && slugs.include?(["maintenance-and-repairs"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_maintenance-repairs", "maintenance-repairs", service.key?(:categories) && slugs.include?("maintenance-repairs") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Maintenance & Repairs'
+            = "Maintenance & Repairs"
     %li.hide.depth1
-      = check_box_tag "category_housing-advice", 'housing-advice', service.key?(:categories) && slugs.include?(["housing-advice"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_housing-advice", "housing-advice", service.key?(:categories) && slugs.include?("housing-advice") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Housing Advice'
+        = "Housing Advice"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_foreclosure-counseling", 'foreclosure-counseling', service.key?(:categories) && slugs.include?(["foreclosure-counseling"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_foreclosure-counseling", "foreclosure-counseling", service.key?(:categories) && slugs.include?("foreclosure-counseling") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Foreclosure Counseling'
+            = "Foreclosure Counseling"
         %li.hide.depth2
-          = check_box_tag "category_homebuyer-education", 'homebuyer-education', service.key?(:categories) && slugs.include?(["homebuyer-education"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_homebuyer-education", "homebuyer-education", service.key?(:categories) && slugs.include?("homebuyer-education") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Homebuyer Education'
+            = "Homebuyer Education"
     %li.hide.depth1
-      = check_box_tag "category_residential-housing", 'residential-housing', service.key?(:categories) && slugs.include?(["residential-housing"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_residential-housing", "residential-housing", service.key?(:categories) && slugs.include?("residential-housing") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Residential Housing'
+        = "Residential Housing"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_housing-with-support", 'housing-with-support', service.key?(:categories) && slugs.include?(["housing-with-support"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_housing-with-support", "housing-with-support", service.key?(:categories) && slugs.include?("housing-with-support") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Housing with Support'
+            = "Housing with Support"
         %li.hide.depth2
-          = check_box_tag "category_long-term-housing", 'long-term-housing', service.key?(:categories) && slugs.include?(["long-term-housing"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_long-term-housing", "long-term-housing", service.key?(:categories) && slugs.include?("long-term-housing") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Long-Term Housing'
+            = "Long-Term Housing"
           %ul
             %li.hide.depth3
-              = check_box_tag "category_assisted-living", 'assisted-living', service.key?(:categories) && slugs.include?(["assisted-living"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_assisted-living", "assisted-living", service.key?(:categories) && slugs.include?("assisted-living") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Assisted Living'
+                = "Assisted Living"
             %li.hide.depth3
-              = check_box_tag "category_independent-living", 'independent-living', service.key?(:categories) && slugs.include?(["independent-living"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_independent-living", "independent-living", service.key?(:categories) && slugs.include?("independent-living") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Independent Living'
+                = "Independent Living"
             %li.hide.depth3
-              = check_box_tag "category_nursing-home", 'nursing-home', service.key?(:categories) && slugs.include?(["nursing-home"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_nursing-home", "nursing-home", service.key?(:categories) && slugs.include?("nursing-home") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Nursing Home'
+                = "Nursing Home"
             %li.hide.depth3
-              = check_box_tag "category_public-housing", 'public-housing', service.key?(:categories) && slugs.include?(["public-housing"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_public-housing", "public-housing", service.key?(:categories) && slugs.include?("public-housing") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Public Housing'
+                = "Public Housing"
         %li.hide.depth2
-          = check_box_tag "category_safe-housing-1", 'safe-housing-1', service.key?(:categories) && slugs.include?(["safe-housing-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_safe-housing-103-05-03", "safe-housing-103-05-03", service.key?(:categories) && slugs.include?("safe-housing-103-05-03") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Safe Housing'
+            = "Safe Housing"
         %li.hide.depth2
-          = check_box_tag "category_short-term-housing", 'short-term-housing', service.key?(:categories) && slugs.include?(["short-term-housing"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_short-term-housing", "short-term-housing", service.key?(:categories) && slugs.include?("short-term-housing") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Short-Term Housing'
+            = "Short-Term Housing"
           %ul
             %li.hide.depth3
-              = check_box_tag "category_nursing-home-1", 'nursing-home-1', service.key?(:categories) && slugs.include?(["nursing-home-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_nursing-home-103-05-04-01", "nursing-home-103-05-04-01", service.key?(:categories) && slugs.include?("nursing-home-103-05-04-01") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Nursing Home'
+                = "Nursing Home"
             %li.hide.depth3
-              = check_box_tag "category_sober-living", 'sober-living', service.key?(:categories) && slugs.include?(["sober-living"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_sober-living", "sober-living", service.key?(:categories) && slugs.include?("sober-living") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Sober Living'
+                = "Sober Living"
 %li.depth0
-  = check_box_tag "category_goods", 'goods', service.key?(:categories) && slugs.include?(["goods"]) ? true : false, :name => "category_slugs[]"
+  = check_box_tag "category_goods", "goods", service.key?(:categories) && slugs.include?("goods") ? true : false, :name => "category_slugs[]"
   %label
-    = 'Goods'
+    = "Goods"
   %ul
     %li.hide.depth1
-      = check_box_tag "category_baby-supplies", 'baby-supplies', service.key?(:categories) && slugs.include?(["baby-supplies"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_baby-supplies", "baby-supplies", service.key?(:categories) && slugs.include?("baby-supplies") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Baby Supplies'
+        = "Baby Supplies"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_baby-clothes", 'baby-clothes', service.key?(:categories) && slugs.include?(["baby-clothes"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_baby-clothes", "baby-clothes", service.key?(:categories) && slugs.include?("baby-clothes") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Baby Clothes'
+            = "Baby Clothes"
         %li.hide.depth2
-          = check_box_tag "category_diapers-and-formula", 'diapers-and-formula', service.key?(:categories) && slugs.include?(["diapers-and-formula"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_diapers-formula", "diapers-formula", service.key?(:categories) && slugs.include?("diapers-formula") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Diapers & Formula'
+            = "Diapers & Formula"
     %li.hide.depth1
-      = check_box_tag "category_clothing", 'clothing', service.key?(:categories) && slugs.include?(["clothing"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_clothing", "clothing", service.key?(:categories) && slugs.include?("clothing") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Clothing'
+        = "Clothing"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_baby-clothes-1", 'baby-clothes-1', service.key?(:categories) && slugs.include?(["baby-clothes-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_baby-clothes-104-02-01", "baby-clothes-104-02-01", service.key?(:categories) && slugs.include?("baby-clothes-104-02-01") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Baby Clothes'
+            = "Baby Clothes"
         %li.hide.depth2
-          = check_box_tag "category_clothes-for-school", 'clothes-for-school', service.key?(:categories) && slugs.include?(["clothes-for-school"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_clothes-for-school", "clothes-for-school", service.key?(:categories) && slugs.include?("clothes-for-school") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Clothes for School'
+            = "Clothes for School"
         %li.hide.depth2
-          = check_box_tag "category_clothes-for-work", 'clothes-for-work', service.key?(:categories) && slugs.include?(["clothes-for-work"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_clothes-for-work", "clothes-for-work", service.key?(:categories) && slugs.include?("clothes-for-work") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Clothes for Work'
+            = "Clothes for Work"
         %li.hide.depth2
-          = check_box_tag "category_clothing-vouchers", 'clothing-vouchers', service.key?(:categories) && slugs.include?(["clothing-vouchers"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_clothing-vouchers", "clothing-vouchers", service.key?(:categories) && slugs.include?("clothing-vouchers") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Clothing Vouchers'
+            = "Clothing Vouchers"
     %li.hide.depth1
-      = check_box_tag "category_home-goods", 'home-goods', service.key?(:categories) && slugs.include?(["home-goods"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_home-goods", "home-goods", service.key?(:categories) && slugs.include?("home-goods") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Home Goods'
+        = "Home Goods"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_blankets-and-fans", 'blankets-and-fans', service.key?(:categories) && slugs.include?(["blankets-and-fans"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_blankets-fans", "blankets-fans", service.key?(:categories) && slugs.include?("blankets-fans") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Blankets & Fans'
+            = "Blankets & Fans"
         %li.hide.depth2
-          = check_box_tag "category_books", 'books', service.key?(:categories) && slugs.include?(["books"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_books", "books", service.key?(:categories) && slugs.include?("books") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Books'
+            = "Books"
         %li.hide.depth2
-          = check_box_tag "category_furniture", 'furniture', service.key?(:categories) && slugs.include?(["furniture"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_furniture", "furniture", service.key?(:categories) && slugs.include?("furniture") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Furniture'
+            = "Furniture"
         %li.hide.depth2
-          = check_box_tag "category_personal-care-items", 'personal-care-items', service.key?(:categories) && slugs.include?(["personal-care-items"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_personal-care-items", "personal-care-items", service.key?(:categories) && slugs.include?("personal-care-items") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Personal Care Items'
+            = "Personal Care Items"
         %li.hide.depth2
-          = check_box_tag "category_supplies-for-work", 'supplies-for-work', service.key?(:categories) && slugs.include?(["supplies-for-work"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_supplies-for-work", "supplies-for-work", service.key?(:categories) && slugs.include?("supplies-for-work") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Supplies for Work'
+            = "Supplies for Work"
     %li.hide.depth1
-      = check_box_tag "category_medical-supplies", 'medical-supplies', service.key?(:categories) && slugs.include?(["medical-supplies"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_medical-supplies", "medical-supplies", service.key?(:categories) && slugs.include?("medical-supplies") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Medical Supplies'
+        = "Medical Supplies"
     %li.hide.depth1
-      = check_box_tag "category_technology", 'technology', service.key?(:categories) && slugs.include?(["technology"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_technology", "technology", service.key?(:categories) && slugs.include?("technology") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Technology'
+        = "Technology"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_assistive-technology", 'assistive-technology', service.key?(:categories) && slugs.include?(["assistive-technology"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_assistive-technology", "assistive-technology", service.key?(:categories) && slugs.include?("assistive-technology") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Assistive Technology'
+            = "Assistive Technology"
         %li.hide.depth2
-          = check_box_tag "category_internet", 'internet', service.key?(:categories) && slugs.include?(["internet"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_internet", "internet", service.key?(:categories) && slugs.include?("internet") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Internet'
+            = "Internet"
         %li.hide.depth2
-          = check_box_tag "category_phone-services", 'phone-services', service.key?(:categories) && slugs.include?(["phone-services"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_phone-services", "phone-services", service.key?(:categories) && slugs.include?("phone-services") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Phone Services'
+            = "Phone Services"
     %li.hide.depth1
-      = check_box_tag "category_toys-and-gifts", 'toys-and-gifts', service.key?(:categories) && slugs.include?(["toys-and-gifts"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_toys-gifts", "toys-gifts", service.key?(:categories) && slugs.include?("toys-gifts") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Toys & Gifts'
+        = "Toys & Gifts"
 %li.depth0
-  = check_box_tag "category_transit", 'transit', service.key?(:categories) && slugs.include?(["transit"]) ? true : false, :name => "category_slugs[]"
+  = check_box_tag "category_transit", "transit", service.key?(:categories) && slugs.include?("transit") ? true : false, :name => "category_slugs[]"
   %label
-    = 'Transit'
+    = "Transit"
   %ul
     %li.hide.depth1
-      = check_box_tag "category_help-pay-for-transit", 'help-pay-for-transit', service.key?(:categories) && slugs.include?(["help-pay-for-transit"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_help-pay-for-transit", "help-pay-for-transit", service.key?(:categories) && slugs.include?("help-pay-for-transit") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Help Pay for Transit'
+        = "Help Pay for Transit"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_bus-passes", 'bus-passes', service.key?(:categories) && slugs.include?(["bus-passes"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_bus-passes", "bus-passes", service.key?(:categories) && slugs.include?("bus-passes") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Bus Passes'
+            = "Bus Passes"
         %li.hide.depth2
-          = check_box_tag "category_cash-for-gas-1", 'cash-for-gas-1', service.key?(:categories) && slugs.include?(["cash-for-gas-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-gas-105-01-02", "cash-for-gas-105-01-02", service.key?(:categories) && slugs.include?("cash-for-gas-105-01-02") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for Gas'
+            = "Cash for Gas"
     %li.hide.depth1
-      = check_box_tag "category_transportation", 'transportation', service.key?(:categories) && slugs.include?(["transportation"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_transportation", "transportation", service.key?(:categories) && slugs.include?("transportation") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Transportation'
+        = "Transportation"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_transportation-for-healthcare", 'transportation-for-healthcare', service.key?(:categories) && slugs.include?(["transportation-for-healthcare"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_transportation-for-healthcare", "transportation-for-healthcare", service.key?(:categories) && slugs.include?("transportation-for-healthcare") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Transportation for Healthcare'
+            = "Transportation for Healthcare"
         %li.hide.depth2
-          = check_box_tag "category_transportation-for-school", 'transportation-for-school', service.key?(:categories) && slugs.include?(["transportation-for-school"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_transportation-for-school", "transportation-for-school", service.key?(:categories) && slugs.include?("transportation-for-school") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Transportation for School'
+            = "Transportation for School"
 %li.depth0
-  = check_box_tag "category_health", 'health', service.key?(:categories) && slugs.include?(["health"]) ? true : false, :name => "category_slugs[]"
+  = check_box_tag "category_health", "health", service.key?(:categories) && slugs.include?("health") ? true : false, :name => "category_slugs[]"
   %label
-    = 'Health'
+    = "Health"
   %ul
     %li.hide.depth1
-      = check_box_tag "category_addiction-and-recovery", 'addiction-and-recovery', service.key?(:categories) && slugs.include?(["addiction-and-recovery"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_addiction-recovery", "addiction-recovery", service.key?(:categories) && slugs.include?("addiction-recovery") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Addiction & Recovery'
+        = "Addiction & Recovery"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_12-step", '12-step', service.key?(:categories) && slugs.include?(["12-step"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_12-step", "12-step", service.key?(:categories) && slugs.include?("12-step") ? true : false, :name => "category_slugs[]"
           %label
-            = '12-Step'
+            = "12-Step"
         %li.hide.depth2
-          = check_box_tag "category_detox", 'detox', service.key?(:categories) && slugs.include?(["detox"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_detox", "detox", service.key?(:categories) && slugs.include?("detox") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Detox'
+            = "Detox"
         %li.hide.depth2
-          = check_box_tag "category_halfway-housing", 'halfway-housing', service.key?(:categories) && slugs.include?(["halfway-housing"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_halfway-housing", "halfway-housing", service.key?(:categories) && slugs.include?("halfway-housing") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Halfway Housing'
+            = "Halfway Housing"
         %li.hide.depth2
-          = check_box_tag "category_outpatient-treatment", 'outpatient-treatment', service.key?(:categories) && slugs.include?(["outpatient-treatment"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_outpatient-treatment", "outpatient-treatment", service.key?(:categories) && slugs.include?("outpatient-treatment") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Outpatient Treatment'
+            = "Outpatient Treatment"
         %li.hide.depth2
-          = check_box_tag "category_residential-treatment", 'residential-treatment', service.key?(:categories) && slugs.include?(["residential-treatment"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_residential-treatment", "residential-treatment", service.key?(:categories) && slugs.include?("residential-treatment") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Residential Treatment'
+            = "Residential Treatment"
         %li.hide.depth2
-          = check_box_tag "category_sober-living-1", 'sober-living-1', service.key?(:categories) && slugs.include?(["sober-living-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_sober-living-106-01-06", "sober-living-106-01-06", service.key?(:categories) && slugs.include?("sober-living-106-01-06") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Sober Living'
+            = "Sober Living"
     %li.hide.depth1
-      = check_box_tag "category_dental-care", 'dental-care', service.key?(:categories) && slugs.include?(["dental-care"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_dental-care", "dental-care", service.key?(:categories) && slugs.include?("dental-care") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Dental Care'
+        = "Dental Care"
     %li.hide.depth1
-      = check_box_tag "category_end-of-life-care", 'end-of-life-care', service.key?(:categories) && slugs.include?(["end-of-life-care"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_end-of-life-care", "end-of-life-care", service.key?(:categories) && slugs.include?("end-of-life-care") ? true : false, :name => "category_slugs[]"
       %label
-        = 'End-of-Life Care'
+        = "End-of-Life Care"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_bereavement", 'bereavement', service.key?(:categories) && slugs.include?(["bereavement"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_bereavement", "bereavement", service.key?(:categories) && slugs.include?("bereavement") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Bereavement'
+            = "Bereavement"
         %li.hide.depth2
-          = check_box_tag "category_burial-and-funeral-help", 'burial-and-funeral-help', service.key?(:categories) && slugs.include?(["burial-and-funeral-help"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_burial-funeral-help", "burial-funeral-help", service.key?(:categories) && slugs.include?("burial-funeral-help") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Burial & Funeral Help'
+            = "Burial & Funeral Help"
         %li.hide.depth2
-          = check_box_tag "category_hospice", 'hospice', service.key?(:categories) && slugs.include?(["hospice"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_hospice", "hospice", service.key?(:categories) && slugs.include?("hospice") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Hospice'
+            = "Hospice"
         %li.hide.depth2
-          = check_box_tag "category_pain-management", 'pain-management', service.key?(:categories) && slugs.include?(["pain-management"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_pain-management", "pain-management", service.key?(:categories) && slugs.include?("pain-management") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Pain Management'
+            = "Pain Management"
     %li.hide.depth1
-      = check_box_tag "category_health-education", 'health-education', service.key?(:categories) && slugs.include?(["health-education"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_health-education", "health-education", service.key?(:categories) && slugs.include?("health-education") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Health Education'
+        = "Health Education"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_daily-life-skills", 'daily-life-skills', service.key?(:categories) && slugs.include?(["daily-life-skills"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_daily-life-skills", "daily-life-skills", service.key?(:categories) && slugs.include?("daily-life-skills") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Daily Life Skills'
+            = "Daily Life Skills"
         %li.hide.depth2
-          = check_box_tag "category_disease-management", 'disease-management', service.key?(:categories) && slugs.include?(["disease-management"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_disease-management", "disease-management", service.key?(:categories) && slugs.include?("disease-management") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Disease Management'
+            = "Disease Management"
         %li.hide.depth2
-          = check_box_tag "category_family-planning", 'family-planning', service.key?(:categories) && slugs.include?(["family-planning"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_family-planning", "family-planning", service.key?(:categories) && slugs.include?("family-planning") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Family Planning'
+            = "Family Planning"
         %li.hide.depth2
-          = check_box_tag "category_nutrition-1", 'nutrition-1', service.key?(:categories) && slugs.include?(["nutrition-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_nutrition-106-04-04", "nutrition-106-04-04", service.key?(:categories) && slugs.include?("nutrition-106-04-04") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Nutrition'
+            = "Nutrition"
         %li.hide.depth2
-          = check_box_tag "category_parenting-education", 'parenting-education', service.key?(:categories) && slugs.include?(["parenting-education"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_parenting-education", "parenting-education", service.key?(:categories) && slugs.include?("parenting-education") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Parenting Education'
+            = "Parenting Education"
         %li.hide.depth2
-          = check_box_tag "category_sex-education", 'sex-education', service.key?(:categories) && slugs.include?(["sex-education"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_sex-education", "sex-education", service.key?(:categories) && slugs.include?("sex-education") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Sex Education'
+            = "Sex Education"
         %li.hide.depth2
-          = check_box_tag "category_understand-disability", 'understand-disability', service.key?(:categories) && slugs.include?(["understand-disability"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_understand-disability", "understand-disability", service.key?(:categories) && slugs.include?("understand-disability") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Understand Disability'
+            = "Understand Disability"
         %li.hide.depth2
-          = check_box_tag "category_understand-mental-health", 'understand-mental-health', service.key?(:categories) && slugs.include?(["understand-mental-health"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_understand-mental-health", "understand-mental-health", service.key?(:categories) && slugs.include?("understand-mental-health") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Understand Mental Health'
+            = "Understand Mental Health"
     %li.hide.depth1
-      = check_box_tag "category_help-pay-for-healthcare", 'help-pay-for-healthcare', service.key?(:categories) && slugs.include?(["help-pay-for-healthcare"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_help-pay-for-healthcare", "help-pay-for-healthcare", service.key?(:categories) && slugs.include?("help-pay-for-healthcare") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Help Pay for Healthcare'
+        = "Help Pay for Healthcare"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_cash-for-healthcare-1", 'cash-for-healthcare-1', service.key?(:categories) && slugs.include?(["cash-for-healthcare-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-healthcare-106-05-01", "cash-for-healthcare-106-05-01", service.key?(:categories) && slugs.include?("cash-for-healthcare-106-05-01") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for Healthcare'
+            = "Cash for Healthcare"
         %li.hide.depth2
-          = check_box_tag "category_disability-benefits", 'disability-benefits', service.key?(:categories) && slugs.include?(["disability-benefits"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_disability-benefits", "disability-benefits", service.key?(:categories) && slugs.include?("disability-benefits") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Disability Benefits'
+            = "Disability Benefits"
         %li.hide.depth2
-          = check_box_tag "category_discounted-healthcare", 'discounted-healthcare', service.key?(:categories) && slugs.include?(["discounted-healthcare"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_discounted-healthcare", "discounted-healthcare", service.key?(:categories) && slugs.include?("discounted-healthcare") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Discounted Healthcare'
+            = "Discounted Healthcare"
         %li.hide.depth2
-          = check_box_tag "category_health-insurance", 'health-insurance', service.key?(:categories) && slugs.include?(["health-insurance"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_health-insurance", "health-insurance", service.key?(:categories) && slugs.include?("health-insurance") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Health Insurance'
+            = "Health Insurance"
         %li.hide.depth2
-          = check_box_tag "category_medical-supplies-1", 'medical-supplies-1', service.key?(:categories) && slugs.include?(["medical-supplies-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_medical-supplies-106-05-05", "medical-supplies-106-05-05", service.key?(:categories) && slugs.include?("medical-supplies-106-05-05") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Medical Supplies'
+            = "Medical Supplies"
         %li.hide.depth2
-          = check_box_tag "category_prescription-assistance", 'prescription-assistance', service.key?(:categories) && slugs.include?(["prescription-assistance"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_prescription-assistance", "prescription-assistance", service.key?(:categories) && slugs.include?("prescription-assistance") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Prescription Assistance'
+            = "Prescription Assistance"
         %li.hide.depth2
-          = check_box_tag "category_transportation-for-healthcare-1", 'transportation-for-healthcare-1', service.key?(:categories) && slugs.include?(["transportation-for-healthcare-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_transportation-for-healthcare-106-05-07", "transportation-for-healthcare-106-05-07", service.key?(:categories) && slugs.include?("transportation-for-healthcare-106-05-07") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Transportation for Healthcare'
+            = "Transportation for Healthcare"
     %li.hide.depth1
-      = check_box_tag "category_medical-care", 'medical-care', service.key?(:categories) && slugs.include?(["medical-care"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_medical-care", "medical-care", service.key?(:categories) && slugs.include?("medical-care") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Medical Care'
+        = "Medical Care"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_alternative-medicine", 'alternative-medicine', service.key?(:categories) && slugs.include?(["alternative-medicine"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_alternative-medicine", "alternative-medicine", service.key?(:categories) && slugs.include?("alternative-medicine") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Alternative Medicine'
+            = "Alternative Medicine"
         %li.hide.depth2
-          = check_box_tag "category_assistive-technology-1", 'assistive-technology-1', service.key?(:categories) && slugs.include?(["assistive-technology-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_assistive-technology-106-06-02", "assistive-technology-106-06-02", service.key?(:categories) && slugs.include?("assistive-technology-106-06-02") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Assistive Technology'
+            = "Assistive Technology"
         %li.hide.depth2
-          = check_box_tag "category_birth-control", 'birth-control', service.key?(:categories) && slugs.include?(["birth-control"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_birth-control", "birth-control", service.key?(:categories) && slugs.include?("birth-control") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Birth Control'
+            = "Birth Control"
         %li.hide.depth2
-          = check_box_tag "category_checkup-and-test", 'checkup-and-test', service.key?(:categories) && slugs.include?(["checkup-and-test"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_checkup-test", "checkup-test", service.key?(:categories) && slugs.include?("checkup-test") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Checkup & Test'
+            = "Checkup & Test"
           %ul
             %li.hide.depth3
-              = check_box_tag "category_disability-screening", 'disability-screening', service.key?(:categories) && slugs.include?(["disability-screening"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_disability-screening", "disability-screening", service.key?(:categories) && slugs.include?("disability-screening") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Disability Screening'
+                = "Disability Screening"
             %li.hide.depth3
-              = check_box_tag "category_disease-screening", 'disease-screening', service.key?(:categories) && slugs.include?(["disease-screening"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_disease-screening", "disease-screening", service.key?(:categories) && slugs.include?("disease-screening") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Disease Screening'
+                = "Disease Screening"
             %li.hide.depth3
-              = check_box_tag "category_hearing-tests", 'hearing-tests', service.key?(:categories) && slugs.include?(["hearing-tests"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_hearing-tests", "hearing-tests", service.key?(:categories) && slugs.include?("hearing-tests") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Hearing Tests'
+                = "Hearing Tests"
             %li.hide.depth3
-              = check_box_tag "category_mental-health-evaluation", 'mental-health-evaluation', service.key?(:categories) && slugs.include?(["mental-health-evaluation"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_mental-health-evaluation", "mental-health-evaluation", service.key?(:categories) && slugs.include?("mental-health-evaluation") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Mental Health Evaluation'
+                = "Mental Health Evaluation"
             %li.hide.depth3
-              = check_box_tag "category_pregnancy-tests", 'pregnancy-tests', service.key?(:categories) && slugs.include?(["pregnancy-tests"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_pregnancy-tests", "pregnancy-tests", service.key?(:categories) && slugs.include?("pregnancy-tests") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Pregnancy Tests'
+                = "Pregnancy Tests"
             %li.hide.depth3
-              = check_box_tag "category_vision-tests", 'vision-tests', service.key?(:categories) && slugs.include?(["vision-tests"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_vision-tests", "vision-tests", service.key?(:categories) && slugs.include?("vision-tests") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Vision Tests'
+                = "Vision Tests"
         %li.hide.depth2
-          = check_box_tag "category_maternity-care", 'maternity-care', service.key?(:categories) && slugs.include?(["maternity-care"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_maternity-care", "maternity-care", service.key?(:categories) && slugs.include?("maternity-care") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Maternity Care'
+            = "Maternity Care"
         %li.hide.depth2
-          = check_box_tag "category_personal-hygiene", 'personal-hygiene', service.key?(:categories) && slugs.include?(["personal-hygiene"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_personal-hygiene", "personal-hygiene", service.key?(:categories) && slugs.include?("personal-hygiene") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Personal Hygiene'
+            = "Personal Hygiene"
         %li.hide.depth2
-          = check_box_tag "category_prevent-and-treat", 'prevent-and-treat', service.key?(:categories) && slugs.include?(["prevent-and-treat"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_prevent-treat", "prevent-treat", service.key?(:categories) && slugs.include?("prevent-treat") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Prevent & Treat'
+            = "Prevent & Treat"
           %ul
             %li.hide.depth3
-              = check_box_tag "category_counseling", 'counseling', service.key?(:categories) && slugs.include?(["counseling"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_counseling", "counseling", service.key?(:categories) && slugs.include?("counseling") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Counseling'
+                = "Counseling"
             %li.hide.depth3
-              = check_box_tag "category_hiv-treatment", 'hiv-treatment', service.key?(:categories) && slugs.include?(["hiv-treatment"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_hiv-treatment", "hiv-treatment", service.key?(:categories) && slugs.include?("hiv-treatment") ? true : false, :name => "category_slugs[]"
               %label
-                = 'HIV Treatment'
+                = "HIV Treatment"
             %li.hide.depth3
-              = check_box_tag "category_pain-management-1", 'pain-management-1', service.key?(:categories) && slugs.include?(["pain-management-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_pain-management-106-06-07-03", "pain-management-106-06-07-03", service.key?(:categories) && slugs.include?("pain-management-106-06-07-03") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Pain Management'
+                = "Pain Management"
             %li.hide.depth3
-              = check_box_tag "category_disease-management-1", 'disease-management-1', service.key?(:categories) && slugs.include?(["disease-management-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_disease-management-106-06-07-04", "disease-management-106-06-07-04", service.key?(:categories) && slugs.include?("disease-management-106-06-07-04") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Disease Management'
+                = "Disease Management"
             %li.hide.depth3
-              = check_box_tag "category_nursing-home-2", 'nursing-home-2', service.key?(:categories) && slugs.include?(["nursing-home-2"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_nursing-home-106-06-07-05", "nursing-home-106-06-07-05", service.key?(:categories) && slugs.include?("nursing-home-106-06-07-05") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Nursing Home'
+                = "Nursing Home"
             %li.hide.depth3
-              = check_box_tag "category_physical-therapy", 'physical-therapy', service.key?(:categories) && slugs.include?(["physical-therapy"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_physical-therapy", "physical-therapy", service.key?(:categories) && slugs.include?("physical-therapy") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Physical Therapy'
+                = "Physical Therapy"
             %li.hide.depth3
-              = check_box_tag "category_specialized-therapy", 'specialized-therapy', service.key?(:categories) && slugs.include?(["specialized-therapy"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_specialized-therapy", "specialized-therapy", service.key?(:categories) && slugs.include?("specialized-therapy") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Specialized Therapy'
+                = "Specialized Therapy"
             %li.hide.depth3
-              = check_box_tag "category_vaccinations", 'vaccinations', service.key?(:categories) && slugs.include?(["vaccinations"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_vaccinations", "vaccinations", service.key?(:categories) && slugs.include?("vaccinations") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Vaccinations'
+                = "Vaccinations"
             %li.hide.depth3
-              = check_box_tag "category_in-home-support", 'in-home-support', service.key?(:categories) && slugs.include?(["in-home-support"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_in-home-support", "in-home-support", service.key?(:categories) && slugs.include?("in-home-support") ? true : false, :name => "category_slugs[]"
               %label
-                = 'In-Home Support'
+                = "In-Home Support"
             %li.hide.depth3
-              = check_box_tag "category_residential-treatment-1", 'residential-treatment-1', service.key?(:categories) && slugs.include?(["residential-treatment-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_residential-treatment-106-06-07-10", "residential-treatment-106-06-07-10", service.key?(:categories) && slugs.include?("residential-treatment-106-06-07-10") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Residential Treatment'
+                = "Residential Treatment"
             %li.hide.depth3
-              = check_box_tag "category_outpatient-treatment-1", 'outpatient-treatment-1', service.key?(:categories) && slugs.include?(["outpatient-treatment-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_outpatient-treatment-106-06-07-11", "outpatient-treatment-106-06-07-11", service.key?(:categories) && slugs.include?("outpatient-treatment-106-06-07-11") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Outpatient Treatment'
+                = "Outpatient Treatment"
         %li.hide.depth2
-          = check_box_tag "category_psychiatric-emergency-services-1", 'psychiatric-emergency-services-1', service.key?(:categories) && slugs.include?(["psychiatric-emergency-services-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_psychiatric-emergency-services-106-06-08", "psychiatric-emergency-services-106-06-08", service.key?(:categories) && slugs.include?("psychiatric-emergency-services-106-06-08") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Psychiatric Emergency Services'
+            = "Psychiatric Emergency Services"
 %li.depth0
-  = check_box_tag "category_money", 'money', service.key?(:categories) && slugs.include?(["money"]) ? true : false, :name => "category_slugs[]"
+  = check_box_tag "category_money", "money", service.key?(:categories) && slugs.include?("money") ? true : false, :name => "category_slugs[]"
   %label
-    = 'Money'
+    = "Money"
   %ul
     %li.hide.depth1
-      = check_box_tag "category_emergency-cash-1", 'emergency-cash-1', service.key?(:categories) && slugs.include?(["emergency-cash-1"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_emergency-cash-107-01", "emergency-cash-107-01", service.key?(:categories) && slugs.include?("emergency-cash-107-01") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Emergency Cash'
+        = "Emergency Cash"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_cash-for-food-2", 'cash-for-food-2', service.key?(:categories) && slugs.include?(["cash-for-food-2"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-food-107-01-01", "cash-for-food-107-01-01", service.key?(:categories) && slugs.include?("cash-for-food-107-01-01") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for Food'
+            = "Cash for Food"
         %li.hide.depth2
-          = check_box_tag "category_cash-for-healthcare-2", 'cash-for-healthcare-2', service.key?(:categories) && slugs.include?(["cash-for-healthcare-2"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-healthcare-107-01-02", "cash-for-healthcare-107-01-02", service.key?(:categories) && slugs.include?("cash-for-healthcare-107-01-02") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for Healthcare'
+            = "Cash for Healthcare"
         %li.hide.depth2
-          = check_box_tag "category_cash-for-housing-2", 'cash-for-housing-2', service.key?(:categories) && slugs.include?(["cash-for-housing-2"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-housing-107-01-03", "cash-for-housing-107-01-03", service.key?(:categories) && slugs.include?("cash-for-housing-107-01-03") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for Housing'
+            = "Cash for Housing"
         %li.hide.depth2
-          = check_box_tag "category_cash-for-childcare", 'cash-for-childcare', service.key?(:categories) && slugs.include?(["cash-for-childcare"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-childcare", "cash-for-childcare", service.key?(:categories) && slugs.include?("cash-for-childcare") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for Childcare'
+            = "Cash for Childcare"
         %li.hide.depth2
-          = check_box_tag "category_cash-for-gas-2", 'cash-for-gas-2', service.key?(:categories) && slugs.include?(["cash-for-gas-2"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-gas-107-01-05", "cash-for-gas-107-01-05", service.key?(:categories) && slugs.include?("cash-for-gas-107-01-05") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for Gas'
+            = "Cash for Gas"
         %li.hide.depth2
-          = check_box_tag "category_cash-for-school-1", 'cash-for-school-1', service.key?(:categories) && slugs.include?(["cash-for-school-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-school-107-01-06", "cash-for-school-107-01-06", service.key?(:categories) && slugs.include?("cash-for-school-107-01-06") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for School'
+            = "Cash for School"
         %li.hide.depth2
-          = check_box_tag "category_cash-for-utilities-2", 'cash-for-utilities-2', service.key?(:categories) && slugs.include?(["cash-for-utilities-2"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-utilities-107-01-07", "cash-for-utilities-107-01-07", service.key?(:categories) && slugs.include?("cash-for-utilities-107-01-07") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for Utilities'
+            = "Cash for Utilities"
     %li.hide.depth1
-      = check_box_tag "category_financial-assistance", 'financial-assistance', service.key?(:categories) && slugs.include?(["financial-assistance"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_financial-assistance", "financial-assistance", service.key?(:categories) && slugs.include?("financial-assistance") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Financial Assistance'
+        = "Financial Assistance"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_help-pay-for-childcare", 'help-pay-for-childcare', service.key?(:categories) && slugs.include?(["help-pay-for-childcare"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_help-pay-for-childcare", "help-pay-for-childcare", service.key?(:categories) && slugs.include?("help-pay-for-childcare") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Help Pay for Childcare'
+            = "Help Pay for Childcare"
           %ul
             %li.hide.depth3
-              = check_box_tag "category_cash-for-childcare-1", 'cash-for-childcare-1', service.key?(:categories) && slugs.include?(["cash-for-childcare-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_cash-for-childcare-107-02-01-01", "cash-for-childcare-107-02-01-01", service.key?(:categories) && slugs.include?("cash-for-childcare-107-02-01-01") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Cash for Childcare'
+                = "Cash for Childcare"
             %li.hide.depth3
-              = check_box_tag "category_childcare-vouchers", 'childcare-vouchers', service.key?(:categories) && slugs.include?(["childcare-vouchers"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_childcare-vouchers", "childcare-vouchers", service.key?(:categories) && slugs.include?("childcare-vouchers") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Childcare Vouchers'
+                = "Childcare Vouchers"
         %li.hide.depth2
-          = check_box_tag "category_help-pay-for-food-1", 'help-pay-for-food-1', service.key?(:categories) && slugs.include?(["help-pay-for-food-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_help-pay-for-food-107-02-02", "help-pay-for-food-107-02-02", service.key?(:categories) && slugs.include?("help-pay-for-food-107-02-02") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Help Pay for Food'
+            = "Help Pay for Food"
           %ul
             %li.hide.depth3
-              = check_box_tag "category_food-benefits-1", 'food-benefits-1', service.key?(:categories) && slugs.include?(["food-benefits-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_food-benefits-107-02-02-01", "food-benefits-107-02-02-01", service.key?(:categories) && slugs.include?("food-benefits-107-02-02-01") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Food Benefits'
+                = "Food Benefits"
             %li.hide.depth3
-              = check_box_tag "category_cash-for-food-3", 'cash-for-food-3', service.key?(:categories) && slugs.include?(["cash-for-food-3"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_cash-for-food-107-02-02-01", "cash-for-food-107-02-02-01", service.key?(:categories) && slugs.include?("cash-for-food-107-02-02-01") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Cash for Food'
+                = "Cash for Food"
         %li.hide.depth2
-          = check_box_tag "category_help-pay-for-healthcare-1", 'help-pay-for-healthcare-1', service.key?(:categories) && slugs.include?(["help-pay-for-healthcare-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_help-pay-for-healthcare-107-02-03", "help-pay-for-healthcare-107-02-03", service.key?(:categories) && slugs.include?("help-pay-for-healthcare-107-02-03") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Help Pay for Healthcare'
+            = "Help Pay for Healthcare"
           %ul
             %li.hide.depth3
-              = check_box_tag "category_cash-for-healthcare-3", 'cash-for-healthcare-3', service.key?(:categories) && slugs.include?(["cash-for-healthcare-3"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_cash-for-healthcare-107-02-03-01", "cash-for-healthcare-107-02-03-01", service.key?(:categories) && slugs.include?("cash-for-healthcare-107-02-03-01") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Cash for Healthcare'
+                = "Cash for Healthcare"
             %li.hide.depth3
-              = check_box_tag "category_disability-benefits-1", 'disability-benefits-1', service.key?(:categories) && slugs.include?(["disability-benefits-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_disability-benefits-107-02-03-02", "disability-benefits-107-02-03-02", service.key?(:categories) && slugs.include?("disability-benefits-107-02-03-02") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Disability Benefits'
+                = "Disability Benefits"
             %li.hide.depth3
-              = check_box_tag "category_discounted-healthcare-1", 'discounted-healthcare-1', service.key?(:categories) && slugs.include?(["discounted-healthcare-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_discounted-healthcare-107-02-03-03", "discounted-healthcare-107-02-03-03", service.key?(:categories) && slugs.include?("discounted-healthcare-107-02-03-03") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Discounted Healthcare'
+                = "Discounted Healthcare"
             %li.hide.depth3
-              = check_box_tag "category_health-insurance-1", 'health-insurance-1', service.key?(:categories) && slugs.include?(["health-insurance-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_health-insurance-107-02-03-04", "health-insurance-107-02-03-04", service.key?(:categories) && slugs.include?("health-insurance-107-02-03-04") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Health Insurance'
+                = "Health Insurance"
             %li.hide.depth3
-              = check_box_tag "category_medical-supplies-2", 'medical-supplies-2', service.key?(:categories) && slugs.include?(["medical-supplies-2"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_medical-supplies-107-02-03-05", "medical-supplies-107-02-03-05", service.key?(:categories) && slugs.include?("medical-supplies-107-02-03-05") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Medical Supplies'
+                = "Medical Supplies"
             %li.hide.depth3
-              = check_box_tag "category_prescription-assistance-1", 'prescription-assistance-1', service.key?(:categories) && slugs.include?(["prescription-assistance-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_prescription-assistance-107-02-03-06", "prescription-assistance-107-02-03-06", service.key?(:categories) && slugs.include?("prescription-assistance-107-02-03-06") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Prescription Assistance'
+                = "Prescription Assistance"
             %li.hide.depth3
-              = check_box_tag "category_transportation-for-healthcare-2", 'transportation-for-healthcare-2', service.key?(:categories) && slugs.include?(["transportation-for-healthcare-2"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_transportation-for-healthcare-107-02-03-07", "transportation-for-healthcare-107-02-03-07", service.key?(:categories) && slugs.include?("transportation-for-healthcare-107-02-03-07") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Transportation for Healthcare'
+                = "Transportation for Healthcare"
             %li.hide.depth3
-              = check_box_tag "category_healthcare-vouchers", 'healthcare-vouchers', service.key?(:categories) && slugs.include?(["healthcare-vouchers"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_healthcare-vouchers", "healthcare-vouchers", service.key?(:categories) && slugs.include?("healthcare-vouchers") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Healthcare Vouchers'
+                = "Healthcare Vouchers"
         %li.hide.depth2
-          = check_box_tag "category_help-pay-for-housing-1", 'help-pay-for-housing-1', service.key?(:categories) && slugs.include?(["help-pay-for-housing-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_help-pay-for-housing-107-02-04", "help-pay-for-housing-107-02-04", service.key?(:categories) && slugs.include?("help-pay-for-housing-107-02-04") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Help Pay for Housing'
+            = "Help Pay for Housing"
           %ul
             %li.hide.depth3
-              = check_box_tag "category_cash-for-housing-3", 'cash-for-housing-3', service.key?(:categories) && slugs.include?(["cash-for-housing-3"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_cash-for-housing-107-02-04-01", "cash-for-housing-107-02-04-01", service.key?(:categories) && slugs.include?("cash-for-housing-107-02-04-01") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Cash for Housing'
+                = "Cash for Housing"
             %li.hide.depth3
-              = check_box_tag "category_cash-for-utilities-3", 'cash-for-utilities-3', service.key?(:categories) && slugs.include?(["cash-for-utilities-3"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_cash-for-utilities-107-02-04-02", "cash-for-utilities-107-02-04-02", service.key?(:categories) && slugs.include?("cash-for-utilities-107-02-04-02") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Cash for Utilities'
+                = "Cash for Utilities"
             %li.hide.depth3
-              = check_box_tag "category_home-and-renters-insurance-1", 'home-and-renters-insurance-1', service.key?(:categories) && slugs.include?(["home-and-renters-insurance-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_home-renters-insurance-107-02-04-03", "home-renters-insurance-107-02-04-03", service.key?(:categories) && slugs.include?("home-renters-insurance-107-02-04-03") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Home & Renters Insurance'
+                = "Home & Renters Insurance"
             %li.hide.depth3
-              = check_box_tag "category_housing-vouchers-1", 'housing-vouchers-1', service.key?(:categories) && slugs.include?(["housing-vouchers-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_housing-vouchers-107-02-04-04", "housing-vouchers-107-02-04-04", service.key?(:categories) && slugs.include?("housing-vouchers-107-02-04-04") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Housing Vouchers'
+                = "Housing Vouchers"
             %li.hide.depth3
-              = check_box_tag "category_maintenance-and-repairs-1", 'maintenance-and-repairs-1', service.key?(:categories) && slugs.include?(["maintenance-and-repairs-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_maintenance-repairs-107-02-04-05", "maintenance-repairs-107-02-04-05", service.key?(:categories) && slugs.include?("maintenance-repairs-107-02-04-05") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Maintenance & Repairs'
+                = "Maintenance & Repairs"
         %li.hide.depth2
-          = check_box_tag "category_help-pay-for-school", 'help-pay-for-school', service.key?(:categories) && slugs.include?(["help-pay-for-school"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_help-pay-for-school", "help-pay-for-school", service.key?(:categories) && slugs.include?("help-pay-for-school") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Help Pay for School'
+            = "Help Pay for School"
           %ul
             %li.hide.depth3
-              = check_box_tag "category_books-1", 'books-1', service.key?(:categories) && slugs.include?(["books-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_books-107-02-05-01", "books-107-02-05-01", service.key?(:categories) && slugs.include?("books-107-02-05-01") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Books'
+                = "Books"
             %li.hide.depth3
-              = check_box_tag "category_cash-for-school-2", 'cash-for-school-2', service.key?(:categories) && slugs.include?(["cash-for-school-2"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_cash-for-school-107-02-05-02", "cash-for-school-107-02-05-02", service.key?(:categories) && slugs.include?("cash-for-school-107-02-05-02") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Cash for School'
+                = "Cash for School"
             %li.hide.depth3
-              = check_box_tag "category_clothes-for-school-1", 'clothes-for-school-1', service.key?(:categories) && slugs.include?(["clothes-for-school-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_clothes-for-school-107-02-05-03", "clothes-for-school-107-02-05-03", service.key?(:categories) && slugs.include?("clothes-for-school-107-02-05-03") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Clothes for School'
+                = "Clothes for School"
             %li.hide.depth3
-              = check_box_tag "category_financial-aid-and-loans", 'financial-aid-and-loans', service.key?(:categories) && slugs.include?(["financial-aid-and-loans"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_financial-aid-loans", "financial-aid-loans", service.key?(:categories) && slugs.include?("financial-aid-loans") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Financial Aid & Loans'
+                = "Financial Aid & Loans"
             %li.hide.depth3
-              = check_box_tag "category_transportation-for-school-1", 'transportation-for-school-1', service.key?(:categories) && slugs.include?(["transportation-for-school-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_transportation-for-school-107-02-05-05", "transportation-for-school-107-02-05-05", service.key?(:categories) && slugs.include?("transportation-for-school-107-02-05-05") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Transportation for School'
+                = "Transportation for School"
         %li.hide.depth2
-          = check_box_tag "category_help-pay-for-transit-1", 'help-pay-for-transit-1', service.key?(:categories) && slugs.include?(["help-pay-for-transit-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_help-pay-for-transit-107-02-06", "help-pay-for-transit-107-02-06", service.key?(:categories) && slugs.include?("help-pay-for-transit-107-02-06") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Help Pay for Transit'
+            = "Help Pay for Transit"
           %ul
             %li.hide.depth3
-              = check_box_tag "category_cash-for-gas-3", 'cash-for-gas-3', service.key?(:categories) && slugs.include?(["cash-for-gas-3"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_cash-for-gas-107-02-06-01", "cash-for-gas-107-02-06-01", service.key?(:categories) && slugs.include?("cash-for-gas-107-02-06-01") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Cash for Gas'
+                = "Cash for Gas"
             %li.hide.depth3
-              = check_box_tag "category_bus-passes-1", 'bus-passes-1', service.key?(:categories) && slugs.include?(["bus-passes-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_bus-passes-107-02-06-02", "bus-passes-107-02-06-02", service.key?(:categories) && slugs.include?("bus-passes-107-02-06-02") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Bus Passes'
+                = "Bus Passes"
         %li.hide.depth2
-          = check_box_tag "category_help-pay-for-work-expenses", 'help-pay-for-work-expenses', service.key?(:categories) && slugs.include?(["help-pay-for-work-expenses"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_help-pay-for-work-expenses", "help-pay-for-work-expenses", service.key?(:categories) && slugs.include?("help-pay-for-work-expenses") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Help Pay for Work Expenses'
+            = "Help Pay for Work Expenses"
     %li.hide.depth1
-      = check_box_tag "category_government-benefits", 'government-benefits', service.key?(:categories) && slugs.include?(["government-benefits"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_government-benefits", "government-benefits", service.key?(:categories) && slugs.include?("government-benefits") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Government Benefits'
+        = "Government Benefits"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_disability-benefits-2", 'disability-benefits-2', service.key?(:categories) && slugs.include?(["disability-benefits-2"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_disability-benefits-107-03-01", "disability-benefits-107-03-01", service.key?(:categories) && slugs.include?("disability-benefits-107-03-01") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Disability Benefits'
+            = "Disability Benefits"
         %li.hide.depth2
-          = check_box_tag "category_food-benefits-2", 'food-benefits-2', service.key?(:categories) && slugs.include?(["food-benefits-2"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_food-benefits-107-03-02", "food-benefits-107-03-02", service.key?(:categories) && slugs.include?("food-benefits-107-03-02") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Food Benefits'
+            = "Food Benefits"
         %li.hide.depth2
-          = check_box_tag "category_retirement-benefits", 'retirement-benefits', service.key?(:categories) && slugs.include?(["retirement-benefits"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_retirement-benefits", "retirement-benefits", service.key?(:categories) && slugs.include?("retirement-benefits") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Retirement Benefits'
+            = "Retirement Benefits"
         %li.hide.depth2
-          = check_box_tag "category_understand-government-programs", 'understand-government-programs', service.key?(:categories) && slugs.include?(["understand-government-programs"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_understand-government-programs", "understand-government-programs", service.key?(:categories) && slugs.include?("understand-government-programs") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Understand Government Programs'
+            = "Understand Government Programs"
         %li.hide.depth2
-          = check_box_tag "category_unemployment-benefits", 'unemployment-benefits', service.key?(:categories) && slugs.include?(["unemployment-benefits"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_unemployment-benefits", "unemployment-benefits", service.key?(:categories) && slugs.include?("unemployment-benefits") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Unemployment Benefits'
+            = "Unemployment Benefits"
     %li.hide.depth1
-      = check_box_tag "category_vouchers", 'vouchers', service.key?(:categories) && slugs.include?(["vouchers"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_vouchers", "vouchers", service.key?(:categories) && slugs.include?("vouchers") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Vouchers'
+        = "Vouchers"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_childcare-vouchers-1", 'childcare-vouchers-1', service.key?(:categories) && slugs.include?(["childcare-vouchers-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_childcare-vouchers-107-04-01", "childcare-vouchers-107-04-01", service.key?(:categories) && slugs.include?("childcare-vouchers-107-04-01") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Childcare Vouchers'
+            = "Childcare Vouchers"
         %li.hide.depth2
-          = check_box_tag "category_clothing-vouchers-1", 'clothing-vouchers-1', service.key?(:categories) && slugs.include?(["clothing-vouchers-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_clothing-vouchers-107-04-02", "clothing-vouchers-107-04-02", service.key?(:categories) && slugs.include?("clothing-vouchers-107-04-02") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Clothing Vouchers'
+            = "Clothing Vouchers"
         %li.hide.depth2
-          = check_box_tag "category_healthcare-vouchers-1", 'healthcare-vouchers-1', service.key?(:categories) && slugs.include?(["healthcare-vouchers-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_healthcare-vouchers-107-04-03", "healthcare-vouchers-107-04-03", service.key?(:categories) && slugs.include?("healthcare-vouchers-107-04-03") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Healthcare Vouchers'
+            = "Healthcare Vouchers"
         %li.hide.depth2
-          = check_box_tag "category_housing-vouchers-2", 'housing-vouchers-2', service.key?(:categories) && slugs.include?(["housing-vouchers-2"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_housing-vouchers-107-04-04", "housing-vouchers-107-04-04", service.key?(:categories) && slugs.include?("housing-vouchers-107-04-04") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Housing Vouchers'
+            = "Housing Vouchers"
     %li.hide.depth1
-      = check_box_tag "category_financial-education", 'financial-education', service.key?(:categories) && slugs.include?(["financial-education"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_financial-education", "financial-education", service.key?(:categories) && slugs.include?("financial-education") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Financial Education'
+        = "Financial Education"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_credit-counseling", 'credit-counseling', service.key?(:categories) && slugs.include?(["credit-counseling"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_credit-counseling", "credit-counseling", service.key?(:categories) && slugs.include?("credit-counseling") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Credit Counseling'
+            = "Credit Counseling"
         %li.hide.depth2
-          = check_box_tag "category_foreclosure-counseling-1", 'foreclosure-counseling-1', service.key?(:categories) && slugs.include?(["foreclosure-counseling-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_foreclosure-counseling-107-05-02", "foreclosure-counseling-107-05-02", service.key?(:categories) && slugs.include?("foreclosure-counseling-107-05-02") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Foreclosure Counseling'
+            = "Foreclosure Counseling"
         %li.hide.depth2
-          = check_box_tag "category_homebuyer-education-1", 'homebuyer-education-1', service.key?(:categories) && slugs.include?(["homebuyer-education-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_homebuyer-education-107-05-03", "homebuyer-education-107-05-03", service.key?(:categories) && slugs.include?("homebuyer-education-107-05-03") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Homebuyer Education'
+            = "Homebuyer Education"
         %li.hide.depth2
-          = check_box_tag "category_savings-program", 'savings-program', service.key?(:categories) && slugs.include?(["savings-program"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_savings-program", "savings-program", service.key?(:categories) && slugs.include?("savings-program") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Savings Program'
+            = "Savings Program"
     %li.hide.depth1
-      = check_box_tag "category_insurance", 'insurance', service.key?(:categories) && slugs.include?(["insurance"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_insurance", "insurance", service.key?(:categories) && slugs.include?("insurance") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Insurance'
+        = "Insurance"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_health-insurance-2", 'health-insurance-2', service.key?(:categories) && slugs.include?(["health-insurance-2"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_health-insurance-107-06-01", "health-insurance-107-06-01", service.key?(:categories) && slugs.include?("health-insurance-107-06-01") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Health Insurance'
+            = "Health Insurance"
         %li.hide.depth2
-          = check_box_tag "category_home-and-renters-insurance-2", 'home-and-renters-insurance-2', service.key?(:categories) && slugs.include?(["home-and-renters-insurance-2"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_home-renters-insurance-107-06-02", "home-renters-insurance-107-06-02", service.key?(:categories) && slugs.include?("home-renters-insurance-107-06-02") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Home & Renters Insurance'
+            = "Home & Renters Insurance"
     %li.hide.depth1
-      = check_box_tag "category_tax-preparation", 'tax-preparation', service.key?(:categories) && slugs.include?(["tax-preparation"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_tax-preparation", "tax-preparation", service.key?(:categories) && slugs.include?("tax-preparation") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Tax Preparation'
+        = "Tax Preparation"
 %li.depth0
-  = check_box_tag "category_care", 'care', service.key?(:categories) && slugs.include?(["care"]) ? true : false, :name => "category_slugs[]"
+  = check_box_tag "category_care", "care", service.key?(:categories) && slugs.include?("care") ? true : false, :name => "category_slugs[]"
   %label
-    = 'Care'
+    = "Care"
   %ul
     %li.hide.depth1
-      = check_box_tag "category_adoption-and-foster-care", 'adoption-and-foster-care', service.key?(:categories) && slugs.include?(["adoption-and-foster-care"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_adoption-foster-care", "adoption-foster-care", service.key?(:categories) && slugs.include?("adoption-foster-care") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Adoption & Foster Care'
+        = "Adoption & Foster Care"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_adoption-and-foster-placement", 'adoption-and-foster-placement', service.key?(:categories) && slugs.include?(["adoption-and-foster-placement"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_adoption-foster-placement", "adoption-foster-placement", service.key?(:categories) && slugs.include?("adoption-foster-placement") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Adoption & Foster Placement'
+            = "Adoption & Foster Placement"
         %li.hide.depth2
-          = check_box_tag "category_adoption-and-foster-parenting", 'adoption-and-foster-parenting', service.key?(:categories) && slugs.include?(["adoption-and-foster-parenting"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_adoption-foster-parenting", "adoption-foster-parenting", service.key?(:categories) && slugs.include?("adoption-foster-parenting") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Adoption & Foster Parenting'
+            = "Adoption & Foster Parenting"
         %li.hide.depth2
-          = check_box_tag "category_adoption-planning", 'adoption-planning', service.key?(:categories) && slugs.include?(["adoption-planning"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_adoption-planning", "adoption-planning", service.key?(:categories) && slugs.include?("adoption-planning") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Adoption Planning'
+            = "Adoption Planning"
         %li.hide.depth2
-          = check_box_tag "category_post-adoption-support", 'post-adoption-support', service.key?(:categories) && slugs.include?(["post-adoption-support"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_post-adoption-support", "post-adoption-support", service.key?(:categories) && slugs.include?("post-adoption-support") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Post-Adoption Support'
+            = "Post-Adoption Support"
     %li.hide.depth1
-      = check_box_tag "category_animal-welfare", 'animal-welfare', service.key?(:categories) && slugs.include?(["animal-welfare"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_animal-welfare", "animal-welfare", service.key?(:categories) && slugs.include?("animal-welfare") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Animal Welfare'
+        = "Animal Welfare"
     %li.hide.depth1
-      = check_box_tag "category_daytime-care", 'daytime-care', service.key?(:categories) && slugs.include?(["daytime-care"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_daytime-care", "daytime-care", service.key?(:categories) && slugs.include?("daytime-care") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Daytime Care'
+        = "Daytime Care"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_adult-daycare", 'adult-daycare', service.key?(:categories) && slugs.include?(["adult-daycare"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_adult-daycare", "adult-daycare", service.key?(:categories) && slugs.include?("adult-daycare") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Adult Daycare'
+            = "Adult Daycare"
         %li.hide.depth2
-          = check_box_tag "category_afterschool-care", 'afterschool-care', service.key?(:categories) && slugs.include?(["afterschool-care"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_afterschool-care", "afterschool-care", service.key?(:categories) && slugs.include?("afterschool-care") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Afterschool Care'
+            = "Afterschool Care"
         %li.hide.depth2
-          = check_box_tag "category_childcare", 'childcare', service.key?(:categories) && slugs.include?(["childcare"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_childcare", "childcare", service.key?(:categories) && slugs.include?("childcare") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Childcare'
+            = "Childcare"
           %ul
             %li.hide.depth3
-              = check_box_tag "category_child-daycare", 'child-daycare', service.key?(:categories) && slugs.include?(["child-daycare"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_child-daycare", "child-daycare", service.key?(:categories) && slugs.include?("child-daycare") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Child Daycare'
+                = "Child Daycare"
             %li.hide.depth3
-              = check_box_tag "category_help-find-childcare", 'help-find-childcare', service.key?(:categories) && slugs.include?(["help-find-childcare"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_help-find-childcare", "help-find-childcare", service.key?(:categories) && slugs.include?("help-find-childcare") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Help Find Childcare'
+                = "Help Find Childcare"
             %li.hide.depth3
-              = check_box_tag "category_childcare-vouchers-2", 'childcare-vouchers-2', service.key?(:categories) && slugs.include?(["childcare-vouchers-2"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_childcare-vouchers-108-03-03-03", "childcare-vouchers-108-03-03-03", service.key?(:categories) && slugs.include?("childcare-vouchers-108-03-03-03") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Childcare Vouchers'
+                = "Childcare Vouchers"
             %li.hide.depth3
-              = check_box_tag "category_cash-for-childcare-2", 'cash-for-childcare-2', service.key?(:categories) && slugs.include?(["cash-for-childcare-2"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_cash-for-childcare-108-03-03-04", "cash-for-childcare-108-03-03-04", service.key?(:categories) && slugs.include?("cash-for-childcare-108-03-03-04") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Cash for Childcare'
+                = "Cash for Childcare"
         %li.hide.depth2
-          = check_box_tag "category_day-camp", 'day-camp', service.key?(:categories) && slugs.include?(["day-camp"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_day-camp", "day-camp", service.key?(:categories) && slugs.include?("day-camp") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Day Camp'
+            = "Day Camp"
         %li.hide.depth2
-          = check_box_tag "category_preschool", 'preschool', service.key?(:categories) && slugs.include?(["preschool"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_preschool", "preschool", service.key?(:categories) && slugs.include?("preschool") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Preschool'
+            = "Preschool"
         %li.hide.depth2
-          = check_box_tag "category_recreation", 'recreation', service.key?(:categories) && slugs.include?(["recreation"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_recreation", "recreation", service.key?(:categories) && slugs.include?("recreation") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Recreation'
+            = "Recreation"
         %li.hide.depth2
-          = check_box_tag "category_relief-for-caregivers", 'relief-for-caregivers', service.key?(:categories) && slugs.include?(["relief-for-caregivers"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_relief-for-caregivers", "relief-for-caregivers", service.key?(:categories) && slugs.include?("relief-for-caregivers") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Relief for Caregivers'
+            = "Relief for Caregivers"
     %li.hide.depth1
-      = check_box_tag "category_end-of-life-care-1", 'end-of-life-care-1', service.key?(:categories) && slugs.include?(["end-of-life-care-1"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_end-of-life-care-108-04", "end-of-life-care-108-04", service.key?(:categories) && slugs.include?("end-of-life-care-108-04") ? true : false, :name => "category_slugs[]"
       %label
-        = 'End-of-Life Care'
+        = "End-of-Life Care"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_bereavement-1", 'bereavement-1', service.key?(:categories) && slugs.include?(["bereavement-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_bereavement-108-04-01", "bereavement-108-04-01", service.key?(:categories) && slugs.include?("bereavement-108-04-01") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Bereavement'
+            = "Bereavement"
         %li.hide.depth2
-          = check_box_tag "category_burial-and-funeral-help-1", 'burial-and-funeral-help-1', service.key?(:categories) && slugs.include?(["burial-and-funeral-help-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_burial-funeral-help-108-04-02", "burial-funeral-help-108-04-02", service.key?(:categories) && slugs.include?("burial-funeral-help-108-04-02") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Burial & Funeral Help'
+            = "Burial & Funeral Help"
         %li.hide.depth2
-          = check_box_tag "category_hospice-1", 'hospice-1', service.key?(:categories) && slugs.include?(["hospice-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_hospice-108-04-03", "hospice-108-04-03", service.key?(:categories) && slugs.include?("hospice-108-04-03") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Hospice'
+            = "Hospice"
         %li.hide.depth2
-          = check_box_tag "category_pain-management-2", 'pain-management-2', service.key?(:categories) && slugs.include?(["pain-management-2"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_pain-management-108-04-04", "pain-management-108-04-04", service.key?(:categories) && slugs.include?("pain-management-108-04-04") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Pain Management'
+            = "Pain Management"
     %li.hide.depth1
-      = check_box_tag "category_navigating-the-system", 'navigating-the-system', service.key?(:categories) && slugs.include?(["navigating-the-system"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_navigating-the-system", "navigating-the-system", service.key?(:categories) && slugs.include?("navigating-the-system") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Navigating the System'
+        = "Navigating the System"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_help-fill-out-forms", 'help-fill-out-forms', service.key?(:categories) && slugs.include?(["help-fill-out-forms"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_help-find-work", "help-find-work", service.key?(:categories) && slugs.include?("help-find-work") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Help Fill out Forms'
+            = "Help Find Work"
         %li.hide.depth2
-          = check_box_tag "category_help-find-childcare-1", 'help-find-childcare-1', service.key?(:categories) && slugs.include?(["help-find-childcare-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_help-fill-out-forms", "help-fill-out-forms", service.key?(:categories) && slugs.include?("help-fill-out-forms") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Help Find Childcare'
+            = "Help Fill out Forms"
         %li.hide.depth2
-          = check_box_tag "category_help-find-housing-1", 'help-find-housing-1', service.key?(:categories) && slugs.include?(["help-find-housing-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_help-find-childcare-108-05-02", "help-find-childcare-108-05-02", service.key?(:categories) && slugs.include?("help-find-childcare-108-05-02") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Help Find Housing'
+            = "Help Find Childcare"
         %li.hide.depth2
-          = check_box_tag "category_help-find-school", 'help-find-school', service.key?(:categories) && slugs.include?(["help-find-school"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_help-find-housing-108-05-03", "help-find-housing-108-05-03", service.key?(:categories) && slugs.include?("help-find-housing-108-05-03") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Help Find School'
+            = "Help Find Housing"
         %li.hide.depth2
-          = check_box_tag "category_help-find-work", 'help-find-work', service.key?(:categories) && slugs.include?(["help-find-work"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_help-find-school", "help-find-school", service.key?(:categories) && slugs.include?("help-find-school") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Help Find Work'
+            = "Help Find School"
     %li.hide.depth1
-      = check_box_tag "category_residential-care", 'residential-care', service.key?(:categories) && slugs.include?(["residential-care"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_residential-care", "residential-care", service.key?(:categories) && slugs.include?("residential-care") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Residential Care'
+        = "Residential Care"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_assisted-living-1", 'assisted-living-1', service.key?(:categories) && slugs.include?(["assisted-living-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_assisted-living-108-06-01", "assisted-living-108-06-01", service.key?(:categories) && slugs.include?("assisted-living-108-06-01") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Assisted Living'
+            = "Assisted Living"
         %li.hide.depth2
-          = check_box_tag "category_residential-treatment-2", 'residential-treatment-2', service.key?(:categories) && slugs.include?(["residential-treatment-2"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_residential-treatment-108-06-02", "residential-treatment-108-06-02", service.key?(:categories) && slugs.include?("residential-treatment-108-06-02") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Residential Treatment'
+            = "Residential Treatment"
         %li.hide.depth2
-          = check_box_tag "category_nursing-home-3", 'nursing-home-3', service.key?(:categories) && slugs.include?(["nursing-home-3"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_nursing-home-108-06-03", "nursing-home-108-06-03", service.key?(:categories) && slugs.include?("nursing-home-108-06-03") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Nursing Home'
+            = "Nursing Home"
         %li.hide.depth2
-          = check_box_tag "category_overnight-camp", 'overnight-camp', service.key?(:categories) && slugs.include?(["overnight-camp"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_overnight-camp", "overnight-camp", service.key?(:categories) && slugs.include?("overnight-camp") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Overnight Camp'
+            = "Overnight Camp"
     %li.hide.depth1
-      = check_box_tag "category_support-network", 'support-network', service.key?(:categories) && slugs.include?(["support-network"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_support-network", "support-network", service.key?(:categories) && slugs.include?("support-network") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Support Network'
+        = "Support Network"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_counseling-1", 'counseling-1', service.key?(:categories) && slugs.include?(["counseling-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_counseling-108-07-01", "counseling-108-07-01", service.key?(:categories) && slugs.include?("counseling-108-07-01") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Counseling'
+            = "Counseling"
         %li.hide.depth2
-          = check_box_tag "category_help-hotlines", 'help-hotlines', service.key?(:categories) && slugs.include?(["help-hotlines"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_help-hotlines", "help-hotlines", service.key?(:categories) && slugs.include?("help-hotlines") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Help Hotlines'
+            = "Help Hotlines"
         %li.hide.depth2
-          = check_box_tag "category_home-visiting", 'home-visiting', service.key?(:categories) && slugs.include?(["home-visiting"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_home-visiting", "home-visiting", service.key?(:categories) && slugs.include?("home-visiting") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Home Visiting'
+            = "Home Visiting"
         %li.hide.depth2
-          = check_box_tag "category_in-home-support-1", 'in-home-support-1', service.key?(:categories) && slugs.include?(["in-home-support-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_in-home-support-108-07-04", "in-home-support-108-07-04", service.key?(:categories) && slugs.include?("in-home-support-108-07-04") ? true : false, :name => "category_slugs[]"
           %label
-            = 'In-Home Support'
+            = "In-Home Support"
         %li.hide.depth2
-          = check_box_tag "category_mentoring", 'mentoring', service.key?(:categories) && slugs.include?(["mentoring"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_mentoring", "mentoring", service.key?(:categories) && slugs.include?("mentoring") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Mentoring'
+            = "Mentoring"
         %li.hide.depth2
-          = check_box_tag "category_one-on-one-support", 'one-on-one-support', service.key?(:categories) && slugs.include?(["one-on-one-support"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_one-on-one-support", "one-on-one-support", service.key?(:categories) && slugs.include?("one-on-one-support") ? true : false, :name => "category_slugs[]"
           %label
-            = 'One-on-One Support'
+            = "One-on-One Support"
         %li.hide.depth2
-          = check_box_tag "category_peer-support", 'peer-support', service.key?(:categories) && slugs.include?(["peer-support"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_peer-support", "peer-support", service.key?(:categories) && slugs.include?("peer-support") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Peer Support'
+            = "Peer Support"
         %li.hide.depth2
-          = check_box_tag "category_spiritual-support", 'spiritual-support', service.key?(:categories) && slugs.include?(["spiritual-support"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_spiritual-support", "spiritual-support", service.key?(:categories) && slugs.include?("spiritual-support") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Spiritual Support'
+            = "Spiritual Support"
         %li.hide.depth2
-          = check_box_tag "category_support-groups", 'support-groups', service.key?(:categories) && slugs.include?(["support-groups"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_support-groups", "support-groups", service.key?(:categories) && slugs.include?("support-groups") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Support Groups'
+            = "Support Groups"
           %ul
             %li.hide.depth3
-              = check_box_tag "category_12-step-1", '12-step-1', service.key?(:categories) && slugs.include?(["12-step-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_12-step-108-07-08-01", "12-step-108-07-08-01", service.key?(:categories) && slugs.include?("12-step-108-07-08-01") ? true : false, :name => "category_slugs[]"
               %label
-                = '12-Step'
+                = "12-Step"
             %li.hide.depth3
-              = check_box_tag "category_bereavement-2", 'bereavement-2', service.key?(:categories) && slugs.include?(["bereavement-2"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_bereavement-108-07-08-02", "bereavement-108-07-08-02", service.key?(:categories) && slugs.include?("bereavement-108-07-08-02") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Bereavement'
+                = "Bereavement"
             %li.hide.depth3
-              = check_box_tag "category_parenting-education-1", 'parenting-education-1', service.key?(:categories) && slugs.include?(["parenting-education-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_parenting-education-108-07-08-03", "parenting-education-108-07-08-03", service.key?(:categories) && slugs.include?("parenting-education-108-07-08-03") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Parenting Education'
+                = "Parenting Education"
         %li.hide.depth2
-          = check_box_tag "category_virtual-support", 'virtual-support', service.key?(:categories) && slugs.include?(["virtual-support"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_virtual-support", "virtual-support", service.key?(:categories) && slugs.include?("virtual-support") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Virtual Support'
+            = "Virtual Support"
 %li.depth0
-  = check_box_tag "category_education", 'education', service.key?(:categories) && slugs.include?(["education"]) ? true : false, :name => "category_slugs[]"
+  = check_box_tag "category_education", "education", service.key?(:categories) && slugs.include?("education") ? true : false, :name => "category_slugs[]"
   %label
-    = 'Education'
+    = "Education"
   %ul
     %li.hide.depth1
-      = check_box_tag "category_help-find-school-1", 'help-find-school-1', service.key?(:categories) && slugs.include?(["help-find-school-1"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_help-find-school-109-01", "help-find-school-109-01", service.key?(:categories) && slugs.include?("help-find-school-109-01") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Help Find School'
+        = "Help Find School"
     %li.hide.depth1
-      = check_box_tag "category_help-pay-for-school-1", 'help-pay-for-school-1', service.key?(:categories) && slugs.include?(["help-pay-for-school-1"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_help-pay-for-school-109-02", "help-pay-for-school-109-02", service.key?(:categories) && slugs.include?("help-pay-for-school-109-02") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Help Pay for School'
+        = "Help Pay for School"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_books-2", 'books-2', service.key?(:categories) && slugs.include?(["books-2"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_books-109-02-01", "books-109-02-01", service.key?(:categories) && slugs.include?("books-109-02-01") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Books'
+            = "Books"
         %li.hide.depth2
-          = check_box_tag "category_cash-for-school-3", 'cash-for-school-3', service.key?(:categories) && slugs.include?(["cash-for-school-3"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_cash-for-school-109-02-02", "cash-for-school-109-02-02", service.key?(:categories) && slugs.include?("cash-for-school-109-02-02") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Cash for School'
+            = "Cash for School"
         %li.hide.depth2
-          = check_box_tag "category_clothes-for-school-2", 'clothes-for-school-2', service.key?(:categories) && slugs.include?(["clothes-for-school-2"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_clothes-for-school-109-02-03", "clothes-for-school-109-02-03", service.key?(:categories) && slugs.include?("clothes-for-school-109-02-03") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Clothes for School'
+            = "Clothes for School"
         %li.hide.depth2
-          = check_box_tag "category_financial-aid-and-loans-1", 'financial-aid-and-loans-1', service.key?(:categories) && slugs.include?(["financial-aid-and-loans-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_financial-aid-loans-109-02-04", "financial-aid-loans-109-02-04", service.key?(:categories) && slugs.include?("financial-aid-loans-109-02-04") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Financial Aid & Loans'
+            = "Financial Aid & Loans"
         %li.hide.depth2
-          = check_box_tag "category_transportation-for-school-2", 'transportation-for-school-2', service.key?(:categories) && slugs.include?(["transportation-for-school-2"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_transportation-for-school-109-02-05", "transportation-for-school-109-02-05", service.key?(:categories) && slugs.include?("transportation-for-school-109-02-05") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Transportation for School'
+            = "Transportation for School"
     %li.hide.depth1
-      = check_box_tag "category_more-education", 'more-education', service.key?(:categories) && slugs.include?(["more-education"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_more-education", "more-education", service.key?(:categories) && slugs.include?("more-education") ? true : false, :name => "category_slugs[]"
       %label
-        = 'More Education'
+        = "More Education"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_alternative-education", 'alternative-education', service.key?(:categories) && slugs.include?(["alternative-education"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_alternative-education", "alternative-education", service.key?(:categories) && slugs.include?("alternative-education") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Alternative Education'
+            = "Alternative Education"
         %li.hide.depth2
-          = check_box_tag "category_disaster-preparedness-and-response", 'disaster-preparedness-and-response', service.key?(:categories) && slugs.include?(["disaster-preparedness-and-response"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_disaster-preparedness-response", "disaster-preparedness-response", service.key?(:categories) && slugs.include?("disaster-preparedness-response") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Disaster Preparedness & Response'
+            = "Disaster Preparedness & Response"
         %li.hide.depth2
-          = check_box_tag "category_english-as-a-second-language-esl", 'english-as-a-second-language-esl', service.key?(:categories) && slugs.include?(["english-as-a-second-language-esl"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_english-as-a-second-language-esl", "english-as-a-second-language-esl", service.key?(:categories) && slugs.include?("english-as-a-second-language-esl") ? true : false, :name => "category_slugs[]"
           %label
-            = 'English as a Second Language (ESL)'
+            = "English as a Second Language (ESL)"
         %li.hide.depth2
-          = check_box_tag "category_financial-education-1", 'financial-education-1', service.key?(:categories) && slugs.include?(["financial-education-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_financial-education-109-03-04", "financial-education-109-03-04", service.key?(:categories) && slugs.include?("financial-education-109-03-04") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Financial Education'
+            = "Financial Education"
           %ul
             %li.hide.depth3
-              = check_box_tag "category_credit-counseling-1", 'credit-counseling-1', service.key?(:categories) && slugs.include?(["credit-counseling-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_credit-counseling-109-03-04-01", "credit-counseling-109-03-04-01", service.key?(:categories) && slugs.include?("credit-counseling-109-03-04-01") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Credit Counseling'
+                = "Credit Counseling"
             %li.hide.depth3
-              = check_box_tag "category_foreclosure-counseling-2", 'foreclosure-counseling-2', service.key?(:categories) && slugs.include?(["foreclosure-counseling-2"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_foreclosure-counseling-109-03-04-02", "foreclosure-counseling-109-03-04-02", service.key?(:categories) && slugs.include?("foreclosure-counseling-109-03-04-02") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Foreclosure Counseling'
+                = "Foreclosure Counseling"
             %li.hide.depth3
-              = check_box_tag "category_homebuyer-education-2", 'homebuyer-education-2', service.key?(:categories) && slugs.include?(["homebuyer-education-2"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_homebuyer-education-109-03-04-03", "homebuyer-education-109-03-04-03", service.key?(:categories) && slugs.include?("homebuyer-education-109-03-04-03") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Homebuyer Education'
+                = "Homebuyer Education"
         %li.hide.depth2
-          = check_box_tag "category_foreign-languages", 'foreign-languages', service.key?(:categories) && slugs.include?(["foreign-languages"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_foreign-languages", "foreign-languages", service.key?(:categories) && slugs.include?("foreign-languages") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Foreign Languages'
+            = "Foreign Languages"
         %li.hide.depth2
-          = check_box_tag "category_ged-slash-high-school-equivalency", 'ged-slash-high-school-equivalency', service.key?(:categories) && slugs.include?(["ged-slash-high-school-equivalency"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_ged-high-school-equivalency", "ged-high-school-equivalency", service.key?(:categories) && slugs.include?("ged-high-school-equivalency") ? true : false, :name => "category_slugs[]"
           %label
-            = 'GED/High-School Equivalency'
+            = "GED/High-School Equivalency"
         %li.hide.depth2
-          = check_box_tag "category_health-education-1", 'health-education-1', service.key?(:categories) && slugs.include?(["health-education-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_health-education-109-03-07", "health-education-109-03-07", service.key?(:categories) && slugs.include?("health-education-109-03-07") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Health Education'
+            = "Health Education"
           %ul
             %li.hide.depth3
-              = check_box_tag "category_disease-management-2", 'disease-management-2', service.key?(:categories) && slugs.include?(["disease-management-2"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_disease-management-109-03-07-01", "disease-management-109-03-07-01", service.key?(:categories) && slugs.include?("disease-management-109-03-07-01") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Disease Management'
+                = "Disease Management"
             %li.hide.depth3
-              = check_box_tag "category_family-planning-1", 'family-planning-1', service.key?(:categories) && slugs.include?(["family-planning-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_family-planning-109-03-07-02", "family-planning-109-03-07-02", service.key?(:categories) && slugs.include?("family-planning-109-03-07-02") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Family Planning'
+                = "Family Planning"
             %li.hide.depth3
-              = check_box_tag "category_nutrition-education", 'nutrition-education', service.key?(:categories) && slugs.include?(["nutrition-education"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_nutrition-education", "nutrition-education", service.key?(:categories) && slugs.include?("nutrition-education") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Nutrition Education'
+                = "Nutrition Education"
             %li.hide.depth3
-              = check_box_tag "category_parenting-education-2", 'parenting-education-2', service.key?(:categories) && slugs.include?(["parenting-education-2"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_parenting-education-109-03-07-04", "parenting-education-109-03-07-04", service.key?(:categories) && slugs.include?("parenting-education-109-03-07-04") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Parenting Education'
+                = "Parenting Education"
             %li.hide.depth3
-              = check_box_tag "category_sex-education-1", 'sex-education-1', service.key?(:categories) && slugs.include?(["sex-education-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_sex-education-109-03-07-05", "sex-education-109-03-07-05", service.key?(:categories) && slugs.include?("sex-education-109-03-07-05") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Sex Education'
+                = "Sex Education"
             %li.hide.depth3
-              = check_box_tag "category_understand-disability-1", 'understand-disability-1', service.key?(:categories) && slugs.include?(["understand-disability-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_understand-disability-109-03-07-06", "understand-disability-109-03-07-06", service.key?(:categories) && slugs.include?("understand-disability-109-03-07-06") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Understand Disability'
+                = "Understand Disability"
             %li.hide.depth3
-              = check_box_tag "category_understand-mental-health-1", 'understand-mental-health-1', service.key?(:categories) && slugs.include?(["understand-mental-health-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_understand-mental-health-109-03-07-07", "understand-mental-health-109-03-07-07", service.key?(:categories) && slugs.include?("understand-mental-health-109-03-07-07") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Understand Mental Health'
+                = "Understand Mental Health"
         %li.hide.depth2
-          = check_box_tag "category_supported-employment", 'supported-employment', service.key?(:categories) && slugs.include?(["supported-employment"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_supported-employment", "supported-employment", service.key?(:categories) && slugs.include?("supported-employment") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Supported Employment'
+            = "Supported Employment"
         %li.hide.depth2
-          = check_box_tag "category_special-education", 'special-education', service.key?(:categories) && slugs.include?(["special-education"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_special-education", "special-education", service.key?(:categories) && slugs.include?("special-education") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Special Education'
+            = "Special Education"
         %li.hide.depth2
-          = check_box_tag "category_tutoring", 'tutoring', service.key?(:categories) && slugs.include?(["tutoring"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_tutoring", "tutoring", service.key?(:categories) && slugs.include?("tutoring") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Tutoring'
+            = "Tutoring"
     %li.hide.depth1
-      = check_box_tag "category_preschool-1", 'preschool-1', service.key?(:categories) && slugs.include?(["preschool-1"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_preschool-109-04", "preschool-109-04", service.key?(:categories) && slugs.include?("preschool-109-04") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Preschool'
+        = "Preschool"
     %li.hide.depth1
-      = check_box_tag "category_screening-and-exams", 'screening-and-exams', service.key?(:categories) && slugs.include?(["screening-and-exams"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_screening-exams", "screening-exams", service.key?(:categories) && slugs.include?("screening-exams") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Screening & Exams'
+        = "Screening & Exams"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_citizenship-and-immigration", 'citizenship-and-immigration', service.key?(:categories) && slugs.include?(["citizenship-and-immigration"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_citizenship-immigration", "citizenship-immigration", service.key?(:categories) && slugs.include?("citizenship-immigration") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Citizenship & Immigration'
+            = "Citizenship & Immigration"
         %li.hide.depth2
-          = check_box_tag "category_ged-slash-high-school", 'ged-slash-high-school', service.key?(:categories) && slugs.include?(["ged-slash-high-school"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_ged-high-school", "ged-high-school", service.key?(:categories) && slugs.include?("ged-high-school") ? true : false, :name => "category_slugs[]"
           %label
-            = 'GED/High-School'
+            = "GED/High-School"
         %li.hide.depth2
-          = check_box_tag "category_english-as-a-second-language-esl-1", 'english-as-a-second-language-esl-1', service.key?(:categories) && slugs.include?(["english-as-a-second-language-esl-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_english-as-a-second-language-esl-109-05-03", "english-as-a-second-language-esl-109-05-03", service.key?(:categories) && slugs.include?("english-as-a-second-language-esl-109-05-03") ? true : false, :name => "category_slugs[]"
           %label
-            = 'English as a Second Language (ESL)'
+            = "English as a Second Language (ESL)"
     %li.hide.depth1
-      = check_box_tag "category_skills-and-training", 'skills-and-training', service.key?(:categories) && slugs.include?(["skills-and-training"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_skills-training", "skills-training", service.key?(:categories) && slugs.include?("skills-training") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Skills & Training'
+        = "Skills & Training"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_basic-literacy", 'basic-literacy', service.key?(:categories) && slugs.include?(["basic-literacy"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_basic-literacy", "basic-literacy", service.key?(:categories) && slugs.include?("basic-literacy") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Basic Literacy'
+            = "Basic Literacy"
         %li.hide.depth2
-          = check_box_tag "category_computer-class", 'computer-class', service.key?(:categories) && slugs.include?(["computer-class"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_computer-class", "computer-class", service.key?(:categories) && slugs.include?("computer-class") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Computer Class'
+            = "Computer Class"
         %li.hide.depth2
-          = check_box_tag "category_daily-life-skills-1", 'daily-life-skills-1', service.key?(:categories) && slugs.include?(["daily-life-skills-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_daily-life-skills-109-06-03", "daily-life-skills-109-06-03", service.key?(:categories) && slugs.include?("daily-life-skills-109-06-03") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Daily Life Skills'
+            = "Daily Life Skills"
         %li.hide.depth2
-          = check_box_tag "category_interview-training", 'interview-training', service.key?(:categories) && slugs.include?(["interview-training"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_interview-training", "interview-training", service.key?(:categories) && slugs.include?("interview-training") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Interview Training'
+            = "Interview Training"
         %li.hide.depth2
-          = check_box_tag "category_resume-development", 'resume-development', service.key?(:categories) && slugs.include?(["resume-development"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_resume-development", "resume-development", service.key?(:categories) && slugs.include?("resume-development") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Resume Development'
+            = "Resume Development"
         %li.hide.depth2
-          = check_box_tag "category_skills-assessment", 'skills-assessment', service.key?(:categories) && slugs.include?(["skills-assessment"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_skills-assessment", "skills-assessment", service.key?(:categories) && slugs.include?("skills-assessment") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Skills Assessment'
+            = "Skills Assessment"
         %li.hide.depth2
-          = check_box_tag "category_specialized-training", 'specialized-training', service.key?(:categories) && slugs.include?(["specialized-training"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_specialized-training", "specialized-training", service.key?(:categories) && slugs.include?("specialized-training") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Specialized Training'
+            = "Specialized Training"
     %li.hide.depth1
-      = check_box_tag "category_technology-1", 'technology-1', service.key?(:categories) && slugs.include?(["technology-1"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_technology-109-07", "technology-109-07", service.key?(:categories) && slugs.include?("technology-109-07") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Technology'
+        = "Technology"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_assistive-technology-2", 'assistive-technology-2', service.key?(:categories) && slugs.include?(["assistive-technology-2"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_assistive-technology-109-07-01", "assistive-technology-109-07-01", service.key?(:categories) && slugs.include?("assistive-technology-109-07-01") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Assistive Technology'
+            = "Assistive Technology"
         %li.hide.depth2
-          = check_box_tag "category_internet-1", 'internet-1', service.key?(:categories) && slugs.include?(["internet-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_internet-109-07-02", "internet-109-07-02", service.key?(:categories) && slugs.include?("internet-109-07-02") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Internet'
+            = "Internet"
         %li.hide.depth2
-          = check_box_tag "category_medical-supplies-3", 'medical-supplies-3', service.key?(:categories) && slugs.include?(["medical-supplies-3"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_medical-supplies-109-07-03", "medical-supplies-109-07-03", service.key?(:categories) && slugs.include?("medical-supplies-109-07-03") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Medical Supplies'
+            = "Medical Supplies"
         %li.hide.depth2
-          = check_box_tag "category_phone-services-1", 'phone-services-1', service.key?(:categories) && slugs.include?(["phone-services-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_phone-services-109-07-04", "phone-services-109-07-04", service.key?(:categories) && slugs.include?("phone-services-109-07-04") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Phone Services'
+            = "Phone Services"
 %li.depth0
-  = check_box_tag "category_work", 'work', service.key?(:categories) && slugs.include?(["work"]) ? true : false, :name => "category_slugs[]"
+  = check_box_tag "category_work", "work", service.key?(:categories) && slugs.include?("work") ? true : false, :name => "category_slugs[]"
   %label
-    = 'Work'
+    = "Work"
   %ul
     %li.hide.depth1
-      = check_box_tag "category_help-find-work-1", 'help-find-work-1', service.key?(:categories) && slugs.include?(["help-find-work-1"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_help-find-work-110-01", "help-find-work-110-01", service.key?(:categories) && slugs.include?("help-find-work-110-01") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Help Find Work'
+        = "Help Find Work"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_job-placement", 'job-placement', service.key?(:categories) && slugs.include?(["job-placement"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_job-placement", "job-placement", service.key?(:categories) && slugs.include?("job-placement") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Job Placement'
+            = "Job Placement"
         %li.hide.depth2
-          = check_box_tag "category_supported-employment-1", 'supported-employment-1', service.key?(:categories) && slugs.include?(["supported-employment-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_supported-employment-110-01-02", "supported-employment-110-01-02", service.key?(:categories) && slugs.include?("supported-employment-110-01-02") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Supported Employment'
+            = "Supported Employment"
     %li.hide.depth1
-      = check_box_tag "category_help-pay-for-work-expenses-1", 'help-pay-for-work-expenses-1', service.key?(:categories) && slugs.include?(["help-pay-for-work-expenses-1"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_help-pay-for-work-expenses-110-02", "help-pay-for-work-expenses-110-02", service.key?(:categories) && slugs.include?("help-pay-for-work-expenses-110-02") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Help Pay for Work Expenses'
+        = "Help Pay for Work Expenses"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_clothes-for-work-1", 'clothes-for-work-1', service.key?(:categories) && slugs.include?(["clothes-for-work-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_clothes-for-work-110-02-01", "clothes-for-work-110-02-01", service.key?(:categories) && slugs.include?("clothes-for-work-110-02-01") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Clothes for Work'
+            = "Clothes for Work"
         %li.hide.depth2
-          = check_box_tag "category_retirement-benefits-1", 'retirement-benefits-1', service.key?(:categories) && slugs.include?(["retirement-benefits-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_retirement-benefits-110-02-02", "retirement-benefits-110-02-02", service.key?(:categories) && slugs.include?("retirement-benefits-110-02-02") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Retirement Benefits'
+            = "Retirement Benefits"
         %li.hide.depth2
-          = check_box_tag "category_supplies-for-work-1", 'supplies-for-work-1', service.key?(:categories) && slugs.include?(["supplies-for-work-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_supplies-for-work-110-02-03", "supplies-for-work-110-02-03", service.key?(:categories) && slugs.include?("supplies-for-work-110-02-03") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Supplies for Work'
+            = "Supplies for Work"
         %li.hide.depth2
-          = check_box_tag "category_unemployment-benefits-1", 'unemployment-benefits-1', service.key?(:categories) && slugs.include?(["unemployment-benefits-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_unemployment-benefits-110-02-04", "unemployment-benefits-110-02-04", service.key?(:categories) && slugs.include?("unemployment-benefits-110-02-04") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Unemployment Benefits'
+            = "Unemployment Benefits"
     %li.hide.depth1
-      = check_box_tag "category_skills-and-training-1", 'skills-and-training-1', service.key?(:categories) && slugs.include?(["skills-and-training-1"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_skills-training-110-03", "skills-training-110-03", service.key?(:categories) && slugs.include?("skills-training-110-03") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Skills & Training'
+        = "Skills & Training"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_basic-literacy-1", 'basic-literacy-1', service.key?(:categories) && slugs.include?(["basic-literacy-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_basic-literacy-110-03-01", "basic-literacy-110-03-01", service.key?(:categories) && slugs.include?("basic-literacy-110-03-01") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Basic Literacy'
+            = "Basic Literacy"
         %li.hide.depth2
-          = check_box_tag "category_computer-class-1", 'computer-class-1', service.key?(:categories) && slugs.include?(["computer-class-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_computer-class-110-03-02", "computer-class-110-03-02", service.key?(:categories) && slugs.include?("computer-class-110-03-02") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Computer Class'
+            = "Computer Class"
         %li.hide.depth2
-          = check_box_tag "category_ged-slash-high-school-equivalency-1", 'ged-slash-high-school-equivalency-1', service.key?(:categories) && slugs.include?(["ged-slash-high-school-equivalency-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_ged-high-school-equivalency-110-03-03", "ged-high-school-equivalency-110-03-03", service.key?(:categories) && slugs.include?("ged-high-school-equivalency-110-03-03") ? true : false, :name => "category_slugs[]"
           %label
-            = 'GED/High-School Equivalency'
+            = "GED/High-School Equivalency"
         %li.hide.depth2
-          = check_box_tag "category_interview-training-1", 'interview-training-1', service.key?(:categories) && slugs.include?(["interview-training-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_interview-training-110-03-04", "interview-training-110-03-04", service.key?(:categories) && slugs.include?("interview-training-110-03-04") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Interview Training'
+            = "Interview Training"
         %li.hide.depth2
-          = check_box_tag "category_resume-development-1", 'resume-development-1', service.key?(:categories) && slugs.include?(["resume-development-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_resume-development-110-03-05", "resume-development-110-03-05", service.key?(:categories) && slugs.include?("resume-development-110-03-05") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Resume Development'
+            = "Resume Development"
         %li.hide.depth2
-          = check_box_tag "category_skills-assessment-1", 'skills-assessment-1', service.key?(:categories) && slugs.include?(["skills-assessment-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_skills-assessment-110-03-06", "skills-assessment-110-03-06", service.key?(:categories) && slugs.include?("skills-assessment-110-03-06") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Skills Assessment'
+            = "Skills Assessment"
         %li.hide.depth2
-          = check_box_tag "category_specialized-training-1", 'specialized-training-1', service.key?(:categories) && slugs.include?(["specialized-training-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_specialized-training-110-03-07", "specialized-training-110-03-07", service.key?(:categories) && slugs.include?("specialized-training-110-03-07") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Specialized Training'
+            = "Specialized Training"
     %li.hide.depth1
-      = check_box_tag "category_supported-employment-2", 'supported-employment-2', service.key?(:categories) && slugs.include?(["supported-employment-2"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_supported-employment-110-04", "supported-employment-110-04", service.key?(:categories) && slugs.include?("supported-employment-110-04") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Supported Employment'
+        = "Supported Employment"
     %li.hide.depth1
-      = check_box_tag "category_workplace-rights", 'workplace-rights', service.key?(:categories) && slugs.include?(["workplace-rights"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_workplace-rights", "workplace-rights", service.key?(:categories) && slugs.include?("workplace-rights") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Workplace Rights'
+        = "Workplace Rights"
 %li.depth0
-  = check_box_tag "category_legal", 'legal', service.key?(:categories) && slugs.include?(["legal"]) ? true : false, :name => "category_slugs[]"
+  = check_box_tag "category_legal", "legal", service.key?(:categories) && slugs.include?("legal") ? true : false, :name => "category_slugs[]"
   %label
-    = 'Legal'
+    = "Legal"
   %ul
     %li.hide.depth1
-      = check_box_tag "category_advocacy-and-legal-aid", 'advocacy-and-legal-aid', service.key?(:categories) && slugs.include?(["advocacy-and-legal-aid"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_advocacy-legal-aid", "advocacy-legal-aid", service.key?(:categories) && slugs.include?("advocacy-legal-aid") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Advocacy & Legal Aid'
+        = "Advocacy & Legal Aid"
       %ul
         %li.hide.depth2
-          = check_box_tag "category_adoption-and-foster-care-1", 'adoption-and-foster-care-1', service.key?(:categories) && slugs.include?(["adoption-and-foster-care-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_adoption-foster-care-111-01-01", "adoption-foster-care-111-01-01", service.key?(:categories) && slugs.include?("adoption-foster-care-111-01-01") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Adoption & Foster Care'
+            = "Adoption & Foster Care"
           %ul
             %li.hide.depth3
-              = check_box_tag "category_adoption-and-foster-placement-1", 'adoption-and-foster-placement-1', service.key?(:categories) && slugs.include?(["adoption-and-foster-placement-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_adoption-foster-placement-111-01-01-01", "adoption-foster-placement-111-01-01-01", service.key?(:categories) && slugs.include?("adoption-foster-placement-111-01-01-01") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Adoption & Foster Placement'
+                = "Adoption & Foster Placement"
             %li.hide.depth3
-              = check_box_tag "category_adoption-and-foster-parenting-1", 'adoption-and-foster-parenting-1', service.key?(:categories) && slugs.include?(["adoption-and-foster-parenting-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_adoption-foster-parenting-111-01-01-02", "adoption-foster-parenting-111-01-01-02", service.key?(:categories) && slugs.include?("adoption-foster-parenting-111-01-01-02") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Adoption & Foster Parenting'
+                = "Adoption & Foster Parenting"
             %li.hide.depth3
-              = check_box_tag "category_adoption-planning-1", 'adoption-planning-1', service.key?(:categories) && slugs.include?(["adoption-planning-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_adoption-planning-111-01-01-03", "adoption-planning-111-01-01-03", service.key?(:categories) && slugs.include?("adoption-planning-111-01-01-03") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Adoption Planning'
+                = "Adoption Planning"
             %li.hide.depth3
-              = check_box_tag "category_post-adoption-support-1", 'post-adoption-support-1', service.key?(:categories) && slugs.include?(["post-adoption-support-1"]) ? true : false, :name => "category_slugs[]"
+              = check_box_tag "category_post-adoption-support-111-01-01-04", "post-adoption-support-111-01-01-04", service.key?(:categories) && slugs.include?("post-adoption-support-111-01-01-04") ? true : false, :name => "category_slugs[]"
               %label
-                = 'Post-Adoption Support'
+                = "Post-Adoption Support"
         %li.hide.depth2
-          = check_box_tag "category_citizenship-and-immigration-1", 'citizenship-and-immigration-1', service.key?(:categories) && slugs.include?(["citizenship-and-immigration-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_citizenship-immigration-111-01-02", "citizenship-immigration-111-01-02", service.key?(:categories) && slugs.include?("citizenship-immigration-111-01-02") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Citizenship & Immigration'
+            = "Citizenship & Immigration"
         %li.hide.depth2
-          = check_box_tag "category_discrimination-and-civil-rights", 'discrimination-and-civil-rights', service.key?(:categories) && slugs.include?(["discrimination-and-civil-rights"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_discrimination-civil-rights", "discrimination-civil-rights", service.key?(:categories) && slugs.include?("discrimination-civil-rights") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Discrimination & Civil Rights'
+            = "Discrimination & Civil Rights"
         %li.hide.depth2
-          = check_box_tag "category_guardianship", 'guardianship', service.key?(:categories) && slugs.include?(["guardianship"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_guardianship", "guardianship", service.key?(:categories) && slugs.include?("guardianship") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Guardianship'
+            = "Guardianship"
         %li.hide.depth2
-          = check_box_tag "category_identification-recovery", 'identification-recovery', service.key?(:categories) && slugs.include?(["identification-recovery"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_identification-recovery", "identification-recovery", service.key?(:categories) && slugs.include?("identification-recovery") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Identification Recovery'
+            = "Identification Recovery"
         %li.hide.depth2
-          = check_box_tag "category_understand-government-programs-1", 'understand-government-programs-1', service.key?(:categories) && slugs.include?(["understand-government-programs-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_understand-government-programs-111-01-06", "understand-government-programs-111-01-06", service.key?(:categories) && slugs.include?("understand-government-programs-111-01-06") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Understand Government Programs'
+            = "Understand Government Programs"
         %li.hide.depth2
-          = check_box_tag "category_workplace-rights-1", 'workplace-rights-1', service.key?(:categories) && slugs.include?(["workplace-rights-1"]) ? true : false, :name => "category_slugs[]"
+          = check_box_tag "category_workplace-rights-111-01-07", "workplace-rights-111-01-07", service.key?(:categories) && slugs.include?("workplace-rights-111-01-07") ? true : false, :name => "category_slugs[]"
           %label
-            = 'Workplace Rights'
+            = "Workplace Rights"
     %li.hide.depth1
-      = check_box_tag "category_mediation", 'mediation', service.key?(:categories) && slugs.include?(["mediation"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_mediation", "mediation", service.key?(:categories) && slugs.include?("mediation") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Mediation'
+        = "Mediation"
     %li.hide.depth1
-      = check_box_tag "category_notary", 'notary', service.key?(:categories) && slugs.include?(["notary"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_notary", "notary", service.key?(:categories) && slugs.include?("notary") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Notary'
+        = "Notary"
     %li.hide.depth1
-      = check_box_tag "category_representation", 'representation', service.key?(:categories) && slugs.include?(["representation"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_representation", "representation", service.key?(:categories) && slugs.include?("representation") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Representation'
+        = "Representation"
     %li.hide.depth1
-      = check_box_tag "category_translation-and-interpretation", 'translation-and-interpretation', service.key?(:categories) && slugs.include?(["translation-and-interpretation"]) ? true : false, :name => "category_slugs[]"
+      = check_box_tag "category_translation-interpretation", "translation-interpretation", service.key?(:categories) && slugs.include?("translation-interpretation") ? true : false, :name => "category_slugs[]"
       %label
-        = 'Translation & Interpretation'
+        = "Translation & Interpretation"

@@ -22,16 +22,6 @@ feature "Update a location's websites" do
       :xpath, "//input[@type='text' and @name='urls[]']")
   end
 
-  scenario "with empty website", :js => true do
-    visit_test_location
-    fill_in "urls[]", with: ""
-    click_button "Save changes"
-    visit_test_location
-    page.should have_no_selector(
-      :xpath, "//input[@type='text' and @name='urls[]']")
-    add_url
-  end
-
   scenario "with 2 urls but one is empty", :js => true do
     visit_test_location # it already has one
     click_link "Add a website"

@@ -34,7 +34,7 @@
     %ul
       = render "forms/new/categories"
 
-  = hidden_field_tag :org_id, @org._id
+  = hidden_field_tag :org_id, @org.id
   = hidden_field_tag :org_name, @org.name
   = hidden_field_tag :page, params[:page]
   = submit_tag "Create new location for #{@org.name}", :class => "btn btn-primary"
