@@ -11,10 +11,16 @@
         If the fax number contains a department in parentheses, move the department to the department field.
   - if @location.key?(:faxes)
     - @location.faxes.each do |fax|
-      - if fax.is_a?(String)
-        = render "forms/single_fax_array", :fax => fax
-      - elsif fax.is_a?(Sawyer::Resource)
-        = render "forms/single_fax_hash", :fax => fax
+      %fieldset#faxes
+        = "Number*"
+        = text_field_tag "fax_number[]", fax.key?(:number) ? fax.number : "", maxlength: 12, class: "span2"
+        %br
+        = "Department:"
+        = text_field_tag "fax_department[]", fax.key?(:department) ? fax.department : "", maxlength: 50, class: "span2"
+        = hidden_field_tag "fax_ids[]", fax.id, id: "fax_id_#{fax.id}"
+        = hidden_field_tag "destroy_faxes[]", "", id: "destroy"
+        %br
+        = link_to "Delete this fax number permanently", '#', class: "btn btn-danger delete_association"
   - fields = render "forms/single_fax"
   %p
-    = link_to_function "Add a fax number", ("add_fields(2, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary add_fax"
+    = link_to_function "Add a fax number", ("add_fields(2, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"

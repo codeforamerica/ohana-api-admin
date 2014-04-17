@@ -24,11 +24,13 @@
         %br
         = "Fax:"
         = text_field_tag "contact_faxes[]", contact.key?(:fax) ? contact.fax : "", maxlength: 50, class: "span2", id: "fax_#{contact.id}"
+        = hidden_field_tag "contact_ids[]", contact.id, id: "contact_id_#{contact.id}"
+        = hidden_field_tag "destroy_contacts[]", "", id: "destroy"
         %br
-        = link_to "Delete this contact permanently", '#', class: "btn btn-danger"
+        = link_to "Delete this contact permanently", '#', class: "btn btn-danger delete_association"
         = link_to "undo", '#', class: "undo", :style => "display: none;"
 
 
   - fields = render "forms/single_contact"
   %p
-    = link_to_function "Add a point of contact", ("add_fields(6, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"
+    = link_to_function "Add a point of contact", ("add_fields(7, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"

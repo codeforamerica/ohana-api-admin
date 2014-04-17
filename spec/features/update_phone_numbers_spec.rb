@@ -41,6 +41,13 @@ feature "Update a location's phone numbers" do
     find_field('number[]').value.should eq "7035551212"
   end
 
+  scenario "with an empty number" do
+    visit_test_location
+    fill_in "number[]", with: ""
+    click_button "Save changes"
+    expect(page).to have_content "Number can't be blank for Phone"
+  end
+
   scenario "with 2 phones but one is empty", :js => true do
     visit_test_location # it already has one
     click_link "Add a phone number"
@@ -49,5 +56,15 @@ feature "Update a location's phone numbers" do
     total_phones = page.
       all(:xpath, "//input[@type='text' and @name='number[]']")
     total_phones.length.should eq 1
+  end
+
+  scenario "with 2 phones but second one is invalid", :js => true do
+    visit_test_location # it already has one
+    click_link "Add a phone number"
+    total_departments = page.
+      all(:xpath, "//input[@type='text' and @name='department[]']")
+    fill_in total_departments[-1][:id], with: "Test"
+    click_button "Save changes"
+    expect(page).to have_content "Number can't be blank for Phone"
   end
 end

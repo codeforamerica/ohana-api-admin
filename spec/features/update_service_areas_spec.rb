@@ -15,7 +15,10 @@ feature "Update a service's service areas" do
     visit_location_with_no_phone
     add_two_service_areas
     visit_location_with_no_phone
-    expect(page).to have_link "Delete this service area permanently"
+    service_areas = page.
+      all(:xpath, "//input[@type='text' and @name='service_areas[]']")
+    service_area_id = service_areas[-1][:id]
+    expect(find_field(service_area_id).value).to eq "East Palo Alto"
     delete_all_service_areas
     visit_location_with_no_phone
     page.should have_no_selector(

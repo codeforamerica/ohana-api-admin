@@ -3,12 +3,12 @@ Hsa::Application.routes.draw do
   devise_for :users
 
   root :to => "hsa#index"
-  match "/locations" => "hsa#index"
-  match "/locations/new" => "hsa#new"
-  match "/locations/create_location" => "hsa#create_location"
-  match '*id/edit_services' => 'hsa#edit_services'
-  match 'edit_services' => 'hsa#edit_services'
-  match 'delete_location' => 'hsa#delete_location'
-  match "confirm_delete_location" => 'hsa#confirm_delete_location', :as => :confirm_delete_location
+  get "/locations" => "hsa#index"
+  get "/locations/new" => "hsa#new"
+  post "/locations/create_location" => "hsa#create_location"
+  post '*id/edit_location' => 'hsa#edit_location'
+  post 'edit_location' => 'hsa#edit_location'
+  delete 'delete_location' => 'hsa#delete_location'
+  get "confirm_delete_location" => 'hsa#confirm_delete_location', :as => :confirm_delete_location
   get "*id/" => "hsa#show", :as => "location"
 end

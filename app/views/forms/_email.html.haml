@@ -5,9 +5,12 @@
     %p.desc
       %em
         If the email belongs to a contact, please move it to the existing contact, or create a new contact.
-  %p
-    - if @location.key?(:emails)
-      - @location.emails.each_with_index do |email, i|
+  - if @location.key?(:emails)
+    - @location.emails.each_with_index do |email, i|
+      %fieldset#emails
         = text_field_tag "emails[]", email, class: "span6", maxlength: 255, id: "email_#{i}"
-    - else
-      = text_field_tag "emails[]", "", class: "span6", maxlength: 255, id: "new_email"
+        %br
+        = link_to "Delete this email permanently", '#', class: "btn btn-danger delete_attribute"
+  - fields = render "forms/add_email"
+  %p
+    = link_to_function "Add a general email", ("add_fields(1, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"

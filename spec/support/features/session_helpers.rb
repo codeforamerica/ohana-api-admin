@@ -73,6 +73,11 @@ module Features
       click_button "Save changes"
     end
 
+    def delete_fax
+      click_link "Delete this fax number permanently"
+      click_button "Save changes"
+    end
+
     def add_url
       click_link "Add a website"
       fill_in "urls[]", with: "http://monfresh.com"
@@ -88,13 +93,31 @@ module Features
       click_button "Save changes"
     end
 
-    # def delete_url
-    #   click_link "Delete this website permanently"
-    #   click_button "Save changes"
-    # end
+    def add_email
+      click_link "Add a general email"
+      fill_in "emails[]", with: "eml@example.org"
+      click_button "Save changes"
+    end
+
+    def add_two_emails
+      click_link "Add a general email"
+      fill_in "emails[]", with: "foo@ruby.com"
+      click_link "Add a general email"
+      emails = page.all(:xpath, "//input[@type='text' and @name='emails[]']")
+      fill_in emails[-1][:id], with: "ruby@foo.com"
+      click_button "Save changes"
+    end
 
     def delete_all_urls
       delete_links = all("a", :text => "Delete this website permanently")
+      delete_links.each do |a|
+        click_link a[:text], match: :first
+      end
+      click_button "Save changes"
+    end
+
+    def delete_all_emails
+      delete_links = all("a", :text => "Delete this email permanently")
       delete_links.each do |a|
         click_link a[:text], match: :first
       end
@@ -143,9 +166,9 @@ module Features
 
     def add_two_admins
       click_link "Add an admin"
-      fill_in "admins[]", with: "moncef@foo.com"
+      fill_in "admin_emails[]", with: "moncef@foo.com"
       click_link "Add an admin"
-      admins = page.all(:xpath, "//input[@type='text' and @name='admins[]']")
+      admins = page.all(:xpath, "//input[@type='text' and @name='admin_emails[]']")
       fill_in admins[-1][:id], with: "moncef@otherlocation.com"
       click_button "Save changes"
     end
@@ -159,6 +182,7 @@ module Features
     end
 
     def add_street_address
+      click_link "Add a street address"
       fill_in "street", with: "1486 Huntington Avenue, Suite 100"
       fill_in "city", with: "Redwood City"
       fill_in "state", with: "CA"
@@ -167,10 +191,12 @@ module Features
     end
 
     def remove_street_address
-      fill_in "street", with: ""
-      fill_in "city", with: ""
-      fill_in "state", with: ""
-      fill_in "zip", with: ""
+      click_link "Delete this address permanently"
+      click_button "Save changes"
+    end
+
+    def remove_mail_address
+      click_link "Delete this mailing address permanently"
       click_button "Save changes"
     end
 
@@ -180,15 +206,6 @@ module Features
       fill_in "m_city", with: "Redwood City"
       fill_in "m_state", with: "CA"
       fill_in "m_zip", with: "94080-5932"
-    end
-
-    def remove_mail_address
-      fill_in "attention", with: ""
-      fill_in "m_street", with: ""
-      fill_in "m_city", with: ""
-      fill_in "m_state", with: ""
-      fill_in "m_zip", with: ""
-      click_button "Save changes"
     end
 
     def reset_accessibility
@@ -230,7 +247,6 @@ module Features
     def fill_in_all_required_fields
       fill_in "location_name", with: "new samaritan house location"
       fill_in "description", with: "new description"
-      fill_in "short_desc", with: "new short description"
       fill_in "street", with: "modularity"
       fill_in "city", with: "utopia"
       fill_in "state", with: "XX"
@@ -248,7 +264,7 @@ module Features
       visit_locations
       click_link location
       click_link "Add an admin"
-      fill_in "admins[]", with: email
+      fill_in "admin_emails[]", with: email
       click_button "Save changes"
       click_link "Sign out"
     end

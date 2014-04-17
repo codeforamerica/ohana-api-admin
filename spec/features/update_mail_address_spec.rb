@@ -5,13 +5,9 @@ feature "Update a location's mailing address" do
     login_admin
   end
 
-  scenario "when location doesn't have a mailing address" do
+  scenario "by adding a new mailing address", js: true do
     visit_test_location
-    find_field('m_street').value.should eq ""
-  end
-
-  scenario "by adding a new mailing address" do
-    visit_test_location
+    click_link "Add a mailing address"
     add_mail_address
     click_button "Save changes"
     visit_test_location
@@ -22,11 +18,13 @@ feature "Update a location's mailing address" do
     find_field('m_zip').value.should eq "94080-5932"
     remove_mail_address
     visit_test_location
-    find_field('m_street').value.should eq ""
+    page.should have_no_selector(
+      :xpath, "//input[@type='text' and @name='m_street']")
   end
 
-  scenario "with an empty street" do
+  scenario "with an empty street", js: true do
     visit_test_location
+    click_link "Add a mailing address"
     fill_in "m_street", with: ""
     fill_in "m_city", with: "utopia"
     fill_in "m_state", with: "CA"
@@ -35,8 +33,9 @@ feature "Update a location's mailing address" do
     expect(page).to have_content "Please enter a street"
   end
 
-  scenario "with an empty city" do
+  scenario "with an empty city", js: true do
     visit_test_location
+    click_link "Add a mailing address"
     fill_in "m_street", with: "123"
     fill_in "m_city", with: ""
     fill_in "m_state", with: "CA"
@@ -45,8 +44,9 @@ feature "Update a location's mailing address" do
     expect(page).to have_content "Please enter a city"
   end
 
-  scenario "with an empty state" do
+  scenario "with an empty state", js: true do
     visit_test_location
+    click_link "Add a mailing address"
     fill_in "m_street", with: "123"
     fill_in "m_city", with: "utopia"
     fill_in "m_state", with: ""
@@ -55,8 +55,9 @@ feature "Update a location's mailing address" do
     expect(page).to have_content "Please enter a state abbreviation"
   end
 
-  scenario "with an empty zip" do
+  scenario "with an empty zip", js: true do
     visit_test_location
+    click_link "Add a mailing address"
     fill_in "m_street", with: "123"
     fill_in "m_city", with: "utopia"
     fill_in "m_state", with: "CA"
@@ -65,8 +66,9 @@ feature "Update a location's mailing address" do
     expect(page).to have_content "Please enter a ZIP code"
   end
 
-  scenario "with an invalid state" do
+  scenario "with an invalid state", js: true do
     visit_test_location
+    click_link "Add a mailing address"
     fill_in "m_street", with: "123"
     fill_in "m_city", with: "utopia"
     fill_in "m_state", with: "C"
@@ -75,8 +77,9 @@ feature "Update a location's mailing address" do
     expect(page).to have_content "Please enter a valid state abbreviation"
   end
 
-  scenario "with an invalid zip" do
+  scenario "with an invalid zip", js: true do
     visit_test_location
+    click_link "Add a mailing address"
     fill_in "m_street", with: "123"
     fill_in "m_city", with: "utopia"
     fill_in "m_state", with: "CA"

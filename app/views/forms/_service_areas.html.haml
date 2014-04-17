@@ -21,7 +21,7 @@
       %fieldset#service_areas
         = text_field_tag "service_areas[]", service_area, class: "span4", id: "service_area_#{i}"
         %br
-        = link_to "Delete this service area permanently", '#', class: "btn btn-danger"
+        = link_to "Delete this service area permanently", '#', class: "btn btn-danger delete_attribute"
   - fields = render "forms/add_service_area"
   %p
     = link_to_function "Add a service area", ("add_fields(1, this, \"#{escape_javascript(fields)}\")"), class: "btn btn-primary"

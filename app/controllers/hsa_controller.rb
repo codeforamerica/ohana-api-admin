@@ -1,8 +1,6 @@
 class HsaController < ApplicationController
   before_filter :authenticate_user!
 
-  #before_filter :days
-
   def index
     if admin?
       page = params[:page].present? ? params[:page] : 1
@@ -25,19 +23,6 @@ class HsaController < ApplicationController
       redirect_to "#{root_url}",
         alert: "Location not found! Please try another one." and return
     end
-
-    #@days = %w[Monday Tuesday Wednesday Thursday Friday Saturday Sunday]
-
-    # expires_in 3.minutes, :public => true
-
-    # # etag based on @location object
-    # # Rendering is not executed if etag is the same
-    # if stale?(@location)
-    #   respond_to do |format|
-    #     format.html # show.html.haml
-    #   end
-    # end
-
   end
 
   def new
@@ -57,272 +42,147 @@ class HsaController < ApplicationController
     end
   end
 
-  def edit_services
-    service_id = params[:service_id]
-    location_id = params[:location_id]
+  def edit_location
+    if admin? || user_allowed_access_to_location?(Ohanakapa.location(location_id))
+      # Update organization
+      Ohanakapa.put("organizations/#{org_id}", :query => { :name => params[:org_name] })
 
-    begin
-      Ohanakapa.put("organizations/#{org_id}/", :query => { :name => params[:org_name] })
-    rescue Ohanakapa::BadRequest => e
-      if e.to_s.include?("Name can't be blank")
-        redirect_to request.referer,
-          alert: "Organization name can't be blank!" and return
+      if address.present?
+        # Update location address
+        if address[:destroy] == "1"
+          Ohanakapa.delete("locations/#{location_id}/address")
+
+        elsif address[:new] == "1"
+          Ohanakapa.post("locations/#{location_id}/address",
+            :query => address.except(:address_id, :destroy))
+
+        else
+          Ohanakapa.patch("locations/#{location_id}/address",
+            :query => address.except(:address_id, :destroy))
+        end
       end
-    end
 
-    begin
+      if mail_address.present?
+        # Update location mailing address
+        if mail_address[:destroy] == "1"
+          Ohanakapa.delete("locations/#{location_id}/mail_address")
+
+        elsif mail_address[:new] == "1"
+          Ohanakapa.post("locations/#{location_id}/mail_address",
+            :query => mail_address.except(:new, :destroy))
+
+        else
+          Ohanakapa.patch("locations/#{location_id}/mail_address",
+            :query => mail_address.except(:destroy, :new))
+        end
+      end
+
+      # Update location
       Ohanakapa.update_location(location_id, location_attributes)
-    rescue Ohanakapa::BadRequest => e
-      # Invalid Phone
-      if e.to_s.include?("a valid US phone number")
-        redirect_to request.referer,
-          alert: "Please enter a valid US phone number" and return
 
-      # Invalid Fax
-      elsif e.to_s.include?("a valid US fax number")
-        redirect_to request.referer,
-          alert: "Please enter a valid US fax number" and return
-
-      # Invalid Accessibility
-      elsif e.to_s.include?("Accessibility is invalid")
-        redirect_to request.referer,
-          alert: "This website is sending invalid values for accessibility
-            options. Please contact the website owner." and return
-
-      # Missing both street and mailing address
-      elsif e.to_s.include?("at least one address")
-        redirect_to request.referer,
-          alert: "Please enter at least one type of address" and return
-
-      # Invalid admin email address
-      elsif e.to_s.include?("Admins must be an array of valid email addresses")
-        redirect_to request.referer,
-          alert: "Please enter a valid admin email address" and return
-
-      # Empty Street
-      elsif e.to_s.include?("Street can't be blank")
-        redirect_to request.referer,
-          alert: "Please enter a street" and return
-
-      # Empty City
-      elsif e.to_s.include?("City can't be blank")
-        redirect_to request.referer,
-          alert: "Please enter a city" and return
-
-      # Empty State
-      elsif e.to_s.include?("State can't be blank")
-        redirect_to request.referer,
-          alert: "Please enter a state abbreviation" and return
-
-      # Empty Zip
-      elsif e.to_s.include?("Zip can't be blank")
-        redirect_to request.referer,
-          alert: "Please enter a ZIP code" and return
-
-      # Invalid State
-      elsif e.to_s.include?("State is too short")
-        redirect_to request.referer,
-          alert: "Please enter a valid state abbreviation" and return
-
-      # Invalid Zip
-      elsif e.to_s.include?("is not a valid ZIP code")
-        redirect_to request.referer,
-          alert: "Please enter a valid ZIP code" and return
-
-      # Contact name missing
-      elsif e.to_s.include?("Name can't be blank for Contact")
-        redirect_to request.referer,
-          alert: "Please enter a contact name" and return
-
-      # Contact title missing
-      elsif e.to_s.include?("Title can't be blank for Contact")
-        redirect_to request.referer,
-          alert: "Please enter a contact title" and return
-
-      # Location name missing
-      elsif e.to_s.include?("Name can't be blank")
-        redirect_to request.referer,
-          alert: "Location name can't be blank!" and return
-
-      # Invalid email
-      elsif e.to_s.include?("not a valid email")
-        redirect_to request.referer,
-          alert: "Please enter a valid email address" and return
-
-      # Description missing
-      elsif e.to_s.include?("Description can't be blank")
-        redirect_to request.referer,
-          alert: "Please enter a description" and return
-
-      # Short description missing
-      elsif e.to_s.include?("Short desc can't be blank")
-        redirect_to request.referer,
-          alert: "Please enter a short description" and return
-
-      # Invalid URL
-      elsif e.to_s.include?("is not a valid URL")
-        redirect_to request.referer,
-          alert: "Please enter a valid URL" and return
-
-      # Kind missing
-      elsif e.to_s.include?("Kind can't be blank")
-        redirect_to request.referer,
-          alert: "Please select a Kind" and return
+      # Update location contacts
+      if contacts.present?
+        contacts.each do |contact|
+          if contact[:destroy] == "1"
+            Ohanakapa.delete("locations/#{location_id}/contacts/#{contact[:contact_id]}")
+          elsif contact[:contact_id].blank?
+            Ohanakapa.post("locations/#{location_id}/contacts",
+              :query => contact.except(:contact_id, :destroy))
+          elsif contact[:contact_id].present?
+            Ohanakapa.patch("locations/#{location_id}/contacts/#{contact[:contact_id]}",
+              :query => contact.except(:contact_id, :destroy))
+          end
+        end
       end
-    end
 
-    begin
-      Ohanakapa.put("services/#{service_id}/", :query => service_attributes)
-    rescue Ohanakapa::BadRequest => e
-      # Wrong format for service area
-      if e.to_s.include?("improperly formatted")
-        redirect_to request.referer,
-          alert: "At least one service area is improperly formatted,
-        or is not an accepted city or county name. Please make sure all
-        words are capitalized." and return
+      # Update location faxes
+      if faxes.present?
+        faxes.each do |fax|
+          if fax[:destroy] == "1"
+            Ohanakapa.delete("locations/#{location_id}/faxes/#{fax[:fax_id]}")
+          elsif fax[:fax_id].blank?
+            Ohanakapa.post("locations/#{location_id}/faxes",
+              :query => fax.except(:fax_id, :destroy))
+          elsif fax[:fax_id].present?
+            Ohanakapa.patch("locations/#{location_id}/faxes/#{fax[:fax_id]}",
+              :query => fax.except(:fax_id, :destroy))
+          end
+        end
       end
+
+      # Update location phones
+      if phones.present?
+        phones.each do |phone|
+          if phone[:destroy] == "1"
+            Ohanakapa.delete("locations/#{location_id}/phones/#{phone[:phone_id]}")
+          elsif phone[:phone_id].blank?
+            Ohanakapa.post("locations/#{location_id}/phones",
+              :query => phone.except(:phone_id, :destroy))
+          elsif phone[:phone_id].present?
+            Ohanakapa.patch("locations/#{location_id}/phones/#{phone[:phone_id]}",
+              :query => phone.except(:phone_id, :destroy))
+          end
+        end
+      end
+
+      # Update service
+      Ohanakapa.put("services/#{service_id}", :query => service_attributes)
+
+      # Update service categories
+      Ohanakapa.put("services/#{service_id}/categories", :query =>
+        {
+          :category_slugs => params[:category_slugs]
+        }
+      )
+
+      redirect_to location_path(location_id), notice: "Changes for #{location_name} successfully saved!" and return
+    else
+      redirect_to locations_path,
+        alert: "Sorry, you don't have access to that page." and return
     end
-
-    #Ohanakapa.put("locations/#{location_id}/schedule", :query => { :schedule => schedule }) if schedule
-
-    Ohanakapa.put("services/#{service_id}/categories", :query =>
-      {
-        :category_slugs => params[:category_slugs]
-      }
-    )
-
-    redirect_to location_path(location_id), notice: "Changes for #{location_name} successfully saved!" and return
   end
 
   def create_location
-    begin
-      Ohanakapa.post("locations/",
-        query: location_attributes.merge(organization_id: org_id))
-    rescue Ohanakapa::BadRequest => e
-      # Invalid Phone
-      if e.to_s.include?("a valid US phone number")
-        redirect_to request.referer,
-          alert: "Please enter a valid US phone number" and return
-
-      # Invalid Fax
-      elsif e.to_s.include?("a valid US fax number")
-        redirect_to request.referer,
-          alert: "Please enter a valid US fax number" and return
-
-      # Invalid Accessibility
-      elsif e.to_s.include?("Accessibility is invalid")
-        redirect_to request.referer,
-          alert: "This website is sending invalid values for accessibility
-            options. Please contact the website owner." and return
-
-      # Missing both street and mailing address
-      elsif e.to_s.include?("at least one address")
-        redirect_to request.referer,
-          alert: "Please enter at least one type of address" and return
-
-      # Empty Street
-      elsif e.to_s.include?("Street can't be blank")
-        redirect_to request.referer,
-          alert: "Please enter a street" and return
-
-      # Empty City
-      elsif e.to_s.include?("City can't be blank")
-        redirect_to request.referer,
-          alert: "Please enter a city" and return
-
-      # Empty State
-      elsif e.to_s.include?("State can't be blank")
-        redirect_to request.referer,
-          alert: "Please enter a state abbreviation" and return
-
-      # Empty Zip
-      elsif e.to_s.include?("Zip can't be blank")
-        redirect_to request.referer,
-          alert: "Please enter a ZIP code" and return
-
-      # Invalid State
-      elsif e.to_s.include?("State is too short")
-        redirect_to request.referer,
-          alert: "Please enter a valid state abbreviation" and return
-
-      # Invalid Zip
-      elsif e.to_s.include?("is not a valid ZIP code")
-        redirect_to request.referer,
-          alert: "Please enter a valid ZIP code" and return
-
-      # Contact name missing
-      elsif e.to_s.include?("Name can't be blank for Contact")
-        redirect_to request.referer,
-          alert: "Please enter a contact name" and return
-
-      # Contact title missing
-      elsif e.to_s.include?("Title can't be blank for Contact")
-        redirect_to request.referer,
-          alert: "Please enter a contact title" and return
-
-      # Location name missing
-      elsif e.to_s.include?("Name can't be blank")
-        redirect_to request.referer,
-          alert: "Location name can't be blank!" and return
-
-      # Invalid email
-      elsif e.to_s.include?("not a valid email")
-        redirect_to request.referer,
-          alert: "Please enter a valid email address" and return
-
-      # Description missing
-      elsif e.to_s.include?("Description can't be blank")
-        redirect_to request.referer,
-          alert: "Please enter a description" and return
-
-      # Short description missing
-      elsif e.to_s.include?("Short desc can't be blank")
-        redirect_to request.referer,
-          alert: "Please enter a short description" and return
-
-      # Invalid URL
-      elsif e.to_s.include?("is not a valid URL")
-        redirect_to request.referer,
-          alert: "Please enter a valid URL" and return
-
-      # Kind missing
-      elsif e.to_s.include?("Kind can't be blank")
-        redirect_to request.referer,
-          alert: "Please select a Kind" and return
-      end
-    end
-
-    location_id = Ohanakapa.last_response.data.id
-
-    if current_user_has_generic_email?
-      Ohanakapa.update_location(location_id, { admins: [current_user.email] })
-    end
-
-    begin
-      Ohanakapa.post("locations/#{location_id}/services/",
-        query: service_attributes)
-    rescue Ohanakapa::BadRequest => e
-      # Wrong format for service area
-      if e.to_s.include?("improperly formatted")
-        redirect_to request.referer,
-          alert: "At least one service area is improperly formatted,
-        or is not an accepted city or county name. Please make sure all
-        words are capitalized." and return
-      end
-    end
-
-    service_id = Ohanakapa.last_response.data._id
-
-    Ohanakapa.put("services/#{service_id}/categories", :query =>
-      {
-        :category_slugs => params[:category_slugs]
-      }
+    Ohanakapa.post("locations/", query: location_attributes.
+      merge(
+        organization_id: org_id,
+        address_attributes: address,
+        mail_address_attributes: mail_address,
+        contacts_attributes: contacts,
+        faxes_attributes: faxes,
+        phones_attributes: phones
+      )
     )
 
-    redirect_to location_path(location_id),
-      notice: "New location \"#{location_name}\" for #{org_name} successfully "+
-        "created! If you haven't already, please continue filling out as many "+
-        "fields as possible." and return
+    unless Ohanakapa.last_response.data.is_a?(Array)
+      location_id = Ohanakapa.last_response.data.id
+    end
+
+    if current_user_has_generic_email?
+      Ohanakapa.update_location(location_id, { admin_emails: [current_user.email] })
+    end
+
+    Ohanakapa.post("locations/#{location_id}/services",
+      query: service_attributes)
+
+    unless Ohanakapa.last_response.data.blank?
+      service_id = Ohanakapa.last_response.data.id
+    end
+
+    if service_id.present?
+      Ohanakapa.put("services/#{service_id}/categories", :query =>
+        {
+          :category_slugs => params[:category_slugs]
+        }
+      )
+    end
+
+    if location_id.present?
+      redirect_to location_path(location_id),
+        notice: "New location \"#{location_name}\" for #{org_name} successfully "+
+          "created! If you haven't already, please continue filling out as many "+
+          "fields as possible." and return
+    end
   end
 
   def domain
@@ -383,8 +243,8 @@ class HsaController < ApplicationController
   end
 
   def admins_match_user_email?(location)
-    if location.key?(:admins)
-      location.admins.select { |email| email == current_user.email }.length > 0
+    if location.key?(:admin_emails)
+      location.admin_emails.select { |email| email == current_user.email }.length > 0
     end
   end
 

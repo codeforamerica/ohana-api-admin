@@ -4,8 +4,7 @@ feature "Create a new location" do
   background do
     user = create(:user)
     login_user(user)
-    visit_locations
-    click_link "Add a new location"
+    visit("/locations/new")
   end
 
   describe "when adding a new location" do
@@ -284,11 +283,11 @@ describe "creating a new location as user with generic email" do
     it "sets the current user as an admin for the new location" do
       user = create(:second_user)
       set_user_as_admin(user.email, "Little House")
-      sign_in(user.email, user.password)
-      click_link "Add a new location"
+      login_user(user)
+      visit("/locations/new")
       fill_in_all_required_fields
       click_button "Create new location for Peninsula Volunteers"
-      find_field('admins[]').value.should eq user.email
+      find_field('admin_emails[]').value.should eq user.email
       delete_location
       visit("/little-house")
       delete_all_admins

@@ -31,11 +31,14 @@ feature "Update a service's categories" do
     visit_test_location
     check "category_health"
     check "category_medical-care"
-    check "category_checkup-and-test"
+    check "category_checkup-test"
     check "category_vision-tests"
     click_button "Save changes"
     visit_test_location
     find("#category_vision-tests").should be_checked
+    find("#category_checkup-test").should be_checked
+    find("#category_medical-care").should be_checked
+    find("#category_health").should be_checked
     reset_categories
   end
 end

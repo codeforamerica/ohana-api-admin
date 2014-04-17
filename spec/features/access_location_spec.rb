@@ -4,7 +4,7 @@ feature "Accessing a specific location" do
   scenario "when location doesn't include generic email" do
     user = create(:second_user)
     login_user(user)
-    visit("/san-mateo-free-medical-clinic")
+    visit("/redwood-city-free-medical-clinic")
     expect(page).to have_content "Sorry, you don't have access to that page"
   end
 
@@ -18,7 +18,7 @@ feature "Accessing a specific location" do
   scenario "when location includes domain name" do
     user = create(:user)
     login_user(user)
-    visit("/san-mateo-free-medical-clinic")
+    visit("/redwood-city-free-medical-clinic")
     expect(page).to_not have_content "Sorry, you don't have access to that page"
   end
 
@@ -34,13 +34,14 @@ feature "Accessing a specific location" do
   scenario "when user is location admin but has non-generic email", js: true do
     new_admin = create(:user)
     set_user_as_admin(new_admin.email, "Little House")
-    login_user(new_admin)
+    sign_in(new_admin.email, new_admin.password)
     visit("/little-house")
     expect(page).to have_content "Sorry, you don't have access to that page"
     click_link "Sign out"
     sign_in(@admin.email, @admin.password)
     visit("/little-house")
     delete_all_admins
+    click_link "Sign out"
   end
 
   scenario "when user is master admin" do
@@ -51,10 +52,12 @@ feature "Accessing a specific location" do
 
   context "when user doesn't belong to any locations" do
     it "denies access to create a new location" do
-      user = create(:second_user)
-      sign_in(user.email, user.password)
+      user = create(:third_user)
+      login_user(user)
       visit("/locations/new")
       expect(page).to have_content "Sorry, you don't have access to that page"
+      visit("/locations")
+      expect(page).to_not have_link "Add a new location"
     end
   end
 end

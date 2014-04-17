@@ -11,13 +11,16 @@ feature "Update a location's fax numbers" do
       :xpath, "//input[@type='text' and @name='fax_number[]']")
   end
 
-  scenario "by adding a new number", :js => true do
+  scenario "by adding a new fax", :js => true do
     visit_location_with_no_phone
-    click_link "Add a fax number"
-    fill_in "fax_number[]", with: "703"
-    fill_in "fax_department[]", with: "CalFresh"
-    click_button "Save changes"
-    expect(page).to have_content "Please enter a valid US fax number"
+    add_fax_number
+    visit_location_with_no_phone
+    expect(find_field('fax_number[]').value).to eq "2025551212"
+    expect(find_field('fax_department[]').value).to eq "CalFresh"
+    delete_fax
+    visit_location_with_no_phone
+    page.should have_no_selector(
+      :xpath, "//input[@type='text' and @name='fax_number[]']")
   end
 
   scenario "with an invalid fax number" do
@@ -35,6 +38,13 @@ feature "Update a location's fax numbers" do
     find_field('fax_number[]').value.should eq "7035551212"
   end
 
+  scenario "with an empty number" do
+    visit_test_location
+    fill_in "fax_number[]", with: ""
+    click_button "Save changes"
+    expect(page).to have_content "Number can't be blank for Fax"
+  end
+
   scenario "with 2 faxes but one is empty", :js => true do
     visit_test_location # it already has one
     click_link "Add a fax number"
@@ -43,5 +53,15 @@ feature "Update a location's fax numbers" do
     total_faxes = page.
       all(:xpath, "//input[@type='text' and @name='fax_number[]']")
     total_faxes.length.should eq 1
+  end
+
+  scenario "with 2 faxes but second one is invalid", :js => true do
+    visit_test_location # it already has one
+    click_link "Add a fax number"
+    total_fax_departments = page.
+      all(:xpath, "//input[@type='text' and @name='fax_department[]']")
+    fill_in total_fax_departments[-1][:id], with: "Test"
+    click_button "Save changes"
+    expect(page).to have_content "Number can't be blank for Fax"
   end
 end

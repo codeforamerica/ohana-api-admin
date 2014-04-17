@@ -98,4 +98,14 @@ feature "Update a location's contacts" do
     total_contacts.length.should eq 1
   end
 
+  scenario "with 2 contacts but second one is invalid", :js => true do
+    visit_test_location # it already has one
+    click_link "Add a point of contact"
+    total_contact_phones = page.
+      all(:xpath, "//input[@type='text' and @name='contact_phones[]']")
+    fill_in total_contact_phones[-1][:id], with: "202-555-1212"
+    click_button "Save changes"
+    expect(page).to have_content "Please enter a contact name"
+  end
+
 end
