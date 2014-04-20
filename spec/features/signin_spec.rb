@@ -10,6 +10,16 @@ feature "Signing in" do
     click_link "Sign out"
   end
 
+  context "after signing in" do
+    it "takes the user to their locations page" do
+      valid_user = create(:user)
+      sign_in(valid_user.email, valid_user.password)
+      expect(page).to have_content 'Below you should see a list'
+      expect(page).to have_content 'Samaritan House locations'
+      click_link "Sign out"
+    end
+  end
+
   scenario "with invalid credentials" do
     sign_in("hello@example.com", "wrongpassword")
     expect(page).to have_content 'Invalid email or password'

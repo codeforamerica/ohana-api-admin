@@ -1,11 +1,5 @@
-- if user_signed_in?
-  %p
-    Welcome back, #{@user.name}!
-  %p
-  To start making updates, visit #{link_to "your locations", locations_path}.
-- else
-  %p
-    Welcome to SMC Connect Admin!
-  %p
-    To get started, please #{link_to "sign in", new_user_session_path}, or #{link_to "sign up", new_user_registration_path} for an account. When you sign up, please make sure to use your organization's email address.
+%p
+  = t("titles.welcome", :brand => t("titles.brand"))
+%p
+  To get started, please #{link_to "sign in", new_user_session_path}, or #{link_to "sign up", new_user_registration_path} for an account. When you sign up, please make sure to use your work email address.
 

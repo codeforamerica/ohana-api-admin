@@ -354,4 +354,8 @@ class ApplicationController < ActionController::Base
   def org_name
     params[:org_name]
   end
+
+  def after_sign_in_path_for(resource)
+    locations_path
+  end
 end

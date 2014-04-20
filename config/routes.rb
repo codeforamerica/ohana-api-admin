@@ -2,7 +2,7 @@ Hsa::Application.routes.draw do
 
   devise_for :users
 
-  root :to => "hsa#index"
+  root :to => "home#index"
   get "/locations" => "hsa#index"
   get "/locations/new" => "hsa#new"
   post "/locations/create_location" => "hsa#create_location"

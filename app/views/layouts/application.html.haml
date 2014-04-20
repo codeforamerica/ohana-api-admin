@@ -2,8 +2,9 @@
 %html
   %head
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
-      %title= content_for?(:title) ? yield(:title) : "SMC Connect Admin"
-      %meta{:content => content_for?(:description) ? yield(:description) : "Admin interface for SMC Connect", :name => "description"}
+      %title
+        = content_for?(:title) ? yield(:title) : t("titles.main", :brand => t("titles.brand"))
+      %meta{:content => content_for?(:description) ? yield(:description) : "Admin interface for #{t("titles.brand")}", :name => "description"}
         = stylesheet_link_tag "application", :media => "all"
         = javascript_include_tag "application"
         = csrf_meta_tags

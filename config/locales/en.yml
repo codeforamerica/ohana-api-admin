@@ -1,5 +1,8 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+# Please maintain alphabetical order
 
 en:
-  hello: "Hello world"
+  titles:
+    brand: "Ohana API"
+    main: "%{brand} Admin"
+    welcome: "Welcome to %{brand} Admin!"
+

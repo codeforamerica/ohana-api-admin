@@ -32,7 +32,7 @@ module ApplicationHelper
   # of a particular page's title.
   # @param page_title [String] the page title from a particular view.
   def title(page_title)
-    default = "SMC-Connect Admin"
+    default = t("titles.main", :brand => t("titles.brand"))
     if page_title.present?
       content_for :title, "#{page_title.to_s} | #{default}"
     else
