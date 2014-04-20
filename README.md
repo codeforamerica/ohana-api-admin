@@ -1,10 +1,15 @@
-[![Stories in Ready](https://badge.waffle.io/codeforamerica/ohana-api-admin.png?label=ready)](https://waffle.io/codeforamerica/ohana-api-admin)
 # Ohana API Admin
 
-This is an admin interface for the data that is exposed by the [Ohana API](http://github.com/codeforamerica/ohana-api/). It allows organization members to sign up with their organization email address, and allows them to update the locations that belong to their organization.
+[![Stories in Ready](https://badge.waffle.io/codeforamerica/ohana-api-admin.png?label=ready)](https://waffle.io/codeforamerica/ohana-api-admin)
+
+This is an admin interface for the data that is exposed by the [Ohana API](http://github.com/codeforamerica/ohana-api/). It allows organization members to sign up with their email address, and allows them to update the locations that belong to their organization.
 
 Once a user is signed up, they can be given "master admin" status
 by setting their "role" field to "admin". This is done by editing the role field directly in the MongoDB interface (via Mongolab if you are deploying to Heroku using this app's default configuration). This will allow the admin to access and update all the data.
+
+## Demo
+You can see a running version of the application at
+[http://ohana-api-admin-demo.herokuapp.com/](http://ohana-api-admin-demo.herokuapp.com/).
 
 ## Stack Overview
 
