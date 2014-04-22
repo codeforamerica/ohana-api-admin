@@ -9,7 +9,7 @@
   - if @location.key?(:urls)
     - @location.urls.each_with_index do |url, i|
       %fieldset#urls
-        = text_field_tag "urls[]", url, class: "span9", id: "url_#{i}"
+        = url_field_tag "urls[]", url, class: "span9", id: "url_#{i}"
         %br
         = link_to "Delete this website permanently", '#', class: "btn btn-danger delete_attribute"
   - fields = render "forms/add_url"

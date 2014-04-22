@@ -88,7 +88,7 @@ module Features
       click_link "Add a website"
       fill_in "urls[]", with: "http://ruby.com"
       click_link "Add a website"
-      urls = page.all(:xpath, "//input[@type='text' and @name='urls[]']")
+      urls = page.all(:xpath, "//input[@type='url' and @name='urls[]']")
       fill_in urls[-1][:id], with: "http://monfresh.com"
       click_button "Save changes"
     end
