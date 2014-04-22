@@ -190,10 +190,10 @@ feature "Create a new location" do
   scenario "when adding a website", :js => true do
     fill_in_all_required_fields
     click_link "Add a website"
-    urls = page.all(:xpath, "//input[@type='text' and @name='urls[]']")
+    urls = page.all(:xpath, "//input[@type='url' and @name='urls[]']")
     fill_in urls[-1][:id], with: "http://monfresh.com"
     click_button "Create new location for Samaritan House"
-    urls = page.all(:xpath, "//input[@type='text' and @name='urls[]']")
+    urls = page.all(:xpath, "//input[@type='url' and @name='urls[]']")
     url_id = urls[-1][:id]
     find_field(url_id).value.should eq "http://monfresh.com"
     delete_location
