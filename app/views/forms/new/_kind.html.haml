@@ -1,9 +1,0 @@
-%div#kinds.inst-box
-  %header
-    %strong
-      Kind
-    %p.desc
-      If not Human Services, select the appropriate type for this location or program.
-
-  %p
-    = select_tag(:kind, options_for_select([['--CHOOSE--', ''], ['Arts', 'arts'], ['Entertainment', 'entertainment'], ["Farmers' Markets", 'farmers_markets'], ['Government', 'government'], ['Human Services', 'human_services'], ['Libraries', 'libraries'], ['Museums', 'museums'], ['Other', 'other'], ['Parks', 'parks'], ['Sports', 'sports'], ['Test', 'test']], "human_services"))

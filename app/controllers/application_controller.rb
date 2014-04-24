@@ -117,11 +117,6 @@ class ApplicationController < ActionController::Base
       redirect_to request.referer,
         alert: "Please enter a valid URL" and return
 
-    # Kind missing
-    elsif e.to_s.include?("Kind can't be blank")
-      redirect_to request.referer,
-        alert: "Please select a Kind" and return
-
     # Wrong format for service area
     elsif e.to_s.include?("improperly formatted")
       redirect_to request.referer,
@@ -142,7 +137,6 @@ class ApplicationController < ActionController::Base
       :description             => params[:description],
       :emails                  => emails,
       :hours                   => params[:text_hours],
-      :kind                    => kind,
       :name                    => location_name,
       :short_desc              => params[:short_desc],
       :transportation          => params[:transportation],
@@ -251,10 +245,6 @@ class ApplicationController < ActionController::Base
       faxes.push(hash)
     end
     faxes.delete_if { |fax| fax.values.all? { |v| v.blank? } }
-  end
-
-  def kind
-    params[:kind] unless params[:kind].blank?
   end
 
   def location_name

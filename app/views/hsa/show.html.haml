@@ -36,8 +36,6 @@
 
   = render "forms/urls"
 
-  = render "forms/kind"
-
   - if services.present?
     - services.each do |service|
       = hidden_field_tag :service_id, service.id
