@@ -76,7 +76,7 @@ To point to your own instance of Ohana API, change the value of
 
 If you made changes to `config/application.yml` in either the Admin
 app or the API app, or if you're pointing the Admin app to an API app
-that already has `OHANA_API_TOKEN` configured, make sure that the value of
+that already has `ADMIN_APP_TOKEN` configured, make sure that the value of
 `ADMIN_APP_TOKEN` in the API matches `OHANA_API_TOKEN` in the Admin app.
 
 ### Run the admin app
