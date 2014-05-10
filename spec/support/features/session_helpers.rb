@@ -135,7 +135,7 @@ module Features
       fill_in "service_areas[]", with: "Belmont"
       click_link "Add a service area"
       service_areas = page.all(:xpath, "//input[@type='text' and @name='service_areas[]']")
-      fill_in service_areas[-1][:id], with: "East Palo Alto"
+      fill_in service_areas[-1][:id], with: "Atherton"
       click_button "Save changes"
     end
 

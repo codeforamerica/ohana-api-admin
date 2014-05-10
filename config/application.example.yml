@@ -1,12 +1,27 @@
-# Add account credentials and API keys here.
-# See http://railsapps.github.io/rails-environment-variables.html
-# This file should be listed in .gitignore to keep your settings secret!
-# Each entry sets a local environment variable and overrides ENV variables in the Unix shell.
-# For example, setting:
-# GMAIL_USERNAME: Your_Gmail_Username
-# makes 'Your_Gmail_Username' available as ENV["GMAIL_USERNAME"]
+# This file is used by the "figaro" gem to allow you to store and use
+# environment variables in the app without having to set them via the
+# command line each time you run the app in development.
+
+# Read more about figaro here: https://github.com/laserlemon/figaro
+
+# First, rename this file to "application.yml". It should already be listed in
+# .gitignore, but if not, make sure to add it there to keep your sensitive info
+# (such as API keys and passwords) secret!
+
+# Each entry sets a local environment variable and overrides ENV variables
+# in the Unix shell. For example, setting:
+# OHANA_API_ENDPOINT: http://ohana-api-demo.herokuapp.com/api
+# makes "http://ohana-api-demo.herokuapp.com/api" available as
+# ENV['OHANA_API_ENDPOINT'] in the app. See config/initializers/ohanakapa.rb
+# for a usage example.
+
 # Add application configuration variables here, as shown below.
-#
-ADMIN_NAME: First User
-ADMIN_EMAIL: user@example.com
-ADMIN_PASSWORD: changeme
+
+OHANA_API_ENDPOINT: http://ohana-api-demo.herokuapp.com/api
+
+# The value of OHANA_API_TOKEN here should match the value of
+# ADMIN_APP_TOKEN in the API app:
+# https://github.com/codeforamerica/ohana-api
+# In production, you should set this token to a long random string
+# that you can generate from the command line with "rake secret".
+OHANA_API_TOKEN: changeme

@@ -64,24 +64,20 @@ If you get a `permission denied` message, set the correct permissions:
 
 then run `script/bootstrap` again.
 
-### Install the Ohana API and run it locally
-In order to be able to test the admin interface, you need data. Since this app gets its data from the Ohana API, you need to [install the Ohana API](https://github.com/codeforamerica/ohana-api#installation) first, which comes with a sample dataset.
+### Set up the environment variables
+Inside the `config` folder, you will find `application.example.yml`.
+Rename it to `application.yml` and double check that it is in your
+`.gitignore` file (it should be by default).
 
-### Configure Ohana API Admin to point to your local Ohana API
-In the Ohana API Admin, go to `config/application.yml` and add an entry like this to define your API endpoint:
+By default, the app is configured to point to the
+[demo API](http://ohana-api-demo.herokuapp.com/api).
+To point to your own instance of Ohana API, change the value of
+`OHANA_API_ENDPOINT` in your `application.yml`.
 
-    OHANA_API_ENDPOINT: http://localhost:8080/api
-
-### Allow the Admin app to write to the Ohana API
-The Ohana API currently only allows one app to write to the API. It determines if an HTTP request is authorized to make a PUT, POST, or DELETE request based on the `X-Api-Token` header that it sends. Normally, you would obtain an API Token by signing up on the Ohana API site and registering an application. For testing purposes, you can skip that step and just define your own token (a series of alphanumeric characters, such as `as56hsd789sdf`).
-
-In the Ohana API, make sure `config/application.yml` includes an entry like this that defines the token used by the admin app:
-
-    ADMIN_APP_TOKEN: your_token
-
-In the Admin app, go to `config/application.yml` and add an entry like this with the same token as above:
-
-    OHANA_API_TOKEN: same_token_as_above
+If you made changes to `config/application.yml` in either the Admin
+app or the API app, or if you're pointing the Admin app to an API app
+that already has `OHANA_API_TOKEN` configured, make sure that the value of
+`ADMIN_APP_TOKEN` in the API matches `OHANA_API_TOKEN` in the Admin app.
 
 ### Run the admin app
 Start the app locally:
@@ -131,7 +127,10 @@ You can now visit your site at http://your_app_name.herokuapp.com
 ```
 Once the script is done, do the following:
 
-Set `OHANA_API_TOKEN` to the same value as `ADMIN_APP_TOKEN` in your instance of Ohana API:
+Run `rake secret` from the command line to generate a random token.
+
+Use that token to set `OHANA_API_TOKEN` to the same value as `ADMIN_APP_TOKEN`
+in your instance of Ohana API:
 
     heroku config:set OHANA_API_TOKEN=value_of_ADMIN_APP_TOKEN
 

@@ -16,7 +16,7 @@ If there are any locations missing, please #{mail_to "sanmateoco@codeforamerica.
 %p
   - @locations.each do |location|
     %ul
-      = link_to location.name, location.id
+      = link_to location.name, "#{location.id}"
 
 - if current_user.role != "admin" && @org.present?
   %p

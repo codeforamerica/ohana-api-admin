@@ -4,7 +4,8 @@ class HsaController < ApplicationController
   def index
     if admin?
       page = params[:page].present? ? params[:page] : 1
-      @locations = Ohanakapa.locations(page: page)
+      per_page = params[:per_page].present? ? params[:per_page] : 30
+      @locations = Ohanakapa.locations(page: page, per_page: per_page)
     else
       @locations = perform_search
       @org = @locations.first.organization if @locations.present?

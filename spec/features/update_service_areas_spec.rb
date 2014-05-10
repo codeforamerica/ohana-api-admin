@@ -18,7 +18,7 @@ feature "Update a service's service areas" do
     service_areas = page.
       all(:xpath, "//input[@type='text' and @name='service_areas[]']")
     service_area_id = service_areas[-1][:id]
-    expect(find_field(service_area_id).value).to eq "East Palo Alto"
+    expect(find_field(service_area_id).value).to eq "Atherton"
     delete_all_service_areas
     visit_location_with_no_phone
     page.should have_no_selector(
@@ -56,9 +56,9 @@ feature "Update a service's service areas" do
 
   scenario "with valid service area" do
     visit_test_location
-    fill_in "service_areas[]", with: "San Mateo County"
+    fill_in "service_areas[]", with: "Atherton"
     click_button "Save changes"
     visit_test_location
-    find_field('service_areas[]').value.should eq "San Mateo County"
+    find_field('service_areas[]').value.should eq "Atherton"
   end
 end
