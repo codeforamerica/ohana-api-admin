@@ -10,7 +10,7 @@ feature "Delete a location's contacts", :vcr do
     expect(page).to_not have_link "Delete this contact permanently"
   end
 
-  scenario "when location has one contact", :js => true do
+  scenario "when location has one contact", :js do
     visit_test_location
     click_link "Delete this contact permanently"
     click_button "Save changes"

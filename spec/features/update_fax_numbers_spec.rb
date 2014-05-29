@@ -11,7 +11,7 @@ feature "Update a location's fax numbers", :vcr do
       :xpath, "//input[@type='text' and @name='fax_number[]']")
   end
 
-  scenario "by adding a new fax", :js => true do
+  scenario "by adding a new fax", :js do
     visit_location_with_no_phone
     add_fax_number
     visit_location_with_no_phone
@@ -45,7 +45,7 @@ feature "Update a location's fax numbers", :vcr do
     expect(page).to have_content "Number can't be blank for Fax"
   end
 
-  scenario "with 2 faxes but one is empty", :js => true do
+  scenario "with 2 faxes but one is empty", :js do
     visit_test_location # it already has one
     click_link "Add a fax number"
     click_button "Save changes"
@@ -55,7 +55,7 @@ feature "Update a location's fax numbers", :vcr do
     total_faxes.length.should eq 1
   end
 
-  scenario "with 2 faxes but second one is invalid", :js => true do
+  scenario "with 2 faxes but second one is invalid", :js do
     visit_test_location # it already has one
     click_link "Add a fax number"
     total_fax_departments = page.

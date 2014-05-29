@@ -11,7 +11,7 @@ feature "Update a location's contacts", :vcr do
       :xpath, "//input[@type='text' and @name='names[]']")
   end
 
-  scenario "by adding a new contact", :js => true do
+  scenario "by adding a new contact", :js do
     visit_location_with_no_phone
     add_contact
     click_button "Save changes"
@@ -88,7 +88,7 @@ feature "Update a location's contacts", :vcr do
     expect(page).to have_content "Please enter a valid US fax number"
   end
 
-  scenario "with 2 contacts but one is empty", :js => true do
+  scenario "with 2 contacts but one is empty", :js do
     visit_test_location # it already has one
     click_link "Add a point of contact"
     click_button "Save changes"
@@ -98,7 +98,7 @@ feature "Update a location's contacts", :vcr do
     total_contacts.length.should eq 1
   end
 
-  scenario "with 2 contacts but second one is invalid", :js => true do
+  scenario "with 2 contacts but second one is invalid", :js do
     visit_test_location # it already has one
     click_link "Add a point of contact"
     total_contact_phones = page.

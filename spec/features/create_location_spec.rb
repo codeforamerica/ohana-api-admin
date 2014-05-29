@@ -13,7 +13,7 @@ feature "Create a new location", :vcr do
     end
   end
 
-  scenario "with all required fields", :js => true do
+  scenario "with all required fields", :js do
     fill_in "location_name", with: "new samaritan house location"
     fill_in "description", with: "new description"
     fill_in "street", with: "1486 Huntington Avenue, Suite 100"
@@ -57,7 +57,7 @@ feature "Create a new location", :vcr do
     expect(page).to have_content "Please enter at least one type of address"
   end
 
-  scenario "with valid mailing address", :js => true do
+  scenario "with valid mailing address", :js do
     fill_in_all_required_fields
     add_mail_address
     click_button "Create new location for Samaritan House"
@@ -69,7 +69,7 @@ feature "Create a new location", :vcr do
     delete_location
   end
 
-  scenario "with valid phone number", :js => true do
+  scenario "with valid phone number", :js do
     fill_in_all_required_fields
     add_phone_number
     click_button "Create new location for Samaritan House"
@@ -80,7 +80,7 @@ feature "Create a new location", :vcr do
     delete_location
   end
 
-  scenario "with an invalid phone number", :js => true do
+  scenario "with an invalid phone number", :js do
     fill_in_all_required_fields
     click_link "Add a phone number"
     fill_in "number[]", with: "703"
@@ -88,7 +88,7 @@ feature "Create a new location", :vcr do
     expect(page).to have_content "Please enter a valid US phone number"
   end
 
-  scenario "with valid fax number", :js => true do
+  scenario "with valid fax number", :js do
     fill_in_all_required_fields
     click_link "Add a fax number"
     fill_in "fax_number[]", with: "7035551212"
@@ -99,7 +99,7 @@ feature "Create a new location", :vcr do
     delete_location
   end
 
-  scenario "with an invalid fax number", :js => true do
+  scenario "with an invalid fax number", :js do
     fill_in_all_required_fields
     click_link "Add a fax number"
     fill_in "fax_number[]", with: "703"
@@ -107,7 +107,7 @@ feature "Create a new location", :vcr do
     expect(page).to have_content "Please enter a valid US fax number"
   end
 
-  scenario "with a valid contact", :js => true do
+  scenario "with a valid contact", :js do
     fill_in_all_required_fields
     fill_in_contact
     click_button "Create new location for Samaritan House"
@@ -155,7 +155,7 @@ feature "Create a new location", :vcr do
     expect(page).to have_content "Please enter a valid US fax number"
   end
 
-  scenario "with valid location email", :js => true do
+  scenario "with valid location email", :js do
     fill_in_all_required_fields
     fill_in "emails[]", with: "moncefbelyamani@samaritanhousesanmateo.org"
     click_button "Create new location for Samaritan House"
@@ -163,7 +163,7 @@ feature "Create a new location", :vcr do
     delete_location
   end
 
-  scenario "with valid location hours", :js => true do
+  scenario "with valid location hours", :js do
     fill_in_all_required_fields
     fill_in "text_hours", with: "Monday-Friday 10am-5pm"
     click_button "Create new location for Samaritan House"
@@ -171,7 +171,7 @@ feature "Create a new location", :vcr do
     delete_location
   end
 
-  scenario "when adding an accessibility option", :js => true do
+  scenario "when adding an accessibility option", :js do
     fill_in_all_required_fields
     check "accessibility_elevator"
     click_button "Create new location for Samaritan House"
@@ -179,7 +179,7 @@ feature "Create a new location", :vcr do
     delete_location
   end
 
-  scenario "when adding transportation option", :js => true do
+  scenario "when adding transportation option", :js do
     fill_in_all_required_fields
     fill_in "transportation", with: "SAMTRANS stops within 1/2 mile."
     click_button "Create new location for Samaritan House"
@@ -187,7 +187,7 @@ feature "Create a new location", :vcr do
     delete_location
   end
 
-  scenario "when adding a website", :js => true do
+  scenario "when adding a website", :js do
     fill_in_all_required_fields
     click_link "Add a website"
     urls = page.all(:xpath, "//input[@type='url' and @name='urls[]']")
@@ -199,7 +199,7 @@ feature "Create a new location", :vcr do
     delete_location
   end
 
-  scenario "when adding an audience", :js => true do
+  scenario "when adding an audience", :js do
     fill_in_all_required_fields
     fill_in "audience", with: "This is an audience"
     click_button "Create new location for Samaritan House"
@@ -207,7 +207,7 @@ feature "Create a new location", :vcr do
     delete_location
   end
 
-  scenario "when adding an eligibility", :js => true do
+  scenario "when adding an eligibility", :js do
     fill_in_all_required_fields
     fill_in "eligibility", with: "This is an eligibility"
     click_button "Create new location for Samaritan House"
@@ -215,7 +215,7 @@ feature "Create a new location", :vcr do
     delete_location
   end
 
-  scenario "when adding fees", :js => true do
+  scenario "when adding fees", :js do
     fill_in_all_required_fields
     fill_in "fees", with: "These are fees"
     click_button "Create new location for Samaritan House"
@@ -223,7 +223,7 @@ feature "Create a new location", :vcr do
     delete_location
   end
 
-  scenario "when adding how to apply", :js => true do
+  scenario "when adding how to apply", :js do
     fill_in_all_required_fields
     fill_in "how_to_apply", with: "This is how to apply"
     click_button "Create new location for Samaritan House"
@@ -231,7 +231,7 @@ feature "Create a new location", :vcr do
     delete_location
   end
 
-  scenario "when adding wait time", :js => true do
+  scenario "when adding wait time", :js do
     fill_in_all_required_fields
     fill_in "wait", with: "This is a wait time"
     click_button "Create new location for Samaritan House"
@@ -239,7 +239,7 @@ feature "Create a new location", :vcr do
     delete_location
   end
 
-  xscenario "when adding a valid service area", :js => true do
+  xscenario "when adding a valid service area", :js do
     fill_in_all_required_fields
     click_link "Add a service area"
     fill_in "service_areas[]", with: "Belmont"
@@ -248,7 +248,7 @@ feature "Create a new location", :vcr do
     delete_location
   end
 
-  xscenario "when adding an invalid service area", :js => true do
+  xscenario "when adding an invalid service area", :js do
     fill_in_all_required_fields
     click_link "Add a service area"
     fill_in "service_areas[]", with: "Belmont, CA"
@@ -258,7 +258,7 @@ feature "Create a new location", :vcr do
       all words are capitalized."
   end
 
-  scenario "when adding a keyword", :js => true do
+  scenario "when adding a keyword", :js do
     fill_in_all_required_fields
     click_link "Add a keyword"
     fill_in "keywords[]", with: "Food Pantry"
@@ -267,7 +267,7 @@ feature "Create a new location", :vcr do
     delete_location
   end
 
-  scenario "when adding categories", :js => true do
+  scenario "when adding categories", :js do
     fill_in_all_required_fields
     find("#category_emergency").click
     check "category_disaster-response"
@@ -279,7 +279,7 @@ feature "Create a new location", :vcr do
 end
 
 describe "creating a new location as user with generic email", :vcr do
-  context "after creating the location", js: true do
+  context "after creating the location", :js do
     it "sets the current user as an admin for the new location" do
       user = create(:second_user)
       set_user_as_admin(user.email, "Little House")
@@ -290,7 +290,7 @@ describe "creating a new location as user with generic email", :vcr do
       find_field('admin_emails[]').value.should eq user.email
       delete_location
       visit("/little-house")
-      delete_all_admins
+      delete_admin
     end
   end
 end

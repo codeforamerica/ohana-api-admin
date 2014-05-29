@@ -11,7 +11,7 @@ feature "Update a location's admins", :vcr do
       :xpath, "//input[@type='text' and @name='admin_emails[]']")
   end
 
-  scenario "by adding 2 new admins", :js => true do
+  scenario "by adding 2 new admins", :js do
     visit_location_with_no_phone
     add_two_admins
     visit_location_with_no_phone
@@ -24,7 +24,7 @@ feature "Update a location's admins", :vcr do
       :xpath, "//input[@type='text' and @name='admin_emails[]']")
   end
 
-  scenario "with empty admin", :js => true do
+  scenario "with empty admin", :js do
     visit_test_location
     click_link "Add an admin"
     page.should have_selector(
@@ -35,7 +35,7 @@ feature "Update a location's admins", :vcr do
       :xpath, "//input[@type='text' and @name='admin_emails[]']")
   end
 
-  scenario "with 2 admins but one is empty", :js => true do
+  scenario "with 2 admins but one is empty", :js do
     visit_test_location
     click_link "Add an admin"
     fill_in "admin_emails[]", with: "moncef@samaritanhouse.com"
@@ -45,20 +45,20 @@ feature "Update a location's admins", :vcr do
     total_admins = page.
       all(:xpath, "//input[@type='text' and @name='admin_emails[]']")
     total_admins.length.should eq 1
-    delete_all_admins
+    delete_admin
   end
 
-  scenario "with valid admin", :js => true do
+  scenario "with valid admin", :js do
     visit_test_location
     click_link "Add an admin"
     fill_in "admin_emails[]", with: "moncef@samaritanhouse.com"
     click_button "Save changes"
     visit_test_location
     find_field('admin_emails[]').value.should eq "moncef@samaritanhouse.com"
-    delete_all_admins
+    delete_admin
   end
 
-  scenario "with invalid admin", :js => true do
+  scenario "with invalid admin", :js do
     visit_test_location
     click_link "Add an admin"
     fill_in "admin_emails[]", with: "moncefsamaritanhouse.com"

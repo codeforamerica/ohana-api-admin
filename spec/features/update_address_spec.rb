@@ -5,7 +5,7 @@ feature "Update a location's street address", :vcr do
     login_admin
   end
 
-  scenario "by adding a new street address", js: true do
+  scenario "by adding a new street address", :js do
     visit_location_with_no_phone
     add_street_address
     visit_location_with_no_phone
@@ -18,7 +18,7 @@ feature "Update a location's street address", :vcr do
     expect(page).to have_link "Add a street address"
   end
 
-  scenario "when leaving location without address or mail address", js: true do
+  scenario "when leaving location without address or mail address", :js do
     visit_location_with_no_phone
     remove_mail_address
     expect(page).to have_content "Please enter at least one type of address"

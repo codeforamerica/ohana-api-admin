@@ -11,7 +11,7 @@ feature "Update a location's phone numbers", :vcr do
       :xpath, "//input[@type='text' and @name='number[]']")
   end
 
-  scenario "by adding a new number", :js => true do
+  scenario "by adding a new number", :js do
     visit_location_with_no_phone
     add_phone_number
     click_button "Save changes"
@@ -48,7 +48,7 @@ feature "Update a location's phone numbers", :vcr do
     expect(page).to have_content "Number can't be blank for Phone"
   end
 
-  scenario "with 2 phones but one is empty", :js => true do
+  scenario "with 2 phones but one is empty", :js do
     visit_test_location # it already has one
     click_link "Add a phone number"
     click_button "Save changes"
@@ -58,7 +58,7 @@ feature "Update a location's phone numbers", :vcr do
     total_phones.length.should eq 1
   end
 
-  scenario "with 2 phones but second one is invalid", :js => true do
+  scenario "with 2 phones but second one is invalid", :js do
     visit_test_location # it already has one
     click_link "Add a phone number"
     total_departments = page.

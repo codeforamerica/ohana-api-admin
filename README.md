@@ -1,6 +1,6 @@
 # Ohana API Admin
 
-[![Stories in Ready](https://badge.waffle.io/codeforamerica/ohana-api-admin.png?label=ready)](https://waffle.io/codeforamerica/ohana-api-admin)
+[![Stories in Ready](https://badge.waffle.io/codeforamerica/ohana-api-admin.png?label=ready)](https://waffle.io/codeforamerica/ohana-api-admin) [![Build Status](https://travis-ci.org/codeforamerica/ohana-api-admin.svg?branch=master)](https://travis-ci.org/codeforamerica/ohana-api-admin)
 
 This is an admin interface for the data that is exposed by the [Ohana API](http://github.com/codeforamerica/ohana-api/). It allows organization members to sign up with their email address, and allows them to update the locations that belong to their organization.
 
@@ -14,7 +14,7 @@ You can see a running version of the application at
 ## Stack Overview
 
 * Ruby version 2.1.1
-* Rails version 3.2.16
+* Rails version 3.2.17
 * MongoDB with the Mongoid ORM
 * Testing Frameworks: RSpec, Factory Girl, Capybara
 
@@ -23,7 +23,7 @@ Please note that the instructions below have only been tested on OS X. If you ar
 
 ###Prerequisites
 
-#### Git, Ruby 2.1+, Rails 3.2.16+ (+ Homebrew on OS X)
+#### Git, Ruby 2.1+ (+ Homebrew on OS X)
 **OS X**: [Set up a dev environment on OS X with Homebrew, Git, RVM, Ruby, and Rails](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/)
 
 **Windows**: Try [RailsInstaller](http://railsinstaller.org), along with some of these [tutorials](https://www.google.com/search?q=install+rails+on+windows) if you get stuck.
@@ -46,6 +46,9 @@ Follow the Homebrew instructions for configuring MongoDB and starting it automat
 **Other**
 
 See the Downloads page on mongodb.org for steps to install on other systems: [http://www.mongodb.org/downloads](http://www.mongodb.org/downloads)
+
+#### PhantomJS (for running the specs locally)
+[Installation instructions](https://github.com/jonleighton/poltergeist#installing-phantomjs) for Mac, Linux, and Windows.
 
 ### Clone the app on your local machine.
 

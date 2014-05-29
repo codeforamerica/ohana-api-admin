@@ -11,7 +11,7 @@ feature "Update a service's service areas", :vcr do
       :xpath, "//input[@type='text' and @name='service_areas[]']")
   end
 
-  scenario "by adding 2 new service_areas", :js => true do
+  scenario "by adding 2 new service_areas", :js do
     visit_location_with_no_phone
     add_two_service_areas
     visit_location_with_no_phone
@@ -25,7 +25,7 @@ feature "Update a service's service areas", :vcr do
       :xpath, "//input[@type='text' and @name='service_areas[]']")
   end
 
-  scenario "with empty service area", :js => true do
+  scenario "with empty service area", :js do
     visit_test_location
     fill_in "service_areas[]", with: ""
     click_button "Save changes"
@@ -35,7 +35,7 @@ feature "Update a service's service areas", :vcr do
     add_service_area
   end
 
-  scenario "with 2 service_areas but one is empty", :js => true do
+  scenario "with 2 service_areas but one is empty", :js do
     visit_test_location # it already has one
     click_link "Add a service area"
     click_button "Save changes"
