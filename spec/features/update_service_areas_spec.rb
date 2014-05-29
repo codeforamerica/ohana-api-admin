@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a service's service areas" do
+feature "Update a service's service areas", :vcr do
   background do
     login_admin
   end

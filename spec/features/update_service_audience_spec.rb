@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a service's audience" do
+feature "Update a service's audience", :vcr do
   background do
     login_admin
   end

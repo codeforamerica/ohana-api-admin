@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a location's phone numbers" do
+feature "Update a location's phone numbers", :vcr do
   background do
     login_admin
   end

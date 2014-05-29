@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a location's email" do
+feature "Update a location's email", :vcr do
   background do
     login_admin
   end

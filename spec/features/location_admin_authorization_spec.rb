@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe "ability to add an admin to a location" do
+describe "ability to add an admin to a location", :vcr do
   context "when neither master admin nor location admin" do
     it "doesn't allow adding an admin" do
       user = create(:user)

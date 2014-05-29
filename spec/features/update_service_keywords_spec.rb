@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a service's keywords" do
+feature "Update a service's keywords", :vcr do
   background do
     login_admin
   end

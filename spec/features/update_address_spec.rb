@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a location's street address" do
+feature "Update a location's street address", :vcr do
   background do
     login_admin
   end

@@ -1,0 +1,472 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&domain=samaritanhouse.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:15:01 GMT
+      Link:
+      - <http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&domain=samaritanhouse.com&page=2&per_page=1>;
+        rel="last", <http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&domain=samaritanhouse.com&page=2&per_page=1>;
+        rel="next"
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Current-Page:
+      - '1'
+      X-Next-Page:
+      - '2'
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - d30fa9c5-e204-4f67-804e-d0456e9c94bd
+      X-Runtime:
+      - '0.067574'
+      X-Total-Count:
+      - '2'
+      X-Total-Pages:
+      - '2'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":18,"accessibility":["Disabled Restroom","Wheelchair"],"address":{"id":18,"street":"114
+        Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"contacts":[{"id":26,"name":"Sharon
+        Petersen","title":"Administrator"}],"coordinates":[-122.207057,37.468678],"description":"Provides
+        free medical care to those in need. Offers basic medical exams for adults
+        and tuberculosis screening. Assists the individual to access other services
+        in the community. By appointment only, Project Smile provides a free dental
+        exam, dental cleaning and oral hygiene instruction for children, age 3-12,
+        of Samaritan House clients.","emails":["gracie@samaritanhouse.com"],"faxes":[{"id":18,"number":"650
+        839-1457"}],"hours":"Monday-Friday, 9-12, 2-5","languages":["Spanish"],"mail_address":{"id":18,"attention":"Redwood
+        City Free Medical Clinic","street":"114 Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"name":"Redwood
+        City Free Medical Clinic","phones":[{"id":18,"number":"650 839-1447"}],"short_desc":"Provides
+        free medical care to those in need.","slug":"redwood-city-free-medical-clinic","transportation":"SAMTRANS
+        stops within 2 blocks.","updated_at":"2014-05-09T20:49:18.967-07:00","urls":["http://www.samaritanhouse.com"],"url":"http://ohana-api-test.herokuapp.com/api/locations/18","services":[{"id":18,"eligibility":"Low-income
+        person without access to health care","fees":"None.","funding_sources":["Donations","Grants"],"keywords":["HEALTH
+        SERVICES","Outpatient Care","Community Clinics"],"how_to_apply":"Call for
+        screening appointment. Medical visits are by appointment only.","service_areas":["Atherton","East
+        Palo Alto","Menlo Park","Redwood City","San Carlos"],"wait":"Varies.","updated_at":"2014-04-18T12:32:10.649-07:00"}],"organization":{"id":5,"name":"Samaritan
+        House","slug":"samaritan-house","url":"http://ohana-api-test.herokuapp.com/api/organizations/5","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/5/locations"}}]'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:15:01 GMT
+- request:
+    method: get
+    uri: http://ohana-api-test.herokuapp.com/api/organizations/5/locations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:15:01 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Current-Page:
+      - '1'
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - ecd11cf2-745f-4db3-a6f0-f4f369d9ec02
+      X-Runtime:
+      - '0.079623'
+      X-Total-Count:
+      - '2'
+      X-Total-Pages:
+      - '1'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":19,"accessibility":["Elevator","Ramp","Wheelchair"],"address":{"id":19,"street":"19
+        West 39th Avenue","city":"San Mateo","state":"CA","zip":"94403"},"contacts":[{"id":27,"name":"Sharon
+        Petersen","title":"Administrator"}],"coordinates":[-122.2931236,37.5326941],"description":"Provides
+        free medical and dental care to those in need. Offers basic medical care for
+        adults.","emails":["smcmed@samaritanhouse.com"],"faxes":[{"id":19,"number":"650
+        578-0440"}],"hours":"Monday-Friday, 9-12, 1-4","languages":["Spanish"],"mail_address":{"id":19,"attention":"San
+        Mateo Free Medical/Dental","street":"19 West 39th Avenue","city":"San Mateo","state":"CA","zip":"94403"},"name":"San
+        Mateo Free Medical Clinic","phones":[{"id":19,"number":"650 578-0400"}],"short_desc":"Provides
+        free medical and dental care to those in need. Offers basic medical care for
+        adults.","slug":"san-mateo-free-medical-clinic","transportation":"SAMTRANS
+        stops within 1 block.","updated_at":"2014-05-09T21:37:14.734-07:00","urls":["http://www.samaritanhouse.com"],"url":"http://ohana-api-test.herokuapp.com/api/locations/19","services":[{"id":19,"eligibility":"Low-income
+        person without access to health care","fees":"None.","funding_sources":["Donations","Grants"],"keywords":["HEALTH
+        SERVICES","Outpatient Care","Community Clinics"],"how_to_apply":"Call for
+        screening appointment (650-347-3648).","service_areas":["Belmont","Burlingame","Foster
+        City","Millbrae","San Carlos","San Mateo"],"wait":"Varies.","updated_at":"2014-04-18T12:32:11.921-07:00"}],"organization":{"id":5,"name":"Samaritan
+        House","slug":"samaritan-house","url":"http://ohana-api-test.herokuapp.com/api/organizations/5","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/5/locations"}},{"id":18,"accessibility":["Disabled
+        Restroom","Wheelchair"],"address":{"id":18,"street":"114 Fifth Avenue","city":"Redwood
+        City","state":"CA","zip":"94063"},"contacts":[{"id":26,"name":"Sharon Petersen","title":"Administrator"}],"coordinates":[-122.207057,37.468678],"description":"Provides
+        free medical care to those in need. Offers basic medical exams for adults
+        and tuberculosis screening. Assists the individual to access other services
+        in the community. By appointment only, Project Smile provides a free dental
+        exam, dental cleaning and oral hygiene instruction for children, age 3-12,
+        of Samaritan House clients.","emails":["gracie@samaritanhouse.com"],"faxes":[{"id":18,"number":"650
+        839-1457"}],"hours":"Monday-Friday, 9-12, 2-5","languages":["Spanish"],"mail_address":{"id":18,"attention":"Redwood
+        City Free Medical Clinic","street":"114 Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"name":"Redwood
+        City Free Medical Clinic","phones":[{"id":18,"number":"650 839-1447"}],"short_desc":"Provides
+        free medical care to those in need.","slug":"redwood-city-free-medical-clinic","transportation":"SAMTRANS
+        stops within 2 blocks.","updated_at":"2014-05-09T20:49:18.967-07:00","urls":["http://www.samaritanhouse.com"],"url":"http://ohana-api-test.herokuapp.com/api/locations/18","services":[{"id":18,"eligibility":"Low-income
+        person without access to health care","fees":"None.","funding_sources":["Donations","Grants"],"keywords":["HEALTH
+        SERVICES","Outpatient Care","Community Clinics"],"how_to_apply":"Call for
+        screening appointment. Medical visits are by appointment only.","service_areas":["Atherton","East
+        Palo Alto","Menlo Park","Redwood City","San Carlos"],"wait":"Varies.","updated_at":"2014-04-18T12:32:10.649-07:00"}],"organization":{"id":5,"name":"Samaritan
+        House","slug":"samaritan-house","url":"http://ohana-api-test.herokuapp.com/api/organizations/5","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/5/locations"}}]'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:15:01 GMT
+- request:
+    method: post
+    uri: http://ohana-api-test.herokuapp.com/api/locations/?accessibility%5B0%5D=elevator&address_attributes%5Bcity%5D=utopia&address_attributes%5Bdestroy%5D&address_attributes%5Bnew%5D&address_attributes%5Bstate%5D=XX&address_attributes%5Bstreet%5D=modularity&address_attributes%5Bzip%5D=12345&admin_emails&api_token=Ohana-API-Admin-Test&description=new%20description&emails&hours=&name=new%20samaritan%20house%20location&organization_id=5&short_desc=&transportation=&urls%5B0%5D=http://www.samaritanhouse.com
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:15:04 GMT
+      Etag:
+      - '"b84a5186ef8554ddc8f716c8dcd575de"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 201 Created
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 8ff23503-217c-4f90-9bf7-f53d88096cfb
+      X-Runtime:
+      - '0.109916'
+      Content-Length:
+      - '639'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":66,"accessibility":["Elevator"],"address":{"id":67,"street":"modularity","city":"utopia","state":"XX","zip":"12345"},"coordinates":[-73.9395687,42.8142432],"description":"new
+        description","name":"new samaritan house location","slug":"new-samaritan-house-location","updated_at":"2014-05-29T13:15:04.202-07:00","urls":["http://www.samaritanhouse.com"],"url":"http://ohana-api-test.herokuapp.com/api/locations/66","organization":{"id":5,"name":"Samaritan
+        House","slug":"samaritan-house","url":"http://ohana-api-test.herokuapp.com/api/organizations/5","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/5/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:15:04 GMT
+- request:
+    method: post
+    uri: http://ohana-api-test.herokuapp.com/api/locations/66/services?api_token=Ohana-API-Admin-Test&audience=&eligibility=&fees=&how_to_apply=&keywords&wait=
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:15:04 GMT
+      Etag:
+      - '"5e52b44f46a4a45fbd1cc06c1fe3e441"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 201 Created
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 85423ca9-2b96-44ca-a7a5-ad129791fb9a
+      X-Runtime:
+      - '0.050986'
+      Content-Length:
+      - '308'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":67,"location_id":66,"audience":null,"description":null,"eligibility":null,"fees":null,"how_to_apply":null,"name":null,"short_desc":null,"urls":[],"wait":null,"funding_sources":[],"service_areas":[],"keywords":[],"created_at":"2014-05-29T13:15:04.450-07:00","updated_at":"2014-05-29T13:15:04.450-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:15:04 GMT
+- request:
+    method: put
+    uri: http://ohana-api-test.herokuapp.com/api/services/67/categories?api_token=Ohana-API-Admin-Test&category_slugs
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:15:04 GMT
+      Etag:
+      - '"abc3b4bc90c7db7f95d27b48ca690fac"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 826bda2b-0264-4ced-af3f-5df44e1b9f52
+      X-Runtime:
+      - '0.047615'
+      Content-Length:
+      - '54'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":67,"updated_at":"2014-05-29T13:15:04.581-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:15:04 GMT
+- request:
+    method: get
+    uri: http://ohana-api-test.herokuapp.com/api/locations/66?api_token=Ohana-API-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:15:04 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 32e54256-c918-4c01-bd88-1683fc60cf3e
+      X-Runtime:
+      - '0.064065'
+      Content-Length:
+      - '362'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":66,"accessibility":["Elevator"],"address":{"id":67,"street":"modularity","city":"utopia","state":"XX","zip":"12345"},"coordinates":[-73.9395687,42.8142432],"description":"new
+        description","name":"new samaritan house location","slug":"new-samaritan-house-location","updated_at":"2014-05-29T13:15:04.591-07:00","urls":["http://www.samaritanhouse.com"],"url":"http://ohana-api-test.herokuapp.com/api/locations/66","services":[{"id":67,"updated_at":"2014-05-29T13:15:04.581-07:00"}],"organization":{"id":5,"name":"Samaritan
+        House","slug":"samaritan-house","url":"http://ohana-api-test.herokuapp.com/api/organizations/5","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/5/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:15:04 GMT
+- request:
+    method: delete
+    uri: http://ohana-api-test.herokuapp.com/api/locations/66?api_token=Ohana-API-Admin-Test
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:15:06 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 67937813-5b30-4453-83fe-ad8b59824049
+      X-Runtime:
+      - '0.185826'
+      Content-Length:
+      - '337'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":66,"organization_id":5,"accessibility":["elevator"],"admin_emails":[],"description":"new
+        description","emails":[],"hours":null,"latitude":42.8142432,"longitude":-73.9395687,"languages":[],"name":"new
+        samaritan house location","short_desc":null,"transportation":null,"urls":["http://www.samaritanhouse.com"],"slug":"new-samaritan-house-location","created_at":"2014-05-29T13:15:04.202-07:00","updated_at":"2014-05-29T13:15:04.591-07:00","tsv_body":"''descript'':6A
+        ''hous'':3B,8B ''locat'':4B ''new'':1B,5A ''samaritan'':2B,7B"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:15:06 GMT
+- request:
+    method: get
+    uri: http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&domain=samaritanhouse.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:15:06 GMT
+      Link:
+      - <http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&domain=samaritanhouse.com&page=2&per_page=1>;
+        rel="last", <http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&domain=samaritanhouse.com&page=2&per_page=1>;
+        rel="next"
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Current-Page:
+      - '1'
+      X-Next-Page:
+      - '2'
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 135ce98d-1764-463a-884a-7d2e968a0382
+      X-Runtime:
+      - '0.098466'
+      X-Total-Count:
+      - '2'
+      X-Total-Pages:
+      - '2'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":18,"accessibility":["Disabled Restroom","Wheelchair"],"address":{"id":18,"street":"114
+        Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"contacts":[{"id":26,"name":"Sharon
+        Petersen","title":"Administrator"}],"coordinates":[-122.207057,37.468678],"description":"Provides
+        free medical care to those in need. Offers basic medical exams for adults
+        and tuberculosis screening. Assists the individual to access other services
+        in the community. By appointment only, Project Smile provides a free dental
+        exam, dental cleaning and oral hygiene instruction for children, age 3-12,
+        of Samaritan House clients.","emails":["gracie@samaritanhouse.com"],"faxes":[{"id":18,"number":"650
+        839-1457"}],"hours":"Monday-Friday, 9-12, 2-5","languages":["Spanish"],"mail_address":{"id":18,"attention":"Redwood
+        City Free Medical Clinic","street":"114 Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"name":"Redwood
+        City Free Medical Clinic","phones":[{"id":18,"number":"650 839-1447"}],"short_desc":"Provides
+        free medical care to those in need.","slug":"redwood-city-free-medical-clinic","transportation":"SAMTRANS
+        stops within 2 blocks.","updated_at":"2014-05-09T20:49:18.967-07:00","urls":["http://www.samaritanhouse.com"],"url":"http://ohana-api-test.herokuapp.com/api/locations/18","services":[{"id":18,"eligibility":"Low-income
+        person without access to health care","fees":"None.","funding_sources":["Donations","Grants"],"keywords":["HEALTH
+        SERVICES","Outpatient Care","Community Clinics"],"how_to_apply":"Call for
+        screening appointment. Medical visits are by appointment only.","service_areas":["Atherton","East
+        Palo Alto","Menlo Park","Redwood City","San Carlos"],"wait":"Varies.","updated_at":"2014-04-18T12:32:10.649-07:00"}],"organization":{"id":5,"name":"Samaritan
+        House","slug":"samaritan-house","url":"http://ohana-api-test.herokuapp.com/api/organizations/5","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/5/locations"}}]'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:15:06 GMT
+recorded_with: VCR 2.9.2

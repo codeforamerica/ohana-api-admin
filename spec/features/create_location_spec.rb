@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Create a new location" do
+feature "Create a new location", :vcr do
   background do
     user = create(:user)
     login_user(user)
@@ -278,7 +278,7 @@ feature "Create a new location" do
   end
 end
 
-describe "creating a new location as user with generic email" do
+describe "creating a new location as user with generic email", :vcr do
   context "after creating the location", js: true do
     it "sets the current user as an admin for the new location" do
       user = create(:second_user)

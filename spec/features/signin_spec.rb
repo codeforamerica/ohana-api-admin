@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Signing in" do
+feature "Signing in", :vcr do
   # The 'sign_in' method is defined in spec/support/features/session_helpers.rb
   scenario "with correct credentials" do
     valid_user = create(:user)

@@ -1,0 +1,700 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone?api_token=Ohana-API-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:12:19 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 41189580-59ad-4b0b-b786-6638066a454e
+      X-Runtime:
+      - '0.063386'
+      Content-Length:
+      - '307'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":20,"description":"no phone","mail_address":{"id":20,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","updated_at":"2014-05-09T22:11:56.835-07:00","url":"http://ohana-api-test.herokuapp.com/api/locations/20","services":[{"id":20,"updated_at":"2014-05-09T22:11:56.825-07:00"}],"organization":{"id":6,"name":"Location
+        with no phone","slug":"location-with-no-phone","url":"http://ohana-api-test.herokuapp.com/api/organizations/6","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/6/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:12:19 GMT
+- request:
+    method: put
+    uri: http://ohana-api-test.herokuapp.com/api/organizations/6?api_token=Ohana-API-Admin-Test&name=Location%20with%20no%20phone
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:12:20 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 5777b8d4-e2ad-4bc7-a3af-3bb2d6e82826
+      X-Runtime:
+      - '0.079143'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":6,"name":"Location with no phone","slug":"location-with-no-phone","url":"http://ohana-api-test.herokuapp.com/api/organizations/6","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/6/locations"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:12:21 GMT
+- request:
+    method: patch
+    uri: http://ohana-api-test.herokuapp.com/api/locations/20/mail_address?api_token=Ohana-API-Admin-Test&attention=&city=fairfax&state=VA&street=puma&zip=22031
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:12:21 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - d2f0300c-c048-4faf-9e35-764f1b828c39
+      X-Runtime:
+      - '0.068752'
+      Content-Length:
+      - '147'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":20,"location_id":20,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031","created_at":"2014-04-18T12:32:12.187-07:00","updated_at":"2014-04-18T12:32:12.187-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:12:21 GMT
+- request:
+    method: put
+    uri: http://ohana-api-test.herokuapp.com/api/locations/20?accessibility&admin_emails&api_token=Ohana-API-Admin-Test&description=no%20phone&emails&hours=&name=Location%20with%20no%20phone&short_desc=no%20phone&transportation=&urls
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:12:21 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 8ae8d915-7aac-4704-8cb7-f1c6e2f60903
+      X-Runtime:
+      - '0.606857'
+      Content-Length:
+      - '314'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":20,"description":"no phone","mail_address":{"id":20,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","updated_at":"2014-05-29T13:12:21.452-07:00","url":"http://ohana-api-test.herokuapp.com/api/locations/20","services":[{"id":20,"updated_at":"2014-05-09T22:11:56.825-07:00"}],"organization":{"id":6,"name":"Location
+        with no phone","slug":"location-with-no-phone","url":"http://ohana-api-test.herokuapp.com/api/organizations/6","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/6/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:12:21 GMT
+- request:
+    method: put
+    uri: http://ohana-api-test.herokuapp.com/api/services/20?api_token=Ohana-API-Admin-Test&audience=&eligibility=&fees=&how_to_apply=&keywords&service_areas%5B0%5D=Belmont&service_areas%5B1%5D=Atherton&wait=
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:12:22 GMT
+      Etag:
+      - '"e8e7484b3fa44b27dd11c7d99577861d"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - c238958d-3d3c-49dd-9e58-be0fec1d4487
+      X-Runtime:
+      - '0.211585'
+      Content-Length:
+      - '93'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":20,"service_areas":["Belmont","Atherton"],"updated_at":"2014-05-29T13:12:21.911-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:12:22 GMT
+- request:
+    method: put
+    uri: http://ohana-api-test.herokuapp.com/api/services/20/categories?api_token=Ohana-API-Admin-Test&category_slugs
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:12:22 GMT
+      Etag:
+      - '"e9860f21ba820f4a816878495d6dae56"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 8e8114ce-dfcf-487b-999f-47bf0d87fc92
+      X-Runtime:
+      - '0.126232'
+      Content-Length:
+      - '93'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":20,"service_areas":["Belmont","Atherton"],"updated_at":"2014-05-29T13:12:22.175-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:12:22 GMT
+- request:
+    method: get
+    uri: http://ohana-api-test.herokuapp.com/api/locations/20?api_token=Ohana-API-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:12:22 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 688d5500-38a6-4911-b8c7-d812713a55d5
+      X-Runtime:
+      - '0.144703'
+      Content-Length:
+      - '325'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":20,"description":"no phone","mail_address":{"id":20,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","updated_at":"2014-05-29T13:12:22.212-07:00","url":"http://ohana-api-test.herokuapp.com/api/locations/20","services":[{"id":20,"service_areas":["Belmont","Atherton"],"updated_at":"2014-05-29T13:12:22.175-07:00"}],"organization":{"id":6,"name":"Location
+        with no phone","slug":"location-with-no-phone","url":"http://ohana-api-test.herokuapp.com/api/organizations/6","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/6/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:12:22 GMT
+- request:
+    method: get
+    uri: http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone?api_token=Ohana-API-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:12:23 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 013e5bb3-e6a1-455a-ad87-518238c6e363
+      X-Runtime:
+      - '0.261598'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":20,"description":"no phone","mail_address":{"id":20,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","updated_at":"2014-05-29T13:12:22.212-07:00","url":"http://ohana-api-test.herokuapp.com/api/locations/20","services":[{"id":20,"service_areas":["Belmont","Atherton"],"updated_at":"2014-05-29T13:12:22.175-07:00"}],"organization":{"id":6,"name":"Location
+        with no phone","slug":"location-with-no-phone","url":"http://ohana-api-test.herokuapp.com/api/organizations/6","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/6/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:12:23 GMT
+- request:
+    method: put
+    uri: http://ohana-api-test.herokuapp.com/api/organizations/6?api_token=Ohana-API-Admin-Test&name=Location%20with%20no%20phone
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:12:25 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - ae42ba43-04cb-420a-9adb-57257c28fe1f
+      X-Runtime:
+      - '0.069631'
+      Content-Length:
+      - '151'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":6,"name":"Location with no phone","slug":"location-with-no-phone","url":"http://ohana-api-test.herokuapp.com/api/organizations/6","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/6/locations"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:12:25 GMT
+- request:
+    method: patch
+    uri: http://ohana-api-test.herokuapp.com/api/locations/20/mail_address?api_token=Ohana-API-Admin-Test&attention=&city=fairfax&state=VA&street=puma&zip=22031
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:12:25 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - ea9bc4b2-e56f-4229-995d-564f1ad8720f
+      X-Runtime:
+      - '0.076472'
+      Content-Length:
+      - '153'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":20,"location_id":20,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031","created_at":"2014-04-18T12:32:12.187-07:00","updated_at":"2014-04-18T12:32:12.187-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:12:25 GMT
+- request:
+    method: put
+    uri: http://ohana-api-test.herokuapp.com/api/locations/20?accessibility&admin_emails&api_token=Ohana-API-Admin-Test&description=no%20phone&emails&hours=&name=Location%20with%20no%20phone&short_desc=no%20phone&transportation=&urls
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:12:25 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 14b2e9ec-2d00-42a8-a42f-545697673e6c
+      X-Runtime:
+      - '0.085979'
+      Content-Length:
+      - '334'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":20,"description":"no phone","mail_address":{"id":20,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","updated_at":"2014-05-29T13:12:25.548-07:00","url":"http://ohana-api-test.herokuapp.com/api/locations/20","services":[{"id":20,"service_areas":["Belmont","Atherton"],"updated_at":"2014-05-29T13:12:22.175-07:00"}],"organization":{"id":6,"name":"Location
+        with no phone","slug":"location-with-no-phone","url":"http://ohana-api-test.herokuapp.com/api/organizations/6","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/6/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:12:25 GMT
+- request:
+    method: put
+    uri: http://ohana-api-test.herokuapp.com/api/services/20?api_token=Ohana-API-Admin-Test&audience=&eligibility=&fees=&how_to_apply=&keywords&wait=
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:12:25 GMT
+      Etag:
+      - '"f04464b7bcef95aac43c0528e6fc4c0d"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 26218d14-f55f-4b9b-ba01-81ea922057b0
+      X-Runtime:
+      - '0.058045'
+      Content-Length:
+      - '54'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":20,"updated_at":"2014-05-29T13:12:25.663-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:12:25 GMT
+- request:
+    method: put
+    uri: http://ohana-api-test.herokuapp.com/api/services/20/categories?api_token=Ohana-API-Admin-Test&category_slugs
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:12:25 GMT
+      Etag:
+      - '"eca02ae451dd13a441342647422df194"'
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 902e8ecb-510e-48e5-8ec8-0e3fe8457158
+      X-Runtime:
+      - '0.065416'
+      Content-Length:
+      - '54'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":20,"updated_at":"2014-05-29T13:12:25.820-07:00"}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:12:25 GMT
+- request:
+    method: get
+    uri: http://ohana-api-test.herokuapp.com/api/locations/20?api_token=Ohana-API-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:12:26 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 406accc2-99c7-4963-9d96-1aa29a98c5cf
+      X-Runtime:
+      - '0.051644'
+      Content-Length:
+      - '309'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":20,"description":"no phone","mail_address":{"id":20,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","updated_at":"2014-05-29T13:12:25.832-07:00","url":"http://ohana-api-test.herokuapp.com/api/locations/20","services":[{"id":20,"updated_at":"2014-05-29T13:12:25.820-07:00"}],"organization":{"id":6,"name":"Location
+        with no phone","slug":"location-with-no-phone","url":"http://ohana-api-test.herokuapp.com/api/organizations/6","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/6/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:12:26 GMT
+- request:
+    method: get
+    uri: http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone?api_token=Ohana-API-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:12:26 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - 86b517d8-8e13-4093-975f-0946f061564c
+      X-Runtime:
+      - '0.040654'
+      Content-Length:
+      - '303'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":20,"description":"no phone","mail_address":{"id":20,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","updated_at":"2014-05-29T13:12:25.832-07:00","url":"http://ohana-api-test.herokuapp.com/api/locations/20","services":[{"id":20,"updated_at":"2014-05-29T13:12:25.820-07:00"}],"organization":{"id":6,"name":"Location
+        with no phone","slug":"location-with-no-phone","url":"http://ohana-api-test.herokuapp.com/api/organizations/6","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/6/locations"}}'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:12:26 GMT
+recorded_with: VCR 2.9.2

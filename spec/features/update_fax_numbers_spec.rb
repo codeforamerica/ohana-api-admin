@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a location's fax numbers" do
+feature "Update a location's fax numbers", :vcr do
   background do
     login_admin
   end

@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a location's hours" do
+feature "Update a location's hours", :vcr do
   background do
     login_admin
   end

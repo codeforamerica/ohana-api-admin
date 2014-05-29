@@ -1,0 +1,592 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://ohana-api-test.herokuapp.com/api/locations?api_token=Ohana-API-Admin-Test&page=1&per_page=30
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.0.0
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 29 May 2014 20:18:21 GMT
+      Server:
+      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      Status:
+      - 200 OK
+      X-Current-Page:
+      - '1'
+      X-Powered-By:
+      - Phusion Passenger 4.0.41
+      X-Request-Id:
+      - cc8df01d-3a0a-4fb3-b344-01f981dd5c3e
+      X-Runtime:
+      - '0.236091'
+      X-Total-Count:
+      - '22'
+      X-Total-Pages:
+      - '1'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"id":22,"accessibility":["Disabled Restroom","Disabled Parking","Wheelchair"],"address":{"id":21,"street":"2013
+        Avenue of the fellows, Suite 100","city":"Burlington","state":"VT","zip":"05201"},"admin_emails":["foo@bar.com"],"contacts":[{"id":29,"name":"Suzanne
+        Badenhoop","title":"Board President"}],"coordinates":[-73.1968254,42.878036],"description":"[NOTE
+        THIS IS NOT A REAL ORGANIZATION--THIS IS FOR TESTTING PURPOSES OF THIS ALPHA
+        APP] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit
+        metus eu orci lobortis dictum. In hac habitasse platea dictumst. Vivamus vulputate,
+        neque ut sodales gravida, lorem nunc pharetra ligula, ac cursus sem justo
+        a sapien. Duis vitae vestibulum magna. Sed vel augue in justo rhoncus viverra.
+        Nam ac felis a purus lobortis porttitor sit amet quis est. Suspendisse vulputate
+        nisl quis nisi fermentum aliquet euismod at augue. Sed ultricies, purus dapibus
+        tristique dictum, tortor mauris porttitor nulla, at porta nisl sem sed dolor.
+        Proin ac hendrerit erat. Duis porta iaculis orci, eu euismod quam tristique
+        in. Phasellus nec purus sit amet sapien volutpat egestas.","emails":["sanmaceo@co.sanmaceo.ca.us","maceo@parker.com"],"faxes":[{"id":21,"number":"650
+        627-8244"}],"hours":"Monday-Friday, 8-5; Saturday, 10-6; Sunday 11-5","languages":["Chinese
+        (Cantonese)","Chinese (Taiwanese)","Filipino (Tagalog)","Russian","Spanish"],"mail_address":{"id":21,"attention":"Hella
+        Fellas","street":"2013 Avenue of the fellows, Suite 100","city":"San Maceo","state":"VT","zip":"90210"},"name":"San
+        Maceo Agency","phones":[{"id":21,"department":"Information","number":"650
+        372-6200","number_type":"TTY"},{"id":22,"department":"Reservations","number":"650
+        372-6200"}],"short_desc":"[NOTE THIS IS NOT A REAL ENTRY--THIS IS FOR TESTING
+        PURPOSES OF THIS ALPHA APP]","slug":"san-maceo-agency","transportation":"SAMTRANS
+        stops within 1 block","updated_at":"2014-05-22T17:31:08.727-07:00","urls":["http://www.smchealth.org","http://www.example.com","http://www.example2.com"],"url":"http://ohana-api-test.herokuapp.com/api/locations/22","services":[{"id":22,"audience":"Profit
+        and nonprofit businesses, the public, military facilities, schools and government
+        entities","description":"[NOTE THIS IS NOT A REAL ORGANIZATION--THIS IS FOR
+        TESTTING PURPOSES OF THIS ALPHA APP] Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Praesent suscipit metus eu orci lobortis dictum. In hac habitasse
+        platea dictumst. Vivamus vulputate, neque ut sodales gravida, lorem nunc pharetra
+        ligula, ac cursus sem justo a sapien. Duis vitae vestibulum magna. Sed vel
+        augue in justo rhoncus viverra. Nam ac felis a purus lobortis porttitor sit
+        amet quis est. Suspendisse vulputate nisl quis nisi fermentum aliquet euismod
+        at augue. Sed ultricies, purus dapibus tristique dictum, tortor mauris porttitor
+        nulla, at porta nisl sem sed dolor. Proin ac hendrerit erat. Duis porta iaculis
+        orci, eu euismod quam tristique in. Phasellus nec purus sit amet sapien volutpat
+        egestas.","eligibility":"None","fees":"None, except for permits and photocopying.
+        Cash, checks and credit cards accepted","funding_sources":["City","County","Federal","State"],"keywords":["Ruby
+        on Rails/MongoDB/Redis","FIFA World Cup"],"how_to_apply":"Walk in or apply
+        by phone or mail","name":"bazfoo","service_areas":["San Mateo County","Alameda
+        County","Contra Costa County","Marin County","San Francisco County","Santa
+        Clara County"],"urls":["http://www.smchealth.org","http://www.example.com","http://www.example2.com"],"wait":"No
+        wait to 2 weeks","updated_at":"2014-04-18T12:49:47.791-07:00"},{"id":23,"audience":"Second
+        service and nonprofit businesses, the public, military facilities, schools
+        and government entities","description":"[NOTE THIS IS NOT A REAL ORGANIZATION--THIS
+        IS FOR TESTTING PURPOSES OF THIS ALPHA APP] Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Praesent suscipit metus eu orci lobortis dictum. In hac habitasse
+        platea dictumst. Vivamus vulputate, neque ut sodales gravida, lorem nunc pharetra
+        ligula, ac cursus sem justo a sapien. Duis vitae vestibulum magna. Sed vel
+        augue in justo rhoncus viverra. Nam ac felis a purus lobortis porttitor sit
+        amet quis est. Suspendisse vulputate nisl quis nisi fermentum aliquet euismod
+        at augue. Sed ultricies, purus dapibus tristique dictum, tortor mauris porttitor
+        nulla, at porta nisl sem sed dolor. Proin ac hendrerit erat. Duis porta iaculis
+        orci, eu euismod quam tristique in. Phasellus nec purus sit amet sapien volutpat
+        egestas.","eligibility":"None","fees":"None, except for permits and photocopying.
+        Cash, checks and credit cards accepted","funding_sources":["City","County","Federal","State"],"keywords":["Ruby
+        on Rails/MongoDB/Redis","FIFA World Cup"],"how_to_apply":"Walk in or apply
+        by phone or mail","name":"hasdfasf","service_areas":["San Mateo County","Alameda
+        County","Contra Costa County","Marin County","San Francisco County","Santa
+        Clara County"],"urls":["http://www.example.com","http://www.example2.com"],"wait":"No
+        wait to 2 weeks","updated_at":"2014-04-18T12:49:47.850-07:00"}],"organization":{"id":8,"name":"SanMaceo
+        Example Agency.","slug":"sanmaceo-example-agency","url":"http://ohana-api-test.herokuapp.com/api/organizations/8","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/8/locations"}},{"id":21,"accessibility":["Disabled
+        Restroom"],"address":{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"id":37,"name":"Moncef
+        Belyamani-Belyamani","title":"Director of Development and Operations","phone":"703-555-1212","email":"moncefbelyamani@samaritanhousesanmateo.org","fax":"703-555-1234"}],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","emails":["eml@example.org"],"faxes":[{"id":31,"number":"2025551212","department":"CalFresh"}],"name":"Admin
+        Test Location","phones":[{"id":30,"department":"CalFresh","extension":"x1223","number":"7035551212","vanity_number":"703555-ABCD"}],"short_desc":"This
+        is a short description","slug":"admin-test-location","updated_at":"2014-05-29T13:18:18.803-07:00","urls":["http://codeforamerica.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/21","services":[{"id":21,"service_areas":["Atherton"],"updated_at":"2014-05-29T13:18:18.783-07:00"}],"organization":{"id":7,"name":"Admin
+        Test Org","slug":"admin-test-org","url":"http://ohana-api-test.herokuapp.com/api/organizations/7","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/7/locations"}},{"id":20,"description":"no
+        phone","mail_address":{"id":20,"attention":"","street":"puma","city":"fairfax","state":"VA","zip":"22031"},"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","updated_at":"2014-05-29T13:17:51.613-07:00","url":"http://ohana-api-test.herokuapp.com/api/locations/20","services":[{"id":20,"updated_at":"2014-05-29T13:17:51.605-07:00"}],"organization":{"id":6,"name":"Location
+        with no phone","slug":"location-with-no-phone","url":"http://ohana-api-test.herokuapp.com/api/organizations/6","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/6/locations"}},{"id":19,"accessibility":["Elevator","Ramp","Wheelchair"],"address":{"id":19,"street":"19
+        West 39th Avenue","city":"San Mateo","state":"CA","zip":"94403"},"contacts":[{"id":27,"name":"Sharon
+        Petersen","title":"Administrator"}],"coordinates":[-122.2931236,37.5326941],"description":"Provides
+        free medical and dental care to those in need. Offers basic medical care for
+        adults.","emails":["smcmed@samaritanhouse.com"],"faxes":[{"id":19,"number":"650
+        578-0440"}],"hours":"Monday-Friday, 9-12, 1-4","languages":["Spanish"],"mail_address":{"id":19,"attention":"San
+        Mateo Free Medical/Dental","street":"19 West 39th Avenue","city":"San Mateo","state":"CA","zip":"94403"},"name":"San
+        Mateo Free Medical Clinic","phones":[{"id":19,"number":"650 578-0400"}],"short_desc":"Provides
+        free medical and dental care to those in need. Offers basic medical care for
+        adults.","slug":"san-mateo-free-medical-clinic","transportation":"SAMTRANS
+        stops within 1 block.","updated_at":"2014-05-29T13:16:30.504-07:00","urls":["http://www.samaritanhouse.com"],"url":"http://ohana-api-test.herokuapp.com/api/locations/19","services":[{"id":19,"eligibility":"Low-income
+        person without access to health care","fees":"None.","funding_sources":["Donations","Grants"],"keywords":["HEALTH
+        SERVICES","Outpatient Care","Community Clinics"],"how_to_apply":"Call for
+        screening appointment (650-347-3648).","service_areas":["Belmont","Burlingame","Foster
+        City","Millbrae","San Carlos","San Mateo"],"wait":"Varies.","updated_at":"2014-04-18T12:32:11.921-07:00"}],"organization":{"id":5,"name":"Samaritan
+        House","slug":"samaritan-house","url":"http://ohana-api-test.herokuapp.com/api/organizations/5","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/5/locations"}},{"id":18,"accessibility":["Disabled
+        Restroom","Wheelchair"],"address":{"id":18,"street":"114 Fifth Avenue","city":"Redwood
+        City","state":"CA","zip":"94063"},"contacts":[{"id":26,"name":"Sharon Petersen","title":"Administrator"}],"coordinates":[-122.207057,37.468678],"description":"Provides
+        free medical care to those in need. Offers basic medical exams for adults
+        and tuberculosis screening. Assists the individual to access other services
+        in the community. By appointment only, Project Smile provides a free dental
+        exam, dental cleaning and oral hygiene instruction for children, age 3-12,
+        of Samaritan House clients.","emails":["gracie@samaritanhouse.com"],"faxes":[{"id":18,"number":"650
+        839-1457"}],"hours":"Monday-Friday, 9-12, 2-5","languages":["Spanish"],"mail_address":{"id":18,"attention":"Redwood
+        City Free Medical Clinic","street":"114 Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"name":"Redwood
+        City Free Medical Clinic","phones":[{"id":18,"number":"650 839-1447"}],"short_desc":"Provides
+        free medical care to those in need.","slug":"redwood-city-free-medical-clinic","transportation":"SAMTRANS
+        stops within 2 blocks.","updated_at":"2014-05-09T20:49:18.967-07:00","urls":["http://www.samaritanhouse.com"],"url":"http://ohana-api-test.herokuapp.com/api/locations/18","services":[{"id":18,"eligibility":"Low-income
+        person without access to health care","fees":"None.","funding_sources":["Donations","Grants"],"keywords":["HEALTH
+        SERVICES","Outpatient Care","Community Clinics"],"how_to_apply":"Call for
+        screening appointment. Medical visits are by appointment only.","service_areas":["Atherton","East
+        Palo Alto","Menlo Park","Redwood City","San Carlos"],"wait":"Varies.","updated_at":"2014-04-18T12:32:10.649-07:00"}],"organization":{"id":5,"name":"Samaritan
+        House","slug":"samaritan-house","url":"http://ohana-api-test.herokuapp.com/api/organizations/5","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/5/locations"}},{"id":17,"accessibility":["Wheelchair"],"address":{"id":17,"street":"409
+        South Spruce Avenue","city":"South San Francisco","state":"CA","zip":"94080"},"contacts":[{"id":25,"name":"Kenneth
+        Gibson","title":"Major"}],"coordinates":[-122.4224905,37.6445898],"description":"Provides
+        emergency food, clothing and furniture vouchers to low-income families in
+        times of crisis.   Administers Project REACH (Relief for Energy Assistance
+        through Community Help) funds to prevent energy shut-off through a one-time
+        payment. Offers a Saturday morning Homeless Feeding Program at 10:30, as well
+        as Sunday services and spiritual counseling. Provides Christmas toys and Back-to-School
+        clothes and supplies. Offers case management, advocacy and referrals to other
+        agencies.","faxes":[{"id":16,"number":"650 266-2594"},{"id":17,"number":"650
+        266-4594"}],"hours":"Monday-Thursday, 9-4:30","mail_address":{"id":17,"attention":"Salvation
+        Army","street":"409 South Spruce Avenue","city":"South San Francisco","state":"CA","zip":"94080"},"name":"South
+        San Francisco Citadel Corps","phones":[{"id":17,"number":"650 266-4591"}],"short_desc":"Provides
+        emergency food and clothing and furniture vouchers to low-income families
+        in times of crisis.","slug":"south-san-francisco-citadel-corps","transportation":"SAMTRANS
+        stops within 1 block, BART stops within 3 blocks.","updated_at":"2014-05-09T20:49:18.961-07:00","urls":["http://www.tsagoldenstate.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/17","services":[{"id":17,"eligibility":"Low-income
+        families","fees":"None.","funding_sources":["Donations"],"keywords":["COMMODITY
+        SERVICES","Clothing/Personal Items","COMMUNITY SERVICES","Information and
+        Referral","EMERGENCY SERVICES","Food Boxes/Food Vouchers","FINANCIAL ASSISTANCE
+        SERVICES","Utilities","Emergency Food","Food Pantries","Furniture","Clothing","Utility
+        Assistance","School Supplies","Case/Care Management","Holiday Programs","Pastoral
+        Counseling","Low Income"],"how_to_apply":"Call for information.","service_areas":["Brisbane","Colma","Daly
+        City","Millbrae","Pacifica","San Bruno","South San Francisco"],"updated_at":"2014-04-18T12:32:09.357-07:00"}],"organization":{"id":4,"name":"Salvation
+        Army","slug":"salvation-army","url":"http://ohana-api-test.herokuapp.com/api/organizations/4","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/4/locations"}},{"id":16,"address":{"id":16,"street":"1161
+        South Bernardo","city":"Sunnyvale","state":"CA","zip":"94087"},"contacts":[{"id":24,"name":"James
+        Lee","title":"Commanding Officer"}],"coordinates":[-122.0600024,37.3569004],"description":"Provides
+        emergency assistance including food and clothing for persons in immediate
+        need. Provides PG\u0026E assistance through REACH program. Youth programs
+        offer tutoring, music and troops. Information on related resources is available.
+        Also provides rental assistance when funds are available.","emails":["william_nichols@usw.salvationarmy.org"],"faxes":[{"id":15,"number":"408
+        720-8075"}],"hours":"Monday-Friday, 9-4","languages":["Korean"],"mail_address":{"id":16,"attention":"Salvation
+        Army","street":"P.O. Box 61868","city":"Sunnyvale","state":"CA","zip":"94088"},"name":"Sunnyvale
+        Corps","phones":[{"id":16,"number":"408 720-0420"}],"short_desc":"Provides
+        emergency assistance to persons in immediate need and offers after school
+        activities and summer day camp program.","slug":"sunnyvale-corps","transportation":"VTA
+        stops within 4 blocks.","updated_at":"2014-05-09T20:49:18.955-07:00","url":"http://ohana-api-test.herokuapp.com/api/locations/16","services":[{"id":16,"eligibility":"None
+        for emergency assistance","fees":"None for emergency services. Vary for after
+        school activities. Cash and checks accepted.","funding_sources":["Donations","Fees","Grants"],"keywords":["COMMODITY
+        SERVICES","Clothing/Personal Items","CHILD PROTECTION AND CARE SERVICES","Day
+        Care","COMMUNITY SERVICES","Information and Referral","EMERGENCY SERVICES","Food
+        Boxes/Food Vouchers","FINANCIAL ASSISTANCE SERVICES","Utilities","RECREATION/LEISURE
+        SERVICES","Camping","Emergency Food","Clothing","Utility Assistance","Youth
+        Development"],"how_to_apply":"Walk in. Written application, identification
+        required for emergency assistance.","service_areas":["Los Altos","Mountain
+        View","Sunnyvale"],"wait":"No wait.","updated_at":"2014-04-18T12:32:08.629-07:00"}],"organization":{"id":4,"name":"Salvation
+        Army","slug":"salvation-army","url":"http://ohana-api-test.herokuapp.com/api/organizations/4","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/4/locations"}},{"id":15,"accessibility":["Wheelchair"],"address":{"id":15,"street":"1500
+        Valencia Street","city":"San Francisco","state":"CA","zip":"94110"},"contacts":[{"id":23,"name":"Jack
+        Phillips","title":"Administrator"}],"coordinates":[-122.4203671,37.7488993],"description":"Provides
+        a long-term (6-12 month) residential rehabilitation program for men and women
+        with substance abuse and other problems. Residents receive individual counseling,
+        and drug and alcohol education. The spiritual side of recovery is address_attributesed
+        through chapel services and Bible study as well as 12-step programs. Nicotine
+        cessation is a part of the program.   Residents must be physically able to
+        work, seeking treatment for substance abuse, sober long enough to pass urine
+        drug screen before entering and agreeable to participating in weekly 12-step
+        programs such as Alcoholics Anonymous or Narcotics Anonymous. Pinehurst Lodge
+        is a separate facility for women only. Transition houses for men and women
+        graduates also available.","faxes":[{"id":14,"number":"415 285-1391"}],"hours":"Monday-Friday,
+        8-4","languages":["Spanish"],"mail_address":{"id":15,"attention":"Adult Rehabilitation
+        Center","street":"1500 Valencia Street","city":"San Francisco","state":"CA","zip":"94110"},"name":"Adult
+        Rehabilitation Center","phones":[{"id":15,"number":"415 643-8000"}],"short_desc":"Long-term
+        (6-12 month) residential treatment program for men/women age 21-60.","slug":"adult-rehabilitation-center","transportation":"MUNI
+        - 26 Valencia, Mission Street lines.","updated_at":"2014-05-09T20:49:18.949-07:00","url":"http://ohana-api-test.herokuapp.com/api/locations/15","services":[{"id":15,"audience":"Adult
+        alcoholic/drug addictive men and women with social and spiritual problems","eligibility":"Age
+        21-60, detoxed, physically able and willing to participate in a work therapy
+        program","fees":"None.","funding_sources":["Donations","Sales"],"keywords":["ALCOHOLISM
+        SERVICES","Residential Care","DRUG ABUSE SERVICES"],"how_to_apply":"Walk in
+        or through other agency referral.","service_areas":["Alameda County","Contra
+        Costa County","Marin County","San Francisco County","San Mateo County","Santa
+        Clara County","Northern California"],"wait":"Varies according to available
+        beds for men and women. Women have a longer wait due to small number of beds
+        statewide.","updated_at":"2014-04-18T12:32:07.564-07:00"}],"organization":{"id":4,"name":"Salvation
+        Army","slug":"salvation-army","url":"http://ohana-api-test.herokuapp.com/api/organizations/4","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/4/locations"}},{"id":14,"accessibility":["Wheelchair"],"address":{"id":14,"street":"660
+        Veterans Blvd.","city":"Redwood City","state":"CA","zip":"94063"},"contacts":[{"id":22,"name":"Andres
+        Espinoza","title":"Captain, Commanding Officer"}],"coordinates":[-122.231539,37.49144],"description":"Provides
+        food, clothing, bus tokens and shelter to individuals and families in times
+        of crisis from the Redwood City Corps office and community centers throughout
+        the county.   Administers Project REACH (Relief for Energy Assistance through
+        Community Help) funds to prevent energy shut-off through a one-time payment.
+        Counseling and translation services (English/Spanish) are available either
+        on a walk-in basis or by appointment. Rental assistance with available funds.
+        Another office (described separately) is located at 409 South Spruce Avenue,
+        South San Francisco (650-266-4591).","faxes":[{"id":13,"number":"650 364-1712"}],"languages":["Spanish"],"mail_address":{"id":14,"attention":"Salvation
+        Army","street":"P.O. Box 1147","city":"Redwood City","state":"CA","zip":"94064"},"name":"Redwood
+        City Corps","phones":[{"id":14,"number":"650 368-4643"}],"short_desc":"Provides
+        a variety of emergency services to low-income persons. Also sponsors recreational
+        and educational activities.","slug":"redwood-city-corps","transportation":"SAMTRANS
+        stops nearby.","updated_at":"2014-05-09T20:49:18.943-07:00","urls":["http://www.tsagoldenstate.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/14","services":[{"id":14,"audience":"Individuals
+        or families with low or no income and/or trying to obtain public assistance","eligibility":"None
+        for most services. For emergency assistance, must have low or no income and
+        be willing to apply for public assistance","fees":"None.","funding_sources":["Donations","Grants"],"keywords":["COMMUNITY
+        SERVICES","Interpretation/Translation","EMERGENCY SERVICES","Shelter/Refuge","FINANCIAL
+        ASSISTANCE SERVICES","Utilities","MENTAL HEALTH SERVICES","Individual/Group
+        Counseling","Food Pantries","Homeless Shelter","Rental Deposit Assistance","Utility
+        Service Payment Assistance"],"how_to_apply":"Call for appointment. Referral
+        from human service professional preferred for emergency assistance.","service_areas":["Atherton","Belmont","Burlingame","East
+        Palo Alto","Foster City","Menlo Park","Palo Alto","Portola Valley","Redwood
+        City","San Carlos","San Mateo","Woodside"],"wait":"Up to 20 minutes.","updated_at":"2014-04-18T12:32:06.596-07:00"}],"organization":{"id":4,"name":"Salvation
+        Army","slug":"salvation-army","url":"http://ohana-api-test.herokuapp.com/api/organizations/4","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/4/locations"}},{"id":13,"address":{"id":13,"street":"399
+        Marine Parkway.","city":"Redwood City","state":"CA","zip":"94065"},"contacts":[{"id":21,"name":"Dave
+        Genesy","title":"Library Director"}],"coordinates":[-122.2586432,37.5304228],"description":"Provides
+        general reading materials, including large-type books, videos, music cassettes
+        and CDs, and books on tape. Offers children''s programs and a Summer Reading
+        Club. Meeting room is available to nonprofit groups. Participates in the Peninsula
+        Library System.","mail_address":{"id":13,"attention":"Redwood Shores Branch","street":"399
+        Marine Parkway","city":"Redwood City","state":"CA","zip":"94065"},"name":"Redwood
+        Shores Branch","phones":[{"id":13,"number":"650 780-5740"}],"short_desc":"Provides
+        general reading materials and reference services.","slug":"redwood-shores-branch","updated_at":"2014-05-09T20:49:18.938-07:00","urls":["http://www.redwoodcity.org/library"],"url":"http://ohana-api-test.herokuapp.com/api/locations/13","services":[{"id":13,"eligibility":"Resident
+        of California to obtain a library card","fees":"None.","funding_sources":["City"],"keywords":["EDUCATION
+        SERVICES","Library","Libraries","Public Libraries"],"how_to_apply":"Walk in.
+        Proof of California residency required to receive a library card.","service_areas":["San
+        Mateo County"],"wait":"No wait.","updated_at":"2014-04-18T12:32:05.684-07:00"}],"organization":{"id":3,"name":"Redwood
+        City Public Library","slug":"redwood-city-public-library","url":"http://ohana-api-test.herokuapp.com/api/organizations/3","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/3/locations"}},{"id":12,"accessibility":["Elevator","Ramp","Disabled
+        Restroom","Disabled Parking"],"address":{"id":12,"street":"1044 Middlefield
+        Road, 2nd Floor","city":"Redwood City","state":"CA","zip":"94063"},"contacts":[{"id":20,"name":"Kathy
+        Endaya","title":"Director"}],"coordinates":[-122.227409,37.4837662],"description":"Offers
+        an intergenerational literacy program for youth and English-speaking adults
+        seeking to improver literacy skills. Adult services include: adult one-to-one
+        tutoring to improve basic skills in reading, writing and critical thinking;
+        Families for Literacy (FFL), a home-based family literacy program for parents
+        who want to be able to read to their young children; and small group/English
+        as a Second Language (ESL). Youth services include: Youth Tutoring, Families
+        in Partnership (FIP); Teen-to-Elementary Student Tutoring, Kids in Partnership
+        (KIP); and computer-aided literacy. Redwood City Friends of Literacy is a
+        fundraising board that helps to support and to fund Redwood City''s Project
+        Read. Call for more information about each service.","emails":["rclread@redwoodcity.org"],"faxes":[{"id":12,"number":"650
+        780-7004"}],"hours":"Monday-Thursday, 10-8:30; Friday, 10-5","mail_address":{"id":12,"attention":"Project
+        Read","street":"1044 Middlefield Road, 2nd Floor","city":"Redwood City","state":"CA","zip":"94063"},"name":"Project
+        Read","phones":[{"id":12,"number":"650 780-7077"}],"short_desc":"Offers an
+        intergenerational literacy program for adults and youth seeking to improver
+        literacy skills.","slug":"project-read","transportation":"SAMTRANS stops within
+        1 block.","updated_at":"2014-05-09T20:49:18.932-07:00","urls":["http://www.projectreadredwoodcity.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/12","services":[{"id":12,"audience":"Adults,
+        parents, children in 1st-12th grades in the Redwood City school districta","eligibility":"English-speaking
+        adult reading at or below 7th grade level or child in 1st-12th grade in the
+        Redwood City school districts","fees":"None.","funding_sources":["City","Donations","Federal","Grants","State"],"keywords":["EDUCATION
+        SERVICES","Adult","Alternative","Literacy","Literacy Programs","Libraries","Public
+        Libraries","Youth"],"how_to_apply":"Walk in or apply by phone, email or webpage
+        registration.","service_areas":["Redwood City"],"wait":"Depends on availability
+        of tutors for small groups and one-on-one.","updated_at":"2014-04-18T12:32:04.768-07:00"}],"organization":{"id":3,"name":"Redwood
+        City Public Library","slug":"redwood-city-public-library","url":"http://ohana-api-test.herokuapp.com/api/organizations/3","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/3/locations"}},{"id":11,"accessibility":["Ramp"],"address":{"id":11,"street":"2140
+        Euclid Avenue.","city":"Redwood City","state":"CA","zip":"94061"},"contacts":[{"id":18,"name":"Dave
+        Genesy","title":"Library Director"},{"id":19,"name":"Elizabeth Meeks","title":"Branch
+        Manager"}],"coordinates":[-122.2430898,37.466553],"description":"Provides
+        general reading materials, including large-type books, DVD''s and CDs, books
+        on CD and some Spanish language materials to children. Offers children''s
+        programs and a Summer Reading Club. Participates in the Peninsula Library
+        System.","faxes":[{"id":11,"number":"650 365-3738"}],"hours":"Tuesday-Thursday,
+        1-6, Saturday, 10-3","mail_address":{"id":11,"attention":"Schaberg Branch","street":"2140
+        Euclid Avenue","city":"Redwood City","state":"CA","zip":"94061"},"name":"Schaberg
+        Branch","phones":[{"id":11,"number":"650 780-7010"}],"short_desc":"Provides
+        general reading materials and reference services.","slug":"schaberg-branch","transportation":"SAMTRANS
+        stops within 1 block.","updated_at":"2014-05-09T20:49:18.926-07:00","url":"http://ohana-api-test.herokuapp.com/api/locations/11","services":[{"id":11,"eligibility":"Resident
+        of California to obtain a library card for borrowing materials","fees":"None.","funding_sources":["City"],"keywords":["EDUCATION
+        SERVICES","Library","Libraries","Public Libraries"],"how_to_apply":"Walk in.
+        Proof of California residency required to receive a library card.","service_areas":["San
+        Mateo County"],"wait":"No wait.","updated_at":"2014-04-18T12:32:03.606-07:00"}],"organization":{"id":3,"name":"Redwood
+        City Public Library","slug":"redwood-city-public-library","url":"http://ohana-api-test.herokuapp.com/api/organizations/3","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/3/locations"}},{"id":10,"accessibility":["Elevator","Information
+        on tape or in Braille","Ramp","Disabled Restroom","Disabled Parking","Wheelchair"],"address":{"id":10,"street":"1044
+        Middlefield Road","city":"Redwood City","state":"CA","zip":"94063"},"contacts":[{"id":16,"name":"Dave
+        Genesy","title":"Library Director"},{"id":17,"name":"Maria Kramer","title":"Library
+        Division Manager"}],"coordinates":[-122.227409,37.4837662],"description":"Provides
+        general reading and media materials, literacy and homework assistance, and
+        programs for all ages. Provides public computers, wireless connectivity, a
+        children''s room, teen center, and a local history collection. The library
+        is a member of the Peninsula Library System. The Fair Oaks Branch (650-780-7261)
+        is located at 2510 Middlefield Road and is open Monday-Thursday, 10-7; Friday,
+        10-5. The Schaberg Branch (650-780-7010) is located at 2140 Euclid Avenue
+        and is open Tuesday-Thursday, 1-6; Saturday, 10-3. The Redwood Shores Branch
+        (650-780-5740) is located at 399 Marine Parkway and is open Monday-Thursday,
+        10-8; Saturday, 10-5; Sunday 12-5.","emails":["rclinfo@redwoodcity.org"],"faxes":[{"id":10,"number":"650
+        780-7069"}],"hours":"Monday-Thursday, 10-9; Friday, Saturday, 10-5; Sunday,
+        12-5","languages":["Spanish"],"mail_address":{"id":10,"attention":"Main Library","street":"1044
+        Middlefield Road","city":"Redwood City","state":"CA","zip":"94063"},"name":"Main
+        Library","phones":[{"id":10,"department":"Circulation","number":"650 780-7018"}],"short_desc":"Provides
+        general reference and reading materials to adults, teenagers and children.","slug":"main-library","transportation":"SAMTRANS
+        stops within 1 block; CALTRAIN stops within 1 block.","updated_at":"2014-05-09T20:49:18.920-07:00","urls":["http://www.redwoodcity.org/library"],"url":"http://ohana-api-test.herokuapp.com/api/locations/10","services":[{"id":10,"eligibility":"Resident
+        of California to obtain a card","fees":"None.","funding_sources":["City"],"keywords":["EDUCATION
+        SERVICES","Library","Libraries","Public Libraries"],"how_to_apply":"Walk in.
+        Proof of California residency to receive a library card.","service_areas":["San
+        Mateo County"],"wait":"No wait.","updated_at":"2014-04-18T12:32:03.016-07:00"}],"organization":{"id":3,"name":"Redwood
+        City Public Library","slug":"redwood-city-public-library","url":"http://ohana-api-test.herokuapp.com/api/organizations/3","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/3/locations"}},{"id":9,"accessibility":["Ramp","Disabled
+        Restroom","Wheelchair"],"address":{"id":9,"street":"2510 Middlefield Road","city":"Redwood
+        City","state":"CA","zip":"94063"},"contacts":[{"id":14,"name":"Dave Genesy","title":"Library
+        Director"},{"id":15,"name":"Maria Kramer","title":"Library Divisions Manager"}],"coordinates":[-122.2141428,37.478502],"description":"Provides
+        general reading material, including bilingual, multi-cultural books, CDs and
+        cassettes, bilingual and Spanish language reference services. School, class
+        and other group visits may be arranged by appointment. The library is a member
+        of the Peninsula Library System.","faxes":[{"id":9,"number":"650 569-3371"}],"hours":"Monday-Thursday,
+        10-7; Friday, 10-5","languages":["Spanish"],"mail_address":{"id":9,"attention":"Fair
+        Oaks Branch","street":"2510 Middlefield Road","city":"Redwood City","state":"CA","zip":"94063"},"name":"Fair
+        Oaks Branch","phones":[{"id":9,"number":"650 780-7261"}],"short_desc":"Provides
+        general reading materials and reference services.","slug":"fair-oaks-branch","transportation":"SAMTRANS
+        stops in front.","updated_at":"2014-05-09T20:49:18.915-07:00","url":"http://ohana-api-test.herokuapp.com/api/locations/9","services":[{"id":9,"audience":"Ethnic
+        minorities, especially Spanish speaking","eligibility":"Resident of California
+        to obtain a library card","fees":"None.","funding_sources":["City","County"],"keywords":["EDUCATION
+        SERVICES","Library","Libraries","Public Libraries"],"how_to_apply":"Walk in.
+        Proof of residency in California required to receive a library card.","service_areas":["San
+        Mateo County"],"wait":"No wait.","updated_at":"2014-04-18T12:32:02.036-07:00"}],"organization":{"id":3,"name":"Redwood
+        City Public Library","slug":"redwood-city-public-library","url":"http://ohana-api-test.herokuapp.com/api/organizations/3","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/3/locations"}},{"id":8,"address":{"id":8,"street":"800
+        Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"contacts":[{"id":11,"name":"Marilyn
+        Baker-Venturini","title":"Director"},{"id":12,"name":"Graciela Hernandez","title":"Assistant
+        Manager"},{"id":13,"name":"Julie Avelino","title":"Assessment Specialist"}],"coordinates":[-122.1805905,37.4480204],"description":"Delivers
+        a hot meal to the home of persons age 60 or over who are primarily homebound
+        and unable to prepare their own meals, and have no one to prepare meals. Also,
+        delivers a hot meal to the home of disabled individuals ages 18-59. Meals
+        are delivered between 9 am-1:30 pm, Monday-Friday. Special diets are accommodated:
+        low fat, low sodium, and low sugar.","emails":["mbaker-venturini@peninsulavolunteers.org"],"faxes":[{"id":8,"number":"650
+        326-9547"}],"hours":"Delivery times: Monday-Friday, 9-1:30","languages":["Spanish"],"mail_address":{"id":8,"attention":"Meals
+        on Wheels - South County","street":"800 Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"name":"Meals
+        on Wheels - South County","phones":[{"id":8,"number":"650 323-2022"}],"short_desc":"Will
+        deliver a hot meal to the home of persons age 60 or over who are homebound
+        and unable to prepare their own meals. Can provide special diets.","slug":"meals-on-wheels-south-county","transportation":"Not
+        necessary for service.","updated_at":"2014-05-09T20:49:18.909-07:00","urls":["http://www.peninsulavolunteers.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/8","services":[{"id":8,"audience":"Senior
+        citizens age 60 or over, disabled individuals age 18-59","eligibility":"Homebound
+        person unable to cook or shop","fees":"Suggested donation of $4.25 per meal
+        for seniors 60 or over. Mandatory charge of $2 per meal for disabled individuals
+        ages 18-59.","funding_sources":["County","Donations"],"keywords":["ADULT PROTECTION
+        AND CARE SERVICES","Meal Sites/Home-delivered Mea","HEALTH SERVICES","Nutrition","Home
+        Delivered Meals","Older Adults","Disabilities Issues"],"how_to_apply":"Apply
+        by phone.","service_areas":["Atherton","Belmont","East Palo Alto","Menlo Park","Portola
+        Valley","Redwood City","San Carlos","Woodside"],"wait":"No wait.","updated_at":"2014-04-18T12:32:01.029-07:00"}],"organization":{"id":2,"name":"Peninsula
+        Volunteers","slug":"peninsula-volunteers","url":"http://ohana-api-test.herokuapp.com/api/organizations/2","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/2/locations"}},{"id":7,"accessibility":["Ramp","Disabled
+        Restroom","Disabled Parking","Wheelchair"],"address":{"id":7,"street":"500
+        Arbor Road","city":"Menlo Park","state":"CA","zip":"94025"},"contacts":[{"id":9,"name":"Bart
+        Charlow","title":"Executive Director, Peninsula Volunteers"},{"id":10,"name":"Barbara
+        Kalt","title":"Director"}],"coordinates":[-122.1830931,37.4441785],"description":"Rosener
+        House is a day center for older adults who may be unable to live independently
+        but do not require 24-hour nursing care, may be isolated and in need of a
+        planned activity program, may need assistance with activities of daily living
+        or are living in a family situation where the caregiver needs respite from
+        giving full-time care. Assists elderly persons to continue to live with family
+        or alone rather than moving to a skilled nursing facility. Activities are
+        scheduled Monday-Friday, 10 am-2:30 pm, and participants may come two to five
+        days per week. The facility is open from 8 am to 5:30 pm for participants
+        who need to remain all day. Small group late afternoon activities are held
+        from 3-5:30 pm.   The program provides a noon meal including special diets
+        as required. Services offered include social and therapeutic recreational
+        activities, individual and family counseling and occupational, physical and
+        speech therapy. A registered nurse is available daily. The Dementia and Alzheimer''s
+        Services Program provides specialized activities in a supportive environment
+        for participants with Alzheimer''s disease and other dementias. Holds a weekly
+        support group for caregivers.  An early memory loss class for independent
+        adults, \"Minds in Motion\" meets weekly at Rosener House on Wednesday mornings.
+        Call for more information.","emails":["bkalt@peninsulavolunteers.org","fmarchick@peninsulavolunteers.org"],"faxes":[{"id":7,"number":"650
+        322-4067"}],"hours":"Monday-Friday, 8-5:30","languages":["Spanish","Filipino
+        (Tagalog)","Vietnamese"],"mail_address":{"id":7,"attention":"Rosener House","street":"500
+        Arbor Road","city":"Menlo Park","state":"CA","zip":"94025"},"name":"Rosener
+        House Adult Day Services","phones":[{"id":7,"number":"650 322-0126"}],"short_desc":"A
+        day center for adults age 50 or over.","slug":"rosener-house-adult-day-services","transportation":"Transportation
+        can be arranged via Redi-Wheels or Outreach.","updated_at":"2014-05-09T20:49:18.903-07:00","urls":["http://www.penvol.org/rosenerhouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/7","services":[{"id":7,"audience":"Older
+        adults who have memory or sensory loss, mobility limitations and may be lonely
+        and in need of socialization","eligibility":"Age 18 or over","fees":"$85 per
+        day. Vary according to income for those unable to pay full fee. Cash, checks,
+        credit cards, private insurance and vouchers accepted.","funding_sources":["Donations","Fees","Grants"],"keywords":["ADULT
+        PROTECTION AND CARE SERVICES","Adult Day Health Care","Dementia Management","Adult
+        Day Programs","Older Adults"],"how_to_apply":"Apply by phone or be referred
+        by a doctor, social worker or other professional. All prospective participants
+        are interviewed individually before starting the program. A recent physical
+        examination is required, including a TB test.","service_areas":["Atherton","Belmont","Burlingame","East
+        Palo Alto","Los Altos","Los Altos Hills","Menlo Park","Mountain View","Palo
+        Alto","Portola Valley","Redwood City","San Carlos","San Mateo","Sunnyvale","Woodside"],"wait":"No
+        wait.","updated_at":"2014-04-18T12:32:00.074-07:00"}],"organization":{"id":2,"name":"Peninsula
+        Volunteers","slug":"peninsula-volunteers","url":"http://ohana-api-test.herokuapp.com/api/organizations/2","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/2/locations"}},{"id":6,"accessibility":["Disabled
+        Parking","Wheelchair"],"address":{"id":6,"street":"800 Middle Avenue","city":"Menlo
+        Park","state":"CA","zip":"94025-9881"},"contacts":[{"id":7,"name":"Peter Olson","title":"Little
+        House Director"},{"id":8,"name":"Bart Charlow","title":"Executive Director,
+        Peninsula Volunteers"}],"coordinates":[-122.1805905,37.4480204],"description":"A
+        multipurpose center offering a wide variety of recreational, education and
+        cultural activities. Lifelong learning courses cover topics such as music,
+        art, languages, etc., are hosted at this location. Little House offers a large
+        variety of classes including arts and crafts, jewelry, languages, current
+        events, lapidary, woodwork, painting, and fitness courses (yoga, strength
+        straining, tai chi). There are monthly art and cultural lectures, movie showings,
+        and a computer center. Recreation activities include mah jong, pinochle, ballroom
+        dancing, bridge, trips and tours. Partners with the Sequoia Adult Education
+        Program. The Alzheimer''s Cafe, open the third Tuesday of every month from
+        2:00 - 4:00 pm, is a place that brings together people liviing with dementia,
+        their families, and their caregivers. Free and no registration is needed.
+        The Little House Community Service Desk offers information and referrals regarding
+        social service issues, such as housing, food, transportation, health insurance
+        counseling, and estate planning. Massage, podiatry, and acupuncture are available
+        by appointment. Lunch is served Monday-Friday, 11:30 am-1:00 pm. Prices vary
+        according to selection.","emails":["polson@peninsulavolunteers.org"],"faxes":[{"id":6,"number":"650
+        326-9547"}],"hours":"Monday-Thursday, 8 am-9 pm; Friday, 8-5","languages":["Filipino
+        (Tagalog)","Spanish"],"mail_address":{"id":6,"attention":"Little House","street":"800
+        Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"name":"Little
+        House","phones":[{"id":6,"number":"650 326-2025"}],"short_desc":"A multipurpose
+        senior citizens'' center.","slug":"little-house","transportation":"SAMTRANS
+        stops within 3 blocks, RediWheels and Menlo Park Shuttle stop at door.","updated_at":"2014-05-29T13:13:44.082-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/6","services":[{"id":6,"audience":"Any
+        age","eligibility":"None","fees":"$55 per year membership dues. Classes have
+        fees. Discounts are available for members. Cash, checks and credit cards accepted.","funding_sources":["Fees","Fundraising","Grants","Membership
+        dues"],"keywords":["ADULT PROTECTION AND CARE SERVICES","In-Home Supportive","Meal
+        Sites/Home-delivered Meals","COMMUNITY SERVICES","Group Support","Information
+        and Referral","EDUCATION SERVICES","Adult","HEALTH SERVICES","Education/Information","Family
+        Support","Individual/Group Counseling","Screening/Immunization","RECREATION/LEISURE
+        SERVICES","Sports/Games/Exercise","Community Adult Schools","Senior Centers","Older
+        Adults"],"how_to_apply":"Walk in or apply by phone for membership application.","service_areas":["San
+        Mateo County","Santa Clara County"],"wait":"No wait.","updated_at":"2014-04-18T12:31:59.022-07:00"}],"organization":{"id":2,"name":"Peninsula
+        Volunteers","slug":"peninsula-volunteers","url":"http://ohana-api-test.herokuapp.com/api/organizations/2","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/2/locations"}},{"id":5,"accessibility":["Wheelchair"],"address":{"id":5,"street":"24
+        Second Avenue","city":"San Mateo","state":"CA","zip":"94401"},"contacts":[{"id":6,"name":"Joe
+        Bloom","title":"Financial Empowerment Programs Program Director"}],"coordinates":[-122.3263232,37.5639394],"description":"Provides
+        fixed 8% short term loans to eligible applicants for the purchase of a reliable,
+        used autmobile. Loans are up to $6,000 over 2 1/2 years (30 months). Funds
+        must go towards the entire purchase of the automobile. Peninsula Family Service
+        originates loans and collaborates with commercial partner banks to service
+        the loans, helping clients build credit histories. Formerly known as Family
+        Service Agency of San Mateo County, Ways to Work Family Loan Program.","emails":["waystowork@peninsulafamilyservice.org"],"faxes":[{"id":5,"number":"650
+        403-4303"}],"languages":["Hindi","Spanish"],"mail_address":{"id":5,"attention":"Economic
+        Self - Sufficiency Program","street":"24 Second Avenue","city":"San Mateo","state":"CA","zip":"94401"},"name":"Economic
+        Self - Sufficiency Program","phones":[{"id":5,"extension":"4100","number":"650
+        403-4300"}],"short_desc":"Makes small loans to working families.","slug":"economic-self-sufficiency-program","transportation":"SAMTRANS
+        stops within 1 block. CALTRAIN stops within 6 blocks.","updated_at":"2014-05-09T20:49:18.887-07:00","urls":["http://www.peninsulafamilyservice.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/5","services":[{"id":5,"audience":"Target
+        group: Low-income working families with children transitioning from welfare
+        to work and poor or who do not have access to conventional credit","eligibility":"Eligibility:
+        Low-income family with legal custody of a minor child or an involved parent
+        of a dependent minor child. Must reside and/or work in San Mateo County. Must
+        be working and have verifiable income and ability to pay off loan. No bankruptcies
+        in the past two years and unable to qualify for other funding sources. Loans
+        approved by loan committee.","fees":"$60 application fee. Cash or checks accepted.","funding_sources":["County","Grants","State"],"keywords":["COMMUNITY
+        SERVICES","Speakers","Automobile Loans"],"how_to_apply":"Phone for information.","service_areas":["San
+        Mateo County"],"updated_at":"2014-04-18T12:31:57.657-07:00"}],"organization":{"id":1,"name":"Peninsula
+        Family Service","slug":"peninsula-family-service","url":"http://ohana-api-test.herokuapp.com/api/organizations/1","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/1/locations"}},{"id":4,"accessibility":["Wheelchair"],"address":{"id":4,"street":"24
+        Second Avenue","city":"San Mateo","state":"CA","zip":"94401"},"contacts":[{"id":5,"name":"Kimberly
+        Pesavento","title":"Director of Visitation"}],"coordinates":[-122.3263232,37.5639394],"description":"Provides
+        supervised visitation services and a neutral site for parents to carry out
+        supervised exchanges of children in a safe manner. Therapeutic visitation
+        and other counseling services available. Kids in the Middle is an education
+        class for separating or divorcing parents. The goal is to enable parents to
+        focus on their children''s needs while the family is going through separation,
+        divorce or other transition. The class explores the psychological aspects
+        of divorce and its impact on children, builds effective communication techniques
+        and points out areas in which outside help may be indicated. The fee is $50
+        for working parents, $15 for unemployed people. Classes are scheduled on Saturdays
+        and Sundays and held at various sites throughout the county. Call 650-403-4300
+        ext. 4500 to register. Formerly known as Family Service Agency of San Mateo
+        County, Family Visitation Center.","emails":["kpesavento@peninsulafamilyservice.org"],"faxes":[{"id":4,"number":"650
+        403-4303"}],"hours":"Monday, 10-6; Tuesday-Friday, 10-8; Saturday, Sunday,
+        9:30-5:30","languages":["Spanish"],"mail_address":{"id":4,"attention":"PFS
+        Family Visitation Center","street":"24 Second Avenue","city":"San Mateo","state":"CA","zip":"94401"},"name":"Family
+        Visitation Center","phones":[{"id":4,"extension":"4500","number":"650 403-4300"}],"short_desc":"Provides
+        supervised visitation services and a neutral site for parents in extremely
+        hostile divorces to carry out supervised exchanges of children.","slug":"family-visitation-center","transportation":"SAMTRANS
+        stops within 1 block, CALTRAIN stops within 4 blocks.","updated_at":"2014-05-09T20:49:18.878-07:00","urls":["http://www.peninsulafamilyservice.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/4","services":[{"id":4,"audience":"Parents,
+        children, families with problems of custody disputes, domestic violence or
+        substance abuse, families going through a separation or divorce","eligibility":"None","fees":"Vary
+        according to income ($5-$90). Cash, checks and credit cards accepted.","funding_sources":["County","Donations","Grants"],"keywords":["INDIVIDUAL
+        AND FAMILY DEVELOPMENT SERVICES","Growth and Adjustment","LEGAL AND CRIMINAL
+        JUSTICE SERVICES","Mediation","Parental Visitation Monitoring","Divorce Counseling","Youth"],"how_to_apply":"Apply
+        by phone.","service_areas":["San Mateo County"],"wait":"No wait.","updated_at":"2014-04-18T12:31:56.923-07:00"}],"organization":{"id":1,"name":"Peninsula
+        Family Service","slug":"peninsula-family-service","url":"http://ohana-api-test.herokuapp.com/api/organizations/1","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/1/locations"}},{"id":3,"address":{"id":3,"street":"24
+        Second Avenue","city":"San Mateo","state":"CA","zip":"94403"},"contacts":[{"id":4,"name":"Howard
+        Lader, LCSW","title":"Manager, Senior Peer Counseling"}],"coordinates":[-122.3263232,37.5639394],"description":"Offers
+        supportive counseling services to San Mateo County residents age 55 or over.
+        Volunteer counselors are selected and professionally trained to help their
+        peers face the challenges and concerns of growing older.  Training provides
+        topics that include understanding depression, cultural competence, sexuality,
+        community resources, and other subjects that are relevant to working with
+        older adults. After completion of training, weekly supervision groups are
+        provided for the volunteer senior peer counselors, as well as quarterly in-service
+        training seminars. Peer counseling services are provided in English, Spanish,
+        Chinese (Cantonese and Mandarin), Tagalog, and to the lesbian, gay, bisexual,
+        transgender older adult community. Formerly known as Family Service Agency
+        of San Mateo County, Senior Peer Counseling.","faxes":[{"id":3,"number":"650
+        403-4303"}],"hours":"Any time that is convenient for the client and peer counselor","languages":["Chinese
+        (Cantonese)","Chinese (Mandarin)","Filipino (Tagalog)","Spanish"],"mail_address":{"id":3,"attention":"PFS
+        Senior Peer Counseling","street":"24 Second Avenue","city":"San Mateo","state":"CA","zip":"94403"},"name":"Senior
+        Peer Counseling","phones":[{"id":3,"department":"English","number":"650 403-4300"}],"short_desc":"Offers
+        supportive counseling services to older persons.","slug":"senior-peer-counseling","transportation":"Service
+        is provided in person''s home or at a mutually agreed upon location.","updated_at":"2014-05-09T20:49:18.871-07:00","url":"http://ohana-api-test.herokuapp.com/api/locations/3","services":[{"id":3,"audience":"Older
+        adults age 55 or over who can benefit from counseling","eligibility":"Resident
+        of San Mateo County age 55 or over","fees":"None.","funding_sources":["County","Donations","Grants"],"keywords":["Geriatric
+        Counseling","Older Adults","Gay, Lesbian, Bisexual, Transgender Individuals"],"how_to_apply":"Phone
+        for information (403-4300 Ext. 4322).","service_areas":["San Mateo County"],"wait":"Varies.","updated_at":"2014-04-18T12:31:56.008-07:00"}],"organization":{"id":1,"name":"Peninsula
+        Family Service","slug":"peninsula-family-service","url":"http://ohana-api-test.herokuapp.com/api/organizations/1","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/1/locations"}},{"id":2,"accessibility":["Wheelchair"],"address":{"id":2,"street":"24
+        Second Avenue","city":"San Mateo","state":"CA","zip":"94401"},"contacts":[{"id":3,"name":"Brenda
+        Brown","title":"Director, Second Career Services"}],"coordinates":[-122.3263232,37.5639394],"description":"Provides
+        training and job placement to eligible people age 55 or over who meet certain
+        income qualifications. An income of 125% of poverty level or less is required
+        for subsidized employment and training. (No income requirements for job matchup
+        program.) If a person seems likely to be qualified after a preliminary phone
+        call or visit, he or she must complete an application at this office. Staff
+        will locate appropriate placements for applicants, provide orientation and
+        on-the-job training and assist with finding a job outside the program. Any
+        county resident, regardless of income, age 55 or over has access to the program,
+        job developers and the job bank. Also provides referrals to classroom training.
+        Formerly known as Family Service Agency of San Mateo County, Senior Employment
+        Services.","emails":["bbrown@peninsulafamilyservice.org"],"faxes":[{"id":2,"number":"650
+        403-4302"}],"hours":"Monday-Friday, 9-5","languages":["Chinese (Mandarin)","Filipino
+        (Tagalog)","Italian","Spanish"],"mail_address":{"id":2,"attention":"PFS Second
+        Career Services","street":"24 Second Avenue","city":"San Mateo","state":"CA","zip":"94401"},"name":"Second
+        Career Employment Program","phones":[{"id":2,"extension":"Ext. 4385","number":"650
+        403-4300"}],"short_desc":"Provides training and job placement to eligible
+        persons age 55 or over. All persons age 55 or over have access to information
+        in the program''s job bank.","slug":"second-career-employment-program","transportation":"SAMTRANS
+        stops within 1 block, CALTRAIN stops within 6 blocks.","updated_at":"2014-05-09T20:49:18.857-07:00","urls":["http://www.peninsulafamilyservice.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/2","services":[{"id":2,"audience":"Residents
+        of San Mateo County age 55 or over","eligibility":"Age 55 or over, county
+        resident and willing and able to work. Income requirements vary according
+        to program","fees":"None. Donations requested of clients who can afford it.","funding_sources":["County","Federal","State"],"keywords":["EMPLOYMENT/TRAINING
+        SERVICES","Job Development","Job Information/Placement/Referral","Job Training","Job
+        Training Formats","Job Search/Placement","Older Adults"],"how_to_apply":"Apply
+        by phone for an appointment.","service_areas":["San Mateo County"],"wait":"Varies.","updated_at":"2014-04-18T12:31:55.106-07:00"}],"organization":{"id":1,"name":"Peninsula
+        Family Service","slug":"peninsula-family-service","url":"http://ohana-api-test.herokuapp.com/api/organizations/1","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/1/locations"}},{"id":1,"accessibility":["Ramp","Disabled
+        Restroom","Disabled Parking","Wheelchair"],"address":{"id":1,"street":"2600
+        Middlefield Road","city":"Redwood City","state":"CA","zip":"94063"},"contacts":[{"id":1,"name":"Susan
+        Houston","title":"Director of Older Adult Services"},{"id":2,"name":"Christina
+        Gonzalez","title":"Center Director"}],"coordinates":[-122.213221,37.477227],"description":"A
+        walk-in center for older adults that provides social services, wellness, recreational,
+        educational and creative activities including arts and crafts, computer classes
+        and gardening classes. Coffee and healthy breakfasts are available daily.
+        A hot lunch is served Tuesday-Friday for persons age 60 or over and spouse.        Provides
+        case management (including in-home assessments) and bilingual information
+        and referral about community services to persons age 60 or over on questions
+        of housing, employment, household help, recreation and social activities,
+        home delivered meals, health and counseling services and services to shut-ins.
+        Health insurance and legal counseling is available by appointment. Lectures
+        on a variety of health and fitness topics are held monthly in both English
+        and Spanish.  Provides a variety of physical fitness opportunities, including
+        a garden club, yoga, tai chi, soul line dance and aerobics classes geared
+        toward older adults. Also provides free monthly blood pressure screenings,
+        quarterly blood glucose monitoring and health screenings by a visiting nurse.
+        Offers a Brown Bag Program in which low-income seniors can receive a bag of
+        groceries each week for a membership fee of $10 a year. Offers Spanish lessons.
+        Formerly known as Peninsula Family Service, Fair Oaks Intergenerational Center.
+        Formerly known as the Fair Oaks Senior Center. Formerly known as Family Service
+        Agency of San Mateo County, Fair Oaks Intergenerational Center.","emails":["cgonzalez@peninsulafamilyservice.org"],"faxes":[{"id":1,"number":"650
+        701-0856"}],"hours":"Monday-Friday, 9-5","languages":["Filipino (Tagalog)","Spanish"],"mail_address":{"id":1,"attention":"Fair
+        Oaks Intergenerational Center","street":"2600 Middlefield Road","city":"Redwood
+        City","state":"CA","zip":"94063"},"name":"Fair Oaks Adult Activity Center","phones":[{"id":1,"number":"650
+        780-7525"}],"short_desc":"A multipurpose senior citizens'' center serving
+        the Redwood City area.","slug":"fair-oaks-adult-activity-center","transportation":"SAMTRANS
+        stops in front.","updated_at":"2014-05-09T20:49:18.836-07:00","urls":["http://www.peninsulafamilyservice.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/1","services":[{"id":1,"audience":"Older
+        adults age 55 or over, ethnic minorities and low-income persons","eligibility":"Age
+        55 or over for most programs, age 60 or over for lunch program","fees":"$2.50
+        suggested donation for lunch for age 60 or over, donations for other services
+        appreciated. Cash and checks accepted.","funding_sources":["City","County","Donations","Fees","Fundraising"],"keywords":["ADULT
+        PROTECTION AND CARE SERVICES","Meal Sites/Home-delivered Mea","COMMUNITY SERVICES","Group
+        Support","Information and Referral","EDUCATION SERVICES","English Language","RECREATION/LEISURE
+        SERVICES","Arts and Crafts","Sports/Games/Exercise","Brown Bag Food Programs","Congregate
+        Meals/Nutrition Sites","Senior Centers","Older Adults"],"how_to_apply":"Walk
+        in or apply by phone.","service_areas":["Redwood City"],"wait":"No wait.","updated_at":"2014-04-18T12:31:54.284-07:00"}],"organization":{"id":1,"name":"Peninsula
+        Family Service","slug":"peninsula-family-service","url":"http://ohana-api-test.herokuapp.com/api/organizations/1","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/1/locations"}}]'
+    http_version: 
+  recorded_at: Thu, 29 May 2014 20:18:21 GMT
+recorded_with: VCR 2.9.2
