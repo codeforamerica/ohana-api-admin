@@ -38,6 +38,8 @@ group :test do
   #gem "capybara-webkit"
   #gem 'poltergeist'
   gem 'selenium-webdriver'
+  gem 'vcr', '>= 2.9.0'
+  gem 'webmock', '>= 1.17.4'
 end
 
 gem "ohanakapa", "~> 1.0"

@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a location's contacts" do
+feature "Update a location's contacts", :vcr do
   background do
     login_admin
   end
@@ -107,5 +107,4 @@ feature "Update a location's contacts" do
     click_button "Save changes"
     expect(page).to have_content "Please enter a contact name"
   end
-
 end

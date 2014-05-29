@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a location's name" do
+feature "Update a location's name", :vcr do
   background do
     login_admin
   end

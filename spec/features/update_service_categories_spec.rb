@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a service's categories" do
+feature "Update a service's categories", :vcr do
   background do
     login_admin
   end

@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a service's eligibility" do
+feature "Update a service's eligibility", :vcr do
   background do
     login_admin
   end

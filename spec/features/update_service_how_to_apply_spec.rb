@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a service's how to apply" do
+feature "Update a service's how to apply", :vcr do
   background do
     login_admin
   end

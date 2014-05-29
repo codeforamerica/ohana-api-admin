@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Accessing a specific location" do
+feature "Accessing a specific location", :vcr do
   scenario "when location doesn't include generic email" do
     user = create(:second_user)
     login_user(user)

@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a service's funding sources" do
+feature "Update a service's funding sources", :vcr do
   background do
     login_admin
   end

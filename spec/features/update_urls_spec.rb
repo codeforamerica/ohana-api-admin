@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a location's websites" do
+feature "Update a location's websites", :vcr do
   background do
     login_admin
   end
@@ -46,7 +46,7 @@ feature "Update a location's websites" do
     visit_test_location
     find_field('urls[]').value.should eq "http://codeforamerica.org"
   end
-  
+
   scenario "when editing a location that already has a website" do
     visit_test_location
     page.should have_selector(

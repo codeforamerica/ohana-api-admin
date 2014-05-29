@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a location's short description" do
+feature "Update a location's short description", :vcr do
   background do
     login_admin
   end

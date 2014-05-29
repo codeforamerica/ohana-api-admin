@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a service's fees" do
+feature "Update a service's fees", :vcr do
   background do
     login_admin
   end

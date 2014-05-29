@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a location's admins" do
+feature "Update a location's admins", :vcr do
   background do
     login_admin
   end

@@ -1,6 +1,6 @@
-  require "spec_helper"
+require "spec_helper"
 
-feature "Accessing /locations" do
+feature "Accessing /locations", :vcr do
   # The 'sign_in' method is defined in spec/support/features/session_helpers.rb
   scenario "when signed in as valid regular user" do
     valid_user = create(:user)

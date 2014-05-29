@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Delete a location's contacts" do
+feature "Delete a location's contacts", :vcr do
   background do
     login_admin
   end

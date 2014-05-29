@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update a location's transportation options" do
+feature "Update a location's transportation options", :vcr do
   background do
     login_admin
   end

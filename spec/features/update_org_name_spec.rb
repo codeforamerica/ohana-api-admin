@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Update an organization's name" do
+feature "Update an organization's name", :vcr do
   background do
     login_admin
   end

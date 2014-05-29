@@ -1,6 +1,6 @@
 require "spec_helper"
 
-feature "Delete a location's fax numbers" do
+feature "Delete a location's fax numbers", :vcr do
   background do
     login_admin
   end
