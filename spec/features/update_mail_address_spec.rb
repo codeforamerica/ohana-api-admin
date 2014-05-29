@@ -5,7 +5,7 @@ feature "Update a location's mailing address", :vcr do
     login_admin
   end
 
-  scenario "by adding a new mailing address", js: true do
+  scenario "by adding a new mailing address", :js do
     visit_test_location
     click_link "Add a mailing address"
     add_mail_address
@@ -22,7 +22,7 @@ feature "Update a location's mailing address", :vcr do
       :xpath, "//input[@type='text' and @name='m_street']")
   end
 
-  scenario "with an empty street", js: true do
+  scenario "with an empty street", :js do
     visit_test_location
     click_link "Add a mailing address"
     fill_in "m_street", with: ""
@@ -33,7 +33,7 @@ feature "Update a location's mailing address", :vcr do
     expect(page).to have_content "Please enter a street"
   end
 
-  scenario "with an empty city", js: true do
+  scenario "with an empty city", :js do
     visit_test_location
     click_link "Add a mailing address"
     fill_in "m_street", with: "123"
@@ -44,7 +44,7 @@ feature "Update a location's mailing address", :vcr do
     expect(page).to have_content "Please enter a city"
   end
 
-  scenario "with an empty state", js: true do
+  scenario "with an empty state", :js do
     visit_test_location
     click_link "Add a mailing address"
     fill_in "m_street", with: "123"
@@ -55,7 +55,7 @@ feature "Update a location's mailing address", :vcr do
     expect(page).to have_content "Please enter a state abbreviation"
   end
 
-  scenario "with an empty zip", js: true do
+  scenario "with an empty zip", :js do
     visit_test_location
     click_link "Add a mailing address"
     fill_in "m_street", with: "123"
@@ -66,7 +66,7 @@ feature "Update a location's mailing address", :vcr do
     expect(page).to have_content "Please enter a ZIP code"
   end
 
-  scenario "with an invalid state", js: true do
+  scenario "with an invalid state", :js do
     visit_test_location
     click_link "Add a mailing address"
     fill_in "m_street", with: "123"
@@ -77,7 +77,7 @@ feature "Update a location's mailing address", :vcr do
     expect(page).to have_content "Please enter a valid state abbreviation"
   end
 
-  scenario "with an invalid zip", js: true do
+  scenario "with an invalid zip", :js do
     visit_test_location
     click_link "Add a mailing address"
     fill_in "m_street", with: "123"

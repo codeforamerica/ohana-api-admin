@@ -27,7 +27,7 @@ feature "Accessing /locations", :vcr do
       to have_content 'You need to sign in or sign up before continuing.'
   end
 
-  context "when signed in as location admin", js: true do
+  context "when signed in as location admin", :js do
     it "should display the add new location button" do
       new_admin = create(:second_user)
       set_user_as_admin(new_admin.email, "San Mateo Free Medical Clinic")
@@ -36,7 +36,7 @@ feature "Accessing /locations", :vcr do
       visit("/locations")
       expect(page).to have_link "Add a new location"
       visit("/san-mateo-free-medical-clinic")
-      delete_all_admins
+      delete_admin
     end
   end
 end

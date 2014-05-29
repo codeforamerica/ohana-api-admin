@@ -22,16 +22,16 @@ feature "Accessing a specific location", :vcr do
     expect(page).to_not have_content "Sorry, you don't have access to that page"
   end
 
-  scenario "when user is location admin", js: true do
+  scenario "when user is location admin", :js do
     new_admin = create(:second_user)
     set_user_as_admin(new_admin.email, "San Mateo Free Medical Clinic")
     login_user(new_admin)
     visit("/san-mateo-free-medical-clinic")
     expect(page).to_not have_content "Sorry, you don't have access to that page"
-    delete_all_admins
+    delete_admin
   end
 
-  scenario "when user is location admin but has non-generic email", js: true do
+  scenario "when user is location admin but has non-generic email", :js do
     new_admin = create(:user)
     set_user_as_admin(new_admin.email, "Little House")
     sign_in(new_admin.email, new_admin.password)
@@ -40,7 +40,7 @@ feature "Accessing a specific location", :vcr do
     click_link "Sign out"
     sign_in(@admin.email, @admin.password)
     visit("/little-house")
-    delete_all_admins
+    delete_admin
     click_link "Sign out"
   end
 

@@ -11,18 +11,18 @@ feature "Update a location's websites", :vcr do
       :xpath, "//input[@type='url' and @name='urls[]']")
   end
 
-  scenario "by adding 2 new websites", :js => true do
+  scenario "by adding 2 new websites", :js do
     visit_location_with_no_phone
     add_two_urls
     visit_location_with_no_phone
-    expect(page).to have_link "Delete this website permanently"
+    expect(find_field('urls[]', match: :first).value).to eq "http://ruby.com"
     delete_all_urls
     visit_location_with_no_phone
     page.should have_no_selector(
       :xpath, "//input[@type='url' and @name='urls[]']")
   end
 
-  scenario "with 2 urls but one is empty", :js => true do
+  scenario "with 2 urls but one is empty", :js do
     visit_test_location # it already has one
     click_link "Add a website"
     click_button "Save changes"

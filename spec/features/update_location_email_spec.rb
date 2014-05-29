@@ -5,7 +5,7 @@ feature "Update a location's email", :vcr do
     login_admin
   end
 
-  scenario "with empty email", :js => true do
+  scenario "with empty email", :js do
     visit_test_location
     fill_in "emails[]", with: ""
     click_button "Save changes"
@@ -30,7 +30,7 @@ feature "Update a location's email", :vcr do
     expect(page).to have_content "Please enter a valid email address"
   end
 
-  scenario "by adding 2 new emails", :js => true do
+  scenario "by adding 2 new emails", :js do
     visit_location_with_no_phone
     add_two_emails
     visit_location_with_no_phone
@@ -43,7 +43,7 @@ feature "Update a location's email", :vcr do
       :xpath, "//input[@type='text' and @name='emails[]']")
   end
 
-  scenario "with 2 emails but one is empty", :js => true do
+  scenario "with 2 emails but one is empty", :js do
     visit_test_location # it already has one
     click_link "Add a general email"
     click_button "Save changes"

@@ -12,7 +12,7 @@ feature "Update a service's categories", :vcr do
     end
   end
 
-  scenario "when adding the 'Disaster Response' category", :js => true do
+  scenario "when adding the 'Disaster Response' category", :js do
     visit_test_location
     find("#category_emergency").should_not be_checked
     # Check Emergency first to reveal the Disaster Response checkbox
@@ -27,12 +27,12 @@ feature "Update a service's categories", :vcr do
     find("#category_emergency").should_not be_checked
   end
 
-  scenario "when going to 4th level", :js => true do
+  scenario "when going to 4th level", :js do
     visit_test_location
-    check "category_health"
-    check "category_medical-care"
-    check "category_checkup-test"
-    check "category_vision-tests"
+    find("#category_health").click
+    find("#category_medical-care").click
+    find("#category_checkup-test").trigger('click')
+    find("#category_vision-tests").click
     click_button "Save changes"
     visit_test_location
     find("#category_vision-tests").should be_checked

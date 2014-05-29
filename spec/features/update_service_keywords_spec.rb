@@ -11,7 +11,7 @@ feature "Update a service's keywords", :vcr do
       :xpath, "//input[@type='text' and @name='keywords[]']")
   end
 
-  scenario "by adding 2 new keywords", :js => true do
+  scenario "by adding 2 new keywords", :js do
     visit_location_with_no_phone
     add_two_keywords
     visit_location_with_no_phone
@@ -24,7 +24,7 @@ feature "Update a service's keywords", :vcr do
       :xpath, "//input[@type='text' and @name='keywords[]']")
   end
 
-  scenario "with empty keyword", :js => true do
+  scenario "with empty keyword", :js do
     visit_test_location
     click_link "Add a keyword"
     page.should have_selector(
@@ -35,7 +35,7 @@ feature "Update a service's keywords", :vcr do
       :xpath, "//input[@type='text' and @name='keywords[]']")
   end
 
-  scenario "with 2 keywords but one is empty", :js => true do
+  scenario "with 2 keywords but one is empty", :js do
     visit_test_location
     click_link "Add a keyword"
     fill_in "keywords[]", with: "Food Pantry"
@@ -45,16 +45,16 @@ feature "Update a service's keywords", :vcr do
     total_keywords = page.
       all(:xpath, "//input[@type='text' and @name='keywords[]']")
     total_keywords.length.should eq 1
-    delete_all_keywords
+    delete_keyword
   end
 
-  scenario "with valid keyword", :js => true do
+  scenario "with valid keyword", :js do
     visit_test_location
     click_link "Add a keyword"
     fill_in "keywords[]", with: "Food Pantry"
     click_button "Save changes"
     visit_test_location
     find_field('keywords[]').value.should eq "Food Pantry"
-    delete_all_keywords
+    delete_keyword
   end
 end

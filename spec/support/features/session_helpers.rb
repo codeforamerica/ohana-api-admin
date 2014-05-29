@@ -109,18 +109,14 @@ module Features
     end
 
     def delete_all_urls
-      delete_links = all("a", :text => "Delete this website permanently")
-      delete_links.each do |a|
-        click_link a[:text], match: :first
-      end
+      find_link("Delete this website permanently", match: :first).click
+      find_link("Delete this website permanently", match: :first).click
       click_button "Save changes"
     end
 
     def delete_all_emails
-      delete_links = all("a", :text => "Delete this email permanently")
-      delete_links.each do |a|
-        click_link a[:text], match: :first
-      end
+      find_link("Delete this email permanently", match: :first).click
+      find_link("Delete this email permanently", match: :first).click
       click_button "Save changes"
     end
 
@@ -140,10 +136,8 @@ module Features
     end
 
     def delete_all_service_areas
-      delete_links = all("a", :text => "Delete this service area permanently")
-      delete_links.each do |a|
-        click_link a.text, match: :first
-      end
+      find_link("Delete this service area permanently", match: :first).click
+      find_link("Delete this service area permanently", match: :first).click
       click_button "Save changes"
     end
 
@@ -157,10 +151,13 @@ module Features
     end
 
     def delete_all_keywords
-      delete_links = all("a", :text => "Delete this keyword permanently")
-      delete_links.each do |a|
-        click_link a.text, match: :first
-      end
+      find_link("Delete this keyword permanently", match: :first).click
+      find_link("Delete this keyword permanently", match: :first).click
+      click_button "Save changes"
+    end
+
+    def delete_keyword
+      find_link("Delete this keyword permanently", match: :first).click
       click_button "Save changes"
     end
 
@@ -173,11 +170,14 @@ module Features
       click_button "Save changes"
     end
 
+    def delete_admin
+      find_link("Delete this admin permanently", match: :first).click
+      click_button "Save changes"
+    end
+
     def delete_all_admins
-      delete_links = all("a", :text => "Delete this admin permanently")
-      delete_links.each do |a|
-        click_link a.text, match: :first
-      end
+      find_link("Delete this admin permanently", match: :first).click
+      find_link("Delete this admin permanently", match: :first).click
       click_button "Save changes"
     end
 
