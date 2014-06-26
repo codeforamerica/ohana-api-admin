@@ -77,7 +77,7 @@ GEM
     factory_girl_rails (4.3.0)
       factory_girl (~> 4.3.0)
       railties (>= 3.0.0)
-    faraday (0.8.8)
+    faraday (0.8.9)
       multipart-post (~> 1.2.0)
     figaro (0.7.0)
       bundler (~> 1.0)
@@ -125,7 +125,7 @@ GEM
     newrelic_rpm (3.7.3.204)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
-    ohanakapa (1.0.0)
+    ohanakapa (1.1.0)
       sawyer (~> 0.3.0)
     origin (1.1.0)
     orm_adapter (0.5.0)
@@ -241,6 +241,7 @@ DEPENDENCIES
   devise
   email_spec
   factory_girl_rails (>= 4.2.0)
+  faraday (~> 0.8.8)
   figaro
   haml-rails
   html2haml
@@ -248,7 +249,7 @@ DEPENDENCIES
   mongoid
   mongoid-rspec
   newrelic_rpm
-  ohanakapa (~> 1.0)
+  ohanakapa (~> 1.1.0)
   poltergeist
   quiet_assets
   rails (= 3.2.17)
