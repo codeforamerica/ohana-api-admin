@@ -5,4 +5,4 @@
     %p.desc
       What groups are served, if not everyone?
   %p
-    = text_area_tag "audience", service.key?(:audience) ? service.audience : "", :class => "span5"
+    = text_area_tag "audience", service[:audience] || '', :class => "span5"

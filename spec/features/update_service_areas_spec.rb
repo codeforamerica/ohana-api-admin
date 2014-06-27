@@ -25,14 +25,12 @@ feature "Update a service's service areas", :vcr do
       :xpath, "//input[@type='text' and @name='service_areas[]']")
   end
 
-  scenario "with empty service area", :js do
+  scenario "clearing out existing service area but not deleting it", :js do
     visit_test_location
     fill_in "service_areas[]", with: ""
     click_button "Save changes"
     visit_test_location
-    page.should have_no_selector(
-      :xpath, "//input[@type='text' and @name='service_areas[]']")
-    add_service_area
+    find_field('service_areas[]').value.should eq "Atherton"
   end
 
   scenario "with 2 service_areas but one is empty", :js do

@@ -9,7 +9,7 @@ task :cats2html => :environment do
   @depth_0 ||= @categories.select { |cat| cat.depth == 0 }.sort_by(&:oe_id)
 
   def children(category)
-    Ohanakapa.get("categories/#{category.slug}/children")
+    Ohanakapa.get("categories/#{category.oe_id}/children")
   end
 
   cat_html = ""
@@ -17,7 +17,7 @@ task :cats2html => :environment do
   @depth_0.each do |d0|
     cat_html << "
     %li.depth0
-      = check_box_tag \"category_#{d0.slug}\", \"#{d0.slug}\", service.key?(:categories) && slugs.include?(\"#{d0.slug}\") ? true : false, :name => \"category_slugs[]\"
+      = check_box_tag \"category_#{d0.oe_id}\", \"#{d0.oe_id}\", service[:categories].present? && oe_ids.include?(\"#{d0.oe_id}\") ? true : false, :name => \"oe_ids[]\"
       %label
         = \"#{d0.name}\""
     @children_0 = children(d0)
@@ -28,7 +28,7 @@ task :cats2html => :environment do
     @children_0.each do |d1|
       cat_html << "
         %li.hide.depth1
-          = check_box_tag \"category_#{d1.slug}\", \"#{d1.slug}\", service.key?(:categories) && slugs.include?(\"#{d1.slug}\") ? true : false, :name => \"category_slugs[]\"
+          = check_box_tag \"category_#{d1.oe_id}\", \"#{d1.oe_id}\", service[:categories].present? && oe_ids.include?(\"#{d1.oe_id}\") ? true : false, :name => \"oe_ids[]\"
           %label
             = \"#{d1.name}\""
       @children_1 = children(d1)
@@ -39,7 +39,7 @@ task :cats2html => :environment do
       @children_1.each do |d2|
         cat_html << "
             %li.hide.depth2
-              = check_box_tag \"category_#{d2.slug}\", \"#{d2.slug}\", service.key?(:categories) && slugs.include?(\"#{d2.slug}\") ? true : false, :name => \"category_slugs[]\"
+              = check_box_tag \"category_#{d2.oe_id}\", \"#{d2.oe_id}\", service[:categories].present? && oe_ids.include?(\"#{d2.oe_id}\") ? true : false, :name => \"oe_ids[]\"
               %label
                 = \"#{d2.name}\""
         @children_2 = children(d2)
@@ -50,7 +50,7 @@ task :cats2html => :environment do
         @children_2.each do |d3|
           cat_html << "
                 %li.hide.depth3
-                  = check_box_tag \"category_#{d3.slug}\", \"#{d3.slug}\", service.key?(:categories) && slugs.include?(\"#{d3.slug}\") ? true : false, :name => \"category_slugs[]\"
+                  = check_box_tag \"category_#{d3.oe_id}\", \"#{d3.oe_id}\", service[:categories].present? && oe_ids.include?(\"#{d3.oe_id}\") ? true : false, :name => \"oe_ids[]\"
                   %label
                     = \"#{d3.name}\""
         end

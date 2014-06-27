@@ -7,4 +7,4 @@
       %em
         For example, "Monday-Friday, 9-12, 2-5"
   %p
-    = text_field_tag "text_hours", @location.key?(:hours) ? @location.hours : "", :class => "span11"
+    = text_field_tag "text_hours", @location[:hours] || '', :class => "span11"

@@ -9,14 +9,14 @@
         If the fax belongs to a contact, please move it to the existing contact, or create a new contact.
         %br
         If the fax number contains a department in parentheses, move the department to the department field.
-  - if @location.key?(:faxes)
+  - if @location[:faxes].present?
     - @location.faxes.each do |fax|
       %fieldset#faxes
         = "Number*"
-        = text_field_tag "fax_number[]", fax.key?(:number) ? fax.number : "", maxlength: 12, class: "span2"
+        = text_field_tag "fax_number[]", fax[:number] || '', maxlength: 12, class: "span2"
         %br
         = "Department:"
-        = text_field_tag "fax_department[]", fax.key?(:department) ? fax.department : "", maxlength: 50, class: "span2"
+        = text_field_tag "fax_department[]", fax[:department] || '', maxlength: 50, class: "span2"
         = hidden_field_tag "fax_ids[]", fax.id, id: "fax_id_#{fax.id}"
         = hidden_field_tag "destroy_faxes[]", "", id: "destroy"
         %br

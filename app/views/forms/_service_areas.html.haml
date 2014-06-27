@@ -16,7 +16,7 @@
       Kings Mountain, Ladera, La Honda, Loma Mar, Menlo Oaks, Montara,
       Moss Beach, North Fair Oaks, Palomar Park, Pescadero,
       Princeton-by-the-Sea, San Gregorio, Sky Londa, West Menlo Park
-  - if service.key?(:service_areas)
+  - if service[:service_areas].present?
     - service.service_areas.each_with_index do |service_area, i|
       %fieldset#service_areas
         = text_field_tag "service_areas[]", service_area, class: "span4", id: "service_area_#{i}"

@@ -269,11 +269,11 @@ feature "Create a new location", :vcr do
 
   scenario "when adding categories", :js do
     fill_in_all_required_fields
-    find("#category_emergency").click
-    check "category_disaster-response"
+    find("#category_101").click
+    check "category_101-01"
     click_button "Create new location for Samaritan House"
-    find("#category_emergency").should be_checked
-    find("#category_disaster-response").should be_checked
+    find("#category_101").should be_checked
+    find("#category_101-01").should be_checked
     delete_location
   end
 end

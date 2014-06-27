@@ -5,9 +5,9 @@ class ApplicationController < ActionController::Base
     redirect_to root_url, :alert => exception.message
   end
 
-  rescue_from Ohanakapa::BadRequest do |e|
+  rescue_from Ohanakapa::UnprocessableEntity do |e|
     # Empty Organization name
-    if e.to_s.include?("Name can't be blank for Organization")
+    if e.to_s.include?("can't be blank for Organization")
       redirect_to request.referer,
         alert: "Organization name can't be blank!" and return
 
@@ -38,7 +38,7 @@ class ApplicationController < ActionController::Base
           options. Please contact the website owner." and return
 
     # Invalid admin email address
-    elsif e.to_s.include?("admin_emails must be an array of valid email addresses")
+    elsif e.to_s.include?("admin_emails: [")
       redirect_to request.referer,
         alert: "Please enter a valid admin email address" and return
 
@@ -48,22 +48,42 @@ class ApplicationController < ActionController::Base
         alert: "Please enter at least one type of address" and return
 
     # Empty Street
-    elsif e.to_s.include?("Street can't be blank")
+    elsif e.to_s.include?("street: [\"can't be blank for Address\"]")
       redirect_to request.referer,
         alert: "Please enter a street" and return
 
     # Empty City
-    elsif e.to_s.include?("City can't be blank")
+    elsif e.to_s.include?("city: [\"can't be blank for Address\"]")
       redirect_to request.referer,
         alert: "Please enter a city" and return
 
     # Empty State
-    elsif e.to_s.include?("State can't be blank")
+    elsif e.to_s.include?("state: [\"can't be blank for Address\"")
       redirect_to request.referer,
         alert: "Please enter a state abbreviation" and return
 
     # Empty Zip
-    elsif e.to_s.include?("Zip can't be blank")
+    elsif e.to_s.include?("zip: [\"can't be blank for Address\"")
+      redirect_to request.referer,
+        alert: "Please enter a ZIP code" and return
+
+    # Empty Street
+    elsif e.to_s.include?("street: [\"can't be blank for Mail Address\"")
+      redirect_to request.referer,
+        alert: "Please enter a street" and return
+
+    # Empty City
+    elsif e.to_s.include?("city: [\"can't be blank for Mail Address\"]")
+      redirect_to request.referer,
+        alert: "Please enter a city" and return
+
+    # Empty State
+    elsif e.to_s.include?("state: [\"can't be blank for Mail Address\"")
+      redirect_to request.referer,
+        alert: "Please enter a state abbreviation" and return
+
+    # Empty Zip
+    elsif e.to_s.include?("zip: [\"can't be blank for Mail Address\"")
       redirect_to request.referer,
         alert: "Please enter a ZIP code" and return
 
@@ -78,27 +98,17 @@ class ApplicationController < ActionController::Base
         alert: "Please enter a valid ZIP code" and return
 
     # Contact name missing
-    elsif e.to_s.include?("Name can't be blank for Contact")
+    elsif e.to_s.include?("name: [\"can't be blank for Contact\"]")
       redirect_to request.referer,
         alert: "Please enter a contact name" and return
 
     # Contact title missing
-    elsif e.to_s.include?("Title can't be blank for Contact")
-      redirect_to request.referer,
-        alert: "Please enter a contact title" and return
-
-    # Contact name missing
-    elsif e.to_s.include?("Contacts name can't be blank for Contact")
-      redirect_to request.referer,
-        alert: "Please enter a contact name" and return
-
-    # Contact title missing
-    elsif e.to_s.include?("Contacts title can't be blank for Contact")
+    elsif e.to_s.include?("title: [\"can't be blank for Contact\"]")
       redirect_to request.referer,
         alert: "Please enter a contact title" and return
 
     # Location name missing
-    elsif e.to_s.include?("Name can't be blank for Location")
+    elsif e.to_s.include?("name: [\"can't be blank for Location\"]")
       redirect_to request.referer,
         alert: "Location name can't be blank!" and return
 
@@ -108,7 +118,7 @@ class ApplicationController < ActionController::Base
         alert: "Please enter a valid email address" and return
 
     # Description missing
-    elsif e.to_s.include?("Description can't be blank")
+    elsif e.to_s.include?("description: [\"can't be blank for Location\"]")
       redirect_to request.referer,
         alert: "Please enter a description" and return
 
@@ -127,12 +137,12 @@ class ApplicationController < ActionController::Base
   end
 
   def days
-    %w[Sunday Monday Tuesday Wednesday Thursday Friday Saturday]
+    %w(Sunday Monday Tuesday Wednesday Thursday Friday Saturday)
   end
 
   def location_attributes
     {
-      :accessibility           => accessibility,
+      :accessibility           => params[:accessibility_options],
       :admin_emails            => admin_emails,
       :description             => params[:description],
       :emails                  => emails,
@@ -156,36 +166,27 @@ class ApplicationController < ActionController::Base
     }
   end
 
-  def accessibility
-    params[:accessibility_options]
-  end
-
   def address
-    all_fields = [
+    fields = [
       params[:street],
       params[:city],
       params[:state],
       params[:zip]
     ]
-    if all_fields.compact.empty? || all_fields.all?(&:empty?)
-      {}
-    else
-      {
-        :new => params[:new_address],
-        :destroy => params[:destroy_address],
-        :street => params[:street],
-        :city => params[:city],
-        :state => params[:state],
-        :zip => params[:zip]
-      }
-    end
+    return {} if fields.compact.empty? || fields.all?(&:empty?)
+    {
+      :new => params[:new_address],
+      :destroy => params[:destroy_address],
+      :street => params[:street],
+      :city => params[:city],
+      :state => params[:state],
+      :zip => params[:zip]
+    }
   end
 
   def admin_emails
-    admin_emails = params[:admin_emails]
-    if admin_emails.present?
-      admin_emails.delete_if { |email| email.blank? }
-    end
+    return nil unless params[:admin_emails].present?
+    params[:admin_emails].reject(&:blank?)
   end
 
   def contacts
@@ -199,32 +200,26 @@ class ApplicationController < ActionController::Base
     emails = params[:contact_emails] || []
     faxes = params[:contact_faxes] || []
 
-    # all_fields = [names, titles, phones, extensions, faxes]
-    # if all_fields.reject { |field| field.all?(&:empty?) } == []
-    #   []
-    # else
-      contacts = []
-      (0..names.length-1).each do |i|
-        hash = {
-          :contact_id => contact_ids[i],
-          :destroy => destroy[i],
-          :name => names[i],
-          :title => titles[i],
-          :phone => phones[i],
-          :extension => extensions[i],
-          :email => emails[i],
-          :fax => faxes[i]
-        }
-        contacts.push(hash)
-      end
-      contacts.delete_if { |contact| contact.values.all? { |v| v.blank? } }
-    # end
+    contacts = []
+    (0..names.length - 1).each do |i|
+      hash = {
+        :contact_id => contact_ids[i],
+        :destroy => destroy[i],
+        :name => names[i],
+        :title => titles[i],
+        :phone => phones[i],
+        :extension => extensions[i],
+        :email => emails[i],
+        :fax => faxes[i]
+      }
+      contacts.push(hash)
+    end
+    contacts.delete_if { |contact| contact.values.all? { |v| v.blank? } }
   end
 
   def emails
-    if params[:emails].present? && !params[:emails].all?(&:empty?)
-      params[:emails].delete_if { |email| email.blank? }
-    end
+    return nil unless params[:emails].present?
+    params[:emails].reject(&:blank?)
   end
 
   def faxes
@@ -235,16 +230,21 @@ class ApplicationController < ActionController::Base
     departments = params[:fax_department]
 
     faxes = []
-    (0..numbers.length-1).each do |i|
+    (0..numbers.length - 1).each do |i|
       hash = {
         :fax_id => fax_ids[i],
         :destroy => destroy[i],
         :number => numbers[i],
-        :department => departments[i],
+        :department => departments[i]
       }
       faxes.push(hash)
     end
     faxes.delete_if { |fax| fax.values.all? { |v| v.blank? } }
+  end
+
+  def keywords
+    return nil unless params[:keywords].present?
+    params[:keywords].reject(&:blank?)
   end
 
   def location_name
@@ -274,6 +274,11 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def oe_ids
+    return nil unless params[:oe_ids].present?
+    params[:oe_ids]
+  end
+
   def phones
     phone_ids = params[:phone_ids] || []
     destroy = params[:destroy_phones] || []
@@ -282,18 +287,16 @@ class ApplicationController < ActionController::Base
     vanity_numbers = params[:vanity_number]
     departments = params[:department]
     extensions = params[:extension]
-    hours = params[:hours] unless params[:hours].blank?
 
     phones = []
-    (0..numbers.length-1).each do |i|
+    (0..numbers.length - 1).each do |i|
       hash = {
         :phone_id => phone_ids[i],
         :destroy => destroy[i],
         :number => numbers[i],
         :vanity_number => vanity_numbers[i],
         :extension => extensions[i],
-        :department => departments[i],
-        :hours => hours[i]
+        :department => departments[i]
       }
       phones.push(hash)
     end
@@ -301,12 +304,8 @@ class ApplicationController < ActionController::Base
   end
 
   def service_areas
-    service_areas = params[:service_areas]
-    if service_areas.present? && !service_areas.all?(&:empty?)
-      params[:service_areas].delete_if { |sa| sa.blank? }
-    else
-      []
-    end
+    return nil unless params[:service_areas].present?
+    params[:service_areas].reject(&:blank?)
   end
 
   # def funding_sources
@@ -316,17 +315,9 @@ class ApplicationController < ActionController::Base
   #   end
   # end
 
-  def keywords
-    k = params[:keywords]
-    if k.present? && !k.all?(&:empty?)
-      k.delete_if { |k| k.blank? }
-    end
-  end
-
   def urls
-    if params[:urls].present?
-      params[:urls].delete_if { |url| url.blank? }
-    end
+    return nil unless params[:urls].present?
+    params[:urls].reject(&:blank?)
   end
 
   def org_id
@@ -335,6 +326,18 @@ class ApplicationController < ActionController::Base
 
   def location_id
     params[:location_id]
+  end
+
+  def location_slug
+    params[:location_slug]
+  end
+
+  def address_id
+    params[:address_id]
+  end
+
+  def mail_address_id
+    params[:mail_address_id]
   end
 
   def service_id

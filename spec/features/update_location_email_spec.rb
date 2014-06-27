@@ -6,18 +6,26 @@ feature "Update a location's email", :vcr do
   end
 
   scenario "with empty email", :js do
-    visit_test_location
-    fill_in "emails[]", with: ""
+    visit_location_with_no_phone
+    click_link "Add a general email"
     click_button "Save changes"
-    visit_test_location
+    visit_location_with_no_phone
     page.should have_no_selector(
       :xpath, "//input[@type='text' and @name='emails[]']")
-    add_email
   end
 
   scenario "with valid email" do
     visit_test_location
     fill_in "emails[]", with: "moncefbelyamani@samaritanhousesanmateo.org"
+    click_button "Save changes"
+    visit_test_location
+    find_field('emails[]').value.should eq "moncefbelyamani@samaritanhousesanmateo.org"
+    delete_all_emails
+  end
+
+  scenario "when clearing out existing email but not deleting it" do
+    visit_test_location
+    fill_in "emails[]", with: ""
     click_button "Save changes"
     visit_test_location
     find_field('emails[]').value.should eq "moncefbelyamani@samaritanhousesanmateo.org"

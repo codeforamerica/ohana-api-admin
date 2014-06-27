@@ -2,7 +2,7 @@
   %header
     %strong
       Mailing Address
-  - if @location.key?(:mail_address)
+  - if @location[:mail_address].present?
     %fieldset#mail_address
       = "Attention"
       = text_field_tag "attention", @location.mail_address.attention, maxlength: 255, class: "span5"
@@ -19,6 +19,7 @@
       = "ZIP Code"
       = text_field_tag "m_zip", @location.mail_address.zip, maxlength: 10, class: "span2"
       = hidden_field_tag :destroy_mail_address, "", id: "destroy"
+      = hidden_field_tag :mail_address_id, @location.mail_address.id
       %br
       = link_to "Delete this mailing address permanently", '#', class: "btn btn-danger delete_association"
       = link_to "undo", '#', class: "undo", :style => "display: none;"

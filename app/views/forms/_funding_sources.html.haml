@@ -2,7 +2,7 @@
   %header
     %strong
       Funding Sources
-  - if service.key?(:funding_sources)
+  - if service[:funding_sources].present?
     - service.funding_sources.each_with_index do |funding_source, i|
       %fieldset#funding_sources
         = text_field_tag "funding_sources[]", funding_source, class: "span4", id: "funding_source_#{i}"

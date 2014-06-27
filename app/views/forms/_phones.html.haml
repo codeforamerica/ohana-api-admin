@@ -7,26 +7,25 @@
         10 digits only please, in this format: 650-802-7922.
         %br
         If the phone number belongs to a contact, please move it to the existing contact, or create a new contact.
-  - if @location.key?(:phones)
+  - if @location[:phones].present?
     - @location.phones.each do |phone|
       %fieldset#phones
         = "Number*"
-        = text_field_tag "number[]", phone.key?(:number) ? phone.number : "", maxlength: 12, class: "span2"
+        = text_field_tag "number[]", phone[:number] || '', maxlength: 12, class: "span2"
         %br
         = "Vanity Number (for example: 650-123-HELP)"
-        = text_field_tag "vanity_number[]", phone.key?(:vanity_number) ? phone.vanity_number : "", maxlength: 12, class: "span2"
+        = text_field_tag "vanity_number[]", phone[:vanity_number] || '', maxlength: 12, class: "span2"
         %br
         = "Extension"
-        = text_field_tag "extension[]", phone.key?(:extension) ? phone.extension : "", maxlength: 8, class: "span2"
+        = text_field_tag "extension[]", phone[:extension] || '', maxlength: 8, class: "span2"
         %br
         = "Department"
-        = text_field_tag "department[]", phone.key?(:department) ? phone.department : "", maxlength: 50, class: "span4"
+        = text_field_tag "department[]", phone[:department] || '', maxlength: 50, class: "span4"
         = hidden_field_tag "phone_ids[]", phone.id, id: "phone_id_#{phone.id}"
         = hidden_field_tag "destroy_phones[]", "", id: "destroy"
         %br
         = link_to "Delete this number permanently", '#', class: "btn btn-danger delete_association"
         = link_to "undo", '#', class: "undo", :style => "display: none;"
-        = hidden_field_tag "hours[]", phone.key?(:hours) ? phone.hours : ""
 
   - fields = render "forms/single_phone"
   %p
