@@ -1,6 +1,6 @@
 - loc_name = @location.name
 - org_name = @location.organization.name
-- services = @location.services if @location.key?(:services)
+- services = @location.services if @location[:services].present?
 
 - loc_name == org_name ? title("#{loc_name}") : title("#{org_name} - #{loc_name}")
 
@@ -8,7 +8,7 @@
   %div.content-box
     %h2= loc_name == org_name ? loc_name : "#{org_name} / #{loc_name}"
 
-  - if current_user.role == "admin" || (@location.key?(:admin_emails) && @location.admin_emails.include?(current_user.email))
+  - if current_user.role == "admin" || (@location[:admin_emails].present? && @location[:admin_emails].include?(current_user.email))
     %div.content-box
       %h4
         Add an admin to this location
@@ -47,7 +47,7 @@
       = render "forms/service_areas", :service => service
       = render "forms/keywords", :service => service
 
-      - @slugs = service.categories.map(&:slug) if service.key?(:categories)
+      - @oe_ids = service.categories.map(&:oe_id) if service[:categories].present?
       %div#categories.inst-box
         %header
           %strong
@@ -55,7 +55,7 @@
           %p.desc
             What categories does this location's services fall under?
         %ul
-          = render "forms/categories", :service => service, :slugs => @slugs
+          = render "forms/categories", :service => service, :oe_ids => @oe_ids
   %div.danger-zone
     %header
       %strong
@@ -75,6 +75,7 @@
       %strong
         = "#{org_name} / #{loc_name}"
     = hidden_field_tag :location_id, @location.id
+    = hidden_field_tag :location_slug, @location.slug
     = hidden_field_tag :org_id, @location.organization.id
     = hidden_field_tag :page, params[:page]
     = submit_tag "Save changes & apply edits to database", :class => "btn btn-primary"

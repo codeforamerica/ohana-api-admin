@@ -1,12 +1,11 @@
+# First, copy the contents of this file to a new one called "application.yml"
+# in the same config directory.
+
 # This file is used by the "figaro" gem to allow you to store and use
 # environment variables in the app without having to set them via the
 # command line each time you run the app in development.
 
 # Read more about figaro here: https://github.com/laserlemon/figaro
-
-# First, rename this file to "application.yml". It should already be listed in
-# .gitignore, but if not, make sure to add it there to keep your sensitive info
-# (such as API keys and passwords) secret!
 
 # Each entry sets a local environment variable and overrides ENV variables
 # in the Unix shell. For example, setting:

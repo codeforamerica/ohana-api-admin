@@ -1,11 +1,12 @@
 # stack = Faraday::Builder.new do |builder|
-#   builder.use Faraday::HttpCache, store: Rails.cache
 #   builder.response :logger
 #   builder.use Ohanakapa::Response::RaiseError
 #   builder.adapter Faraday.default_adapter
 # end
 
 Ohanakapa.configure do |config|
+  # config.middleware = stack
+
   if Rails.env.test?
     config.api_token = 'Ohana-API-Admin-Test'
   else

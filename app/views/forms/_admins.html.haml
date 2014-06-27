@@ -1,5 +1,5 @@
 %div.inst-box
-  - if @location.key?(:admin_emails)
+  - if @location[:admin_emails].present?
     - @location.admin_emails.each_with_index do |admin, i|
       %fieldset#admin_emails
         = text_field_tag "admin_emails[]", admin, class: "span4", id: "admin_email_#{i}"

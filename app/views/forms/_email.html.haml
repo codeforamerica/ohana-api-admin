@@ -5,7 +5,7 @@
     %p.desc
       %em
         If the email belongs to a contact, please move it to the existing contact, or create a new contact.
-  - if @location.key?(:emails)
+  - if @location[:emails].present?
     - @location.emails.each_with_index do |email, i|
       %fieldset#emails
         = text_field_tag "emails[]", email, class: "span6", maxlength: 255, id: "email_#{i}"

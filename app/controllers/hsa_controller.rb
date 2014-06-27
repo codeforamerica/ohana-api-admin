@@ -22,7 +22,7 @@ class HsaController < ApplicationController
       end
     rescue Ohanakapa::NotFound
       redirect_to "#{root_url}",
-        alert: "Location not found! Please try another one." and return
+        alert: 'Location not found! Please try another one.' and return
     end
   end
 
@@ -30,13 +30,7 @@ class HsaController < ApplicationController
     @locations = perform_search
     @org = @locations.first.organization if @locations.present?
     if @org.present?
-      urls = []
-      @org.rels[:locations].get.data.each do |loc|
-        if loc.key?(:urls)
-          urls.push(loc.urls)
-        end
-      end
-      @location_url = urls.uniq.flatten.first
+      @location_url = @locations.first.urls.first
     else
       redirect_to locations_path,
         alert: "Sorry, you don't have access to that page." and return
@@ -50,30 +44,30 @@ class HsaController < ApplicationController
 
       if address.present?
         # Update location address
-        if address[:destroy] == "1"
-          Ohanakapa.delete("locations/#{location_id}/address")
+        if address[:destroy] == '1'
+          Ohanakapa.delete("locations/#{location_id}/address/#{address_id}")
 
-        elsif address[:new] == "1"
+        elsif address[:new] == '1'
           Ohanakapa.post("locations/#{location_id}/address",
             :query => address.except(:address_id, :destroy))
 
         else
-          Ohanakapa.patch("locations/#{location_id}/address",
+          Ohanakapa.patch("locations/#{location_id}/address/#{address_id}",
             :query => address.except(:address_id, :destroy))
         end
       end
 
       if mail_address.present?
         # Update location mailing address
-        if mail_address[:destroy] == "1"
-          Ohanakapa.delete("locations/#{location_id}/mail_address")
+        if mail_address[:destroy] == '1'
+          Ohanakapa.delete("locations/#{location_id}/mail_address/#{mail_address_id}")
 
-        elsif mail_address[:new] == "1"
+        elsif mail_address[:new] == '1'
           Ohanakapa.post("locations/#{location_id}/mail_address",
             :query => mail_address.except(:new, :destroy))
 
         else
-          Ohanakapa.patch("locations/#{location_id}/mail_address",
+          Ohanakapa.patch("locations/#{location_id}/mail_address/#{mail_address_id}",
             :query => mail_address.except(:destroy, :new))
         end
       end
@@ -84,7 +78,7 @@ class HsaController < ApplicationController
       # Update location contacts
       if contacts.present?
         contacts.each do |contact|
-          if contact[:destroy] == "1"
+          if contact[:destroy] == '1'
             Ohanakapa.delete("locations/#{location_id}/contacts/#{contact[:contact_id]}")
           elsif contact[:contact_id].blank?
             Ohanakapa.post("locations/#{location_id}/contacts",
@@ -99,7 +93,7 @@ class HsaController < ApplicationController
       # Update location faxes
       if faxes.present?
         faxes.each do |fax|
-          if fax[:destroy] == "1"
+          if fax[:destroy] == '1'
             Ohanakapa.delete("locations/#{location_id}/faxes/#{fax[:fax_id]}")
           elsif fax[:fax_id].blank?
             Ohanakapa.post("locations/#{location_id}/faxes",
@@ -114,7 +108,7 @@ class HsaController < ApplicationController
       # Update location phones
       if phones.present?
         phones.each do |phone|
-          if phone[:destroy] == "1"
+          if phone[:destroy] == '1'
             Ohanakapa.delete("locations/#{location_id}/phones/#{phone[:phone_id]}")
           elsif phone[:phone_id].blank?
             Ohanakapa.post("locations/#{location_id}/phones",
@@ -127,16 +121,16 @@ class HsaController < ApplicationController
       end
 
       # Update service
-      Ohanakapa.put("services/#{service_id}", :query => service_attributes)
+      Ohanakapa.patch("locations/#{location_id}/services/#{service_id}", :query => service_attributes)
 
       # Update service categories
       Ohanakapa.put("services/#{service_id}/categories", :query =>
         {
-          :category_slugs => params[:category_slugs]
+          :oe_ids => oe_ids
         }
       )
 
-      redirect_to location_path(location_id), notice: "Changes for #{location_name} successfully saved!" and return
+      redirect_to location_path(location_slug), notice: "Changes for #{location_name} successfully saved!" and return
     else
       redirect_to locations_path,
         alert: "Sorry, you don't have access to that page." and return
@@ -144,7 +138,7 @@ class HsaController < ApplicationController
   end
 
   def create_location
-    Ohanakapa.post("locations/", query: location_attributes.
+    Ohanakapa.post('locations/', query: location_attributes.
       merge(
         organization_id: org_id,
         address_attributes: address,
@@ -156,6 +150,7 @@ class HsaController < ApplicationController
     )
 
     unless Ohanakapa.last_response.data.is_a?(Array)
+      location_slug = Ohanakapa.last_response.data.slug
       location_id = Ohanakapa.last_response.data.id
     end
 
@@ -173,13 +168,13 @@ class HsaController < ApplicationController
     if service_id.present?
       Ohanakapa.put("services/#{service_id}/categories", :query =>
         {
-          :category_slugs => params[:category_slugs]
+          :oe_ids => params[:oe_ids]
         }
       )
     end
 
-    if location_id.present?
-      redirect_to location_path(location_id),
+    if location_slug.present?
+      redirect_to location_path(location_slug),
         notice: "New location \"#{location_name}\" for #{org_name} successfully "+
           "created! If you haven't already, please continue filling out as many "+
           "fields as possible." and return
@@ -187,7 +182,7 @@ class HsaController < ApplicationController
   end
 
   def domain
-    current_user.email.split("@").last
+    current_user.email.split('@').last
   end
 
   def delete_location
@@ -214,7 +209,7 @@ class HsaController < ApplicationController
   private
 
   def admin?
-    current_user.role == "admin"
+    current_user.role == 'admin'
   end
 
   def user_allowed_access_to_location?(location)
@@ -226,27 +221,23 @@ class HsaController < ApplicationController
   end
 
   def urls_match_domain?(location)
-    if location.key?(:urls)
-      location.urls.select { |url| url.include?(domain) }.length > 0
-    end
+    return false unless location[:urls].present?
+    location.urls.select { |url| url.include?(domain) }.length > 0
   end
 
   def emails_match_domain?(location)
-    if location.key?(:emails)
-      location.emails.select { |email| email.include?(domain) }.length > 0
-    end
+    return false unless location[:emails].present?
+    location.emails.select { |email| email.include?(domain) }.length > 0
   end
 
   def emails_match_user_email?(location)
-    if location.key?(:emails)
-      location.emails.select { |email| email == current_user.email }.length > 0
-    end
+    return false unless location[:emails].present?
+    location.emails.select { |email| email == current_user.email }.length > 0
   end
 
   def admins_match_user_email?(location)
-    if location.key?(:admin_emails)
-      location.admin_emails.select { |email| email == current_user.email }.length > 0
-    end
+    return false unless location[:admin_emails].present?
+    location.admin_emails.select { |email| email == current_user.email }.length > 0
   end
 
   def current_user_has_generic_email?
@@ -261,5 +252,4 @@ class HsaController < ApplicationController
       Ohanakapa.search("search", :domain => domain)
     end
   end
-
 end

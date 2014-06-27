@@ -10,7 +10,7 @@ module ApplicationHelper
   end
 
   def days
-    %w[Monday Tuesday Wednesday Thursday Friday Saturday Sunday]
+    %w(Monday Tuesday Wednesday Thursday Friday Saturday Sunday)
   end
 
   def accessibility_options

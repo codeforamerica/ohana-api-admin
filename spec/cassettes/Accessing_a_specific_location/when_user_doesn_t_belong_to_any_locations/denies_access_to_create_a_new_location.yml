@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.0.0
+      - Ohanakapa Ruby Gem 1.1.0
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -23,37 +23,41 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Content-Type:
-      - application/json
+      - application/json; charset=utf-8
       Date:
-      - Thu, 29 May 2014 20:22:10 GMT
-      Etag:
-      - '"d751713988987e9331980363e24189ce"'
+      - Fri, 27 Jun 2014 04:59:30 GMT
       Link:
-      - <http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&email=moncef%40yahoo.com&page=0&per_page=1>;
+      - <http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&email=moncef%40yahoo.com&page=0>;
         rel="last"
       Server:
-      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
       - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 4.0.41
+      - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 88132a1e-1c30-4e0f-821a-806d57aa5bac
+      - 91de3076-10b9-4385-8a28-930ff0ad491e
       X-Runtime:
-      - '0.023765'
+      - '0.023603'
       X-Total-Count:
       - '0'
       X-Total-Pages:
       - '0'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '2'
+      - '28'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: "[]"
     http_version: 
-  recorded_at: Thu, 29 May 2014 20:22:10 GMT
+  recorded_at: Fri, 27 Jun 2014 04:59:30 GMT
 - request:
     method: get
     uri: http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&email=moncef@yahoo.com
@@ -64,7 +68,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.0.0
+      - Ohanakapa Ruby Gem 1.1.0
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -77,37 +81,41 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Content-Type:
-      - application/json
+      - application/json; charset=utf-8
       Date:
-      - Thu, 29 May 2014 20:22:11 GMT
-      Etag:
-      - '"d751713988987e9331980363e24189ce"'
+      - Fri, 27 Jun 2014 04:59:30 GMT
       Link:
-      - <http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&email=moncef%40yahoo.com&page=0&per_page=1>;
+      - <http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&email=moncef%40yahoo.com&page=0>;
         rel="last"
       Server:
-      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
       - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 4.0.41
+      - Phusion Passenger 4.0.45
       X-Request-Id:
-      - ce4b4330-bc2f-4aef-a850-1bfd308a773d
+      - 879ca9eb-a7dc-4d68-8274-ffd347823c86
       X-Runtime:
-      - '0.022915'
+      - '0.012033'
       X-Total-Count:
       - '0'
       X-Total-Pages:
       - '0'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '2'
+      - '28'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: "[]"
     http_version: 
-  recorded_at: Thu, 29 May 2014 20:22:11 GMT
+  recorded_at: Fri, 27 Jun 2014 04:59:30 GMT
 - request:
     method: get
     uri: http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&email=moncef@yahoo.com
@@ -118,7 +126,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.0.0
+      - Ohanakapa Ruby Gem 1.1.0
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -131,35 +139,39 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Content-Type:
-      - application/json
+      - application/json; charset=utf-8
       Date:
-      - Thu, 29 May 2014 20:22:11 GMT
-      Etag:
-      - '"d751713988987e9331980363e24189ce"'
+      - Fri, 27 Jun 2014 04:59:30 GMT
       Link:
-      - <http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&email=moncef%40yahoo.com&page=0&per_page=1>;
+      - <http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&email=moncef%40yahoo.com&page=0>;
         rel="last"
       Server:
-      - nginx/1.4.7 + Phusion Passenger 4.0.41
+      - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
       - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Powered-By:
-      - Phusion Passenger 4.0.41
+      - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 10e03035-fb75-4a04-8c35-96a86104072d
+      - 6babc29f-7ea4-440b-94f2-d604f3e05e5c
       X-Runtime:
-      - '0.020413'
+      - '0.011697'
       X-Total-Count:
       - '0'
       X-Total-Pages:
       - '0'
+      X-Xss-Protection:
+      - 1; mode=block
       Content-Length:
-      - '2'
+      - '28'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: "[]"
     http_version: 
-  recorded_at: Thu, 29 May 2014 20:22:11 GMT
+  recorded_at: Fri, 27 Jun 2014 04:59:30 GMT
 recorded_with: VCR 2.9.2

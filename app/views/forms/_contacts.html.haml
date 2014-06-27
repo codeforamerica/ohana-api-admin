@@ -4,26 +4,26 @@
       Contacts
     %p.desc
       Who are the main points of contact at the location?
-  - if @location.key?(:contacts)
+  - if @location[:contacts].present?
     - @location.contacts.each do |contact|
       %fieldset#contact
         = "Name*:"
-        = text_field_tag "names[]", contact.key?(:name) ? contact.name : "", maxlength: 255, class: "span4", id: "names_#{contact.id}"
+        = text_field_tag "names[]", contact[:name] || '', maxlength: 255, class: "span4", id: "names_#{contact.id}"
         %br
         = "Title*:"
-        = text_field_tag "titles[]", contact.key?(:title) ? contact.title : "", maxlength: 255, class: "span5", id: "titles_#{contact.id}"
+        = text_field_tag "titles[]", contact[:title] || '', maxlength: 255, class: "span5", id: "titles_#{contact.id}"
         %br
         = "Email:"
-        = text_field_tag "contact_emails[]", contact.key?(:email) ? contact.email : "", maxlength: 255, class: "span6", id: "emails_#{contact.id}"
+        = text_field_tag "contact_emails[]", contact[:email] || '', maxlength: 255, class: "span6", id: "emails_#{contact.id}"
         %br
         = "Phone:"
-        = text_field_tag "contact_phones[]", contact.key?(:phone) ? contact.phone : "", maxlength: 12, class: "span2", id: "phones_#{contact.id}"
+        = text_field_tag "contact_phones[]", contact[:phone] || '', maxlength: 12, class: "span2", id: "phones_#{contact.id}"
         %br
         = "Phone Extension:"
-        = text_field_tag "contact_phone_extensions[]", contact.key?(:extension) ? contact.extension : "", maxlength: 12, class: "span2", id: "extension_#{contact.id}"
+        = text_field_tag "contact_phone_extensions[]", contact[:extension] || '', maxlength: 12, class: "span2", id: "extension_#{contact.id}"
         %br
         = "Fax:"
-        = text_field_tag "contact_faxes[]", contact.key?(:fax) ? contact.fax : "", maxlength: 50, class: "span2", id: "fax_#{contact.id}"
+        = text_field_tag "contact_faxes[]", contact[:fax] || '', maxlength: 50, class: "span2", id: "fax_#{contact.id}"
         = hidden_field_tag "contact_ids[]", contact.id, id: "contact_id_#{contact.id}"
         = hidden_field_tag "destroy_contacts[]", "", id: "destroy"
         %br

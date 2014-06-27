@@ -4,7 +4,7 @@
       Accessibility Options
     %p.desc
       Which accessibility amenities for the location are available?
-    - accessibility = @location.key?(:accessibility) ? @location.accessibility : ""
+    - accessibility = @location[:accessibility] || ""
   %fieldset#accessibility
     - accessibility_options.each do |a|
       %label

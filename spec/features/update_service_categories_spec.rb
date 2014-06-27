@@ -14,31 +14,31 @@ feature "Update a service's categories", :vcr do
 
   scenario "when adding the 'Disaster Response' category", :js do
     visit_test_location
-    find("#category_emergency").should_not be_checked
+    find("#category_101").should_not be_checked
     # Check Emergency first to reveal the Disaster Response checkbox
-    find("#category_emergency").click
-    check "category_disaster-response"
+    find("#category_101").click
+    check "category_101-01"
     click_button "Save changes"
     visit_test_location
-    find("#category_emergency").should be_checked
-    find("#category_disaster-response").should be_checked
+    find("#category_101").should be_checked
+    find("#category_101-01").should be_checked
     reset_categories
     visit_test_location
-    find("#category_emergency").should_not be_checked
+    find("#category_101").should_not be_checked
   end
 
   scenario "when going to 4th level", :js do
     visit_test_location
-    find("#category_health").click
-    find("#category_medical-care").click
-    find("#category_checkup-test").trigger('click')
-    find("#category_vision-tests").click
+    find("#category_106").click
+    find("#category_106-06").click
+    find("#category_106-06-04").trigger('click')
+    find("#category_106-06-04-06").click
     click_button "Save changes"
     visit_test_location
-    find("#category_vision-tests").should be_checked
-    find("#category_checkup-test").should be_checked
-    find("#category_medical-care").should be_checked
-    find("#category_health").should be_checked
+    find("#category_106-06-04-06").should be_checked
+    find("#category_106-06-04").should be_checked
+    find("#category_106-06").should be_checked
+    find("#category_106").should be_checked
     reset_categories
   end
 end
