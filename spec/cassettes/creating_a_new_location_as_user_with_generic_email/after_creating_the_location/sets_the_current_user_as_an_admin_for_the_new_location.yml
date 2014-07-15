@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -25,7 +25,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:02:58 GMT
+      - Tue, 15 Jul 2014 19:51:44 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -39,9 +39,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - f5349e02-9f8a-40b7-bcb7-cf1360048ec9
+      - 544fc8d5-30a6-49f5-81cf-14f8f583440c
       X-Runtime:
-      - '0.071925'
+      - '0.088923'
       X-Total-Count:
       - '22'
       X-Total-Pages:
@@ -70,17 +70,17 @@ http_interactions:
         Avenue of the fellows, Suite 100","city":"Burlington","state":"VT","zip":"05201"},"organization":{"id":8,"name":"SanMaceo
         Example Agency.","slug":"sanmaceo-example-agency","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/sanmaceo-example-agency","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/sanmaceo-example-agency/locations"},"phones":[{"id":21,"department":"Information","extension":null,"number":"650
         372-6200","number_type":"TTY","vanity_number":null},{"id":22,"department":"Reservations","extension":null,"number":"650
-        372-6200","number_type":null,"vanity_number":null}]},{"id":21,"admin_emails":[],"coordinates":[-73.9395687,42.8142432],"description":"This
+        372-6200","number_type":null,"vanity_number":null}]},{"id":21,"admin_emails":["ohana@gmail.com"],"coordinates":[-73.9395687,42.8142432],"description":"This
         is a description","latitude":42.8142432,"longitude":-73.9395687,"name":"Admin
-        Test Location","short_desc":"This is a short description","slug":"admin-test-location","updated_at":"2014-06-26T22:02:56.913-07:00","urls":["http://codeforamerica.org"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location/services","url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location","address":{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"organization":{"id":7,"name":"Admin
-        Test Org","slug":"admin-test-org","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org/locations"},"phones":[{"id":36,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}]},{"id":20,"admin_emails":[],"coordinates":null,"description":"no
+        Test Location","short_desc":"This is a short description","slug":"admin-test-location","updated_at":"2014-07-15T12:50:24.275-07:00","urls":["http://codeforamerica.org"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location/services","url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location","address":{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"organization":{"id":7,"name":"Admin
+        Test Org","slug":"admin-test-org","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org/locations"},"phones":[{"id":41,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}]},{"id":20,"admin_emails":[],"coordinates":null,"description":"no
         phone","latitude":null,"longitude":null,"name":"Location with no phone","short_desc":"no
-        phone","slug":"location-with-no-phone","updated_at":"2014-06-26T22:02:55.401-07:00","urls":[],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone/services","url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone","address":null,"organization":{"id":6,"name":"Location
+        phone","slug":"location-with-no-phone","updated_at":"2014-07-15T12:50:20.667-07:00","urls":[],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone/services","url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone","address":null,"organization":{"id":6,"name":"Location
         with no phone","slug":"location-with-no-phone","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone/locations"},"phones":[]},{"id":19,"admin_emails":[],"coordinates":[-122.2931236,37.5326941],"description":"Provides
         free medical and dental care to those in need. Offers basic medical care for
         adults.","latitude":37.5326941,"longitude":-122.2931236,"name":"San Mateo
         Free Medical Clinic","short_desc":"Provides free medical and dental care to
-        those in need. Offers basic medical care for adults.","slug":"san-mateo-free-medical-clinic","updated_at":"2014-06-26T22:02:38.685-07:00","urls":["http://www.samaritanhouse.com"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/san-mateo-free-medical-clinic/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/san-mateo-free-medical-clinic/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/san-mateo-free-medical-clinic/services","url":"http://ohana-api-test.herokuapp.com/api/locations/san-mateo-free-medical-clinic","address":{"id":19,"street":"19
+        those in need. Offers basic medical care for adults.","slug":"san-mateo-free-medical-clinic","updated_at":"2014-07-15T12:51:21.668-07:00","urls":["http://www.samaritanhouse.com"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/san-mateo-free-medical-clinic/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/san-mateo-free-medical-clinic/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/san-mateo-free-medical-clinic/services","url":"http://ohana-api-test.herokuapp.com/api/locations/san-mateo-free-medical-clinic","address":{"id":19,"street":"19
         West 39th Avenue","city":"San Mateo","state":"CA","zip":"94403"},"organization":{"id":5,"name":"Samaritan
         House","slug":"samaritan-house","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/samaritan-house","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/samaritan-house/locations"},"phones":[{"id":19,"department":null,"extension":null,"number":"650
         578-0400","number_type":null,"vanity_number":null}]},{"id":18,"admin_emails":[],"coordinates":[-122.207057,37.468678],"description":"Provides
@@ -90,7 +90,7 @@ http_interactions:
         exam, dental cleaning and oral hygiene instruction for children, age 3-12,
         of Samaritan House clients.","latitude":37.468678,"longitude":-122.207057,"name":"Redwood
         City Free Medical Clinic","short_desc":"Provides free medical care to those
-        in need.","slug":"redwood-city-free-medical-clinic","updated_at":"2014-06-26T22:02:38.111-07:00","urls":["http://www.samaritanhouse.com"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/services","url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic","address":{"id":18,"street":"114
+        in need.","slug":"redwood-city-free-medical-clinic","updated_at":"2014-07-15T12:51:20.529-07:00","urls":["http://www.samaritanhouse.com"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/services","url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic","address":{"id":18,"street":"114
         Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"organization":{"id":5,"name":"Samaritan
         House","slug":"samaritan-house","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/samaritan-house","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/samaritan-house/locations"},"phones":[{"id":18,"department":null,"extension":null,"number":"650
         839-1447","number_type":null,"vanity_number":null}]},{"id":17,"admin_emails":[],"coordinates":[-122.4224905,37.6445898],"description":"Provides
@@ -205,7 +205,7 @@ http_interactions:
         low fat, low sodium, and low sugar.","latitude":37.4480204,"longitude":-122.1805905,"name":"Meals
         on Wheels - South County","short_desc":"Will deliver a hot meal to the home
         of persons age 60 or over who are homebound and unable to prepare their own
-        meals. Can provide special diets.","slug":"meals-on-wheels-south-county","updated_at":"2014-06-26T21:59:23.318-07:00","urls":["http://www.peninsulavolunteers.org"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/meals-on-wheels-south-county/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/meals-on-wheels-south-county/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/meals-on-wheels-south-county/services","url":"http://ohana-api-test.herokuapp.com/api/locations/meals-on-wheels-south-county","address":{"id":8,"street":"800
+        meals. Can provide special diets.","slug":"meals-on-wheels-south-county","updated_at":"2014-07-15T12:50:57.016-07:00","urls":["http://www.peninsulavolunteers.org"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/meals-on-wheels-south-county/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/meals-on-wheels-south-county/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/meals-on-wheels-south-county/services","url":"http://ohana-api-test.herokuapp.com/api/locations/meals-on-wheels-south-county","address":{"id":8,"street":"800
         Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"organization":{"id":2,"name":"Peninsula
         Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"},"phones":[{"id":8,"department":null,"extension":null,"number":"650
         323-2022","number_type":null,"vanity_number":null}]},{"id":7,"admin_emails":[],"coordinates":[-122.1830931,37.4441785],"description":"Rosener
@@ -228,7 +228,7 @@ http_interactions:
         adults, \"Minds in Motion\" meets weekly at Rosener House on Wednesday mornings.
         Call for more information.","latitude":37.4441785,"longitude":-122.1830931,"name":"Rosener
         House Adult Day Services","short_desc":"A day center for adults age 50 or
-        over.","slug":"rosener-house-adult-day-services","updated_at":"2014-06-26T21:59:23.314-07:00","urls":["http://www.penvol.org/rosenerhouse"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/rosener-house-adult-day-services/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/rosener-house-adult-day-services/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/rosener-house-adult-day-services/services","url":"http://ohana-api-test.herokuapp.com/api/locations/rosener-house-adult-day-services","address":{"id":7,"street":"500
+        over.","slug":"rosener-house-adult-day-services","updated_at":"2014-07-15T12:50:57.012-07:00","urls":["http://www.penvol.org/rosenerhouse"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/rosener-house-adult-day-services/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/rosener-house-adult-day-services/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/rosener-house-adult-day-services/services","url":"http://ohana-api-test.herokuapp.com/api/locations/rosener-house-adult-day-services","address":{"id":7,"street":"500
         Arbor Road","city":"Menlo Park","state":"CA","zip":"94025"},"organization":{"id":2,"name":"Peninsula
         Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"},"phones":[{"id":7,"department":null,"extension":null,"number":"650
         322-0126","number_type":null,"vanity_number":null}]},{"id":6,"admin_emails":[],"coordinates":[-122.1805905,37.4480204],"description":"A
@@ -248,7 +248,7 @@ http_interactions:
         counseling, and estate planning. Massage, podiatry, and acupuncture are available
         by appointment. Lunch is served Monday-Friday, 11:30 am-1:00 pm. Prices vary
         according to selection.","latitude":37.4480204,"longitude":-122.1805905,"name":"Little
-        House","short_desc":"A multipurpose senior citizens'' center.","slug":"little-house","updated_at":"2014-06-26T21:59:24.002-07:00","urls":["http://www.penvol.org/littlehouse"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/services","url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
+        House","short_desc":"A multipurpose senior citizens'' center.","slug":"little-house","updated_at":"2014-07-15T12:50:57.889-07:00","urls":["http://www.penvol.org/littlehouse"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/services","url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
         Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"organization":{"id":2,"name":"Peninsula
         Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"},"phones":[{"id":6,"department":null,"extension":null,"number":"650
         326-2025","number_type":null,"vanity_number":null}]},{"id":5,"admin_emails":[],"coordinates":[-122.3263232,37.5639394],"description":"Provides
@@ -338,7 +338,7 @@ http_interactions:
         Family Service","slug":"peninsula-family-service","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-family-service","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-family-service/locations"},"phones":[{"id":1,"department":null,"extension":null,"number":"650
         780-7525","number_type":null,"vanity_number":null}]}]'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:02:58 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:44 GMT
 - request:
     method: get
     uri: http://ohana-api-test.herokuapp.com/api/locations?api_token=Ohana-API-Admin-Test&page=1&per_page=30
@@ -349,7 +349,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -364,7 +364,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:02:58 GMT
+      - Tue, 15 Jul 2014 19:51:45 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -378,9 +378,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 0bed65aa-530d-49be-9317-76f9c56dd3ba
+      - a132b127-4ada-4007-bd56-3757f5b8df79
       X-Runtime:
-      - '0.148114'
+      - '0.098952'
       X-Total-Count:
       - '22'
       X-Total-Pages:
@@ -409,17 +409,17 @@ http_interactions:
         Avenue of the fellows, Suite 100","city":"Burlington","state":"VT","zip":"05201"},"organization":{"id":8,"name":"SanMaceo
         Example Agency.","slug":"sanmaceo-example-agency","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/sanmaceo-example-agency","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/sanmaceo-example-agency/locations"},"phones":[{"id":21,"department":"Information","extension":null,"number":"650
         372-6200","number_type":"TTY","vanity_number":null},{"id":22,"department":"Reservations","extension":null,"number":"650
-        372-6200","number_type":null,"vanity_number":null}]},{"id":21,"admin_emails":[],"coordinates":[-73.9395687,42.8142432],"description":"This
+        372-6200","number_type":null,"vanity_number":null}]},{"id":21,"admin_emails":["ohana@gmail.com"],"coordinates":[-73.9395687,42.8142432],"description":"This
         is a description","latitude":42.8142432,"longitude":-73.9395687,"name":"Admin
-        Test Location","short_desc":"This is a short description","slug":"admin-test-location","updated_at":"2014-06-26T22:02:56.913-07:00","urls":["http://codeforamerica.org"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location/services","url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location","address":{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"organization":{"id":7,"name":"Admin
-        Test Org","slug":"admin-test-org","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org/locations"},"phones":[{"id":36,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}]},{"id":20,"admin_emails":[],"coordinates":null,"description":"no
+        Test Location","short_desc":"This is a short description","slug":"admin-test-location","updated_at":"2014-07-15T12:50:24.275-07:00","urls":["http://codeforamerica.org"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location/services","url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location","address":{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"organization":{"id":7,"name":"Admin
+        Test Org","slug":"admin-test-org","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org/locations"},"phones":[{"id":41,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}]},{"id":20,"admin_emails":[],"coordinates":null,"description":"no
         phone","latitude":null,"longitude":null,"name":"Location with no phone","short_desc":"no
-        phone","slug":"location-with-no-phone","updated_at":"2014-06-26T22:02:55.401-07:00","urls":[],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone/services","url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone","address":null,"organization":{"id":6,"name":"Location
+        phone","slug":"location-with-no-phone","updated_at":"2014-07-15T12:50:20.667-07:00","urls":[],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone/services","url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone","address":null,"organization":{"id":6,"name":"Location
         with no phone","slug":"location-with-no-phone","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone/locations"},"phones":[]},{"id":19,"admin_emails":[],"coordinates":[-122.2931236,37.5326941],"description":"Provides
         free medical and dental care to those in need. Offers basic medical care for
         adults.","latitude":37.5326941,"longitude":-122.2931236,"name":"San Mateo
         Free Medical Clinic","short_desc":"Provides free medical and dental care to
-        those in need. Offers basic medical care for adults.","slug":"san-mateo-free-medical-clinic","updated_at":"2014-06-26T22:02:38.685-07:00","urls":["http://www.samaritanhouse.com"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/san-mateo-free-medical-clinic/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/san-mateo-free-medical-clinic/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/san-mateo-free-medical-clinic/services","url":"http://ohana-api-test.herokuapp.com/api/locations/san-mateo-free-medical-clinic","address":{"id":19,"street":"19
+        those in need. Offers basic medical care for adults.","slug":"san-mateo-free-medical-clinic","updated_at":"2014-07-15T12:51:21.668-07:00","urls":["http://www.samaritanhouse.com"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/san-mateo-free-medical-clinic/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/san-mateo-free-medical-clinic/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/san-mateo-free-medical-clinic/services","url":"http://ohana-api-test.herokuapp.com/api/locations/san-mateo-free-medical-clinic","address":{"id":19,"street":"19
         West 39th Avenue","city":"San Mateo","state":"CA","zip":"94403"},"organization":{"id":5,"name":"Samaritan
         House","slug":"samaritan-house","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/samaritan-house","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/samaritan-house/locations"},"phones":[{"id":19,"department":null,"extension":null,"number":"650
         578-0400","number_type":null,"vanity_number":null}]},{"id":18,"admin_emails":[],"coordinates":[-122.207057,37.468678],"description":"Provides
@@ -429,7 +429,7 @@ http_interactions:
         exam, dental cleaning and oral hygiene instruction for children, age 3-12,
         of Samaritan House clients.","latitude":37.468678,"longitude":-122.207057,"name":"Redwood
         City Free Medical Clinic","short_desc":"Provides free medical care to those
-        in need.","slug":"redwood-city-free-medical-clinic","updated_at":"2014-06-26T22:02:38.111-07:00","urls":["http://www.samaritanhouse.com"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/services","url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic","address":{"id":18,"street":"114
+        in need.","slug":"redwood-city-free-medical-clinic","updated_at":"2014-07-15T12:51:20.529-07:00","urls":["http://www.samaritanhouse.com"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/services","url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic","address":{"id":18,"street":"114
         Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"organization":{"id":5,"name":"Samaritan
         House","slug":"samaritan-house","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/samaritan-house","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/samaritan-house/locations"},"phones":[{"id":18,"department":null,"extension":null,"number":"650
         839-1447","number_type":null,"vanity_number":null}]},{"id":17,"admin_emails":[],"coordinates":[-122.4224905,37.6445898],"description":"Provides
@@ -544,7 +544,7 @@ http_interactions:
         low fat, low sodium, and low sugar.","latitude":37.4480204,"longitude":-122.1805905,"name":"Meals
         on Wheels - South County","short_desc":"Will deliver a hot meal to the home
         of persons age 60 or over who are homebound and unable to prepare their own
-        meals. Can provide special diets.","slug":"meals-on-wheels-south-county","updated_at":"2014-06-26T21:59:23.318-07:00","urls":["http://www.peninsulavolunteers.org"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/meals-on-wheels-south-county/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/meals-on-wheels-south-county/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/meals-on-wheels-south-county/services","url":"http://ohana-api-test.herokuapp.com/api/locations/meals-on-wheels-south-county","address":{"id":8,"street":"800
+        meals. Can provide special diets.","slug":"meals-on-wheels-south-county","updated_at":"2014-07-15T12:50:57.016-07:00","urls":["http://www.peninsulavolunteers.org"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/meals-on-wheels-south-county/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/meals-on-wheels-south-county/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/meals-on-wheels-south-county/services","url":"http://ohana-api-test.herokuapp.com/api/locations/meals-on-wheels-south-county","address":{"id":8,"street":"800
         Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"organization":{"id":2,"name":"Peninsula
         Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"},"phones":[{"id":8,"department":null,"extension":null,"number":"650
         323-2022","number_type":null,"vanity_number":null}]},{"id":7,"admin_emails":[],"coordinates":[-122.1830931,37.4441785],"description":"Rosener
@@ -567,7 +567,7 @@ http_interactions:
         adults, \"Minds in Motion\" meets weekly at Rosener House on Wednesday mornings.
         Call for more information.","latitude":37.4441785,"longitude":-122.1830931,"name":"Rosener
         House Adult Day Services","short_desc":"A day center for adults age 50 or
-        over.","slug":"rosener-house-adult-day-services","updated_at":"2014-06-26T21:59:23.314-07:00","urls":["http://www.penvol.org/rosenerhouse"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/rosener-house-adult-day-services/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/rosener-house-adult-day-services/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/rosener-house-adult-day-services/services","url":"http://ohana-api-test.herokuapp.com/api/locations/rosener-house-adult-day-services","address":{"id":7,"street":"500
+        over.","slug":"rosener-house-adult-day-services","updated_at":"2014-07-15T12:50:57.012-07:00","urls":["http://www.penvol.org/rosenerhouse"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/rosener-house-adult-day-services/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/rosener-house-adult-day-services/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/rosener-house-adult-day-services/services","url":"http://ohana-api-test.herokuapp.com/api/locations/rosener-house-adult-day-services","address":{"id":7,"street":"500
         Arbor Road","city":"Menlo Park","state":"CA","zip":"94025"},"organization":{"id":2,"name":"Peninsula
         Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"},"phones":[{"id":7,"department":null,"extension":null,"number":"650
         322-0126","number_type":null,"vanity_number":null}]},{"id":6,"admin_emails":[],"coordinates":[-122.1805905,37.4480204],"description":"A
@@ -587,7 +587,7 @@ http_interactions:
         counseling, and estate planning. Massage, podiatry, and acupuncture are available
         by appointment. Lunch is served Monday-Friday, 11:30 am-1:00 pm. Prices vary
         according to selection.","latitude":37.4480204,"longitude":-122.1805905,"name":"Little
-        House","short_desc":"A multipurpose senior citizens'' center.","slug":"little-house","updated_at":"2014-06-26T21:59:24.002-07:00","urls":["http://www.penvol.org/littlehouse"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/services","url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
+        House","short_desc":"A multipurpose senior citizens'' center.","slug":"little-house","updated_at":"2014-07-15T12:50:57.889-07:00","urls":["http://www.penvol.org/littlehouse"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/services","url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
         Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"organization":{"id":2,"name":"Peninsula
         Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"},"phones":[{"id":6,"department":null,"extension":null,"number":"650
         326-2025","number_type":null,"vanity_number":null}]},{"id":5,"admin_emails":[],"coordinates":[-122.3263232,37.5639394],"description":"Provides
@@ -677,7 +677,7 @@ http_interactions:
         Family Service","slug":"peninsula-family-service","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-family-service","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-family-service/locations"},"phones":[{"id":1,"department":null,"extension":null,"number":"650
         780-7525","number_type":null,"vanity_number":null}]}]'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:02:58 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:45 GMT
 - request:
     method: get
     uri: http://ohana-api-test.herokuapp.com/api/locations/little-house?api_token=Ohana-API-Admin-Test
@@ -688,7 +688,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -703,7 +703,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:02:58 GMT
+      - Tue, 15 Jul 2014 19:51:45 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -715,13 +715,13 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - a1351f83-d84a-47d1-b402-d24275f92c05
+      - 1e7f096d-6f56-4ac2-a2ff-b435721021cc
       X-Runtime:
-      - '0.051558'
+      - '0.038976'
       X-Xss-Protection:
       - 1; mode=block
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '1862'
       Connection:
       - keep-alive
     body:
@@ -745,27 +745,28 @@ http_interactions:
         according to selection.","emails":["polson@peninsulavolunteers.org"],"hours":"Monday-Thursday,
         8 am-9 pm; Friday, 8-5","languages":["Filipino (Tagalog)","Spanish"],"latitude":37.4480204,"longitude":-122.1805905,"name":"Little
         House","short_desc":"A multipurpose senior citizens'' center.","slug":"little-house","transportation":"SAMTRANS
-        stops within 3 blocks, RediWheels and Menlo Park Shuttle stop at door.","updated_at":"2014-06-26T21:59:24.002-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
+        stops within 3 blocks, RediWheels and Menlo Park Shuttle stop at door.","updated_at":"2014-07-15T12:50:57.889-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
         Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"contacts":[{"email":null,"extension":null,"fax":null,"id":7,"name":"Peter
         Olson","phone":null,"title":"Little House Director"},{"email":null,"extension":null,"fax":null,"id":8,"name":"Bart
         Charlow","phone":null,"title":"Executive Director, Peninsula Volunteers"}],"faxes":[{"id":6,"number":"650
         326-9547","department":null}],"mail_address":{"id":6,"attention":"Little House","street":"800
         Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"phones":[{"id":6,"department":null,"extension":null,"number":"650
         326-2025","number_type":null,"vanity_number":null}],"services":[{"id":6,"audience":"Any
-        age","description":null,"eligibility":"None","fees":"$55 per year membership
-        dues. Classes have fees. Discounts are available for members. Cash, checks
-        and credit cards accepted.","funding_sources":["Fees","Fundraising","Grants","Membership
+        age","description":"The Little House Community Service Desk offers information
+        and referrals regarding social service issues, such as housing, food, transportation,
+        health insurance counseling, and estate planning.","eligibility":"None","fees":"$55
+        per year membership dues. Classes have fees. Discounts are available for members.
+        Cash, checks and credit cards accepted.","funding_sources":["Fees","Fundraising","Grants","Membership
         dues"],"how_to_apply":"Walk in or apply by phone for membership application.","keywords":["ADULT
         PROTECTION AND CARE SERVICES","In-Home Supportive","Meal Sites/Home-delivered
         Meals","COMMUNITY SERVICES","Group Support","Information and Referral","EDUCATION
         SERVICES","Adult","HEALTH SERVICES","Education/Information","Family Support","Individual/Group
         Counseling","Screening/Immunization","RECREATION/LEISURE SERVICES","Sports/Games/Exercise","Community
-        Adult Schools","Senior Centers","Older Adults"],"name":null,"service_areas":["San
-        Mateo County","Santa Clara County"],"short_desc":null,"urls":[],"wait":"No
-        wait.","updated_at":"2014-04-18T12:31:59.022-07:00","categories":[]}],"organization":{"id":2,"name":"Peninsula
+        Adult Schools","Senior Centers","Older Adults"],"name":"Little House Community
+        Service Desk","service_areas":[],"short_desc":null,"urls":[],"wait":"No wait.","updated_at":"2014-07-15T12:50:57.885-07:00","categories":[]}],"organization":{"id":2,"name":"Peninsula
         Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"}}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:02:58 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:45 GMT
 - request:
     method: put
     uri: http://ohana-api-test.herokuapp.com/api/organizations/2?api_token=Ohana-API-Admin-Test&name=Peninsula%20Volunteers
@@ -776,7 +777,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -791,7 +792,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:02:58 GMT
+      - Tue, 15 Jul 2014 19:51:46 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -803,9 +804,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - feb3c6a5-1af2-498b-a8f9-e67746bc2b6e
+      - 5532c9a4-f114-4c4f-87a6-a200c5ee6661
       X-Runtime:
-      - '0.140932'
+      - '0.060460'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -816,7 +817,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"id":2,"name":"Peninsula Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:02:58 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:46 GMT
 - request:
     method: patch
     uri: http://ohana-api-test.herokuapp.com/api/locations/6/address/6?api_token=Ohana-API-Admin-Test&city=Menlo%20Park&new&state=CA&street=800%20Middle%20Avenue&zip=94025-9881
@@ -827,7 +828,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -842,7 +843,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:02:59 GMT
+      - Tue, 15 Jul 2014 19:51:46 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -854,20 +855,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - dae65a41-7f39-4faf-81e3-0f7ca3a6d485
+      - 9806dcc3-df65-40e5-869c-5fe9713517c1
       X-Runtime:
-      - '0.032003'
+      - '0.032503'
       X-Xss-Protection:
       - 1; mode=block
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '115'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"id":6,"street":"800 Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:02:59 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:46 GMT
 - request:
     method: patch
     uri: http://ohana-api-test.herokuapp.com/api/locations/6/mail_address/6?api_token=Ohana-API-Admin-Test&attention=Little%20House&city=Menlo%20Park&state=CA&street=800%20Middle%20Avenue&zip=94025-9881
@@ -878,7 +879,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -893,7 +894,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:02:59 GMT
+      - Tue, 15 Jul 2014 19:51:46 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -905,13 +906,13 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - c2583b66-ea1b-49e5-af66-032a73b97ac2
+      - 235d1131-df0a-45ec-9698-10b839082ef9
       X-Runtime:
-      - '0.044896'
+      - '0.031314'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '130'
+      - '136'
       Connection:
       - keep-alive
     body:
@@ -919,7 +920,7 @@ http_interactions:
       string: '{"id":6,"attention":"Little House","street":"800 Middle Avenue","city":"Menlo
         Park","state":"CA","zip":"94025-9881"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:02:59 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:46 GMT
 - request:
     method: put
     uri: http://ohana-api-test.herokuapp.com/api/locations/6?accessibility%5B0%5D=disabled_parking&accessibility%5B1%5D=wheelchair&admin_emails%5B0%5D=moncef@smcgov.org&api_token=Ohana-API-Admin-Test&description=A%20multipurpose%20center%20offering%20a%20wide%20variety%20of%20recreational,%20education%20and%20cultural%20activities.%20Lifelong%20learning%20courses%20cover%20topics%20such%20as%20music,%20art,%20languages,%20etc.,%20are%20hosted%20at%20this%20location.%20Little%20House%20offers%20a%20large%20variety%20of%20classes%20including%20arts%20and%20crafts,%20jewelry,%20languages,%20current%20events,%20lapidary,%20woodwork,%20painting,%20and%20fitness%20courses%20(yoga,%20strength%20straining,%20tai%20chi).%20There%20are%20monthly%20art%20and%20cultural%20lectures,%20movie%20showings,%20and%20a%20computer%20center.%20Recreation%20activities%20include%20mah%20jong,%20pinochle,%20ballroom%20dancing,%20bridge,%20trips%20and%20tours.%20Partners%20with%20the%20Sequoia%20Adult%20Education%20Program.%20The%20Alzheimer's%20Cafe,%20open%20the%20third%20Tuesday%20of%20every%20month%20from%202:00%20-%204:00%20pm,%20is%20a%20place%20that%20brings%20together%20people%20liviing%20with%20dementia,%20their%20families,%20and%20their%20caregivers.%20Free%20and%20no%20registration%20is%20needed.%20The%20Little%20House%20Community%20Service%20Desk%20offers%20information%20and%20referrals%20regarding%20social%20service%20issues,%20such%20as%20housing,%20food,%20transportation,%20health%20insurance%20counseling,%20and%20estate%20planning.%20Massage,%20podiatry,%20and%20acupuncture%20are%20available%20by%20appointment.%20Lunch%20is%20served%20Monday-Friday,%2011:30%20am-1:00%20pm.%20Prices%20vary%20according%20to%20selection.&emails%5B0%5D=polson@peninsulavolunteers.org&hours=Monday-Thursday,%208%20am-9%20pm%3B%20Friday,%208-5&name=Little%20House&short_desc=A%20multipurpose%20senior%20citizens'%20center.&transportation=SAMTRANS%20stops%20within%203%20blocks,%20RediWheels%20and%20Menlo%20Park%20Shuttle%20stop%20at%20door.&urls%5B0%5D=http://www.penvol.org/littlehouse
@@ -930,7 +931,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -945,7 +946,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:02:59 GMT
+      - Tue, 15 Jul 2014 19:51:46 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -957,9 +958,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 2cc2799d-4036-4ae0-8bda-657e0f166405
+      - 4687bf7b-45ba-4506-82fa-734ab2b30328
       X-Runtime:
-      - '0.135146'
+      - '0.074601'
       X-Xss-Protection:
       - 1; mode=block
       Transfer-Encoding:
@@ -987,27 +988,28 @@ http_interactions:
         according to selection.","emails":["polson@peninsulavolunteers.org"],"hours":"Monday-Thursday,
         8 am-9 pm; Friday, 8-5","languages":["Filipino (Tagalog)","Spanish"],"latitude":37.4480204,"longitude":-122.1805905,"name":"Little
         House","short_desc":"A multipurpose senior citizens'' center.","slug":"little-house","transportation":"SAMTRANS
-        stops within 3 blocks, RediWheels and Menlo Park Shuttle stop at door.","updated_at":"2014-06-26T22:02:59.356-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
+        stops within 3 blocks, RediWheels and Menlo Park Shuttle stop at door.","updated_at":"2014-07-15T12:51:46.943-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
         Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"contacts":[{"email":null,"extension":null,"fax":null,"id":7,"name":"Peter
         Olson","phone":null,"title":"Little House Director"},{"email":null,"extension":null,"fax":null,"id":8,"name":"Bart
         Charlow","phone":null,"title":"Executive Director, Peninsula Volunteers"}],"faxes":[{"id":6,"number":"650
         326-9547","department":null}],"mail_address":{"id":6,"attention":"Little House","street":"800
         Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"phones":[{"id":6,"department":null,"extension":null,"number":"650
         326-2025","number_type":null,"vanity_number":null}],"services":[{"id":6,"audience":"Any
-        age","description":null,"eligibility":"None","fees":"$55 per year membership
-        dues. Classes have fees. Discounts are available for members. Cash, checks
-        and credit cards accepted.","funding_sources":["Fees","Fundraising","Grants","Membership
+        age","description":"The Little House Community Service Desk offers information
+        and referrals regarding social service issues, such as housing, food, transportation,
+        health insurance counseling, and estate planning.","eligibility":"None","fees":"$55
+        per year membership dues. Classes have fees. Discounts are available for members.
+        Cash, checks and credit cards accepted.","funding_sources":["Fees","Fundraising","Grants","Membership
         dues"],"how_to_apply":"Walk in or apply by phone for membership application.","keywords":["ADULT
         PROTECTION AND CARE SERVICES","In-Home Supportive","Meal Sites/Home-delivered
         Meals","COMMUNITY SERVICES","Group Support","Information and Referral","EDUCATION
         SERVICES","Adult","HEALTH SERVICES","Education/Information","Family Support","Individual/Group
         Counseling","Screening/Immunization","RECREATION/LEISURE SERVICES","Sports/Games/Exercise","Community
-        Adult Schools","Senior Centers","Older Adults"],"name":null,"service_areas":["San
-        Mateo County","Santa Clara County"],"short_desc":null,"urls":[],"wait":"No
-        wait.","updated_at":"2014-04-18T12:31:59.022-07:00","categories":[]}],"organization":{"id":2,"name":"Peninsula
+        Adult Schools","Senior Centers","Older Adults"],"name":"Little House Community
+        Service Desk","service_areas":[],"short_desc":null,"urls":[],"wait":"No wait.","updated_at":"2014-07-15T12:50:57.885-07:00","categories":[]}],"organization":{"id":2,"name":"Peninsula
         Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"}}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:02:59 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:46 GMT
 - request:
     method: patch
     uri: http://ohana-api-test.herokuapp.com/api/locations/6/contacts/7?api_token=Ohana-API-Admin-Test&email=&extension=&fax=&name=Peter%20Olson&phone=&title=Little%20House%20Director
@@ -1018,7 +1020,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -1033,7 +1035,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:02:59 GMT
+      - Tue, 15 Jul 2014 19:51:47 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -1045,13 +1047,13 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 843cbbdc-3208-451d-be79-bbba32fbc277
+      - 2e182801-f129-4b6d-92c3-07d496805cc8
       X-Runtime:
-      - '0.031223'
+      - '0.032260'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '122'
+      - '116'
       Connection:
       - keep-alive
     body:
@@ -1059,7 +1061,7 @@ http_interactions:
       string: '{"email":null,"extension":null,"fax":null,"id":7,"name":"Peter Olson","phone":null,"title":"Little
         House Director"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:02:59 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:46 GMT
 - request:
     method: patch
     uri: http://ohana-api-test.herokuapp.com/api/locations/6/contacts/8?api_token=Ohana-API-Admin-Test&email=&extension=&fax=&name=Bart%20Charlow&phone=&title=Executive%20Director,%20Peninsula%20Volunteers
@@ -1070,7 +1072,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -1085,7 +1087,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:02:59 GMT
+      - Tue, 15 Jul 2014 19:51:47 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -1097,13 +1099,13 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - f88d4c5d-9655-4aee-8619-52b5640e561a
+      - 1aea905d-ab21-4238-a57e-6e951c271637
       X-Runtime:
-      - '0.028631'
+      - '0.030939'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '137'
+      - '131'
       Connection:
       - keep-alive
     body:
@@ -1111,7 +1113,7 @@ http_interactions:
       string: '{"email":null,"extension":null,"fax":null,"id":8,"name":"Bart Charlow","phone":null,"title":"Executive
         Director, Peninsula Volunteers"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:02:59 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:46 GMT
 - request:
     method: patch
     uri: http://ohana-api-test.herokuapp.com/api/locations/6/faxes/6?api_token=Ohana-API-Admin-Test&department=&number=650%20326-9547
@@ -1122,7 +1124,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -1137,7 +1139,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:02:59 GMT
+      - Tue, 15 Jul 2014 19:51:47 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -1149,9 +1151,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 9a40c0ae-e3e2-42e0-ac57-6985b059005e
+      - 19f13c57-ba4e-4030-9f8f-92958d0fe4e6
       X-Runtime:
-      - '0.072506'
+      - '0.084456'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -1162,7 +1164,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"id":6,"number":"650 326-9547","department":null}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:02:59 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:46 GMT
 - request:
     method: patch
     uri: http://ohana-api-test.herokuapp.com/api/locations/6/phones/6?api_token=Ohana-API-Admin-Test&department=&extension=&number=650%20326-2025&vanity_number=
@@ -1173,7 +1175,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -1188,7 +1190,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:02:59 GMT
+      - Tue, 15 Jul 2014 19:51:47 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -1200,23 +1202,23 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - ded37856-75de-45d1-b9b3-367c32a287d5
+      - 981e8713-582c-4d1b-9d29-afb8b86a848e
       X-Runtime:
-      - '0.027195'
+      - '0.029593'
       X-Xss-Protection:
       - 1; mode=block
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '114'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"id":6,"department":null,"extension":null,"number":"650 326-2025","number_type":null,"vanity_number":null}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:02:59 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:46 GMT
 - request:
     method: patch
-    uri: http://ohana-api-test.herokuapp.com/api/locations/6/services/6?api_token=Ohana-API-Admin-Test&audience=Any%20age&eligibility=None&fees=$55%20per%20year%20membership%20dues.%20Classes%20have%20fees.%20Discounts%20are%20available%20for%20members.%20Cash,%20checks%20and%20credit%20cards%20accepted.&how_to_apply=Walk%20in%20or%20apply%20by%20phone%20for%20membership%20application.&keywords%5B0%5D=ADULT%20PROTECTION%20AND%20CARE%20SERVICES&keywords%5B1%5D=In-Home%20Supportive&keywords%5B2%5D=Meal%20Sites/Home-delivered%20Meals&keywords%5B3%5D=COMMUNITY%20SERVICES&keywords%5B4%5D=Group%20Support&keywords%5B5%5D=Information%20and%20Referral&keywords%5B6%5D=EDUCATION%20SERVICES&keywords%5B7%5D=Adult&keywords%5B8%5D=HEALTH%20SERVICES&keywords%5B9%5D=Education/Information&keywords%5B10%5D=Family%20Support&keywords%5B11%5D=Individual/Group%20Counseling&keywords%5B12%5D=Screening/Immunization&keywords%5B13%5D=RECREATION/LEISURE%20SERVICES&keywords%5B14%5D=Sports/Games/Exercise&keywords%5B15%5D=Community%20Adult%20Schools&keywords%5B16%5D=Senior%20Centers&keywords%5B17%5D=Older%20Adults&service_areas%5B0%5D=San%20Mateo%20County&service_areas%5B1%5D=Santa%20Clara%20County&wait=No%20wait.
+    uri: http://ohana-api-test.herokuapp.com/api/locations/6/services/6?api_token=Ohana-API-Admin-Test&audience=Any%20age&description=The%20Little%20House%20Community%20Service%20Desk%20offers%20information%20and%20referrals%20regarding%20social%20service%20issues,%20such%20as%20housing,%20food,%20transportation,%20health%20insurance%20counseling,%20and%20estate%20planning.&eligibility=None&fees=$55%20per%20year%20membership%20dues.%20Classes%20have%20fees.%20Discounts%20are%20available%20for%20members.%20Cash,%20checks%20and%20credit%20cards%20accepted.&how_to_apply=Walk%20in%20or%20apply%20by%20phone%20for%20membership%20application.&keywords%5B0%5D=ADULT%20PROTECTION%20AND%20CARE%20SERVICES&keywords%5B1%5D=In-Home%20Supportive&keywords%5B2%5D=Meal%20Sites/Home-delivered%20Meals&keywords%5B3%5D=COMMUNITY%20SERVICES&keywords%5B4%5D=Group%20Support&keywords%5B5%5D=Information%20and%20Referral&keywords%5B6%5D=EDUCATION%20SERVICES&keywords%5B7%5D=Adult&keywords%5B8%5D=HEALTH%20SERVICES&keywords%5B9%5D=Education/Information&keywords%5B10%5D=Family%20Support&keywords%5B11%5D=Individual/Group%20Counseling&keywords%5B12%5D=Screening/Immunization&keywords%5B13%5D=RECREATION/LEISURE%20SERVICES&keywords%5B14%5D=Sports/Games/Exercise&keywords%5B15%5D=Community%20Adult%20Schools&keywords%5B16%5D=Senior%20Centers&keywords%5B17%5D=Older%20Adults&name=Little%20House%20Community%20Service%20Desk&service_areas&wait=No%20wait.
     body:
       encoding: UTF-8
       string: "{}"
@@ -1224,26 +1226,26 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
-      code: 422
-      message: Unprocessable Entity
+      code: 200
+      message: OK
     headers:
       Cache-Control:
-      - no-cache
+      - max-age=0, private, must-revalidate
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:02:59 GMT
+      - Tue, 15 Jul 2014 19:51:47 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
-      - 422 Unprocessable Entity
+      - 200 OK
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -1251,9 +1253,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - bff4c289-e137-4616-b92f-ddc4e0e8b203
+      - cce3bd83-84f2-47b8-b825-53cfb9b6e5c3
       X-Runtime:
-      - '0.020464'
+      - '0.056296'
       X-Xss-Protection:
       - 1; mode=block
       Transfer-Encoding:
@@ -1262,11 +1264,84 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"status":422,"message":"Validation failed for resource.","errors":[{"service_areas":["At
-        least one service area is improperly formatted, or is not an accepted city
-        or county name. Please make sure all words are capitalized."]}]}'
+      string: '{"id":6,"audience":"Any age","description":"The Little House Community
+        Service Desk offers information and referrals regarding social service issues,
+        such as housing, food, transportation, health insurance counseling, and estate
+        planning.","eligibility":"None","fees":"$55 per year membership dues. Classes
+        have fees. Discounts are available for members. Cash, checks and credit cards
+        accepted.","funding_sources":["Fees","Fundraising","Grants","Membership dues"],"how_to_apply":"Walk
+        in or apply by phone for membership application.","keywords":["ADULT PROTECTION
+        AND CARE SERVICES","In-Home Supportive","Meal Sites/Home-delivered Meals","COMMUNITY
+        SERVICES","Group Support","Information and Referral","EDUCATION SERVICES","Adult","HEALTH
+        SERVICES","Education/Information","Family Support","Individual/Group Counseling","Screening/Immunization","RECREATION/LEISURE
+        SERVICES","Sports/Games/Exercise","Community Adult Schools","Senior Centers","Older
+        Adults"],"name":"Little House Community Service Desk","service_areas":[],"short_desc":null,"urls":[],"wait":"No
+        wait.","updated_at":"2014-07-15T12:51:47.508-07:00","categories":[]}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:02:59 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:47 GMT
+- request:
+    method: put
+    uri: http://ohana-api-test.herokuapp.com/api/services/6/categories?api_token=Ohana-API-Admin-Test&oe_ids
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.1
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Jul 2014 19:51:47 GMT
+      Server:
+      - nginx/1.6.0 + Phusion Passenger 4.0.45
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 4.0.45
+      X-Request-Id:
+      - a9672fb0-c6d4-4ec3-8524-2d4c775a68c7
+      X-Runtime:
+      - '0.103072'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":6,"audience":"Any age","description":"The Little House Community
+        Service Desk offers information and referrals regarding social service issues,
+        such as housing, food, transportation, health insurance counseling, and estate
+        planning.","eligibility":"None","fees":"$55 per year membership dues. Classes
+        have fees. Discounts are available for members. Cash, checks and credit cards
+        accepted.","funding_sources":["Fees","Fundraising","Grants","Membership dues"],"how_to_apply":"Walk
+        in or apply by phone for membership application.","keywords":["ADULT PROTECTION
+        AND CARE SERVICES","In-Home Supportive","Meal Sites/Home-delivered Meals","COMMUNITY
+        SERVICES","Group Support","Information and Referral","EDUCATION SERVICES","Adult","HEALTH
+        SERVICES","Education/Information","Family Support","Individual/Group Counseling","Screening/Immunization","RECREATION/LEISURE
+        SERVICES","Sports/Games/Exercise","Community Adult Schools","Senior Centers","Older
+        Adults"],"name":"Little House Community Service Desk","service_areas":[],"short_desc":null,"urls":[],"wait":"No
+        wait.","updated_at":"2014-07-15T12:51:47.660-07:00","categories":[]}'
+    http_version: 
+  recorded_at: Tue, 15 Jul 2014 19:51:47 GMT
 - request:
     method: get
     uri: http://ohana-api-test.herokuapp.com/api/locations/little-house?api_token=Ohana-API-Admin-Test
@@ -1277,7 +1352,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -1292,7 +1367,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:02:59 GMT
+      - Tue, 15 Jul 2014 19:51:47 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -1304,9 +1379,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - d83117f3-6123-4cbe-bdff-8260a4944e33
+      - 8af17c09-7f93-4cf9-a321-17495d22f4ae
       X-Runtime:
-      - '0.095226'
+      - '0.050356'
       X-Xss-Protection:
       - 1; mode=block
       Transfer-Encoding:
@@ -1334,27 +1409,28 @@ http_interactions:
         according to selection.","emails":["polson@peninsulavolunteers.org"],"hours":"Monday-Thursday,
         8 am-9 pm; Friday, 8-5","languages":["Filipino (Tagalog)","Spanish"],"latitude":37.4480204,"longitude":-122.1805905,"name":"Little
         House","short_desc":"A multipurpose senior citizens'' center.","slug":"little-house","transportation":"SAMTRANS
-        stops within 3 blocks, RediWheels and Menlo Park Shuttle stop at door.","updated_at":"2014-06-26T22:02:59.723-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
+        stops within 3 blocks, RediWheels and Menlo Park Shuttle stop at door.","updated_at":"2014-07-15T12:51:47.665-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
         Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"contacts":[{"email":null,"extension":null,"fax":null,"id":7,"name":"Peter
         Olson","phone":null,"title":"Little House Director"},{"email":null,"extension":null,"fax":null,"id":8,"name":"Bart
         Charlow","phone":null,"title":"Executive Director, Peninsula Volunteers"}],"faxes":[{"id":6,"number":"650
         326-9547","department":null}],"mail_address":{"id":6,"attention":"Little House","street":"800
         Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"phones":[{"id":6,"department":null,"extension":null,"number":"650
         326-2025","number_type":null,"vanity_number":null}],"services":[{"id":6,"audience":"Any
-        age","description":null,"eligibility":"None","fees":"$55 per year membership
-        dues. Classes have fees. Discounts are available for members. Cash, checks
-        and credit cards accepted.","funding_sources":["Fees","Fundraising","Grants","Membership
+        age","description":"The Little House Community Service Desk offers information
+        and referrals regarding social service issues, such as housing, food, transportation,
+        health insurance counseling, and estate planning.","eligibility":"None","fees":"$55
+        per year membership dues. Classes have fees. Discounts are available for members.
+        Cash, checks and credit cards accepted.","funding_sources":["Fees","Fundraising","Grants","Membership
         dues"],"how_to_apply":"Walk in or apply by phone for membership application.","keywords":["ADULT
         PROTECTION AND CARE SERVICES","In-Home Supportive","Meal Sites/Home-delivered
         Meals","COMMUNITY SERVICES","Group Support","Information and Referral","EDUCATION
         SERVICES","Adult","HEALTH SERVICES","Education/Information","Family Support","Individual/Group
         Counseling","Screening/Immunization","RECREATION/LEISURE SERVICES","Sports/Games/Exercise","Community
-        Adult Schools","Senior Centers","Older Adults"],"name":null,"service_areas":["San
-        Mateo County","Santa Clara County"],"short_desc":null,"urls":[],"wait":"No
-        wait.","updated_at":"2014-04-18T12:31:59.022-07:00","categories":[]}],"organization":{"id":2,"name":"Peninsula
+        Adult Schools","Senior Centers","Older Adults"],"name":"Little House Community
+        Service Desk","service_areas":[],"short_desc":null,"urls":[],"wait":"No wait.","updated_at":"2014-07-15T12:51:47.660-07:00","categories":[]}],"organization":{"id":2,"name":"Peninsula
         Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"}}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:02:59 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:47 GMT
 - request:
     method: get
     uri: http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&email=moncef@smcgov.org
@@ -1365,7 +1441,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -1380,7 +1456,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:03:00 GMT
+      - Tue, 15 Jul 2014 19:51:48 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -1394,17 +1470,17 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - c3fb7cc8-38c5-4db3-b051-818f50a032ef
+      - 7cafdc88-2ce8-480e-b1c8-4a48c23f1128
       X-Runtime:
-      - '0.072628'
+      - '0.034692'
       X-Total-Count:
       - '1'
       X-Total-Pages:
       - '1'
       X-Xss-Protection:
       - 1; mode=block
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '1179'
       Connection:
       - keep-alive
     body:
@@ -1426,15 +1502,15 @@ http_interactions:
         counseling, and estate planning. Massage, podiatry, and acupuncture are available
         by appointment. Lunch is served Monday-Friday, 11:30 am-1:00 pm. Prices vary
         according to selection.","latitude":37.4480204,"longitude":-122.1805905,"name":"Little
-        House","short_desc":"A multipurpose senior citizens'' center.","slug":"little-house","updated_at":"2014-06-26T22:02:59.723-07:00","urls":["http://www.penvol.org/littlehouse"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/services","url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
+        House","short_desc":"A multipurpose senior citizens'' center.","slug":"little-house","updated_at":"2014-07-15T12:51:47.665-07:00","urls":["http://www.penvol.org/littlehouse"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/services","url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
         Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"organization":{"id":2,"name":"Peninsula
         Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"},"phones":[{"id":6,"department":null,"extension":null,"number":"650
         326-2025","number_type":null,"vanity_number":null}]}]'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:00 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:47 GMT
 - request:
     method: post
-    uri: http://ohana-api-test.herokuapp.com/api/locations/?accessibility&address_attributes%5Bcity%5D=utopia&address_attributes%5Bdestroy%5D&address_attributes%5Bnew%5D&address_attributes%5Bstate%5D=XX&address_attributes%5Bstreet%5D=modularity&address_attributes%5Bzip%5D=12345&admin_emails&api_token=Ohana-API-Admin-Test&description=new%20description&hours=&name=new%20samaritan%20house%20location&organization_id=2&short_desc=&transportation=&urls%5B0%5D=http://www.penvol.org/littlehouse
+    uri: http://ohana-api-test.herokuapp.com/api/locations/?accessibility&address_attributes%5Bcity%5D=utopia&address_attributes%5Bdestroy%5D&address_attributes%5Bnew%5D&address_attributes%5Bstate%5D=XX&address_attributes%5Bstreet%5D=modularity&address_attributes%5Bzip%5D=12345&admin_emails%5B0%5D=moncef@smcgov.org&api_token=Ohana-API-Admin-Test&description=new%20description&hours=&name=new%20samaritan%20house%20location&organization_id=2&short_desc=&transportation=&urls%5B0%5D=http://www.penvol.org/littlehouse
     body:
       encoding: UTF-8
       string: "{}"
@@ -1442,7 +1518,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -1457,9 +1533,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:03:01 GMT
+      - Tue, 15 Jul 2014 19:51:49 GMT
       Etag:
-      - '"c2e6f17a6102dd3bacf1cf3307af78e4"'
+      - '"38af0b06876c9805325687114c1271e6"'
       Location:
       - http://ohana-api-test.herokuapp.com/api/locations/new-samaritan-house-location
       Server:
@@ -1473,23 +1549,23 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 162e12a3-77f1-4bb7-aebe-b7471478749c
+      - ce273e2c-05ea-4fef-a77b-4a690ff4dc4c
       X-Runtime:
-      - '0.307031'
+      - '0.328936'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '85'
+      - '86'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":94,"name":"new samaritan house location","slug":"new-samaritan-house-location"}'
+      string: '{"id":129,"name":"new samaritan house location","slug":"new-samaritan-house-location"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:01 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:49 GMT
 - request:
     method: put
-    uri: http://ohana-api-test.herokuapp.com/api/locations/94?admin_emails%5B0%5D=moncef@smcgov.org&api_token=Ohana-API-Admin-Test
+    uri: http://ohana-api-test.herokuapp.com/api/locations/129?admin_emails%5B0%5D=moncef@smcgov.org&api_token=Ohana-API-Admin-Test
     body:
       encoding: UTF-8
       string: "{}"
@@ -1497,7 +1573,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -1512,7 +1588,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:03:01 GMT
+      - Tue, 15 Jul 2014 19:51:49 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -1524,26 +1600,26 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 9d0157cc-bb6e-4946-acbe-dd19112b9404
+      - 3f6d544c-3d84-4a3c-bcf7-18ad1e8bb687
       X-Runtime:
-      - '0.060561'
+      - '0.063211'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '482'
+      - '479'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":94,"accessibility":[],"admin_emails":["moncef@smcgov.org"],"coordinates":[-73.9395687,42.8142432],"description":"new
-        description","emails":[],"hours":null,"languages":[],"latitude":42.8142432,"longitude":-73.9395687,"name":"new
-        samaritan house location","short_desc":null,"slug":"new-samaritan-house-location","transportation":null,"updated_at":"2014-06-26T22:03:01.362-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/new-samaritan-house-location","address":{"id":98,"street":"modularity","city":"utopia","state":"XX","zip":"12345"},"contacts":[],"faxes":[],"mail_address":null,"phones":[],"services":[],"organization":{"id":2,"name":"Peninsula
+      string: '{"id":129,"accessibility":[],"admin_emails":["moncef@smcgov.org"],"coordinates":[-73.9814578,42.8140012],"description":"new
+        description","emails":[],"hours":null,"languages":[],"latitude":42.8140012,"longitude":-73.9814578,"name":"new
+        samaritan house location","short_desc":null,"slug":"new-samaritan-house-location","transportation":null,"updated_at":"2014-07-15T12:51:49.531-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/new-samaritan-house-location","address":{"id":134,"street":"modularity","city":"utopia","state":"XX","zip":"12345"},"contacts":[],"faxes":[],"mail_address":null,"phones":[],"services":[],"organization":{"id":2,"name":"Peninsula
         Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"}}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:01 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:49 GMT
 - request:
     method: post
-    uri: http://ohana-api-test.herokuapp.com/api/locations/94/services?api_token=Ohana-API-Admin-Test&audience=&eligibility=&fees=&how_to_apply=&keywords&service_areas&wait=
+    uri: http://ohana-api-test.herokuapp.com/api/locations/129/services?api_token=Ohana-API-Admin-Test&audience=&description=new%20service%20description&eligibility=&fees=&how_to_apply=&keywords&name=new%20samaritan%20house%20service&service_areas&wait=
     body:
       encoding: UTF-8
       string: "{}"
@@ -1551,7 +1627,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -1566,9 +1642,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:03:01 GMT
+      - Tue, 15 Jul 2014 19:51:49 GMT
       Etag:
-      - '"ee60d1caf483a02a2670df3e70ddbe1b"'
+      - '"e8e836ea3e7f22d1add4ef709b30f240"'
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -1580,23 +1656,24 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - e952b619-f8dc-49c1-a279-268e29c0a936
+      - 26c46fbf-d781-44aa-b84c-257b70369096
       X-Runtime:
-      - '0.094988'
+      - '0.044273'
       X-Xss-Protection:
       - 1; mode=block
-      Content-Length:
-      - '262'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":95,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T22:03:01.461-07:00","categories":[]}'
+      string: '{"id":130,"audience":null,"description":"new service description","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"new
+        samaritan house service","service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:51:49.736-07:00","categories":[]}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:01 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:49 GMT
 - request:
     method: put
-    uri: http://ohana-api-test.herokuapp.com/api/services/95/categories?api_token=Ohana-API-Admin-Test&oe_ids
+    uri: http://ohana-api-test.herokuapp.com/api/services/130/categories?api_token=Ohana-API-Admin-Test&oe_ids
     body:
       encoding: UTF-8
       string: "{}"
@@ -1604,7 +1681,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -1619,7 +1696,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:03:01 GMT
+      - Tue, 15 Jul 2014 19:51:49 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -1631,20 +1708,21 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - f7aef725-3a5a-4ea8-a8a6-6c0bb219d4b8
+      - 1c6b9d51-b1fe-4ac5-b9b1-e4523ef87cd0
       X-Runtime:
-      - '0.041103'
+      - '0.043626'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '198'
+      - '224'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":95,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T22:03:01.593-07:00","categories":[]}'
+      string: '{"id":130,"audience":null,"description":"new service description","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"new
+        samaritan house service","service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:51:49.919-07:00","categories":[]}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:01 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:49 GMT
 - request:
     method: get
     uri: http://ohana-api-test.herokuapp.com/api/locations/new-samaritan-house-location?api_token=Ohana-API-Admin-Test
@@ -1655,7 +1733,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -1670,7 +1748,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:03:01 GMT
+      - Tue, 15 Jul 2014 19:51:50 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -1682,26 +1760,28 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - a6d6dad4-5251-4d71-8f06-b8ec0dd0f433
+      - 7613794d-fc8a-4734-9d85-34e138157013
       X-Runtime:
-      - '0.031289'
+      - '0.051197'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '574'
+      - '577'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":94,"accessibility":[],"admin_emails":["moncef@smcgov.org"],"coordinates":[-73.9395687,42.8142432],"description":"new
-        description","emails":[],"hours":null,"languages":[],"latitude":42.8142432,"longitude":-73.9395687,"name":"new
-        samaritan house location","short_desc":null,"slug":"new-samaritan-house-location","transportation":null,"updated_at":"2014-06-26T22:03:01.602-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/new-samaritan-house-location","address":{"id":98,"street":"modularity","city":"utopia","state":"XX","zip":"12345"},"contacts":[],"faxes":[],"mail_address":null,"phones":[],"services":[{"id":95,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T22:03:01.593-07:00","categories":[]}],"organization":{"id":2,"name":"Peninsula
+      string: '{"id":129,"accessibility":[],"admin_emails":["moncef@smcgov.org"],"coordinates":[-73.9814578,42.8140012],"description":"new
+        description","emails":[],"hours":null,"languages":[],"latitude":42.8140012,"longitude":-73.9814578,"name":"new
+        samaritan house location","short_desc":null,"slug":"new-samaritan-house-location","transportation":null,"updated_at":"2014-07-15T12:51:49.924-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/new-samaritan-house-location","address":{"id":134,"street":"modularity","city":"utopia","state":"XX","zip":"12345"},"contacts":[],"faxes":[],"mail_address":null,"phones":[],"services":[{"id":130,"audience":null,"description":"new
+        service description","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"new
+        samaritan house service","service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:51:49.919-07:00","categories":[]}],"organization":{"id":2,"name":"Peninsula
         Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"}}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:01 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:49 GMT
 - request:
     method: delete
-    uri: http://ohana-api-test.herokuapp.com/api/locations/94?api_token=Ohana-API-Admin-Test
+    uri: http://ohana-api-test.herokuapp.com/api/locations/129?api_token=Ohana-API-Admin-Test
     body:
       encoding: UTF-8
       string: "{}"
@@ -1709,7 +1789,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -1722,7 +1802,7 @@ http_interactions:
       Cache-Control:
       - no-cache
       Date:
-      - Fri, 27 Jun 2014 05:03:02 GMT
+      - Tue, 15 Jul 2014 19:51:50 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -1734,9 +1814,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - a9147a1d-6871-478e-98ef-024284cace68
+      - 753b96a7-c548-416a-8473-5f1f3b70d6ac
       X-Runtime:
-      - '0.049872'
+      - '0.075736'
       X-Xss-Protection:
       - 1; mode=block
       Connection:
@@ -1745,7 +1825,7 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:02 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:50 GMT
 - request:
     method: get
     uri: http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&email=moncef@smcgov.org
@@ -1756,7 +1836,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -1771,7 +1851,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:03:02 GMT
+      - Tue, 15 Jul 2014 19:51:50 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -1785,9 +1865,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - d423231e-01ea-4b2f-a79f-ad8283c1cef8
+      - 34169fc7-6dc6-4af4-b4b4-97fb94fa2fbc
       X-Runtime:
-      - '0.027458'
+      - '0.027191'
       X-Total-Count:
       - '1'
       X-Total-Pages:
@@ -1795,7 +1875,7 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '1171'
+      - '1179'
       Connection:
       - keep-alive
     body:
@@ -1817,12 +1897,12 @@ http_interactions:
         counseling, and estate planning. Massage, podiatry, and acupuncture are available
         by appointment. Lunch is served Monday-Friday, 11:30 am-1:00 pm. Prices vary
         according to selection.","latitude":37.4480204,"longitude":-122.1805905,"name":"Little
-        House","short_desc":"A multipurpose senior citizens'' center.","slug":"little-house","updated_at":"2014-06-26T22:02:59.723-07:00","urls":["http://www.penvol.org/littlehouse"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/services","url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
+        House","short_desc":"A multipurpose senior citizens'' center.","slug":"little-house","updated_at":"2014-07-15T12:51:47.665-07:00","urls":["http://www.penvol.org/littlehouse"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/little-house/services","url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
         Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"organization":{"id":2,"name":"Peninsula
         Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"},"phones":[{"id":6,"department":null,"extension":null,"number":"650
         326-2025","number_type":null,"vanity_number":null}]}]'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:02 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:50 GMT
 - request:
     method: get
     uri: http://ohana-api-test.herokuapp.com/api/locations/little-house?api_token=Ohana-API-Admin-Test
@@ -1833,7 +1913,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -1848,7 +1928,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:03:02 GMT
+      - Tue, 15 Jul 2014 19:51:51 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -1860,97 +1940,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 6e4626ad-b907-486f-8cfe-c0f3efb10e55
+      - f6bbcc3b-7820-4bd7-8e2e-d2a5efd70ab3
       X-Runtime:
-      - '0.045638'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '1889'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"id":6,"accessibility":["Disabled Parking","Wheelchair"],"admin_emails":["moncef@smcgov.org"],"coordinates":[-122.1805905,37.4480204],"description":"A
-        multipurpose center offering a wide variety of recreational, education and
-        cultural activities. Lifelong learning courses cover topics such as music,
-        art, languages, etc., are hosted at this location. Little House offers a large
-        variety of classes including arts and crafts, jewelry, languages, current
-        events, lapidary, woodwork, painting, and fitness courses (yoga, strength
-        straining, tai chi). There are monthly art and cultural lectures, movie showings,
-        and a computer center. Recreation activities include mah jong, pinochle, ballroom
-        dancing, bridge, trips and tours. Partners with the Sequoia Adult Education
-        Program. The Alzheimer''s Cafe, open the third Tuesday of every month from
-        2:00 - 4:00 pm, is a place that brings together people liviing with dementia,
-        their families, and their caregivers. Free and no registration is needed.
-        The Little House Community Service Desk offers information and referrals regarding
-        social service issues, such as housing, food, transportation, health insurance
-        counseling, and estate planning. Massage, podiatry, and acupuncture are available
-        by appointment. Lunch is served Monday-Friday, 11:30 am-1:00 pm. Prices vary
-        according to selection.","emails":["polson@peninsulavolunteers.org"],"hours":"Monday-Thursday,
-        8 am-9 pm; Friday, 8-5","languages":["Filipino (Tagalog)","Spanish"],"latitude":37.4480204,"longitude":-122.1805905,"name":"Little
-        House","short_desc":"A multipurpose senior citizens'' center.","slug":"little-house","transportation":"SAMTRANS
-        stops within 3 blocks, RediWheels and Menlo Park Shuttle stop at door.","updated_at":"2014-06-26T22:02:59.723-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
-        Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"contacts":[{"email":null,"extension":null,"fax":null,"id":7,"name":"Peter
-        Olson","phone":null,"title":"Little House Director"},{"email":null,"extension":null,"fax":null,"id":8,"name":"Bart
-        Charlow","phone":null,"title":"Executive Director, Peninsula Volunteers"}],"faxes":[{"id":6,"number":"650
-        326-9547","department":null}],"mail_address":{"id":6,"attention":"Little House","street":"800
-        Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"phones":[{"id":6,"department":null,"extension":null,"number":"650
-        326-2025","number_type":null,"vanity_number":null}],"services":[{"id":6,"audience":"Any
-        age","description":null,"eligibility":"None","fees":"$55 per year membership
-        dues. Classes have fees. Discounts are available for members. Cash, checks
-        and credit cards accepted.","funding_sources":["Fees","Fundraising","Grants","Membership
-        dues"],"how_to_apply":"Walk in or apply by phone for membership application.","keywords":["ADULT
-        PROTECTION AND CARE SERVICES","In-Home Supportive","Meal Sites/Home-delivered
-        Meals","COMMUNITY SERVICES","Group Support","Information and Referral","EDUCATION
-        SERVICES","Adult","HEALTH SERVICES","Education/Information","Family Support","Individual/Group
-        Counseling","Screening/Immunization","RECREATION/LEISURE SERVICES","Sports/Games/Exercise","Community
-        Adult Schools","Senior Centers","Older Adults"],"name":null,"service_areas":["San
-        Mateo County","Santa Clara County"],"short_desc":null,"urls":[],"wait":"No
-        wait.","updated_at":"2014-04-18T12:31:59.022-07:00","categories":[]}],"organization":{"id":2,"name":"Peninsula
-        Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"}}'
-    http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:02 GMT
-- request:
-    method: get
-    uri: http://ohana-api-test.herokuapp.com/api/locations/6?api_token=Ohana-API-Admin-Test
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
-      X-Api-Token:
-      - Ohana-API-Admin-Test
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Fri, 27 Jun 2014 05:03:02 GMT
-      Server:
-      - nginx/1.6.0 + Phusion Passenger 4.0.45
-      Status:
-      - 200 OK
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 4.0.45
-      X-Request-Id:
-      - 3cedfd7a-e8ec-453a-a85e-e884b93d3cd9
-      X-Runtime:
-      - '0.101066'
+      - '0.093982'
       X-Xss-Protection:
       - 1; mode=block
       Transfer-Encoding:
@@ -1978,27 +1970,117 @@ http_interactions:
         according to selection.","emails":["polson@peninsulavolunteers.org"],"hours":"Monday-Thursday,
         8 am-9 pm; Friday, 8-5","languages":["Filipino (Tagalog)","Spanish"],"latitude":37.4480204,"longitude":-122.1805905,"name":"Little
         House","short_desc":"A multipurpose senior citizens'' center.","slug":"little-house","transportation":"SAMTRANS
-        stops within 3 blocks, RediWheels and Menlo Park Shuttle stop at door.","updated_at":"2014-06-26T22:02:59.723-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
+        stops within 3 blocks, RediWheels and Menlo Park Shuttle stop at door.","updated_at":"2014-07-15T12:51:47.665-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
         Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"contacts":[{"email":null,"extension":null,"fax":null,"id":7,"name":"Peter
         Olson","phone":null,"title":"Little House Director"},{"email":null,"extension":null,"fax":null,"id":8,"name":"Bart
         Charlow","phone":null,"title":"Executive Director, Peninsula Volunteers"}],"faxes":[{"id":6,"number":"650
         326-9547","department":null}],"mail_address":{"id":6,"attention":"Little House","street":"800
         Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"phones":[{"id":6,"department":null,"extension":null,"number":"650
         326-2025","number_type":null,"vanity_number":null}],"services":[{"id":6,"audience":"Any
-        age","description":null,"eligibility":"None","fees":"$55 per year membership
-        dues. Classes have fees. Discounts are available for members. Cash, checks
-        and credit cards accepted.","funding_sources":["Fees","Fundraising","Grants","Membership
+        age","description":"The Little House Community Service Desk offers information
+        and referrals regarding social service issues, such as housing, food, transportation,
+        health insurance counseling, and estate planning.","eligibility":"None","fees":"$55
+        per year membership dues. Classes have fees. Discounts are available for members.
+        Cash, checks and credit cards accepted.","funding_sources":["Fees","Fundraising","Grants","Membership
         dues"],"how_to_apply":"Walk in or apply by phone for membership application.","keywords":["ADULT
         PROTECTION AND CARE SERVICES","In-Home Supportive","Meal Sites/Home-delivered
         Meals","COMMUNITY SERVICES","Group Support","Information and Referral","EDUCATION
         SERVICES","Adult","HEALTH SERVICES","Education/Information","Family Support","Individual/Group
         Counseling","Screening/Immunization","RECREATION/LEISURE SERVICES","Sports/Games/Exercise","Community
-        Adult Schools","Senior Centers","Older Adults"],"name":null,"service_areas":["San
-        Mateo County","Santa Clara County"],"short_desc":null,"urls":[],"wait":"No
-        wait.","updated_at":"2014-04-18T12:31:59.022-07:00","categories":[]}],"organization":{"id":2,"name":"Peninsula
+        Adult Schools","Senior Centers","Older Adults"],"name":"Little House Community
+        Service Desk","service_areas":[],"short_desc":null,"urls":[],"wait":"No wait.","updated_at":"2014-07-15T12:51:47.660-07:00","categories":[]}],"organization":{"id":2,"name":"Peninsula
         Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"}}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:02 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:50 GMT
+- request:
+    method: get
+    uri: http://ohana-api-test.herokuapp.com/api/locations/6?api_token=Ohana-API-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.1
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Jul 2014 19:51:51 GMT
+      Server:
+      - nginx/1.6.0 + Phusion Passenger 4.0.45
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 4.0.45
+      X-Request-Id:
+      - e9017064-0b91-4a4a-924e-a2c260fb69b8
+      X-Runtime:
+      - '0.050387'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '1871'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":6,"accessibility":["Disabled Parking","Wheelchair"],"admin_emails":["moncef@smcgov.org"],"coordinates":[-122.1805905,37.4480204],"description":"A
+        multipurpose center offering a wide variety of recreational, education and
+        cultural activities. Lifelong learning courses cover topics such as music,
+        art, languages, etc., are hosted at this location. Little House offers a large
+        variety of classes including arts and crafts, jewelry, languages, current
+        events, lapidary, woodwork, painting, and fitness courses (yoga, strength
+        straining, tai chi). There are monthly art and cultural lectures, movie showings,
+        and a computer center. Recreation activities include mah jong, pinochle, ballroom
+        dancing, bridge, trips and tours. Partners with the Sequoia Adult Education
+        Program. The Alzheimer''s Cafe, open the third Tuesday of every month from
+        2:00 - 4:00 pm, is a place that brings together people liviing with dementia,
+        their families, and their caregivers. Free and no registration is needed.
+        The Little House Community Service Desk offers information and referrals regarding
+        social service issues, such as housing, food, transportation, health insurance
+        counseling, and estate planning. Massage, podiatry, and acupuncture are available
+        by appointment. Lunch is served Monday-Friday, 11:30 am-1:00 pm. Prices vary
+        according to selection.","emails":["polson@peninsulavolunteers.org"],"hours":"Monday-Thursday,
+        8 am-9 pm; Friday, 8-5","languages":["Filipino (Tagalog)","Spanish"],"latitude":37.4480204,"longitude":-122.1805905,"name":"Little
+        House","short_desc":"A multipurpose senior citizens'' center.","slug":"little-house","transportation":"SAMTRANS
+        stops within 3 blocks, RediWheels and Menlo Park Shuttle stop at door.","updated_at":"2014-07-15T12:51:47.665-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
+        Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"contacts":[{"email":null,"extension":null,"fax":null,"id":7,"name":"Peter
+        Olson","phone":null,"title":"Little House Director"},{"email":null,"extension":null,"fax":null,"id":8,"name":"Bart
+        Charlow","phone":null,"title":"Executive Director, Peninsula Volunteers"}],"faxes":[{"id":6,"number":"650
+        326-9547","department":null}],"mail_address":{"id":6,"attention":"Little House","street":"800
+        Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"phones":[{"id":6,"department":null,"extension":null,"number":"650
+        326-2025","number_type":null,"vanity_number":null}],"services":[{"id":6,"audience":"Any
+        age","description":"The Little House Community Service Desk offers information
+        and referrals regarding social service issues, such as housing, food, transportation,
+        health insurance counseling, and estate planning.","eligibility":"None","fees":"$55
+        per year membership dues. Classes have fees. Discounts are available for members.
+        Cash, checks and credit cards accepted.","funding_sources":["Fees","Fundraising","Grants","Membership
+        dues"],"how_to_apply":"Walk in or apply by phone for membership application.","keywords":["ADULT
+        PROTECTION AND CARE SERVICES","In-Home Supportive","Meal Sites/Home-delivered
+        Meals","COMMUNITY SERVICES","Group Support","Information and Referral","EDUCATION
+        SERVICES","Adult","HEALTH SERVICES","Education/Information","Family Support","Individual/Group
+        Counseling","Screening/Immunization","RECREATION/LEISURE SERVICES","Sports/Games/Exercise","Community
+        Adult Schools","Senior Centers","Older Adults"],"name":"Little House Community
+        Service Desk","service_areas":[],"short_desc":null,"urls":[],"wait":"No wait.","updated_at":"2014-07-15T12:51:47.660-07:00","categories":[]}],"organization":{"id":2,"name":"Peninsula
+        Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"}}'
+    http_version: 
+  recorded_at: Tue, 15 Jul 2014 19:51:51 GMT
 - request:
     method: put
     uri: http://ohana-api-test.herokuapp.com/api/organizations/2?api_token=Ohana-API-Admin-Test&name=Peninsula%20Volunteers
@@ -2009,7 +2091,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -2024,7 +2106,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:03:03 GMT
+      - Tue, 15 Jul 2014 19:51:51 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -2036,9 +2118,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 371e1f89-ac0a-4e54-85b9-03f3b9c746cf
+      - e04fa470-ed35-4161-aebf-4e7ac0cbd468
       X-Runtime:
-      - '0.049080'
+      - '0.055055'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2049,7 +2131,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"id":2,"name":"Peninsula Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:03 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:51 GMT
 - request:
     method: patch
     uri: http://ohana-api-test.herokuapp.com/api/locations/6/address/6?api_token=Ohana-API-Admin-Test&city=Menlo%20Park&new&state=CA&street=800%20Middle%20Avenue&zip=94025-9881
@@ -2060,7 +2142,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -2075,7 +2157,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:03:03 GMT
+      - Tue, 15 Jul 2014 19:51:51 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -2087,9 +2169,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 2b5ea8a4-146d-4be2-8a5e-56005262c443
+      - dc8221c6-5725-4f93-a197-6b7cd7a6e673
       X-Runtime:
-      - '0.031137'
+      - '0.029381'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2100,7 +2182,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"id":6,"street":"800 Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:03 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:51 GMT
 - request:
     method: patch
     uri: http://ohana-api-test.herokuapp.com/api/locations/6/mail_address/6?api_token=Ohana-API-Admin-Test&attention=Little%20House&city=Menlo%20Park&state=CA&street=800%20Middle%20Avenue&zip=94025-9881
@@ -2111,7 +2193,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -2126,7 +2208,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:03:03 GMT
+      - Tue, 15 Jul 2014 19:51:51 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -2138,13 +2220,13 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 434874c8-87f2-4800-95df-1c4fb4c4153c
+      - debd9853-390c-45ea-b142-803e5e01c131
       X-Runtime:
-      - '0.035952'
+      - '0.030418'
       X-Xss-Protection:
       - 1; mode=block
-      Content-Length:
-      - '130'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
     body:
@@ -2152,7 +2234,7 @@ http_interactions:
       string: '{"id":6,"attention":"Little House","street":"800 Middle Avenue","city":"Menlo
         Park","state":"CA","zip":"94025-9881"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:03 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:51 GMT
 - request:
     method: put
     uri: http://ohana-api-test.herokuapp.com/api/locations/6?accessibility%5B0%5D=disabled_parking&accessibility%5B1%5D=wheelchair&admin_emails&api_token=Ohana-API-Admin-Test&description=A%20multipurpose%20center%20offering%20a%20wide%20variety%20of%20recreational,%20education%20and%20cultural%20activities.%20Lifelong%20learning%20courses%20cover%20topics%20such%20as%20music,%20art,%20languages,%20etc.,%20are%20hosted%20at%20this%20location.%20Little%20House%20offers%20a%20large%20variety%20of%20classes%20including%20arts%20and%20crafts,%20jewelry,%20languages,%20current%20events,%20lapidary,%20woodwork,%20painting,%20and%20fitness%20courses%20(yoga,%20strength%20straining,%20tai%20chi).%20There%20are%20monthly%20art%20and%20cultural%20lectures,%20movie%20showings,%20and%20a%20computer%20center.%20Recreation%20activities%20include%20mah%20jong,%20pinochle,%20ballroom%20dancing,%20bridge,%20trips%20and%20tours.%20Partners%20with%20the%20Sequoia%20Adult%20Education%20Program.%20The%20Alzheimer's%20Cafe,%20open%20the%20third%20Tuesday%20of%20every%20month%20from%202:00%20-%204:00%20pm,%20is%20a%20place%20that%20brings%20together%20people%20liviing%20with%20dementia,%20their%20families,%20and%20their%20caregivers.%20Free%20and%20no%20registration%20is%20needed.%20The%20Little%20House%20Community%20Service%20Desk%20offers%20information%20and%20referrals%20regarding%20social%20service%20issues,%20such%20as%20housing,%20food,%20transportation,%20health%20insurance%20counseling,%20and%20estate%20planning.%20Massage,%20podiatry,%20and%20acupuncture%20are%20available%20by%20appointment.%20Lunch%20is%20served%20Monday-Friday,%2011:30%20am-1:00%20pm.%20Prices%20vary%20according%20to%20selection.&emails%5B0%5D=polson@peninsulavolunteers.org&hours=Monday-Thursday,%208%20am-9%20pm%3B%20Friday,%208-5&name=Little%20House&short_desc=A%20multipurpose%20senior%20citizens'%20center.&transportation=SAMTRANS%20stops%20within%203%20blocks,%20RediWheels%20and%20Menlo%20Park%20Shuttle%20stop%20at%20door.&urls%5B0%5D=http://www.penvol.org/littlehouse
@@ -2163,7 +2245,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -2178,7 +2260,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:03:03 GMT
+      - Tue, 15 Jul 2014 19:51:51 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -2190,9 +2272,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - d0d6b7ed-cba8-464a-88d0-9c17bea356c6
+      - bbe0da06-a2df-4ec0-947b-4da9aa210702
       X-Runtime:
-      - '0.147633'
+      - '0.091112'
       X-Xss-Protection:
       - 1; mode=block
       Transfer-Encoding:
@@ -2220,27 +2302,28 @@ http_interactions:
         according to selection.","emails":["polson@peninsulavolunteers.org"],"hours":"Monday-Thursday,
         8 am-9 pm; Friday, 8-5","languages":["Filipino (Tagalog)","Spanish"],"latitude":37.4480204,"longitude":-122.1805905,"name":"Little
         House","short_desc":"A multipurpose senior citizens'' center.","slug":"little-house","transportation":"SAMTRANS
-        stops within 3 blocks, RediWheels and Menlo Park Shuttle stop at door.","updated_at":"2014-06-26T22:03:03.530-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
+        stops within 3 blocks, RediWheels and Menlo Park Shuttle stop at door.","updated_at":"2014-07-15T12:51:51.808-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
         Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"contacts":[{"email":null,"extension":null,"fax":null,"id":7,"name":"Peter
         Olson","phone":null,"title":"Little House Director"},{"email":null,"extension":null,"fax":null,"id":8,"name":"Bart
         Charlow","phone":null,"title":"Executive Director, Peninsula Volunteers"}],"faxes":[{"id":6,"number":"650
         326-9547","department":null}],"mail_address":{"id":6,"attention":"Little House","street":"800
         Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"phones":[{"id":6,"department":null,"extension":null,"number":"650
         326-2025","number_type":null,"vanity_number":null}],"services":[{"id":6,"audience":"Any
-        age","description":null,"eligibility":"None","fees":"$55 per year membership
-        dues. Classes have fees. Discounts are available for members. Cash, checks
-        and credit cards accepted.","funding_sources":["Fees","Fundraising","Grants","Membership
+        age","description":"The Little House Community Service Desk offers information
+        and referrals regarding social service issues, such as housing, food, transportation,
+        health insurance counseling, and estate planning.","eligibility":"None","fees":"$55
+        per year membership dues. Classes have fees. Discounts are available for members.
+        Cash, checks and credit cards accepted.","funding_sources":["Fees","Fundraising","Grants","Membership
         dues"],"how_to_apply":"Walk in or apply by phone for membership application.","keywords":["ADULT
         PROTECTION AND CARE SERVICES","In-Home Supportive","Meal Sites/Home-delivered
         Meals","COMMUNITY SERVICES","Group Support","Information and Referral","EDUCATION
         SERVICES","Adult","HEALTH SERVICES","Education/Information","Family Support","Individual/Group
         Counseling","Screening/Immunization","RECREATION/LEISURE SERVICES","Sports/Games/Exercise","Community
-        Adult Schools","Senior Centers","Older Adults"],"name":null,"service_areas":["San
-        Mateo County","Santa Clara County"],"short_desc":null,"urls":[],"wait":"No
-        wait.","updated_at":"2014-04-18T12:31:59.022-07:00","categories":[]}],"organization":{"id":2,"name":"Peninsula
+        Adult Schools","Senior Centers","Older Adults"],"name":"Little House Community
+        Service Desk","service_areas":[],"short_desc":null,"urls":[],"wait":"No wait.","updated_at":"2014-07-15T12:51:47.660-07:00","categories":[]}],"organization":{"id":2,"name":"Peninsula
         Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"}}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:03 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:51 GMT
 - request:
     method: patch
     uri: http://ohana-api-test.herokuapp.com/api/locations/6/contacts/7?api_token=Ohana-API-Admin-Test&email=&extension=&fax=&name=Peter%20Olson&phone=&title=Little%20House%20Director
@@ -2251,7 +2334,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -2266,7 +2349,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:03:03 GMT
+      - Tue, 15 Jul 2014 19:51:51 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -2278,9 +2361,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 892266bb-d36d-4599-a029-7abd9e2586f3
+      - 81691e0d-3f18-489c-9d55-0ca14bf1be14
       X-Runtime:
-      - '0.032019'
+      - '0.031772'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2292,7 +2375,7 @@ http_interactions:
       string: '{"email":null,"extension":null,"fax":null,"id":7,"name":"Peter Olson","phone":null,"title":"Little
         House Director"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:03 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:51 GMT
 - request:
     method: patch
     uri: http://ohana-api-test.herokuapp.com/api/locations/6/contacts/8?api_token=Ohana-API-Admin-Test&email=&extension=&fax=&name=Bart%20Charlow&phone=&title=Executive%20Director,%20Peninsula%20Volunteers
@@ -2303,7 +2386,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -2318,7 +2401,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:03:03 GMT
+      - Tue, 15 Jul 2014 19:51:52 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -2330,13 +2413,13 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 3b8da1e7-d996-4cd3-bb4a-3f52e64f41b9
+      - c484cbff-8abc-4284-be7d-da445717abd9
       X-Runtime:
-      - '0.035106'
+      - '0.030623'
       X-Xss-Protection:
       - 1; mode=block
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '137'
       Connection:
       - keep-alive
     body:
@@ -2344,7 +2427,7 @@ http_interactions:
       string: '{"email":null,"extension":null,"fax":null,"id":8,"name":"Bart Charlow","phone":null,"title":"Executive
         Director, Peninsula Volunteers"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:03 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:51 GMT
 - request:
     method: patch
     uri: http://ohana-api-test.herokuapp.com/api/locations/6/faxes/6?api_token=Ohana-API-Admin-Test&department=&number=650%20326-9547
@@ -2355,7 +2438,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -2370,7 +2453,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:03:03 GMT
+      - Tue, 15 Jul 2014 19:51:52 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -2382,9 +2465,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 938c7aa2-19f8-43fc-a27a-c853c2d1fa71
+      - 45b95bcb-8937-47d4-9b70-8ee9b1b6020e
       X-Runtime:
-      - '0.078100'
+      - '0.031525'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -2395,7 +2478,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"id":6,"number":"650 326-9547","department":null}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:03 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:51 GMT
 - request:
     method: patch
     uri: http://ohana-api-test.herokuapp.com/api/locations/6/phones/6?api_token=Ohana-API-Admin-Test&department=&extension=&number=650%20326-2025&vanity_number=
@@ -2406,7 +2489,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -2421,7 +2504,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:03:04 GMT
+      - Tue, 15 Jul 2014 19:51:52 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -2433,23 +2516,23 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 02438798-e963-431d-9db5-65a78b315801
+      - 2f5d2bc0-f5f7-4f0e-be33-b4da85a13582
       X-Runtime:
-      - '0.187133'
+      - '0.032463'
       X-Xss-Protection:
       - 1; mode=block
-      Content-Length:
-      - '114'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"id":6,"department":null,"extension":null,"number":"650 326-2025","number_type":null,"vanity_number":null}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:04 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:51 GMT
 - request:
     method: patch
-    uri: http://ohana-api-test.herokuapp.com/api/locations/6/services/6?api_token=Ohana-API-Admin-Test&audience=Any%20age&eligibility=None&fees=$55%20per%20year%20membership%20dues.%20Classes%20have%20fees.%20Discounts%20are%20available%20for%20members.%20Cash,%20checks%20and%20credit%20cards%20accepted.&how_to_apply=Walk%20in%20or%20apply%20by%20phone%20for%20membership%20application.&keywords%5B0%5D=ADULT%20PROTECTION%20AND%20CARE%20SERVICES&keywords%5B1%5D=In-Home%20Supportive&keywords%5B2%5D=Meal%20Sites/Home-delivered%20Meals&keywords%5B3%5D=COMMUNITY%20SERVICES&keywords%5B4%5D=Group%20Support&keywords%5B5%5D=Information%20and%20Referral&keywords%5B6%5D=EDUCATION%20SERVICES&keywords%5B7%5D=Adult&keywords%5B8%5D=HEALTH%20SERVICES&keywords%5B9%5D=Education/Information&keywords%5B10%5D=Family%20Support&keywords%5B11%5D=Individual/Group%20Counseling&keywords%5B12%5D=Screening/Immunization&keywords%5B13%5D=RECREATION/LEISURE%20SERVICES&keywords%5B14%5D=Sports/Games/Exercise&keywords%5B15%5D=Community%20Adult%20Schools&keywords%5B16%5D=Senior%20Centers&keywords%5B17%5D=Older%20Adults&service_areas%5B0%5D=San%20Mateo%20County&service_areas%5B1%5D=Santa%20Clara%20County&wait=No%20wait.
+    uri: http://ohana-api-test.herokuapp.com/api/locations/6/services/6?api_token=Ohana-API-Admin-Test&audience=Any%20age&description=The%20Little%20House%20Community%20Service%20Desk%20offers%20information%20and%20referrals%20regarding%20social%20service%20issues,%20such%20as%20housing,%20food,%20transportation,%20health%20insurance%20counseling,%20and%20estate%20planning.&eligibility=None&fees=$55%20per%20year%20membership%20dues.%20Classes%20have%20fees.%20Discounts%20are%20available%20for%20members.%20Cash,%20checks%20and%20credit%20cards%20accepted.&how_to_apply=Walk%20in%20or%20apply%20by%20phone%20for%20membership%20application.&keywords%5B0%5D=ADULT%20PROTECTION%20AND%20CARE%20SERVICES&keywords%5B1%5D=In-Home%20Supportive&keywords%5B2%5D=Meal%20Sites/Home-delivered%20Meals&keywords%5B3%5D=COMMUNITY%20SERVICES&keywords%5B4%5D=Group%20Support&keywords%5B5%5D=Information%20and%20Referral&keywords%5B6%5D=EDUCATION%20SERVICES&keywords%5B7%5D=Adult&keywords%5B8%5D=HEALTH%20SERVICES&keywords%5B9%5D=Education/Information&keywords%5B10%5D=Family%20Support&keywords%5B11%5D=Individual/Group%20Counseling&keywords%5B12%5D=Screening/Immunization&keywords%5B13%5D=RECREATION/LEISURE%20SERVICES&keywords%5B14%5D=Sports/Games/Exercise&keywords%5B15%5D=Community%20Adult%20Schools&keywords%5B16%5D=Senior%20Centers&keywords%5B17%5D=Older%20Adults&name=Little%20House%20Community%20Service%20Desk&service_areas&wait=No%20wait.
     body:
       encoding: UTF-8
       string: "{}"
@@ -2457,26 +2540,26 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
-      code: 422
-      message: Unprocessable Entity
+      code: 200
+      message: OK
     headers:
       Cache-Control:
-      - no-cache
+      - max-age=0, private, must-revalidate
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:03:04 GMT
+      - Tue, 15 Jul 2014 19:51:52 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
-      - 422 Unprocessable Entity
+      - 200 OK
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -2484,22 +2567,95 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 3793ee16-271b-484e-a6cb-68e1e724ada0
+      - 1db6f712-5231-4588-a058-312e9e476e57
       X-Runtime:
-      - '0.034762'
+      - '0.053545'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '229'
+      - '687'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"status":422,"message":"Validation failed for resource.","errors":[{"service_areas":["At
-        least one service area is improperly formatted, or is not an accepted city
-        or county name. Please make sure all words are capitalized."]}]}'
+      string: '{"id":6,"audience":"Any age","description":"The Little House Community
+        Service Desk offers information and referrals regarding social service issues,
+        such as housing, food, transportation, health insurance counseling, and estate
+        planning.","eligibility":"None","fees":"$55 per year membership dues. Classes
+        have fees. Discounts are available for members. Cash, checks and credit cards
+        accepted.","funding_sources":["Fees","Fundraising","Grants","Membership dues"],"how_to_apply":"Walk
+        in or apply by phone for membership application.","keywords":["ADULT PROTECTION
+        AND CARE SERVICES","In-Home Supportive","Meal Sites/Home-delivered Meals","COMMUNITY
+        SERVICES","Group Support","Information and Referral","EDUCATION SERVICES","Adult","HEALTH
+        SERVICES","Education/Information","Family Support","Individual/Group Counseling","Screening/Immunization","RECREATION/LEISURE
+        SERVICES","Sports/Games/Exercise","Community Adult Schools","Senior Centers","Older
+        Adults"],"name":"Little House Community Service Desk","service_areas":[],"short_desc":null,"urls":[],"wait":"No
+        wait.","updated_at":"2014-07-15T12:51:52.442-07:00","categories":[]}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:04 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:52 GMT
+- request:
+    method: put
+    uri: http://ohana-api-test.herokuapp.com/api/services/6/categories?api_token=Ohana-API-Admin-Test&oe_ids
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.1
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Jul 2014 19:51:52 GMT
+      Server:
+      - nginx/1.6.0 + Phusion Passenger 4.0.45
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 4.0.45
+      X-Request-Id:
+      - 03e47700-089a-402d-93ce-cd4f92d2603e
+      X-Runtime:
+      - '0.098617'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '688'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":6,"audience":"Any age","description":"The Little House Community
+        Service Desk offers information and referrals regarding social service issues,
+        such as housing, food, transportation, health insurance counseling, and estate
+        planning.","eligibility":"None","fees":"$55 per year membership dues. Classes
+        have fees. Discounts are available for members. Cash, checks and credit cards
+        accepted.","funding_sources":["Fees","Fundraising","Grants","Membership dues"],"how_to_apply":"Walk
+        in or apply by phone for membership application.","keywords":["ADULT PROTECTION
+        AND CARE SERVICES","In-Home Supportive","Meal Sites/Home-delivered Meals","COMMUNITY
+        SERVICES","Group Support","Information and Referral","EDUCATION SERVICES","Adult","HEALTH
+        SERVICES","Education/Information","Family Support","Individual/Group Counseling","Screening/Immunization","RECREATION/LEISURE
+        SERVICES","Sports/Games/Exercise","Community Adult Schools","Senior Centers","Older
+        Adults"],"name":"Little House Community Service Desk","service_areas":[],"short_desc":null,"urls":[],"wait":"No
+        wait.","updated_at":"2014-07-15T12:51:52.576-07:00","categories":[]}'
+    http_version: 
+  recorded_at: Tue, 15 Jul 2014 19:51:52 GMT
 - request:
     method: get
     uri: http://ohana-api-test.herokuapp.com/api/locations/little-house?api_token=Ohana-API-Admin-Test
@@ -2510,7 +2666,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -2525,7 +2681,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:03:04 GMT
+      - Tue, 15 Jul 2014 19:51:52 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -2537,9 +2693,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - fecbe020-85bf-41d7-bc39-a71819da5c44
+      - 3499e00d-8480-4660-9ca5-56dd30fd88f6
       X-Runtime:
-      - '0.038857'
+      - '0.047399'
       X-Xss-Protection:
       - 1; mode=block
       Transfer-Encoding:
@@ -2567,25 +2723,26 @@ http_interactions:
         according to selection.","emails":["polson@peninsulavolunteers.org"],"hours":"Monday-Thursday,
         8 am-9 pm; Friday, 8-5","languages":["Filipino (Tagalog)","Spanish"],"latitude":37.4480204,"longitude":-122.1805905,"name":"Little
         House","short_desc":"A multipurpose senior citizens'' center.","slug":"little-house","transportation":"SAMTRANS
-        stops within 3 blocks, RediWheels and Menlo Park Shuttle stop at door.","updated_at":"2014-06-26T22:03:04.052-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
+        stops within 3 blocks, RediWheels and Menlo Park Shuttle stop at door.","updated_at":"2014-07-15T12:51:52.581-07:00","urls":["http://www.penvol.org/littlehouse"],"url":"http://ohana-api-test.herokuapp.com/api/locations/little-house","address":{"id":6,"street":"800
         Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"contacts":[{"email":null,"extension":null,"fax":null,"id":7,"name":"Peter
         Olson","phone":null,"title":"Little House Director"},{"email":null,"extension":null,"fax":null,"id":8,"name":"Bart
         Charlow","phone":null,"title":"Executive Director, Peninsula Volunteers"}],"faxes":[{"id":6,"number":"650
         326-9547","department":null}],"mail_address":{"id":6,"attention":"Little House","street":"800
         Middle Avenue","city":"Menlo Park","state":"CA","zip":"94025-9881"},"phones":[{"id":6,"department":null,"extension":null,"number":"650
         326-2025","number_type":null,"vanity_number":null}],"services":[{"id":6,"audience":"Any
-        age","description":null,"eligibility":"None","fees":"$55 per year membership
-        dues. Classes have fees. Discounts are available for members. Cash, checks
-        and credit cards accepted.","funding_sources":["Fees","Fundraising","Grants","Membership
+        age","description":"The Little House Community Service Desk offers information
+        and referrals regarding social service issues, such as housing, food, transportation,
+        health insurance counseling, and estate planning.","eligibility":"None","fees":"$55
+        per year membership dues. Classes have fees. Discounts are available for members.
+        Cash, checks and credit cards accepted.","funding_sources":["Fees","Fundraising","Grants","Membership
         dues"],"how_to_apply":"Walk in or apply by phone for membership application.","keywords":["ADULT
         PROTECTION AND CARE SERVICES","In-Home Supportive","Meal Sites/Home-delivered
         Meals","COMMUNITY SERVICES","Group Support","Information and Referral","EDUCATION
         SERVICES","Adult","HEALTH SERVICES","Education/Information","Family Support","Individual/Group
         Counseling","Screening/Immunization","RECREATION/LEISURE SERVICES","Sports/Games/Exercise","Community
-        Adult Schools","Senior Centers","Older Adults"],"name":null,"service_areas":["San
-        Mateo County","Santa Clara County"],"short_desc":null,"urls":[],"wait":"No
-        wait.","updated_at":"2014-04-18T12:31:59.022-07:00","categories":[]}],"organization":{"id":2,"name":"Peninsula
+        Adult Schools","Senior Centers","Older Adults"],"name":"Little House Community
+        Service Desk","service_areas":[],"short_desc":null,"urls":[],"wait":"No wait.","updated_at":"2014-07-15T12:51:52.576-07:00","categories":[]}],"organization":{"id":2,"name":"Peninsula
         Volunteers","slug":"peninsula-volunteers","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/peninsula-volunteers/locations"}}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:03:04 GMT
+  recorded_at: Tue, 15 Jul 2014 19:51:52 GMT
 recorded_with: VCR 2.9.2

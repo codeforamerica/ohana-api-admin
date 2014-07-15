@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -25,7 +25,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:07:09 GMT
+      - Tue, 15 Jul 2014 19:52:21 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -37,23 +37,25 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 136ad9b8-441e-43ed-8bec-4f854c41dc6b
+      - 829de244-4316-4da9-a6a2-791180bda315
       X-Runtime:
-      - '0.046290'
+      - '0.095583'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '481'
+      - '504'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"id":20,"accessibility":[],"admin_emails":[],"coordinates":null,"description":"no
         phone","emails":[],"hours":null,"languages":[],"latitude":null,"longitude":null,"name":"Location
-        with no phone","short_desc":"no phone","slug":"location-with-no-phone","transportation":null,"updated_at":"2014-06-26T22:05:51.187-07:00","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone","address":null,"contacts":[],"faxes":[],"mail_address":{"id":20,"attention":null,"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"phones":[],"services":[{"id":20,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T22:05:51.182-07:00","categories":[]}],"organization":{"id":6,"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","transportation":null,"updated_at":"2014-07-15T12:50:20.667-07:00","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone","address":null,"contacts":[],"faxes":[],"mail_address":{"id":20,"attention":null,"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"phones":[],"services":[{"id":20,"audience":null,"description":"Description
+        for Service #1 for Location with no phone.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Service
+        #1 for Location with no phone","service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:50:20.663-07:00","categories":[]}],"organization":{"id":6,"name":"Location
         with no phone","slug":"location-with-no-phone","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone/locations"}}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:07:09 GMT
+  recorded_at: Tue, 15 Jul 2014 19:52:20 GMT
 - request:
     method: put
     uri: http://ohana-api-test.herokuapp.com/api/organizations/6?api_token=Ohana-API-Admin-Test&name=Location%20with%20no%20phone
@@ -64,7 +66,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -79,7 +81,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:07:10 GMT
+      - Tue, 15 Jul 2014 19:52:21 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -91,20 +93,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - fbc64b05-c0e8-40b5-a1d4-1ec2e896db47
+      - dfd380a5-b463-454e-930e-dd2da02429f3
       X-Runtime:
-      - '0.047790'
+      - '0.046375'
       X-Xss-Protection:
       - 1; mode=block
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '160'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"id":6,"name":"Location with no phone","slug":"location-with-no-phone","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone/locations"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:07:10 GMT
+  recorded_at: Tue, 15 Jul 2014 19:52:21 GMT
 - request:
     method: patch
     uri: http://ohana-api-test.herokuapp.com/api/locations/20/mail_address/20?api_token=Ohana-API-Admin-Test&attention=&city=fairfax&state=VA&street=puma&zip=22031
@@ -115,7 +117,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -130,7 +132,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:07:10 GMT
+      - Tue, 15 Jul 2014 19:52:21 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -142,20 +144,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 0e6f0928-fb09-4df2-85aa-76d20706eac0
+      - d93d779c-0ca7-458c-a267-cd9d5f9cac89
       X-Runtime:
-      - '0.064712'
+      - '0.031793'
       X-Xss-Protection:
       - 1; mode=block
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '110'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"id":20,"attention":null,"street":"puma","city":"fairfax","state":"VA","zip":"22031"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:07:10 GMT
+  recorded_at: Tue, 15 Jul 2014 19:52:21 GMT
 - request:
     method: put
     uri: http://ohana-api-test.herokuapp.com/api/locations/20?accessibility&admin_emails&api_token=Ohana-API-Admin-Test&description=no%20phone&emails&hours=&name=Location%20with%20no%20phone&short_desc=no%20phone&transportation=&urls
@@ -166,7 +168,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -181,7 +183,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:07:10 GMT
+      - Tue, 15 Jul 2014 19:52:21 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -193,26 +195,28 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 602776c9-3fb7-4dbe-a1f3-f9ff1aee9bb5
+      - e0a984a8-13c9-4c60-bb36-dec872c776cf
       X-Runtime:
-      - '0.124069'
+      - '0.072261'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '486'
+      - '504'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"id":20,"accessibility":[],"admin_emails":[],"coordinates":null,"description":"no
         phone","emails":[],"hours":null,"languages":[],"latitude":null,"longitude":null,"name":"Location
-        with no phone","short_desc":"no phone","slug":"location-with-no-phone","transportation":null,"updated_at":"2014-06-26T22:07:10.428-07:00","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone","address":null,"contacts":[],"faxes":[],"mail_address":{"id":20,"attention":null,"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"phones":[],"services":[{"id":20,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T22:05:51.182-07:00","categories":[]}],"organization":{"id":6,"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","transportation":null,"updated_at":"2014-07-15T12:52:21.915-07:00","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone","address":null,"contacts":[],"faxes":[],"mail_address":{"id":20,"attention":null,"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"phones":[],"services":[{"id":20,"audience":null,"description":"Description
+        for Service #1 for Location with no phone.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Service
+        #1 for Location with no phone","service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:50:20.663-07:00","categories":[]}],"organization":{"id":6,"name":"Location
         with no phone","slug":"location-with-no-phone","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone/locations"}}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:07:10 GMT
+  recorded_at: Tue, 15 Jul 2014 19:52:21 GMT
 - request:
     method: patch
-    uri: http://ohana-api-test.herokuapp.com/api/locations/20/services/20?api_token=Ohana-API-Admin-Test&audience=&eligibility=&fees=&how_to_apply=&keywords&service_areas%5B0%5D=Belmont&service_areas%5B1%5D=Atherton&wait=
+    uri: http://ohana-api-test.herokuapp.com/api/locations/20/services/20?api_token=Ohana-API-Admin-Test&audience=&description=Description%20for%20Service%20%231%20for%20Location%20with%20no%20phone.&eligibility=&fees=&how_to_apply=&keywords&name=Service%20%231%20for%20Location%20with%20no%20phone&service_areas%5B0%5D=Belmont&service_areas%5B1%5D=Atherton&wait=
     body:
       encoding: UTF-8
       string: "{}"
@@ -220,7 +224,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -235,7 +239,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:07:10 GMT
+      - Tue, 15 Jul 2014 19:52:22 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -247,20 +251,22 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - a5be9e48-73d5-47a2-b9aa-ad753047da36
+      - d4ccf3c9-ba97-450f-962e-3e2dbace0ecf
       X-Runtime:
-      - '0.040521'
+      - '0.052140'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '214'
+      - '256'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":20,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":["Belmont","Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T22:07:10.574-07:00","categories":[]}'
+      string: '{"id":20,"audience":null,"description":"Description for Service #1
+        for Location with no phone.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Service
+        #1 for Location with no phone","service_areas":["Belmont","Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:52:22.084-07:00","categories":[]}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:07:10 GMT
+  recorded_at: Tue, 15 Jul 2014 19:52:21 GMT
 - request:
     method: put
     uri: http://ohana-api-test.herokuapp.com/api/services/20/categories?api_token=Ohana-API-Admin-Test&oe_ids
@@ -271,7 +277,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -286,7 +292,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:07:10 GMT
+      - Tue, 15 Jul 2014 19:52:22 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -298,20 +304,22 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 186196e6-1f54-41a7-936f-afb2c7291923
+      - 2e91cfef-8a57-40bc-a319-285dff542d23
       X-Runtime:
-      - '0.037628'
+      - '0.042718'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '215'
+      - '256'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":20,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":["Belmont","Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T22:07:10.661-07:00","categories":[]}'
+      string: '{"id":20,"audience":null,"description":"Description for Service #1
+        for Location with no phone.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Service
+        #1 for Location with no phone","service_areas":["Belmont","Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:52:22.174-07:00","categories":[]}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:07:10 GMT
+  recorded_at: Tue, 15 Jul 2014 19:52:21 GMT
 - request:
     method: get
     uri: http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone?api_token=Ohana-API-Admin-Test
@@ -322,7 +330,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -337,7 +345,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:07:10 GMT
+      - Tue, 15 Jul 2014 19:52:22 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -349,23 +357,25 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 2feb4e87-0519-4f05-ad5c-ce6072fd2def
+      - 9aaa7f2b-5f7b-4113-833a-7087ba80e654
       X-Runtime:
-      - '0.038604'
+      - '0.043913'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '488'
+      - '515'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"id":20,"accessibility":[],"admin_emails":[],"coordinates":null,"description":"no
         phone","emails":[],"hours":null,"languages":[],"latitude":null,"longitude":null,"name":"Location
-        with no phone","short_desc":"no phone","slug":"location-with-no-phone","transportation":null,"updated_at":"2014-06-26T22:07:10.667-07:00","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone","address":null,"contacts":[],"faxes":[],"mail_address":{"id":20,"attention":null,"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"phones":[],"services":[{"id":20,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":["Belmont","Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T22:07:10.661-07:00","categories":[]}],"organization":{"id":6,"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","transportation":null,"updated_at":"2014-07-15T12:52:22.178-07:00","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone","address":null,"contacts":[],"faxes":[],"mail_address":{"id":20,"attention":null,"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"phones":[],"services":[{"id":20,"audience":null,"description":"Description
+        for Service #1 for Location with no phone.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Service
+        #1 for Location with no phone","service_areas":["Belmont","Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:52:22.174-07:00","categories":[]}],"organization":{"id":6,"name":"Location
         with no phone","slug":"location-with-no-phone","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone/locations"}}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:07:10 GMT
+  recorded_at: Tue, 15 Jul 2014 19:52:21 GMT
 - request:
     method: get
     uri: http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone?api_token=Ohana-API-Admin-Test
@@ -376,7 +386,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -391,7 +401,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:07:11 GMT
+      - Tue, 15 Jul 2014 19:52:22 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -403,23 +413,25 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 127e3986-38a9-4e17-ac87-93bfe14fcc18
+      - f9bb9742-315f-4a14-a1bd-7cda880de8fe
       X-Runtime:
-      - '0.044953'
+      - '0.040774'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '494'
+      - '515'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"id":20,"accessibility":[],"admin_emails":[],"coordinates":null,"description":"no
         phone","emails":[],"hours":null,"languages":[],"latitude":null,"longitude":null,"name":"Location
-        with no phone","short_desc":"no phone","slug":"location-with-no-phone","transportation":null,"updated_at":"2014-06-26T22:07:10.667-07:00","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone","address":null,"contacts":[],"faxes":[],"mail_address":{"id":20,"attention":null,"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"phones":[],"services":[{"id":20,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":["Belmont","Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T22:07:10.661-07:00","categories":[]}],"organization":{"id":6,"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","transportation":null,"updated_at":"2014-07-15T12:52:22.178-07:00","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone","address":null,"contacts":[],"faxes":[],"mail_address":{"id":20,"attention":null,"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"phones":[],"services":[{"id":20,"audience":null,"description":"Description
+        for Service #1 for Location with no phone.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Service
+        #1 for Location with no phone","service_areas":["Belmont","Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:52:22.174-07:00","categories":[]}],"organization":{"id":6,"name":"Location
         with no phone","slug":"location-with-no-phone","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone/locations"}}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:07:11 GMT
+  recorded_at: Tue, 15 Jul 2014 19:52:22 GMT
 - request:
     method: put
     uri: http://ohana-api-test.herokuapp.com/api/organizations/6?api_token=Ohana-API-Admin-Test&name=Location%20with%20no%20phone
@@ -430,7 +442,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -445,7 +457,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:07:11 GMT
+      - Tue, 15 Jul 2014 19:52:23 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -457,20 +469,20 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 61de49e1-fb06-4f3b-9f3f-0843e60cda47
+      - 59087fe1-f072-4847-b678-382b70762e72
       X-Runtime:
-      - '0.037192'
+      - '0.104372'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '154'
+      - '160'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"id":6,"name":"Location with no phone","slug":"location-with-no-phone","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone/locations"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:07:11 GMT
+  recorded_at: Tue, 15 Jul 2014 19:52:23 GMT
 - request:
     method: patch
     uri: http://ohana-api-test.herokuapp.com/api/locations/20/mail_address/20?api_token=Ohana-API-Admin-Test&attention=&city=fairfax&state=VA&street=puma&zip=22031
@@ -481,7 +493,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -496,7 +508,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:07:11 GMT
+      - Tue, 15 Jul 2014 19:52:23 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -508,9 +520,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 88552465-1568-4e72-82a6-f2b0664a4ee3
+      - 1c9fd68c-d39a-43c4-9a36-338c86ed6aa8
       X-Runtime:
-      - '0.030439'
+      - '0.029008'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -521,7 +533,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"id":20,"attention":null,"street":"puma","city":"fairfax","state":"VA","zip":"22031"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:07:11 GMT
+  recorded_at: Tue, 15 Jul 2014 19:52:23 GMT
 - request:
     method: put
     uri: http://ohana-api-test.herokuapp.com/api/locations/20?accessibility&admin_emails&api_token=Ohana-API-Admin-Test&description=no%20phone&emails&hours=&name=Location%20with%20no%20phone&short_desc=no%20phone&transportation=&urls
@@ -532,7 +544,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -547,7 +559,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:07:11 GMT
+      - Tue, 15 Jul 2014 19:52:23 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -559,26 +571,28 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 2aa6e6a0-f41c-454c-9427-7b96a055c6f5
+      - 4930848e-1c12-4d27-b6bf-98ecf3cf658f
       X-Runtime:
-      - '0.071012'
+      - '0.067432'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '492'
+      - '524'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"id":20,"accessibility":[],"admin_emails":[],"coordinates":null,"description":"no
         phone","emails":[],"hours":null,"languages":[],"latitude":null,"longitude":null,"name":"Location
-        with no phone","short_desc":"no phone","slug":"location-with-no-phone","transportation":null,"updated_at":"2014-06-26T22:07:11.832-07:00","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone","address":null,"contacts":[],"faxes":[],"mail_address":{"id":20,"attention":null,"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"phones":[],"services":[{"id":20,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":["Belmont","Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T22:07:10.661-07:00","categories":[]}],"organization":{"id":6,"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","transportation":null,"updated_at":"2014-07-15T12:52:23.701-07:00","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone","address":null,"contacts":[],"faxes":[],"mail_address":{"id":20,"attention":null,"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"phones":[],"services":[{"id":20,"audience":null,"description":"Description
+        for Service #1 for Location with no phone.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Service
+        #1 for Location with no phone","service_areas":["Belmont","Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:52:22.174-07:00","categories":[]}],"organization":{"id":6,"name":"Location
         with no phone","slug":"location-with-no-phone","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone/locations"}}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:07:11 GMT
+  recorded_at: Tue, 15 Jul 2014 19:52:23 GMT
 - request:
     method: patch
-    uri: http://ohana-api-test.herokuapp.com/api/locations/20/services/20?api_token=Ohana-API-Admin-Test&audience=&eligibility=&fees=&how_to_apply=&keywords&service_areas&wait=
+    uri: http://ohana-api-test.herokuapp.com/api/locations/20/services/20?api_token=Ohana-API-Admin-Test&audience=&description=Description%20for%20Service%20%231%20for%20Location%20with%20no%20phone.&eligibility=&fees=&how_to_apply=&keywords&name=Service%20%231%20for%20Location%20with%20no%20phone&service_areas&wait=
     body:
       encoding: UTF-8
       string: "{}"
@@ -586,7 +600,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -601,7 +615,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:07:11 GMT
+      - Tue, 15 Jul 2014 19:52:23 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -613,20 +627,22 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 1c6b50dc-c178-46a4-9d55-bf6e5b7e6256
+      - 0fa6ca08-9154-4008-81ed-76b20392cae5
       X-Runtime:
-      - '0.036803'
+      - '0.048755'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '196'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":20,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T22:07:11.927-07:00","categories":[]}'
+      string: '{"id":20,"audience":null,"description":"Description for Service #1
+        for Location with no phone.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Service
+        #1 for Location with no phone","service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:52:23.826-07:00","categories":[]}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:07:11 GMT
+  recorded_at: Tue, 15 Jul 2014 19:52:23 GMT
 - request:
     method: put
     uri: http://ohana-api-test.herokuapp.com/api/services/20/categories?api_token=Ohana-API-Admin-Test&oe_ids
@@ -637,7 +653,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -652,7 +668,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:07:12 GMT
+      - Tue, 15 Jul 2014 19:52:23 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -664,20 +680,22 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 682f6ad8-2e92-4866-aad0-cfd148641a48
+      - 0bbb21e5-0c32-431a-8f07-22428536f71e
       X-Runtime:
-      - '0.040051'
+      - '0.043959'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '190'
+      - '241'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":20,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T22:07:12.038-07:00","categories":[]}'
+      string: '{"id":20,"audience":null,"description":"Description for Service #1
+        for Location with no phone.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Service
+        #1 for Location with no phone","service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:52:23.942-07:00","categories":[]}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:07:12 GMT
+  recorded_at: Tue, 15 Jul 2014 19:52:23 GMT
 - request:
     method: get
     uri: http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone?api_token=Ohana-API-Admin-Test
@@ -688,7 +706,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -703,7 +721,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:07:12 GMT
+      - Tue, 15 Jul 2014 19:52:24 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -715,23 +733,25 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 9e839ed3-631f-4920-acab-c5129ecd50e0
+      - 7f82f079-d5cc-450b-bf9e-ae342591dd6a
       X-Runtime:
-      - '0.033222'
+      - '0.057871'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '480'
+      - '506'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"id":20,"accessibility":[],"admin_emails":[],"coordinates":null,"description":"no
         phone","emails":[],"hours":null,"languages":[],"latitude":null,"longitude":null,"name":"Location
-        with no phone","short_desc":"no phone","slug":"location-with-no-phone","transportation":null,"updated_at":"2014-06-26T22:07:12.043-07:00","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone","address":null,"contacts":[],"faxes":[],"mail_address":{"id":20,"attention":null,"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"phones":[],"services":[{"id":20,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T22:07:12.038-07:00","categories":[]}],"organization":{"id":6,"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","transportation":null,"updated_at":"2014-07-15T12:52:23.946-07:00","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone","address":null,"contacts":[],"faxes":[],"mail_address":{"id":20,"attention":null,"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"phones":[],"services":[{"id":20,"audience":null,"description":"Description
+        for Service #1 for Location with no phone.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Service
+        #1 for Location with no phone","service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:52:23.942-07:00","categories":[]}],"organization":{"id":6,"name":"Location
         with no phone","slug":"location-with-no-phone","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone/locations"}}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:07:12 GMT
+  recorded_at: Tue, 15 Jul 2014 19:52:23 GMT
 - request:
     method: get
     uri: http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone?api_token=Ohana-API-Admin-Test
@@ -742,7 +762,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -757,7 +777,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:07:12 GMT
+      - Tue, 15 Jul 2014 19:52:24 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -769,21 +789,23 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - d93c5489-f8f6-4efb-8e37-ecdedd0f7ee5
+      - 51014ba6-e549-4e33-b61f-cfb9c855190b
       X-Runtime:
-      - '0.033815'
+      - '0.042769'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '480'
+      - '500'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{"id":20,"accessibility":[],"admin_emails":[],"coordinates":null,"description":"no
         phone","emails":[],"hours":null,"languages":[],"latitude":null,"longitude":null,"name":"Location
-        with no phone","short_desc":"no phone","slug":"location-with-no-phone","transportation":null,"updated_at":"2014-06-26T22:07:12.043-07:00","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone","address":null,"contacts":[],"faxes":[],"mail_address":{"id":20,"attention":null,"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"phones":[],"services":[{"id":20,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T22:07:12.038-07:00","categories":[]}],"organization":{"id":6,"name":"Location
+        with no phone","short_desc":"no phone","slug":"location-with-no-phone","transportation":null,"updated_at":"2014-07-15T12:52:23.946-07:00","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/locations/location-with-no-phone","address":null,"contacts":[],"faxes":[],"mail_address":{"id":20,"attention":null,"street":"puma","city":"fairfax","state":"VA","zip":"22031"},"phones":[],"services":[{"id":20,"audience":null,"description":"Description
+        for Service #1 for Location with no phone.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Service
+        #1 for Location with no phone","service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:52:23.942-07:00","categories":[]}],"organization":{"id":6,"name":"Location
         with no phone","slug":"location-with-no-phone","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/location-with-no-phone/locations"}}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:07:12 GMT
+  recorded_at: Tue, 15 Jul 2014 19:52:24 GMT
 recorded_with: VCR 2.9.2

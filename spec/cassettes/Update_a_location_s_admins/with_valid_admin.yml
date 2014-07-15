@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -25,7 +25,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 04:54:42 GMT
+      - Tue, 15 Jul 2014 19:59:45 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -37,9 +37,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - ef409d27-d2c2-4f5c-b361-777f8c92b2d8
+      - ed36d258-bbbe-4e69-835e-5e37081625a6
       X-Runtime:
-      - '0.030594'
+      - '0.041544'
       X-Xss-Protection:
       - 1; mode=block
       Transfer-Encoding:
@@ -48,16 +48,18 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":21,"accessibility":["Elevator","Disabled Restroom"],"admin_emails":[],"coordinates":[-73.9395687,42.8142432],"description":"This
-        is a descriptions","emails":["moncefbelyamani@samaritanhousesanmateo.org"],"hours":"Monday-Friday
+      string: '{"id":21,"accessibility":["Disabled Restroom"],"admin_emails":[],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","emails":["moncefbelyamani@samaritanhousesanmateo.org"],"hours":"Monday-Friday
         10am-5pm","languages":[],"latitude":42.8142432,"longitude":-73.9395687,"name":"Admin
         Test Location","short_desc":"This is a short description","slug":"admin-test-location","transportation":"SAMTRANS
-        stops within 1/2 mile.","updated_at":"2014-06-26T21:54:39.961-07:00","urls":["http://codeforamerica.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location","address":{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"email":"moncefbelyamani@samaritanhousesanmateo.org","extension":null,"fax":"703-555-1234","id":41,"name":"Moncef
+        stops within 1/2 mile.","updated_at":"2014-07-15T12:59:45.172-07:00","urls":["http://codeforamerica.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location","address":{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"email":"moncefbelyamani@samaritanhousesanmateo.org","extension":null,"fax":"703-555-1234","id":50,"name":"Moncef
         Belyamani-Belyamani","phone":"703-555-1212","title":"Director of Development
-        and Operations"}],"faxes":[{"id":32,"number":"7035551212","department":"CalFresh"}],"mail_address":null,"phones":[{"id":36,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}],"services":[{"id":21,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T21:54:39.956-07:00","categories":[]}],"organization":{"id":7,"name":"Admin
+        and Operations"}],"faxes":[{"id":41,"number":"7035551212","department":"CalFresh"}],"mail_address":null,"phones":[{"id":46,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}],"services":[{"id":21,"audience":null,"description":"Description
+        for Admin Test Service #1.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Admin
+        Test Service #1","service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:59:44.017-07:00","categories":[]}],"organization":{"id":7,"name":"Admin
         Test Org","slug":"admin-test-org","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org/locations"}}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:42 GMT
+  recorded_at: Tue, 15 Jul 2014 19:59:45 GMT
 - request:
     method: put
     uri: http://ohana-api-test.herokuapp.com/api/organizations/7?api_token=Ohana-API-Admin-Test&name=Admin%20Test%20Org
@@ -68,7 +70,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -83,7 +85,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 04:54:44 GMT
+      - Tue, 15 Jul 2014 19:59:46 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -95,542 +97,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - a6d8a273-e5aa-48eb-acb0-37ebc86079dc
+      - 3fc2ee0a-ad91-4799-9e40-a94bd2976372
       X-Runtime:
-      - '0.036669'
-      X-Xss-Protection:
-      - 1; mode=block
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"id":7,"name":"Admin Test Org","slug":"admin-test-org","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org/locations"}'
-    http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:44 GMT
-- request:
-    method: patch
-    uri: http://ohana-api-test.herokuapp.com/api/locations/21/address/20?api_token=Ohana-API-Admin-Test&city=fairfax&new&state=va&street=bozo&zip=12345
-    body:
-      encoding: UTF-8
-      string: "{}"
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
-      X-Api-Token:
-      - Ohana-API-Admin-Test
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Fri, 27 Jun 2014 04:54:45 GMT
-      Server:
-      - nginx/1.6.0 + Phusion Passenger 4.0.45
-      Status:
-      - 200 OK
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 4.0.45
-      X-Request-Id:
-      - c5023eae-eda5-404f-8fe8-d3d7c71735af
-      X-Runtime:
-      - '0.028947'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '95'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"}'
-    http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:45 GMT
-- request:
-    method: put
-    uri: http://ohana-api-test.herokuapp.com/api/locations/21?accessibility%5B0%5D=elevator&accessibility%5B1%5D=restroom&admin_emails%5B0%5D=moncef@samaritanhouse.com&api_token=Ohana-API-Admin-Test&description=This%20is%20a%20descriptions&emails%5B0%5D=moncefbelyamani@samaritanhousesanmateo.org&hours=Monday-Friday%2010am-5pm&name=Admin%20Test%20Location&short_desc=This%20is%20a%20short%20description&transportation=SAMTRANS%20stops%20within%201/2%20mile.&urls%5B0%5D=http://codeforamerica.org
-    body:
-      encoding: UTF-8
-      string: "{}"
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
-      X-Api-Token:
-      - Ohana-API-Admin-Test
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Fri, 27 Jun 2014 04:54:45 GMT
-      Server:
-      - nginx/1.6.0 + Phusion Passenger 4.0.45
-      Status:
-      - 200 OK
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 4.0.45
-      X-Request-Id:
-      - 6bbd78e4-541e-411b-9412-a0e003e8c40f
-      X-Runtime:
-      - '0.059173'
-      X-Xss-Protection:
-      - 1; mode=block
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"id":21,"accessibility":["Elevator","Disabled Restroom"],"admin_emails":["moncef@samaritanhouse.com"],"coordinates":[-73.9395687,42.8142432],"description":"This
-        is a descriptions","emails":["moncefbelyamani@samaritanhousesanmateo.org"],"hours":"Monday-Friday
-        10am-5pm","languages":[],"latitude":42.8142432,"longitude":-73.9395687,"name":"Admin
-        Test Location","short_desc":"This is a short description","slug":"admin-test-location","transportation":"SAMTRANS
-        stops within 1/2 mile.","updated_at":"2014-06-26T21:54:45.140-07:00","urls":["http://codeforamerica.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location","address":{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"email":"moncefbelyamani@samaritanhousesanmateo.org","extension":null,"fax":"703-555-1234","id":41,"name":"Moncef
-        Belyamani-Belyamani","phone":"703-555-1212","title":"Director of Development
-        and Operations"}],"faxes":[{"id":32,"number":"7035551212","department":"CalFresh"}],"mail_address":null,"phones":[{"id":36,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}],"services":[{"id":21,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T21:54:39.956-07:00","categories":[]}],"organization":{"id":7,"name":"Admin
-        Test Org","slug":"admin-test-org","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org/locations"}}'
-    http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:45 GMT
-- request:
-    method: patch
-    uri: http://ohana-api-test.herokuapp.com/api/locations/21/contacts/41?api_token=Ohana-API-Admin-Test&email=moncefbelyamani@samaritanhousesanmateo.org&extension=&fax=703-555-1234&name=Moncef%20Belyamani-Belyamani&phone=703-555-1212&title=Director%20of%20Development%20and%20Operations
-    body:
-      encoding: UTF-8
-      string: "{}"
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
-      X-Api-Token:
-      - Ohana-API-Admin-Test
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Fri, 27 Jun 2014 04:54:45 GMT
-      Server:
-      - nginx/1.6.0 + Phusion Passenger 4.0.45
-      Status:
-      - 200 OK
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 4.0.45
-      X-Request-Id:
-      - e033fb30-589e-44dc-aeb1-e26330edf2a4
-      X-Runtime:
-      - '0.022879'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '179'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"email":"moncefbelyamani@samaritanhousesanmateo.org","extension":null,"fax":"703-555-1234","id":41,"name":"Moncef
-        Belyamani-Belyamani","phone":"703-555-1212","title":"Director of Development
-        and Operations"}'
-    http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:45 GMT
-- request:
-    method: patch
-    uri: http://ohana-api-test.herokuapp.com/api/locations/21/faxes/32?api_token=Ohana-API-Admin-Test&department=CalFresh&number=7035551212
-    body:
-      encoding: UTF-8
-      string: "{}"
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
-      X-Api-Token:
-      - Ohana-API-Admin-Test
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Fri, 27 Jun 2014 04:54:45 GMT
-      Server:
-      - nginx/1.6.0 + Phusion Passenger 4.0.45
-      Status:
-      - 200 OK
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 4.0.45
-      X-Request-Id:
-      - b4caf212-1c19-4706-bb92-db8bc90d2b85
-      X-Runtime:
-      - '0.022332'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '86'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"id":32,"number":"7035551212","department":"CalFresh"}'
-    http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:45 GMT
-- request:
-    method: patch
-    uri: http://ohana-api-test.herokuapp.com/api/locations/21/phones/36?api_token=Ohana-API-Admin-Test&department=CalFresh&extension=x1223&number=7035551212&vanity_number=703555-ABCD
-    body:
-      encoding: UTF-8
-      string: "{}"
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
-      X-Api-Token:
-      - Ohana-API-Admin-Test
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Fri, 27 Jun 2014 04:54:45 GMT
-      Server:
-      - nginx/1.6.0 + Phusion Passenger 4.0.45
-      Status:
-      - 200 OK
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 4.0.45
-      X-Request-Id:
-      - f45da534-214b-4a4c-b510-22adda9d14a5
-      X-Runtime:
-      - '0.023419'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '131'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"id":36,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}'
-    http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:45 GMT
-- request:
-    method: patch
-    uri: http://ohana-api-test.herokuapp.com/api/locations/21/services/21?api_token=Ohana-API-Admin-Test&audience=&eligibility=&fees=&how_to_apply=&keywords&service_areas%5B0%5D=Atherton&wait=
-    body:
-      encoding: UTF-8
-      string: "{}"
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
-      X-Api-Token:
-      - Ohana-API-Admin-Test
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Fri, 27 Jun 2014 04:54:45 GMT
-      Server:
-      - nginx/1.6.0 + Phusion Passenger 4.0.45
-      Status:
-      - 200 OK
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 4.0.45
-      X-Request-Id:
-      - e7e46fcc-4a93-4484-9561-0feeed3b4ce6
-      X-Runtime:
-      - '0.035879'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '206'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"id":21,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T21:54:45.408-07:00","categories":[]}'
-    http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:45 GMT
-- request:
-    method: put
-    uri: http://ohana-api-test.herokuapp.com/api/services/21/categories?api_token=Ohana-API-Admin-Test&oe_ids
-    body:
-      encoding: UTF-8
-      string: "{}"
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
-      X-Api-Token:
-      - Ohana-API-Admin-Test
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Fri, 27 Jun 2014 04:54:45 GMT
-      Server:
-      - nginx/1.6.0 + Phusion Passenger 4.0.45
-      Status:
-      - 200 OK
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 4.0.45
-      X-Request-Id:
-      - 95a1b8f2-c68d-4262-bc94-e59ac58dd4be
-      X-Runtime:
-      - '0.045662'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '200'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"id":21,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T21:54:45.486-07:00","categories":[]}'
-    http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:45 GMT
-- request:
-    method: get
-    uri: http://ohana-api-test.herokuapp.com/api/locations/admin-test-location?api_token=Ohana-API-Admin-Test
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
-      X-Api-Token:
-      - Ohana-API-Admin-Test
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Fri, 27 Jun 2014 04:54:45 GMT
-      Server:
-      - nginx/1.6.0 + Phusion Passenger 4.0.45
-      Status:
-      - 200 OK
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 4.0.45
-      X-Request-Id:
-      - dc373ea3-767d-47b8-9b96-c0a9b3e1a033
-      X-Runtime:
-      - '0.034251'
-      X-Xss-Protection:
-      - 1; mode=block
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"id":21,"accessibility":["Elevator","Disabled Restroom"],"admin_emails":["moncef@samaritanhouse.com"],"coordinates":[-73.9395687,42.8142432],"description":"This
-        is a descriptions","emails":["moncefbelyamani@samaritanhousesanmateo.org"],"hours":"Monday-Friday
-        10am-5pm","languages":[],"latitude":42.8142432,"longitude":-73.9395687,"name":"Admin
-        Test Location","short_desc":"This is a short description","slug":"admin-test-location","transportation":"SAMTRANS
-        stops within 1/2 mile.","updated_at":"2014-06-26T21:54:45.492-07:00","urls":["http://codeforamerica.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location","address":{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"email":"moncefbelyamani@samaritanhousesanmateo.org","extension":null,"fax":"703-555-1234","id":41,"name":"Moncef
-        Belyamani-Belyamani","phone":"703-555-1212","title":"Director of Development
-        and Operations"}],"faxes":[{"id":32,"number":"7035551212","department":"CalFresh"}],"mail_address":null,"phones":[{"id":36,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}],"services":[{"id":21,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T21:54:45.486-07:00","categories":[]}],"organization":{"id":7,"name":"Admin
-        Test Org","slug":"admin-test-org","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org/locations"}}'
-    http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:45 GMT
-- request:
-    method: get
-    uri: http://ohana-api-test.herokuapp.com/api/locations/admin-test-location?api_token=Ohana-API-Admin-Test
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
-      X-Api-Token:
-      - Ohana-API-Admin-Test
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Fri, 27 Jun 2014 04:54:45 GMT
-      Server:
-      - nginx/1.6.0 + Phusion Passenger 4.0.45
-      Status:
-      - 200 OK
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 4.0.45
-      X-Request-Id:
-      - 9fc713d1-3149-4791-aa2f-efe40a5e2836
-      X-Runtime:
-      - '0.033463'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '803'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"id":21,"accessibility":["Elevator","Disabled Restroom"],"admin_emails":["moncef@samaritanhouse.com"],"coordinates":[-73.9395687,42.8142432],"description":"This
-        is a descriptions","emails":["moncefbelyamani@samaritanhousesanmateo.org"],"hours":"Monday-Friday
-        10am-5pm","languages":[],"latitude":42.8142432,"longitude":-73.9395687,"name":"Admin
-        Test Location","short_desc":"This is a short description","slug":"admin-test-location","transportation":"SAMTRANS
-        stops within 1/2 mile.","updated_at":"2014-06-26T21:54:45.492-07:00","urls":["http://codeforamerica.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location","address":{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"email":"moncefbelyamani@samaritanhousesanmateo.org","extension":null,"fax":"703-555-1234","id":41,"name":"Moncef
-        Belyamani-Belyamani","phone":"703-555-1212","title":"Director of Development
-        and Operations"}],"faxes":[{"id":32,"number":"7035551212","department":"CalFresh"}],"mail_address":null,"phones":[{"id":36,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}],"services":[{"id":21,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T21:54:45.486-07:00","categories":[]}],"organization":{"id":7,"name":"Admin
-        Test Org","slug":"admin-test-org","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org/locations"}}'
-    http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:45 GMT
-- request:
-    method: put
-    uri: http://ohana-api-test.herokuapp.com/api/organizations/7?api_token=Ohana-API-Admin-Test&name=Admin%20Test%20Org
-    body:
-      encoding: UTF-8
-      string: "{}"
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
-      X-Api-Token:
-      - Ohana-API-Admin-Test
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Fri, 27 Jun 2014 04:54:46 GMT
-      Server:
-      - nginx/1.6.0 + Phusion Passenger 4.0.45
-      Status:
-      - 200 OK
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 4.0.45
-      X-Request-Id:
-      - d6e6016e-f66a-4952-907c-81ef235acac7
-      X-Runtime:
-      - '0.031617'
+      - '0.045947'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -641,7 +110,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"id":7,"name":"Admin Test Org","slug":"admin-test-org","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org/locations"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:46 GMT
+  recorded_at: Tue, 15 Jul 2014 19:59:45 GMT
 - request:
     method: patch
     uri: http://ohana-api-test.herokuapp.com/api/locations/21/address/20?api_token=Ohana-API-Admin-Test&city=fairfax&new&state=va&street=bozo&zip=12345
@@ -652,7 +121,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -667,7 +136,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 04:54:46 GMT
+      - Tue, 15 Jul 2014 19:59:46 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -679,9 +148,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - f031f12a-9e0e-42e3-8834-b7bef1169f0a
+      - 2994552b-6ccf-4df4-80c3-c2b29189c3b9
       X-Runtime:
-      - '0.024285'
+      - '0.031030'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -692,10 +161,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:46 GMT
+  recorded_at: Tue, 15 Jul 2014 19:59:45 GMT
 - request:
     method: put
-    uri: http://ohana-api-test.herokuapp.com/api/locations/21?accessibility%5B0%5D=elevator&accessibility%5B1%5D=restroom&admin_emails&api_token=Ohana-API-Admin-Test&description=This%20is%20a%20descriptions&emails%5B0%5D=moncefbelyamani@samaritanhousesanmateo.org&hours=Monday-Friday%2010am-5pm&name=Admin%20Test%20Location&short_desc=This%20is%20a%20short%20description&transportation=SAMTRANS%20stops%20within%201/2%20mile.&urls%5B0%5D=http://codeforamerica.org
+    uri: http://ohana-api-test.herokuapp.com/api/locations/21?accessibility%5B0%5D=restroom&admin_emails%5B0%5D=moncef@samaritanhouse.com&api_token=Ohana-API-Admin-Test&description=This%20is%20a%20description&emails%5B0%5D=moncefbelyamani@samaritanhousesanmateo.org&hours=Monday-Friday%2010am-5pm&name=Admin%20Test%20Location&short_desc=This%20is%20a%20short%20description&transportation=SAMTRANS%20stops%20within%201/2%20mile.&urls%5B0%5D=http://codeforamerica.org
     body:
       encoding: UTF-8
       string: "{}"
@@ -703,7 +172,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -718,7 +187,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 04:54:46 GMT
+      - Tue, 15 Jul 2014 19:59:46 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -730,9 +199,122 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - a620aeb3-79e9-4921-9e97-5d3d521973cc
+      - 8ca2947b-4fd1-4201-a0ac-004399aceac6
       X-Runtime:
-      - '0.097699'
+      - '0.078201'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '822'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":21,"accessibility":["Disabled Restroom"],"admin_emails":["moncef@samaritanhouse.com"],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","emails":["moncefbelyamani@samaritanhousesanmateo.org"],"hours":"Monday-Friday
+        10am-5pm","languages":[],"latitude":42.8142432,"longitude":-73.9395687,"name":"Admin
+        Test Location","short_desc":"This is a short description","slug":"admin-test-location","transportation":"SAMTRANS
+        stops within 1/2 mile.","updated_at":"2014-07-15T12:59:46.426-07:00","urls":["http://codeforamerica.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location","address":{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"email":"moncefbelyamani@samaritanhousesanmateo.org","extension":null,"fax":"703-555-1234","id":50,"name":"Moncef
+        Belyamani-Belyamani","phone":"703-555-1212","title":"Director of Development
+        and Operations"}],"faxes":[{"id":41,"number":"7035551212","department":"CalFresh"}],"mail_address":null,"phones":[{"id":46,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}],"services":[{"id":21,"audience":null,"description":"Description
+        for Admin Test Service #1.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Admin
+        Test Service #1","service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:59:44.017-07:00","categories":[]}],"organization":{"id":7,"name":"Admin
+        Test Org","slug":"admin-test-org","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org/locations"}}'
+    http_version: 
+  recorded_at: Tue, 15 Jul 2014 19:59:46 GMT
+- request:
+    method: patch
+    uri: http://ohana-api-test.herokuapp.com/api/locations/21/contacts/50?api_token=Ohana-API-Admin-Test&email=moncefbelyamani@samaritanhousesanmateo.org&extension=&fax=703-555-1234&name=Moncef%20Belyamani-Belyamani&phone=703-555-1212&title=Director%20of%20Development%20and%20Operations
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.1
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Jul 2014 19:59:46 GMT
+      Server:
+      - nginx/1.6.0 + Phusion Passenger 4.0.45
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 4.0.45
+      X-Request-Id:
+      - 5e7be572-b393-4aa2-95ed-47bd8caf5074
+      X-Runtime:
+      - '0.032003'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '180'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"email":"moncefbelyamani@samaritanhousesanmateo.org","extension":null,"fax":"703-555-1234","id":50,"name":"Moncef
+        Belyamani-Belyamani","phone":"703-555-1212","title":"Director of Development
+        and Operations"}'
+    http_version: 
+  recorded_at: Tue, 15 Jul 2014 19:59:46 GMT
+- request:
+    method: patch
+    uri: http://ohana-api-test.herokuapp.com/api/locations/21/faxes/41?api_token=Ohana-API-Admin-Test&department=CalFresh&number=7035551212
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.1
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Jul 2014 19:59:46 GMT
+      Server:
+      - nginx/1.6.0 + Phusion Passenger 4.0.45
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 4.0.45
+      X-Request-Id:
+      - 5c120e68-fbdf-45dc-bf1a-736c0d4f25fb
+      X-Runtime:
+      - '0.029262'
       X-Xss-Protection:
       - 1; mode=block
       Transfer-Encoding:
@@ -741,19 +323,12 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":21,"accessibility":["Elevator","Disabled Restroom"],"admin_emails":[],"coordinates":[-73.9395687,42.8142432],"description":"This
-        is a descriptions","emails":["moncefbelyamani@samaritanhousesanmateo.org"],"hours":"Monday-Friday
-        10am-5pm","languages":[],"latitude":42.8142432,"longitude":-73.9395687,"name":"Admin
-        Test Location","short_desc":"This is a short description","slug":"admin-test-location","transportation":"SAMTRANS
-        stops within 1/2 mile.","updated_at":"2014-06-26T21:54:46.710-07:00","urls":["http://codeforamerica.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location","address":{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"email":"moncefbelyamani@samaritanhousesanmateo.org","extension":null,"fax":"703-555-1234","id":41,"name":"Moncef
-        Belyamani-Belyamani","phone":"703-555-1212","title":"Director of Development
-        and Operations"}],"faxes":[{"id":32,"number":"7035551212","department":"CalFresh"}],"mail_address":null,"phones":[{"id":36,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}],"services":[{"id":21,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T21:54:45.486-07:00","categories":[]}],"organization":{"id":7,"name":"Admin
-        Test Org","slug":"admin-test-org","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org/locations"}}'
+      string: '{"id":41,"number":"7035551212","department":"CalFresh"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:46 GMT
+  recorded_at: Tue, 15 Jul 2014 19:59:46 GMT
 - request:
     method: patch
-    uri: http://ohana-api-test.herokuapp.com/api/locations/21/contacts/41?api_token=Ohana-API-Admin-Test&email=moncefbelyamani@samaritanhousesanmateo.org&extension=&fax=703-555-1234&name=Moncef%20Belyamani-Belyamani&phone=703-555-1212&title=Director%20of%20Development%20and%20Operations
+    uri: http://ohana-api-test.herokuapp.com/api/locations/21/phones/46?api_token=Ohana-API-Admin-Test&department=CalFresh&extension=x1223&number=7035551212&vanity_number=703555-ABCD
     body:
       encoding: UTF-8
       string: "{}"
@@ -761,7 +336,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -776,7 +351,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 04:54:46 GMT
+      - Tue, 15 Jul 2014 19:59:46 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -788,25 +363,23 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - a8722b15-55a4-4422-b872-29528c4b5a47
+      - cf395590-88f9-4fe8-8baf-644d4becd897
       X-Runtime:
-      - '0.022300'
+      - '0.033394'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '185'
+      - '132'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"email":"moncefbelyamani@samaritanhousesanmateo.org","extension":null,"fax":"703-555-1234","id":41,"name":"Moncef
-        Belyamani-Belyamani","phone":"703-555-1212","title":"Director of Development
-        and Operations"}'
+      string: '{"id":46,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:46 GMT
+  recorded_at: Tue, 15 Jul 2014 19:59:46 GMT
 - request:
     method: patch
-    uri: http://ohana-api-test.herokuapp.com/api/locations/21/faxes/32?api_token=Ohana-API-Admin-Test&department=CalFresh&number=7035551212
+    uri: http://ohana-api-test.herokuapp.com/api/locations/21/services/21?api_token=Ohana-API-Admin-Test&audience=&description=Description%20for%20Admin%20Test%20Service%20%231.&eligibility=&fees=&how_to_apply=&keywords&name=Admin%20Test%20Service%20%231&service_areas%5B0%5D=Atherton&wait=
     body:
       encoding: UTF-8
       string: "{}"
@@ -814,7 +387,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -829,7 +402,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 04:54:46 GMT
+      - Tue, 15 Jul 2014 19:59:46 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -841,122 +414,22 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 7b5b2398-719c-46bb-a177-bfca86191cfc
+      - df0703a7-0703-4055-bbfd-64a002e43f48
       X-Runtime:
-      - '0.019425'
+      - '0.052149'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '80'
+      - '240'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":32,"number":"7035551212","department":"CalFresh"}'
+      string: '{"id":21,"audience":null,"description":"Description for Admin Test
+        Service #1.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Admin
+        Test Service #1","service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:59:46.849-07:00","categories":[]}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:46 GMT
-- request:
-    method: patch
-    uri: http://ohana-api-test.herokuapp.com/api/locations/21/phones/36?api_token=Ohana-API-Admin-Test&department=CalFresh&extension=x1223&number=7035551212&vanity_number=703555-ABCD
-    body:
-      encoding: UTF-8
-      string: "{}"
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
-      X-Api-Token:
-      - Ohana-API-Admin-Test
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Fri, 27 Jun 2014 04:54:46 GMT
-      Server:
-      - nginx/1.6.0 + Phusion Passenger 4.0.45
-      Status:
-      - 200 OK
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 4.0.45
-      X-Request-Id:
-      - ba3e44f6-639c-4bd4-8411-a0edd8a07441
-      X-Runtime:
-      - '0.020574'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '131'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"id":36,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}'
-    http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:46 GMT
-- request:
-    method: patch
-    uri: http://ohana-api-test.herokuapp.com/api/locations/21/services/21?api_token=Ohana-API-Admin-Test&audience=&eligibility=&fees=&how_to_apply=&keywords&service_areas%5B0%5D=Atherton&wait=
-    body:
-      encoding: UTF-8
-      string: "{}"
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
-      X-Api-Token:
-      - Ohana-API-Admin-Test
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Fri, 27 Jun 2014 04:54:46 GMT
-      Server:
-      - nginx/1.6.0 + Phusion Passenger 4.0.45
-      Status:
-      - 200 OK
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Powered-By:
-      - Phusion Passenger 4.0.45
-      X-Request-Id:
-      - 8ea71d9e-2143-4d35-bef1-6c1a54a3694f
-      X-Runtime:
-      - '0.027332'
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Length:
-      - '207'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"id":21,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T21:54:46.962-07:00","categories":[]}'
-    http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:46 GMT
+  recorded_at: Tue, 15 Jul 2014 19:59:46 GMT
 - request:
     method: put
     uri: http://ohana-api-test.herokuapp.com/api/services/21/categories?api_token=Ohana-API-Admin-Test&oe_ids
@@ -967,7 +440,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -982,7 +455,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 04:54:47 GMT
+      - Tue, 15 Jul 2014 19:59:46 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -994,20 +467,22 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - b9a18734-9175-4ad3-a339-8814204ce2e8
+      - 8c63f5ce-9273-4479-961e-ef9d32e021b9
       X-Runtime:
-      - '0.026477'
+      - '0.043683'
       X-Xss-Protection:
       - 1; mode=block
-      Content-Length:
-      - '206'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":21,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T21:54:47.026-07:00","categories":[]}'
+      string: '{"id":21,"audience":null,"description":"Description for Admin Test
+        Service #1.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Admin
+        Test Service #1","service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:59:46.939-07:00","categories":[]}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:47 GMT
+  recorded_at: Tue, 15 Jul 2014 19:59:46 GMT
 - request:
     method: get
     uri: http://ohana-api-test.herokuapp.com/api/locations/admin-test-location?api_token=Ohana-API-Admin-Test
@@ -1018,7 +493,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -1033,7 +508,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 04:54:47 GMT
+      - Tue, 15 Jul 2014 19:59:47 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -1045,25 +520,570 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 1250aaf1-0aae-4eab-aebb-d6b06fbf570a
+      - abf46510-8e8b-44a8-895f-b419808e4b10
       X-Runtime:
-      - '0.026921'
+      - '0.043711'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '798'
+      - '819'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":21,"accessibility":["Elevator","Disabled Restroom"],"admin_emails":[],"coordinates":[-73.9395687,42.8142432],"description":"This
-        is a descriptions","emails":["moncefbelyamani@samaritanhousesanmateo.org"],"hours":"Monday-Friday
+      string: '{"id":21,"accessibility":["Disabled Restroom"],"admin_emails":["moncef@samaritanhouse.com"],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","emails":["moncefbelyamani@samaritanhousesanmateo.org"],"hours":"Monday-Friday
         10am-5pm","languages":[],"latitude":42.8142432,"longitude":-73.9395687,"name":"Admin
         Test Location","short_desc":"This is a short description","slug":"admin-test-location","transportation":"SAMTRANS
-        stops within 1/2 mile.","updated_at":"2014-06-26T21:54:47.030-07:00","urls":["http://codeforamerica.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location","address":{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"email":"moncefbelyamani@samaritanhousesanmateo.org","extension":null,"fax":"703-555-1234","id":41,"name":"Moncef
+        stops within 1/2 mile.","updated_at":"2014-07-15T12:59:46.943-07:00","urls":["http://codeforamerica.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location","address":{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"email":"moncefbelyamani@samaritanhousesanmateo.org","extension":null,"fax":"703-555-1234","id":50,"name":"Moncef
         Belyamani-Belyamani","phone":"703-555-1212","title":"Director of Development
-        and Operations"}],"faxes":[{"id":32,"number":"7035551212","department":"CalFresh"}],"mail_address":null,"phones":[{"id":36,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}],"services":[{"id":21,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T21:54:47.026-07:00","categories":[]}],"organization":{"id":7,"name":"Admin
+        and Operations"}],"faxes":[{"id":41,"number":"7035551212","department":"CalFresh"}],"mail_address":null,"phones":[{"id":46,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}],"services":[{"id":21,"audience":null,"description":"Description
+        for Admin Test Service #1.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Admin
+        Test Service #1","service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:59:46.939-07:00","categories":[]}],"organization":{"id":7,"name":"Admin
         Test Org","slug":"admin-test-org","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org/locations"}}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 04:54:47 GMT
+  recorded_at: Tue, 15 Jul 2014 19:59:46 GMT
+- request:
+    method: get
+    uri: http://ohana-api-test.herokuapp.com/api/locations/admin-test-location?api_token=Ohana-API-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.1
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Jul 2014 19:59:47 GMT
+      Server:
+      - nginx/1.6.0 + Phusion Passenger 4.0.45
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 4.0.45
+      X-Request-Id:
+      - 19e5a93a-6902-4c4e-8b63-cc710cff1791
+      X-Runtime:
+      - '0.043608'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '819'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":21,"accessibility":["Disabled Restroom"],"admin_emails":["moncef@samaritanhouse.com"],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","emails":["moncefbelyamani@samaritanhousesanmateo.org"],"hours":"Monday-Friday
+        10am-5pm","languages":[],"latitude":42.8142432,"longitude":-73.9395687,"name":"Admin
+        Test Location","short_desc":"This is a short description","slug":"admin-test-location","transportation":"SAMTRANS
+        stops within 1/2 mile.","updated_at":"2014-07-15T12:59:46.943-07:00","urls":["http://codeforamerica.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location","address":{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"email":"moncefbelyamani@samaritanhousesanmateo.org","extension":null,"fax":"703-555-1234","id":50,"name":"Moncef
+        Belyamani-Belyamani","phone":"703-555-1212","title":"Director of Development
+        and Operations"}],"faxes":[{"id":41,"number":"7035551212","department":"CalFresh"}],"mail_address":null,"phones":[{"id":46,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}],"services":[{"id":21,"audience":null,"description":"Description
+        for Admin Test Service #1.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Admin
+        Test Service #1","service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:59:46.939-07:00","categories":[]}],"organization":{"id":7,"name":"Admin
+        Test Org","slug":"admin-test-org","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org/locations"}}'
+    http_version: 
+  recorded_at: Tue, 15 Jul 2014 19:59:46 GMT
+- request:
+    method: put
+    uri: http://ohana-api-test.herokuapp.com/api/organizations/7?api_token=Ohana-API-Admin-Test&name=Admin%20Test%20Org
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.1
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Jul 2014 19:59:47 GMT
+      Server:
+      - nginx/1.6.0 + Phusion Passenger 4.0.45
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 4.0.45
+      X-Request-Id:
+      - 1448d63a-9b2c-488e-9934-f1d228ed87d2
+      X-Runtime:
+      - '0.049577'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '155'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":7,"name":"Admin Test Org","slug":"admin-test-org","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org/locations"}'
+    http_version: 
+  recorded_at: Tue, 15 Jul 2014 19:59:47 GMT
+- request:
+    method: patch
+    uri: http://ohana-api-test.herokuapp.com/api/locations/21/address/20?api_token=Ohana-API-Admin-Test&city=fairfax&new&state=va&street=bozo&zip=12345
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.1
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Jul 2014 19:59:47 GMT
+      Server:
+      - nginx/1.6.0 + Phusion Passenger 4.0.45
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 4.0.45
+      X-Request-Id:
+      - ad6eb511-4208-4100-8e54-b9db099ad826
+      X-Runtime:
+      - '0.036178'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '95'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"}'
+    http_version: 
+  recorded_at: Tue, 15 Jul 2014 19:59:47 GMT
+- request:
+    method: put
+    uri: http://ohana-api-test.herokuapp.com/api/locations/21?accessibility%5B0%5D=restroom&admin_emails&api_token=Ohana-API-Admin-Test&description=This%20is%20a%20description&emails%5B0%5D=moncefbelyamani@samaritanhousesanmateo.org&hours=Monday-Friday%2010am-5pm&name=Admin%20Test%20Location&short_desc=This%20is%20a%20short%20description&transportation=SAMTRANS%20stops%20within%201/2%20mile.&urls%5B0%5D=http://codeforamerica.org
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.1
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Jul 2014 19:59:48 GMT
+      Server:
+      - nginx/1.6.0 + Phusion Passenger 4.0.45
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 4.0.45
+      X-Request-Id:
+      - 39f82697-d97e-48a5-b2b3-a81b63b06829
+      X-Runtime:
+      - '0.069484'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '815'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":21,"accessibility":["Disabled Restroom"],"admin_emails":[],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","emails":["moncefbelyamani@samaritanhousesanmateo.org"],"hours":"Monday-Friday
+        10am-5pm","languages":[],"latitude":42.8142432,"longitude":-73.9395687,"name":"Admin
+        Test Location","short_desc":"This is a short description","slug":"admin-test-location","transportation":"SAMTRANS
+        stops within 1/2 mile.","updated_at":"2014-07-15T12:59:48.070-07:00","urls":["http://codeforamerica.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location","address":{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"email":"moncefbelyamani@samaritanhousesanmateo.org","extension":null,"fax":"703-555-1234","id":50,"name":"Moncef
+        Belyamani-Belyamani","phone":"703-555-1212","title":"Director of Development
+        and Operations"}],"faxes":[{"id":41,"number":"7035551212","department":"CalFresh"}],"mail_address":null,"phones":[{"id":46,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}],"services":[{"id":21,"audience":null,"description":"Description
+        for Admin Test Service #1.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Admin
+        Test Service #1","service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:59:46.939-07:00","categories":[]}],"organization":{"id":7,"name":"Admin
+        Test Org","slug":"admin-test-org","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org/locations"}}'
+    http_version: 
+  recorded_at: Tue, 15 Jul 2014 19:59:47 GMT
+- request:
+    method: patch
+    uri: http://ohana-api-test.herokuapp.com/api/locations/21/contacts/50?api_token=Ohana-API-Admin-Test&email=moncefbelyamani@samaritanhousesanmateo.org&extension=&fax=703-555-1234&name=Moncef%20Belyamani-Belyamani&phone=703-555-1212&title=Director%20of%20Development%20and%20Operations
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.1
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Jul 2014 19:59:48 GMT
+      Server:
+      - nginx/1.6.0 + Phusion Passenger 4.0.45
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 4.0.45
+      X-Request-Id:
+      - 5506b955-f1ad-4638-b399-3552d27afafc
+      X-Runtime:
+      - '0.030325'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '186'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"email":"moncefbelyamani@samaritanhousesanmateo.org","extension":null,"fax":"703-555-1234","id":50,"name":"Moncef
+        Belyamani-Belyamani","phone":"703-555-1212","title":"Director of Development
+        and Operations"}'
+    http_version: 
+  recorded_at: Tue, 15 Jul 2014 19:59:47 GMT
+- request:
+    method: patch
+    uri: http://ohana-api-test.herokuapp.com/api/locations/21/faxes/41?api_token=Ohana-API-Admin-Test&department=CalFresh&number=7035551212
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.1
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Jul 2014 19:59:48 GMT
+      Server:
+      - nginx/1.6.0 + Phusion Passenger 4.0.45
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 4.0.45
+      X-Request-Id:
+      - cb0a9394-3c4b-4aab-ac58-c716e14cc06c
+      X-Runtime:
+      - '0.030479'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":41,"number":"7035551212","department":"CalFresh"}'
+    http_version: 
+  recorded_at: Tue, 15 Jul 2014 19:59:47 GMT
+- request:
+    method: patch
+    uri: http://ohana-api-test.herokuapp.com/api/locations/21/phones/46?api_token=Ohana-API-Admin-Test&department=CalFresh&extension=x1223&number=7035551212&vanity_number=703555-ABCD
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.1
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Jul 2014 19:59:48 GMT
+      Server:
+      - nginx/1.6.0 + Phusion Passenger 4.0.45
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 4.0.45
+      X-Request-Id:
+      - ba5b0e14-d66b-4b39-980b-6beea66bcdb6
+      X-Runtime:
+      - '0.028896'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '132'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":46,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}'
+    http_version: 
+  recorded_at: Tue, 15 Jul 2014 19:59:47 GMT
+- request:
+    method: patch
+    uri: http://ohana-api-test.herokuapp.com/api/locations/21/services/21?api_token=Ohana-API-Admin-Test&audience=&description=Description%20for%20Admin%20Test%20Service%20%231.&eligibility=&fees=&how_to_apply=&keywords&name=Admin%20Test%20Service%20%231&service_areas%5B0%5D=Atherton&wait=
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.1
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Jul 2014 19:59:48 GMT
+      Server:
+      - nginx/1.6.0 + Phusion Passenger 4.0.45
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 4.0.45
+      X-Request-Id:
+      - 8e4c0744-0b58-4582-adfc-a5ce241441bc
+      X-Runtime:
+      - '0.052425'
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '239'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":21,"audience":null,"description":"Description for Admin Test
+        Service #1.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Admin
+        Test Service #1","service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:59:48.409-07:00","categories":[]}'
+    http_version: 
+  recorded_at: Tue, 15 Jul 2014 19:59:48 GMT
+- request:
+    method: put
+    uri: http://ohana-api-test.herokuapp.com/api/services/21/categories?api_token=Ohana-API-Admin-Test&oe_ids
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.1
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Jul 2014 19:59:48 GMT
+      Server:
+      - nginx/1.6.0 + Phusion Passenger 4.0.45
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 4.0.45
+      X-Request-Id:
+      - d50ffa19-91eb-42ef-905f-3c00d9fa670c
+      X-Runtime:
+      - '0.056964'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":21,"audience":null,"description":"Description for Admin Test
+        Service #1.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Admin
+        Test Service #1","service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:59:48.563-07:00","categories":[]}'
+    http_version: 
+  recorded_at: Tue, 15 Jul 2014 19:59:48 GMT
+- request:
+    method: get
+    uri: http://ohana-api-test.herokuapp.com/api/locations/admin-test-location?api_token=Ohana-API-Admin-Test
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.1
+      X-Api-Token:
+      - Ohana-API-Admin-Test
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 15 Jul 2014 19:59:48 GMT
+      Server:
+      - nginx/1.6.0 + Phusion Passenger 4.0.45
+      Status:
+      - 200 OK
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 4.0.45
+      X-Request-Id:
+      - 23a0a20b-3433-4274-ac62-f4e9082b23f7
+      X-Runtime:
+      - '0.045671'
+      X-Xss-Protection:
+      - 1; mode=block
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"id":21,"accessibility":["Disabled Restroom"],"admin_emails":[],"coordinates":[-73.9395687,42.8142432],"description":"This
+        is a description","emails":["moncefbelyamani@samaritanhousesanmateo.org"],"hours":"Monday-Friday
+        10am-5pm","languages":[],"latitude":42.8142432,"longitude":-73.9395687,"name":"Admin
+        Test Location","short_desc":"This is a short description","slug":"admin-test-location","transportation":"SAMTRANS
+        stops within 1/2 mile.","updated_at":"2014-07-15T12:59:48.567-07:00","urls":["http://codeforamerica.org"],"url":"http://ohana-api-test.herokuapp.com/api/locations/admin-test-location","address":{"id":20,"street":"bozo","city":"fairfax","state":"va","zip":"12345"},"contacts":[{"email":"moncefbelyamani@samaritanhousesanmateo.org","extension":null,"fax":"703-555-1234","id":50,"name":"Moncef
+        Belyamani-Belyamani","phone":"703-555-1212","title":"Director of Development
+        and Operations"}],"faxes":[{"id":41,"number":"7035551212","department":"CalFresh"}],"mail_address":null,"phones":[{"id":46,"department":"CalFresh","extension":"x1223","number":"7035551212","number_type":null,"vanity_number":"703555-ABCD"}],"services":[{"id":21,"audience":null,"description":"Description
+        for Admin Test Service #1.","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"Admin
+        Test Service #1","service_areas":["Atherton"],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:59:48.563-07:00","categories":[]}],"organization":{"id":7,"name":"Admin
+        Test Org","slug":"admin-test-org","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/admin-test-org/locations"}}'
+    http_version: 
+  recorded_at: Tue, 15 Jul 2014 19:59:48 GMT
 recorded_with: VCR 2.9.2

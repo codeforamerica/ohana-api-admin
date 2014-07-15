@@ -1,0 +1,10 @@
+%div.inst-box
+  %header
+    %strong
+      Add an admin to this location
+    %p.desc
+      Which email addresses should be allowed to update and delete this location?
+  = field_set_tag do
+    = text_field_tag 'admin_emails][]', current_user.email, class: 'span4'
+    %br
+    = link_to "Delete this admin permanently", '#', class: "btn btn-danger delete_attribute"

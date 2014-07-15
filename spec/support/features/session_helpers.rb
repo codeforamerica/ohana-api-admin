@@ -253,6 +253,8 @@ module Features
       fill_in 'city', with: 'utopia'
       fill_in 'state', with: 'XX'
       fill_in 'zip', with: '12345'
+      fill_in 'service_name', with: 'new samaritan house service'
+      fill_in 'service_description', with: 'new service description'
     end
 
     def delete_location

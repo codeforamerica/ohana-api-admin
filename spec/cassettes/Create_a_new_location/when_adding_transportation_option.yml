@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&domain=samaritanhouse.com
+    uri: http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&email=moncef@samaritanhouse.com
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -25,10 +25,10 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:04:10 GMT
+      - Tue, 15 Jul 2014 19:53:49 GMT
       Link:
-      - <http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&domain=samaritanhouse.com&page=2>;
-        rel="last", <http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&domain=samaritanhouse.com&page=2>;
+      - <http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&email=moncef%40samaritanhouse.com&page=2>;
+        rel="last", <http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&email=moncef%40samaritanhouse.com&page=2>;
         rel="next"
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
@@ -45,17 +45,17 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 152d7821-f92b-4527-86b8-afad874e8aef
+      - f0a2c9bd-6ad7-440f-bcdd-ac3a92a97f4f
       X-Runtime:
-      - '0.090610'
+      - '0.094620'
       X-Total-Count:
       - '2'
       X-Total-Pages:
       - '2'
       X-Xss-Protection:
       - 1; mode=block
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '688'
       Connection:
       - keep-alive
     body:
@@ -67,15 +67,15 @@ http_interactions:
         exam, dental cleaning and oral hygiene instruction for children, age 3-12,
         of Samaritan House clients.","latitude":37.468678,"longitude":-122.207057,"name":"Redwood
         City Free Medical Clinic","short_desc":"Provides free medical care to those
-        in need.","slug":"redwood-city-free-medical-clinic","updated_at":"2014-06-26T22:02:38.111-07:00","urls":["http://www.samaritanhouse.com"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/services","url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic","address":{"id":18,"street":"114
+        in need.","slug":"redwood-city-free-medical-clinic","updated_at":"2014-07-15T12:51:20.529-07:00","urls":["http://www.samaritanhouse.com"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/services","url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic","address":{"id":18,"street":"114
         Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"organization":{"id":5,"name":"Samaritan
         House","slug":"samaritan-house","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/samaritan-house","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/samaritan-house/locations"},"phones":[{"id":18,"department":null,"extension":null,"number":"650
         839-1447","number_type":null,"vanity_number":null}]}]'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:04:10 GMT
+  recorded_at: Tue, 15 Jul 2014 19:53:48 GMT
 - request:
     method: post
-    uri: http://ohana-api-test.herokuapp.com/api/locations/?accessibility&address_attributes%5Bcity%5D=utopia&address_attributes%5Bdestroy%5D&address_attributes%5Bnew%5D&address_attributes%5Bstate%5D=XX&address_attributes%5Bstreet%5D=modularity&address_attributes%5Bzip%5D=12345&admin_emails&api_token=Ohana-API-Admin-Test&description=new%20description&hours=&name=new%20samaritan%20house%20location&organization_id=5&short_desc=&transportation=SAMTRANS%20stops%20within%201/2%20mile.&urls%5B0%5D=http://www.samaritanhouse.com
+    uri: http://ohana-api-test.herokuapp.com/api/locations/?accessibility&address_attributes%5Bcity%5D=utopia&address_attributes%5Bdestroy%5D&address_attributes%5Bnew%5D&address_attributes%5Bstate%5D=XX&address_attributes%5Bstreet%5D=modularity&address_attributes%5Bzip%5D=12345&admin_emails%5B0%5D=moncef@samaritanhouse.com&api_token=Ohana-API-Admin-Test&description=new%20description&hours=&name=new%20samaritan%20house%20location&organization_id=5&short_desc=&transportation=SAMTRANS%20stops%20within%201/2%20mile.&urls%5B0%5D=http://www.samaritanhouse.com
     body:
       encoding: UTF-8
       string: "{}"
@@ -83,7 +83,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -98,9 +98,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:04:11 GMT
+      - Tue, 15 Jul 2014 19:53:49 GMT
       Etag:
-      - '"e0c3ec98ff776abd0c1f18533bb5d907"'
+      - '"dd06e1a3c98240a886078984c0159067"'
       Location:
       - http://ohana-api-test.herokuapp.com/api/locations/new-samaritan-house-location
       Server:
@@ -114,23 +114,23 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - ed1c2dc8-c8d7-4d15-bc7c-65cbfed105b3
+      - 93ad2859-3eba-453d-860f-3ada2242cc07
       X-Runtime:
-      - '0.144346'
+      - '0.180475'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '85'
+      - '86'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":98,"name":"new samaritan house location","slug":"new-samaritan-house-location"}'
+      string: '{"id":132,"name":"new samaritan house location","slug":"new-samaritan-house-location"}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:04:11 GMT
+  recorded_at: Tue, 15 Jul 2014 19:53:49 GMT
 - request:
     method: post
-    uri: http://ohana-api-test.herokuapp.com/api/locations/98/services?api_token=Ohana-API-Admin-Test&audience=&eligibility=&fees=&how_to_apply=&keywords&service_areas&wait=
+    uri: http://ohana-api-test.herokuapp.com/api/locations/132/services?api_token=Ohana-API-Admin-Test&audience=&description=new%20service%20description&eligibility=&fees=&how_to_apply=&keywords&name=new%20samaritan%20house%20service&service_areas&wait=
     body:
       encoding: UTF-8
       string: "{}"
@@ -138,7 +138,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -153,9 +153,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:04:11 GMT
+      - Tue, 15 Jul 2014 19:53:49 GMT
       Etag:
-      - '"7135d54bf77d351b1a78755d9ced0f8f"'
+      - '"cc749ac59a450716268d388930e979ee"'
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -167,23 +167,24 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - f8c504d2-6dfc-4889-80f1-2450e8519044
+      - bef16939-f01f-4d15-a9dc-966fdca3c5a1
       X-Runtime:
-      - '0.044961'
+      - '0.047420'
       X-Xss-Protection:
       - 1; mode=block
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '309'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":99,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T22:04:11.606-07:00","categories":[]}'
+      string: '{"id":133,"audience":null,"description":"new service description","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"new
+        samaritan house service","service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:53:49.975-07:00","categories":[]}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:04:11 GMT
+  recorded_at: Tue, 15 Jul 2014 19:53:49 GMT
 - request:
     method: put
-    uri: http://ohana-api-test.herokuapp.com/api/services/99/categories?api_token=Ohana-API-Admin-Test&oe_ids
+    uri: http://ohana-api-test.herokuapp.com/api/services/133/categories?api_token=Ohana-API-Admin-Test&oe_ids
     body:
       encoding: UTF-8
       string: "{}"
@@ -191,7 +192,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -206,7 +207,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:04:11 GMT
+      - Tue, 15 Jul 2014 19:53:50 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -218,20 +219,21 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - ebcc9d43-6b71-49f7-a845-f62f39223ba8
+      - f2432da2-670d-4f1d-b4cc-40265ae791dd
       X-Runtime:
-      - '0.037158'
+      - '0.042808'
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '197'
+      - '218'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":99,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T22:04:11.700-07:00","categories":[]}'
+      string: '{"id":133,"audience":null,"description":"new service description","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"new
+        samaritan house service","service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:53:50.071-07:00","categories":[]}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:04:11 GMT
+  recorded_at: Tue, 15 Jul 2014 19:53:49 GMT
 - request:
     method: get
     uri: http://ohana-api-test.herokuapp.com/api/locations/new-samaritan-house-location?api_token=Ohana-API-Admin-Test
@@ -242,7 +244,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -257,7 +259,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:04:11 GMT
+      - Tue, 15 Jul 2014 19:53:50 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -269,27 +271,29 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 16b89c02-804a-46fd-981e-21462e033e28
+      - 704132e8-4143-49d3-b220-fdaa6f6220b2
       X-Runtime:
-      - '0.088739'
+      - '0.040040'
       X-Xss-Protection:
       - 1; mode=block
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '582'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"id":98,"accessibility":[],"admin_emails":[],"coordinates":[-73.9395687,42.8142432],"description":"new
-        description","emails":[],"hours":null,"languages":[],"latitude":42.8142432,"longitude":-73.9395687,"name":"new
+      string: '{"id":132,"accessibility":[],"admin_emails":["moncef@samaritanhouse.com"],"coordinates":[-73.9814578,42.8140012],"description":"new
+        description","emails":[],"hours":null,"languages":[],"latitude":42.8140012,"longitude":-73.9814578,"name":"new
         samaritan house location","short_desc":null,"slug":"new-samaritan-house-location","transportation":"SAMTRANS
-        stops within 1/2 mile.","updated_at":"2014-06-26T22:04:11.707-07:00","urls":["http://www.samaritanhouse.com"],"url":"http://ohana-api-test.herokuapp.com/api/locations/new-samaritan-house-location","address":{"id":102,"street":"modularity","city":"utopia","state":"XX","zip":"12345"},"contacts":[],"faxes":[],"mail_address":null,"phones":[],"services":[{"id":99,"audience":null,"description":null,"eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":null,"service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-06-26T22:04:11.700-07:00","categories":[]}],"organization":{"id":5,"name":"Samaritan
+        stops within 1/2 mile.","updated_at":"2014-07-15T12:53:50.077-07:00","urls":["http://www.samaritanhouse.com"],"url":"http://ohana-api-test.herokuapp.com/api/locations/new-samaritan-house-location","address":{"id":137,"street":"modularity","city":"utopia","state":"XX","zip":"12345"},"contacts":[],"faxes":[],"mail_address":null,"phones":[],"services":[{"id":133,"audience":null,"description":"new
+        service description","eligibility":null,"fees":null,"funding_sources":[],"how_to_apply":null,"keywords":[],"name":"new
+        samaritan house service","service_areas":[],"short_desc":null,"urls":[],"wait":null,"updated_at":"2014-07-15T12:53:50.071-07:00","categories":[]}],"organization":{"id":5,"name":"Samaritan
         House","slug":"samaritan-house","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/samaritan-house","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/samaritan-house/locations"}}'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:04:11 GMT
+  recorded_at: Tue, 15 Jul 2014 19:53:49 GMT
 - request:
     method: delete
-    uri: http://ohana-api-test.herokuapp.com/api/locations/98?api_token=Ohana-API-Admin-Test
+    uri: http://ohana-api-test.herokuapp.com/api/locations/132?api_token=Ohana-API-Admin-Test
     body:
       encoding: UTF-8
       string: "{}"
@@ -297,7 +301,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -310,7 +314,7 @@ http_interactions:
       Cache-Control:
       - no-cache
       Date:
-      - Fri, 27 Jun 2014 05:04:12 GMT
+      - Tue, 15 Jul 2014 19:53:50 GMT
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
       Status:
@@ -322,9 +326,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 0fc41a85-7e6a-4ae7-8ed2-dab04d7a285d
+      - 32e251c2-bc57-4770-a4c2-85350c557b5e
       X-Runtime:
-      - '0.056281'
+      - '0.074430'
       X-Xss-Protection:
       - 1; mode=block
       Connection:
@@ -333,10 +337,10 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:04:12 GMT
+  recorded_at: Tue, 15 Jul 2014 19:53:50 GMT
 - request:
     method: get
-    uri: http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&domain=samaritanhouse.com
+    uri: http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&email=moncef@samaritanhouse.com
     body:
       encoding: US-ASCII
       string: ''
@@ -344,7 +348,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.0
+      - Ohanakapa Ruby Gem 1.1.1
       X-Api-Token:
       - Ohana-API-Admin-Test
       Accept-Encoding:
@@ -359,10 +363,10 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Fri, 27 Jun 2014 05:04:12 GMT
+      - Tue, 15 Jul 2014 19:53:51 GMT
       Link:
-      - <http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&domain=samaritanhouse.com&page=2>;
-        rel="last", <http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&domain=samaritanhouse.com&page=2>;
+      - <http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&email=moncef%40samaritanhouse.com&page=2>;
+        rel="last", <http://ohana-api-test.herokuapp.com/api/search?api_token=Ohana-API-Admin-Test&email=moncef%40samaritanhouse.com&page=2>;
         rel="next"
       Server:
       - nginx/1.6.0 + Phusion Passenger 4.0.45
@@ -379,9 +383,9 @@ http_interactions:
       X-Powered-By:
       - Phusion Passenger 4.0.45
       X-Request-Id:
-      - 870d984a-b79b-4b2e-996f-b6685a3f5e83
+      - c7bc7ff2-5797-4447-a47f-4f0afefe3553
       X-Runtime:
-      - '0.022872'
+      - '0.046518'
       X-Total-Count:
       - '2'
       X-Total-Pages:
@@ -389,7 +393,7 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '690'
+      - '688'
       Connection:
       - keep-alive
     body:
@@ -401,10 +405,10 @@ http_interactions:
         exam, dental cleaning and oral hygiene instruction for children, age 3-12,
         of Samaritan House clients.","latitude":37.468678,"longitude":-122.207057,"name":"Redwood
         City Free Medical Clinic","short_desc":"Provides free medical care to those
-        in need.","slug":"redwood-city-free-medical-clinic","updated_at":"2014-06-26T22:02:38.111-07:00","urls":["http://www.samaritanhouse.com"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/services","url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic","address":{"id":18,"street":"114
+        in need.","slug":"redwood-city-free-medical-clinic","updated_at":"2014-07-15T12:51:20.529-07:00","urls":["http://www.samaritanhouse.com"],"contacts_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/contacts","faxes_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/faxes","services_url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic/services","url":"http://ohana-api-test.herokuapp.com/api/locations/redwood-city-free-medical-clinic","address":{"id":18,"street":"114
         Fifth Avenue","city":"Redwood City","state":"CA","zip":"94063"},"organization":{"id":5,"name":"Samaritan
         House","slug":"samaritan-house","urls":[],"url":"http://ohana-api-test.herokuapp.com/api/organizations/samaritan-house","locations_url":"http://ohana-api-test.herokuapp.com/api/organizations/samaritan-house/locations"},"phones":[{"id":18,"department":null,"extension":null,"number":"650
         839-1447","number_type":null,"vanity_number":null}]}]'
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 05:04:12 GMT
+  recorded_at: Tue, 15 Jul 2014 19:53:50 GMT
 recorded_with: VCR 2.9.2

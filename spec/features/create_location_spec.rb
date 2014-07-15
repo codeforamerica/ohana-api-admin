@@ -20,6 +20,8 @@ feature "Create a new location", :vcr do
     fill_in "city", with: "Redwood City"
     fill_in "state", with: "XX"
     fill_in "zip", with: "94080-5932"
+    fill_in "service_name", with: "new samaritan house service"
+    fill_in "service_description", with: "new service description"
     click_button "Create new location for Samaritan House"
     find_field('location_name').value.should eq "new samaritan house location"
     find_field('description').value.should eq "new description"

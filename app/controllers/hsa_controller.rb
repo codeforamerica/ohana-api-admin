@@ -246,10 +246,6 @@ class HsaController < ApplicationController
   end
 
   def perform_search
-    if current_user_has_generic_email?
-      Ohanakapa.search("search", :email => current_user.email)
-    else
-      Ohanakapa.search("search", :domain => domain)
-    end
+    Ohanakapa.search("search", :email => current_user.email)
   end
 end

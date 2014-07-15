@@ -3,6 +3,7 @@
 = form_tag "create_location", :name => "edit_form", :id => "edit_form" do
 
   = render "forms/new/location_name"
+  = render "forms/new/admins"
   = render "forms/new/description"
   = render "forms/new/short_desc"
 
@@ -17,6 +18,8 @@
   = render "forms/new/transportation"
   = render "forms/new/urls"
 
+  = render "forms/new/services/name"
+  = render "forms/new/services/description"
   = render "forms/new/audience"
   = render "forms/new/eligibility"
   = render "forms/new/fees"

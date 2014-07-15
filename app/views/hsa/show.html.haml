@@ -36,26 +36,31 @@
 
   = render "forms/urls"
 
-  - if services.present?
-    - services.each do |service|
-      = hidden_field_tag :service_id, service.id
-      = render "forms/audience", :service => service
-      = render "forms/eligibility", :service => service
-      = render "forms/fees", :service => service
-      = render "forms/how_to_apply", :service => service
-      = render "forms/wait", :service => service
-      = render "forms/service_areas", :service => service
-      = render "forms/keywords", :service => service
+  %div.content-box
+    %h2= 'Services'
 
-      - @oe_ids = service.categories.map(&:oe_id) if service[:categories].present?
-      %div#categories.inst-box
-        %header
-          %strong
-            Categories
-          %p.desc
-            What categories does this location's services fall under?
-        %ul
-          = render "forms/categories", :service => service, :oe_ids => @oe_ids
+    - if services.present?
+      - services.each do |service|
+        = hidden_field_tag :service_id, service.id
+        = render "forms/services/name", :service => service
+        = render "forms/services/description", :service => service
+        = render "forms/audience", :service => service
+        = render "forms/eligibility", :service => service
+        = render "forms/fees", :service => service
+        = render "forms/how_to_apply", :service => service
+        = render "forms/wait", :service => service
+        = render "forms/service_areas", :service => service
+        = render "forms/keywords", :service => service
+
+        - @oe_ids = service.categories.map(&:oe_id) if service[:categories].present?
+        %div#categories.inst-box
+          %header
+            %strong
+              Categories
+            %p.desc
+              What categories does this location's services fall under?
+          %ul
+            = render "forms/categories", :service => service, :oe_ids => @oe_ids
   %div.danger-zone
     %header
       %strong

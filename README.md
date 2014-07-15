@@ -9,9 +9,9 @@ by setting their "role" field to "admin". This is done by editing the role field
 
 ## Current status
 
-As of June 5, 2014, we have decided to merge the admin functionality into the [Ohana API](http://github.com/codeforamerica/ohana-api/) Rails app to make it easier to maintain. This repo will still remain available as a demo application that you can use to build an external admin interface. It's not the most beautiful code, but it works and is compatible with the current Ohana API.
+As of July 15, 2014, the admin functionality is now available in the [Ohana API](http://github.com/codeforamerica/ohana-api/) Rails app to make it easier to use and maintain. This repo will no longer be updated, but it will remain available as a demo application that you can use to build an external admin interface.
 
-As development of the API progresses, there will probably be more database fields supported, but they most likely won't be added to this repo. So, if you would like to be able to edit a certain field that's not currently available in this repo, you can either use the admin interface in the API app (once it's ready), or fork this repo and add the fields yourself in your own copy of the admin interface.
+Note that you will need to have the latest version of Ohana API installed for this standalone admin app to work. Also note that the standalone app is very basic and is missing several handy features that have been added to the integrated admin interface.
 
 ## Demo
 You can see a running version of the application at

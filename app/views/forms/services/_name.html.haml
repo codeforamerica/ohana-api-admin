@@ -1,0 +1,8 @@
+%div.inst-box
+  %header
+    %strong
+      Name
+    %p.desc
+      The name of the Service
+  %p
+    = text_field_tag 'service_name', service[:name] || '', required: true, class: 'span5'

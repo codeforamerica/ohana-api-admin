@@ -5,4 +5,4 @@
     %p.desc
       The name of the organization at a location, such as a branch, department, or similar.
   %p
-    = text_field_tag "location_name", @location[:name] || '', maxlength: 255, class: "span10"
+    = text_field_tag 'location_name', @location[:name] || '', maxlength: 255, class: 'span10', required: true

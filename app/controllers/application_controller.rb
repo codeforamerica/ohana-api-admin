@@ -127,6 +127,16 @@ class ApplicationController < ActionController::Base
       redirect_to request.referer,
         alert: "Please enter a valid URL" and return
 
+    # Service Description missing
+    elsif e.to_s.include?("Description can't be blank for Service")
+      redirect_to request.referer,
+        alert: "Please enter a Service description" and return
+
+    # Service Name missing
+    elsif e.to_s.include?("Name can't be blank for Service")
+      redirect_to request.referer,
+        alert: "Please enter a Service name" and return
+
     # Wrong format for service area
     elsif e.to_s.include?("improperly formatted")
       redirect_to request.referer,
@@ -157,10 +167,12 @@ class ApplicationController < ActionController::Base
   def service_attributes
     {
       :audience        => params[:audience],
+      :description     => params[:service_description],
       :eligibility     => params[:eligibility],
       :fees            => params[:fees],
       :how_to_apply    => params[:how_to_apply],
       :keywords        => keywords,
+      :name            => params[:service_name],
       :service_areas   => service_areas,
       :wait            => params[:wait]
     }
