@@ -24,3 +24,12 @@ OHANA_API_ENDPOINT: http://ohana-api-demo.herokuapp.com/api
 # In production, you should set this token to a long random string
 # that you can generate from the command line with "rake secret".
 OHANA_API_TOKEN: changeme
+
+# When users sign up for an account on the admin interface, they
+# receive an email asking them to confirm their email address.
+# The email address you define below is the one that the user
+# will receive an email from. This email address is also the one
+# that is linked to when users view their locations and serves as the
+# email address that they can send feedback, questions, or report issues to.
+# Please change the email address below to one you own.
+ADMIN_EMAIL: ohanapi@codeforamerica.org

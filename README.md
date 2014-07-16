@@ -74,7 +74,8 @@ From the Terminal, navigate to the directory into which you'd like to create a c
 
 ### Set up the environment variables
 Inside the `config` folder, you will find a file called `application.example.yml`.
-Copy its contents to a new file called `application.yml` (which is gitignored by default).
+Copy its contents to a new file called `application.yml` (which is gitignored by default)
+and make sure to read the instructions carefully.
 
 By default, the app is configured to point to the
 [demo API](http://ohana-api-demo.herokuapp.com/api).
@@ -138,6 +139,10 @@ All done pushing code.
 You can now visit your site at http://your_app_name.herokuapp.com
 ```
 Once the script is done, do the following:
+
+Set the `ADMIN_EMAIL` environment variable in Heroku:
+
+    heroku config:set ADMIN_EMAIL=your_email
 
 Run `rake secret` from the command line to generate a random token.
 
