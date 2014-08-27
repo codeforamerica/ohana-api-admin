@@ -120,15 +120,17 @@ class HsaController < ApplicationController
         end
       end
 
-      # Update service
-      Ohanakapa.patch("locations/#{location_id}/services/#{service_id}", :query => service_attributes)
+      if service_id.present?
+        # Update service
+        Ohanakapa.patch("locations/#{location_id}/services/#{service_id}", :query => service_attributes)
 
-      # Update service categories
-      Ohanakapa.put("services/#{service_id}/categories", :query =>
-        {
-          :oe_ids => oe_ids
-        }
-      )
+        # Update service categories
+        Ohanakapa.put("services/#{service_id}/categories", :query =>
+          {
+            :oe_ids => oe_ids
+          }
+        )
+      end
 
       redirect_to location_path(location_slug), notice: "Changes for #{location_name} successfully saved!" and return
     else
