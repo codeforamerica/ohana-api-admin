@@ -2,6 +2,8 @@
 
 [![Stories in Ready](https://badge.waffle.io/codeforamerica/ohana-api-admin.png?label=ready)](https://waffle.io/codeforamerica/ohana-api-admin) [![Build Status](https://travis-ci.org/codeforamerica/ohana-api-admin.svg?branch=master)](https://travis-ci.org/codeforamerica/ohana-api-admin)
 
+# THIS REPO IS NO LONGER MAINTAINED. PLEASE USE [OHANA API](https://github.com/codeforamerica/ohana-api) INSTEAD.
+
 This is an example Rails app that shows how you can build an admin interface for the data that is exposed by the [Ohana API](http://github.com/codeforamerica/ohana-api/). It allows organization members to sign up with their email address, and allows them to update the locations that belong to their organization.
 
 Once a user is signed up, they can be given "master admin" status
