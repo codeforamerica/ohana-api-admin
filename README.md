@@ -24,7 +24,7 @@ Feel free to make changes to get a feel for the admin interface, but please don'
 
 ## Stack Overview
 
-* Ruby version 2.1.1
+* Ruby version 2.1.5
 * Rails version 3.2.17
 * MongoDB with the Mongoid ORM
 * Testing Frameworks: RSpec, Factory Girl, Capybara
@@ -194,7 +194,7 @@ We use the [GitHub issue tracker](https://github.com/codeforamerica/ohana-api-ad
 [pr]: http://help.github.com/send-pull-requests/
 
 ## Supported Ruby Version
-This library aims to support and is tested against Ruby version 2.1.1.
+This library aims to support and is tested against Ruby version 2.1.5.
 
 If something doesn't work on this version, it should be considered a bug.
 
